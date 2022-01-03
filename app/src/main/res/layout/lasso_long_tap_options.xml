@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/lasso_long_tap_options_cut_text_view"
+        style="@style/OptionsTextStyle"
+        android:background="@drawable/portrait_bg"
+        android:text="@string/cut_copy" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/lasso_long_tap_options_paste_text_view"
+        style="@style/OptionsTextStyle"
+        android:background="@drawable/landscape_bg"
+        android:text="@string/paste" />
+
+</LinearLayout>

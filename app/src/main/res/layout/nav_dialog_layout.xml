@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/dialog_back_button"
+        style="@style/DialogNavButton"
+        android:src="@drawable/back_dark" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/dialog_done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="@dimen/_22dp"
+        android:text="@string/done"
+        android:textColor="@color/ns_blue"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dialog_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/new_24dp"
+            android:src="@drawable/back_dark" />
+
+        <TextView
+            android:id="@+id/dialog_evernote_notebooks_title"
+            style="@style/DialogTitleStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/auto_backup"
+            android:textSize="@dimen/new_19sp" />
+
+        <TextView
+            android:id="@+id/dialog_done_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="@dimen/new_24dp"
+            android:text="@string/done"
+            android:textColor="@color/ns_blue"
+            android:textSize="@dimen/new_17sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/dialog_backup_selected_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/new_28dp"
+            android:paddingEnd="@dimen/new_28dp">
+
+            <LinearLayout
+                android:id="@+id/radio_google_drive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/google_drive" />
+
+                <ImageView
+                    android:id="@+id/check_google_drive"
+                    android:layout_width="@dimen/new_16dp"
+                    android:layout_height="@dimen/new_20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/check" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/radio_dropbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/dropbox" />
+
+                <ImageView
+                    android:id="@+id/check_dropbox"
+                    android:layout_width="@dimen/new_16dp"
+                    android:layout_height="@dimen/new_20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/check"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/radio_onedrive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/one_drive" />
+
+                <ImageView
+                    android:id="@+id/check_onedrive"
+                    android:layout_width="@dimen/new_16dp"
+                    android:layout_height="@dimen/new_20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/check"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/radio_webdav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/webdav" />
+
+                <ImageView
+                    android:id="@+id/check_webdav"
+                    android:layout_width="@dimen/new_16dp"
+                    android:layout_height="@dimen/new_20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/check"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/radio_do_not_backup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:text="@string/do_not_backup" />
+
+                <ImageView
+                    android:id="@+id/check_do_not_backup"
+                    android:layout_width="@dimen/new_16dp"
+                    android:layout_height="@dimen/new_20dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/check"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

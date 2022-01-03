@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/shelf_nd_width"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/shelf_items_view_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#383838">
+
+            <ImageView
+                android:id="@+id/shelf_items_view_back_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="12dp"
+                android:src="@drawable/back_new" />
+
+            <TextView
+                android:id="@+id/shelf_items_view_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="Documents"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shelf_items_view_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineProvider="bounds"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_move_to_shelf_recycler_view" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/divider"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/shelf_move_panel_two_child_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clickable="false"
+        android:fitsSystemWindows="true"
+        android:gravity="start"
+        tools:layout="@layout/fragment_moveto_shelf" />
+
+</RelativeLayout>

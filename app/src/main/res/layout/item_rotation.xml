@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item"
+        android:layout_width="560dp"
+        android:layout_height="660dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_close"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/close"></ImageView>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="72dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/what_s_new"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:background="@color/rotation">
+
+
+                    <ImageView
+                        android:id="@+id/paper"
+                        android:layout_width="170dp"
+                        android:layout_height="212dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="52dp"
+                        android:layout_marginBottom="75dp"
+                        android:src="@drawable/paper"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+                    <ImageView
+                        android:layout_width="102dp"
+                        android:layout_height="102dp"
+                        android:layout_marginStart="119dp"
+                        android:layout_marginTop="134dp"
+                        android:layout_marginEnd="180dp"
+                        android:layout_marginBottom="52dp"
+                        android:src="@drawable/rotate_icon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/paper"
+                        app:layout_constraintTop_toTopOf="@+id/paper"
+                        app:layout_constraintVertical_bias="1.0"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="54dp"
+                android:layout_gravity="center"
+
+
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:id="@+id/webdav_and_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/roboto"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/page_rotation"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3sp"
+                    android:letterSpacing="0.03"
+
+                    android:lineHeight="24sp"
+                    android:text="@string/rotate"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:layout_width="524dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3sp"
+                    android:text="Learn more ->"
+                    android:visibility="gone"
+                    android:textColor="@color/blue_heavy"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

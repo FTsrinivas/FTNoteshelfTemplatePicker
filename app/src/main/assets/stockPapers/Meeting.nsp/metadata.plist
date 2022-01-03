@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dynamic_id</key>
+	<integer>3</integer>
+	<key>display_name</key>
+	<string>Meeting</string>
+	<key>line_height</key>
+	<integer>34</integer>
+	<key>width</key>
+	<integer>834</integer>
+	<key>height</key>
+	<real>1048</real>
+	<key>display_name_ja</key>
+	<string>ミーティングノート</string>
+	<key>display_name_it</key>
+	<string>Appunti di riunione</string>
+	<key>display_name_es</key>
+	<string>Notas de reunión</string>
+	<key>display_name_de</key>
+	<string>Besprechungsnotizen</string>
+	<key>display_name_zh-Hans</key>
+	<string>会议记录</string>
+	<key>display_name_zh-Hant</key>
+	<string>會議記事</string>
+	<key>display_name_fr</key>
+	<string>Réunion</string>
+</dict>
+</plist>

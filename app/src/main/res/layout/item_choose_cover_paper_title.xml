@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_cover_paper_category_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_choose_cover_paper_category_text_view"
+        style="@style/PopupItemTextStyle"
+        android:paddingStart="@dimen/new_24dp"
+        android:paddingEnd="@dimen/new_24dp"
+        android:text="Simple"
+        android:textColor="@color/ns_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/item_choose_cover_paper_category_text_view"
+        android:alpha="0.2"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\Mani\Downloads\30_12_2021_Mod Noteshelf-Android-UI-4 (1)\Mod Noteshelf-Android-UI-4\pdfium-library\.cxx\cmake\debug\arm64-v8a'
+ninja: no work to do.

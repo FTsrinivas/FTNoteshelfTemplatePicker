@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>display_name</key>
+	<string>Ocher</string>
+	<key>display_name_ja</key>
+	<string>黄土色</string>
+	<key>display_name_it</key>
+	<string>Ocra</string>
+	<key>display_name_es</key>
+	<string>Ocre</string>
+	<key>display_name_de</key>
+	<string>Ocker</string>
+	<key>display_name_zh-Hans</key>
+	<string>赭色</string>
+	<key>display_name_zh-Hant</key>
+	<string>焦げ茶色</string>
+	<key>display_name_fr</key>
+	<string>Ocre</string>
+</dict>
+</plist>

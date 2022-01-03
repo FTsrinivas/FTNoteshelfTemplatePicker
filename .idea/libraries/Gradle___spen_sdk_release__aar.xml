@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: :spen_sdk-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb5e57602e8c244b80c3cd52f8dd43d5/jetified-spen_sdk-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb5e57602e8c244b80c3cd52f8dd43d5/jetified-spen_sdk-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb5e57602e8c244b80c3cd52f8dd43d5/jetified-spen_sdk-release/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb5e57602e8c244b80c3cd52f8dd43d5/jetified-spen_sdk-release/jars/libs/sprengine.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2fbe10a883096696fe75e6dcdd0fbb2a/transformed/jetified-spen_sdk-release/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2fbe10a883096696fe75e6dcdd0fbb2a/transformed/jetified-spen_sdk-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2fbe10a883096696fe75e6dcdd0fbb2a/transformed/jetified-spen_sdk-release/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2fbe10a883096696fe75e6dcdd0fbb2a/transformed/jetified-spen_sdk-release/jars/libs/sprengine.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

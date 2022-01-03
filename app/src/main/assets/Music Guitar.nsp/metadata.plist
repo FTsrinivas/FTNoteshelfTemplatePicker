@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>display_name</key>
+	<string>Music Guitar</string>
+	<key>line_height</key>
+	<integer>27</integer>
+	<key>width</key>
+	<integer>768</integer>
+	<key>height</key>
+	<integer>960</integer>
+	<key>display_name_ja</key>
+	<string>音楽ギター</string>
+	<key>display_name_it</key>
+	<string>Chitarra musicale</string>
+	<key>display_name_es</key>
+	<string>Guitarra musica</string>
+	<key>display_name_de</key>
+	<string>Musik Gitarre</string>
+	<key>display_name_zh-Hans</key>
+	<string>音乐吉他</string>
+	<key>display_name_zh-Hant</key>
+	<string>音樂吉他</string>
+	<key>display_name_fr</key>
+	<string>Musique Guitare</string>
+</dict>
+</plist>

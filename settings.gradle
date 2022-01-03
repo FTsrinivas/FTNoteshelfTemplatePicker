@@ -1,0 +1,10 @@
+include ':sardine-android-master'
+include ':Pdfboxlibrary'
+include ':app'
+include ':colorPickerLibrary'
+include ':pdfium-library'
+include ':openCVLibrary344'
+include ':PredictionSDKSample'
+
+//include ':FTRenderingEngine'
+//project(':FTRenderingEngine').projectDir = new File(rootProject.projectDir, '../FTRenderingEngine/app')

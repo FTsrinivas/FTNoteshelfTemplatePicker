@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dialog_back_button"
+                style="@style/DialogNavButton"
+                android:src="@drawable/back_dark_chevron" />
+
+            <TextView
+                style="@style/DialogTitleStyle"
+                android:text="@string/choose_format"
+                android:textSize="@dimen/_19sp" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/export_format_title_divider"
+            layout="@layout/divider_black" />
+
+        <LinearLayout
+            android:id="@+id/export_format_png_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/new_24dp"
+            android:paddingEnd="@dimen/new_24dp">
+
+            <TextView
+                android:id="@+id/export_format_png_text_view"
+                style="@style/PopupItemTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/file_image"
+                android:drawablePadding="@dimen/new_12dp"
+                android:text="@string/dot_png" />
+
+            <ImageView
+                android:id="@+id/export_format_png_check"
+                android:layout_width="@dimen/new_12dp"
+                android:layout_height="@dimen/new_16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/export_format_png_divider"
+            layout="@layout/divider_black" />
+
+        <LinearLayout
+            android:id="@+id/export_format_pdf_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/new_24dp"
+            android:paddingEnd="@dimen/new_24dp">
+
+            <TextView
+                android:id="@+id/export_format_pdf_text_view"
+                style="@style/PopupItemTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/file_pdf"
+                android:drawablePadding="@dimen/new_12dp"
+                android:text="@string/dot_pdf" />
+
+            <ImageView
+                android:id="@+id/export_format_pdf_check"
+                android:layout_width="@dimen/new_12dp"
+                android:layout_height="@dimen/new_16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/export_format_pdf_divider"
+            layout="@layout/divider_black" />
+
+        <LinearLayout
+            android:id="@+id/export_format_nsa_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/new_24dp"
+            android:paddingEnd="@dimen/new_24dp">
+
+            <TextView
+                android:id="@+id/export_format_nsa_text_view"
+                style="@style/PopupItemTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/file_noteshelf"
+                android:drawablePadding="@dimen/new_12dp"
+                android:text="@string/dot_nsa" />
+
+            <ImageView
+                android:id="@+id/export_format_nsa_check"
+                android:layout_width="@dimen/new_12dp"
+                android:layout_height="@dimen/new_16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/check"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/export_format_nsa_divider"
+            layout="@layout/divider_black" />
+
+    </LinearLayout>
+
+</ScrollView>

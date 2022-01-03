@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layMain"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_560"
+    android:background="@drawable/round_corners_dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_64"
+        android:layout_marginLeft="@dimen/new_16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imgAddDialogClose"
+            android:layout_width="@dimen/new_22dp"
+            android:layout_height="@dimen/new_22dp"
+            android:layout_marginRight="@dimen/new_34dp"
+            android:scaleType="center"
+            android:src="@mipmap/close_search_btn_icon" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:letterSpacing="0.15"
+            android:lineHeight="@dimen/new_24dp"
+            android:text="@string/customize_cover"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_20" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dotView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="@dimen/margin_seventeen"
+        android:background="@drawable/cover_popup_divider_bg"
+        android:layerType="software" />
+
+    <TextView
+        android:id="@+id/txtTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dotView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/new_48dp"
+        android:fontFamily="@font/roboto"
+        android:lineHeight="@dimen/new_20dp"
+        android:text="@string/pinch_and_zoom_to_layout_your_cover"
+        android:textColor="#000000"
+        android:textSize="@dimen/new_14sp" />
+
+    <RelativeLayout
+        android:id="@+id/layImage"
+        android:layout_width="@dimen/new_137dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTip"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/new_8dp"
+        android:background="@color/white">
+
+        <com.fluidtouch.noteshelf.store.view.FTResizeImageView
+            android:id="@+id/imaTheme"
+            android:layout_width="@dimen/new_137dp"
+            android:layout_height="@dimen/new_170dp"
+            app:cropviewViewportRatio="0.8" />
+
+
+        <ImageView
+            android:id="@+id/imgMask2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/new_60dp"
+            android:layout_marginTop="@dimen/new_40dp"
+            android:alpha="0.3"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <!--<com.fluidtouch.noteshelf.store.view.BlurringView
+            android:id="@+id/imgMask3"
+            android:layout_width="@dimen/new_137dp"
+            android:layout_height="@dimen/new_60dp"
+            android:layout_marginTop="@dimen/new_40dp"
+            android:visibility="visible"
+            android:alpha="0.3"
+            android:background="#000000"/>-->
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtThemeName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_56dp"
+        android:layout_below="@+id/layImage"
+        android:layout_marginLeft="@dimen/new_17dp"
+        android:layout_marginTop="@dimen/new_48dp"
+        android:layout_marginRight="@dimen/new_17dp"
+        android:background="@drawable/untitled_cover_edittext_border"
+        android:hint="@string/untitled_cover"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/new_15dp" />
+
+    <LinearLayout
+        android:id="@+id/laySave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtThemeName"
+        android:layout_marginLeft="@dimen/new_19dp"
+        android:layout_marginTop="@dimen/new_9dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/new_19dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:text="@string/save_for_future_use"
+            android:textColor="#000000"
+            android:textSize="@dimen/new_16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dotView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2dp"
+        android:layout_below="@+id/laySave"
+        android:layout_marginTop="@dimen/new_16dp"
+        android:background="@drawable/cover_popup_divider_bg"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dotView2"
+        android:layout_alignParentRight="true"
+        android:gravity="end"
+        android:paddingRight="@dimen/new_8dp"
+        >
+        <Button
+            android:id="@+id/btnCreateTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_36dp"
+            android:layout_marginTop="@dimen/new_15dp"
+            android:layout_marginRight="@dimen/new_8dp"
+            android:layout_marginBottom="@dimen/new_15dp"
+            android:background="@drawable/custom_covers_create_btn_bg"
+            android:fontFamily="@font/roboto_medium"
+            android:letterSpacing="0.15"
+            android:lineHeight="@dimen/new_16dp"
+            android:text="@string/create_cover"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

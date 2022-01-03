@@ -1,0 +1,449 @@
+    <!-- Welcome Experience -->
+    welcome_tour=Welcome Tour
+    skip=Skip
+    next=Next
+    continue_string=Continue
+    welcome_to_noteshelf=Welcome to Noteshelf!
+    beautiful_handwritten_notes_right_on_your_device=Start taking beautiful handwritten notes on your device
+    full_featured_digital_note_taking=Full-Featured Digital Note-Taking
+    a_variety_of_easy_to_use_features_to_choose_from_for_a_rich_note_taking_experience=Choose from a variety of easy-to-use options for a rich\nnote-taking experience.
+    take_notes=Take Notes
+    record_audio=Record Audio
+    add_photos=Add Photos
+    markup_documents=Markup Documents or Images
+    draw_perfect_shapes=Draw Perfect Shapes
+    extensive_library_of_covers_and_papers=Select Different Covers and Papers
+    rich_text_formatting=Rich Text Formatting
+    great_writing_tools=Classic Writing Tools
+    annotate_your_pdfs_and_images=Annotate your PDFs and Images.
+    markup_your_documents=Markup Documents or Images
+    download_from_a_variety_of_covers_and_papers_or_make_your_own=Customize your notebooks with different cover designs &amp; paper templates — or make it your own!
+    personalize_it=Personalize it!
+    start_note_taking=Start Note-Taking
+
+    <!-- Choose cover/paper dialog -->
+    quick_create=Quick Create
+    import_document=Import Document
+    free_download=Free Downloads
+    choose=Choose…
+    custom=Custom
+    portrait=Portrait
+    landscape=Landscape
+    random_cover=Random Cover
+    default_cover=Default Cover
+    select_cover_style=Select Cover Style
+    customize_cover=Customize Cover
+    use_this_cover=Use This Cover
+    enter_name=Enter name
+    store_sign_up_text=These downloads are available exclusively for Noteshelf Club members.
+    store_sign_up_text2=Sign-up for free.
+    name_already_exists=Name already exists!
+
+    <!-- Scan document -->
+    camera=Camera
+    keep_scan=Keep Scan
+    cropping_image=Cropping image…
+    capturing_image=Capturing image…
+    import_=Import
+    scan_document=Scan Document
+    configuration_change=Configuration change
+    no_scanned_items_found=No scanned items found
+    saved=Saved:
+
+    <!-- Import/Export -->
+    share=Share
+    current_page=Current Page
+    all_pages=All Pages
+    select_pages=Select Pages
+    notebook_nsa=Notebook (.nsa)
+    image_png=Image (.png)
+    pdf_pdf=Pdf (.pdf)
+
+    <!-- Settings -->
+    theme=Theme
+    show_date_modified=Show Date Modified
+    writing_style=Writing Style
+    auto_backup=Auto-Backup
+    handwriting_recognition=Handwriting Recognition
+    stylus=Stylus
+    pressure_sensitivity=Pressure Sensitivity
+    support=Support
+    send_support_log=Send Logs
+    disable_hyperlinks_when_writing=Disable Hyperlinks When Writing
+    change=Change
+    character_limit_exceeded=Character Limit Exceeded. Please choose a smaller notebook name.
+    special_characters_are_not_allowed=Special characters are not allowed for name.
+
+    <!-- Auto backup -->
+    google_drive=Google Drive
+    dropbox=Dropbox
+    do_not_backup=Don\'t Backup
+    notebooks_to_backup=Notebooks to Backup
+    backup_in_progress=Backing up is in progress
+    backing_up_to_x=Backing up to %1$s
+    back_up_on_wifi_only=Backup on WiFi only
+    log=LOG
+    last_back_up_at_time=Last backup at %1$s
+    off=Off
+    please_login_again=Please login again.
+    sign_out=Sign out
+    choose_cloud=Choose Cloud
+
+    <!-- Evernote Publish -->
+    evernote_publish=Evernote Publish
+    publish_notebooks=Publish Notebooks
+    evernote_progress_text" translatable="false=%1$.2f MB of %2$.0f MB used
+    evernote_error=Evernote Error
+    evernote_last_sync_time=Last successful sync at %1$s
+    sync_failed_with_reason=Sync failed with reason: %1$s
+
+    <!-- Add New Dialog -->
+    new_page_from_template=New Page from Template
+    change_current_page_template=Change Page Template
+    photo=Photo
+    quick_create_settings=Quick Create Settings
+
+    <!-- Bookmarks -->
+    untitled=Untitled
+    bookmark=Bookmark
+    edit_bookmark=Edit Bookmark
+    no_bookmarks_desc=Tap the bookmark icon on the pages to add them to this view. Long press to add title and color.
+    no_bookmarked_pages=No bookmarked pages
+    bookmark_this_page=Bookmark this Page
+    bookmarked=Bookmarked!
+    thumbnails=Thumbnails
+    list=List
+
+    <!-- Penrack -->
+    highlighters=Highlighters
+    pens=Pens
+    favorites=Favorites
+    favorites_full=Favorites (FULL)
+    added=Added!
+    no_favorite_pens=No Favorite Pens
+    no_favorite_des=Tap the star on the writing tool panel to favorite the active pen.
+
+    back=Back
+    eraser=Eraser
+    text=Text
+    lasso=Lasso
+    view=View
+    shape=Shape
+    finder=Finder
+    pen_tools=Pen Tools
+
+    <!-- Color picker -->
+    edit_colors=Edit Colors
+    delete_colors=Delete Colors
+    choose_color=Choose Color
+    reset=Reset
+    tap_to_choose_color=Tap to edit a color.\nHold and drag to reorder.
+    Tap_on_a_color=Tap on a color to delete.
+    minimum_of_colors=Minimum of %1$d colors required
+    palettes=Palettes
+    color_pallette=Color Palette
+    move_the_circles=Move the circles %1$s to choose color or type &lt;br /&gt; hex value directly.
+    add=Add
+    this_will_reset_color_palettes=This will reset the color palettes to \nfactory default.
+    set_size" translatable="false=%1$dsp
+    set_color" translatable="false=#%1$s
+
+    <!-- Finder -->
+    pages=Pages
+    duplicate_page_singular=Duplicate %1$d page
+    duplicate_page_plural=Duplicate %1$d pages
+    delete_page_singular=Delete %1$d page
+    delete_page_plural=Delete %1$d pages
+    delete_pages_count=Delete %1$d %2$s
+    select_all=Select All
+    select_none=Select None
+    selected=%1$d Selected
+
+    <!-- Smart dialog messages -->
+    duplicating=Duplicating…
+    saving=Saving…
+    exporting=Exporting…
+    importing=Importing…
+    restoring=Restoring…
+    deleting=Deleting…
+    opening=Opening…
+    generating=Generating…
+    creating=Creating…
+    changing=Changing…
+    downloading=Downloading…
+    moving=Moving…
+    loading=Loading…
+
+    <!-- Cliparts -->
+    clipart=Clipart
+    localClipartResponse=Recents
+    library=Library
+    no_recents_cliparts=No Recent Cliparts
+    unable_to_download_clipart=Unable to download clipart. Please try again.
+    server_busy_please_try_again_later=Server Busy, Please try again later.
+
+    <!-- Audio -->
+    audio=Audio
+    set_speed" translatable="false=%1$.1fx
+    audio_recordings=Audio Recordings
+    set_session=Session %1$d
+    no_audio_recordings=No audio recordings in this notebook.
+    audio_record_progress_alert_title=Cannot perform this operation as an audio recording is in progress.
+    stop_recording=Stop Recording
+    play=Play
+    pause=Pause
+    record=Record
+
+    <!-- Toast messages and errors -->
+    camera_error=This device doesn\'t support camera
+    camera_access_error=Permissions denied to access camera, please enable it from settings.
+    document_access_error=You need to give permission to import document.
+    gallery_access_error=You need to give permission to add image.
+    resolution_error=Noteshelf currently does not support this small screen size. However, we are working hard to provide this in near future.
+    record_audio_permission_error=You need to give permission to record audio.
+    failed_to_import=Failed to import
+    check_your_internet_connection=Please check your Internet connection and try again later.
+    sorry_please_grant_permission_for_camera=Sorry! Please grant permission for camera
+    ios_error_message=We are not supporting iOS notebooks right now, we are working hard to enable this feature.
+    wrong_password=Incorrect password
+    please_read_and_enable_the_checkbox_to_import=Please read and enable the checkbox to import
+    cannot_open_notes_in_trash=Cannot open notes in trash.
+    delete_category_confirmation=Would you like to delete this category? All documents will be moved to Trash.
+    download_error_message=Download failed! Please try again.
+    login_error_message=These downloads are available exclusively for Noteshelf Club members. Sign-up for free.
+    cannot_use_trash_as_it_is_reserved_by_the_app=Cannot use \'Trash\' as it is reserved by the app.
+    no_internet_connection=No Internet Connection
+    signed_into_evernote_successfully=Signed into Evernote successfully!
+    unable_to_authenticate_with_evernote=Unable to authenticate with Evernote
+    google_drive_backup_file_size_is_too_large=Google Drive Backup: File size is too large
+    unexpected_error_occurred_please_try_again=An unexpected error occurred. Please try again later.
+    font_size_cannot_be_below=Font size cannot be below
+    cropped_image_not_valid_shape=Cropped image is not a valid shape.
+    cannot_move_to_same_notebook=Cannot move to same notebook
+    please_enter_atleast_3_characters=Please enter at least 3 characters
+    cannot_move_to_same_location=Sorry! Cannot move to same location.
+
+    change_login=Would you like to try with another account?
+    check_your_connection_and_tap_here_to_reload=Check your connection and tap here to reload.
+    are_you_sure_you_want_to_delete_notebooks_permanently=Are you sure you want to delete notebooks permanently?
+    this_action_will_turn_off_auto_backup_for_type=This action will turn off auto-backup to %1$s.
+    would_you_like_to_apply_the_changes_to_the_image_before_proceeding_to_another_option=Would you like to apply the changes to the image before proceeding to another option?
+
+    <!-- General -->
+    yes=Yes
+    no=No
+    field_cannot_be_empty=Field cannot be empty
+    edit=Edit
+    new_=New
+    notebook=Notebook
+    create=Create
+    ok=OK
+    cancel=Cancel
+    update=Update
+    new_notebook=New Notebook
+    page=Page
+    download_complete=Download Complete
+    download=Download
+    untitled_notebook=Untitled Notebook
+
+    <!-- ToolbarMenu -->
+    view_list=View List
+    sort=Sort
+    settings=Settings
+    back_up=Back Up
+    group_name=Group Name
+
+    <!-- Dialogs -->
+    enter_a_name_for_your=Enter a name for your %1$s
+    notebook_title=Notebook Title
+    group_title=Group Title
+    rename=Rename
+    rename_category=Rename Category
+    new_category=New Category
+    new_group=New Group
+    category_name=Category Name
+    notebook_name=Notebook Name
+    delete_category=Delete Category
+    add_new=Add New…
+    backup_error_details=Error Details
+    enter_password=Enter password
+    password_title=Password
+    group=Group
+    category=Category
+    clear_page=Clear Page
+
+    <!-- Shelf -->
+    set_selected=%1$d Selected
+    select_a_document=Select a document
+    trash" translatable="false=Trash
+    trash_title" translatable="false=Trash
+    empty_trash= Empty Trash
+    move_to_trash=Move to Trash
+    name=Name
+    date=Date
+
+    <!-- Category panel -->
+    add_new_category=New Category…
+    add_new_group=New Group…
+    move_to=Move to…
+    done=Done
+    move=Move
+
+    <!-- Lasso -->
+    cut=Cut
+    copy=Copy
+    delete=Delete
+    resize=Resize
+    color=Color
+    cut_copy=Cut / Copy
+    paste=Paste
+    cannot_support_heavy_selection=Cannot support heavy selection
+    to_text=To Text
+    convert_to_text=Convert to Text
+    copy_to_clipboard=Copy to Clipboard
+    convert_to_textbox=Convert to Textbox
+    text_copied=Text Copied
+    advanced_options=Advanced Options
+    font_size=Font Size
+    _default=Default
+    fit_to_selection=Fit to Selection
+
+    <!-- Global Search -->
+    search=Search
+    set_titles_count=%1$d Notebooks
+    set_content_count" translatable="false=%1$s . %2$d
+    restore_backup=Restore Backup
+    export_failed=Export Failed!
+    link_not_found=Link not found.
+    cancelled=Cancelled!
+    error=Error
+    unable_to_sign_out_now_please_try_again_later=Unable to Sign out now, please try again later.
+    this_format_not_supported=This format is not supported by Noteshelf
+    file_not_found=File not found
+    pinch_and_zoom_to_layout_your_cover=Pinch and zoom to layout your cover.
+    save_for_future_use=Save for future use?
+    sign_in=Sign In
+    import_images=Import Images
+    bookmark_name=Bookmark Name
+    get=GET
+    undo=Undo
+
+    <!-- System -->
+    app_name" translatable="false=Noteshelf
+    app_name_dev" translatable="false=NS Dev
+    app_name_beta" translatable="false=NS Beta
+    format_dd_mmm_yyyy_hh_mm_a" translatable="false=d MMM yyyy, hh:mm aaa
+    tickmark" translatable="false=\u2713
+    set_version" translatable="false=Version %1$s (%2$d)
+    current_version" translatable="false=%1$d (%2$s)
+    facebook_application_id" translatable="false=318590168862446
+
+    <!-- MimeTypes -->
+    mime_type_all" translatable="false=*/*
+    mime_type_application_all" translatable="false=application/*
+    mime_type_application" translatable="false=application
+    mime_type_application_pdf" translatable="false=application/pdf
+    mime_type_application_nsa" translatable="false=application/nsa
+    mime_type_iOS_noteshelf" translatable="false=application/noteshelf
+    mime_type_iOS_noteshelf2" translatable="false=application/ns2
+    mime_type_image" translatable="false=image/*
+
+    <!-- IntentData -->
+    req_url" translatable="false=https://pixabay.com/api/?key=12288010-dc965642562959af2a4f30221&amp;q=%1$s&amp;image_type=vector&amp;safesearch=true&amp;sort=downloads&amp;page=%2$d&amp;per_page=%3$d&amp;pretty=true
+    tag_lasso_container" translatable="false=Lasso Container
+    intent_backup_completed=Backup Completed
+    intent_is_successful=Is successful
+    intent_media_player_status" translatable="false=Media Player Status
+    intent_sign_in_result" translatable="false=Sign-In result
+    intent_current_document" translatable="false=Current Opened Document
+    intent_notes_group_uri" translatable="false=Notes Group URI
+    intent_position" translatable="false=Position
+    intent_annotations" translatable="false=Annotations
+    intent_lasso_width" translatable="false=Lasso Width
+    intent_lasso_height" translatable="false=Lasso Height
+    intent_lasso_old_x" translatable="false=Lasso Old X
+    intent_lasso_old_y" translatable="false=Lasso Old Y
+    intent_lasso_region" translatable="false=Lasso Region
+    intent_is_edit_mode" translatable="false=Is mEdit Mode
+    intent_scanned_doc_path" translatable="false=Scanned Doc Path
+    intent_new_page_index" translatable="false=newPageIndex
+    intent_is_thumbnail_refreshed" translatable="false=isThumbnailRefreshed
+    intent_search_key" translatable="false=searchKey
+    intent_document_url" translatable="false=documentURL
+    intent_select_pic_pdf" translatable="false=Select Picture n Pdf
+
+    
+    my_notes=My Notes
+    no_papers_available=No papers available
+    clear=Clear
+    save=Save
+    redo=Redo
+    free_downloads=Free Downloads
+    noteshelf_club=Noteshelf Club
+    signed_in_as=Signed in as
+    indexing_page_num=Indexing Page %1$d
+    please_enter_valid_color=Please enter valid color
+    logout=Logout
+    start=Start
+    app_will_store_your_password=Noteshelf requires to securely store your password. Please check to accept it.
+    signout=Sign out
+    stop=Stop
+    apply=Apply
+    no_band=No Band
+    transparent_band=Transparent Band
+    blurred_band=Blurred Band
+    bottom_photo=Bottom Photo
+    cut_out_photo=Cut-Out Photo
+    mosaic_photo=Mosaic Photo
+    options=Options
+    change_template=Change Template
+    create_notebook=Create Notebook
+    page_from_template=Page from Template
+    page_from_photo=Page from Photo
+    page_num=p. %1$d
+    clear_bookmark=Clear Bookmark
+    type_something=Type something…
+    add_bookmark=Add Bookmark
+    recent=Recent
+    loading_more=Loading More…
+    favorites_num=Favorites (%1$d)
+    show_favorites_toolbar=Show favorites toolbar
+    new_audio_note=New Audio Note
+    import_photo=Import Photo
+    evernote=Evernote
+    join_our_beta=Join our Beta
+
+    <!--  Add New Page  -->
+    add_new_page=Add New Page
+    template=Template
+    scan=Scan
+    or_add_new=OR ADD NEW
+
+    <!-- New Settings -->
+    tap_to_backup=Tap to backup
+    backup_up_to_date=Backup up-to-date
+    about_us=About Noteshelf
+    what_s_new=What\'s New
+    rate_on_the_play_store=Rate us on the Play Store
+    tell_a_friend=Tell a Friend
+    connect_with_other_noteshelfers=Connect with other Noteshelfers
+    like_us_on_facebook=Like on Facebook
+    follow_us_on_instagram=Follow on Instagram
+    find_us_on_twitter=Find on Twitter
+    noteshelf_copyright=Copyright © 2020 Noteshelf. All rights reserved.
+    enable=Enable
+    select_language=Select Language
+    appearance=Appearance
+    handwriting=Handwriting
+    cloud_and_backup=<![CDATA[Cloud & Backup]]>
+    advanced=Advanced
+    free_covers_paper_templates=<![CDATA[Free Covers & Paper Templates]]>
+    about_noteshelf=About Noteshelf
+    themes=Themes
+    show_date_on_shelf=Show Date on Shelf
+    linked=linked
+    cloud_logins=Cloud Logins
+    cloud_storage_used" translatable="false=%1$.1f gb of %2$.1f gb used
+    sample_notebook=Sample Notebook
+    powered_by=Powered by
+    no_pages_found=No pages found.

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/orientation_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/template_picker_tab_layout_bg"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@+id/portrait_tab"
+            style="@style/TabSelectorItemNew"
+            android:layout_width="93dp"
+            android:layout_height="@dimen/new_28dp"
+            android:text="@string/portrait"
+            android:textSize="@dimen/new_12sp"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="2sp"
+            android:translationY="-0.97sp"
+            android:layout_marginTop="@dimen/new_2dp"
+            android:layout_marginLeft="@dimen/new_2dp"
+            android:layout_marginBottom="@dimen/new_2dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/landscape_tab"
+            style="@style/TabSelectorItemNew"
+            android:layout_width="93dp"
+            android:layout_height="@dimen/new_28dp"
+            android:background="@android:color/transparent"
+            android:text="@string/landscape"
+            android:textSize="@dimen/new_12sp"
+            android:layout_marginTop="@dimen/new_2dp"
+            android:layout_marginLeft="@dimen/new_2dp"
+            android:layout_marginBottom="@dimen/new_2dp"
+            android:layout_toRightOf="@+id/portrait_tab"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

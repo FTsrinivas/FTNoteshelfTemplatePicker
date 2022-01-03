@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zendesk:core:4.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a37c4dc12be6d04355708a1ccca0aae4/jetified-core-4.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a37c4dc12be6d04355708a1ccca0aae4/jetified-core-4.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a37c4dc12be6d04355708a1ccca0aae4/jetified-core-4.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/58d717c1157d2e051c62e29638d4c21c/transformed/jetified-core-4.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/58d717c1157d2e051c62e29638d4c21c/transformed/jetified-core-4.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/58d717c1157d2e051c62e29638d4c21c/transformed/jetified-core-4.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zendesk/core/4.0.2/70bf4f1098227bc7b064d2e2e2d80c3ec246f9e0/core-4.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zendesk/core/4.0.2/61f3d5909a40c60261a5d89072a919c331313dfd/core-4.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

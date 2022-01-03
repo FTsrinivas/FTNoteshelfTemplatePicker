@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_lasso_color_picker_view"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_margin="@dimen/_14dp"
+    android:background="@drawable/circular_grey_bg" />

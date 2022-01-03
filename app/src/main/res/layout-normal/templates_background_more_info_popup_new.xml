@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/nestedScrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_56dp"
+                android:id="@+id/moreLytID"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/closeMoreInfoPopup"
+                    android:layout_width="@dimen/new_22dp"
+                    android:layout_height="@dimen/new_22dp"
+                    android:background="@mipmap/close_search_btn_icon"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/new_16dp">
+                </ImageView>
+                <TextView
+                    android:id="@+id/moreTitleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/new_20sp"
+                    android:lineSpacingExtra="1sp"
+                    android:translationY="-0.28sp"
+                    android:letterSpacing="0.01"
+                    android:fontFamily="@font/roboto_medium"
+                    android:lineHeight="@dimen/new_16sp"
+                    android:textColor="#000000"
+                    android:text="@string/more"
+                    android:layout_marginLeft="@dimen/new_34dp"
+                    android:layout_gravity="center_vertical|center">
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#14212121"
+                android:layout_below="@+id/moreLytID"/>
+
+            <TextView
+                android:id="@+id/lineHeightTitleId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/new_10sp"
+                android:lineSpacingExtra="4sp"
+                android:translationY="-2.14sp"
+                android:letterSpacing="0.15"
+                android:fontFamily="@font/roboto_medium"
+                android:lineHeight="@dimen/new_16sp"
+                android:textColor="#000000"
+                android:text="@string/line_height"
+                android:layout_marginLeft="@dimen/new_16dp"
+                android:layout_below="@+id/divider1"
+                android:layout_marginTop="@dimen/new_16dp">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lineHeightRvID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineHeightTitleId"
+                android:layout_marginTop="@dimen/new_8dp"
+                android:orientation="horizontal"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:layout_centerHorizontal="true">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#14212121"
+                android:layout_below="@+id/lineHeightRvID"
+                android:layout_marginTop="@dimen/new_16dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/moreClrsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginLeft="@dimen/new_16dp"
+                android:layout_below="@+id/divider">
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

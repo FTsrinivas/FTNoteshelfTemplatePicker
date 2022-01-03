@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_back_up_error"
+        android:icon="@mipmap/iclouderror"
+        android:title="@string/back_up"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_evernote_error"
+        android:icon="@drawable/evernoteerror"
+        android:title="@string/evernote_error"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_view_list"
+        android:icon="@drawable/view_list"
+        android:title="@string/view_list"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_create_notebook"
+        android:icon="@drawable/add"
+        android:title="@string/add_new"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_sort"
+        android:icon="@drawable/sort"
+        android:title="@string/sort"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/search"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_empty_trash"
+        android:title="@string/empty_trash"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_select"
+        android:title="@string/select"
+        app:showAsAction="always" />
+
+</menu>

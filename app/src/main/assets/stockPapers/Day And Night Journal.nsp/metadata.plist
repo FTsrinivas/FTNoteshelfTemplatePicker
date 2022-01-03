@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>display_name</key>
+        <string>Day and Night Journal</string>
+        <key>line_height</key>
+        <integer>34</integer>
+        <key>width</key>
+        <integer>768</integer>
+        <key>height</key>
+        <integer>960</integer>
+        <key>display_name_ja</key>
+        <string>コーネル式ノート</string>
+        <key>display_name_it</key>
+        <string>Appunti Cornell</string>
+        <key>display_name_es</key>
+        <string>Notas Cornell</string>
+        <key>display_name_de</key>
+        <string>Cornell-Notizen</string>
+        <key>display_name_zh-Hans</key>
+        <string>康奈尔笔记</string>
+        <key>display_name_zh-Hant</key>
+        <string>康乃爾筆記</string>
+        <key>display_name_fr</key>
+        <string>Notes Cornell</string>
+        <key>display_name_ko</key>
+        <string>코넬 노트</string>
+        <key>dynamic_id</key>
+        <integer>1</integer>
+        <key>template_id</key>
+        <string>DayAndNight</string>
+        <key>template_type</key>
+        <integer>4</integer>
+    </dict>
+</plist>

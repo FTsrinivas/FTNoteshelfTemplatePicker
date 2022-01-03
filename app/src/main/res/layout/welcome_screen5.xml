@@ -1,0 +1,230 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ns_blue"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/welcome_screen5_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/welcome_screen5_image3_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/welcome_screen5_image1"
+                app:layout_constraintEnd_toEndOf="@id/welcome_screen5_image1"
+                app:layout_constraintStart_toStartOf="@id/welcome_screen5_image1"
+                app:layout_constraintTop_toTopOf="@id/welcome_screen5_image1">
+
+                <ImageView
+                    android:id="@+id/welcome_screen5_image3_left"
+                    android:layout_width="@dimen/welcome_screen5_image3_width"
+                    android:layout_height="@dimen/welcome_screen5_image3_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/notebook_5" />
+
+                <ImageView
+                    android:id="@+id/welcome_screen5_image3_right"
+                    android:layout_width="@dimen/welcome_screen5_image3_width"
+                    android:layout_height="@dimen/welcome_screen5_image3_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/notebook_4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/welcome_screen5_image2_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/welcome_screen5_image1"
+                app:layout_constraintEnd_toEndOf="@id/welcome_screen5_image1"
+                app:layout_constraintStart_toStartOf="@id/welcome_screen5_image1"
+                app:layout_constraintTop_toTopOf="@id/welcome_screen5_image1">
+
+                <ImageView
+                    android:id="@+id/welcome_screen5_image2_left"
+                    android:layout_width="@dimen/welcome_screen5_image2_width"
+                    android:layout_height="@dimen/welcome_screen5_image2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/notebook_2" />
+
+                <ImageView
+                    android:id="@+id/welcome_screen5_image2_right"
+                    android:layout_width="@dimen/welcome_screen5_image2_width"
+                    android:layout_height="@dimen/welcome_screen5_image2_height"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/notebook_3" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/welcome_screen5_image1"
+                android:layout_width="@dimen/welcome_screen5_image1_width"
+                android:layout_height="@dimen/welcome_screen5_image1_height"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/notebook_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/welcome_screen5_one_drive"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:rotation="-15"
+                android:visibility="invisible"
+                android:scaleType="fitXY"
+                android:src="@drawable/universal_onedrive_big"
+                app:layout_constraintBottom_toBottomOf="@id/welcome_screen5_image1"
+                app:layout_constraintEnd_toEndOf="@id/welcome_screen5_image2_layout"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="@id/welcome_screen5_image2_layout"
+                app:layout_constraintTop_toTopOf="@id/welcome_screen5_image1"
+                app:layout_constraintVertical_bias="0.2" />
+
+            <ImageView
+                android:id="@+id/welcome_screen5_dropbox"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:rotation="-15"
+                android:scaleType="fitXY"
+                android:src="@drawable/dropbox"
+                app:layout_constraintBottom_toBottomOf="@id/welcome_screen5_image1"
+                app:layout_constraintStart_toStartOf="@id/welcome_screen5_image2_layout"
+                app:layout_constraintTop_toTopOf="@id/welcome_screen5_image1"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/welcome_screen5_gdrive"
+                android:layout_width="@dimen/_100dp"
+                android:layout_height="@dimen/_100dp"
+                android:rotation="15"
+                android:scaleType="fitXY"
+                android:src="@drawable/gdrive"
+                app:layout_constraintBottom_toBottomOf="@id/welcome_screen5_image1"
+                app:layout_constraintEnd_toEndOf="@id/welcome_screen5_image2_layout"
+                app:layout_constraintTop_toTopOf="@id/welcome_screen5_image1"
+                app:layout_constraintVertical_bias="0.7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/welcome_screen5_title"
+            style="@style/WelcomeScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="@dimen/welcome_screen5_notebook_text_margin"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/backup_your_notes_to_dropbox_or_google_drive"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_screen_title_text_size" />
+
+        <LinearLayout
+            android:id="@+id/welcome_screen5_button_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcome_screen5_restore_backup_button"
+                android:layout_width="@dimen/_240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_white_border"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_43dp"
+                android:paddingVertical="@dimen/_13dp"
+                android:text="@string/restore_backup"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sp" />
+
+            <TextView
+                android:id="@+id/welcome_screen5_start_button"
+                android:layout_width="@dimen/_240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/rounded_corner_button_welcome_screen"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_43dp"
+                android:paddingVertical="@dimen/_13dp"
+                android:text="@string/start_note_taking"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/WelcomeScreenTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/agreeCheckLayout"
+                android:layout_width="@dimen/_32dp"
+                android:layout_height="@dimen/_32dp"
+                android:background="@drawable/check_selected_bg">
+
+                <ImageView
+                    android:id="@+id/agreeCheckBox"
+                    android:layout_width="@dimen/_114dp"
+                    android:layout_height="@dimen/_8dp"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/check" />
+
+            </RelativeLayout>
+
+            <com.fluidtouch.noteshelf.commons.utils.FTFlowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_agree_to"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_16dp" />
+
+                <TextView
+                    android:id="@+id/tvPrivacyPolicyLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy_policy_link"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_16sp" />
+            </com.fluidtouch.noteshelf.commons.utils.FTFlowLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

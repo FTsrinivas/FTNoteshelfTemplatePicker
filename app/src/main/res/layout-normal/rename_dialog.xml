@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:orientation="vertical"
+        android:padding="@dimen/_24dp">
+
+        <TextView
+            android:id="@+id/rename_dialog_title_text_view"
+            style="@style/AlertDialogTitleStyle"
+            android:layout_marginBottom="@dimen/rename_dialog_margin_bottom"
+            android:text="@string/notebook_title" />
+
+        <TextView
+            android:id="@+id/rename_dialog_desc_text_view"
+            style="@style/AlertDialogSupportingTextStyle"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/rename_dialog_margin_bottom"
+            android:fontFamily="@font/roboto"
+            android:text="@string/enter_a_name_for_your" />
+
+        <EditText
+            android:id="@+id/rename_dialog_edit_text"
+            style="@style/AlertDialogEditTextStyle"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:hint="@string/notebook_name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:selectAllOnFocus="true">
+
+            <requestFocus />
+        </EditText>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:background="@color/alert_pos_button" />
+
+        <TextView
+            android:id="@+id/txtError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/alert_supporting_text_size"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/renam_dialog_checkbox"
+            style="@style/AlertDialogSupportingTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_five"
+            android:fontFamily="@font/roboto"
+            android:text="@string/app_will_store_your_password"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/alert_dialog_action_buttons_view"
+        layout="@layout/alert_dialog_action_buttons_view" />
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/tabsLayout">
+
+        <ImageView
+            android:id="@+id/dialog_close_button"
+            style="@style/DialogNavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/clipart_dialog_back_button_padding"
+            android:src="@drawable/close_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/template_mode_tab_layout"
+            android:layout_width="@dimen/clipart_dialog_tab_layout_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_layout_bg"
+            android:gravity="center"
+            android:padding="@dimen/new_2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/portrait_tab"
+                style="@style/TabSelectorItem"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/new_8dp"
+                android:paddingBottom="@dimen/new_8dp"
+                android:text="@string/paper_title_portrait"/>
+
+            <TextView
+                android:id="@+id/landscape_tab"
+                style="@style/TabSelectorItem"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/new_8dp"
+                android:paddingBottom="@dimen/new_8dp"
+                android:background="@android:color/transparent"
+                android:text="@string/paper_title_landscape"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabsLayout"
+        android:layout_marginTop="@dimen/new_19dp"
+        android:layout_marginLeft="@dimen/_44dp"
+        android:layout_marginRight="@dimen/_44dp">
+    <TextView
+        android:id="@+id/choose_paper_template_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_paper_template_title"
+        android:textSize="@dimen/new_32sp"
+        android:textColor="#000000"
+        android:gravity="top"
+        android:layout_alignParentLeft="true"
+        />
+
+        <!--<Button
+            android:id="@+id/freeCoversTemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/free_covers_paper_templates"
+            android:visibility="gone"/>-->
+
+    <Spinner
+        android:id="@+id/deviceModelsSpinner"
+        android:layout_width="314dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_below="@+id/choose_paper_template_title"
+        android:layout_marginTop="@dimen/_8dp"
+        android:gravity="center"
+        android:background="@drawable/device_spinner_background"/>
+
+        <RelativeLayout
+            android:id="@+id/templateCategoriesMainLyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deviceModelsSpinner"
+            android:layout_marginTop="@dimen/_20dp">
+            <Button
+                android:id="@+id/searchiCon"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:background="@drawable/search_dark"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"/>
+
+            <FrameLayout
+                android:id="@+id/searchBannerView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/closeSearchViewBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/back_dark" />
+
+                <EditText
+                    android:id="@+id/search_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:hint="@string/search_template"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="30dp"/>
+
+                <Button
+                    android:id="@+id/clear_txt_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/close_dark" />
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categoryItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="17dp"
+                android:layout_toRightOf="@+id/searchiCon" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30dp"
+            android:layout_below="@+id/templateCategoriesMainLyt" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

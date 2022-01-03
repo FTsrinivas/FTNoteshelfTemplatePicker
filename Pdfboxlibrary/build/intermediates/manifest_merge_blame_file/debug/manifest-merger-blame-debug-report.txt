@@ -1,0 +1,17 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tom_roush.pdfbox"
+4    android:versionCode="1"
+5    android:versionName="2.0.0.0-SNAPSHOT" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\Mani\Downloads\30_12_2021_Mod Noteshelf-Android-UI-4 (1)\Mod Noteshelf-Android-UI-4\Pdfboxlibrary\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\Mani\Downloads\30_12_2021_Mod Noteshelf-Android-UI-4 (1)\Mod Noteshelf-Android-UI-4\Pdfboxlibrary\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->C:\Users\Mani\Downloads\30_12_2021_Mod Noteshelf-Android-UI-4 (1)\Mod Noteshelf-Android-UI-4\Pdfboxlibrary\src\main\AndroidManifest.xml:5:2-78
+11-->C:\Users\Mani\Downloads\30_12_2021_Mod Noteshelf-Android-UI-4 (1)\Mod Noteshelf-Android-UI-4\Pdfboxlibrary\src\main\AndroidManifest.xml:5:19-75
+12
+13</manifest>

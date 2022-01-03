@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/finder_root_layout"
+    android:layout_width="@dimen/new_300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="end"
+    android:background="@color/ns_dialog_bg"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/finder_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/finder_select_all_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/check_all"
+                android:drawablePadding="@dimen/_8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="@dimen/_24dp"
+                android:paddingTop="@dimen/_12dp"
+                android:paddingBottom="@dimen/_16dp"
+                android:textColor="@color/ns_blue"
+                android:textSize="@dimen/new_15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/finder_title_text_view"
+                style="@style/DialogTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="@dimen/new_5dp"
+                android:text="@string/select_pages"
+                android:textSize="@dimen/thumbnail_title_size" />
+
+            <TextView
+                android:id="@+id/finder_done_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="@dimen/new_12dp"
+                android:text="@string/edit"
+                android:textColor="@color/ns_blue"
+                android:textSize="@dimen/new_15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/finder_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_24dp"
+            android:layout_marginTop="@dimen/new_20dp"
+            android:layout_marginEnd="@dimen/new_24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <SearchView
+                android:id="@+id/finder_search_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/new_36dp"
+                android:layout_weight="1"
+                android:background="@drawable/finder_search_bg"
+                android:closeIcon="@drawable/close_circle"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:iconifiedByDefault="false"
+                android:queryBackground="@android:color/transparent"
+                android:queryHint="@string/search"
+                android:searchIcon="@drawable/search_dark"
+                android:theme="@style/SearchViewStyle" />
+
+            <ImageButton
+                android:id="@+id/finder_filter_button"
+                android:layout_width="@dimen/new_36dp"
+                android:layout_height="@dimen/_36dp"
+                android:layout_marginStart="@dimen/new_8dp"
+                android:background="@drawable/finder_search_bg"
+                android:src="@drawable/filter_dark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/finder_bookmark_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include
+                layout="@layout/divider_black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/new_20dp"
+                android:layout_marginTop="@dimen/new_20dp"
+                android:layout_marginEnd="@dimen/new_20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/new_20dp"
+                android:paddingStart="@dimen/new_32dp"
+                android:paddingEnd="@dimen/new_32dp">
+
+                <TextView
+                    android:id="@+id/finder_bookmarked_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="@string/bookmarked"
+                    android:textColor="@color/ns_text"
+                    android:textSize="@dimen/new_16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/finder_bookmarks_close"
+                    android:layout_width="@dimen/new_14dp"
+                    android:layout_height="@dimen/new_14dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="53dp"
+                    android:layout_toEndOf="@id/finder_bookmarked_title"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/close_circle" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/new_244dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/new_28dp"
+                android:layout_marginTop="@dimen/new_16dp"
+                android:layout_marginEnd="@dimen/new_28dp"
+                android:layout_marginBottom="@dimen/new_2dp"
+                android:background="@drawable/finder_tab_layout_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/new_2dp">
+
+                <TextView
+                    android:id="@+id/finder_bookmark_thumbnails_tab"
+                    style="@style/TabSelectorItem"
+                    android:background="@drawable/finder_tab_item_bg"
+                    android:text="@string/thumbnails"
+                    android:textSize="@dimen/new_14sp" />
+
+                <TextView
+                    android:id="@+id/finder_bookmark_list_tab"
+                    style="@style/TabSelectorItem"
+                    android:background="@android:color/transparent"
+                    android:text="@string/list"
+                    android:textSize="@dimen/new_14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_bookmarks_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_forty"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bookmark_thumbnail_image_view"
+                    android:layout_width="@dimen/new_120dp"
+                    android:layout_height="@dimen/new_150dp"
+                    android:alpha="0.5"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="@dimen/new_4dp"
+                    app:cardElevation="1dp" />
+
+                <ImageButton
+                    android:layout_width="@dimen/new_24dp"
+                    android:layout_height="@dimen/new_24dp"
+                    android:layout_alignEnd="@id/bookmark_thumbnail_image_view"
+                    android:layout_alignParentTop="@id/bookmark_thumbnail_image_view"
+                    android:layout_marginTop="@dimen/margin_miuns_three"
+                    android:layout_marginEnd="@dimen/_4dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bookmark_blue" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_fifty_four"
+                android:layout_marginTop="@dimen/_14dp"
+                android:layout_marginEnd="@dimen/margin_fifty_four"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="@string/no_bookmarked_pages"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_twelve" />
+
+            <com.fluidtouch.noteshelf.commons.ui.TextViewWithImages
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_43dp"
+                android:layout_marginTop="@dimen/_7dp"
+                android:layout_marginEnd="@dimen/_43dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="@string/no_bookmarks_desc"
+                android:textColor="@color/ns_text"
+                android:textSize="@dimen/textsize_twelve" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/finder_thumbnail_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/new_43dp"
+            android:layout_marginEnd="@dimen/new_43dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/new_26dp"
+            tools:listitem="@layout/item_thumbnail_recycler_view" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/finder_bookmark_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/new_24dp"
+            android:layout_marginEnd="@dimen/new_24dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/new_13dp"
+            android:paddingBottom="@dimen/new_13dp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_bookmark_recycler_view" />
+
+        <TextView
+            android:id="@+id/finder_no_pages_found_message"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="@string/no_result_found"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/new_12sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/finder_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:gravity="center"
+            android:clipToPadding="false"
+            android:paddingBottom="20dp"
+            android:orientation="vertical"
+            android:rotation="180">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/new_71dp"
+                android:rotation="180"
+                app:cardElevation="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/delete_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/delete_dark"
+                        android:drawablePadding="@dimen/new_2dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="@dimen/new_14dp"
+                        android:text="@string/delete"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/new_11sp" />
+
+                    <TextView
+                        android:id="@+id/duplicate_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/duplicate_dark"
+                        android:drawablePadding="@dimen/new_2dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="@dimen/new_14dp"
+                        android:text="@string/duplicate"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/new_11sp" />
+
+                    <TextView
+                        android:id="@+id/move_button"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/move_dark"
+                        android:drawablePadding="@dimen/new_2dp"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:padding="@dimen/new_14dp"
+                        android:text="@string/move"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/new_11sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/finder_expand_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:padding="@dimen/new_12dp">
+
+        <ImageView
+            android:layout_width="@dimen/new_4dp"
+            android:layout_height="@dimen/new_36dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/flatbar" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/moveto_panel_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/finder_indexing_dialog"
+        layout="@layout/thumbnail_indexing_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/new_24dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

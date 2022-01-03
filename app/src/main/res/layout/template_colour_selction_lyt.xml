@@ -1,0 +1,53 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/templateTitleID">
+
+    <View
+        android:id="@+id/selectionColorView1"
+        android:layout_width="@dimen/new_32dp"
+        android:layout_height="@dimen/new_32dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selectioncolorview"/>
+
+    <View
+        android:id="@+id/selectionColorView2"
+        android:layout_width="@dimen/new_32dp"
+        android:layout_height="@dimen/new_32dp"
+        android:layout_below="@+id/templateTitleID"
+        android:background="@drawable/selectioncolorview"
+        android:layout_marginLeft="@dimen/new_8dp"
+        android:layout_toRightOf="@+id/selectionColorView1"/>
+
+    <View
+        android:id="@+id/selectionColorView3"
+        android:layout_width="@dimen/new_32dp"
+        android:layout_height="@dimen/new_32dp"
+        android:layout_below="@+id/templateTitleID"
+        android:background="@drawable/selectioncolorview"
+        android:layout_marginLeft="@dimen/new_8dp"
+        android:layout_toRightOf="@+id/selectionColorView2"/>
+
+    <FrameLayout
+        android:id="@+id/selectionMoreColorViewFrmLyt"
+        android:layout_width="@dimen/new_24dp"
+        android:layout_height="@dimen/new_24dp"
+        android:layout_marginLeft="@dimen/new_8dp"
+        android:layout_toRightOf="@+id/selectionColorView3"
+        android:layout_centerVertical="true">
+    <ImageView
+        android:id="@+id/selectionMoreColorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/templateTitleID"
+        android:src="@mipmap/more_colrs_vert_icon"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

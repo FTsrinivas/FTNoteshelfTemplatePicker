@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mod_Noteshelf-Android-UI-4.iml" filepath="$PROJECT_DIR$/.idea/modules/Mod_Noteshelf-Android-UI-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pdfboxlibrary/Mod_Noteshelf-Android-UI-4.Pdfboxlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/Pdfboxlibrary/Mod_Noteshelf-Android-UI-4.Pdfboxlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PredictionSDKSample/Mod_Noteshelf-Android-UI-4.PredictionSDKSample.iml" filepath="$PROJECT_DIR$/.idea/modules/PredictionSDKSample/Mod_Noteshelf-Android-UI-4.PredictionSDKSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Mod_Noteshelf-Android-UI-4.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Mod_Noteshelf-Android-UI-4.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/colorPickerLibrary/Mod_Noteshelf-Android-UI-4.colorPickerLibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/colorPickerLibrary/Mod_Noteshelf-Android-UI-4.colorPickerLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/openCVLibrary344/Mod_Noteshelf-Android-UI-4.openCVLibrary344.iml" filepath="$PROJECT_DIR$/.idea/modules/openCVLibrary344/Mod_Noteshelf-Android-UI-4.openCVLibrary344.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pdfium-library/Mod_Noteshelf-Android-UI-4.pdfium-library.iml" filepath="$PROJECT_DIR$/.idea/modules/pdfium-library/Mod_Noteshelf-Android-UI-4.pdfium-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sardine-android-master/Mod_Noteshelf-Android-UI-4.sardine-android-master.iml" filepath="$PROJECT_DIR$/.idea/modules/sardine-android-master/Mod_Noteshelf-Android-UI-4.sardine-android-master.iml" />
+    </modules>
+  </component>
+</project>

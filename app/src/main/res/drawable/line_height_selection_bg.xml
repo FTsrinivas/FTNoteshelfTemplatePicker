@@ -1,0 +1,21 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <stroke
+        android:width="@dimen/new_2dp"
+        android:color="#5377F8" >
+    </stroke>
+
+    <padding
+        android:left="@dimen/new_2dp"
+        android:top="@dimen/new_2dp"
+        android:right="@dimen/new_2dp"
+        android:bottom="@dimen/new_2dp">
+    </padding>
+
+    <corners
+        android:radius="@dimen/new_2dp">
+    </corners>
+
+</shape>

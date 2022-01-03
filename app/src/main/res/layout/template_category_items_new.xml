@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/new_48dp"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:paddingLeft="@dimen/new_16dp"
+    android:paddingRight="@dimen/new_16dp">
+
+    <TextView
+        android:id="@+id/templatecategoryItemID"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/device_model_spinner_item"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:letterSpacing="0.09"
+        android:textSize="@dimen/new_14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="normal"
+        android:gravity="center|center_vertical"
+        android:layout_weight="1"
+        android:lineHeight="@dimen/new_16sp"/>
+
+    <View
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/category_item_selection_view_bg"
+        android:visibility="visible"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

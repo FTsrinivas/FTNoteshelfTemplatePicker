@@ -1,0 +1,26 @@
+                    Executable : /Users/srinivas/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/src/main/cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=19
+-DANDROID_ABI=arm64-v8a
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DANDROID_NDK=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462
+-DCMAKE_ANDROID_NDK=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462
+-DCMAKE_TOOLCHAIN_FILE=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/srinivas/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_CXX_FLAGS=-std=c++11 -frtti -fexceptions
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a
+-DCMAKE_BUILD_TYPE=Debug
+-B/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/e3x3s2a3/arm64-v8a
+-GNinja
+-DANDROID_STL=c++_static
+-DANDROID_PLATFORM=android-21
+-DANDROID_ARM_NEON=TRUE
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

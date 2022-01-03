@@ -1,0 +1,26 @@
+                    Executable : C:\Users\Mani\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HC:\Users\Mani\Downloads\Mod Noteshelf-Android-UI-4\pdfium-library\src\main\cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=19
+-DANDROID_ABI=arm64-v8a
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DANDROID_NDK=C:\Users\Mani\AppData\Local\Android\Sdk\ndk\21.1.6352462
+-DCMAKE_ANDROID_NDK=C:\Users\Mani\AppData\Local\Android\Sdk\ndk\21.1.6352462
+-DCMAKE_TOOLCHAIN_FILE=C:\Users\Mani\AppData\Local\Android\Sdk\ndk\21.1.6352462\build\cmake\android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=C:\Users\Mani\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_CXX_FLAGS=-std=c++11 -frtti -fexceptions
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\Mani\Downloads\Mod Noteshelf-Android-UI-4\pdfium-library\build\intermediates\cxx\Debug\4u6p6li5\obj\arm64-v8a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=C:\Users\Mani\Downloads\Mod Noteshelf-Android-UI-4\pdfium-library\build\intermediates\cxx\Debug\4u6p6li5\obj\arm64-v8a
+-DCMAKE_BUILD_TYPE=Debug
+-BC:\Users\Mani\Downloads\Mod Noteshelf-Android-UI-4\pdfium-library\.cxx\Debug\4u6p6li5\arm64-v8a
+-GNinja
+-DANDROID_STL=c++_static
+-DANDROID_PLATFORM=android-21
+-DANDROID_ARM_NEON=TRUE
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

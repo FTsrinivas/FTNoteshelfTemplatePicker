@@ -1,0 +1,2 @@
+ninja: Entering directory `/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/e3x3s2a3/x86'
+ninja: no work to do.

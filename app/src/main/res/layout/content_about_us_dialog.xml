@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/new_28dp"
+    android:layout_marginEnd="@dimen/new_28dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:text="@string/about_us" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_dialog_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/new_24dp"
+                android:alpha="0.7"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:text="@string/set_version"
+                android:textColor="@color/ns_text"
+                android:textSize="@dimen/new_14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/about_dialog_privacy_policy"
+                style="@style/PopupItemTextStyle"
+                android:layout_marginBottom="@dimen/new_24dp"
+                android:text="@string/privacy_policy" />
+
+            <LinearLayout
+                android:id="@+id/about_dialog_social_networks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/new_8dp"
+                    android:alpha="0.5"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="start"
+                    android:text="@string/connect_with_other_noteshelfers"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/new_11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/about_dialog_facebook"
+                    style="@style/PopupItemTextStyle"
+                    android:drawableStart="@drawable/social_facebook"
+                    android:drawablePadding="@dimen/new_16dp"
+                    android:text="@string/like_us_on_facebook" />
+
+                <include layout="@layout/divider_black" />
+
+                <TextView
+                    android:id="@+id/about_dialog_instagram"
+                    style="@style/PopupItemTextStyle"
+                    android:drawableStart="@drawable/social_instagram"
+                    android:drawablePadding="@dimen/new_16dp"
+                    android:text="@string/follow_us_on_instagram" />
+
+                <include layout="@layout/divider_black" />
+
+                <TextView
+                    android:id="@+id/about_dialog_twitter"
+                    style="@style/PopupItemTextStyle"
+                    android:drawableStart="@drawable/social_twitter"
+                    android:drawablePadding="@dimen/new_16dp"
+                    android:text="@string/find_us_on_twitter" />
+
+                <include layout="@layout/divider_black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/about_dialog_whats_new"
+                style="@style/PopupItemTextStyle"
+                android:visibility="gone"
+                android:text="@string/whats_new" />
+
+            <TextView
+                android:id="@+id/about_dialog_welcome_tour"
+                style="@style/PopupItemTextStyle"
+                android:text="@string/welcome_tour" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="@dimen/new_28dp"
+        android:layout_marginEnd="@dimen/new_28dp"
+        android:layout_marginBottom="@dimen/new_31dp"
+        android:alpha="0.8"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="@string/noteshelf_copyright"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/new_14sp"
+        android:textStyle="normal" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PopupStyle">
+
+    <LinearLayout
+        style="@style/DialogStyle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_five"
+        android:paddingBottom="@dimen/margin_five">
+
+        <TextView
+            android:id="@+id/category_recent_options_pin_text_view"
+            style="@style/PopupItemTextStyle"
+            android:paddingHorizontal="24dp"
+            android:text="@string/pin_notebook" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/separator" />
+
+        <TextView
+            android:id="@+id/category_recent_options_remove_text_view"
+            style="@style/PopupItemTextStyle"
+            android:paddingHorizontal="24dp"
+            android:text="@string/remove_from_recents"
+            android:textColor="#CC4235" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ns_blue"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingHorizontal="100dp">
+
+    <include layout="@layout/content_welcome_screen_authorisation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp">
+
+        <TextView
+            android:id="@+id/allow_to_proceed_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_button_welcome_screen"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:maxWidth="240dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="14dp"
+            android:text="@string/allow_to_proceed"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cancel_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_white_border"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:maxWidth="240dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="14dp"
+            android:text="@string/cancel_and_quit_app"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

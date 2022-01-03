@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/new_320dp"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/new_56dp">
+
+            <ImageButton
+                android:id="@+id/closeTabsBtn"
+                android:layout_width="@dimen/new_24dp"
+                android:layout_height="@dimen/new_24dp"
+                android:background="@mipmap/close_search_btn_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/new_16dp"
+                android:layout_marginLeft="@dimen/new_16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/new_56dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/start_date"
+                android:textColor="#000000"
+                android:textSize="@dimen/new_14sp"
+                android:id="@+id/startDateText"
+                android:letterSpacing="0.09"
+                android:lineSpacingExtra="0sp"
+                android:lineHeight="@dimen/new_16dp"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <!--<TextView
+                android:id="@+id/dialog_done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/done"
+                android:textColor="@color/ns_blue"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical|end"/>-->
+
+        </RelativeLayout>
+
+        <DatePicker
+            android:id="@+id/start_date_picker"
+            android:theme="@style/MyDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#14212121" />
+
+        <TextView
+            android:id="@+id/end_month_date_picker"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/new_56dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/end_date"
+            android:textColor="#000000"
+            android:textSize="@dimen/new_14sp"
+            android:letterSpacing="0.09"
+            android:lineSpacingExtra="0sp"
+            android:lineHeight="@dimen/new_16dp"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <DatePicker
+            android:id="@+id/end_date_picker"
+            android:theme="@style/MyDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#14212121" />
+
+        <Button
+            android:id="@+id/dialog_done_button"
+            android:layout_width="@dimen/new_118dp"
+            android:layout_height="@dimen/new_36dp"
+            android:layout_gravity="end"
+            android:text="@string/done"
+            android:textSize="@dimen/new_14sp"
+            android:lineHeight="@dimen/new_16sp"
+            android:textColor="@color/white"
+            android:letterSpacing="0.09"
+            android:lineSpacingExtra="0sp"
+            android:background="@drawable/done_button_bg"
+            android:layout_marginBottom="@dimen/new_7dp"
+            android:layout_marginTop="@dimen/new_7dp"
+            android:layout_marginRight="@dimen/new_8dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

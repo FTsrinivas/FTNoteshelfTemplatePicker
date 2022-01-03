@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/new_28dp"
+    android:layout_marginEnd="@dimen/new_28dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:text="@string/support" />
+
+    <TextView
+        android:id="@+id/support_get_help_text_view"
+        style="@style/PopupItemTextStyle"
+        android:text="@string/get_help" />
+
+    <include layout="@layout/divider_black" />
+
+    <TextView
+        android:id="@+id/support_send_logs_text_view"
+        style="@style/PopupItemTextStyle"
+        android:text="@string/send_support_log" />
+
+</LinearLayout>

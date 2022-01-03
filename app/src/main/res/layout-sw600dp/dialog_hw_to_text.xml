@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="580dp"
+        android:layout_height="510dp">
+
+        <include layout="@layout/dialog_hwtotext_container" />
+
+        <include layout="@layout/dialog_ct_textbox_settings" />
+
+    </RelativeLayout>
+
+</FrameLayout>

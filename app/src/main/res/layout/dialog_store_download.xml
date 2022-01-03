@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/textView"
+        android:layout_width="@dimen/new_notebook_dialog_width"
+        android:layout_height="@dimen/new_notebook_dialog_height"
+        android:background="@drawable/round_corners_dialog_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgStoreDialogClose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/_24dp"
+                android:scaleType="center"
+                android:src="@mipmap/store_close_dark" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.01"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:layout_marginTop="@dimen/margin_seventeen"
+            android:layout_marginBottom="@dimen/margin_seventeen"
+            android:alpha=".2"
+            android:background="@drawable/store_dot_gray"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/storeGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_46dp"
+                android:scrollbars="none"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_46dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/store_download_bg"
+                android:text="@string/download"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

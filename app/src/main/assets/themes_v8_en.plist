@@ -1,0 +1,2958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>version</key>
+		<integer>24</integer>
+		<key>deviceMetaData</key>
+		<dict>
+			<key>deviceData</key>
+			<array>
+				<dict>
+					<key>dimension_land</key>
+					<string>792_612</string>
+					<key>dimension_port</key>
+					<string>612_792</string>
+					<key>isiPad</key>
+					<true/>
+					<key>identifier</key>
+					<string>standard1</string>
+					<key>displayName</key>
+					<string>This Device</string>
+					<key>dimension</key>
+					<string>612_792</string>
+				</dict>
+				<dict>
+					<key>dimension_land</key>
+					<string>792_612</string>
+					<key>dimension_port</key>
+					<string>612_792</string>
+					<key>isiPad</key>
+					<true/>
+					<key>identifier</key>
+					<string>standard1</string>
+					<key>displayName</key>
+					<string>Letter 8.5 x 11"</string>
+					<key>dimension</key>
+					<string>612_792</string>
+				</dict>
+				<dict>
+					<key>dimension_land</key>
+					<string>1008_612</string>
+					<key>dimension_port</key>
+					<string>612_1008</string>
+					<key>isiPad</key>
+					<true/>
+					<key>identifier</key>
+					<string>standard1</string>
+					<key>displayName</key>
+					<string>Legal 8.5 x 14"</string>
+					<key>dimension</key>
+					<string>612_1008</string>
+				</dict>
+				<dict>
+					<key>dimension_port</key>
+					<string>420_595</string>
+					<key>dimension_land</key>
+					<string>595_420</string>
+					<key>isiPad</key>
+					<true/>
+					<key>identifier</key>
+					<string>standard4</string>
+					<key>displayName</key>
+					<string>A5 5.8 x 8.3"</string>
+					<key>dimension</key>
+					<string>420_595</string>
+				</dict>
+				<dict>
+					<key>dimension_port</key>
+					<string>595_842</string>
+					<key>dimension_land</key>
+					<string>842_595</string>
+					<key>isiPad</key>
+					<true/>
+					<key>identifier</key>
+					<string>standard2</string>
+					<key>displayName</key>
+					<string>A4 8.3 x 11.7"</string>
+					<key>dimension</key>
+					<string>595_842</string>
+				</dict>
+				<dict>
+					<key>dimension_port</key>
+					<string>842_1191</string>
+					<key>dimension_land</key>
+					<string>1191_842</string>
+					<key>isiPad</key>
+					<true/>
+					<key>identifier</key>
+					<string>standard3</string>
+					<key>displayName</key>
+					<string>A3 11.7 x 16.5"</string>
+					<key>dimension</key>
+					<string>842_1191</string>
+				</dict>
+				<dict>
+					<key>isiPad</key>
+					<false/>
+					<key>dimension_land</key>
+					<string>650_366</string>
+					<key>dimension_port</key>
+					<string>366_650</string>
+					<key>identifier</key>
+					<string>mobile1</string>
+					<key>displayName</key>
+					<string>Mobile</string>
+					<key>dimension</key>
+					<string>366_650</string>
+				</dict>
+			</array>
+		</dict>
+		<key>downloadableThemes</key>
+		<dict>
+			<key>sections</key>
+			<array>
+				<dict>
+					<key>packs</key>
+					<array>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Christmas, 2020, New Year, 2021, snowflakes, flakes, dots, star, tree, jingle bells, stars, greetings, greeting card, polar bear, trees, pine, festive</string>
+							<key>theme_display_name</key>
+							<string>2021 Holidays</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers &amp; Papers</string>
+							<key>theme_filename</key>
+							<string>Holiday Pack 2021</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>2d7ed0a0-fc72-44d6-9811-c78aa6b12f1f</string>
+							<key>banner_token</key>
+							<string>185cd0bb-7098-4ffc-a0de-dda7e5e33669</string>
+							<key>icon_large_token</key>
+							<string>bdccd00f-786f-4176-a4d1-cc1c9ff79212</string>
+							<key>icon_small_token</key>
+							<string>4c2b2cc4-9817-48c7-971d-3837856735f7</string>
+							<key>info_token</key>
+							<string>4f066e3e-13d6-4493-abf7-a6aa85275888</string>
+						</dict>
+
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>tasks, appointments, planners, checklist, list, tasklist</string>
+							<key>theme_display_name</key>
+							<string>Productivity</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Productivity Pack</string>
+							<key>version_no</key>
+							<integer>2</integer>
+							<key>theme_token</key>
+							<string>367e2c0b-74d5-4c26-a133-4eef90b2c512</string>
+							<key>banner_token</key>
+							<string>690f74f0-a302-492c-88da-2948fe9e69e9</string>
+							<key>icon_large_token</key>
+							<string>e2c15005-b6b8-4236-b00f-46d4d6213b4e</string>
+							<key>icon_small_token</key>
+							<string>134b5dca-b13a-4f7a-8b53-367981e3ec8c</string>
+							<key>info_token</key>
+							<string>c711f268-f0bc-498c-a0fc-c70e75be4166</string>
+
+
+						</dict>
+
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>health, fitness, food, diet, meals, fit, exercise, workout, gym, yoga, run, jog</string>
+							<key>theme_display_name</key>
+							<string>Health &amp; Fitness</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Health &amp; Fitness</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>cea514bf-c39e-4639-aa99-920fc8cd88f5</string>
+							<key>banner_token</key>
+							<string>7dd22999-721e-4605-a1c5-a4ad61862b6f</string>
+							<key>icon_large_token</key>
+							<string>2c73a3b0-9a65-441b-9a61-a24144ecff94</string>
+							<key>icon_small_token</key>
+							<string>954ab70e-3e08-46fe-961a-f526cf806b5c</string>
+							<key>info_token</key>
+							<string>e0b8a6b1-02ad-4b7f-b58c-8ffb6010769c</string>
+
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Featured</string>
+					<key>sectiontype</key>
+					<integer>0</integer>
+				</dict>
+				<dict>
+					<key>packs</key>
+					<array>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Participants, persona, UX, user experience, user story, user study, user research.</string>
+							<key>theme_display_name</key>
+							<string>UX Designers</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>UX Designers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>9dbb80ab-5d6a-4d67-8f4a-23773e849f1d</string>
+							<key>banner_token</key>
+							<string>cac0b2a8-182b-4e10-9ede-363e31bef5de</string>
+							<key>icon_large_token</key>
+							<string>be4f27a6-4b41-4aaa-97cc-87b0dba13f5d</string>
+							<key>icon_small_token</key>
+							<string>c518e1b3-dc4e-4512-99b1-de792241f1b2</string>
+							<key>info_token</key>
+							<string>404f0634-91c6-4d41-858c-d5c4293605c6</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>appointment, therapy notes, therapy, screening, first contact form, HIPAA, checklist</string>
+							<key>theme_display_name</key>
+							<string>Therapists</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Therapists</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>4edabe20-b752-4fb1-aef5-bbcb7e3d3741</string>
+							<key>banner_token</key>
+							<string>cff6b974-a06f-4372-8361-8077a2a70c04</string>
+							<key>icon_large_token</key>
+							<string>04420d5a-86ae-4087-b427-2db332b375bf</string>
+							<key>icon_small_token</key>
+							<string>0c64420c-2af0-40c9-a1a0-ed62d7e46944</string>
+							<key>info_token</key>
+							<string>aa23c2b3-6ce1-43e8-ad65-aa0631ebaf79</string>
+
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>event management, event, speakers, budget, event planning, attendance, staff, support, schedule</string>
+							<key>theme_display_name</key>
+							<string>Event Planners</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Event Planners</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>3e77968e-911a-459a-921f-08ae8f90a39a</string>
+							<key>banner_token</key>
+							<string>768d2f30-7f45-4ac5-93ed-e700be0dd448</string>
+							<key>icon_large_token</key>
+							<string>71f9c679-946a-4026-b76e-42f2c5dcd72a</string>
+							<key>icon_small_token</key>
+							<string>db8b78ce-3d34-4364-a6eb-70818583d6c3</string>
+							<key>info_token</key>
+							<string>285b6603-1ec1-4240-8a99-fe0e03267133</string>
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>baby care, baby, sleep, parent, single parent, feeding, diaper, food, pump, growth, baby activities</string>
+							<key>theme_display_name</key>
+							<string>Parents</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Parents</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>b8bec104-719e-4eaf-9922-bf1e5f68f7f6</string>
+							<key>banner_token</key>
+							<string>c12568e4-8a82-4fb2-8d40-11bd87ccc5ce</string>
+							<key>icon_large_token</key>
+							<string>fbaf71a8-2c81-4830-9f43-033671ad17c3</string>
+							<key>icon_small_token</key>
+							<string>e832651e-3ccb-45f8-b099-21cc23e889f0</string>
+							<key>info_token</key>
+							<string>793ca8a8-fe3c-44d1-b906-9e2f4f113d90</string>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Mojave, mohave, dark, soothing, business, minimal, elegant</string>
+							<key>theme_display_name</key>
+							<string>Mojave</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Mojave covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>05e20230-fb08-4014-9426-4791241d21f9</string>
+							<key>banner_token</key>
+							<string>0c520e0b-91cf-452a-ba5b-e4313df2389e</string>
+							<key>icon_large_token</key>
+							<string>b8abd7a1-a9e7-4a63-8e84-050e6407f387</string>
+							<key>icon_small_token</key>
+							<string>94c979cf-63ee-4fc7-a344-760e8305bfde</string>
+							<key>info_token</key>
+							<string>bc9627fe-4e3f-447d-845c-13a3c846de67</string>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Art, Games, Mathematics, Brain, Chemistry, Laboratory, School bus, Fountain Pen, Pencil, Jigsaw, Certificates, Apple, Whiteboard, Library, Craft, Alarm, University, School, Notes, Sharing</string>
+							<key>theme_display_name</key>
+							<string>School Life</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>School Life Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>36f64201-bb81-4059-b16e-ab16fc640b44</string>
+							<key>banner_token</key>
+							<string>5269ebb9-5216-4944-8195-753f9b945dfa</string>
+							<key>icon_large_token</key>
+							<string>b8f07a53-bdd5-46fc-833c-557ab60432be</string>
+							<key>icon_small_token</key>
+							<string>681833e3-b798-4bab-8e60-6cca76063ee4</string>
+							<key>info_token</key>
+							<string>c0593047-581d-4991-99f5-bae603dabcbf</string>
+
+
+
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Recently Added</string>
+					<key>sectiontype</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>packs</key>
+					<array>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>mosaic, patches, waves, eiffel, stripes</string>
+							<key>theme_display_name</key>
+							<string>Abstract</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Abstract Covers</string>
+							<key>version_no</key>
+							<integer>3</integer>
+							<key>theme_token</key>
+							<string>3601cf19-2930-470d-845b-747cdb9b9d71</string>
+							<key>banner_token</key>
+							<string>d1fc8886-4d51-435d-b05e-2866cf4eb79f</string>
+							<key>icon_large_token</key>
+							<string>9d49c126-0231-43a2-bdf0-b0693ec40970</string>
+							<key>icon_small_token</key>
+							<string>5c586dd0-6409-4094-9a9b-8198e4bad191</string>
+							<key>info_token</key>
+							<string>5fc0f4ef-1461-4d28-9f9c-6ec25e291157</string>
+
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>celebrations, party, birthday, geometry, shapes, wedding, confectum, poppers, party poppers, triangle, square, rectangle</string>
+							<key>theme_display_name</key>
+							<string>Confetti</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Confetti Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>457489aa-2799-43ac-a0b2-a3cbb5ce2dbc</string>
+							<key>banner_token</key>
+							<string>dfa2807d-5808-412e-bdf3-c5c010fc9d3e</string>
+							<key>icon_large_token</key>
+							<string>0191afc8-d9de-473c-bdbc-2419fdd57a54</string>
+							<key>icon_small_token</key>
+							<string>a973727a-ef2d-4a3d-bcb7-fc1805a89694</string>
+							<key>info_token</key>
+							<string>369c9fde-56e0-4a93-88cf-08c3a250ec0c</string>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>watercolors, brush effect, painting, artistic, colors, red, orange, blue, purple, violet, pink, green, yellow, chrome</string>
+							<key>theme_display_name</key>
+							<string>Watercolor</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Watercolor Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>68bc1e11-6864-4216-8165-9da545a229e6</string>
+							<key>banner_token</key>
+							<string>0c30bfb8-f698-44cc-be5d-86ac62701955</string>
+							<key>icon_large_token</key>
+							<string>038d08db-b09c-4124-b94a-b1aaf7900c53</string>
+							<key>icon_small_token</key>
+							<string>bdc4822e-fc12-425a-8acd-9fb9465676f4</string>
+							<key>info_token</key>
+							<string>a1b12c3c-f093-4143-bbd1-aa7c04ca616c</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Leather, texture, grey, yellow, red, maroon, blue, brown, grey melange, black melange</string>
+							<key>theme_display_name</key>
+							<string>Classic Leather</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Classic Leather Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>1bef1145-58f0-4135-9d57-dff1e7ab91ea</string>
+							<key>banner_token</key>
+							<string>8ccba599-4ca9-4d7d-a127-d78c73d2ec4b</string>
+							<key>icon_large_token</key>
+							<string>7a8c7f33-848c-4fac-a9c9-bb588aa0b462</string>
+							<key>icon_small_token</key>
+							<string>1698c3c2-5cce-48d9-8c5c-26d89e123301</string>
+							<key>info_token</key>
+							<string>759bbdfd-379b-49fe-b7f3-8cd6b53d9dbb</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>patches, brush, stroke, mosaic, stripes, patterns</string>
+							<key>theme_display_name</key>
+							<string>Art</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Art Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>287d8dc0-473c-4370-8176-44b405173890</string>
+							<key>banner_token</key>
+							<string>078828bb-c0de-4c0c-837d-eb2f71ad6ece</string>
+							<key>icon_large_token</key>
+							<string>1dcc57ef-342c-43e5-a09e-7fa717651419</string>
+							<key>icon_small_token</key>
+							<string>03b99225-fc47-4806-870e-395920fe6e62</string>
+							<key>info_token</key>
+							<string>b6e78159-dc25-414e-b64e-12c2b5dc5e54</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Summer, leaves, green, go green, nature, natural, forest, greenery, summer vibe, flowers, canopy, paradise, ferns, cactus</string>
+							<key>theme_display_name</key>
+							<string>Tropical</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Tropical</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>ebda6d54-81de-4eea-b1fe-c1758cc6243a</string>
+							<key>banner_token</key>
+							<string>a7110071-2c79-45db-b6f8-39ce36b6482b</string>
+							<key>icon_large_token</key>
+							<string>215254f8-181d-400c-8f02-b5d78850932f</string>
+							<key>icon_small_token</key>
+							<string>037b89bb-a634-4661-ae7a-613fb9742d39</string>
+							<key>info_token</key>
+							<string>9cb5de32-722b-4c7c-a7ea-baaf5879c497</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>geometric, shapes, triangle, curves, hyperbola, lines, sector, rectangle, square, spheres</string>
+							<key>theme_display_name</key>
+							<string>Geometric</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Geometric Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>a6c5c2ba-223b-407e-8e26-41e11a8eb055</string>
+							<key>banner_token</key>
+							<string>641e2c15-f9ba-4573-a15b-09db1e88aebd</string>
+							<key>icon_large_token</key>
+							<string>8f7230ee-39ff-40c0-a617-47ad5ef03a1c</string>
+							<key>icon_small_token</key>
+							<string>4be427e8-4858-4b48-a013-e216e772498b</string>
+							<key>info_token</key>
+							<string>f88ea6b7-b4d4-44f0-b45e-db86f86d1aa7</string>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Quilt, fabric, Appliqué, Quilting, Trapunto, Embellishment, Quillow, quilt patterns, triangle</string>
+							<key>theme_display_name</key>
+							<string>Quilt</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Quilt Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>b73e7dba-c073-45bb-9911-7c3333eda30b</string>
+							<key>banner_token</key>
+							<string>0950ba5e-8577-49c2-a334-d01682736036</string>
+							<key>icon_large_token</key>
+							<string>e6d17afb-293c-49d6-8ce4-dfc552468ae6</string>
+							<key>icon_small_token</key>
+							<string>2a64f753-ecfb-4a91-8a16-9159ae01fbd0</string>
+							<key>info_token</key>
+							<string>9e4003f2-556f-4514-ba3b-1281e6df3483</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Squares, circles, capsules, tablets, triangles, colorful, shapes</string>
+							<key>theme_display_name</key>
+							<string>Shapes</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Shapes Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>bf15650c-c714-4307-8151-1fbf497a052a</string>
+							<key>banner_token</key>
+							<string>336a1acf-2753-4f55-a5af-f1ae285b165c</string>
+							<key>icon_large_token</key>
+							<string>8be817b8-bcac-48fa-bbce-4a9323617df4</string>
+							<key>icon_small_token</key>
+							<string>94b47a52-1ad7-40a9-b27e-2969fb6ecb68</string>
+							<key>info_token</key>
+							<string>d6c3c298-64a4-4a6b-ba6d-287629386b90</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Marine, fish, jelly fish, star fish, corals, sea, waves, summers, beaches, holidays, planktons</string>
+							<key>theme_display_name</key>
+							<string>Marine</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Marine Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Mathematics, Physics, Chemistry, Biology, Literature, History, Geometry, Algebra, Language, Drama, Research, Poetry, Computer, Astronomy, Economics, Art</string>
+							<key>theme_display_name</key>
+							<string>Subjects</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Subjects Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>4e3b6e24-28c2-474d-8098-ec467ca9eed5</string>
+							<key>banner_token</key>
+							<string>e3d993a6-541c-47b2-8f97-7ef6a64989bc</string>
+							<key>icon_large_token</key>
+							<string>2416196e-80af-4334-8a91-2514c775ac98</string>
+							<key>icon_small_token</key>
+							<string>c6b2ea82-bc62-41ec-a3e2-e38516152dc3</string>
+							<key>info_token</key>
+							<string>d43afa4c-984d-4487-a221-f0dc08010f8d</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Art, Games, Mathematics, Brain, Chemistry, Laboratory, School bus, Fountain Pen, Pencil, Jigsaw, Certificates, Apple, Whiteboard, Library, Craft, Alarm, University, School, Notes, Sharing</string>
+							<key>theme_display_name</key>
+							<string>School Life</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>School Life Covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>36f64201-bb81-4059-b16e-ab16fc640b44</string>
+							<key>banner_token</key>
+							<string>5269ebb9-5216-4944-8195-753f9b945dfa</string>
+							<key>icon_large_token</key>
+							<string>b8f07a53-bdd5-46fc-833c-557ab60432be</string>
+							<key>icon_small_token</key>
+							<string>681833e3-b798-4bab-8e60-6cca76063ee4</string>
+							<key>info_token</key>
+							<string>c0593047-581d-4991-99f5-bae603dabcbf</string>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Mojave, mohave, dark, soothing, business, minimal, elegant</string>
+							<key>theme_display_name</key>
+							<string>Mojave</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers</string>
+							<key>theme_filename</key>
+							<string>Mojave covers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>05e20230-fb08-4014-9426-4791241d21f9</string>
+							<key>banner_token</key>
+							<string>0c520e0b-91cf-452a-ba5b-e4313df2389e</string>
+							<key>icon_large_token</key>
+							<string>b8abd7a1-a9e7-4a63-8e84-050e6407f387</string>
+							<key>icon_small_token</key>
+							<string>94c979cf-63ee-4fc7-a344-760e8305bfde</string>
+							<key>info_token</key>
+							<string>bc9627fe-4e3f-447d-845c-13a3c846de67</string>
+
+
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Cover Packs</string>
+					<key>sectiontype</key>
+					<integer>2</integer>
+					<key>numOfItems</key>
+					<integer>3</integer>
+				</dict>
+				<dict>
+					<key>packs</key>
+					<array>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>tasks, appointments, planners, checklist, list, tasklist</string>
+							<key>theme_display_name</key>
+							<string>Productivity</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Productivity Pack</string>
+							<key>version_no</key>
+							<integer>2</integer>
+							<key>theme_token</key>
+							<string>367e2c0b-74d5-4c26-a133-4eef90b2c512</string>
+							<key>banner_token</key>
+							<string>690f74f0-a302-492c-88da-2948fe9e69e9</string>
+							<key>icon_large_token</key>
+							<string>e2c15005-b6b8-4236-b00f-46d4d6213b4e</string>
+							<key>icon_small_token</key>
+							<string>134b5dca-b13a-4f7a-8b53-367981e3ec8c</string>
+							<key>info_token</key>
+							<string>c711f268-f0bc-498c-a0fc-c70e75be4166</string>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>map, globe, countries, itinerary, travel log, packing, explore</string>
+							<key>theme_display_name</key>
+							<string>Travel</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers &amp; Papers</string>
+							<key>theme_filename</key>
+							<string>Travel</string>
+							<key>version_no</key>
+							<integer>2</integer>
+							<key>theme_token</key>
+							<string>a554383d-7f55-47ee-8fcb-4e1d434e6eb6</string>
+							<key>banner_token</key>
+							<string>7d36d4f6-965e-4913-b0b1-24b611be12e2</string>
+							<key>icon_large_token</key>
+							<string>6cf0682c-b681-4a32-b705-799f5aafb03d</string>
+							<key>icon_small_token</key>
+							<string>61c1773a-6f23-4922-a60c-2757de9085ff</string>
+							<key>info_token</key>
+							<string>4633c964-de74-40d1-8d3f-b6e332c77f29</string>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>bills, tracker, checklist, expense, revenue, income, profit, money</string>
+							<key>theme_display_name</key>
+							<string>Finance</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Finance</string>
+							<key>version_no</key>
+							<integer>2</integer>
+							<key>theme_token</key>
+							<string>90287560-2ddc-4a72-b02f-2e68f37395ee</string>
+							<key>banner_token</key>
+							<string>4f8b80c2-94c6-402f-b9fb-3d19712587e1</string>
+							<key>icon_large_token</key>
+							<string>fd03755e-f579-4899-9cbd-083a7d675731</string>
+							<key>icon_small_token</key>
+							<string>f7dfa248-d17c-48d2-9a19-811064ba8027</string>
+							<key>info_token</key>
+							<string>86fd76f6-a60d-45f7-9e49-3aae0deb3649</string>
+
+
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Planners &amp; Trackers</string>
+					<key>sectiontype</key>
+					<integer>2</integer>
+					<key>numOfItems</key>
+					<integer>2</integer>
+				</dict>
+				<dict>
+					<key>packs</key>
+					<array>
+
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>musicsheets, guitar tab, Music 6 stave, music 8 stave, Music notes, forScore, Orpheus, Forzando, Notate, Notion, Notation, clef, rhythm, tune, chord, scale, pitch, beat, staff, symphony</string>
+							<key>theme_display_name</key>
+							<string>Music</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers &amp; Papers</string>
+							<key>theme_filename</key>
+							<string>Music v2</string>
+							<key>version_no</key>
+							<integer>3</integer>
+							<key>theme_token</key>
+							<string>3276c22b-8365-46de-89d2-76d16d7f38d2</string>
+							<key>banner_token</key>
+							<string>e48722d5-9be7-4810-9d08-2bc1d6cf2ba5</string>
+							<key>icon_large_token</key>
+							<string>995f9fa7-27b4-406a-8be1-b5fb9f8c26a0</string>
+							<key>icon_small_token</key>
+							<string>15dd1be4-36ee-48cd-b938-3184e91579aa</string>
+							<key>info_token</key>
+							<string>82d42262-d272-4fa8-88ac-dac2211484e1</string>
+
+
+
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Educational</string>
+					<key>sectiontype</key>
+					<integer>2</integer>
+					<key>numOfItems</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>packs</key>
+					<array>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>appointment, therapy notes, therapy, screening, first contact form, HIPAA, checklist</string>
+							<key>theme_display_name</key>
+							<string>Therapists</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Therapists</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>4edabe20-b752-4fb1-aef5-bbcb7e3d3741</string>
+							<key>banner_token</key>
+							<string>cff6b974-a06f-4372-8361-8077a2a70c04</string>
+							<key>icon_large_token</key>
+							<string>04420d5a-86ae-4087-b427-2db332b375bf</string>
+							<key>icon_small_token</key>
+							<string>0c64420c-2af0-40c9-a1a0-ed62d7e46944</string>
+							<key>info_token</key>
+							<string>aa23c2b3-6ce1-43e8-ad65-aa0631ebaf79</string>
+
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>event management, event, speakers, budget, event planning, attendance, staff, support, schedule</string>
+							<key>theme_display_name</key>
+							<string>Event Planners</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Event Planners</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>3e77968e-911a-459a-921f-08ae8f90a39a</string>
+							<key>banner_token</key>
+							<string>768d2f30-7f45-4ac5-93ed-e700be0dd448</string>
+							<key>icon_large_token</key>
+							<string>71f9c679-946a-4026-b76e-42f2c5dcd72a</string>
+							<key>icon_small_token</key>
+							<string>db8b78ce-3d34-4364-a6eb-70818583d6c3</string>
+							<key>info_token</key>
+							<string>285b6603-1ec1-4240-8a99-fe0e03267133</string>
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>Participants, persona, UX, user experience, user story, user study, user research.</string>
+							<key>theme_display_name</key>
+							<string>UX Designers</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>UX Designers</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>9dbb80ab-5d6a-4d67-8f4a-23773e849f1d</string>
+							<key>banner_token</key>
+							<string>cac0b2a8-182b-4e10-9ede-363e31bef5de</string>
+							<key>icon_large_token</key>
+							<string>be4f27a6-4b41-4aaa-97cc-87b0dba13f5d</string>
+							<key>icon_small_token</key>
+							<string>c518e1b3-dc4e-4512-99b1-de792241f1b2</string>
+							<key>info_token</key>
+							<string>404f0634-91c6-4d41-858c-d5c4293605c6</string>
+
+
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Professional</string>
+					<key>sectiontype</key>
+					<integer>2</integer>
+					<key>numOfItems</key>
+					<integer>1</integer>
+				</dict>
+				<dict>
+					<key>packs</key>
+					<array>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>baby care, baby, sleep, parent, single parent, feeding, diaper, food, pump, growth, baby activities</string>
+							<key>theme_display_name</key>
+							<string>Parents</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Parents</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>b8bec104-719e-4eaf-9922-bf1e5f68f7f6</string>
+							<key>banner_token</key>
+							<string>c12568e4-8a82-4fb2-8d40-11bd87ccc5ce</string>
+							<key>icon_large_token</key>
+							<string>fbaf71a8-2c81-4830-9f43-033671ad17c3</string>
+							<key>icon_small_token</key>
+							<string>e832651e-3ccb-45f8-b099-21cc23e889f0</string>
+							<key>info_token</key>
+							<string>793ca8a8-fe3c-44d1-b906-9e2f4f113d90</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>iPad</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>health, fitness, food, diet, meals, fit, exercise, workout, gym, yoga, run, jog</string>
+							<key>theme_display_name</key>
+							<string>Health &amp; Fitness</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Health &amp; Fitness</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>cea514bf-c39e-4639-aa99-920fc8cd88f5</string>
+							<key>banner_token</key>
+							<string>7dd22999-721e-4605-a1c5-a4ad61862b6f</string>
+							<key>icon_large_token</key>
+							<string>2c73a3b0-9a65-441b-9a61-a24144ecff94</string>
+							<key>icon_small_token</key>
+							<string>954ab70e-3e08-46fe-961a-f526cf806b5c</string>
+							<key>info_token</key>
+							<string>e0b8a6b1-02ad-4b7f-b58c-8ffb6010769c</string>
+
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>supportsLocalizedMetadata</key>
+							<true/>
+							<key>searchkeys</key>
+							<string>entertainment, planner, grocery, shopping, party menu, party drinks, guests, to do</string>
+							<key>theme_display_name</key>
+							<string>Household</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Papers</string>
+							<key>theme_filename</key>
+							<string>Household</string>
+							<key>version_no</key>
+							<integer>2</integer>
+
+
+						</dict>
+						<dict>
+							<key>supported_devices</key>
+							<array>
+								<string>android</string>
+							</array>
+							<key>searchkeys</key>
+							<string>Christmas, 2020, New Year, 2021, snowflakes, flakes, dots, star, tree, jingle bells, stars, greetings, greeting card, polar bear, trees, pine, festive</string>
+							<key>theme_display_name</key>
+							<string>2021 Holidays</string>
+							<key>theme_subtitle</key>
+							<string>Pack of Covers &amp; Papers</string>
+							<key>theme_filename</key>
+							<string>Holiday Pack 2021</string>
+							<key>version_no</key>
+							<integer>1</integer>
+							<key>theme_token</key>
+							<string>2d7ed0a0-fc72-44d6-9811-c78aa6b12f1f</string>
+							<key>banner_token</key>
+							<string>185cd0bb-7098-4ffc-a0de-dda7e5e33669</string>
+							<key>icon_large_token</key>
+							<string>bdccd00f-786f-4176-a4d1-cc1c9ff79212</string>
+							<key>icon_small_token</key>
+							<string>4c2b2cc4-9817-48c7-971d-3837856735f7</string>
+							<key>info_token</key>
+							<string>4f066e3e-13d6-4493-abf7-a6aa85275888</string>
+
+
+						</dict>
+					</array>
+					<key>title</key>
+					<string>Personal</string>
+					<key>sectiontype</key>
+					<integer>2</integer>
+					<key>numOfItems</key>
+					<integer>2</integer>
+				</dict>
+			</array>
+			<key>inspirationPacks</key>
+			<array>
+				<dict>
+					<key>display_title</key>
+					<string>2020-21 Planner by Photo Material</string>
+					<key>author_name</key>
+					<string>Andre Hryshchenko</string>
+					<key>filename</key>
+					<string>Andre Hryshchenko</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>2020-21 Planner with a 2-date spread view! It has daily, weekly and monthly pages as well as convenient hyperlinks in every page for quick navigation.</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@ipadplanner</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/ipadplanner/</string>
+						<key>author_description</key>
+						<string>Andre Hryshchenko is a designer, photographer and  an Apple evangelist. He got his first iPad for his wife to draw and accidentally discovered the world of digital planners! He has since then joined the paperless movement.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Raluca&apos;s Planners</string>
+					<key>author_name</key>
+					<string>Raluca Comanescu</string>
+					<key>filename</key>
+					<string>Raluca</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>A Highly interactive yet simple planner brought to you guys specially by Raluca! Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>thefeathersINK</string>
+						<key>social_type</key>
+						<string>Website</string>
+						<key>social_url</key>
+						<string>http://tidd.ly/fdc7f85b</string>
+						<key>author_description</key>
+						<string>Raluca has a solid background in architecture and product design. Raluca uses her skills to make life easier, fun and a lot more productive. She builds productivity products like Master Planners, Hobby Journals and more!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Human Physiology</string>
+					<key>author_name</key>
+					<string>Medi Maddie</string>
+					<key>filename</key>
+					<string>Medi Maddie</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Physiology booklets, with beautiful illustrations, highlights, and flashcards—a med student&apos;s favorite buddy. Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@medi.maddie</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/medi.maddie/</string>
+						<key>author_description</key>
+						<string>Maddison Brennan is a first year med student. She loooves to doodle &amp; illustrate, aims to see the world, and wants to work for WHO someday.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Tom Solid&apos;s Planners</string>
+					<key>author_name</key>
+					<string>Tom Solid</string>
+					<key>filename</key>
+					<string>Tom Solid</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>A minimalistic digital planner that allows you to focus on what matters, taking notes. Optimized for Retina Displays!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>Paperless Movement</string>
+						<key>social_type</key>
+						<string>Website</string>
+						<key>social_url</key>
+						<string>http://bit.ly/TomSolid2020Planner</string>
+						<key>author_description</key>
+						<string>Tom Solid is the founder of the #PaperlessMovement, and a Noteshelf lover. He has always been dreaming of a green future, where technology meets nature! We both share the same vision - taking the concept of going paperless a notch higher every day!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Type Maven Planners</string>
+					<key>author_name</key>
+					<string>Marina Duque</string>
+					<key>filename</key>
+					<string>Type Maven Planners</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>The best part of any vacation is PLANNING IT! Here is a pretty Travel Planner from TypeMaven. Travel the world. Inspire!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>typemaven.com</string>
+						<key>social_type</key>
+						<string>Website</string>
+						<key>social_url</key>
+						<string>http://bit.ly/typemaven_NoteshelfPlanners</string>
+						<key>author_description</key>
+						<string>Type Maven is a little haven that features modern digital planners, journals, notebooks and high-quality clipart. It was created by Marina Duque, a graphic designer from Toronto, Canada.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Weekly Planners</string>
+					<key>author_name</key>
+					<string>Whitney</string>
+					<key>filename</key>
+					<string>Whitney</string>
+					<key>version_no</key>
+					<integer>3</integer>
+					<key>description</key>
+					<string>Plan, create, inspire, repeat. - the mantra that Whitney believes in. Follow her in her journey to a more creative, productive &amp; happy life! Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@lifebywhitney</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/lifebywhitney/</string>
+						<key>author_description</key>
+						<string>She is the voice &amp; content creator for, Life by Whitney. In July, 2016, she discovered the Bullet Journal® and so began her bujo journey - plans, trackers, lists, designs, ideas, and more!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>#Wisdom Tips</string>
+					<key>author_name</key>
+					<string>Oscar Campo</string>
+					<key>filename</key>
+					<string>Oscar</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Oscar Campo&apos;s creative rendition of spiritual wisdom are now available as downloadable booklets. Stunning doodles &amp; sketchnotes inside, be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@OscarCampo_</string>
+						<key>social_type</key>
+						<string>Twitter</string>
+						<key>social_url</key>
+						<string>https://twitter.com/OscarCampo_</string>
+						<key>author_description</key>
+						<string>Son of God, husband, father, engineer, sketchnoter, illustrator. He is a noteshelf-er since the initial days. His sketchnotes, #WisdomTips are absolutely stunning!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>2020 Digital Planners</string>
+					<key>author_name</key>
+					<string>Hadge Hughes</string>
+					<key>filename</key>
+					<string>Hadge Hughes</string>
+					<key>version_no</key>
+					<integer>5</integer>
+					<key>description</key>
+					<string>A clickable weekly planner and clipboard to jot down your notes, to do&apos;s, dreams, stickers and just about everything. Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@HadgeHughes </string>
+						<key>social_type</key>
+						<string>Twitter</string>
+						<key>social_url</key>
+						<string>https://twitter.com/HadgeHughes</string>
+						<key>author_description</key>
+						<string>Hadge is a therapist and a mindfulness coach from Brighton, United Kingdom. He is a jack of many trades—loves to write, draw, paint, play some soulful tunes in the piano and the guitar. He started maintaining pen and paper journals and now moved on to digital journals.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Penmanship Practice</string>
+					<key>author_name</key>
+					<string>Valerie</string>
+					<key>filename</key>
+					<string>Valerie</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Indulge yourself in a nostalgic loop of vintage flourishing and typography—here is a Penmanship Practice Booklet from Valerie. Be Inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@mydigitaldaydreamprintables</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/mydigitaldaydreamprintables/</string>
+						<key>author_description</key>
+						<string>Valerie has fallen in love with digital scrapbooking and vintage ephemera! She collects books, post cards and paper products from the late 1800’s and early 1900’s and bring them alive by incorporating them into functional items on iPad.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Mindfulness Planner</string>
+					<key>author_name</key>
+					<string>Ari Alvarez</string>
+					<key>filename</key>
+					<string>Ari Alvarez</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>A beautiful digital planner in Spanish with separate tabs for doodles, braindump, lectures, notes. Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@mindfulnessplanner</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/mindfulnessplanner/</string>
+						<key>author_description</key>
+						<string>Meet Ari Alvarez. A designer, a sketchnote artist, and a journaler. She initially created this mindfulnessplanner to track everything - the daily tasks, thoughts, meditations and pretty much anything she likes. The versatility of this planner prompted her to share it with fellow Noteshelfers!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Purple Passion Planner</string>
+					<key>author_name</key>
+					<string>Tammy Thames</string>
+					<key>filename</key>
+					<string>Tammy Thames</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Beautiful planner with a purple-tone and 10 customizable tabs. Go create your planner just that way you want. Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@RileyJustRileyk</string>
+						<key>social_type</key>
+						<string>Twitter</string>
+						<key>social_url</key>
+						<string>https://twitter.com/RileyJustRileyk</string>
+						<key>author_description</key>
+						<string>A mommy of 2 who uses her planner to sort homeschooling tasks, quilting &amp; sewing projects, and tracking my language learning. She loves making various planner templates and stickers.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Pastell Planner</string>
+					<key>author_name</key>
+					<string>Patricia</string>
+					<key>filename</key>
+					<string>Patricia</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>It is a pretty, customizable planner with soothing pastel colors. Be inspired by the soft and delicate feeling it emanates!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string> @melodypeonia</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/melodypeonia/</string>
+						<key>author_description</key>
+						<string>Patricia has always loved to paint, sing and knit since she was 5 years old! Her digital planners are not just pretty but customizable too!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Weekly Planner Templates</string>
+					<key>author_name</key>
+					<string>Cindy</string>
+					<key>filename</key>
+					<string>Cindy</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Weekly planners with visually stunning title pages. Here is a bujo template by Cindy, adopt this or create your own. Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@didypanpie</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/didypanpie</string>
+						<key>author_description</key>
+						<string>Cindy is from France. She has always been interested in arts and crafts : drawing, calligraphy, painting, and photography.
+							She is a freelance translator and she uses Bujo for tracking her personal and professional life. She loves watching zombies and alien movies/TV shows! Her creative renditions are a visual treat!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Digital Planners and Bujos</string>
+					<key>author_name</key>
+					<string>Susan Sayers</string>
+					<key>filename</key>
+					<string>Susan Sayers</string>
+					<key>version_no</key>
+					<integer>2</integer>
+					<key>description</key>
+					<string>Susan&apos;s digital planners and bujos are for the digital savvy and simplicity loving folk! Adopt this or create your own, be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>Susan</string>
+						<key>social_type</key>
+						<string>email</string>
+						<key>social_url</key>
+						<string>mailto://nienel@icloud.com</string>
+						<key>author_description</key>
+						<string>Susan is from Butte, Montana. She spends her time creating forms for Greenfield Printers for the past 17 years. She says she is a student for life and does this to hone her skills. One super-intelligent and creative grandma she is!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Bujo Spreads</string>
+					<key>author_name</key>
+					<string>Sanae</string>
+					<key>filename</key>
+					<string>Sanae</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Check out these spreads from cursedjournal. Moodboard, reading log, and minimal planners - not so cursed, but absolutely delightful. Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@cursedjournal</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/cursedjournal/</string>
+						<key>author_description</key>
+						<string>Sanae, calls herself overthinker pro. But, we know she is a pro doodler! You&apos;ll fall in love with the simplicity of her bujos and the cute little characters.</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Stunning Trackers</string>
+					<key>author_name</key>
+					<string>Kalon</string>
+					<key>filename</key>
+					<string>Kalon</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Take control of your life - spend smart, sleep well. These beautifully designed trackers will help take control of your life. Be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@nohnoh.studies</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/nohnoh.studies/</string>
+						<key>author_description</key>
+						<string>A data scientist and a brilliant bujoist! She speaks English, 5 Asian languages and French. She watches a lot of Netflix, BBT, Modern Family; and DC heroes shows are her favs. When she is not binge watching these, she practices wushu! She is a bag of surprises!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Colorful Planners</string>
+					<key>author_name</key>
+					<string>Claire DB</string>
+					<key>filename</key>
+					<string>Claire</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Simple yet colorful is what you can expect in Claire&apos;s planners. If you love simplicity with a dab of pleasing colors, draw inspirations from this!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>www.hearthandmade.co.uk</string>
+						<key>social_type</key>
+						<string>Website</string>
+						<key>social_url</key>
+						<string>http://www.hearthandmade.co.uk/</string>
+						<key>author_description</key>
+						<string>She is the face behind &apos;Heart Handmade UK&apos;. She and her team provide high ROI DIY tutorials that you can make quickly and easily. You’ll really enjoy them!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Startup Notes</string>
+					<key>author_name</key>
+					<string>Gregory Koberger</string>
+					<key>filename</key>
+					<string>Greg</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>Gregory Koberger draws inspirations from startup stories and interprets them in his awesome visual note-taking style. Try sketch-noting, be inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@gkoberger</string>
+						<key>social_type</key>
+						<string>Twitter</string>
+						<key>social_url</key>
+						<string>https://twitter.com/gkoberger</string>
+						<key>author_description</key>
+						<string>Greg hails from the lovely town of Schaghticoke (pronounced scat-a-coke) in upstate New York. After attending RIT he made the move to San Francisco where he’s worked for Mozilla, and freelanced for a bunch of startups.
+
+							He is an entrepreneur, designer, coder and is a founder of Readme.io</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Planners and doodles</string>
+					<key>author_name</key>
+					<string>Ravali</string>
+					<key>filename</key>
+					<string>Ravali</string>
+					<key>version_no</key>
+					<integer>2</integer>
+					<key>description</key>
+					<string>Spaceships can&apos;t maneuver through the millions of asteroids in an asteroid belt. They will be severely damaged. Myth or truth?</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@parsiravali</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/parsiravali</string>
+						<key>author_description</key>
+						<string>Ravali is our in-house testing-ninja. She just recently showed us that she is an awesome artist too! Check out her doodle art and planners here!</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>display_title</key>
+					<string>Yoga for health</string>
+					<key>author_name</key>
+					<string>Noteshelf</string>
+					<key>filename</key>
+					<string>Noteshelf</string>
+					<key>version_no</key>
+					<integer>1</integer>
+					<key>description</key>
+					<string>&apos;Sun-salutations&apos; for a healthy global community! A &apos;Noteshelf Original&apos; production for International Yoga Day 2018. Be Inspired!</string>
+					<key>follow_info</key>
+					<dict>
+						<key>display_title</key>
+						<string>@noteshelf2</string>
+						<key>social_type</key>
+						<string>Instagram</string>
+						<key>social_url</key>
+						<string>https://www.instagram.com/noteshelfapp/</string>
+						<key>author_description</key>
+						<string>Kailas &amp; Ravali were excited to ink this out! Kailas is an artist at heart, storyteller, and marketer by profession. He is also our in-house noisemaker!
+							Ravali is our in-house testing-ninja and a gifted illustrator. She is a chocoholic and loves to doodle.</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<key>covers</key>
+		<dict>
+			<key>categories</key>
+			<array>
+				<dict>
+					<key>category_name</key>
+					<string>Simple</string>
+					<key>themes</key>
+					<array>
+						<string>DarkBrown.nsc</string>
+						<string>Ocher.nsc</string>
+						<string>Green.nsc</string>
+						<string>Pink.nsc</string>
+						<string>Yellow.nsc</string>
+						<string>Navy.nsc</string>
+						<string>Turquoise.nsc</string>
+						<string>Orange.nsc</string>
+						<string>Simple 9.nsc</string>
+						<string>Simple 10.nsc</string>
+						<string>Simple 11.nsc</string>
+						<string>Simple 12.nsc</string>
+						<string>Simple 13.nsc</string>
+						<string>Simple 14.nsc</string>
+						<string>Simple 15.nsc</string>
+						<string>Simple 16.nsc</string>
+						<string>Simple 17.nsc</string>
+						<string>Simple 18.nsc</string>
+						<string>Simple 19.nsc</string>
+						<string>Simple 20.nsc</string>
+						<string>Simple 21.nsc</string>
+						<string>Simple 22.nsc</string>
+						<string>Simple 23.nsc</string>
+						<string>Simple 24.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Leather</string>
+					<key>themes</key>
+					<array>
+						<string>Leather 1.nsc</string>
+						<string>Leather 2.nsc</string>
+						<string>Leather 3.nsc</string>
+						<string>Leather 4.nsc</string>
+						<string>Leather 5.nsc</string>
+						<string>Leather 6.nsc</string>
+						<string>Leather 7.nsc</string>
+						<string>Leather 8.nsc</string>
+						<string>Leather 9.nsc</string>
+						<string>Leather 10.nsc</string>
+						<string>Leather 11.nsc</string>
+						<string>Leather 12.nsc</string>
+						<string>Leather 13.nsc</string>
+						<string>Leather 14.nsc</string>
+						<string>Leather 15.nsc</string>
+						<string>Leather 16.nsc</string>
+						<string>Classic Leather 1.nsc</string>
+						<string>Classic Leather 2.nsc</string>
+						<string>Classic Leather 3.nsc</string>
+						<string>Classic Leather 4.nsc</string>
+						<string>Classic Leather 5.nsc</string>
+						<string>Classic Leather 6.nsc</string>
+						<string>Classic Leather 7.nsc</string>
+						<string>Classic Leather 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Abstract</string>
+					<key>themes</key>
+					<array>
+						<string>Abstract 1.nsc</string>
+						<string>Abstract 2.nsc</string>
+						<string>Abstract 3.nsc</string>
+						<string>Abstract 4.nsc</string>
+						<string>Abstract 5.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Art</string>
+					<key>themes</key>
+					<array>
+						<string>Art 1.nsc</string>
+						<string>Art 2.nsc</string>
+						<string>Art 3.nsc</string>
+						<string>Art 4.nsc</string>
+						<string>Art 5.nsc</string>
+						<string>Art 6.nsc</string>
+						<string>Art 7.nsc</string>
+						<string>Art 8.nsc</string>
+						<string>Art 9.nsc</string>
+						<string>Art 10.nsc</string>
+						<string>Art 11.nsc</string>
+						<string>Art 12.nsc</string>
+						<string>Art 13.nsc</string>
+						<string>Art 14.nsc</string>
+						<string>Art 15.nsc</string>
+						<string>Art 16.nsc</string>
+						<string>Art 17.nsc</string>
+						<string>Art 18.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Audio</string>
+					<key>themes</key>
+					<array>
+						<string>Audio 1.nsc</string>
+						<string>Audio 2.nsc</string>
+						<string>Audio 3.nsc</string>
+						<string>Audio 4.nsc</string>
+						<string>Audio 5.nsc</string>
+						<string>Audio 6.nsc</string>
+						<string>Audio 7.nsc</string>
+						<string>Audio 8.nsc</string>
+						<string>Audio 9.nsc</string>
+						<string>Audio 10.nsc</string>
+						<string>Audio 11.nsc</string>
+						<string>Audio 12.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Confetti</string>
+					<key>themes</key>
+					<array>
+						<string>Confetti 1.nsc</string>
+						<string>Confetti 2.nsc</string>
+						<string>Confetti 3.nsc</string>
+						<string>Confetti 4.nsc</string>
+						<string>Confetti 5.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Ethnic</string>
+					<key>themes</key>
+					<array>
+						<string>Ethnic 1.nsc</string>
+						<string>Ethnic 2.nsc</string>
+						<string>Ethnic 3.nsc</string>
+						<string>Ethnic 4.nsc</string>
+						<string>Ethnic 5.nsc</string>
+						<string>Ethnic 6.nsc</string>
+						<string>Ethnic 7.nsc</string>
+						<string>Ethnic 8.nsc</string>
+						<string>Ethnic 9.nsc</string>
+						<string>Ethnic 10.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Geometric</string>
+					<key>themes</key>
+					<array>
+						<string>Geometric 1.nsc</string>
+						<string>Geometric 2.nsc</string>
+						<string>Geometric 3.nsc</string>
+						<string>Geometric 4.nsc</string>
+						<string>Geometric 5.nsc</string>
+						<string>Geometric 6.nsc</string>
+						<string>Geometric 7.nsc</string>
+						<string>Geometric 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Marine</string>
+					<key>themes</key>
+					<array>
+						<string>Marine 1.nsc</string>
+						<string>Marine 2.nsc</string>
+						<string>Marine 3.nsc</string>
+						<string>Marine 4.nsc</string>
+						<string>Marine 5.nsc</string>
+						<string>Marine 6.nsc</string>
+						<string>Marine 7.nsc</string>
+						<string>Marine 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Mojave</string>
+					<key>themes</key>
+					<array>
+						<string>Mojave 1.nsc</string>
+						<string>Mojave 2.nsc</string>
+						<string>Mojave 3.nsc</string>
+						<string>Mojave 4.nsc</string>
+						<string>Mojave 5.nsc</string>
+						<string>Mojave 6.nsc</string>
+						<string>Mojave 7.nsc</string>
+						<string>Mojave 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Music</string>
+					<key>themes</key>
+					<array>
+						<string>Music 1.nsc</string>
+						<string>Music 2.nsc</string>
+						<string>Music 3.nsc</string>
+						<string>Music 4.nsc</string>
+						<string>Music 5.nsc</string>
+						<string>Music 6.nsc</string>
+						<string>Music 7.nsc</string>
+						<string>Music 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Quilt</string>
+					<key>themes</key>
+					<array>
+						<string>Quilt 1.nsc</string>
+						<string>Quilt 2.nsc</string>
+						<string>Quilt 3.nsc</string>
+						<string>Quilt 4.nsc</string>
+						<string>Quilt 5.nsc</string>
+						<string>Quilt 6.nsc</string>
+						<string>Quilt 7.nsc</string>
+						<string>Quilt 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Retro</string>
+					<key>themes</key>
+					<array>
+						<string>Retro 1.nsc</string>
+						<string>Retro 2.nsc</string>
+						<string>Retro 3.nsc</string>
+						<string>Retro 4.nsc</string>
+						<string>Retro 5.nsc</string>
+						<string>Retro 6.nsc</string>
+						<string>Retro 7.nsc</string>
+						<string>Retro 8.nsc</string>
+						<string>Retro 9.nsc</string>
+						<string>Retro 10.nsc</string>
+						<string>Retro 11.nsc</string>
+						<string>Retro 12.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>School</string>
+					<key>themes</key>
+					<array>
+						<string>Algebra.nsc</string>
+						<string>Geometry.nsc</string>
+						<string>Mathematics.nsc</string>
+						<string>History.nsc</string>
+						<string>Economics.nsc</string>
+						<string>English.nsc</string>
+						<string>Physics.nsc</string>
+						<string>Literature.nsc</string>
+						<string>Calculus.nsc</string>
+						<string>Chemistry.nsc</string>
+						<string>Geography.nsc</string>
+						<string>Biology.nsc</string>
+						<string>School Life Covers 1.nsc</string>
+						<string>School Life Covers 2.nsc</string>
+						<string>School Life Covers 3.nsc</string>
+						<string>School Life Covers 4.nsc</string>
+						<string>School Life Covers 5.nsc</string>
+						<string>School Life Covers 6.nsc</string>
+						<string>Subjects Covers 1.nsc</string>
+						<string>Subjects Covers 2.nsc</string>
+						<string>Subjects Covers 3.nsc</string>
+						<string>Subjects Covers 4.nsc</string>
+						<string>Subjects Covers 5.nsc</string>
+						<string>Subjects Covers 6.nsc</string>
+						<string>Subjects Covers 7.nsc</string>
+						<string>Subjects Covers 8.nsc</string>
+						<string>Subjects Covers 9.nsc</string>
+						<string>Subjects Covers 10.nsc</string>
+						<string>Subjects Covers 11.nsc</string>
+						<string>Subjects Covers 12.nsc</string>
+						<string>Subjects Covers 13.nsc</string>
+						<string>Subjects Covers 14.nsc</string>
+						<string>Subjects Covers 15.nsc</string>
+						<string>Subjects Covers 16.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Shapes</string>
+					<key>themes</key>
+					<array>
+						<string>Shapes 1.nsc</string>
+						<string>Shapes 2.nsc</string>
+						<string>Shapes 3.nsc</string>
+						<string>Shapes 4.nsc</string>
+						<string>Shapes 5.nsc</string>
+						<string>Shapes 6.nsc</string>
+						<string>Shapes 7.nsc</string>
+						<string>Shapes 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Transparent</string>
+					<key>themes</key>
+					<array>
+						<string>Transparent1.nsc</string>
+						<string>Transparent2.nsc</string>
+						<string>Transparent3.nsc</string>
+						<string>Transparent4.nsc</string>
+						<string>Transparent5.nsc</string>
+						<string>Transparent6.nsc</string>
+						<string>Transparent7.nsc</string>
+						<string>Transparent8.nsc</string>
+						<string>Transparent9.nsc</string>
+						<string>Transparent10.nsc</string>
+						<string>Transparent11.nsc</string>
+						<string>Transparent12.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Travel</string>
+					<key>themes</key>
+					<array>
+						<string>Map 1.nsc</string>
+						<string>Map 2.nsc</string>
+						<string>Map 3.nsc</string>
+						<string>Map 4.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Tropical</string>
+					<key>themes</key>
+					<array>
+						<string>Tropical 1.nsc</string>
+						<string>Tropical 2.nsc</string>
+						<string>Tropical 3.nsc</string>
+						<string>Tropical 4.nsc</string>
+						<string>Tropical 5.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Watercolor</string>
+					<key>themes</key>
+					<array>
+						<string>Watercolor 1.nsc</string>
+						<string>Watercolor 2.nsc</string>
+						<string>Watercolor 3.nsc</string>
+						<string>Watercolor 4.nsc</string>
+						<string>Watercolor 5.nsc</string>
+						<string>Watercolor 6.nsc</string>
+						<string>Watercolor 7.nsc</string>
+						<string>Watercolor 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Waves</string>
+					<key>themes</key>
+					<array>
+						<string>Waves 1.nsc</string>
+						<string>Waves 2.nsc</string>
+						<string>Waves 3.nsc</string>
+						<string>Waves 4.nsc</string>
+						<string>Waves 5.nsc</string>
+						<string>Waves 6.nsc</string>
+						<string>Waves 7.nsc</string>
+						<string>Waves 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Wood</string>
+					<key>themes</key>
+					<array>
+						<string>Wood 1.nsc</string>
+						<string>Wood 2.nsc</string>
+						<string>Wood 3.nsc</string>
+						<string>Wood 4.nsc</string>
+						<string>Wood 5.nsc</string>
+						<string>Wood 6.nsc</string>
+						<string>Wood 7.nsc</string>
+						<string>Wood 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Holiday 2018</string>
+					<key>themes</key>
+					<array>
+						<string>Holiday Cover 1.nsc</string>
+						<string>Holiday Cover 2.nsc</string>
+						<string>Holiday Cover 3.nsc</string>
+						<string>Holiday Cover 4.nsc</string>
+						<string>Holiday Cover 5.nsc</string>
+						<string>Holiday Cover 6.nsc</string>
+						<string>Holiday Cover 7.nsc</string>
+						<string>Holiday Cover 8.nsc</string>
+						<string>Holiday Cover 9.nsc</string>
+						<string>Holiday Cover 10.nsc</string>
+						<string>Holiday Cover 11.nsc</string>
+						<string>Holiday Cover 12.nsc</string>
+						<string>Holiday Cover 13.nsc</string>
+						<string>Holiday Cover 14.nsc</string>
+						<string>Holiday Cover 15.nsc</string>
+						<string>Holiday Cover 16.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2019 Holidays</string>
+					<key>themes</key>
+					<array>
+						<string>Holiday-Cover-2019 1.nsc</string>
+						<string>Holiday-Cover-2019 2.nsc</string>
+						<string>Holiday-Cover-2019 3.nsc</string>
+						<string>Holiday-Cover-2019 4.nsc</string>
+						<string>Holiday-Cover-2019 5.nsc</string>
+						<string>Holiday-Cover-2019 6.nsc</string>
+						<string>Holiday-Cover-2019 7.nsc</string>
+						<string>Holiday-Cover-2019 8.nsc</string>
+						<string>Holiday-Cover-2019 9.nsc</string>
+						<string>Holiday-Cover-2019 10.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Diaries 2018</string>
+					<key>themes</key>
+					<array>
+						<string>Dairy Cover 1.nsc</string>
+						<string>Dairy Cover 2.nsc</string>
+						<string>Dairy Cover 3.nsc</string>
+						<string>Dairy Cover 4.nsc</string>
+						<string>Dairy Cover 5.nsc</string>
+						<string>Dairy Cover 6.nsc</string>
+						<string>Dairy Cover 7.nsc</string>
+						<string>Dairy Cover 8.nsc</string>
+						<string>Dairy Cover 9.nsc</string>
+						<string>Dairy Cover 10.nsc</string>
+						<string>Dairy Cover 11.nsc</string>
+						<string>Dairy Cover 12.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2019 Digital Diaries</string>
+					<key>themes</key>
+					<array>
+						<string>Digital Diaries 2019 1.nsc</string>
+						<string>Digital Diaries 2019 2.nsc</string>
+						<string>Digital Diaries 2019 3.nsc</string>
+						<string>Digital Diaries 2019 4.nsc</string>
+						<string>Digital Diaries 2019 5.nsc</string>
+						<string>Digital Diaries 2019 6.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2020 Digital Diaries</string>
+					<key>themes</key>
+					<array>
+						<string>2020 Diary Cover 1.nsc</string>
+						<string>2020 Diary Cover 2.nsc</string>
+						<string>2020 Diary Cover 3.nsc</string>
+						<string>2020 Diary Cover 4.nsc</string>
+						<string>2020 Diary Cover 5.nsc</string>
+						<string>2020 Diary Cover 6.nsc</string>
+						<string>2020 Diary Cover 7.nsc</string>
+						<string>2020 Diary Cover 8.nsc</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2021 Holidays</string>
+					<key>themes</key>
+					<array>
+						<string>2021 Holiday Cover 1.nsc</string>
+						<string>2021 Holiday Cover 2.nsc</string>
+						<string>2021 Holiday Cover 3.nsc</string>
+						<string>2021 Holiday Cover 4.nsc</string>
+						<string>2021 Holiday Cover 5.nsc</string>
+						<string>2021 Holiday Cover 6.nsc</string>
+						<string>2021 Holiday Cover 7.nsc</string>
+						<string>2021 Holiday Cover 8.nsc</string>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<key>papers</key>
+		<dict>
+			<key>categories</key>
+			<array>
+				<dict>
+					<key>customize_options</key>
+					<dict>
+						<key>color_variants</key>
+						<array>
+							<dict>
+								<key>colors</key>
+								<array>
+									<dict>
+									<key>verticalLineColor</key>
+									<string>#0000-0.15</string>
+									<key>horizontalLineColor</key>
+									<string>#0000-0.15</string>
+									<key>colorHex</key>
+									<string>#FFFFFF-1.0</string>
+									<key>colorName</key>
+									<string>White</string>
+									</dict>
+									<dict>
+									<key>verticalLineColor</key>
+									<string>#FFFFFF-0.15</string>
+									<key>horizontalLineColor</key>
+									<string>#FFFFFF-0.15</string>
+									<key>colorHex</key>
+									<string>#1D232F-1.0</string>
+									<key>colorName</key>
+									<string>Midnight</string>
+									</dict>
+									<dict>
+										<key>verticalLineColor</key>
+										<string>#C4A393-1.0</string>
+										<key>horizontalLineColor</key>
+										<string>#8FBECC-1.0</string>
+										<key>colorHex</key>
+										<string>#FFFED6-1.0</string>
+										<key>colorName</key>
+										<string>Legal</string>
+									</dict>
+									<dict>
+										<key>verticalLineColor</key>
+										<string>#0000-0.15</string>
+										<key>horizontalLineColor</key>
+										<string>#0000-0.15</string>
+										<key>colorHex</key>
+										<string>#F7F7F2-1.0</string>
+										<key>colorName</key>
+										<string>Ivory</string>
+									</dict>
+								</array>
+								<key>title</key>
+								<string>General</string>
+							</dict>
+							<dict>
+								<key>colors</key>
+								<array>
+									<dict>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#121315-1.0</string>
+										<key>colorName</key>
+										<string>Dark</string>
+									</dict>
+									<dict>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#993450-1.0</string>
+										<key>colorName</key>
+										<string>Maroon</string>
+									</dict>
+									<dict>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#665FD4-1.0</string>
+										<key>colorName</key>
+										<string>Aqua</string>
+									</dict>
+									<dict>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#133A86-1.0</string>
+										<key>colorName</key>
+										<string>Navy</string>
+									</dict>
+									<dict>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#00AFF8-1.0</string>
+										<key>colorName</key>
+										<string>Sky</string>
+									</dict>
+									<dict>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#CA552E-1.0</string>
+										<key>colorName</key>
+										<string>Orange</string>
+									</dict>
+									<dict>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#DCBC48-1.0</string>
+										<key>colorName</key>
+										<string>Yellow</string>
+									</dict>
+									<dict>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#B07D4B-1.0</string>
+										<key>colorName</key>
+										<string>Brown</string>
+									</dict>
+									<dict>
+										<key>horizontalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>verticalLineColor</key>
+										<string>#FFFFFF-0.15</string>
+										<key>colorHex</key>
+										<string>#19584A-1.0</string>
+										<key>colorName</key>
+										<string>Green</string>
+									</dict>
+								</array>
+								<key>title</key>
+								<string>Colors</string>
+							</dict>
+						</array>
+						<key>background_color</key>
+						<true/>
+						<key>lineTypes</key>
+						<array>
+							<dict>
+								<key>verticalLineSpacing</key>
+								<integer>24</integer>
+								<key>lineType</key>
+								<string>Extra Small</string>
+								<key>horizontalLineSpacing</key>
+								<integer>24</integer>
+							</dict>
+							<dict>
+								<key>verticalLineSpacing</key>
+								<integer>28</integer>
+								<key>horizontalLineSpacing</key>
+								<integer>28</integer>
+								<key>lineType</key>
+								<string>Small</string>
+							</dict>
+							<dict>
+								<key>verticalLineSpacing</key>
+								<integer>34</integer>
+								<key>horizontalLineSpacing</key>
+								<integer>34</integer>
+								<key>lineType</key>
+								<string>Default</string>
+							</dict>
+							<dict>
+								<key>verticalLineSpacing</key>
+								<integer>54</integer>
+								<key>horizontalLineSpacing</key>
+								<integer>54</integer>
+								<key>lineType</key>
+								<string>Wide</string>
+							</dict>
+						</array>
+					</dict>
+					<key>category_name</key>
+					<string>Basic</string>
+					<key>event_track_name</key>
+					<string>Basic</string>
+					<key>themes</key>
+					<array>
+						<string>Plain.nsp</string>
+						<string>Ruled.nsp</string>
+						<string>Checked.nsp</string>
+						<string>Legal.nsp</string>
+						<string>Dotted.nsp</string>
+					</array>
+				</dict>
+
+				<dict>
+					<key>category_name</key>
+					<string>Dark</string>
+					<key>themes</key>
+					<array>
+						<string>Dark_Plain.nsp</string>
+						<string>Dark_Ruled.nsp</string>
+						<string>Dark_Checked.nsp</string>
+						<string>Dark_PlainLand.nsp</string>
+						<string>Dark_RuledLand.nsp</string>
+						<string>Dark_CheckedLand.nsp</string>
+						<string>Dark_Legal.nsp</string>
+						<string>Dark_LegalLand.nsp</string>
+						<string>Dark_Dotted.nsp</string>
+						<string>Dark_DottedLand.nsp</string>
+						<string>Dark_Wide Ruled.nsp</string>
+						<string>Dark_Wide RuledLand.nsp</string>
+						<string>Dark_Wide Checked.nsp</string>
+						<string>Dark_Wide CheckedLand.nsp</string>
+						<string>Dark_Wide Dotted.nsp</string>
+						<string>Dark_Wide DottedLand.nsp</string>
+						<string>Dark_Legal Yellow.nsp</string>
+						<string>Dark_Legal YellowLand.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Midnight</string>
+					<key>themes</key>
+					<array>
+						<string>Midnight_Plain.nsp</string>
+						<string>Midnight_Ruled.nsp</string>
+						<string>Midnight_Checked.nsp</string>
+						<string>Midnight_PlainLand.nsp</string>
+						<string>Midnight_RuledLand.nsp</string>
+						<string>Midnight_CheckedLand.nsp</string>
+						<string>Midnight_Legal.nsp</string>
+						<string>Midnight_LegalLand.nsp</string>
+						<string>Midnight_Dotted.nsp</string>
+						<string>Midnight_DottedLand.nsp</string>
+						<string>Midnight_Wide Ruled.nsp</string>
+						<string>Midnight_Wide RuledLand.nsp</string>
+						<string>Midnight_Wide Checked.nsp</string>
+						<string>Midnight_Wide CheckedLand.nsp</string>
+						<string>Midnight_Wide Dotted.nsp</string>
+						<string>Midnight_Wide DottedLand.nsp</string>
+						<string>Midnight_Legal Yellow.nsp</string>
+						<string>Midnight_Legal YellowLand.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>White</string>
+					<key>themes</key>
+					<array>
+						<string>Legal White.nsp</string>
+						<string>Legal White Land.nsp</string>
+						<string>White Plain.nsp</string>
+						<string>White Plain Land.nsp</string>
+						<string>White Ruled.nsp</string>
+						<string>White Ruled Land.nsp</string>
+						<string>White Wide Ruled.nsp</string>
+						<string>White Wide Ruled Land.nsp</string>
+						<string>White Checked.nsp</string>
+						<string>White Checked Land.nsp</string>
+						<string>White Wide Checked.nsp</string>
+						<string>White Wide Checked Land.nsp</string>
+						<string>White Dotted.nsp</string>
+						<string>White Dotted Land.nsp</string>
+						<string>White Wide Dotted.nsp</string>
+						<string>White Wide Dotted Land.nsp</string>
+						<string>White Plain Phone.nsp</string>
+						<string>White Plain Phone Land.nsp</string>
+						<string>White Ruled Phone.nsp</string>
+						<string>White Ruled Phone Land.nsp</string>
+						<string>White Checked Phone.nsp</string>
+						<string>White Checked Phone Land.nsp</string>
+						<string>White Dotted Phone.nsp</string>
+						<string>White Dotted Phone Land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Standard A4</string>
+					<key>themes</key>
+					<array>
+						<string>PlainA4.nsp</string>
+						<string>PlainA4Land.nsp</string>
+						<string>RuledA4.nsp</string>
+						<string>RuledA4Land.nsp</string>
+						<string>CheckedA4.nsp</string>
+						<string>CheckedA4Land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Standard Letter</string>
+					<key>themes</key>
+					<array>
+						<string>PlainLetter.nsp</string>
+						<string>PlainLetterLand.nsp</string>
+						<string>RuledLetter.nsp</string>
+						<string>RuledLetterLand.nsp</string>
+						<string>CheckedLetter.nsp</string>
+						<string>CheckedLetterLand.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Digital Diaries</string>
+					<key>themes</key>
+					<array>
+						<string>Modern Diary.nsp</string>
+						<string>Modern Diary land.nsp</string>
+						<string>Classic Diary.nsp</string>
+						<string>Classic Diary Land.nsp</string>
+						<string>Day And Night Journal.nsp</string>
+
+					</array>
+				</dict>
+
+				<!--<dict>
+                    <key>category_name</key>
+                    <string>Day and Night Journal</string>
+                    <key>themes</key>
+                    <array>
+                        <string>Day And Night Journal.nsp</string>
+                        <string>Modern Diary.nsp</string>
+                        <string>Modern Diary land.nsp</string>
+                        <string>Classic Diary.nsp</string>
+                        <string>Classic Diary Land.nsp</string>
+                    </array>
+                </dict>-->
+				<dict>
+					<key>category_name</key>
+					<string>Mobile</string>
+					<key>themes</key>
+					<array>
+						<string>PlainPhone.nsp</string>
+						<string>PlainPhoneLand.nsp</string>
+						<string>RuledPhone.nsp</string>
+						<string>RuledPhoneLand.nsp</string>
+						<string>CheckedPhone.nsp</string>
+						<string>CheckedPhoneLand.nsp</string>
+						<string>Dark_Plain_Phone.nsp</string>
+						<string>Dark_PlainLand_Phone.nsp</string>
+						<string>Dark_Ruled_Phone.nsp</string>
+						<string>Dark_RuledLand_Phone.nsp</string>
+						<string>Dark_Checked_Phone.nsp</string>
+						<string>Dark_CheckedLand_Phone.nsp</string>
+						<string>Dark_Dotted_Phone.nsp</string>
+						<string>Dark_DottedLand_Phone.nsp</string>
+						<string>Midnight_Plain_Phone.nsp</string>
+						<string>Midnight_PlainLand_Phone.nsp</string>
+						<string>Midnight_Ruled_Phone.nsp</string>
+						<string>Midnight_RuledLand_Phone.nsp</string>
+						<string>Midnight_Checked_Phone.nsp</string>
+						<string>Midnight_CheckedLand_Phone.nsp</string>
+						<string>Midnight_Dotted_Phone.nsp</string>
+						<string>Midnight_DottedLand_Phone.nsp</string>
+						<string>Black Plain Phone.nsp</string>
+						<string>Black Plain Phone Land.nsp</string>
+						<string>Black Ruled Phone.nsp</string>
+						<string>Black Ruled Phone Land.nsp</string>
+						<string>Black Checked Phone.nsp</string>
+						<string>Black Checked Phone Land.nsp</string>
+						<string>Blue Plain Phone.nsp</string>
+						<string>Blue Plain Phone Land.nsp</string>
+						<string>Blue Ruled Phone.nsp</string>
+						<string>Blue Ruled Phone Land.nsp</string>
+						<string>Blue Checked Phone.nsp</string>
+						<string>Blue Checked Phone Land.nsp</string>
+						<string>Brown Plain Phone.nsp</string>
+						<string>Brown Plain Phone Land.nsp</string>
+						<string>Brown Ruled Phone.nsp</string>
+						<string>Brown Ruled Phone Land.nsp</string>
+						<string>Brown Checked Phone.nsp</string>
+						<string>Brown Checked Phone Land.nsp</string>
+						<string>Dark Blue Plain Phone.nsp</string>
+						<string>Dark Blue Plain Phone Land.nsp</string>
+						<string>Dark Blue Ruled Phone.nsp</string>
+						<string>Dark Blue Ruled Phone Land.nsp</string>
+						<string>Dark Blue Checked Phone.nsp</string>
+						<string>Dark Blue Checked Phone Land.nsp</string>
+						<string>Dark Green Plain Phone.nsp</string>
+						<string>Dark Green Plain Phone Land.nsp</string>
+						<string>Dark Green Ruled Phone.nsp</string>
+						<string>Dark Green Ruled Phone Land.nsp</string>
+						<string>Dark Green Checked Phone.nsp</string>
+						<string>Dark Green Checked Phone Land.nsp</string>
+						<string>Light Blue Plain Phone.nsp</string>
+						<string>Light Blue Plain Phone Land.nsp</string>
+						<string>Light Blue Ruled Phone.nsp</string>
+						<string>Light Blue Ruled Phone Land.nsp</string>
+						<string>Light Blue Checked Phone.nsp</string>
+						<string>Light Blue Checked Phone Land.nsp</string>
+						<string>Maroon Plain Phone.nsp</string>
+						<string>Maroon Plain Phone Land.nsp</string>
+						<string>Maroon Ruled Phone.nsp</string>
+						<string>Maroon Ruled Phone Land.nsp</string>
+						<string>Maroon Checked Phone.nsp</string>
+						<string>Maroon Checked Phone Land.nsp</string>
+						<string>Orange Plain Phone.nsp</string>
+						<string>Orange Plain Phone Land.nsp</string>
+						<string>Orange Ruled Phone.nsp</string>
+						<string>Orange Ruled Phone Land.nsp</string>
+						<string>Orange Checked Phone.nsp</string>
+						<string>Orange Checked Phone Land.nsp</string>
+						<string>Purple Plain Phone.nsp</string>
+						<string>Purple Plain Phone Land.nsp</string>
+						<string>Purple Ruled Phone.nsp</string>
+						<string>Purple Ruled Phone Land.nsp</string>
+						<string>Purple Checked Phone.nsp</string>
+						<string>Purple Checked Phone Land.nsp</string>
+						<string>Yellow Plain Phone.nsp</string>
+						<string>Yellow Plain Phone Land.nsp</string>
+						<string>Yellow Ruled Phone.nsp</string>
+						<string>Yellow Ruled Phone Land.nsp</string>
+						<string>Yellow Checked Phone.nsp</string>
+						<string>Yellow Checked Phone Land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Color</string>
+					<key>themes</key>
+					<array>
+						<string>Black Plain.nsp</string>
+						<string>Black Plain Land.nsp</string>
+						<string>Black Ruled.nsp</string>
+						<string>Black Ruled Land.nsp</string>
+						<string>Black Checked.nsp</string>
+						<string>Black Checked Land.nsp</string>
+						<string>Black Dotted.nsp</string>
+						<string>Black Dotted Land.nsp</string>
+						<string>Blue Plain.nsp</string>
+						<string>Blue Plain Land.nsp</string>
+						<string>Blue Ruled.nsp</string>
+						<string>Blue Ruled Land.nsp</string>
+						<string>Blue Checked.nsp</string>
+						<string>Blue Checked Land.nsp</string>
+						<string>Blue Dotted.nsp</string>
+						<string>Blue Dotted Land.nsp</string>
+						<string>Brown Plain.nsp</string>
+						<string>Brown Plain Land.nsp</string>
+						<string>Brown Ruled.nsp</string>
+						<string>Brown Ruled Land.nsp</string>
+						<string>Brown Checked.nsp</string>
+						<string>Brown Checked Land.nsp</string>
+						<string>Brown Dotted.nsp</string>
+						<string>Brown Dotted Land.nsp</string>
+						<string>Dark Blue Plain.nsp</string>
+						<string>Dark Blue Plain Land.nsp</string>
+						<string>Dark Blue Ruled.nsp</string>
+						<string>Dark Blue Ruled Land.nsp</string>
+						<string>Dark Blue Checked.nsp</string>
+						<string>Dark Blue Checked Land.nsp</string>
+						<string>Dark Blue Dotted.nsp</string>
+						<string>Dark Blue Dotted Land.nsp</string>
+						<string>Dark Green Plain.nsp</string>
+						<string>Dark Green Plain Land.nsp</string>
+						<string>Dark Green Ruled.nsp</string>
+						<string>Dark Green Ruled Land.nsp</string>
+						<string>Dark Green Checked.nsp</string>
+						<string>Dark Green Checked Land.nsp</string>
+						<string>Dark Green Dotted.nsp</string>
+						<string>Dark Green Dotted Land.nsp</string>
+						<string>Light Blue Plain.nsp</string>
+						<string>Light Blue Plain Land.nsp</string>
+						<string>Light Blue Ruled.nsp</string>
+						<string>Light Blue Ruled Land.nsp</string>
+						<string>Light Blue Checked.nsp</string>
+						<string>Light Blue Checked Land.nsp</string>
+						<string>Light Blue Dotted.nsp</string>
+						<string>Light Blue Dotted Land.nsp</string>
+						<string>Maroon Plain.nsp</string>
+						<string>Maroon Plain Land.nsp</string>
+						<string>Maroon Ruled.nsp</string>
+						<string>Maroon Ruled Land.nsp</string>
+						<string>Maroon Checked.nsp</string>
+						<string>Maroon Checked Land.nsp</string>
+						<string>Maroon Dotted.nsp</string>
+						<string>Maroon Dotted Land.nsp</string>
+						<string>Orange Plain.nsp</string>
+						<string>Orange Plain Land.nsp</string>
+						<string>Orange Ruled.nsp</string>
+						<string>Orange Ruled Land.nsp</string>
+						<string>Orange Checked.nsp</string>
+						<string>Orange Checked Land.nsp</string>
+						<string>Orange Dotted.nsp</string>
+						<string>Orange Dotted Land.nsp</string>
+						<string>Purple Plain.nsp</string>
+						<string>Purple Plain Land.nsp</string>
+						<string>Purple Ruled.nsp</string>
+						<string>Purple Ruled Land.nsp</string>
+						<string>Purple Checked.nsp</string>
+						<string>Purple Checked Land.nsp</string>
+						<string>Purple Dotted.nsp</string>
+						<string>Purple Dotted Land.nsp</string>
+						<string>Yellow Plain.nsp</string>
+						<string>Yellow Plain Land.nsp</string>
+						<string>Yellow Ruled.nsp</string>
+						<string>Yellow Ruled Land.nsp</string>
+						<string>Yellow Checked.nsp</string>
+						<string>Yellow Checked Land.nsp</string>
+						<string>Yellow Dotted.nsp</string>
+						<string>Yellow Dotted Land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Event Planners</string>
+					<key>themes</key>
+					<array>
+						<string>Event Planners 1.nsp</string>
+						<string>Event Planners 2.nsp</string>
+						<string>Event Planners 3.nsp</string>
+						<string>Event Planners 4.nsp</string>
+						<string>Event Planners 5.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Finance</string>
+					<key>themes</key>
+					<array>
+						<string>Bill Tracker (Jan-June).nsp</string>
+						<string>Bill Tracker (Jan-June) Landscape.nsp</string>
+						<string>Bill Tracker (July-Dec).nsp</string>
+						<string>Bill Tracker (July-Dec) Landscape.nsp</string>
+						<string>Bills and Payment Tracker.nsp</string>
+						<string>Bills and Payment Tracker Landscape.nsp</string>
+						<string>Expense Tracker.nsp</string>
+						<string>Expense Tracker Landscape.nsp</string>
+						<string>Revenue Tracker.nsp</string>
+						<string>Revenue Tracker Landscape.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Health &amp; Fitness</string>
+					<key>themes</key>
+					<array>
+						<string>Fitness Tracker.nsp</string>
+						<string>Fitness Tracker Landscape.nsp</string>
+						<string>Food Tracker.nsp</string>
+						<string>Food Tracker Landscape.nsp</string>
+						<string>Meal Planner.nsp</string>
+						<string>Meal Planner Landscape.nsp</string>
+						<string>Workout Tracker.nsp</string>
+						<string>Workout Tracker Landscape.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Household</string>
+					<key>themes</key>
+					<array>
+						<string>Entertaining Planner.nsp</string>
+						<string>Entertaining Planner Landscape.nsp</string>
+						<string>Grocery List Empty.nsp</string>
+						<string>Grocery List Empty Landscape.nsp</string>
+						<string>Grocery List Pre-Filled.nsp</string>
+						<string>Grocery List Pre-Filled Landscape.nsp</string>
+						<string>Shopping List.nsp</string>
+						<string>Shopping List Landscape.nsp</string>
+						<string>Shopping List Notes.nsp</string>
+						<string>Shopping List Notes Landscape.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Music</string>
+					<key>themes</key>
+					<array>
+						<string>Music 10 Staff.nsp</string>
+						<string>Music 10 Staff Land.nsp</string>
+						<string>Music 12 Staff.nsp</string>
+						<string>Music 12 Staff Land.nsp</string>
+						<string>Music Grand Staff.nsp</string>
+						<string>Music Grand Staff Land.nsp</string>
+						<string>Music Guitar.nsp</string>
+						<string>Music Guitar Land.nsp</string>
+						<string>Music Paper 1 Landscape.nsp</string>
+						<string>Music Paper 1 Portrait.nsp</string>
+						<string>Music Paper 2 Landscape.nsp</string>
+						<string>Music Paper 2 Portrait.nsp</string>
+						<string>Music Paper 3 Landscape.nsp</string>
+						<string>Music Paper 3 Portrait.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Parents</string>
+					<key>themes</key>
+					<array>
+						<string>Parents 1.nsp</string>
+						<string>Parents 2.nsp</string>
+						<string>Parents 3.nsp</string>
+						<string>Parents 4.nsp</string>
+						<string>Parents 5.nsp</string>
+						<string>Parents 6.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Productivity</string>
+					<key>themes</key>
+					<array>
+						<string>DayPlanner.nsp</string>
+						<string>DayPlannerLand.nsp</string>
+						<string>WeeklyPlanner.nsp</string>
+						<string>WeeklyPlannerLand.nsp</string>
+						<string>MonthlyPlanner.nsp</string>
+						<string>MonthlyPlannerLand.nsp</string>
+						<string>Meeting.nsp</string>
+						<string>MeetingLand.nsp</string>
+						<string>TaskList.nsp</string>
+						<string>TaskListLand.nsp</string>
+					</array>
+				</dict>
+
+				<dict>
+					<key>category_name</key>
+					<string>Therapists</string>
+					<key>themes</key>
+					<array>
+						<string>Therapists 1.nsp</string>
+						<string>Therapists 2.nsp</string>
+						<string>Therapists 3.nsp</string>
+						<string>Therapists 4.nsp</string>
+						<string>Therapists 5.nsp</string>
+						<string>Therapists 6.nsp</string>
+						<string>Therapists 7.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Travel</string>
+					<key>themes</key>
+					<array>
+						<string>Daily Itinerary.nsp</string>
+						<string>Daily Itinerary Landscape.nsp</string>
+						<string>Packing List.nsp</string>
+						<string>Packing List Landscape.nsp</string>
+						<string>Travel To Do List.nsp</string>
+						<string>Travel To Do List Landscape.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>UX Designers</string>
+					<key>themes</key>
+					<array>
+						<string>UX Designers 1.nsp</string>
+						<string>UX Designers 2.nsp</string>
+						<string>UX Designers 3.nsp</string>
+						<string>UX Designers 4.nsp</string>
+						<string>UX Designers 5.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Holiday 2018</string>
+					<key>themes</key>
+					<array>
+						<string>Holiday Paper 1.nsp</string>
+						<string>Holiday Paper 1Land.nsp</string>
+						<string>Holiday Paper 2.nsp</string>
+						<string>Holiday Paper 2Land.nsp</string>
+						<string>Holiday Paper 3.nsp</string>
+						<string>Holiday Paper 3Land.nsp</string>
+						<string>Holiday Paper 4.nsp</string>
+						<string>Holiday Paper 4Land.nsp</string>
+						<string>Holiday Paper 5.nsp</string>
+						<string>Holiday Paper 5Land.nsp</string>
+						<string>Holiday Paper 6.nsp</string>
+						<string>Holiday Paper 6Land.nsp</string>
+						<string>Holiday Paper 7.nsp</string>
+						<string>Holiday Paper 7Land.nsp</string>
+						<string>Holiday Paper 8.nsp</string>
+						<string>Holiday Paper 8Land.nsp</string>
+						<string>Holiday Paper 9.nsp</string>
+						<string>Holiday Paper 9Land.nsp</string>
+						<string>Holiday Paper 10.nsp</string>
+						<string>Holiday Paper 10Land.nsp</string>
+						<string>Holiday Paper 11.nsp</string>
+						<string>Holiday Paper 11Land.nsp</string>
+						<string>Holiday Paper 12.nsp</string>
+						<string>Holiday Paper 12Land.nsp</string>
+						<string>Holiday Paper 13.nsp</string>
+						<string>Holiday Paper 13Land.nsp</string>
+						<string>Holiday Paper 14.nsp</string>
+						<string>Holiday Paper 14Land.nsp</string>
+						<string>Holiday Paper 15.nsp</string>
+						<string>Holiday Paper 15Land.nsp</string>
+						<string>Holiday Paper 16.nsp</string>
+						<string>Holiday Paper 16Land.nsp</string>
+						<string>Holiday Paper Mobile 1.nsp</string>
+						<string>Holiday Paper Mobile 1Land.nsp</string>
+						<string>Holiday Paper Mobile 2.nsp</string>
+						<string>Holiday Paper Mobile 2Land.nsp</string>
+						<string>Holiday Paper Mobile 3.nsp</string>
+						<string>Holiday Paper Mobile 3Land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2019 Holidays</string>
+					<key>themes</key>
+					<array>
+						<string>Holiday-2019 1.nsp</string>
+						<string>Holiday-2019-land 1.nsp</string>
+						<string>Holiday-2019 2.nsp</string>
+						<string>Holiday-2019-land 2.nsp</string>
+						<string>Holiday-2019 3.nsp</string>
+						<string>Holiday-2019-land 3.nsp</string>
+						<string>Holiday-2019 4.nsp</string>
+						<string>Holiday-2019-land 4.nsp</string>
+						<string>Holiday-2019 5.nsp</string>
+						<string>Holiday-2019-land 5.nsp</string>
+						<string>Holiday-2019 6.nsp</string>
+						<string>Holiday-2019-land 6.nsp</string>
+						<string>Holiday-2019 7.nsp</string>
+						<string>Holiday-2019-land 7.nsp</string>
+						<string>Holiday-2019 8.nsp</string>
+						<string>Holiday-2019-land 8.nsp</string>
+						<string>Holiday-2019 9.nsp</string>
+						<string>Holiday-2019-land 9.nsp</string>
+						<string>Holiday-2019 10.nsp</string>
+						<string>Holiday-2019-land 10.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2020 Holidays</string>
+					<key>themes</key>
+					<array>
+						<string>2020 Holiday 1.nsp</string>
+						<string>2020 Holiday 2.nsp</string>
+						<string>2020 Holiday 3.nsp</string>
+						<string>2020 Holiday 4.nsp</string>
+						<string>2020 Holiday 5.nsp</string>
+						<string>2020 Holiday 6.nsp</string>
+						<string>2020 Holiday 7.nsp</string>
+						<string>2020 Holiday 8.nsp</string>
+						<string>2020 Holiday 9.nsp</string>
+						<string>2020 Holiday 10.nsp</string>
+						<string>2020 Holiday 11.nsp</string>
+						<string>2020 Holiday 12.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>Diaries 2018</string>
+					<key>themes</key>
+					<array>
+						<string>classic_dairy_en.nsp</string>
+						<string>classic_dairy_land_en.nsp</string>
+						<string>modern_dairy_en.nsp</string>
+						<string>modern_dairy_land_en.nsp</string>
+						<string>goals.nsp</string>
+						<string>goals_land.nsp</string>
+						<string>classic_dairy_phone_en.nsp</string>
+						<string>classic_dairy_phone_land_en.nsp</string>
+						<string>modern_dairy_phone_en.nsp</string>
+						<string>modern_dairy_phone_land_en.nsp</string>
+						<string>goals_iPhone.nsp</string>
+						<string>goals_iPhone_land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2019 Digital Diaries</string>
+					<key>themes</key>
+					<array>
+						<string>2019 Diary.nsp</string>
+						<string>2019 Diary Land.nsp</string>
+						<string>2019 Weekly Planner.nsp</string>
+						<string>2019 Weekly Planner Land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2020 Digital Diaries</string>
+					<key>themes</key>
+					<array>
+						<string>2020 Diary Paper 1.nsp</string>
+						<string>2020 Diary Paper 1 land.nsp</string>
+						<string>2020 Diary Paper 2.nsp</string>
+						<string>2020 Diary Paper 2 land.nsp</string>
+					</array>
+				</dict>
+				<dict>
+					<key>category_name</key>
+					<string>2021 Holidays</string>
+					<key>themes</key>
+					<array>
+						<string>2021 Holiday Paper 1.nsp</string>
+						<string>2021 Holiday Paper Land 1.nsp</string>
+						<string>2021 Holiday Paper 2.nsp</string>
+						<string>2021 Holiday Paper Land 2.nsp</string>
+						<string>2021 Holiday Paper 3.nsp</string>
+						<string>2021 Holiday Paper Land 3.nsp</string>
+						<string>2021 Holiday Paper 4.nsp</string>
+						<string>2021 Holiday Paper Land 4.nsp</string>
+						<string>2021 Holiday Paper 5.nsp</string>
+						<string>2021 Holiday Paper Land 5.nsp</string>
+						<string>2021 Holiday Paper 6.nsp</string>
+						<string>2021 Holiday Paper Land 6.nsp</string>
+						<string>2021 Holiday Paper 7.nsp</string>
+						<string>2021 Holiday Paper Land 7.nsp</string>
+						<string>2021 Holiday Paper 8.nsp</string>
+						<string>2021 Holiday Paper Land 8.nsp</string>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>display_name</key>
+	<string>Transparent 11</string>
+	<key>category_name</key>
+	<string>Transparent</string>
+	<key>overlay_type</key>
+	<integer>1</integer>
+	<key>display_name_ja</key>
+	<string>透明 11</string>
+	<key>display_name_it</key>
+	<string>Trasparente 11</string>
+	<key>display_name_zh-Hans</key>
+	<string>透明 11</string>
+	<key>display_name_zh-Hant</key>
+	<string>透明 11</string>
+	<key>display_name_fr</key>
+	<string>Transparent 11</string>
+	<key>display_name_es</key>
+	<string>Transparente 11</string>
+	<key>display_name_ko</key>
+	<string>투명한 11</string>
+</dict>
+</plist>

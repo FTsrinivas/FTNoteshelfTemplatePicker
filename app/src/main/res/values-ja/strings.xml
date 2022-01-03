@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome Experience -->
+    <string name="welcome_tour">ウェルカムツアー</string>
+    <string name="skip">スキップ</string>
+    <string name="next">次</string>
+    <string name="continue_string">続ける</string>
+    <string name="welcome_to_noteshelf">Noteshelfへようこそ!</string>
+    <string name="full_featured_digital_note_taking">フル機能のデジタルノートテイキング</string>
+    <string name="take_notes">ノートをとる</string>
+    <string name="record_audio">音声を録音</string>
+    <string name="add_photos">写真を追加</string>
+    <string name="markup_documents">文書や画像をマークアップ</string>
+    <string name="draw_perfect_shapes">完璧な図形を描画</string>
+    <string name="extensive_library_of_covers_and_papers">別のカバーとペーパーを選択</string>
+    <string name="rich_text_formatting">リッチテキストの書式設定</string>
+    <string name="great_writing_tools">ツールに慣れよう</string>
+    <string name="markup_your_documents">文書や画像をマークアップ</string>
+    <string name="start_note_taking">今すぐノートをとる</string>
+
+    <!--  Welcome Screen Authorisation  -->
+
+
+    <!-- Choose cover/paper dialog -->
+    <string name="quick_create">簡易作成</string>
+    <string name="import_document">ドキュメントをインポート</string>
+    <string name="custom">カスタム</string>
+    <string name="portrait">縦置き</string>
+    <string name="landscape">横置き</string>
+    <string name="default_cover">デフォルトカバー</string>
+    <string name="select_cover_style">表紙デザインを選択</string>
+    <string name="customize_cover">カバーをカスタマイズ</string>
+    <string name="use_this_cover">このカバーを使う</string>
+    <string name="enter_name">名前を入力</string>
+    <string name="store_sign_up_text">こちらのペーパーやカバーはNoteshelf Clubのメンバー限定です.</string>
+    <string name="store_sign_up_text2">登録は無料.</string>
+    <string name="name_already_exists">名前はすでに存在します!</string>
+
+    <!-- Scan document -->
+    <string name="camera">カメラ</string>
+    <string name="keep_scan">スキャンをキープ</string>
+    <string name="cropping_image">画像をトリミングしています...</string>
+    <string name="capturing_image">画像をキャプチャしています...</string>
+    <string name="import_">インポート</string>
+    <string name="scan_document">ドキュメントをスキャン</string>
+    <string name="configuration_change">構成の変更</string>
+    <string name="no_scanned_items_found">スキャンされたアイテムは見つかりませんでした</string>
+    <string name="saved">保存しました:</string>
+
+    <!-- Import/Export -->
+    <string name="share">共有する</string>
+    <string name="current_page">現在のページ</string>
+    <string name="all_pages">すべてのページ</string>
+    <string name="select_pages">ページを選択</string>
+
+
+    <!-- Settings -->
+    <string name="theme">テーマ</string>
+    <string name="writing_style">書き方</string>
+    <string name="auto_backup">自動バックアップ</string>
+    <string name="handwriting_recognition">手書き認識</string>
+    <string name="stylus">スタイラス</string>
+    <string name="pressure_sensitivity">筆圧感度</string>
+    <string name="support">サポート</string>
+    <string name="send_support_log">ログを送信</string>
+    <string name="disable_hyperlinks_when_writing">書き込み時にハイパーリンクを無効にする</string>
+    <string name="change">変更</string>
+    <string name="character_limit_exceeded">文字数制限を超えています。 小さいノートブック名を選択してください.</string>
+    <string name="special_characters_are_not_allowed">名前に特殊文字は使用できません.</string>
+
+    <!-- Auto backup -->
+
+
+    <string name="do_not_backup">バックアップしない</string>
+    <string name="notebooks_to_backup">ノートブックをバックアップする</string>
+    <string name="backup_in_progress">バックアップ中</string>
+    <string name="backing_up_to_x">%1$sへのバックアップ</string>
+    <string name="back_up_on_wifi_only">WiFiのみでバックアップ</string>
+    <string name="log">ログ</string>
+    <string name="last_back_up_at_time">直近のバックアップ %1$s</string>
+    <string name="off">オフ</string>
+    <string name="sign_out">サインアウト</string>
+
+    <!-- Evernote Publish -->
+    <string name="evernote_publish">Evernote同期</string>
+    <string name="publish_notebooks">ノートブックを公開する</string>
+
+    <string name="evernote_error">Evernoteエラー</string>
+    <string name="evernote_last_sync_time">最後に同期に成功した日 %1$s</string>
+    <string name="sync_failed_with_reason">同期が理由で失敗しました: %1$s</string>
+
+    <!-- Add New Dialog -->
+    <string name="change_page_template">ページテンプレートを変更</string>
+    <string name="photo">写真</string>
+    <string name="quick_create_settings">クイック作成設定</string>
+
+    <!-- Bookmarks -->
+    <string name="bookmark_page">ページをブックマークする</string>
+    <string name="no_bookmarks_desc">ページのブックマークアイコン をタップして、このビューに追加します。タイトルと色を追加するには長押し.</string>
+    <string name="no_bookmarked_pages">ブックマークされたページがありません</string>
+    <string name="thumbnails">サムネイル</string>
+    <string name="list">リスト</string>
+
+    <!-- Penrack -->
+    <string name="autoSelectPrevToolTitle">前のツールを自動選択</string>
+    <string name="eraseEntireStrokeTitle">ストローク全体を消去する</string>
+    <string name="eraseHighlighterStrokeTitle">蛍光ペンのみを消去</string>
+    <string name="highlighters">蛍光ペン</string>
+    <string name="pens">ペン</string>
+    <string name="favorites">お気に入り</string>
+    <string name="favorites_full">お気に入り (いっぱいです)</string>
+    <string name="added">追加しました!</string>
+    <string name="no_favorite_pens">お気に入りのペンはありません</string>
+    <string name="no_favorite_des">ツールパネルのスターをタップして使用中のペンをお気に入りに登録.</string>
+    <string name="show_favorite_toolbar">お気に入りツールバーを表示</string>
+    <string name="pen_tools">ペンツール</string>
+
+    <!-- Color picker -->
+    <string name="edit_colors">色を編集</string>
+    <string name="delete_colors">色を削除</string>
+    <string name="choose_color">色を選ぶ</string>
+    <string name="reset">リセット</string>
+    <string name="tap_to_choose_color">タップで色を編集します。\n順番を変えるには長押ししてからドラッグしてください。</string>
+    <string name="Tap_on_a_color">タップで色を削除できます。</string>
+    <string name="minimum_of_colors">少なくとも %1$d 色必要です</string>
+    <string name="color_pallette">カラーパレット</string>
+    <string name="add">追加する</string>
+
+
+    <!-- Finder -->
+    <string name="pages">ページ</string>
+    <string name="duplicate_page_singular">%1$d枚のページを複製</string>
+    <string name="duplicate_page_plural">%1$d枚のページを複製</string>
+    <string name="delete_page_singular">%1$d枚のページを削除</string>
+    <string name="delete_page_plural">%1$d枚のページを削除</string>
+    <string name="select_all">すべてを選択</string>
+    <string name="select_none">すべての選択を解除</string>
+    <string name="num_selected">%1$d 件選択済み</string>
+
+    <!-- Smart dialog messages -->
+    <string name="duplicating">複製中...</string>
+    <string name="saving">保存中...</string>
+    <string name="exporting">エクスポート中...</string>
+    <string name="importing">インポート中...</string>
+    <string name="restoring">復元しています...</string>
+    <string name="deleting">削除中...</string>
+    <string name="opening">ノートを読込中</string>
+    <string name="generating">作成中...</string>
+    <string name="creating">作成中...</string>
+    <string name="changing">変化...</string>
+    <string name="downloading">ダウンロード中...</string>
+    <string name="moving">移動中...</string>
+    <string name="loading">読込中...</string>
+
+    <!-- Cliparts -->
+    <string name="clipart">クリップ・アート</string>
+    <string name="photos">写真</string>
+
+    <!-- Audio -->
+
+    <string name="audio_recordings">録音</string>
+    <string name="set_session">セッション %1$d</string>
+    <string name="no_audio_recordings">このノートに録音はありません。</string>
+    <string name="audio_record_progress_alert_title">録音中にはこの動作を実行できません</string>
+    <string name="stop_recording">録音を止める</string>
+    <string name="play">再生する</string>
+    <string name="pause">一時停止する</string>
+    <string name="record">録音する</string>
+
+    <!-- Toast messages and errors -->
+    <string name="camera_error">このデバイスはカメラをサポートしていません</string>
+    <string name="camera_access_error">カメラへのアクセスが拒否されました。設定で許可を有効にしてください.</string>
+    <string name="document_access_error">ドキュメントをインポートするには、許可を与える必要があります.</string>
+    <string name="gallery_access_error">画像を追加するには、許可を与える必要があります.</string>
+
+    <string name="record_audio_permission_error">音声を録音するには、許可を与える必要があります.</string>
+    <string name="failed_to_import">インポートに失敗しました</string>
+    <string name="check_your_internet_connection">インターネット接続を確認して後ほど再度試してください</string>
+    <string name="sorry_please_grant_permission_for_camera">申し訳ありません！カメラの使用を許可してください</string>
+    <string name="wrong_password">不正なパスワード</string>
+    <string name="please_read_and_enable_the_checkbox_to_import">インポートするには、チェックボックスを読んで有効にしてください</string>
+    <string name="cannot_open_notes_in_trash">ゴミ箱のメモを開くことができません.</string>
+    <string name="delete_category_confirmation">このカテゴリーを削除しますか？ すべての文書がゴミ箱に移動されます。</string>
+    <string name="download_error_message">ダウンロードできませんでした！やり直してください.</string>
+    <string name="login_error_message">これらのダウンロードは Noteshelf Club 会員専用です。登録は無料。</string>
+    <string name="cannot_use_trash_as_it_is_reserved_by_the_app">\'ゴミ箱\'はアプリによって留保されているので使えません.</string>
+    <string name="no_internet_connection">インターネット接続がありません</string>
+    <string name="signed_into_evernote_successfully">Evernoteにサインインできました!</string>
+    <string name="unable_to_authenticate_with_evernote">Evernoteで認証できません</string>
+    <string name="file_size_is_too_large">ファイルサイズが大きすぎます</string>
+    <string name="unexpected_error_occurred_please_try_again">予期しないエラーが起きました。再度試してください</string>
+    <string name="font_size_cannot_be_below">フォントは以下のサイズより小さくできません：</string>
+    <string name="cropped_image_not_valid_shape">トリミングされた画像は有効な形状ではありません.</string>
+    <string name="cannot_move_to_same_notebook">同一のノートブックには移動できません</string>
+    <string name="please_enter_atleast_3_characters">3文字以上入力してください</string>
+    <string name="cannot_move_to_same_location">申し訳ありません！同じ場所に移動できません。</string>
+    <string name="change_login">別のアカウントで試してみますか？</string>
+    <string name="check_your_connection_and_tap_here_to_reload">接続を確認し、ここをタップして再度読み込んでください.</string>
+    <string name="are_you_sure_you_want_to_delete_notebooks_permanently">本当にこのノートブックを完全に削除しますか?</string>
+    <string name="this_action_will_turn_off_auto_backup_for_type">この操作により、%1$sへの自動バックアップがオフになります.</string>
+    <string name="would_you_like_to_apply_the_changes_to_the_image_before_proceeding_to_another_option">別のオプションに進む前に、画像に変更を適用しますか？</string>
+
+    <!-- General -->
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="field_cannot_be_empty">空欄にはできません</string>
+    <string name="edit">編集</string>
+    <string name="unlock">ロック解除</string>
+    <string name="notebook">ノートブック</string>
+    <string name="create">作成</string>
+    <string name="ok">いいよ</string>
+    <string name="cancel">キャンセル</string>
+    <string name="update">アップデート</string>
+    <string name="new_notebook">新規ノートブック</string>
+    <string name="page">ページ</string>
+    <string name="download_complete">インストール済み</string>
+    <string name="download">ダウンロード</string>
+    <string name="untitled_notebook">無題のノート</string>
+
+    <!-- ToolbarMenu -->
+    <string name="view_list">リストを表示</string>
+    <string name="sort">ソート</string>
+    <string name="settings">設定</string>
+    <string name="back_up">バックアップ</string>
+
+    <!-- Dialogs -->
+    <string name="enter_a_name_for_your">%1$sの名前を入力してください</string>
+    <string name="notebook_title">ノートのタイトル</string>
+    <string name="group_title">グループ のタイトル</string>
+    <string name="rename">名前を変更</string>
+    <string name="rename_category">カテゴリの名前を変更</string>
+    <string name="new_category">新たなカテゴリー</string>
+    <string name="new_group">新しいグループ</string>
+    <string name="category_name">カテゴリー名</string>
+    <string name="notebook_name">ノートブック名</string>
+    <string name="delete_category">削除カテゴリー</string>
+    <string name="add_new">新しく追加する</string>
+    <string name="backup_error_details">エラーの詳細</string>
+    <string name="enter_password">パスワードを入力</string>
+    <string name="password_title">パスワード</string>
+    <string name="group">グループ</string>
+    <string name="category">カテゴリー</string>
+    <string name="clear_page">ページをクリア</string>
+
+    <!-- Shelf -->
+    <string name="select_a_document">ドキュメントを選択する</string>
+
+    <string name="trash_title">ゴミ</string>
+    <string name="empty_trash">ゴミ箱を空にする</string>
+    <string name="move_to_trash">ゴミ箱に移動</string>
+    <string name="name">名前</string>
+    <string name="date">日付</string>
+
+    <!-- Category panel -->
+    <string name="add_new_category">新たなカテゴリー...</string>
+    <string name="add_new_group">新しいグループ...</string>
+    <string name="move_to">移動先...</string>
+    <string name="done">完了</string>
+    <string name="move">移す</string>
+
+    <!-- Lasso -->
+    <string name="screenshot">スクリーンショット</string>
+    <string name="cut">カット</string>
+    <string name="copy">コピー</string>
+    <string name="delete">削除</string>
+    <string name="resize">リサイズ</string>
+    <string name="color">色</string>
+    <string name="cut_copy">カット/コピー</string>
+    <string name="paste">ペースト</string>
+    <string name="cannot_support_heavy_selection">大量の選択はサポートされていません</string>
+    <string name="to_text">本文へ</string>
+    <string name="convert_to_text">テキストに変換</string>
+    <string name="copy_to_clipboard">クリップボードにコピーする</string>
+    <string name="convert_to_textbox">テキストボックスに変換</string>
+    <string name="text_copied">テキストのコピーされました</string>
+    <string name="advanced_options">高度なオプション</string>
+    <string name="font_size">フォントサイズ</string>
+    <string name="_default">デフォルト</string>
+    <string name="fit_to_selection">選択範囲に合わせる</string>
+    <string name="languages">言語</string>
+    <!-- Global Search -->
+    <string name="search">検索</string>
+    <string name="set_titles_count">%1$d ノートブック</string>
+
+    <string name="restore_backup">バックアップを復元</string>
+    <string name="export_failed">エクスポートに失敗しました!</string>
+    <string name="link_not_found">リンクが見つかりません.</string>
+    <string name="cancelled">キャンセル!</string>
+    <string name="error">エラー</string>
+    <string name="unable_to_sign_out_now_please_try_again_later">現在サインアウトできません。しばらくしてからもう一度お試しください.</string>
+    <string name="this_format_not_supported">この形式はNoteshelfではサポートされていません</string>
+    <string name="pinch_and_zoom_to_layout_your_cover">ピンチ＆ズームしてカバーをレイアウトする。</string>
+    <string name="save_for_future_use">保存して今後も使う</string>
+    <string name="sign_in">ログイン</string>
+    <string name="bookmark_name">ブックマーク名</string>
+    <string name="get">入手</string>
+    <string name="undo">取り消す</string>
+
+
+    <!--  Add New Page  -->
+    <string name="add_new_page">新しいページを追加</string>
+    <string name="template">テンプレート</string>
+    <string name="scan">スキャン</string>
+    <string name="or_add_new">または新規追加</string>
+
+    <!-- New Settings -->
+    <string name="about_us">Noteshelf について</string>
+    <string name="connect_with_other_noteshelfers">他のNoteshelferと接続する</string>
+    <string name="like_us_on_facebook">Facebookでいいねをする</string>
+    <string name="follow_us_on_instagram">Instagramでフォローする</string>
+    <string name="find_us_on_twitter">Twitterでフォローする</string>
+    <string name="noteshelf_copyright">著作権©2020 Noteshelf. 全著作権所有.</string>
+    <string name="enable">有効</string>
+    <string name="select_language">言語を選択する</string>
+    <string name="appearance">外観</string>
+    <string name="handwriting">手書き</string>
+    <string name="cloud_and_backup">クラウドとバックアップ</string>
+    <string name="advanced">高度なオプション</string>
+    <string name="free_covers_paper_templates">無料の表紙と紙のテンプレート</string>
+    <string name="about_noteshelf">Noteshelf について</string>
+    <string name="themes">テーマ</string>
+    <string name="show_date_on_shelf">棚に日付を表示</string>
+    <string name="linked">リンク済み</string>
+    <string name="cloud_logins">クラウドアカウント</string>
+
+    <string name="sample_notebook">サンプル ノート</string>
+    <string name="select_paper_template">ペーパーを選択</string>
+    <string name="select_cover_template">カバーを選択</string>
+    <string name="no_result_found">結果がありません</string>
+    <string name="cloud_backup_wifi_enable_text">Wifiのみでバックアップ</string>
+
+    <string name="agree">同意する</string>
+    <string name="disable_recognition">認識を無効にする</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="scanned_note">スキャンしたメモ</string>
+    <string name="invalid_document">無効なドキュメント</string>
+
+    <string name="get_help">助けを得ます</string>
+
+    <!-- New Shelf -->
+    <string name="group_inside_group_error">グループ内のグループは現在サポートされていません。</string>
+    <string name="share_more_items_error">一度に共有できるノートブックは1つだけです。ノートブックを1つ選択して、再試行してください。</string>
+    <string name="categories">カテゴリー</string>
+    <string name="pinned">ピン留め</string>
+    <string name="pin_notebook">ピンノート</string>
+    <string name="duplicate">複製する</string>
+    <string name="change_cover">カバーを替える</string>
+    <string name="create_notebook">ノートを作成</string>
+    <string name="change_template">テンプレートを変更</string>
+    <string name="back">戻る</string>
+    <string name="eraser">消しゴム</string>
+    <string name="text">テキスト</string>
+    <string name="lasso">なげなわ</string>
+    <string name="view">見る</string>
+    <string name="shape">形状</string>
+    <string name="finder">ファインダ</string>
+    <string name="lock">ロック</string>
+    <string name="import_photo">写真の読み込み</string>
+    <string name="cover">カバー</string>
+    <string name="more">すべて</string>
+    <string name="remove_from_recents">最近のリストから削除</string>
+    <string name="unpin_notebook">ピンリストから削除</string>
+    <string name="open">開く</string>
+    <string name="open_in_new_window">新しいウィンドウで開きます</string>
+    <string name="notebook_options">ノートブックの設定</string>
+    <string name="choose_format">形式を選択する</string>
+    <string name="default_paper">デフォルトペーパー</string>
+    <string name="random_cover_design">ランダムカバー</string>
+    <string name="rotate_page">ページを回転</string>
+    <string name="go_to_page">ページに移動...</string>
+    <string name="get_info">情報を取得</string>
+    <string name="counter_clockwise_90">反時計回り90°</string>
+    <string name="clockwise_90">時計回り90°</string>
+    <string name="clockwise_180">時計回り180°</string>
+    <string name="title">題名</string>
+    <string name="created">作成した</string>
+    <string name="updated">更新しました</string>
+    <string name="page_created">作成されたページ</string>
+    <string name="page_updated">ページを更新しました</string>
+    <string name="backup">バックアップ</string>
+    <string name="input_goto_page">1から %1$d の間で入力してください</string>
+    <string name="on">オンにする</string>
+    <string name="info">情報</string>
+    <string name="select">選択する</string>
+    <string name="bookmarked">ブックマークされた</string>
+
+    <!--  Miscellaneous  -->
+    <string name="my_notes">マイノート</string>
+    <string name="no_papers_available">利用可能なペーパーはありません</string>
+    <string name="redo">やり直す</string>
+    <string name="free_downloads">無料ダウンロード</string>
+    <string name="noteshelf_club">Noteshelf クラブ</string>
+    <string name="signed_in_as">としてサインイン</string>
+    <string name="indexing_page_num">ページ%1$dはインデックス中</string>
+    <string name="please_enter_valid_color">有効な色を入力してください</string>
+    <string name="logout">ログアウト</string>
+    <string name="app_will_store_your_password">Noteshelf はパスワードを安全に保存する必要があります。 確認して同意してください.</string>
+    <string name="stop">やめる</string>
+    <string name="apply">塗る</string>
+    <string name="no_band">バンドなし</string>
+    <string name="transparent_band">透明な帯</string>
+    <string name="blurred_band">ぼかし帯</string>
+    <string name="bottom_photo">下半分に写真</string>
+    <string name="cut_out_photo">切り抜き写真</string>
+    <string name="mosaic_photo">タイル状の写真</string>
+    <string name="options">オプション</string>
+    <string name="page_from_template">テンプレートから新規ページ</string>
+    <string name="page_from_photo">写真からの新しいページ</string>
+
+    <string name="recent">最近のリスト</string>
+    <string name="loading_more">さらに読み込む…</string>
+    <string name="new_audio_note">新しい音声メモ</string>
+
+    <string name="i_agree_to">Noteshelfに同意します</string>
+    <string name="backup_your_notes_to_dropbox_or_google_drive">DropboxまたはGoogleドライブにメモをバックアップする</string>
+
+
+    <string name="please_accept_terms_and_conditions_to_continue">続行するには利用規約に同意してください。</string>
+    <string name="accept">受け入れます</string>
+    <string name="bring_to_front">前に持ってくる</string>
+    <string name="send_to_back">送り返す</string>
+    <string name="hide_with_arrow">隠す</string>
+    <string name="more_with_arrow">すべて</string>
+    <string name="where_is_your_backup">バックアップはどこにありますか？</string>
+    <string name="sync_has_not_started_yet">同期はまだ開始されていません</string>
+    <string name="photo_library">フォトライブラリー</string>
+    <string name="media_library">メディアライブラリー</string>
+    <string name="insert_from">から挿入</string>
+    <string name="no_recents">最近はありません</string>
+    <string name="illustrations">イラスト</string>
+    <string name="animals">動物</string>
+    <string name="animals_and_nature">動物と自然</string>
+    <string name="arts">芸術</string>
+    <string name="athletics">陸上競技</string>
+    <string name="business">ビジネス</string>
+    <string name="fashion">ファッション</string>
+    <string name="featured">特徴</string>
+    <string name="film">映画</string>
+    <string name="health">健康</string>
+    <string name="history">歴史</string>
+    <string name="interiors">インテリア</string>
+    <string name="technology">技術</string>
+    <string name="textures">テクスチャー</string>
+    <string name="wallpapers">壁紙</string>
+    <string name="travel_and_places">トラベル</string>
+    <string name="food_and_drink">食べ物飲み物</string>
+    <string name="bookmark_info">すばやくアクセスするためのブックマークページ、</string>
+    <string name="vectors">ベクター</string>
+    <string name="bookmark">ブックマーク</string>
+    <string name="untitled">名称未設定</string>
+    //HMS auth service
+    <string name="phone">電話</string>
+    <string name="email">Eメール</string>
+    <string name="country_code">国コード</string>
+    <string name="password">パスワード</string>
+    <string name="phone_number">電話番号</string>
+    <string name="verify_code">コードを確認する</string>
+    <string name="send">送信</string>
+    <string name="login">ログインする</string>
+    <string name="login_anonymous">ログイン匿名</string>
+    <string name="register">登録</string>
+    <string name="register_info">アカウントを持っていない?</string>
+    <string name="password_tips">パスワードをお持ちの場合は、パスワードでログインできます。それ以外の場合は、確認コードでログインできます。</string>
+    <string name="password_register_tips">初期パスワードを設定するこの手順はオプションです。 \ nアカウントを作成するときに、初期パスワードを設定できます。また、そのパスワードを使用して次回ログインすることもできます。もちろん、このパスワードはいつでも変更できます。</string>
+    <string name="title_avatar">アバター</string>
+    <string name="title_nickname">ニックネーム</string>
+    <string name="title_phone">電話番号</string>
+    <string name="defNickName">私のニックネーム</string>
+    <string name="btnSingOutTxt">サインアウト</string>
+    <string name="set">設定</string>
+    <string name="title_activity_settings">設定</string>
+    <string name="link">リンク</string>
+    <string name="unlink">リンク解除</string>
+    <string name="delete_user">ユーザーの削除</string>
+    <string name="update_email">メールを更新する</string>
+    <string name="update_phone">電話を更新する</string>
+    <string name="update_password">更新パスワード</string>
+    <string name="reset_password">パスワードを再設定する</string>
+    <string name="verification_code_success">確認コードが正常に送信されました</string>
+    <string name="verification_code_fail">確認コードの送信に失敗する</string>
+    <string name="privacy_policy_link">&#160;<u>プライバシーポリシー</u></string>
+
+    <!-- Recognition Languages -->
+    <string name="english_uk">英語（米国）</string>
+    <string name="english_us">英語（イギリス）</string>
+    <string name="chinese_simplified">中国語（簡体字）</string>
+    <string name="chinese_traditional">中国語（繁体字）</string>
+    <string name="german">ドイツ語</string>
+    <string name="french">フランス語</string>
+    <string name="spanish">スペイン語</string>
+    <string name="italian">イタリア語</string>
+    <string name="japanese">日本語</string>
+    <string name="portugal">ポルトガル語</string>
+    <string name="korean">韓国語</string>
+    <string name="africans">アフリカ人</string>
+    <string name="albanian">アルバニア語</string>
+    <string name="armenian">アルメニア</string>
+    <string name="azeri">アゼルバイジャン</string>
+    <string name="belarusian">ベラルーシ</string>
+    <string name="bulgarian">ブルガリア</string>
+    <string name="chinese_hongkong">中国（香港）</string>
+    <string name="croatian">クロアチア</string>
+    <string name="czech">チェコ</string>
+    <string name="danish">デンマーク</string>
+    <string name="dutch_belgium">オランダ語（ベルギー）</string>
+    <string name="dutch_netherlands">オランダ語（オランダ）</string>
+    <string name="english_canada">英語（カナダ）</string>
+    <string name="estonian">エストニア</string>
+    <string name="finnish">フィンランド</string>
+    <string name="french_canada">フランス語（カナダ）</string>
+    <string name="galician">ガリシア</string>
+    <string name="georgian">グルジア</string>
+    <string name="german_austria">ドイツ語（オーストリア）</string>
+    <string name="greek">ギリシャ語</string>
+    <string name="hungarian">ハンガリー</string>
+    <string name="indonesian">インドネシア</string>
+    <string name="irish">アイルランド人</string>
+    <string name="icelandic">Islandic</string>
+    <string name="kazakh">カザフ</string>
+    <string name="latvian">ラトビア</string>
+    <string name="lithuanian">リトアニア</string>
+    <string name="macedonian">マケドニアの</string>
+    <string name="malay">マレー語</string>
+    <string name="mongolian">モンゴル</string>
+    <string name="norwegian">ノルウェーの</string>
+    <string name="polish">研磨</string>
+    <string name="portuguese_brazil">ポルトガル語（ブラジル）</string>
+    <string name="romanian">ルーマニア語</string>
+    <string name="russian">ロシア</string>
+    <string name="serbian_cyrillic">セルビア語（キリル文字）</string>
+    <string name="serbian_latin">セルビア語（ラテン）</string>
+    <string name="slovak">スロバキア</string>
+    <string name="slovenian">スロベニア</string>
+    <string name="spanish_mexico">スペイン語（メキシコ）</string>
+    <string name="spanish_spain">スペイン語（スペイン）</string>
+    <string name="swedish">スウェーデンの</string>
+    <string name="tatar">タタール</string>
+    <string name="turkish">トルコ語</string>
+    <string name="ukrainian">ウクライナ</string>
+    <string name="vietnamese">ベトナム語</string>
+    <string name="swahili_tanzania">スワヒリ語（タンザニア）</string>
+    <string name="bosnian">ボスニア語</string>
+    <string name="cebuano_philippines">セブアノ語（フィリピン）</string>
+    <string name="english_philippines">英語（フィリピン）</string>
+    <string name="filipino_philippines">フィリピン（フィリピン）</string>
+    <string name="malagasy_madagascar">マダガスカル（マダガスカル）</string>
+    <string name="spanish_colombia">スペイン語（コロンビア）</string>
+    <string name="quick_access_gesture">クイックアクセス ジェスチャー</string>
+    <string name="quick_access_gesture_detail">ノートブック内の画面の左端からスワイプして、「クイックアクセス」メニューにアクセスします。</string>
+    <string name="thumbnails_gesture">サムネイルジェスチャー</string>
+    <string name="thumbnails_gesture_detail">ノートブック内の画面の右端からスワイプしてサムネイル表示にアクセスします。</string>
+    <string name="disable_hyperlinks_detail">ペン、ハイライター、または消しゴムを使用している場合、ハイパーリンクの意図しないアクティベーションを避けてください。</string>
+
+    <!--  App Rating  -->
+    <string name="store_rating">Noteshelfを楽しんでいますか？</string>
+    <string name="rating_message">PlayStore上で私たちを評価するために時間を割いてください。  それは私たちにとても役立ちます！</string>
+    <string name="rating_message_huawei">App Gallery上で私たちを評価するために時間を割いてください。  それは私たちにとても役立ちます！</string>
+    <string name="rating_message_samsung">Galaxy Store上で私たちを評価するために時間を割いてください。  それは私たちにとても役立ちます！</string>
+    <string name="later">後で通知</string>
+    <string name="rate_now">レビューを書く</string>
+    <string name="no_thanks">いいえ、結構です</string>
+    <string name="insert_page_above">ページを上に挿入</string>
+    <string name="insert_page_below">ページを下に挿入</string>
+    <string name="end_date">終了日</string>
+    <string name="start_date">開始日</string>
+    <string name="more_than_twelve_months_gap">期間は12か月を超えます！ より短い期間を選択してください。</string>
+    <string name="start_date_eariler_than_end_date">期間は12か月を超えます！ より短い期間を選択してください。</string>
+    <string name="air_action_btnPress">ペン 切り替える</string>
+    <string name="air_action_btnDoubleClick">ペンラックを開く</string>
+    <string name="air_action_btnSwipeUp">ズームイン</string>
+    <string name="air_action_btnSwipedown">ズームアウト</string>
+    <string name="air_action_btnCircleCW">オープンファインダー</string>
+    <string name="air_action_btnNext">次のページ</string>
+    <string name="air_action_btnPrev">前のページ</string>
+    <string name="air_action_btnCircleCCW">迅速なアクセス</string>
+    <string name="whats_new">新機能</string>
+    <string name="air_actions_desc">お使いのデバイス上でNoteshelfを制御するために、あなたのSペンを振ります。 [設定]>エアアクション> Noteshelfに向かうことで、よりご覧ください。</string>
+    <string name="air_actions_title">Sペンのエアアクションがここにあります！</string>
+    <string name="unable_to_authenticate">証明できません</string>
+    <string name="connect_to_webdav">WebDAVに接続する</string>
+    <string name="username">ユーザー名</string>
+    <string name="connect">コネクト</string>
+    <string name="webdav_dialog_alert">サーバーが見つかりませんでした。 サーバーのURLを確認して、再試行してください。</string>
+    <string name="select_backup_location">バックアップ場所を選択します</string>
+    <string name="logged_in_as"><![CDATA[<b>%1$s</b]]> としてログインしました</string>
+    <string name="connect_through">%1$s経由で接続</string>
+    <string name="backup_location">バックアップ場所</string>
+    <string name="webdav_backup_location_error">ホストサーバーがリクエストを拒否しました。 アカウントがフォルダに変更を加えて再試行する権限を持っていることを確認してください。</string>
+    <string name="backup_to_">タップで色を削除できます。%1$s</string>
+    <string name="connecting">接続する...</string>
+
+
+    <string name="what_s_new">新着情報</string>
+    <string name="webdav_and_">WebDAVとOneDriveのサポート\nスタディプランナー</string>
+    <string name="webdav_and_one">WebDAVとOneDriveへのバックアップ</string>
+    <string name="webdav_and_one_sample">データを安全に保管してください。 私たちは今、バックアップとリカバリのためにWebDAVとOneDriveをサポートしています。</string>
+    <string name="product_updates">私たちは、あなたがNoteshelfを最大限に活用するためのヒント＆トリックを投稿してください。 また、世界中のユーザーからの感動的なメモを共有しています。</string>
+    <string name="see_what_s_new">新機能を見る</string>
+    <string name="page_rotation">ページの回転</string>
+    <string name="follow_us">フォローする</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="rotate">これで、デバイスを回転させることなく、ノートブックページを回転させることができます。</string>
+    <string name="test_sample">Test Sample</string>
+    <string name="test_description">Fictum, deserunt mollit anim laborum astutumque! Vivamus sagittis lacus vel augue laoreet rutrum.</string>
+    <string name="get_back_to_school_in_style">スタイリッシュに学校に戻りましょう！</string>
+    <string name="study_planner_desc">新しいスタディプランナーを使用して、課題を追跡し、スケジュールを計画します。 今すぐ無料ダウンロードセクションから入手してください！</string>
+    <string name="study_planners">スタディプランナー</string>
+
+</resources>

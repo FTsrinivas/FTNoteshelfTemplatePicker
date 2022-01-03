@@ -1,0 +1,1061 @@
+//::::::::::::::::::::::::
+//MARK: Generic Strings
+//::::::::::::::::::::::::
+
+
+Loading = Laden…
+Saving = Speichern…
+Moving = Verschieben…
+Duplicating = Duplizierung läuft...
+Deleting = Löschen…
+Exporting = Exportieren…
+Importing = Importieren…
+Downloading = Herunterladen…
+
+
+Untitled = Unbenannt
+Error = Fehler
+Support = Support
+UnexpectedError = Ein unerwarteter Fehler ist aufgetreten. Bitte versuche es später noch einmal.
+
+
+//::::::::::::::::::::::::
+// MARK: - Button Titles
+//::::::::::::::::::::::::
+
+
+OK = OK
+Cancel = Abbrechen
+Back = Zurück
+Reset = Reset
+New = Neu
+Download = Herunterladen
+Delete = Löschen
+Dismiss = Verwerfen
+No = Nein
+Done = Fertig
+Edit = Bearbeiten
+LearnMore = Mehr erfahren
+Later = Später
+LikeKey = Gefällt mir
+RemindMeLater = Später erinnern
+Add = Hinzufügen
+ADDALLCAPS = ADD
+View = Ansehen
+Next = Weiter
+Close = Schließen
+Continue = Weiter
+Login = Einloggen
+Logout = Ausloggen
+SignOut = Ausloggen
+More = Mehr
+Publish = Publish
+Decline = Decline
+Accept = Accept
+GotIt = Alles klar
+
+//::::::::::::::::::::::::
+//MARK: - Shelf
+//::::::::::::::::::::::::
+
+
+VersionNumber = VERSION %@
+SearchTitles = Titel suchen
+Group = Gruppe
+Rename = Umbenennen
+RenameGroup = Gruppe umbenennen
+NotebookTitle = Titel des Notizbuchs
+
+
+//MARK: Sort order
+SortDate = Datum
+SortName = Name
+Sort = Sortieren
+
+
+//MARK: Toolbar
+ChangeCover = Deckblatt ändern
+Cover = Deckblatt
+MoveToTrash = In den Papierkorb verschieben
+EmptyTrash = Papierkorb leeren
+SelectADocument = Ein Dokument auswählen
+numSelected = %ld ausgewählt
+DuplicatingPagesNofN = Duplizieren… \n%d von %d
+DeletingPagesNofN = Löschen… \n%d von %d
+
+
+//MARK: Category Picker
+Categories = Kategorien
+AddNewCategory = Neue Kategorie hinzufügen...
+Trash = Papierkorb
+CannotUseReservedName = '%@' kann nicht verwendet werden, da dieser Name der App vorbehalten ist.
+DeleteCategoryConfirmation = Möchtest du diese Kategorie löschen? Alle Dokumente werden in den Papierkorb verschoben.
+DefaultCategoryName = Meine Notizen // Note to translator: This is the default category present in the app.
+
+
+//MARK: Notebook Picker (in Move To.. mode)
+NotebookItems = %d Notizbücher
+MoveTo = Verschieben in...
+
+
+//MARK: Remote upgrade
+CriticalUpdateComingSoon = Ein kritischer Fehler wurde in dieser Version von Noteshelf entdeckt. Eine Notlösung wird in den nächsten 24 Stunden zur Verfügung stehen. Bitte nutze die App nicht in der Zwischenzeit. Wir entschuldigen uns für die Unannehmlichkeiten.
+CriticalUpdateAvailable = Ein kritisches Update für Noteshelf  steht im App-Store zur Verfügung. Es empfiehlt sich vor der Nutzung der App sehr, auf die neue Version zu updaten. Möchtest du das Update jetzt durchführen?
+UpdateAvailable = Eine neue Version von Noteshelf steht im App-Store zur Verfügung. Möchtest du das Update jetzt durchführen?
+UpgradeNowKey = Jetzt aktualisieren
+DontShowHintAgain = Nicht anzeigen
+
+//MARK: Recent & Pinned
+PinNotebook = Notizbuch anheften
+UnpinNotebook = Notizbuch lösen
+CreateSiriShortcut = Erstellen Sie Siri Verknüpfung
+EditSiriShortcut = Bearbeite Siri Shortcut
+OpenLeftSide = Öffnen Sie auf der linken Seite
+OpenRightSide = Auf der rechten Seite öffnen
+RemoveFromRecents = Aus den Neueste entfernen
+//Section Headers
+RecentsDocumentsTitle = LETZTE
+PinnedDocumentsTitle = GEPINNT
+RecentsDocuments = Letzte
+PinnedDocuments = Gepinnt
+
+//Alert
+MaximumPinnedWarning = Limit erreicht. Sie können nur bis zu %d Notizbücher anheften.
+
+Move = Verschieben
+
+//::::::::::::::::::::::::
+//MARK: - New Notebook
+//::::::::::::::::::::::::
+
+
+//MARK: '+' Menu
+QuickCreate = Schnell erstellen
+NewNotebook = Neues Notizbuch
+ImportDocument = Dokument importieren
+Creating = Erstellung läuft...
+ScanDocument = Dokument scannen
+//MARK: Quick create settings
+QuickCreateSettings = Quick-Create-Einstellungen
+RandomCoverDesign = Zufallsdeckblatt
+DefaultCover = Standard-Deckblatt
+DefaultPaper = Standard-Papier
+Random = Zufällig
+
+
+//MARK: New Notebook screen
+Choose = Auswählen...
+TapToTypeNotebookTitle = Tippen, um einen Titel für das Notizbuch einzugeben… //Not Used
+CreateNotebook = Notizbuch erstellen
+Options = Optionen
+AutoBackup = Auto-Backup
+
+
+//MARK: Theme pickers
+SelectCoverTemplate = Deckblatt auswählen
+SelectPaperTemplate = Papier auswählen
+FreeDownloads = Kostenlose Downloads
+Downloaded = Heruntergeladen
+
+
+//MARK: NS Club
+NSClubLoggedInInfo = Willkommen im Mitgliederbereich des Noteshelf-Klubs.\n\nDu bist als %@ eingeloggt.
+SignInOrSignUpForFree = Einloggen oder kostenlos anmelden!
+NSClubLoggedOutInfo = Diese Downloads sind exklusiv für Noteshelf Club-Mitglieder verfügbar. Melde dich kostenlos an.
+NSClubJoinPrompt = Willst du mehr Deckblätter und Papiervorlagen?\nDann tritt jetzt dem Noteshelf-Klub bei!
+
+
+//MARK: Custom themes
+Custom = Benutzerdefiniert
+PaperName = Papiername
+CustomCoverName = < Name des Deckblatts >
+YourCustomCover = Dein eigenes Blatt
+SelectPhoto = Foto auswählen
+PinchZoomCustomCover = Zum Ändern des Deckblatt-Layouts mit den Fingern zoomen.
+SaveForFutureUse? = Für zukünftige Nutzung speichern?
+UseThisCover = Dieses Deckblatt nutzen?
+
+
+//FIXME: Don't forget plist localizations
+
+
+//::::::::::::::::::::::::
+//MARK: - Notebook UI
+//::::::::::::::::::::::::
+
+
+LoadingNotebook = Notizbuch laden
+
+
+//MARK: Pen Racks
+FAVORITES = FAVORITEN
+PEN = STIFT
+Favorites = Favoriten
+NoFavoritePens = Keine Stifte als Favoriten
+NoFavoritePensDescription = Auf das Stern-Symbol <ICON> in der Schreibwerkzeugpalette tippen,\n um den aktiven Stift als Favorit
+FavoritesAreLimitedTo = Favoriten sind auf %d eingeschränkt.
+
+
+//MARK: Custom Color Picker
+Colors = Farben
+CustomColor = Eigene Farbe...
+ResetToDefault = Auf Standard zurücksetzen
+UnableToConnectToColourLovers = Verbinden mit COLOURlovers.com nicht möglich
+MakeSureYouAreConnected = Bitte vergewissere dich, dass das Gerät mit dem Internet verbunden ist und versuche es noch einmal.
+ColorSearchPlaceholderText = Suchen (z.B. Neon)
+LoadMoreColorPalettes = %d weitere Paletten laden…
+ColorByAuthor = von %@
+
+
+//MARK: Clipboard
+Cut = Ausschneiden
+Copy = Kopieren
+CutCopy = Ausschneiden / Kopieren
+Paste = Einfügen
+
+
+//MARK: Eraser
+ClearPage = Seiteninhalt löschen
+ClearPageConfirmation = Möchtest du diese gesamte Seite leeren?
+
+
+//MARK: Add Menu
+Page = Neue Seite
+PageFromTemplate = Neue Seite von Vorlage
+Photo = Foto
+Photos = Fotos
+Audio = Audio
+Stickers = Emojis
+TextBox = Textfeld
+PageTags = Seiten-Tags
+Tag = Tag
+
+
+//MARK: Page footer
+NofNAlt = %d von %d
+DocumentInfoFormatString = Seite erstellt am: %@ aktualisiert am: %@
+
+
+//MARK: Emoji Categories
+Recents = Neuigkeiten
+People = Smileys und Personen
+Nature = Tiere und Natur
+Things = Objekte
+Travel = Reisen und Orte
+Signs = Symbole
+Food = Essen & Trinken
+Sports = Sport & Aktivitäten
+Flags = Flaggen
+
+
+//MARK: Insert document
+InsertDocumentCurrentOrNew = In aktuelles Dokument einfügen oder neues Dokument erstellen?
+InsertHere = Hier einfügen
+CreateNew = Neu erstellen
+
+
+//MARK: Zoom Mode
+ButtonsPosition = Platzierung der Buttons
+Left = LINKS
+Right = RECHTS
+MarginPosition = Randposition
+LineSpacing = Zeilenabstand
+AutoAdvance = Automatische Weiterschaltung
+ShowLineHeightGuide = Linienhöhe anzeigen
+
+
+//MARK: Textbox
+Body = Textkörper
+
+
+//MARK: Audio Recording
+AudioRecordings = Audioaufnahmen
+AddNewRecording = Neue Aufnahme hinzufügen
+ContinueRecording = Aufnahme fortsetzen
+Recording = Aufnahme
+RecordingInProgress = Aufnahme läuft… 
+AudioRecord_Permission_Message = Bitte gib uns Zugriff auf das Mikrofon unter Einstellungen -> Datenschutz -> Mikrofon -> Noteshelf.
+AudioRecoring_Message = Notizbuch kann während eine Audioaufnahme gemacht wird nicht geschlossen werden.
+AudioRecoring_Progress_Message = Dieser Vorgang kann nicht durchgeführt werden, da gerade eine Audioaufnahme läuft.
+StopRecord = Aufnahme beenden
+SessionNo = Sitzung %d
+AudioPopoverEmptyMessage = Keine Audioaufnahmen in diesem Notizbuch.
+Record = Aufnehmen
+Pause = Pause
+Play = Abspielen
+Export = Exportieren
+
+
+//MARK: RefreshControl
+PullToAddNewPage = Herunterziehen, um neue Seite hinzuzufügen
+ReleaseToAddNewPage = Loslassen, um neue Seite hinzuzufügen
+
+
+//::::::::::::::::::::::::
+// MARK: - Password Lock
+//::::::::::::::::::::::::
+
+
+Password = Passwort
+SetPassword = Passwort festlegen
+ChangePassword = Passwort ändern
+RequirePassword = Passwort anfordern
+OldPassword = Altes Passwort
+NewPassword = Neues Passwort
+Required = Erforderlich
+Recommended = Empfohlen
+Verify = Verifizieren
+Hint = HINWEIS
+ChangeOrRemovePassword = Passwort des Notizbuchs ändern oder entfernen
+DoesntRequirePassword = Passwort dieses Notizbuchs eingeben, um es zu entfernen
+PasswordsDontMatch = Die Passwörter stimmen nicht überein
+EnterAPassword = Passwort eingeben
+IncorrectPassword = Falsches Passwort
+PleaseEnterValidPassword = Bitte gib ein gültiges Passwort ein
+EnterThePasswordFor = Passwort für \%@\
+RequirePasswordToOpenNotebook = Ein Passwort verlangen, um dieses Notizbuch zu öffnen
+
+
+//::::::::::::::::::::::::
+// MARK: - Import / Export
+//::::::::::::::::::::::::
+
+
+//MARK: Targets
+Targets = Ziele
+Print = Drucken
+PhotoAlbum = Fotoalbum
+Email = E-Mail
+Tweet = Tweet
+OpenIn = Öffnen mit
+
+
+//MARK: Export UI
+ChooseFormat = Format wählen
+FolderName = Ordnername
+Filename = Dateiname
+ExportEntireNotebookConfirmation = Durch die Verwendung des .noteshelf-Formats werden nicht nur die ausgewählten Seiten, sondern das ganze Notizbuch gesendet. Möchtest du trotzdem fortfahren?
+
+
+Share = Teilen
+CurrentPage = Aktuelle Seite
+AllPages = Alle Seiten
+
+
+NoNotesToExport = Keine Notizen zu exportieren
+ExportComplete = Exportieren abgeschlossen!
+ExportCancelled =  Export abgebrochen!
+ExportFailed = Export gescheitert!
+
+
+GeneratingPageNofN = Seite %d von %d generieren
+EmailNotSetup = Aktion fehlgeschlagen.\nAuf diesem Gerät ist keine E-Mail angelegt.
+UploadingPageNToPhotosApp = Seite %d von %d in iPad-Album abgelegt
+UploadingToCloud = Wird hochgeladen bei %@
+PageNofN = Seite %d von %d
+
+
+ShareNow = Jetzt teilen
+
+
+Failedtocreatebackup = Erstellen der Sicherungsdatei fehlgeschlagen. Bitte überprüfe, ob genug freier Speicherplatz auf deinem Gerät zur Verfügung steht.
+
+
+//MARK: Folder picker
+NewFolder = Neuer Ordner
+CreatingFolder = Neuen Ordner erstellen
+CloudSubTitleFormat = %@ – Letzte Aktualisierung: %@
+CloudFolderLastUpdatedFormat = Letzte Aktualisierung: %@
+Settings = Einstellungen
+AllFiles = Alle Dateien
+
+
+//MARK: Password protected PDF
+PasswordProtectedPDF = Passwortgeschützte PDF
+EnterPassword = Passwort eingeben
+FailedToOpenDocumentUnexpectedError = Öffnen des Dokuments auf Grund eines unerwarteten Fehlers fehlgeschlagen.
+
+
+//MARK: Error Messages
+ConnectionFailed = Verbindung fehlgeschlagen
+ErrorConnecting = Fehler beim Verbinden
+CouldNotConnectToServer = Verbindung zum Server nicht möglich. Bitte versuche es später noch einmal.
+CheckYourInternetConnection = Bitte überprüfe die Internetverbindung und versuche es später noch einmal.
+ServerTakingTooLong = Der Server hat keine Antwort gesendet. Bitte versuche es später noch einmal.
+BadResponseFromServer = Fehlerhafte Antwort vom Server. Bitte versuche es später noch einmal.
+ProblemConnectingToServer = Problem beim Verbinden mit dem Server. Bitte versuche es später noch einmal.
+
+
+//MARK: Dropbox Related
+ConnectingToDropbox = Verbindung zu Dropbox wird hergestellt
+UploadingPageNToDropbox = Seite %d von %d wird in Dropbox gespeichert
+UploadToDropboxFailed = Ein unerwarteter Fehler ist aufgetreten.
+UnableToAccessDropbox = Zugriff auf Dropbox nicht möglich.
+DropbBoxBackupStorageFullErrorMsg = Dropbox konnte diese Aktion auf Grund einer Begrenzung des Speicherplatzes nicht abschließen.
+
+
+//MARK: Evernote Related
+EvernoteSync = Evernote Sync
+ChooseAccount = Account auswählen
+EvernoteExportTags = Tags exportieren
+EvernoteExportAsOneNote = Als einzelne Notiz exportieren
+EvernoteAuthenticationFailed = Authentifizierung bei Evernote nicht möglich
+EvernoteRetieveNotebookFailed = Abrufen von Evernote-Notizbuch nicht möglich
+UploadingPageNToEvernote = Seite %d von %d in Evernote abgelegt
+EvernotePDFSizeError = Hochladen fehlgeschlagen. PDF ist zu groß für Evernote.
+PublishedByNoteshelf = Veröffentlicht von %@
+EvernoteUploadFailed = Unerwarteter Fehler. Hochladen bei Evernote fehlgeschlagen.
+EvernotePublishOnWifiOnly = Nur über WiFi veröffentlichen
+LastsuccessfulsyncAtFormat = Letzte erfolgreiche Synchronisierung um %@
+EvernoteAuthTokenExpiredTitle = Evernote-Token abgelaufen. Bitte melde dich erneut bei Evernote an.
+
+
+//MARK: Box related
+UploadingPageNToBox = Seite %d von %d in Box hochladen
+UploadToBoxFailed = Unerwarteter Fehler. Hochladen in Box fehlgeschlagen.
+UnableToAccessBox = Zugriff auf Box nicht möglich.
+Itemwiththesamenamealreadyexists = Objekt mit gleichem Namen ist bereits vorhanden
+
+
+//MARK: GDrive Related
+UploadToGoogleDriveFailed = Ein unerwarteter Fehler ist aufgetreten.
+UploadingPageNToGoogleDrive = Seite %d von %d wird in Google Drive gespeichert
+FileIsDeleted = Datei wurde gelöscht
+UnabletoAccessGoogleDrive = Zugriff auf Google Drive nicht möglich
+NeedGoogleDriveForConvertion = Noteshelf nutzt Google Drive um Dokumente vor dem Importieren zu PDFs zu konvertieren.\n\nBitte melde dich mit deinem Google-Account an.
+ConvertingToPDF = Zu PDF konvertieren…
+
+
+//MARK: OneDrive
+UploadToOneDriveFailed = Auf Grund eines unerwarteten Fehlers ist das Hochladen auf OneDrive fehlgeschlagen.
+UploadingPageNToOneDrive = Seite %d von %d wird in One Drive gespeichert
+
+
+//MARK: iTunes
+UploadToItunesFailed = Auf Grund eines unerwarteten Fehlers ist das Hochladen auf iTunes fehlgeschlagen.
+
+
+//::::::::::::::::::::::::
+// MARK: - iCloud
+//::::::::::::::::::::::::
+
+
+iCloudAvailable = iCloud steht zur Verfügung
+UseiCloud = iCloud nutzen
+iCloudAvailableMessage = Deine Dokumente automatisch in der Cloud speichern, um geräteübergreifend ihre Aktualität sicherzustellen.
+iCloudUserTurnedOff = iCloud deaktiviert
+NotUsingiCloudMessage = Deine Dokumente wurden von diesem Gerät entfernt, bleiben aber in der iCloud gespeichert.
+iCloudUserTurnedOffMessage = Eine Kopie deiner Dokumente bleibt in der iCloud gespeichert. Was möchtest du mit den noch auf diesem Gerät gespeicherten Dokumenten machen?
+ContinueUsingICloud = Mit iCloud fortfahren
+KeepALocalCopy = Auf meinem Gerät speichern
+DeleteALocalCopy = Von meinem Gerät löschen
+ResolveConflict = Konflikt beheben
+ResolveConflictMessage = Änderungen sind nicht synchronisiert. Entscheide, welche Dokumente behalten werden sollen.
+KeepVersions = Versionen behalten
+KeepVersion = Version behalten
+ConflictDocModifiedOn = Geändert am %@
+PasswordUpdated = Passwort aktualisiert
+
+
+//::::::::::::::::::::::::
+// MARK: - Finder
+//::::::::::::::::::::::::
+
+
+Pages = Seiten
+SelectAll = Alles auswählen
+DeselectAll = Nichts auswählen
+CannotDeleteAllPages = Löschen aller Seiten nicht möglich. Zumindest eine Seite muss weiterhin existieren.
+MovePageToTrashSingular = %d Seite löschen
+MovePageToTrashPlural = %d Seiten löschen
+DuplicatePageSingular = %d Seite duplizieren
+DuplicatePagePlural = %d Seiten duplizieren
+CannotMoveToSameNotebook = Kann nicht in dasselbe Notizbuch verschieben
+CannotMoveAllPages = Nicht alle Seiten können verschoben werden. Mindestens eine Seite sollte bleiben.
+SearchText = Text durchsuchen
+SelectPages = Seiten wählen
+
+
+//MARK: Tagging
+Tags = Tags
+AddTags = Tags hinzufügen
+TypeTags = Tags eintippen...
+ClearTags = Tags löschen
+NoTagsInPage = Keiner Seite dieses Notizbuches\n wurden Tags zugewiesen.
+NoBookmarksPage = Keine Lesezeichenseiten
+NoBookmarksDescription = Tippen Sie auf den Seiten auf das Lesezeichensymbol <ICON>, um sie dieser Ansicht hinzuzufügen.\n\nLang drücken, um Titel und Farbe hinzuzufügen.
+//::::::::::::::::::::::::
+// MARK: - Settings
+//::::::::::::::::::::::::
+
+
+Preferences = Einstellungen
+ShelfThemeCategoryTitle = Thema
+ShowModifiedDate = Änderungsdatum anzeigen
+WritingStyle = Schreibstil
+Whiteboard = Whiteboard-Modus
+WhiteboardMessage = Noteshelf als Whiteboard mit einer externen Anzeige oder einem Projektor nutzen.
+Notebook Options = Notizbuch-Optionen
+NotebookOptionsHelp = Zugang zu diesen Einstellungen ist nur innerhalb eines Notizbuches möglich.
+ChangePageTemplate = Seitenvorlage ändern
+Welcome Tour = Begrüßungsrundgang
+
+
+//MARK: Rate this App
+Rate this App = Bewerte diese App
+TapToRate = Hier tippen, um zu bewerten
+RateUsImproveMessage = Bitte nimm dir etwas Zeit, um uns dein Feedback zu geben.
+
+
+//MARK: Tell a Friend
+TellaFriend = Freunden empfehlen
+TellAFriendMessage = Sieh dir Noteshelf im AppStore an. Das ist eine tolle App mit natürlichem Schreibverhalten und vielen nützlichen Funktionen!
+CheckOutApp = Sieh dir %@ an
+
+
+//MARK: Follow Us
+FollowUs = Folge uns
+WhatsNewJoinUsInfo = Erhalte Zugriff auf exklusive Inhalte, Tipps, Werbeaktionen und\nmehr, indem du uns bei \nFacebook oder Twitter mit ‚Gefällt mir‘ markierst bzw. folgst.
+LikeUSFacebook = Markiere uns auf Facebook mit ‚Gefällt mir‘
+FollowUSTwitter = Folgen uns auf Twitter
+NowFollowingOnTwitter = Danke, du folgst jetzt @noteshelf auf Twitter.
+
+
+//MARK: Accounts
+CloudAndBackup = Cloud und Backup
+DropboxHelpMessage = Erstelle Backups, importiere und exportiere auf deinen Dropbox-Account
+EvernoteHelpMessage = Veröffentliche Notizbücher auf deinem Evernote-Account
+GoogleDriveHelpMessage = Importiere und exportiere auf deinen Google-Drive-Account
+OneDriveHelpMessage = Importiere und exportiere auf deinen OneDrive-Account
+BoxHelpMessage = Importiere und exportiere auf deinen Box-Account
+UnableToauthenticate = Authentifizierung nicht möglich
+Linked = verknüpft
+
+
+//MARK: Cloud Backup
+BackupNotebooks = Backups von Notizbüchern erstellen
+BackupOnWiFiOnly = Backup nur über WLAN
+PublishNotebooks = Notizbücher veröffentlichen
+BackupUpToDate = Backup auf neuestem Stand
+BackUpFailed = Backup gescheitert
+BackUpInProgress = Backup läuft ...
+BackUpPending = Backup anstehend
+AccountInfoFormat = %0.1f%% von %@ verwendet
+LastBackupDateTime = Letzte Sicherung am %@
+BackupNotSelected = Nicht für Sicherung ausgewählt
+
+
+//MARK: Support
+KnowledgeBase = Wissensdatenbank (auf Englisch)
+EmailSupport = E-Mail-Support
+SendLogs = Protokolle senden
+
+
+//::::::::::::::::::::::::
+//MARK: - Stylus
+//::::::::::::::::::::::::
+
+
+//MARK: General Stylus
+Stylus = Eingabestift
+Enable = Aktivieren
+Connect = Verbinden
+Connecting = Verbinden…
+Connected = Verbunden
+Disconnect = Verbindung trennen
+Pairing = Wird gekoppelt ...
+StylusNameConnected = %@ verbunden
+StylusNameDisconnected = %@ nicht verbunden
+PressStylusTipToPair = Drücke die Spitze des Eingabestifts auf den Kopplungspunkt
+SetStylusPairingMode = Versetze deinen Eingabestift in den Kopplungsmodus
+PressureSensitivity = Druckempfindlichkeit
+
+
+//MARK: Stylus Button Actions
+ButtonOnePress = Button 1 drücken
+ButtonTwoPress = Button 2 drücken
+StylusButtonDoupleTapAction = Doppeltes Antippen des Buttons %d
+ChooseAction = Aktion auswählen
+ButtonActionNone = Keine Aktion
+ButtonActionUndo = Rückgängig
+ButtonActionRedo = Wiederholen
+ButtonActionNextColor = Nächste Farbe
+ButtonActionPreviousColor = Vorherige Farbe
+ButtonActionNextPage = Nächste Seite
+ButtonActionPreviousPage = Vorherige Seite
+
+
+//MARK: Apple Pencil
+ApplePencilDetectedTitle = Kopplung erfolgreich
+ApplePencilDetectedMessage = Der Apple Pencil wurde erkannt und kann nun verwendet werden.
+TurnOnApplePencilSupport = Einschalten
+
+
+//::::::::::::::::::::::::
+// MARK: - Welcome Experience
+//::::::::::::::::::::::::
+
+
+WelcomeScreen1Title = DAS NEUE NOTESHELF
+WelcomeScreen1Info = Willkommen bei Noteshelf!\nFange an, schöne handgeschriebene Notizen auf deinem iPad zu erstellen.
+WelcomeScreen2Title = Vollfunktionales\ndigitales Notieren
+WelcomeScreen2Info = Wähle aus einer Vielzahl an anwenderfreundlichen Optionen aus,\n um hochwertige Notizen zu erstellen.
+WelcomeScreen3Title = Familiar Writing Tools
+WelcomeScreen3HelpMessage = Tippe auf ein Werkzeug, um es hier auszuprobieren.
+WelcomeScreen4Title = Markierungen auf Dokumenten oder Bildern machen
+WelcomeScreen4Info = Deine PDFs, Excel-, Word- und Powerpoint-Dokumente,\nBilder und noch mehr mit Anmerkungen versehen!
+WelcomeScreen5Title = Gib allem deine eigene Note!
+WelcomeScreen5Info = Deine Notizbücher durch unterschiedliche Deckblattdesigns &\nPapiervorlagen individuell gestalten!
+
+
+WelcomeScreen2FeatureTakeNotes = Notizen machen
+WelcomeScreen2FeatureAudio = Audio aufnehmen
+WelcomeScreen2FeaturePhotos = Fotos hinzufügen
+WelcomeScreen2FeatureMarkupDocuments = Markierungen auf Dokumenten einfügen
+WelcomeScreen2FeatureMacSupport = Mac App-Unterstützung
+WelcomeScreen2FeatureShapes = Perfekte Formen zeichnen
+WelcomeScreen2FeatureSearchNotes = Suche nach handschriftlichen Notizen
+WelcomeScreen2FeatureCoversnPapers = Viele Papiervorlagen
+WelcomeScreen2FeatureAddEmoji = Emoji hinzufügen
+WelcomeScreen2FeatureTextFormatting = Rich-Text-Formatierung
+WelcomeScreen5ButtonTitle = Mit deinen Notizen anfangen
+
+
+//::::::::::::::::::::::::
+//MARK: - Zendesk Support
+//::::::::::::::::::::::::
+
+
+BetaFeedback = Beta-Feedback
+
+
+//Localized Shelf Names
+MyNotes = Meine Notizen
+SampleNotebook = Beispiel-Notizbuch
+NSClubVerificationEmailSent = Du bist fast soweit! Wir haben eine E-Mail an %@ gesendet. Öffne sie, um deine Mitgliedschaft zu aktivieren.
+
+
+SystemGeneratedCollectionWarning = Dies ist eine vom System erzeugte Kategorie und kann nicht mit der iCloud synchronisiert werden.\nBitte verschiebe wichtige Notizbücher in andere Kategorien, um sie mit der iCloud synchronisieren zu können.
+DataMigrationComplete = Datenmigration abgeschlossen!
+DataMigrationCompleteInfo = Deine Daten aus der früheren Version von Noteshelf wurden in eine getrennte Kategorie namens \“Noteshelf 1-Daten\” verschoben.
+
+
+//iOS11 Features
+SaveKey = Speichern
+RetakeKey = Neu aufnehmen
+KeepScanKey = Scan behalten
+DropAnywhere = Hier ablegen, um ein Notizbuch zu erstellen
+DropOnlyOne = Drag & Drop-Funktionalität für mehrere Dateien ist in Arbeit
+ScannerUnavailable = Der Dokumentenscanner benötigt Vollbildmodus
+CancelKey = Abbrechen
+ViewAllFonts = Alle Schriftarten anzeigen
+SelectFont = Schriftart auswählen
+AllFonts = Alle Schriftarten
+
+
+//Migration Complete
+DataMigrationComplete = Datenmigration abgeschlossen!
+DataMigrationCompleteMessage = Deine Daten aus der früheren Version von Noteshelf wurden in eine getrennte Kategorie namens \Noteshelf 1-Daten\ verschoben.
+ErrorSavingToPhotosAlbum = Beim Exportieren ist ein Fehler aufgetreten. Besuche Einstellungen -> Privatsphäre -> Fotos und überprüfe, ob Noteshelf Schreibzugriff für das Fotoalbum hat.
+
+
+DocumentInfoFormatStringCompactMode = Seite erstellt am: %@\naktualisiert am: %@
+
+
+//Toast messages
+PaperSizeUnfit = Papiergröße stimmt nicht überein
+CantOpenFromTrash = Öffnen aus dem Papierkorb nicht möglich
+
+//Whiteboard specific
+WHITEBOARDMODE = WHITEBOARD-MODUS
+
+PhotoNotAvailableToUse = Beim Herunterladen des Fotos ist ein Fehler aufgetreten. Bitte versuche es später erneut.
+
+NoMultipleTypes = Mehrere Dateitypen nicht unterstützt
+DropOnlyOneImage = Du kannst nur ein Bild ablegen
+
+AddToNewCategory = neue Kategorie hinzufügen...
+AddToNewGroup = Neue Gruppe hinzufügen...
+AddToNewNotebook = Neues Notizbuch hinzufügen...
+
+Imported = Importiert
+Import = Importieren
+
+OpenWithTouchID = Verwende die %@
+UseFingerPrintToOpenNotebook = Zum Öffnen ist eine Authentifizierung erforderlich
+EnterPasswordToOpenThisNotebook = Passwort eingeben
+NotCorrectPassword = Falsches Passwort
+
+AddNew = Neue hinzufügen
+
+SelectCoverStyle = Cover-Design auswählen
+NoBand = Kein Band
+TransparentBand = Transparentes Band
+BlurredBand = Verschwommenes Band
+BottomPhoto = Unteres Foto
+MosaicPhoto = Mosaikfoto
+CutOutPhoto = Ausgeschnittenes Foto
+
+DocumentSupport = Document has some problem. Send us the document so we can look into this.
+DocumentSupportDisclaimer = \n\n\n\n\n DISCLAIMER (Read Carefully): Your document has been attached to this email. Please do not send this email if you have any confidential or sensitive information within the document.
+
+FailedToImport = Importieren fehlgeschlagen
+Resize = Größe ändern
+ShowPageBackground = Seitenhintergrund anzeigen
+
+//New PenRack
+Pens = Stifte
+Palettes = Paletten
+CustomColourHeader = Bewegen Sie zur Farbwahl die Kreise <ICON> oder\n tippen Sie den Hexwert direkt ein.
+ColourLoversEditHeader = Tippen Sie zur Auswahl auf eine Farbe in der Palette.
+ColourLoversAddHeader = Wählen Sie eine einzelne Farbe oder eine ganze\n Palette zum Hinzufügen aus.
+EditColorsHeader = Tippen Sie zum Bearbeiten einer Farbe.\nHalten und ziehen Sie zum Umsortieren.
+DeleteColorsHeader = Tippen Sie zum Löschen auf eine Farbe.
+ResetColorsWarning = Hierdurch werden die Farbpaletten auf die \nWerkseinstellungen zurückgesetzt.
+EditColors = Farben bearbeiten
+DeleteColors = Farben löschen
+Apply = Übernehmen
+NoInternetHeader = Keine Internetverbindung
+NoInternetTapHereMessage = Prüfen Sie Ihre Verbindung und tippen\n Sie dann hier zum Neuladen.
+
+Added! = Hinzugefügt!
+FavoritesFull = Favoriten (VOLL)
+MaximumColorsWarning = Höchstens <COUNT> Farben können hinzugefügt werden
+MinimumColorsWarning = Mindestens <COUNT> Farben erforderlich
+ColorAlreadyAdded = Diese Farbe ist schon in Ihrer Palette enthalten
+
+NS1ContentsEditNotSupport = Die Handschrift von Noteshelf 1 kann nicht in Noteshelf 2 bearbeitet werden.
+ExportAsHD = In HD exportieren
+NoPapersAvailable = Keine Papiere verfügbar
+Portrait = Hochformat
+Landscape = Querformat
+
+BackupFormat = Backup-Format
+CloudLogins = Cloud-Konten
+CloudErrorLog = Protokolle
+Change = Ändern...
+BackingUpTo = Backup auf %@
+DontBackup = Ausgeschaltet
+BackupOff = Ausgeschaltet
+ChooseCloud = Wähle eine Cloud
+SelectBackupAccount = Auto-Backup nicht eingerichtet
+LogoutAutoBackupAlert = Dadurch wird auto-backup auf %@ deaktiviert.
+TurnOffAutoBackup = Auto-Backup Ausschalten
+Setup = Konfigurieren
+NoBackupBooksChoosen =   Keine Notizbücher für die Backup ausgewählt
+
+iCloudNotAvailable = iCloud ist nicht verfügbar
+iCloudNotAvailableInfo = Please allow %@ to access iCloud in Settings app -> iCloud -> iCloud Drive.
+iCloudNotAvailableInfo-Mac = Please allow %@ to access iCloud in System Preferences -> Internet Accounts -> iCloud Drive -> Options -> Documents.
+
+//Export
+ExportTo = Exportieren nach
+SelectFiles = Dateien auswählen
+Generating = Generieren...
+UploadToThisFolder = Hier hochladen
+Multiple = Mehrere
+FileNames = Dateinamen
+
+NoCameraInfo = Zugriff auf Kamera nicht möglich. Versuchen Sie bitte, Ihr Gerät neu zu starten.
+ExternalLink = Externer Link
+ExternalLinkOpenInfo = Um den Link: %@ auszuführen, muss eine externe Anwendung gestartet werden. Wollen Sie fortfahren?
+
+//WeLink
+WeLinkExportCountError = WeLink akzeptiert derzeit keine Dateiexporte.
+ParentFolder = Übergeordneter Ordner
+
+//Fav rack
+ShowFavortiesToolbar = Favoriten-Symbolleiste anzeigen
+Highlighters = Textmarker
+
+ShowFavToolbarInfo = Dadurch wird eine sekundäre Symbolleiste mit allen Ihren Favoriten angezeigt.
+Show = Zeig es
+ShowAndDontAsk = Zeigen Sie und fragen Sie nicht
+
+//MARK: - Store
+ClubLoginDesc = Diese Papiere und Deckblätter stehen ausschließlich Mitgliedern des Noteshelf-Klubs zur Verfügung.
+NoResultFound = Keine Ergebnisse, die Ihrem Suchbegriff entsprechen.
+Search = Suche
+SearchPapersCovers = Geben Sie Suchbegriffe ein
+Updates = Aktualisierung
+Get = Download
+Update = Aktualisieren
+Downloads = Downloads
+LoggedInAs = Du bist als %@ eingeloggt.
+
+//Watch Recordings
+WatchRecordings = Watch-Aufnahmen
+NoWatchRecordings = Keine Watch-Aufnahmen
+NoWatchRecordingsMessage = Aufnahmen aus der Apple-Watch-App\n Noteshelf erscheinen hier.
+AddToNotebook = Zu Notizbuch hinzufügen
+MarkAsUnused = Als unbenutzt markieren 
+MarkAsUsed = Als benutzt markieren 
+ImportWatchRecording = Watch-Aufnahme importieren
+AddToNewPage = Zu neuer Seite hinzufügen
+AddToCurrentPage = Zu aktueller Seite hinzufügen
+WatchRecording = Watch-Aufnahme
+AudioDeleteConfirmMessage = Sind Sie sicher, dass Sie diese Aufnahme löschen wollen?
+AppleWatchRecording = Apple-Watch-Aufnahme
+WatchAdInfo = Installieren Sie Noteshelf 2 auf Ihrer Apple Watch. Sie können Sprachnachrichten auf Ihrer Watch aufnehmen und später auf Ihrem iPhone / iPad Notizen machen.
+WatchNewRecords = Es sind neue Aufnahmen von Ihrer Apple Watch eingetroffen.
+
+ChangePhoto = Foto ändern
+TakePhoto = Foto machen
+
+SaveAsTemplate = Als Vorlage speichern
+
+Inspirations = Inspirationen
+CancelInspirationDownload = Möchten Sie den Download abbrechen?
+On =  — 
+BookAddedMessageSingular = %d Notizbuch wurde der '%@' Kategorie hinzugefügt
+BooksAddedMessage = %d Notizbücher wurden der '%@' Kategorie hinzugefügt
+
+UntitledNotebook = Unbenanntes Notizbuch
+Create = Erstellen
+ViewNow = Jetzt ansehen
+ClubLoginTryAnotherAccount = Möchten Sie es mit einem anderen Konto versuchen?
+
+//Bookmarks
+Thumbnails = Miniaturbild
+List = Liste
+BookmarkPopupHeading = Lesezeichen
+ClearBookmark = Lesezeichen löschen
+BookmarkThisPage = Ein Lesezeichen auf diese Seite setzen
+Bookmarked = Markiert!
+AlwaysBackupNoteInfo = Die obigen Einstellungen werden standardmäßig für alle zukünftigen Notebook-Kreationen verwendet (mit Ausnahme von Dokumentenimporten).
+
+DeleteCategoryConfirmationCloud = Möchten Sie diese Kategorie löschen? Wenn sie Notizbücher enthält, die nicht auf dieses Gerät heruntergeladen wurden, können sie nicht aus dem Papierkorb wiederhergestellt werden.
+DeleteBooksConfirmationNotDownloadedYet = Einige Notizbücher wurden nicht auf dieses Gerät heruntergeladen. Sie können diese Notizbücher nicht aus dem Papierkorb wiederherstellen.
+DeleteBookConfirmationNotDownloadedYet = Dieses Notebook wurde nicht auf dieses Gerät heruntergeladen. Es kann nach dem Löschen nicht aus dem Papierkorb wiederhergestellt werden.
+
+// New Strings April 2018
+TextStyle = Textstil
+EditFavoriteFonts = Favoriten bearbeiten
+FontTapToRename = Zum Umbenennen tippen. Lang drücken und ziehen, um die Reihenfolge zu ändern.
+DefaultTextStyle = Standard-Textstil
+PreviewText = Vorschautext
+TestStyleTip = Hier können Sie Ihre eigenen bevorzugten Textstile mit der Option <ICON> hinzufügen.
+RequiresAppUpdate = Bitte aktualisieren Sie Ihre App auf die neueste Version, um dieses Dokument zu öffnen.
+
+//Tooltips
+ReadOnlyEnabledTip = Schreibgeschützter Modus ist bereits aktiviert.
+PenSelectionTip = Tippen, um auf Stifteinstellungen zuzugreifen.
+ShapesEnabledTip = Formenmodus aktiviert.
+SwipeForNextPageTip = Sie können auch nach links wischen, um eine neue Seite zu erstellen. Versuchen Sie es jetzt!
+
+InsertPageAbove = Seite oberhalb einfügen
+InsertPageBelow = Seite unterhalb einfügen
+
+ImageEditMigrationAlert = Dieses Foto wurde in einer älteren Version dieser App hinzugefügt. Alle Änderungen, die an diesem Foto vorgenommen wurden, gehen verloren.
+
+//Handwriting Recognition
+IndexingPageN = Seite %d indexiert
+ConvertToText = In Text konvertieren
+CopyToClipboard = In Zwischenablage kopieren
+ConvertToTextbox = In Textfeld konvertieren
+HandwritingRecognition = Handschrifterkennung
+HandwritingLanguageChangeInfo = Ihre Handschrifterkennung ist auf US-Englisch eingestellt. Möchtest du dich ändern?
+KeepEnglishOnly = Halten Sie US-Englisch
+ChangeLanguage = Ändern
+DontShowForThisBook = Warne nicht mehr vor diesem Notebook
+NeverShowAgain = Nie wieder warnen
+NS1ContentWarningInfo = Handschriftlicher Inhalt von NotesShelf Classic wird nicht erkannt.
+
+// Today Widget V 2.11 286
+NoNotebookCreationInTrash = Es kann kein Notizbuch im Papierkorb erstellt werden.
+
+// Edit Image v2.11
+SaveImageChangesConfirmation = Möchten Sie die Änderungen auf das Bild anwenden, bevor Sie mit einer anderen Option fortfahren?
+Color = Farbe
+DisableRecognition = Deaktivieren
+FitToSelection = An Auswahl anpassen
+DefaultKey = Standard
+FontSize = Schriftgröße
+
+//Recent
+Hide = Verbergen
+
+//SiriShorcut
+CreateANotebook = Erstellen Sie eine neue Notiz
+OpenNotebook = Öffne %@
+AddToSiri = Zu Siri hinzufügen
+AddedToSiri = Zu Siri hinzugefügt
+ShortcutSuggestionForQuickCreate = Möchten Sie eine Sprachverknüpfung zum Erstellen eines Notizbuchs mit Siri erstellen?
+ShortcutSuggestionForOpenThisNotebook = Möchten Sie eine Sprachverknüpfung zum Öffnen dieses Notizbuchs mit Siri erstellen?
+ShortcutOpenNotebookDontAskAgain = Sie können auch eine Sprachverknüpfung zum Öffnen dieses Notizbuchs über die Notebook-Optionen erstellen.
+SiriPermissionPopupMsg = Bitte erlauben Sie %@ Zugriff auf Siri (Einstellungen -> %@ -> Siri & Suche)
+NotebookNotAvailable = Dieses Notebook existiert nicht. Es wurde möglicherweise umbenannt, verschoben oder gelöscht.
+
+// Settings V3.1.5
+Advanced = Erweiterte Optionen
+QuickAccessGesture = Schnellzugriff Geste
+QuickAccessGestureDetail = Wischen Sie vom linken Rand des Bildschirms innerhalb des Notebooks, um auf das Menü Schnellzugriff zuzugreifen.
+ThumbnailsGesture = Thumbnails Geste
+ThumbnailsGestureDetail = Wischen Sie vom rechten Rand des Bildschirms innerhalb des Notebooks, um auf die Miniaturansicht zuzugreifen.
+DisableHyperLink = Deaktivieren Sie Hyperlinks beim Schreiben
+DisableHyperLinkDetail = Vermeiden Sie unbeabsichtigte Aktivierung von Hyperlinks bei Verwendung von Stift, Textmarker oder Radiergummi.
+QuickAccess = Schnellzugriff
+
+//WeLink- Backup
+UnableToAccessWeLink = Zugriff auf WeLink nicht möglich
+
+//Lasso Color Picker Title
+ChooseColor = Wähle eine Farbe
+
+// Apple pencil double tap V4.0.8
+ApplePencilFeatureInfo = Die Doppeltipp-Aktion von Apple Pencil ist derzeit auf System Default (SelectedTool) eingestellt. Weitere Optionen finden Sie unter Noteshelf-Einstellungen -> Eingabestift -> Apple Pencil.
+DoubleTapAction = beim Doppelklicken
+RequiresApplePencil2 = Dies erfordert einen Apple-Bleistift, der das Doppeltippen unterstützt.
+OptionSystemDefault = Standard des Systems
+OptionEraser = Zwischen aktuellem Werkzeug und Radiergummi wechseln
+OptionLastUsedTool = Zwischen aktuellem Werkzeug und zuletzt verwendetem wechseln
+OptionColorPalette = Farbpalette anzeigen
+OptionFavoritesToolbar = Favoriten-Symbolleiste anzeigen
+OptionShapes = Formen aktivieren
+ApplePencilSettingsTitle = Apple Pencil Einstellungen
+
+//Clipart v4.0.9
+Clipart = Clipart
+NoRecents = kein kürzlich verwendetes clipart
+NoMatchesFound = Keine Treffer gefunden
+Library = Bibliothek
+
+Indexing = Indizierung...
+
+//Global Search & Filter
+Bookmarked_Filter = Markiert
+Tagged = Getaggte Seiten
+PDFTableOfContents = PDF-Inhaltsverzeichnis
+PDFTOC_NotAvailable = Inhaltsverzeichnis nicht verfügbar
+
+// New Settings V4.0.15
+SettingOptionTheme = Aussehen
+SettingOptionHandwriting = Handschrift
+SettingOptionCoverTemplate = Kostenlose Abdeckungen & Vorlagen
+SettingColorScheme = Farbschema
+SettingShowDateOnShelf = Datum auf Regal anzeigen
+SchoolWorkApp = Apple Schoolwork
+
+AboutOptionWhatsNew = Was ist neu 
+AboutVisitNoteshelfWebsite = Besuchen Sie die Noteshelf-Website
+AboutOptionRateOnAppStore = Bewerten Sie im App Store
+AboutNoteshelf = Über Noteshelf
+
+SendExtendedLogs = Erweiterte Protokolle senden
+Warning = Warnung
+ExtendedLogsMessage = Dieser Prozess ruft die Dateinamen ab.
+
+// Schoolwork
+ChangeMode = Modus wechseln
+//Store
+Templates = Vorlagen
+Uptodate = Alles ist auf dem neuesten Stand!
+
+//Notebook Settings
+AdvancedOptions = Erweiterte Optionen
+PageCreatedOn = erstellt am %@
+PageUpdatedOn = aktualisiert am %@
+
+//Back up
+NoNotebookForBackup = Notebooks werden nicht für die Sicherung ausgewählt. Tippen Sie auf, um auszuwählen.
+CopyrightMessage = Copyright © 2019 Noteshelf. Alle Rechte vorbehalten.
+
+//Fonts
+SetAsDefault = Als Standard einstellen
+SetAsDefaultMessage = Die Einstellungen für dieses Notizbuch wurden erfolgreich aktualisiert.\n\nMöchten Sie dasselbe für alle zukünftigen Notizbücher anwenden?
+Yes = Ja
+
+NSClub = Noteshelf Club
+NSClubNotReceiveEmail = Keine Bestätigungs-E-Mail erhalten?
+
+// Apple pencil double tap V4.0.23
+SystemDefaultsDescription = Standard des Systems
+ChangeOption = Ändern
+PencilActionChangeMessage = Gehen Sie zu iPad-Einstellungen> Apple Pencil, um dies zu ändern
+PencilActionAlert = Diese Aktion überschreibt den Systemstandard nur für diese App. Möchten Sie fortfahren?
+
+//MARK: Insert audio
+InsertAudioCurrentOrNew = Fügen Sie dieses Audio der aktuellen Seite oder einer neuen Seite hinzu?
+CreateAudioNote = Erstellen Sie eine Audio-Notiz
+CreateAudioNoteSiriMessage = Erstellen Sie eine neue Audio-Notiz
+NotSupportedFormat = Nicht unterstütztes Audioformat
+//Finder
+TableOfContentNotAvalaible = Inhaltsverzeichnis nicht verfügbar
+NoSearchResult = Keine Suchergebnisse
+
+//Clipart 404
+clipart404 = Server ist ausgelastet, bitte versuchen Sie es später erneut.
+
+//Lasso->Take screenshot v5.0.6
+TakeScreenshot = Bildschirmfoto machen
+Screenshot = Bildschirmfoto
+
+// Eraser rack V5.0.3
+AutoSelectPreviousTool = Vorheriges Werkzeug automatisch auswählen
+EraseEntireStroke = Gesamten Strich löschen
+EraseHighlighterOnly = Nur Textmarker löschen
+MoreNoDots = Mehr
+
+//Password Protected book lock 5.0.2
+LockNotebookOption = Sperrnotizbuch Im Hintergrund
+LockNotebookDescription = Kennwortgeschützte Notizbücher werden nach 2 Minuten im Hintergrund automatisch gesperrt.
+UnlockNotebookToImportMessage = Entsperren Sie das Notebook und wiederholen Sie diese Aktion.
+
+GetMoreFromDownloads = Weitere Vorlagen erhalten Sie unter 'Kostenlose Downloads'.
+BookNotExistMessage = Notebook existiert nicht mehr.
+PageNotExistMessage = Seite existiert nicht mehr.
+
+//Apperance ios 13
+ThemeMessage = Das iOS-Erscheinungsbild ist auf den dunklen Modus eingestellt. Sie können dies unter Einstellungen> Allgemein> Anzeige und Helligkeit ändern.
+
+JoinOurBeta = Treten Sie unserer Beta bei
+AdonitTempDeprecationInfo = Es tut uns leid! Der Adonit-Stift ist vorübergehend nicht verfügbar. Wir arbeiten mit Adonit zusammen, um dies zurückzubringen.
+
+//Share Refactor
+ImportPhoto = Foto importieren
+
+// Share extension
+ShareToNoteshelf = Gesendet an Noteshelf
+NoImportsKey = Keine Importe verfügbar!
+ImportTo = Importieren nach 
+
+OneDriveAuthAlertMessage = Authentifizieren Sie One Drive erneut, um Notizen automatisch zu sichern
+Clear = löschen
+
+PageFromPhoto = Neue Seite vom Foto
+MicophoneNotAvailable = Mikrofongerät ist nicht zum Aufzeichnen verfügbar
+
+// Share extension
+Open = Öffnen
+OpenInNewWindow = In einem neuen Fenster öffnen
+Duplicate = Duplikat
+NewWindow = Neues Fenster
+RenamingBooksNofN = Umbenennen... \n%d von %d
+
+Insert = Einfügen
+QuickCreateNotebook = Schnell Notizbuch erstellen
+NewCategory = Neue Kategorie
+NewAudioNote = Neue Audio-Notiz
+RenameNNotebooks = Benennen Sie% d Notizbücher um
+PinNotebooks = Notizbücher anheften
+Bookmark = Lesezeichen
+
+//Navigation Menu
+NavigationTitle = Navigation
+ShowNextPage = Nächste Seite anzeigen
+ShowPrevPage = Vorherige Seite anzeigen
+ShowFirstPage = Erste Seite anzeigen
+ShowLastPage = Letzte Seite anzeigen
+
+ZoomIn = Hineinzoomen
+ZoomOut = Rauszoomen
+ActualSize = Tatsächliche Größe
+
+//Include Footer info
+IncludeTitleAndPageNumber = Titel und Seite einschließen
+Select = Auswählen
+NItems = %d Gegenstände
+OneItem = 1 Item
+MyNoteshelf = Mein Noteshelf
+ImportFromAppleWatch = Import von Watch
+RecentSearchesTitle = Letzte Suchanfragen

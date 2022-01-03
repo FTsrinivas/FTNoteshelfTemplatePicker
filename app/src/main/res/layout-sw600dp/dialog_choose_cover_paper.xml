@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DialogStyle">
+
+    <LinearLayout
+        android:layout_width="@dimen/new_580dp"
+        android:layout_height="@dimen/new_700dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/choose_cover_paper_dialog_title" />
+
+        <include layout="@layout/divider_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/choose_cover_paper_categories_fragment"
+                layout="@layout/fragment_choose_cover_paper_categories"
+                android:layout_width="190dp"
+                android:layout_height="match_parent" />
+
+            <include
+                layout="@layout/divider_black"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/choose_cover_paper_templates_layout"
+                layout="@layout/fragment_choose_cover_paper_templates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

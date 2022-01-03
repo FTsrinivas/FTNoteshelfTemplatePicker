@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>roboto</key>
+	<array>
+		<string>regular</string>
+		<string>bold</string>
+		<string>italic</string>
+		<string>bold_italic</string>
+	</array>
+	<key>monospace</key>
+	<array>
+		<string>regular</string>
+		<string>bold</string>
+		<string>italic</string>
+		<string>bold_italic</string>
+	</array>
+	<key>serif</key>
+	<array>
+		<string>regular</string>
+		<string>bold</string>
+		<string>italic</string>
+		<string>bold_italic</string>
+	</array>
+	<key>open-sans</key>
+	<array>
+		<string>regular</string>
+		<string>bold</string>
+		<string>italic</string>
+		<string>bold_italic</string>
+	</array>
+</dict>
+</plist>

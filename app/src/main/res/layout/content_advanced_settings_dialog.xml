@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:layout_marginStart="@dimen/_28dp"
+        android:layout_marginEnd="@dimen/_28dp"
+        android:layout_marginBottom="@dimen/new_15dp"
+        android:text="@string/advanced" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_28dp"
+            android:layout_marginEnd="@dimen/_28dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/settings_dialog_quick_access_gesture_text_view"
+                        style="@style/PopupItemTextStyle"
+                        android:layout_height="wrap_content"
+                        android:text="@string/quick_access_gesture"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/settings_dialog_quick_access_gesture_detail_text_view"
+                        style="@style/PopupItemValueTextStyle"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="@string/quick_access_gesture_detail"
+                        app:layout_constraintTop_toBottomOf="@id/settings_dialog_quick_access_gesture_text_view" />
+
+                </LinearLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/settings_dialog_quick_access_gesture_switch"
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/Switch"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/settings_dialog_thumbnails_gesture_text_view"
+                        style="@style/PopupItemTextStyle"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thumbnails_gesture"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/settings_dialog_thumbnails_gesture_detail_text_view"
+                        style="@style/PopupItemValueTextStyle"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="@string/thumbnails_gesture_detail"
+                        app:layout_constraintTop_toBottomOf="@id/settings_dialog_quick_access_gesture_text_view" />
+
+                </LinearLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/settings_dialog_thumbnails_gesture_switch"
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/Switch"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/settings_dialog_disable_hyperlinks_text_view"
+                        style="@style/PopupItemTextStyle"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disable_hyperlinks_when_writing"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/settings_dialog_disable_hyperlinks_detail_text_view"
+                        style="@style/PopupItemValueTextStyle"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.7"
+                        android:text="@string/disable_hyperlinks_detail"
+                        app:layout_constraintTop_toBottomOf="@id/settings_dialog_quick_access_gesture_text_view" />
+
+                </LinearLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/settings_dialog_disable_hyperlinks_switch"
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/Switch"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

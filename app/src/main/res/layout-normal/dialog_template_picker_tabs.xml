@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="344dp"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/tabsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/new_56dp">
+
+        <ImageButton
+            android:id="@+id/closeTabsBtn"
+            android:layout_width="@dimen/new_22dp"
+            android:layout_height="@dimen/new_22dp"
+            android:background="@mipmap/close_search_btn_icon"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginRight="@dimen/new_16dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/templatesSizeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/template_size_title"
+            android:layout_toRightOf="@+id/closeTabsBtn"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:textSize="@dimen/new_20sp"
+            android:fontFamily="@font/roboto_medium"
+            android:lineHeight="@dimen/new_24dp"
+            android:lineSpacingExtra="1sp"
+            android:letterSpacing="0.01"
+            android:translationY="-0.28sp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/simpleRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/tabsLinearLayout"
+        android:layout_marginLeft="@dimen/_16dp"/>
+    </RelativeLayout>
+</RelativeLayout>

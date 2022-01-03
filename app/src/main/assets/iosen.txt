@@ -1,0 +1,1061 @@
+//::::::::::::::::::::::::
+//MARK: Generic Strings
+//::::::::::::::::::::::::
+
+
+Loading = Loading...
+Saving = Saving...
+Moving = Moving...
+Duplicating = Duplicating...
+Deleting = Deleting...
+Exporting = Exporting...
+Importing = Importing...
+Downloading = Downloading...
+
+
+Untitled = Untitled
+Error = Error
+Support = Support
+UnexpectedError = An unexpected error occurred. Please try again later.
+
+
+//::::::::::::::::::::::::
+// MARK: - Button Titles
+//::::::::::::::::::::::::
+
+
+OK = OK
+Cancel = Cancel
+Back = Back
+Reset = Reset
+New = New
+Download = Download
+Delete = Delete
+Dismiss = Dismiss
+No = No
+Done = Done
+Edit = Edit
+LearnMore = Learn More
+Later = Later
+LikeKey = Like
+RemindMeLater = Remind Me Later
+Add = Add
+ADDALLCAPS = Add
+View = View
+Next = Next
+Close = Close
+Continue = Continue
+Login = Login
+Logout = Logout
+SignOut = Sign out
+More = More...
+Publish = Publish
+Decline = Decline
+Accept = Accept
+GotIt = Got It
+
+//::::::::::::::::::::::::
+//MARK: - Shelf
+//::::::::::::::::::::::::
+
+
+VersionNumber = VERSION %@
+SearchTitles = Search Titles
+Group = Group
+Rename = Rename
+RenameGroup = Rename Group
+NotebookTitle = Notebook Title
+
+
+//MARK: Sort order
+SortDate = Date
+SortName = Name
+Sort = Sort By //For all other languages, just given as Sort
+
+
+//MARK: Toolbar
+ChangeCover = Change Cover
+Cover = Cover
+MoveToTrash = Move to Trash
+EmptyTrash = Empty Trash
+SelectADocument = Select a document
+numSelected = %ld Selected
+DuplicatingPagesNofN = Duplicating...\n%d of %d
+DeletingPagesNofN = Deleting...\n%d of %d
+
+
+//MARK: Category Picker
+Categories = Categories
+AddNewCategory = Add New Category...
+Trash = Trash
+CannotUseReservedName = Cannot use '%@' as it is reserved by the app.
+DeleteCategoryConfirmation = Would you like to delete this category? All documents will be moved to Trash.
+DefaultCategoryName = My Notes
+
+
+//MARK: Notebook Picker (in Move To.. mode)
+NotebookItems = %d Notebooks
+MoveTo = Move to...
+
+
+//MARK: Remote upgrade
+CriticalUpdateComingSoon = A critical bug has been identified in this version of Noteshelf. An emergency fix will be available in the next 24 hours. Please refrain from using the app in the interim. We apologize for the inconvenience caused.
+CriticalUpdateAvailable = A critical update of Noteshelf is available on the App Store. We strongly recommend upgrading to the new version before using the app. Would you like to upgrade now?
+UpdateAvailable = A new version of Noteshelf is available on the App Store. Would you like to upgrade now?
+UpgradeNowKey = Upgrade Now
+DontShowHintAgain = Don't Show
+
+//MARK: Recent & Pinned
+PinNotebook = Pin Notebook
+UnpinNotebook = Unpin Notebook
+CreateSiriShortcut = Create Siri Shortcut
+EditSiriShortcut = Edit Siri Shortcut
+OpenLeftSide = Open on the Left Side
+OpenRightSide = Open on the Right Side
+RemoveFromRecents = Remove from Recents
+//Section Headers
+RecentsDocumentsTitle = RECENT
+PinnedDocumentsTitle = PINNED
+RecentsDocuments = Recent
+PinnedDocuments = Pinned
+
+//Alert
+MaximumPinnedWarning = Limit Reached. You can only pin up to %d notebooks.
+
+Move = Move
+
+//::::::::::::::::::::::::
+//MARK: - New Notebook
+//::::::::::::::::::::::::
+
+
+//MARK: '+' Menu
+QuickCreate = Quick Create
+NewNotebook = New Notebook
+ImportDocument = Import Document
+Creating = Creating...
+ScanDocument = Scan Document
+//MARK: Quick create settings
+QuickCreateSettings = Quick Create Settings
+RandomCoverDesign = Random Cover
+DefaultCover = Default Cover
+DefaultPaper = Default Paper
+Random = Random
+
+
+//MARK: New Notebook screen
+Choose = Choose...
+TapToTypeNotebookTitle = Tap to type notebook title... //Not Used
+CreateNotebook = Create Notebook
+Options = Options
+AutoBackup = Auto-backup
+
+
+//MARK: Theme pickers
+SelectCoverTemplate = Select Cover
+SelectPaperTemplate = Select Paper
+FreeDownloads = Free Downloads
+Downloaded = Download Complete
+
+
+//MARK: NS Club
+NSClubLoggedInInfo = Welcome to the Noteshelf Club members-only area.\n\nYou are signed in as %@
+SignInOrSignUpForFree = Sign In or Sign Up for Free!
+NSClubLoggedOutInfo = These downloads are available exclusively for Noteshelf Club members. Sign-up for free.
+NSClubJoinPrompt = Want more covers and paper templates?\nJoin Noteshelf Club now.
+
+
+//MARK: Custom themes
+Custom = Custom
+PaperName = Paper Name
+CustomCoverName = Cover Name
+YourCustomCover = Your Custom Cover
+SelectPhoto = Select Photo
+PinchZoomCustomCover = Pinch and zoom to layout your cover.
+SaveForFutureUse? = Save for future use?
+UseThisCover = Use This Cover
+
+
+//FIXME: Don't forget plist localizations
+
+
+//::::::::::::::::::::::::
+//MARK: - Notebook UI
+//::::::::::::::::::::::::
+
+
+LoadingNotebook = Opening...
+
+
+//MARK: Pen Racks
+FAVORITES = FAVORITES
+PEN = PEN
+Favorites = Favorites
+NoFavoritePens = No Favorite Pens
+NoFavoritePensDescription = Tap the star <ICON> on the writing tool panel to\nfavorite the active pen.
+FavoritesAreLimitedTo = Favorites are limited to %d
+
+
+//MARK: Custom Color Picker
+Colors = Colors
+CustomColor = Custom Color...
+ResetToDefault = Reset to Default
+UnableToConnectToColourLovers = Unable to connect to COLOURlovers.com
+MakeSureYouAreConnected = Please make sure you are connected to the internet and try again.
+ColorSearchPlaceholderText = Search (e.g. Neon)
+LoadMoreColorPalettes = Load %d more palettes...
+ColorByAuthor =  by %@
+
+
+//MARK: Clipboard
+Cut = Cut
+Copy = Copy
+CutCopy = Cut / Copy
+Paste = Paste
+
+
+//MARK: Eraser
+ClearPage = Clear Page
+ClearPageConfirmation = Would you like to clear this entire page?
+
+
+//MARK: Add Menu
+Page = New Page
+PageFromTemplate = New Page from Template
+Photo = Photo
+Photos = Photos
+Audio = Audio
+Stickers = Emoji
+TextBox = Text Box
+PageTags = Page Tags
+Tag = Tag
+
+
+//MARK: Page footer
+NofNAlt = %d of %d
+DocumentInfoFormatString = Page created on: %@ updated on: %@
+
+
+//MARK: Emoji Categories
+Recents = Recents
+People = Smileys & People
+Nature = Animals & Nature
+Things = Objects
+Travel = Travel & Places
+Signs = Symbols
+Food = Food & Drink
+Sports = Activity & Sports
+Flags = Flags
+
+
+//MARK: Insert document
+InsertDocumentCurrentOrNew = Insert into current document or create a new document?
+InsertHere = Insert Here
+CreateNew = Create New
+
+
+//MARK: Zoom Mode
+ButtonsPosition = Buttons Position
+Left = LEFT
+Right = RIGHT
+MarginPosition = Margin Position
+LineSpacing = Line Spacing
+AutoAdvance = Auto Advance
+ShowLineHeightGuide = Show Line-Height Guide
+
+
+//MARK: Textbox
+Body = Body
+
+
+//MARK: Audio Recording
+AudioRecordings = Audio Recordings
+AddNewRecording = Add New Recording
+ContinueRecording = Continue Recording
+Recording = Recording
+RecordingInProgress = Recording in progress...
+AudioRecord_Permission_Message = Please turn on microphone via your device Settings -> Privacy -> Microphone -> Noteshelf
+AudioRecoring_Message = Cannot close the notebook while an audio recording is in progress.
+AudioRecoring_Progress_Message = Cannot perform this operation as an audio recording is in progress.
+StopRecord = Stop Recording
+SessionNo = Session %d
+AudioPopoverEmptyMessage = No audio recordings in this notebook.
+Record = Record
+Pause = Pause
+Play = Play
+Export = Export
+
+
+//MARK: RefreshControl
+PullToAddNewPage = Pull to add new page
+ReleaseToAddNewPage = Release to add new page
+
+
+//::::::::::::::::::::::::
+// MARK: - Password Lock
+//::::::::::::::::::::::::
+
+
+Password = Password
+SetPassword = Set Password
+ChangePassword = Change Password
+RequirePassword = Require Password
+OldPassword = Old Password
+NewPassword = New Password
+Required = Required
+Recommended = Recommended
+Verify = Verify
+Hint = Hint
+ChangeOrRemovePassword = Change or remove the notebook password
+DoesntRequirePassword = Enter this notebook's passsword to remove it
+PasswordsDontMatch = Passwords don't match
+EnterAPassword = Enter password
+IncorrectPassword = Incorrect password
+PleaseEnterValidPassword = Please enter valid password
+EnterThePasswordFor = Enter the password for \%@
+RequirePasswordToOpenNotebook = Require a password to open this notebook
+
+
+//::::::::::::::::::::::::
+// MARK: - Import / Export
+//::::::::::::::::::::::::
+
+
+//MARK: Targets
+Targets = Targets
+Print = Print
+PhotoAlbum = Photo Album
+Email = Email
+Tweet = Tweet
+OpenIn = Open In
+
+
+//MARK: Export UI
+ChooseFormat = Choose Format
+FolderName = Folder Name
+Filename = Filename
+ExportEntireNotebookConfirmation = Using .noteshelf format will send the entire notebook, not just the selected pages. Would you like to proceed?
+
+
+Share = Share
+CurrentPage = Current Page
+AllPages = All Pages
+
+
+NoNotesToExport = No Notes To Export
+ExportComplete = Export Complete!
+ExportCancelled = Export Cancelled!
+ExportFailed = Export Failed!
+
+
+GeneratingPageNofN = Generating page %d of %d
+EmailNotSetup = Action Failed.\nEmail not setup on this device.
+UploadingPageNToPhotosApp = Saving page %d of %d to iPad Album
+UploadingToCloud = Uploading to %@
+PageNofN = Page %d of %d
+
+
+ShareNow = Share Now
+
+
+Failedtocreatebackup = Failed to create backup file. Check remaining space on your device.
+
+
+//MARK: Folder picker
+NewFolder = New Folder
+CreatingFolder = Creating New Folder
+CloudSubTitleFormat = %@ - Last updated: %@
+CloudFolderLastUpdatedFormat = Last updated: %@
+Settings = Settings
+AllFiles = All Files
+
+
+//MARK: Password protected PDF
+PasswordProtectedPDF = Password Protected PDF
+EnterPassword = Enter Password
+FailedToOpenDocumentUnexpectedError = Failed to open the document due to unexpected error
+
+
+//MARK: Error Messages
+ConnectionFailed = Connection Failed
+ErrorConnecting = Error Connecting
+CouldNotConnectToServer = Could not connect to server. Please try again later.
+CheckYourInternetConnection = Please check your Internet connection and try again later.
+ServerTakingTooLong = Server is taking too long to respond. Please try again later.
+BadResponseFromServer = Bad response from server. Please try again later.
+ProblemConnectingToServer = Problem connecting to server. Please try again later.
+
+
+//MARK: Dropbox Related
+ConnectingToDropbox = Connecting to Dropbox
+UploadingPageNToDropbox = Uploading page %d of %d to Dropbox
+UploadToDropboxFailed = Unexpected Error. Upload to Dropbox Failed.
+UnableToAccessDropbox = Unable to access Dropbox
+DropbBoxBackupStorageFullErrorMsg = Dropbox was unable to complete this action because of a storage quota limit.
+
+
+//MARK: Evernote Related
+EvernoteSync = Evernote Publish
+ChooseAccount = Choose Account
+EvernoteExportTags = Export Tags
+EvernoteExportAsOneNote = Export as Single Note
+EvernoteAuthenticationFailed = Unable to authenticate with Evernote
+EvernoteRetieveNotebookFailed = Unable to retrieve Evernote notebook
+UploadingPageNToEvernote = Uploading page %d of %d to Evernote
+EvernotePDFSizeError = Upload failed. PDF too big for Evernote.
+PublishedByNoteshelf = Published by %@
+EvernoteUploadFailed = Unexpected error. Upload to Evernote failed
+EvernotePublishOnWifiOnly = Publish on WiFi only
+LastsuccessfulsyncAtFormat = Last successful sync at %@
+EvernoteAuthTokenExpiredTitle = Evernote Token Expired. Please login again.
+
+
+//MARK: Box related
+UploadingPageNToBox = Uploading page %d of %d to Box
+UploadToBoxFailed = Unexpected Error. Upload to Box Failed.
+UnableToAccessBox = Unable to access Box
+Itemwiththesamenamealreadyexists = Item with the same name already exists
+
+
+//MARK: GDrive Related
+UploadToGoogleDriveFailed = Unexpected Error. Upload to Google Drive Failed.
+UploadingPageNToGoogleDrive = Uploading page %d of %d to Google Drive
+FileIsDeleted = File is deleted
+UnabletoAccessGoogleDrive = Unable to access Google Drive
+NeedGoogleDriveForConvertion = Noteshelf uses Google Drive to convert documents to PDF before import.\n\nPlease login with your Google account.
+ConvertingToPDF = Converting to PDF...
+
+
+//MARK: OneDrive
+UploadToOneDriveFailed = Unexpected Error. Upload to OneDrive Failed.
+UploadingPageNToOneDrive = Uploading page %d of %d to OneDrive
+
+
+//MARK: iTunes
+UploadToItunesFailed = Unexpected Error. Upload to iTunes Failed.
+
+
+//::::::::::::::::::::::::
+// MARK: - iCloud
+//::::::::::::::::::::::::
+
+
+iCloudAvailable = iCloud Available
+UseiCloud = Use iCloud
+iCloudAvailableMessage = Automatically store your documents in the cloud to keep them up-to-date across all your devices.
+iCloudUserTurnedOff = iCloud turned off
+NotUsingiCloudMessage = Your documents were removed from this device but remain stored in iCloud.
+iCloudUserTurnedOffMessage = A copy of your documents will remain stored in iCloud. What would you like to do with the documents currently on this device?
+ContinueUsingICloud = Continue using iCloud
+KeepALocalCopy = Keep on my device
+DeleteALocalCopy = Delete from my device
+ResolveConflict = Resolve Conflict
+ResolveConflictMessage = Modifications aren't in sync. Choose which documents to keep.
+KeepVersions = Keep Versions
+KeepVersion = Keep Version
+ConflictDocModifiedOn = Modified on %@
+PasswordUpdated = Password Updated
+
+
+//::::::::::::::::::::::::
+// MARK: - Finder
+//::::::::::::::::::::::::
+
+
+Pages = Pages
+SelectAll = Select All
+DeselectAll = Select None
+CannotDeleteAllPages = Cannot delete all pages. At least one page should remain.
+MovePageToTrashSingular = Delete %d page
+MovePageToTrashPlural = Delete %d pages
+DuplicatePageSingular = Duplicate %d page
+DuplicatePagePlural = Duplicate %d pages
+CannotMoveToSameNotebook = Cannot move to same notebook
+CannotMoveAllPages = Cannot move all pages. At least one page should remain.
+SearchText = Search Text
+SelectPages = Select Pages
+
+
+//MARK: Tagging
+Tags = Tags
+AddTags = Add Tags
+TypeTags = Type Tags...
+ClearTags = clear tags
+NoTagsInPage = No tags assigned to any pages of\nthis notebook.
+NoBookmarksPage = No bookmarked pages//Google Translate Used
+NoBookmarksDescription = Tap the bookmark icon <ICON> on\n the pages to add them to this\n view.\n\nLong press to add title\nand color.
+//::::::::::::::::::::::::
+// MARK: - Settings
+//::::::::::::::::::::::::
+
+
+Preferences = Preferences
+ShelfThemeCategoryTitle = Theme
+ShowModifiedDate = Show Date Modified
+WritingStyle = Writing Style
+Whiteboard = Whiteboard Mode
+WhiteboardMessage = Use Noteshelf as a whiteboard with an external display or a projector.
+Notebook Options = Notebook Options
+NotebookOptionsHelp = These settings can only be accessed from within a notebook.
+ChangePageTemplate = Change Page Template
+Welcome Tour = Welcome Tour
+
+
+//MARK: Rate this App
+Rate this App = Rate this App
+TapToRate = Tap to rate
+RateUsImproveMessage = Please take a moment to give us your feedback.
+
+
+//MARK: Tell a Friend
+TellaFriend = Tell a Friend
+TellAFriendMessage = Check out %@ on the AppStore. It is a great note-taking app with many useful features!
+CheckOutApp = Check out %@
+
+
+//MARK: Follow Us
+FollowUs = Follow Us
+WhatsNewJoinUsInfo = Get access to exclusive content, tips, promotions &\nmore by liking and following us on\nFacebook and Twitter.
+LikeUSFacebook = Like on Facebook
+FollowUSTwitter = Follow on Twitter
+NowFollowingOnTwitter = You are now following @noteshelf on Twitter
+
+
+//MARK: Accounts
+CloudAndBackup = Cloud & Backup
+DropboxHelpMessage = Backup, Import and Export to your Dropbox account
+EvernoteHelpMessage = Publish notebooks to your Evernote account
+GoogleDriveHelpMessage = Import and Export to your Google Drive account
+OneDriveHelpMessage = Import and Export to your OneDrive account
+BoxHelpMessage = Import and Export to your Box account
+UnableToauthenticate = Unable to authenticate
+Linked = linked
+
+
+//MARK: Cloud Backup
+BackupNotebooks = Notebooks to Backup
+BackupOnWiFiOnly = Backup on WiFi only
+PublishNotebooks = Publish Notebooks
+BackupUpToDate = Backup up-to-date
+BackUpFailed = Backup Failed
+BackUpInProgress = Backup In Progress...
+BackUpPending = Backup Pending
+AccountInfoFormat = %0.1f%% of %@ used
+LastBackupDateTime = Last backup at %@
+BackupNotSelected = Not selected for backup
+
+
+//MARK: Support
+KnowledgeBase = Knowledge Base
+EmailSupport = Email Support
+SendLogs = Send Logs
+
+
+//::::::::::::::::::::::::
+//MARK: - Stylus
+//::::::::::::::::::::::::
+
+
+//MARK: General Stylus
+Stylus = Stylus
+Enable = Enable
+Connect = Connect
+Connecting = Connecting...
+Connected = Connected
+Disconnect = Disconnect
+Pairing = Pairing...
+StylusNameConnected = %@ Connected
+StylusNameDisconnected = %@ Disconnected
+PressStylusTipToPair = Press the stylus tip on the pairing spot
+SetStylusPairingMode = Set your stylus to pairing mode
+PressureSensitivity = Pressure Sensitivity
+
+
+//MARK: Stylus Button Actions
+ButtonOnePress = Button 1 Press
+ButtonTwoPress = Button 2 Press
+StylusButtonDoupleTapAction = Button %d Double Tap
+ChooseAction = Choose Action
+ButtonActionNone = No Action
+ButtonActionUndo = Undo
+ButtonActionRedo = Redo
+ButtonActionNextColor = Next Color
+ButtonActionPreviousColor = Previous Color
+ButtonActionNextPage = Next Page
+ButtonActionPreviousPage = Previous Page
+
+
+//MARK: Apple Pencil
+ApplePencilDetectedTitle = Apple Pencil Detected
+ApplePencilDetectedMessage = Turn on Apple Pencil support from settings for better palm rejection.
+TurnOnApplePencilSupport = Turn On
+
+
+//::::::::::::::::::::::::
+// MARK: - Welcome Experience
+//::::::::::::::::::::::::
+
+
+WelcomeScreen1Title = THE ALL NEW NOTESHELF
+WelcomeScreen1Info = Welcome to Noteshelf!\nStart taking beautiful handwritten notes on your iPad.
+WelcomeScreen2Title = Full-Featured\nDigital Note-Taking
+WelcomeScreen2Info = Choose from a variety of easy-to-use options for a rich\nnote-taking experience.
+WelcomeScreen3Title = Classic Writing Tools
+WelcomeScreen3HelpMessage = Tap on a tool to try it here.
+WelcomeScreen4Title = Markup Documents or Images
+WelcomeScreen4Info = Annotate your PDFs, Excel, Word and Powerpoint documents,\nimages and more.
+WelcomeScreen5Title = Make it your own!
+WelcomeScreen5Info = Customize your notebooks with different cover designs &\npaper templates.
+
+
+WelcomeScreen2FeatureTakeNotes = Take Notes
+WelcomeScreen2FeatureAudio = Record Audio
+WelcomeScreen2FeaturePhotos = Add Photos
+WelcomeScreen2FeatureMarkupDocuments = Markup Documents
+WelcomeScreen2FeatureMacSupport = Mac App Support
+WelcomeScreen2FeatureShapes = Draw Perfect Shapes
+WelcomeScreen2FeatureSearchNotes = Search Handwritten Notes
+WelcomeScreen2FeatureCoversnPapers = Lots of Paper Templates
+WelcomeScreen2FeatureAddEmoji = Add Emoji
+WelcomeScreen2FeatureTextFormatting = Rich Text Formatting
+WelcomeScreen5ButtonTitle = Start Note-Taking
+
+
+//::::::::::::::::::::::::
+//MARK: - Zendesk Support
+//::::::::::::::::::::::::
+
+
+BetaFeedback = Beta Feedback
+
+
+//Localized Shelf Names
+MyNotes = My Notes
+SampleNotebook = Sample Notebook
+NSClubVerificationEmailSent = You’re almost done! We’ve sent you an email to %@. Open it up to activate your membership.
+
+
+SystemGeneratedCollectionWarning = This is a system generated category and cannot be synced with iCloud.\nPlease move important notebooks to other categories to sync them with iCloud.
+DataMigrationComplete = Data Migration Complete!
+DataMigrationCompleteInfo = Your data from the previous version of Noteshelf has been placed in a separate category named \“Noteshelf 1 Data\”.
+
+
+//iOS11 Features
+SaveKey = Save
+RetakeKey = Retake
+KeepScanKey = Keep Scan
+DropAnywhere = Drop here to create a notebook
+DropOnlyOne = Drag & Drop of multiple files is still in the works
+ScannerUnavailable = Document scanner needs full screen
+CancelKey = Cancel
+ViewAllFonts = View all fonts
+SelectFont = Select font
+AllFonts = All Fonts
+
+
+//Migration Complete
+DataMigrationComplete = Data Migration Complete!
+DataMigrationCompleteMessage = Your data from the previous version of Noteshelf have been placed in a seperate category named \Noteshelf 1 Data\
+ErrorSavingToPhotosAlbum = An error occurred while exporting. Check if Noteshelf has permission to write to the photos album under Settings -> Privacy -> Photos.
+
+
+DocumentInfoFormatStringCompactMode = Page created on: %@\nupdated on: %@
+
+
+//Toast messages
+PaperSizeUnfit = Paper size not matching
+CantOpenFromTrash = Can't open from trash
+
+//Whiteboard specific
+WHITEBOARDMODE = WHITEBOARD MODE
+
+PhotoNotAvailableToUse = There was an error downloading this photo. Please try again later.
+
+NoMultipleTypes = Multiple file types not supported
+DropOnlyOneImage = You can drop only one image
+
+AddToNewCategory = Add New Category...
+AddToNewGroup = Add New Group...
+AddToNewNotebook = Add New Notebook...
+
+Imported = Imported
+Import = Import
+
+OpenWithTouchID = Open with %@
+UseFingerPrintToOpenNotebook = Authentication is required to open this notebook
+EnterPasswordToOpenThisNotebook = Enter the password to open this notebook
+NotCorrectPassword = That's not the correct password. Please try again.
+
+AddNew = Add New
+
+SelectCoverStyle = Select Cover Style
+NoBand = No Band
+TransparentBand = Transparent Band
+BlurredBand = Blurred Band
+BottomPhoto = Bottom Photo
+MosaicPhoto = Mosaic Photo
+CutOutPhoto = Cut-Out Photo
+
+DocumentSupport = Document has some problem. Send us the document so we can look into this.
+DocumentSupportDisclaimer = \n\n\n\n\n DISCLAIMER (Read Carefully): Your document has been attached to this email. Please do not send this email if you have any confidential or sensitive information within the document.
+
+FailedToImport = Failed to import
+Resize = Resize
+ShowPageBackground = Show Page Background
+
+//New PenRack
+Pens = Pens
+Palettes = Palettes
+CustomColourHeader = Move the circles <ICON> to choose color or\n type hex value directly.
+ColourLoversEditHeader = Tap a color from the palette to select.
+ColourLoversAddHeader = Add by choosing individual colors or an\n entire palette.
+EditColorsHeader = Tap to edit a color.\nHold and drag to reorder.
+DeleteColorsHeader = Tap on a color to delete.
+ResetColorsWarning = This will reset the color palettes to \nfactory default.
+EditColors = Edit Colors
+DeleteColors = Delete Colors
+Apply = Apply
+NoInternetHeader = No Internet Connection
+NoInternetTapHereMessage = Check your connection and tap\n here to reload.
+
+Added! = Added!
+FavoritesFull = Favorites (FULL)
+MaximumColorsWarning = Maximum of <COUNT> colors can be added
+MinimumColorsWarning = Minimum of <COUNT> colors required
+ColorAlreadyAdded = This color is already on your palette
+
+NS1ContentsEditNotSupport = Handwriting from Noteshelf Classic can not be edited in Noteshelf 2.
+ExportAsHD = Export in HD
+NoPapersAvailable = No papers available
+Portrait = Portrait
+Landscape = Landscape
+
+BackupFormat = Backup Format //Google Translate used-Start
+CloudLogins = CLOUD LOGINS
+CloudErrorLog = LOG
+Change = Change...
+BackingUpTo = Backing up to %@
+DontBackup = Don't Backup
+BackupOff = Off
+ChooseCloud = Choose Cloud
+SelectBackupAccount = Auto-backup not setup
+LogoutAutoBackupAlert = This action will turn off auto-backup to %@.
+TurnOffAutoBackup = Turn Off Auto-backup
+Setup = Setup//Google Translate used-End
+NoBackupBooksChoosen =   No notebooks chosen for backup
+
+iCloudNotAvailable = iCloud is not Available
+iCloudNotAvailableInfo = Please allow %@ to access iCloud in Settings app -> iCloud -> iCloud Drive.
+iCloudNotAvailableInfo-Mac = Please allow %@ to access iCloud in System Preferences -> Internet Accounts -> iCloud Drive -> Options -> Documents.
+
+//Export
+ExportTo = Export To
+SelectFiles = Select files
+Generating = Generating...
+UploadToThisFolder = Upload to this Folder
+Multiple = Multiple
+FileNames = Filenames
+
+NoCameraInfo = Unable to access camera. Please try restarting your device.
+ExternalLink = External Link
+ExternalLinkOpenInfo = An external application must be launched to handle the link: %@. Do you want to proceed?
+
+//WeLink
+WeLinkExportCountError = WeLink does not accept multiple file exports at this time.
+ParentFolder = Parent Folder
+
+//Fav rack
+ShowFavortiesToolbar = Show Favorites Toolbar
+Highlighters = Highlighters
+
+ShowFavToolbarInfo = This will show a secondary toolbar with all your favorites.
+Show = Show
+ShowAndDontAsk = Show and Don’t Ask
+
+//MARK: - Store
+ClubLoginDesc = FREE downloads are available exclusively to Noteshelf Club Members.
+NoResultFound = No result found!
+Search = Search
+SearchPapersCovers = Search Papers & Covers
+Updates = Updates
+Get = GET
+Update = Update
+Downloads = Downloads
+LoggedInAs = Signed in as\n%@
+
+//Watch Recordings
+WatchRecordings = Watch Recordings
+NoWatchRecordings = No Watch Recordings
+NoWatchRecordingsMessage = Recordings from the Noteshelf\n Apple Watch app will appear here.
+AddToNotebook = Add To Notebook
+MarkAsUnused = Mark As Unused
+MarkAsUsed = Mark As Used
+ImportWatchRecording = Import Watch Recording
+AddToNewPage = Add to New Page
+AddToCurrentPage = Add to Current Page
+WatchRecording = Watch Recording
+AudioDeleteConfirmMessage =  Are you sure you want to delete this recording?
+AppleWatchRecording = Apple Watch Recording
+WatchAdInfo = Install Noteshelf 2 on your Apple Watch. You can record audio on-the-go and take notes later.
+WatchNewRecords = New recordings arrived from your Apple Watch.
+
+ChangePhoto = Change Photo
+TakePhoto = Take Photo
+
+SaveAsTemplate = Save as Template
+
+Inspirations = Inspirations
+CancelInspirationDownload = Would you like to cancel downloading?
+On =  on 
+BookAddedMessageSingular = %d notebook has been added to\n'%@' category.
+BooksAddedMessage = %d notebooks have been added to\n'%@' category.
+
+UntitledNotebook = Untitled Notebook
+Create = Create
+ViewNow = View Now
+ClubLoginTryAnotherAccount = Would you like to try with another account?
+
+//Bookmarks
+Thumbnails = Thumbnails
+List = List
+BookmarkPopupHeading = Bookmark
+ClearBookmark = Clear Bookmark
+BookmarkThisPage = Bookmark this Page
+Bookmarked = Bookmarked!
+AlwaysBackupNoteInfo = The settings above will default for all future notebook creations\n(excluding document imports).
+
+DeleteCategoryConfirmationCloud = Would you like to delete this category? If it contains notebooks that are not downloaded to this device, they cannot be recovered from Trash.
+DeleteBooksConfirmationNotDownloadedYet = Some notebooks have not been downloaded to this device.  You cannot recover these notebooks from Trash.
+DeleteBookConfirmationNotDownloadedYet = This notebook has not been downloaded to this device. It cannot be recovered from Trash after deletion.
+
+// New Strings April 2018
+TextStyle = Text Style
+EditFavoriteFonts = Edit Favorites
+FontTapToRename = Tap to rename. Long-press and drag to reorder.
+DefaultTextStyle = Default Text Style
+PreviewText = Preview Text
+TestStyleTip = You can add your own favorite text styles here using the <ICON> option.
+RequiresAppUpdate = Please update your app to the latest version to open this document.
+
+//Tooltips
+ReadOnlyEnabledTip = Read-only mode is already enabled.
+PenSelectionTip = Tap to access pen settings.
+ShapesEnabledTip = Shapes mode enabled.
+SwipeForNextPageTip = You can also swipe left to create a new page.\nTry it now!
+
+InsertPageAbove = Insert Page Above
+InsertPageBelow = Insert Page Below
+
+ImageEditMigrationAlert = This photo was added in an older version of this app. Any edits made to this photo previously will be lost.
+
+//Handwriting Recognition
+IndexingPageN = Indexing Page %d
+ConvertToText = Convert To Text
+CopyToClipboard = Copy to Clipboard
+ConvertToTextbox = Convert to Textbox
+HandwritingRecognition = Handwriting Recognition
+HandwritingLanguageChangeInfo = Your handwriting recognition is set to US English. Do you wish to change?
+KeepEnglishOnly = Keep US English
+ChangeLanguage = Change
+DontShowForThisBook = Don't warn again for this notebook
+NeverShowAgain = Never warn again
+NS1ContentWarningInfo = Handwritten content from Noteshelf Classic will not be recognised.
+
+// Today Widget V 2.11 286
+NoNotebookCreationInTrash = Cannot create notebook in Trash. Choose a category and try again.
+
+// Edit Image v2.11
+SaveImageChangesConfirmation = Would you like to apply the changes to the image before proceeding to another option?
+Color = Color
+DisableRecognition = Disable Recognition
+FitToSelection = Fit to Selection
+DefaultKey = Default
+FontSize = Font Size
+
+//Recent
+Hide = Hide
+
+//SiriShorcut
+CreateANotebook = Create notebook
+OpenNotebook = Open %@
+AddToSiri = Add to Siri
+AddedToSiri = Added to Siri
+ShortcutSuggestionForQuickCreate = Would you like to create a voice shortcut for creating a notebook using Siri?
+ShortcutSuggestionForOpenThisNotebook = Would you like to create a voice shortcut for opening this notebook using Siri?
+ShortcutOpenNotebookDontAskAgain = You can also create a voice shortcut for opening this notebook from Notebook Options.
+SiriPermissionPopupMsg = Please allow %@ to access Siri in Settings -> %@ -> Siri & Search.
+NotebookNotAvailable = This notebook does not exist. It might have been renamed, moved or deleted.
+
+// Settings V3.1.5
+Advanced = Advanced
+QuickAccessGesture = Quick Access Gesture
+QuickAccessGestureDetail = Swipe from the left edge of the screen inside the notebook to access the Quick Access menu.
+ThumbnailsGesture = Thumbnails Gesture
+ThumbnailsGestureDetail = Swipe from the right edge of the screen inside the notebook to access the Thumbnails view.
+DisableHyperLink = Disable Hyperlinks When Writing
+DisableHyperLinkDetail = Avoid unintended activation of hyperlinks when using pen, highlighter or eraser.
+QuickAccess = Quick Access
+
+//WeLink- Backup
+UnableToAccessWeLink = Unable to access WeLink
+
+//Lasso Color Picker Title
+ChooseColor = Choose Color
+
+// Apple pencil double tap V4.0.8
+ApplePencilFeatureInfo = The Apple Pencil double-tap action is currently set to the System Default (SelectedTool). For more options visit Noteshelf Settings -> Stylus -> Apple Pencil.
+DoubleTapAction = Double-Tap Action
+RequiresApplePencil2 = Requires an Apple Pencil that supports double-tap.
+OptionSystemDefault = System Default
+OptionEraser = Switch Between Current Tool and Eraser
+OptionLastUsedTool = Switch Between Current Tool and Last Used
+OptionColorPalette = Show Colour Palette
+OptionFavoritesToolbar = Show Favorites Toolbar
+OptionShapes = Enable Shapes
+ApplePencilSettingsTitle = Apple Pencil Settings
+
+//Clipart v4.0.9
+Clipart = Clipart
+NoRecents = No Recents
+NoMatchesFound = No Matches Found
+Library = Library
+
+Indexing = Indexing...
+
+//Global Search & Filter
+Bookmarked_Filter = Bookmarked
+Tagged = Tagged
+PDFTableOfContents = PDF Table Of Contents
+PDFTOC_NotAvailable = Table of contents not available
+
+// New Settings V4.0.15
+SettingOptionTheme = Appearance
+SettingOptionHandwriting = Handwriting
+SettingOptionCoverTemplate = Free Covers & Paper Templates
+SettingColorScheme = Color Scheme
+SettingShowDateOnShelf = Show Date on Shelf
+SchoolWorkApp = Apple Schoolwork
+
+AboutOptionWhatsNew = What's New
+AboutVisitNoteshelfWebsite = Visit Noteshelf Website
+AboutOptionRateOnAppStore = Rate us on the App Store
+AboutNoteshelf = About Noteshelf
+
+SendExtendedLogs = Send Extended Logs
+Warning = Warning
+ExtendedLogsMessage = This process will retrieve the file names.
+
+// Schoolwork
+ChangeMode = Change Mode
+//Store
+Templates = Templates
+Uptodate = You are up to date!
+
+//Notebook Settings
+AdvancedOptions = Advanced Options
+PageCreatedOn = Created on %@
+PageUpdatedOn = Updated on %@
+
+//Back up
+NoNotebookForBackup = No notebooks selected for backup. Tap to select.
+CopyrightMessage = Copyright © 2019 Noteshelf. All rights reserved.
+
+//Fonts
+SetAsDefault = Set as Default
+SetAsDefaultMessage = Updated successfully for this notebook!\n\nWould you like to apply the same for all future notebooks?
+Yes = Yes
+
+NSClub = Noteshelf Club
+NSClubNotReceiveEmail = Did not receive verification email?
+
+// Apple pencil double tap V4.0.23
+SystemDefaultsDescription = System default
+ChangeOption = CHANGE
+PencilActionChangeMessage = Go to iPad Settings > Apple Pencil to change this
+PencilActionAlert = This action will override the system default only for this app. Would you like to proceed?
+
+//MARK: Insert audio
+InsertAudioCurrentOrNew = Add audio to current page or create a new page?
+CreateAudioNote = Create Audio Note
+CreateAudioNoteSiriMessage = Create a new audio note
+NotSupportedFormat = This format is not supported by Noteshelf// Try to create a phrase whr we tell user that wma and m3u formats are not supported
+//Finder
+TableOfContentNotAvalaible = Table of contents not available
+NoSearchResult = No Search Results
+
+//Clipart 404
+clipart404 = Server Busy, Please try again later.
+
+//Lasso->Take screenshot v5.0.6
+TakeScreenshot = Take screenshot
+Screenshot = Screenshot
+
+// Eraser rack V5.0.3
+AutoSelectPreviousTool = Auto-select previous tool
+EraseEntireStroke = Erase Entire Stroke
+EraseHighlighterOnly = Erase Highlighter Only
+MoreNoDots = More
+
+//Password Protected book lock 5.0.2
+LockNotebookOption = Lock Notebook In Background
+LockNotebookDescription = Automatically lock password protected notebooks after 2 minutes in background.
+UnlockNotebookToImportMessage = Unlock notebook and try this action again
+
+GetMoreFromDownloads = Get more from 'Free Downloads'.
+BookNotExistMessage = Notebook does not exist anymore.
+PageNotExistMessage = Page does not exist anymore.
+
+//Apperance ios 13
+ThemeMessage = iOS appearance is set to dark mode. You may change this in Settings > General > Display & Brightness.
+
+JoinOurBeta = Join our Beta
+AdonitTempDeprecationInfo = Sorry! Adonit stylus is temporarily unavailable. We are working with Adonit to bring this back.
+
+//Share Refactor
+ImportPhoto = Import Photo
+
+// Share extension
+ShareToNoteshelf = Sent to Noteshelf
+NoImportsKey = No Imports Available!
+ImportTo = Import To 
+
+OneDriveAuthAlertMessage = Re-authenticate One Drive to auto-backup notes.
+Clear = Clear
+
+PageFromPhoto = New Page from Photo
+MicophoneNotAvailable = Microphone is not available to record
+
+// Mac File Menu
+Open = Open
+OpenInNewWindow = Open in New Window
+Duplicate = Duplicate
+NewWindow = New Window
+RenamingBooksNofN = Renaming...\n%d of %d
+
+Insert = Insert
+QuickCreateNotebook = Quick Create Notebook
+NewCategory = New Category
+NewAudioNote = New Audio Note
+RenameNNotebooks = Rename %d Notebooks
+PinNotebooks = Pin Notebooks
+Bookmark = Bookmark
+
+//Navigation Menu
+NavigationTitle = Navigation
+ShowNextPage = Show Next Page
+ShowPrevPage = Show Previous Page
+ShowFirstPage = Show First Page
+ShowLastPage = Show Last Page
+
+ZoomIn = Zoom In
+ZoomOut = Zoom Out
+ActualSize = Actual Size
+
+//Include Footer info
+IncludeTitleAndPageNumber = Include Title & Page
+Select = Select
+NItems = %d Items
+OneItem = 1 Item
+MyNoteshelf = My Noteshelf
+ImportFromAppleWatch = Import from Apple Watch
+RecentSearchesTitle = Recent Searches

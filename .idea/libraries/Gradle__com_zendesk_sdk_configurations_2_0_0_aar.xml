@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zendesk:sdk-configurations:2.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a9ba51955f7781110ef9cd39c5dffba/jetified-sdk-configurations-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a9ba51955f7781110ef9cd39c5dffba/jetified-sdk-configurations-2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/3a9ba51955f7781110ef9cd39c5dffba/jetified-sdk-configurations-2.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0536351f6642847f1736a9fe0ea4b53/transformed/jetified-sdk-configurations-2.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f0536351f6642847f1736a9fe0ea4b53/transformed/jetified-sdk-configurations-2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f0536351f6642847f1736a9fe0ea4b53/transformed/jetified-sdk-configurations-2.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zendesk/sdk-configurations/2.0.0/95c12641337b98a047476595099d79b96bb85a4e/sdk-configurations-2.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zendesk/sdk-configurations/2.0.0/5621b37c54c74f8ff407d2eabbe500e08da98125/sdk-configurations-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

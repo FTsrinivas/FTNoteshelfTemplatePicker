@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">1dp</dimen>
+    <dimen name="_3dp">1.5dp</dimen>
+    <dimen name="_4dp">2dp</dimen>
+    <dimen name="margin_five">2.5dp</dimen>
+    <dimen name="_6dp">3dp</dimen>
+    <dimen name="_7dp">3.5dp</dimen>
+    <dimen name="margin_eight">4dp</dimen>
+    <dimen name="_9dp">4.5dp</dimen>
+    <dimen name="_10dp">5dp</dimen>
+    <dimen name="_12dp">6dp</dimen>
+    <dimen name="_13dp">6.5dp</dimen>
+    <dimen name="_14dp">7dp</dimen>
+    <dimen name="margin_fifteen">7.5dp</dimen>
+    <dimen name="_16dp">8dp</dimen>
+    <dimen name="margin_seventeen">8.5dp</dimen>
+    <dimen name="_18dp">9dp</dimen>
+    <dimen name="_20dp">10dp</dimen>
+    <dimen name="_21dp">10.5dp</dimen>
+    <dimen name="_22dp">11dp</dimen>
+    <dimen name="_24dp">12dp</dimen>
+    <dimen name="margin_twenty_five">12.5dp</dimen>
+    <dimen name="_26dp">13dp</dimen>
+    <dimen name="margin_twenty_eight">14dp</dimen>
+    <dimen name="margin_thirty">15dp</dimen>
+    <dimen name="_32dp">16dp</dimen>
+    <dimen name="_34dp">17dp</dimen>
+    <dimen name="_36dp">18dp</dimen>
+    <dimen name="_38dp">19dp</dimen>
+    <dimen name="margin_forty">20dp</dimen>
+    <dimen name="_43dp">21.5dp</dimen>
+    <dimen name="_46dp">23dp</dimen>
+    <dimen name="_50dp">25dp</dimen>
+    <dimen name="margin_fifty_four">27dp</dimen>
+    <dimen name="_90dp">45dp</dimen>
+    <dimen name="_100dp">50dp</dimen>
+    <dimen name="_44dp">22dp</dimen>
+    <dimen name="_70dp">35dp</dimen>
+
+    <!--  Material Design Specs  -->
+    <!--  StatusBar  -->
+    <!--  Toolbar  -->
+
+    <!--  ColorSelection  -->
+    <!--  toolbar  -->
+    <dimen name="pen_expand_margin">-50dp</dimen>
+    <dimen name="pen_circle_size">45dp</dimen>
+    <!--  InputEditText  -->
+    <dimen name="edit_text_minimum_width">40dp</dimen>
+    <dimen name="edit_text_minimum_height">18dp</dimen>
+
+    <dimen name="border_thickness">1.5dp</dimen>
+    <dimen name="corner_thickness">2.5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+
+    <dimen name="corner_length">10dp</dimen>
+
+    <!--Crop View-->
+
+    <!--uCrop Activity-->
+
+    <!--  ShelfGroupView  need to do-->
+
+    <!--  ShelfNavigationDrawer  -->
+    <dimen name="shelf_nd_width">160dp</dimen>
+    <!--  SettingsPanel  -->
+    <!--  WritingStylePanel-->
+    <!--  ThumbnailPanel  -->
+    <dimen name="thumbnail_title_size">10sp</dimen>
+    <!--  MoveToPanel  -->
+
+    <!--  DocumentToolbar  -->
+    <dimen name="document_toolbar_icon_size">26dp</dimen>
+    <dimen name="document_toolbar_icon_padding">7dp</dimen>
+    <dimen name="document_toolbar_bluetooth_icon_margin_top">5dp</dimen>
+    <dimen name="document_toolbar_bluetooth_icon_margin_end">6dp</dimen>
+
+    <!--  EditText  -->
+    <dimen name="edit_text_initial_height">50dp</dimen>
+    <!--  EditTextToolbar  -->
+
+    <!--  Dialogs  -->
+    <!--  FABOptionsDialog  -->
+    <!--  CategoryOptionsDialog  -->
+    <!--  RenameDialog  -->
+    <dimen name="rename_dialog_width">273dp</dimen>
+    <dimen name="rename_dialog_margin_bottom">13dp</dimen>
+    <!--  NewNoteBookDialog  -->
+    <dimen name="new_notebook_dialog_width">256dp</dimen>
+    <dimen name="new_notebook_dialog_height">260dp</dimen>
+    <dimen name="new_note_book_dialog_paper_width">70dp</dimen>
+    <!--  AlertDialog  -->
+    <dimen name="alert_title_text_size">10sp</dimen>
+    <dimen name="alert_supporting_text_size">8sp</dimen>
+    <dimen name="alert_button_height">18dp</dimen>
+    <dimen name="alert_button_text_size">7sp</dimen>
+    <dimen name="alert_button_spacing">4dp</dimen>
+    <!--  AddNewDialog  -->
+    <!--  UndoRedoDialog  -->
+    <dimen name="undo_redo_dialog_padding">12dp</dimen>
+    <!--  PenRackDialog done -->
+    <dimen name="pen_rack_dialog_width">240dp</dimen>
+    <dimen name="pen_rack_dialog_height">189dp</dimen>
+    <dimen name="pen_rack_dialog_padding">15dp</dimen>
+    <dimen name="pen_rack_dialog_size_pen_type_margin_top">10dp</dimen>
+    <dimen name="pen_rack_dialog_width_fav">158dp</dimen>
+    <dimen name="pen_rack_dialog_fav_item_margin_top">-10dp</dimen>
+    <!--  ShareOptionsDialog  -->
+    <dimen name="share_options_width">120dp</dimen>
+    <!--  FTEditColorsDialog  -->
+    <dimen name="text_size_13">6.5sp</dimen>
+    <!--  PopUps  -->
+    <!--  ThumbnailSelectedOptionsPopUp  -->
+
+    <!--  StoreActivity  -->
+    <dimen name="store_pack_width">155dp</dimen>
+    <dimen name="store_pack_height">100dp</dimen>
+    <dimen name="store_pack_header_title_text_size">10.2sp</dimen>
+    <dimen name="store_pack_header_title_sub_text_size">7sp</dimen>
+    <dimen name="store_pack_banner_text_size">10sp</dimen>
+    <dimen name="store_pack_medium_image_length">57dp</dimen>
+    <dimen name="store_pack_small_image_length">31dp</dimen>
+    <dimen name="store_pack_small_text_title_size">8sp</dimen>
+    <dimen name="store_pack_small_text_sub_title_size">7sp</dimen>
+
+    <!--  ScanActivity  -->
+    <dimen name="scanPadding">8dp</dimen>
+
+    <!--    integer values-->
+    <dimen name="dimen_108">54dp</dimen>
+    <dimen name="dimen_24">12dp</dimen>
+    <dimen name="_320dp">160dp</dimen>
+    <dimen name="_350dp">175dp</dimen>
+    <dimen name="dimen_68">34dp</dimen>
+    <dimen name="dimen_135">67.5dp</dimen>
+    <dimen name="dimen_170">85dp</dimen>
+    <dimen name="dimen_520">260dp</dimen>
+    <dimen name="dimen_64">32dp</dimen>
+
+    <dimen name="textsize_twenty">10sp</dimen>
+    <dimen name="margin_two_sixty_two">131dp</dimen>
+    <dimen name="_8dp">4dp</dimen>
+    <dimen name="margin_one_zero_six">53dp</dimen>
+    <dimen name="_2sp">1sp</dimen>
+    <dimen name="textsize_fourteen">7sp</dimen>
+    <dimen name="margin_one_sixty">80dp</dimen>
+    <dimen name="margin_ninety_four">47dp</dimen>
+    <dimen name="_18sp">9sp</dimen>
+    <dimen name="_13sp">6.5sp</dimen>
+    <dimen name="textsize_twelve">6sp</dimen>
+    <dimen name="textsize_fifteen">7.5sp</dimen>
+    <dimen name="_16sp">8sp</dimen>
+    <dimen name="margin_zero_point_five">0.25dp</dimen>
+    <dimen name="margin_forty_five">22.5dp</dimen>
+    <dimen name="margin_one_point_two">0.6dp</dimen>
+    <dimen name="_56dp">28dp</dimen>
+    <dimen name="margin_miuns_three">-1.5dp</dimen>
+    <dimen name="_8sp">4sp</dimen>
+    <dimen name="_60dp">30dp</dimen>
+    <dimen name="_80dp">40dp</dimen>
+    <dimen name="text_size_20">10sp</dimen>
+    <dimen name="text_size_14">7sp</dimen>
+    <dimen name="_114dp">57dp</dimen>
+    <dimen name="_10sp">5sp</dimen>
+    <dimen name="_33dp">16.2dp</dimen>
+    <dimen name="_240dp">120dp</dimen>
+    <dimen name="_256dp">256dp</dimen>
+    <dimen name="_42dp">21dp</dimen>
+    <dimen name="_102dp">51dp</dimen>
+    <dimen name="_104dp">52dp</dimen>
+    <dimen name="_128dp">128dp</dimen>
+    <dimen name="minus_50dp">-50dp</dimen>
+
+    <dimen name="_17sp">8.5sp</dimen>
+    <dimen name="_580dp">290dp</dimen>
+    <dimen name="_28dp">14dp</dimen>
+    <dimen name="_30dp">15dp</dimen>
+    <dimen name="_15dp">7.5dp</dimen>
+    <dimen name="_19sp">9.5sp</dimen>
+    <dimen name="_5dp">2.5dp</dimen>
+    <dimen name="_23dp">11.5dp</dimen>
+    <dimen name="_25dp">12.5dp</dimen>
+
+    <dimen name="welcome_screen1_image1_width">120dp</dimen>
+    <dimen name="welcome_screen1_image1_height">144dp</dimen>
+    <dimen name="welcome_screen1_image2_width">107dp</dimen>
+    <dimen name="welcome_screen1_image2_height">128dp</dimen>
+    <dimen name="welcome_screen1_image3_width">94dp</dimen>
+    <dimen name="welcome_screen1_image3_height">112dp</dimen>
+    <dimen name="welcome_screen_title_text_size">16sp</dimen>
+    <dimen name="welcome_screen4_image_width">100dp</dimen>
+    <dimen name="welcome_screen4_image_height">127dp</dimen>
+    <dimen name="welcome_screen5_image1_width">116dp</dimen>
+    <dimen name="welcome_screen5_image1_height">144dp</dimen>
+    <dimen name="welcome_screen5_image2_width">103dp</dimen>
+    <dimen name="welcome_screen5_image2_height">128dp</dimen>
+    <dimen name="welcome_screen5_image3_width">136dp</dimen>
+    <dimen name="welcome_screen5_image3_height">112dp</dimen>
+    <dimen name="welcome_screen5_notebook_text_margin">12dp</dimen>
+    <dimen name="welcome_feature_text_size">8sp</dimen>
+    <dimen name="welcome_screen1_title_image_margin">20dp</dimen>
+    <dimen name="welcome_screen3_pen_width">31dp</dimen>
+    <dimen name="welcome_screen3_pen_height">106dp</dimen>
+
+    <dimen name="clipart_dialog_tab_layout_width">105dp</dimen>
+    <dimen name="clipart_dialog_back_button_padding">0dp</dimen>
+
+</resources>

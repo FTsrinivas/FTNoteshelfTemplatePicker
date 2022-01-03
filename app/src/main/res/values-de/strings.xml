@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome Experience -->
+    <string name="welcome_tour">Begrüßungsrundgang</string>
+    <string name="skip">überspringen</string>
+    <string name="next">Weiter</string>
+    <string name="continue_string">Weiter</string>
+    <string name="welcome_to_noteshelf">Willkommen bei Noteshelf!</string>
+    <string name="full_featured_digital_note_taking">Vollfunktionales digitales Notieren</string>
+    <string name="take_notes">Notizen machen</string>
+    <string name="record_audio">Audio aufnehmen</string>
+    <string name="add_photos">Fotos hinzufügen</string>
+    <string name="markup_documents">Markierungen auf Dokumenten oder Bildern machen</string>
+    <string name="draw_perfect_shapes">Perfekte Formen zeichnen</string>
+    <string name="extensive_library_of_covers_and_papers">Wählen Sie ein anderes Cover und Papier</string>
+    <string name="rich_text_formatting">Rich-Text-Formatierung</string>
+    <string name="great_writing_tools">Vertraute Schreibwerkzeuge</string>
+    <string name="markup_your_documents">Markierungen auf Dokumenten oder Bildern machen</string>
+    <string name="start_note_taking">Mit deinen Notizen anfangen</string>
+
+    <!--  Welcome Screen Authorisation  -->
+
+
+    <!-- Choose cover/paper dialog -->
+    <string name="quick_create">Schnell erstellen</string>
+    <string name="import_document">Dokument importieren</string>
+    <string name="custom">Benutzerdefiniert</string>
+    <string name="portrait">Hochformat</string>
+    <string name="landscape">Querformat</string>
+    <string name="default_cover">Standard-Deckblatt</string>
+    <string name="select_cover_style">Cover-Design auswählen</string>
+    <string name="customize_cover">Cover anpassen</string>
+    <string name="use_this_cover">Dieses Deckblatt nutzen?</string>
+    <string name="enter_name">Name eingeben</string>
+    <string name="store_sign_up_text">Diese Downloads sind exklusiv für Noteshelf Club-Mitglieder verfügbar.</string>
+    <string name="store_sign_up_text2">Melde dich kostenlos an.</string>
+    <string name="name_already_exists">Name bereits vorhanden.</string>
+
+    <!-- Scan document -->
+    <string name="camera">Kamera</string>
+    <string name="keep_scan">Scan behalten</string>
+    <string name="cropping_image">Bild wird zugeschnitten ……</string>
+    <string name="capturing_image">Bild wird aufgenommen ……</string>
+    <string name="import_">Importieren</string>
+    <string name="scan_document">Dokument scannen</string>
+    <string name="configuration_change">Konfigurationsänderung</string>
+    <string name="no_scanned_items_found">Keine gescannten Objekte gefunden</string>
+    <string name="saved">Gerettet:</string>
+
+    <!-- Import/Export -->
+    <string name="share">Teilen</string>
+    <string name="current_page">Aktuelle Seite</string>
+    <string name="all_pages">Alle Seiten</string>
+    <string name="select_pages">Seiten wählen</string>
+
+
+    <!-- Settings -->
+    <string name="theme">Thema</string>
+    <string name="writing_style">Schreibstil</string>
+    <string name="auto_backup">Auto-Backup</string>
+    <string name="handwriting_recognition">Handschrifterkennung</string>
+    <string name="stylus">Eingabestift</string>
+    <string name="pressure_sensitivity">Druckempfindlichkeit</string>
+    <string name="support">Support</string>
+    <string name="send_support_log">Protokolle senden</string>
+    <string name="disable_hyperlinks_when_writing">Deaktivieren Sie Hyperlinks beim Schreiben</string>
+    <string name="change">Ändern</string>
+    <string name="character_limit_exceeded">Zeichenbegrenzung überschritten. Bitte wählen Sie einen kleineren Buchtitel.</string>
+    <string name="special_characters_are_not_allowed">Sonderzeichen sind für den Namen nicht zulässig.</string>
+
+    <!-- Auto backup -->
+
+
+    <string name="do_not_backup">Ausgeschaltet</string>
+    <string name="notebooks_to_backup">Backups von Notizbüchern erstellen</string>
+    <string name="backup_in_progress">Backup läuft…</string>
+    <string name="backing_up_to_x">Backup auf %1$s</string>
+    <string name="back_up_on_wifi_only">Backup nur über WLAN</string>
+    <string name="log">Protokolle</string>
+    <string name="last_back_up_at_time">Letzte Sicherung am %1$s</string>
+    <string name="off">Ausgeschaltet</string>
+    <string name="sign_out">Ausloggen</string>
+
+    <!-- Evernote Publish -->
+    <string name="evernote_publish">Evernote Sync</string>
+    <string name="publish_notebooks">Notizbücher veröffentlichen</string>
+
+    <string name="evernote_error">Evernote-Fehler</string>
+    <string name="evernote_last_sync_time">Letzte erfolgreiche Synchronisierung um %1$s</string>
+    <string name="sync_failed_with_reason">Die Synchronisierung ist aus gutem Grund fehlgeschlagen: %1$s</string>
+
+    <!-- Add New Dialog -->
+    <string name="change_page_template">Seitenvorlage ändern</string>
+    <string name="photo">Foto</string>
+    <string name="quick_create_settings">Quick-Create-Einstellungen</string>
+
+    <!-- Bookmarks -->
+    <string name="bookmark_page">Ein Lesezeichen auf diese Seite setzen</string>
+    <string name="no_bookmarks_desc">Tippen Sie auf den Seiten auf das Lesezeichensymbol, um sie dieser Ansicht hinzuzufügen.\n\nLang drücken, um Titel und Farbe hinzuzufügen.</string>
+    <string name="no_bookmarked_pages">Keine Lesezeichenseiten</string>
+    <string name="thumbnails">Miniaturbild</string>
+    <string name="list">Liste</string>
+
+    <!-- Penrack -->
+    <string name="autoSelectPrevToolTitle">Vorheriges Werkzeug automatisch auswählen</string>
+    <string name="eraseEntireStrokeTitle">Löschen Sie den gesamten Strich</string>
+    <string name="eraseHighlighterStrokeTitle">Nur Textmarker löschen</string>
+    <string name="highlighters">Textmarker</string>
+    <string name="pens">Stifte</string>
+    <string name="favorites">Favoriten</string>
+    <string name="favorites_full">Favoriten (VOLL)</string>
+    <string name="added">Hinzugefügt!</string>
+    <string name="no_favorite_pens">Keine Stifte als Favoriten</string>
+    <string name="no_favorite_des">Auf das Stern-Symbol in der Schreibwerkzeugpalette tippen,\n um den aktiven Stift als Favorit</string>
+    <string name="show_favorite_toolbar">Favoriten-Symbolleiste anzeigen</string>
+    <string name="pen_tools">Stiftwerkzeuge</string>
+
+    <!-- Color picker -->
+    <string name="edit_colors">Farben bearbeiten</string>
+    <string name="delete_colors">Farben löschen</string>
+    <string name="choose_color">Wähle eine Farbe</string>
+    <string name="reset">Reset</string>
+    <string name="tap_to_choose_color">Tippen Sie zum Bearbeiten einer Farbe.\nHalten und ziehen Sie zum Umsortieren.</string>
+    <string name="Tap_on_a_color">Tippen Sie zum Löschen auf eine Farbe.</string>
+    <string name="minimum_of_colors">Mindestens %1$d Farben erforderlich</string>
+    <string name="color_pallette">Farbpalette</string>
+    <string name="add">ADD</string>
+
+
+    <!-- Finder -->
+    <string name="pages">Seiten</string>
+    <string name="duplicate_page_singular">Duplizieren %1$d Seite</string>
+    <string name="duplicate_page_plural">Duplizieren %1$d Seiten</string>
+    <string name="delete_page_singular">Löschen %1$d Seite</string>
+    <string name="delete_page_plural">Löschen %1$d Seiten</string>
+    <string name="select_all">Alles auswählen</string>
+    <string name="select_none">Nichts auswählen</string>
+    <string name="num_selected">%1$d Ausgewählt</string>
+
+    <!-- Smart dialog messages -->
+    <string name="duplicating">Duplizierung läuft…</string>
+    <string name="saving">wir retten es…</string>
+    <string name="exporting">Exportieren…</string>
+    <string name="importing">Importieren…</string>
+    <string name="restoring">Wiederherstellen…</string>
+    <string name="deleting">Löschen…</string>
+    <string name="opening">Notizbuch laden…</string>
+    <string name="generating">Generieren…</string>
+    <string name="creating">Erstellung läuft…</string>
+    <string name="changing">Ändern…</string>
+    <string name="downloading">Herunterladen…</string>
+    <string name="moving">Verschieben…</string>
+    <string name="loading">Laden…</string>
+
+    <!-- Cliparts -->
+    <string name="clipart">Clipart</string>
+    <string name="photos">Fotos</string>
+
+    <!-- Audio -->
+
+    <string name="audio_recordings">Audioaufnahmen</string>
+    <string name="set_session">Sitzung %1$d</string>
+    <string name="no_audio_recordings">Keine Audioaufnahmen in diesem Notizbuch.</string>
+    <string name="audio_record_progress_alert_title">Dieser Vorgang kann nicht durchgeführt werden, da gerade eine Audioaufnahme läuft.</string>
+    <string name="stop_recording">Aufnahme beenden</string>
+    <string name="play">Abspielen</string>
+    <string name="pause">Pause</string>
+    <string name="record">Aufnehmen</string>
+
+    <!-- Toast messages and errors -->
+    <string name="camera_error">Die Kamera wird von diesem Gerät nicht unterstützt</string>
+    <string name="camera_access_error">Zugriff auf Kamera verweigert. Aktiviere bitte in den Einstellungen die Zugriffsberechtigung.</string>
+    <string name="document_access_error">Zum Importieren von Dokumenten wird deine Genehmigung benötigt.</string>
+    <string name="gallery_access_error">Zum Hinzufügen von Bildern wird deine Genehmigung benötigt.</string>
+
+    <string name="record_audio_permission_error">Zur Audioaufnahme wird deine Genehmigung benötigt.</string>
+    <string name="failed_to_import">Importieren fehlgeschlagen</string>
+    <string name="check_your_internet_connection">Bitte überprüfe die Internetverbindung und versuche es später noch einmal.</string>
+    <string name="sorry_please_grant_permission_for_camera">Entschuldigung! Erlaube bitte den Zugriff auf die Kamera.</string>
+    <string name="wrong_password">Falsches Passwort</string>
+    <string name="please_read_and_enable_the_checkbox_to_import">Für den Import bitte lesen und Kontrollkästchen aktivieren</string>
+    <string name="cannot_open_notes_in_trash">Notizen im Papierkorb können nicht geöffnet werden.</string>
+    <string name="delete_category_confirmation">Möchtest du diese Kategorie löschen? Alle Dokumente werden in den Papierkorb verschoben.</string>
+    <string name="download_error_message">Download fehlgeschlagen! Versuche es bitte erneut.</string>
+    <string name="login_error_message">Diese Downloads sind exklusiv für Noteshelf Club-Mitglieder verfügbar. Melde dich kostenlos an.</string>
+    <string name="cannot_use_trash_as_it_is_reserved_by_the_app">Der \'Papierkorb\' ist nicht verfügbar, da er bereits von der App verwendet wird.</string>
+    <string name="no_internet_connection">Keine Internetverbindung</string>
+    <string name="signed_into_evernote_successfully">Signed into Evernote successfully!</string>
+    <string name="unable_to_authenticate_with_evernote">Authentifizierung bei Evernote nicht möglich</string>
+    <string name="file_size_is_too_large">Datensicherung: Die Datei zu groß.</string>
+    <string name="unexpected_error_occurred_please_try_again">Ein unerwarteter Fehler ist aufgetreten. Bitte versuche es später noch einmal.</string>
+    <string name="font_size_cannot_be_below">Erfolgreich bei Evernote angemeldet!</string>
+    <string name="cropped_image_not_valid_shape">Das zugeschnittene Bild hat keine gültige Form.</string>
+    <string name="cannot_move_to_same_notebook">Kann nicht in dasselbe Notizbuch verschieben</string>
+    <string name="please_enter_atleast_3_characters">Gib bitte mindestens 3 Zeichen ein!</string>
+    <string name="cannot_move_to_same_location">Entschuldigung! Kann nicht an denselben Ort verschoben werden.</string>
+    <string name="change_login">Möchten Sie es mit einem anderen Konto versuchen?</string>
+    <string name="check_your_connection_and_tap_here_to_reload">Überprüfe deine Verbindung und tippe zum Neuladen hier.</string>
+    <string name="are_you_sure_you_want_to_delete_notebooks_permanently">Bist du sicher, dass du die Notizbücher dauerhaft löschen möchtest?</string>
+    <string name="this_action_will_turn_off_auto_backup_for_type">Durch diese Aktion wird die automatische Datensicherung auf %1$s deaktiviert.</string>
+    <string name="would_you_like_to_apply_the_changes_to_the_image_before_proceeding_to_another_option">Möchten Sie die Änderungen auf das Bild anwenden, bevor Sie mit einer anderen Option fortfahren?</string>
+
+    <!-- General -->
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="field_cannot_be_empty">Das Feld darf nicht leer bleiben.</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="unlock">Freischalten</string>
+    <string name="notebook">Notizbuch</string>
+    <string name="create">Erstellen</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="update">Aktualisieren</string>
+    <string name="new_notebook">Neues Notizbuch</string>
+    <string name="page">Seite</string>
+    <string name="download_complete">Heruntergeladen</string>
+    <string name="download">Herunterladen</string>
+    <string name="untitled_notebook">Unbenanntes Notizbuch</string>
+
+    <!-- ToolbarMenu -->
+    <string name="view_list">Liste anzeigen</string>
+    <string name="sort">Sortieren</string>
+    <string name="settings">Einstellungen</string>
+    <string name="back_up">Back Up</string>
+
+    <!-- Dialogs -->
+    <string name="enter_a_name_for_your">Trage bitte einen Namen für %1$s ein.</string>
+    <string name="notebook_title">Titel des Notizbuchs</string>
+    <string name="group_title">Gruppentitel</string>
+    <string name="rename">Umbenennen</string>
+    <string name="rename_category">Kategorie umbenennen</string>
+    <string name="new_category">Neue Kategorie</string>
+    <string name="new_group">Neue Gruppe</string>
+    <string name="category_name">Kategoriename</string>
+    <string name="notebook_name">Name des Notizbuchs</string>
+    <string name="delete_category">Kategorie löschen</string>
+    <string name="add_new">Neue hinzufügen…</string>
+    <string name="backup_error_details">Fehlerdetails</string>
+    <string name="enter_password">Passwort eingeben</string>
+    <string name="password_title">Passwort</string>
+    <string name="group">Gruppe</string>
+    <string name="category">Kategorie</string>
+    <string name="clear_page">Seiteninhalt löschen</string>
+
+    <!-- Shelf -->
+    <string name="select_a_document">Ein Dokument auswählen</string>
+
+    <string name="trash_title">Papierkorb</string>
+    <string name="empty_trash">Papierkorb leeren</string>
+    <string name="move_to_trash">In den Papierkorb verschieben</string>
+    <string name="name">Name</string>
+    <string name="date">Datum</string>
+
+    <!-- Category panel -->
+    <string name="add_new_category">Neue Kategorie…</string>
+    <string name="add_new_group">Neue Gruppe…</string>
+    <string name="move_to">Verschieben in…</string>
+    <string name="done">Fertig</string>
+    <string name="move">Verschieben</string>
+
+    <!-- Lasso -->
+    <string name="screenshot">Bildschirmfoto</string>
+    <string name="cut">Ausschneiden</string>
+    <string name="copy">Kopieren</string>
+    <string name="delete">Löschen</string>
+    <string name="resize">Größe ändern</string>
+    <string name="color">Farbe</string>
+    <string name="cut_copy">Ausschneiden / Kopieren</string>
+    <string name="paste">Einfügen</string>
+    <string name="cannot_support_heavy_selection">Kann große Auswahl nicht unterstützen</string>
+    <string name="to_text">in Text konvertieren</string>
+    <string name="convert_to_text">In Text konvertieren</string>
+    <string name="copy_to_clipboard">In Zwischenablage kopieren</string>
+    <string name="convert_to_textbox">In Textfeld konvertieren</string>
+    <string name="text_copied">Text kopiert</string>
+    <string name="advanced_options">Erweiterte Optionen</string>
+    <string name="font_size">Schriftgröße</string>
+    <string name="_default">Standard</string>
+    <string name="fit_to_selection">An Auswahl anpassen</string>
+    <string name="languages">Sprachen</string>
+
+    <!-- Global Search -->
+    <string name="search">Suche</string>
+    <string name="set_titles_count">%1$d Notizbücher</string>
+
+    <string name="restore_backup">Backup wiederherstellen</string>
+    <string name="export_failed">Export gescheitert!</string>
+    <string name="link_not_found">Link nicht gefunden.</string>
+    <string name="cancelled">Abgebrochen!</string>
+    <string name="error">Fehler</string>
+    <string name="unable_to_sign_out_now_please_try_again_later">Abmeldung im Moment nicht möglich, versuche es bitte später noch einmal.</string>
+    <string name="this_format_not_supported">Dieses Format wird von Noteshelf nicht unterstützt.</string>
+    <string name="pinch_and_zoom_to_layout_your_cover">Zum Ändern des Deckblatt-Layouts mit den Fingern zoomen.</string>
+    <string name="save_for_future_use">Für zukünftige Nutzung speichern?</string>
+    <string name="sign_in">Anmeldung</string>
+    <string name="bookmark_name">Lesezeichen Name</string>
+    <string name="get">Download</string>
+    <string name="undo">Rückgängig</string>
+
+
+    <!--  Add New Page  -->
+    <string name="add_new_page">Neue hinzufügen Seite</string>
+    <string name="template">Vorlage</string>
+    <string name="scan">Scan</string>
+    <string name="or_add_new">ODER NEU HINZUFÜGEN</string>
+
+    <!-- New Settings -->
+    <string name="about_us">Über Noteshelf</string>
+    <string name="connect_with_other_noteshelfers">Verbinden Sie sich mit anderen Noteshelf Benutzern.</string>
+    <string name="like_us_on_facebook">Markiere uns auf Facebook mit ‚Gefällt mir‘</string>
+    <string name="follow_us_on_instagram">Folgen Sie auf Instagram</string>
+    <string name="find_us_on_twitter">Auf Twitter finden</string>
+    <string name="noteshelf_copyright">Copyright © 2020 Noteshelf. All rights reserved.</string>
+    <string name="enable">Aktivieren</string>
+    <string name="select_language">Sprache auswählen</string>
+    <string name="appearance">Aussehen</string>
+    <string name="handwriting">Handschrift</string>
+    <string name="cloud_and_backup">Cloud &amp; Backup</string>
+    <string name="advanced">Erweiterte Optionen</string>
+    <string name="free_covers_paper_templates">Kostenlose Abdeckungen &amp; Vorlagen</string>
+    <string name="about_noteshelf">Über Noteshelf</string>
+    <string name="themes">Themen</string>
+    <string name="show_date_on_shelf">Datum auf Regal anzeigen</string>
+    <string name="linked">verknüpft</string>
+    <string name="cloud_logins">Cloud-Konten</string>
+
+    <string name="sample_notebook">Beispiel-Notizbuch</string>
+    <string name="select_paper_template">Papier auswählen</string>
+    <string name="select_cover_template">Deckblatt auswählen</string>
+    <string name="no_result_found">Keine Ergebnisse</string>
+    <string name="cloud_backup_wifi_enable_text">Zurück über Wifi up nur</string>
+
+    <string name="agree">Zustimmen</string>
+    <string name="disable_recognition">Deaktivieren</string>
+    <string name="privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="scanned_note">Gescannte Notiz</string>
+    <string name="invalid_document">Ungültiges Dokument</string>
+
+    <string name="get_help">Hilfe bekommen</string>
+
+    <!-- New Shelf -->
+    <string name="group_inside_group_error">Eine Gruppe innerhalb einer Gruppe wird derzeit nicht unterstützt.</string>
+    <string name="share_more_items_error">Es kann jeweils nur 1 Notebook freigegeben werden. Wählen Sie 1 Notebook aus und versuchen Sie es erneut.</string>
+    <string name="categories">Kategorien</string>
+    <string name="pinned">Gepinnt</string>
+    <string name="pin_notebook">Notizbücher anheften</string>
+    <string name="duplicate">Duplikat</string>
+    <string name="change_cover">Deckblatt ändern</string>
+    <string name="create_notebook">Erstellen von Notizbüchern</string>
+    <string name="change_template">Änderungsvorlage</string>
+    <string name="back">Zurück</string>
+    <string name="eraser">Radiergummi</string>
+    <string name="text">Text</string>
+    <string name="lasso">Lasso</string>
+    <string name="view">Aussicht</string>
+    <string name="shape">Gestalten</string>
+    <string name="finder">Finder</string>
+    <string name="lock">Sperren</string>
+    <string name="import_photo">Foto importieren</string>
+    <string name="cover">Deckblatt</string>
+    <string name="more">Mehr</string>
+    <string name="remove_from_recents">Aus den Neueste entfernen</string>
+    <string name="unpin_notebook">Notizbuch lösen</string>
+    <string name="open">Öffnen</string>
+    <string name="open_in_new_window">In einem neuen Fenster öffnen</string>
+    <string name="notebook_options">Notizbuch-Optionen</string>
+    <string name="choose_format">Format wählen</string>
+    <string name="default_paper">Standard-Papier</string>
+    <string name="random_cover_design">Zufallsdeckblatt</string>
+    <string name="rotate_page">Seite drehen</string>
+    <string name="go_to_page">Gehe zu Seite....</string>
+    <string name="get_info">Informationen bekommen</string>
+    <string name="counter_clockwise_90">Gegen den Uhrzeigersinn 90 °</string>
+    <string name="clockwise_90">Im Uhrzeigersinn 90 °</string>
+    <string name="clockwise_180">Sens horaire 180 °</string>
+    <string name="title">Titel</string>
+    <string name="created">Erstellt</string>
+    <string name="updated">Aktualisiert</string>
+    <string name="page_created">Seite erstellt</string>
+    <string name="page_updated">Seite aktualisiert</string>
+    <string name="backup">Backup</string>
+    <string name="input_goto_page">Geben Sie zwischen1 und %1$d ein</string>
+    <string name="on">anschalten</string>
+    <string name="info">Information</string>
+    <string name="select">Auswählen</string>
+    <string name="bookmarked">Markiert</string>
+
+    <!--  Miscellaneous  -->
+    <string name="my_notes">Meine Notizen</string>
+    <string name="no_papers_available">Keine Papiere verfügbar</string>
+    <string name="redo">Wiederholen</string>
+    <string name="free_downloads">Kostenlose Downloads</string>
+    <string name="noteshelf_club">Noteshelf Club</string>
+    <string name="signed_in_as">Du bist als eingeloggt</string>
+    <string name="indexing_page_num">Seite %1$d indexiert</string>
+    <string name="please_enter_valid_color">Bitte geben Sie eine gültige Farbe ein</string>
+    <string name="logout">Ausloggen</string>
+    <string name="app_will_store_your_password">Noteshelf benötigt die sichere Speicherung deines Passworts. Bestätige es bitte, um dies zu akzeptieren.</string>
+    <string name="stop">Halt</string>
+    <string name="apply">Übernehmen</string>
+    <string name="no_band">Kein Band</string>
+    <string name="transparent_band">Transparentes Band</string>
+    <string name="blurred_band">Verschwommenes Band</string>
+    <string name="bottom_photo">Unteres Foto</string>
+    <string name="cut_out_photo">Ausgeschnittenes Foto</string>
+    <string name="mosaic_photo">Mosaikfoto</string>
+    <string name="options">Optionen</string>
+    <string name="page_from_template">Neue Seite von Vorlage</string>
+    <string name="page_from_photo">Neue Seite vom Foto</string>
+
+    <string name="recent">Letzte</string>
+    <string name="loading_more">Mehr laden…</string>
+    <string name="new_audio_note">Neue Audio-Notiz</string>
+
+    <string name="i_agree_to">Ich stimme Noteshelfs zu</string>
+    <string name="backup_your_notes_to_dropbox_or_google_drive">Sichern Sie Ihre Notizen in Dropbox oder Google Drive</string>
+
+
+    <string name="please_accept_terms_and_conditions_to_continue">Bitte akzeptieren Sie die Allgemeinen Geschäftsbedingungen fortzusetzen.</string>
+    <string name="accept">Akzeptieren</string>
+    <string name="bring_to_front">Nach vorne bringen</string>
+    <string name="send_to_back">Nach hinten senden</string>
+    <string name="hide_with_arrow">Ausblenden</string>
+    <string name="more_with_arrow">Mehr</string>
+    <string name="where_is_your_backup">Wo ist dein Backup?</string>
+    <string name="sync_has_not_started_yet">Die Synchronisierung wurde noch nicht gestartet</string>
+    <string name="photo_library">Fotobibliothek</string>
+    <string name="media_library">Medienbibliothek</string>
+    <string name="insert_from">Einfügen von</string>
+    <string name="no_recents">Keine letzten</string>
+    <string name="illustrations">Illustrationen</string>
+    <string name="animals">Tiere</string>
+    <string name="animals_and_nature">Tiere &amp; Natur</string>
+    <string name="arts">Kunst</string>
+    <string name="athletics">Leichtathletik</string>
+    <string name="business">Business</string>
+    <string name="fashion">Mode</string>
+    <string name="featured">Empfohlene</string>
+    <string name="film">Film</string>
+    <string name="health">Gesundheit</string>
+    <string name="history">Geschichte</string>
+    <string name="interiors">Innenräume</string>
+    <string name="technology">Technologie</string>
+    <string name="textures">Texturen</string>
+    <string name="wallpapers">Wallpapers</string>
+    <string name="travel_and_places">reise</string>
+    <string name="food_and_drink">Essen &amp; Trinken</string>
+    <string name="bookmark_info">Lesezeichen für den schnellen Zugriff,</string>
+    <string name="vectors">Vektoren</string>
+    <string name="bookmark">Lesezeichen</string>
+    <string name="untitled">Unbenannt</string>
+
+    //HMS auth service
+    <string name="phone">Telefon</string>
+    <string name="email">Email</string>
+    <string name="country_code">Landesvorwahl</string>
+    <string name="password">Passwort</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="verify_code">Code überprüfen</string>
+    <string name="send">SENDEN</string>
+    <string name="login">ANMELDUNG</string>
+    <string name="login_anonymous">LOGIN ANONYM</string>
+    <string name="register">REGISTRIEREN</string>
+    <string name="register_info">habe kein Konto?</string>
+    <string name="password_tips">Wenn Sie ein Passwort haben, können Sie sich mit einem Passwort anmelden, andernfalls mit einem Bestätigungscode</string>
+    <string name="password_register_tips">Dieser Schritt zum Festlegen des Anfangskennworts ist optional. \ n Wenn Sie ein Konto erstellen, können Sie ein anfängliches Passwort festlegen und das Passwort verwenden, um sich beim nächsten Mal anzumelden. Natürlich können Sie dieses Passwort jederzeit ändern</string>
+    <string name="title_avatar">Benutzerbild</string>
+    <string name="title_nickname">Spitzname</string>
+    <string name="title_phone">Telefonnummer</string>
+    <string name="defNickName">Mein Spitzname</string>
+    <string name="btnSingOutTxt">Ausloggen</string>
+    <string name="set">EINSTELLUNG</string>
+    <string name="title_activity_settings">EINSTELLUNGEN</string>
+    <string name="link">LINK</string>
+    <string name="unlink">UNLINK</string>
+    <string name="delete_user">Benutzer löschen</string>
+    <string name="update_email">E-Mail aktualisieren</string>
+    <string name="update_phone">Telefon aktualisieren</string>
+    <string name="update_password">Passwort erneuern</string>
+    <string name="reset_password">Passwort zurücksetzen</string>
+    <string name="verification_code_success">Verifikations-Code gesendet erfolgreich</string>
+    <string name="verification_code_fail">Scheitern gesendet Verifikations-Code</string>
+    <string name="privacy_policy_link">&#160;<u>Datenschutz-Bestimmungen</u></string>
+
+    <!-- Recognition Languages -->
+    <string name="english_uk">Englisch (US)</string>
+    <string name="english_us">Englisch (UK)</string>
+    <string name="chinese_simplified">Chinesisch (vereinfacht)</string>
+    <string name="chinese_traditional">Chinesisch (traditionell)</string>
+    <string name="german">Deutsch</string>
+    <string name="french">Französisch</string>
+    <string name="spanish">Spanisch</string>
+    <string name="italian">Italienisch</string>
+    <string name="japanese">Japanisch</string>
+    <string name="portugal">Portugiesisch</string>
+    <string name="korean">Koreanisch</string>
+    <string name="africans">Afrikaner</string>
+    <string name="albanian">albanisch</string>
+    <string name="armenian">Armenisch</string>
+    <string name="azeri">Azeri</string>
+    <string name="belarusian">Belarussisch</string>
+    <string name="bulgarian">bulgarisch</string>
+    <string name="chinese_hongkong">Chinesisch (Hong Kong)</string>
+    <string name="croatian">kroatisch</string>
+    <string name="czech">Tschechisch</string>
+    <string name="danish">dänisch</string>
+    <string name="dutch_belgium">Niederländisch (Belgien)</string>
+    <string name="dutch_netherlands">Niederländisch (Niederlande)</string>
+    <string name="english_canada">Englisch (Kanada)</string>
+    <string name="estonian">estnisch</string>
+    <string name="finnish">finnisch</string>
+    <string name="french_canada">Französisch (Kanada)</string>
+    <string name="galician">galizisch</string>
+    <string name="georgian">georgisch</string>
+    <string name="german_austria">Deutsch (Österreich)</string>
+    <string name="greek">griechisch</string>
+    <string name="hungarian">ungarisch</string>
+    <string name="indonesian">Indonesier</string>
+    <string name="irish">irisch</string>
+    <string name="icelandic">Islandic</string>
+    <string name="kazakh">Kasachisch</string>
+    <string name="latvian">lettisch</string>
+    <string name="lithuanian">litauisch</string>
+    <string name="macedonian">mazedonisch</string>
+    <string name="malay">malaiisch</string>
+    <string name="mongolian">mongolisch</string>
+    <string name="norwegian">norwegisch</string>
+    <string name="polish">Polieren</string>
+    <string name="portuguese_brazil">Portugiesisch (Brasilien)</string>
+    <string name="romanian">rumänisch</string>
+    <string name="russian">Russisch</string>
+    <string name="serbian_cyrillic">Serbischen (Kyrillisch)</string>
+    <string name="serbian_latin">Serbisch (Latin)</string>
+    <string name="slovak">slowakisch</string>
+    <string name="slovenian">Slowenisch</string>
+    <string name="spanish_mexico">Spanisch (Mexiko)</string>
+    <string name="spanish_spain">Spanisch (Spanien)</string>
+    <string name="swedish">Schwedisch</string>
+    <string name="tatar">Tatar</string>
+    <string name="turkish">Türkisch</string>
+    <string name="ukrainian">ukrainisch</string>
+    <string name="vietnamese">Vietnamesisch</string>
+    <string name="swahili_tanzania">Swahili (Tanzania)</string>
+    <string name="bosnian">bosnisch</string>
+    <string name="cebuano_philippines">Cebuano (Philippinen)</string>
+    <string name="english_philippines">English (Philippines)</string>
+    <string name="filipino_philippines">Filipino (Philippinen)</string>
+    <string name="malagasy_madagascar">Malagasy (Madagaskar)</string>
+    <string name="spanish_colombia">Spanisch (Kolumbien)</string>
+    <string name="quick_access_gesture_detail">Wischen Sie vom linken Rand des Bildschirms innerhalb des Notebooks, um auf das Menü Schnellzugriff zuzugreifen.</string>
+    <string name="thumbnails_gesture">Thumbnails Geste</string>
+    <string name="thumbnails_gesture_detail">Wischen Sie vom rechten Rand des Bildschirms innerhalb des Notebooks, um auf die Miniaturansicht zuzugreifen.</string>
+    <string name="disable_hyperlinks_detail">Vermeiden Sie unbeabsichtigte Aktivierung von Hyperlinks bei Verwendung von Stift, Textmarker oder Radiergummi.</string>
+    <string name="quick_access_gesture">Schnellzugriff Geste</string>
+
+    <!--  App Rating  -->
+    <string name="store_rating">Genießen Noteshelf?</string>
+    <string name="rating_message">Bitte nehmen Sie sich einen Moment Zeit, um uns im PlayStore zu bewerten. Es wird uns sehr helfen!</string>
+    <string name="rating_message_huawei">Bitte nehmen Sie sich einen Moment Zeit, um uns im App Gallery zu bewerten. Es wird uns sehr helfen!</string>
+    <string name="rating_message_samsung">Bitte nehmen Sie sich einen Moment Zeit, um uns im Galaxy Store zu bewerten. Es wird uns sehr helfen!</string>
+    <string name="later">Später erinnern</string>
+    <string name="rate_now">Eine Rezension schreiben</string>
+    <string name="no_thanks">Nein danke</string>
+    <string name="insert_page_above">Seite oberhalb einfügen</string>
+    <string name="insert_page_below">Seite unterhalb einfügen</string>
+    <string name="end_date">Endtermin</string>
+    <string name="start_date">Anfangsdatum</string>
+    <string name="more_than_twelve_months_gap">Die Laufzeit beträgt mehr als 12 Monate! Bitte wählen Sie eine kürzere Laufzeit.</string>
+    <string name="start_date_eariler_than_end_date">Die Laufzeit beträgt mehr als 12 Monate! Bitte wählen Sie eine kürzere Laufzeit.</string>
+    <string name="air_action_btnPress">Stift wechseln</string>
+    <string name="air_action_btnDoubleClick">Öffnen Sie das Stiftregal</string>
+    <string name="air_action_btnSwipeUp">Hineinzoomen</string>
+    <string name="air_action_btnSwipedown">Rauszoomen</string>
+    <string name="air_action_btnCircleCW">Öffnen Sie den Finder</string>
+    <string name="air_action_btnNext">Nächste Seite</string>
+    <string name="air_action_btnPrev">Vorherige Seite</string>
+    <string name="air_action_btnCircleCCW">Schneller Zugang</string>
+    <string name="whats_new">WAS IST NEU</string>
+    <string name="air_actions_desc">Bewegen Sie Ihren S Pen, um Noteshelf auf Ihrem Gerät zu steuern. Weitere Informationen finden Sie unter Einstellungen> Air Actions> Noteshelf.</string>
+    <string name="air_actions_title">S Pen Air Actions sind da!</string>
+    <string name="unable_to_authenticate">Authentifizierung nicht möglich</string>
+    <string name="connect_to_webdav">Eine Verbindung mit WebDAV</string>
+    <string name="username">Benutzername</string>
+    <string name="connect">Verbinden</string>
+    <string name="webdav_dialog_alert">Der Server wurde nicht gefunden. Überprüfen Sie die Server-URL und versuchen Sie es erneut.</string>
+    <string name="select_backup_location">Wählen Sie Sicherungsspeicherort</string>
+    <string name="logged_in_as">Eingeloggt als <![CDATA[<b>%1$s</b]]></string>
+    <string name="connect_through">Verbunden über %1$s</string>
+    <string name="backup_location">Backup-Speicherort</string>
+    <string name="webdav_backup_location_error">Der Host-Server hat Ihre Anfrage abgelehnt. Bitte überprüfen Sie, ob Ihr Konto über die Berechtigung verfügt, Änderungen am Ordner vorzunehmen, und versuchen Sie es erneut.</string>
+    <string name="backup_to_">Seite unterhalb einfügen  %1$s</string>
+    <string name="connecting">Verbinden…</string>
+
+
+    <string name="what_s_new">Was ist neu</string>
+    <string name="webdav_and_">WebDAV- und OneDrive-Unterstützung\nStudienplaner</string>
+    <string name="webdav_and_one">Backup auf WebDAV und OneDrive</string>
+    <string name="webdav_and_one_sample">Bewahren Sie Ihre Daten sicher auf. Wir unterstützen jetzt WebDAV und OneDrive für Wiederherstellung und Backup.</string>
+    <string name="product_updates">Wir veröffentlichen Tipps und Tricks, damit Sie Noteshelf optimal nutzen können. Wir teilen auch inspirierende Notizen von unseren Benutzern auf der ganzen Welt.</string>
+    <string name="see_what_s_new">Schau was neu ist</string>
+    <string name="page_rotation">Seitendrehung</string>
+    <string name="follow_us">Folge uns</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="rotate">Sie können jetzt Ihre Notizbuchseite drehen, ohne Ihr Gerät drehen zu müssen.</string>
+    <string name="test_sample">Test Sample</string>
+    <string name="test_description">Fictum, deserunt mollit anim laborum astutumque! Vivamus sagittis lacus vel augue laoreet rutrum.</string>
+    <string name="get_back_to_school_in_style">Zurück zur Schule mit Stil!</string>
+    <string name="study_planner_desc">Verwenden Sie die neuen Studienplaner, um Ihre Aufgaben zu verfolgen und Ihre Zeitpläne zu planen. Holen Sie sie sich jetzt aus dem Bereich für kostenlose Downloads!</string>
+    <string name="study_planners">Studienplaner</string>
+
+</resources>

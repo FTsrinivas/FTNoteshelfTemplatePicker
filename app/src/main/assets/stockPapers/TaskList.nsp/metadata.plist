@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dynamic_id</key>
+	<integer>3</integer>
+	<key>display_name</key>
+	<string>Task List</string>
+	<key>line_height</key>
+	<integer>34</integer>
+	<key>width</key>
+	<integer>834</integer>
+	<key>height</key>
+	<integer>1048</integer>
+	<key>display_name_ja</key>
+	<string>タスクリスト</string>
+	<key>display_name_it</key>
+	<string>Elenco delle attività</string>
+	<key>display_name_es</key>
+	<string>Lista de tareas</string>
+	<key>display_name_de</key>
+	<string>Aufgabenliste</string>
+	<key>display_name_zh-Hans</key>
+	<string>任务列表</string>
+	<key>display_name_zh-Hant</key>
+	<string>工作清單</string>
+	<key>display_name_fr</key>
+	<string>Liste de tâches</string>
+</dict>
+</plist>

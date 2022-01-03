@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/new_20dp"
+    android:paddingTop="@dimen/new_16dp"
+    android:paddingEnd="@dimen/new_20dp"
+    android:paddingBottom="@dimen/new_24dp">
+
+    <TextView
+        android:id="@+id/page"
+        style="@style/PopupItemTextStyle"
+        android:drawableStart="@drawable/page_page"
+        android:drawablePadding="@dimen/new_19dp"
+        android:text="@string/page" />
+
+    <include layout="@layout/divider_black" />
+
+    <TextView
+        android:id="@+id/page_from_template"
+        style="@style/PopupItemTextStyle"
+        android:drawableStart="@drawable/page_temp"
+        android:drawablePadding="@dimen/new_19dp"
+        android:text="@string/page_from_template" />
+
+    <include layout="@layout/divider_black" />
+
+    <TextView
+        android:id="@+id/page_from_image"
+        style="@style/PopupItemTextStyle"
+        android:drawableStart="@drawable/page_image"
+        android:drawablePadding="@dimen/new_19dp"
+        android:text="@string/page_from_photo" />
+
+    <include layout="@layout/divider_black" />
+
+    <TextView
+        android:id="@+id/import_document"
+        style="@style/PopupItemTextStyle"
+        android:drawableStart="@drawable/page_import"
+        android:drawablePadding="@dimen/new_19dp"
+        android:text="@string/import_document" />
+
+    <include layout="@layout/divider_black" />
+
+    <TextView
+        android:id="@+id/scan_document"
+        style="@style/PopupItemTextStyle"
+        android:drawableStart="@drawable/page_scan"
+        android:drawablePadding="@dimen/new_19dp"
+        android:text="@string/scan_document" />
+
+    <include layout="@layout/divider_black" />
+
+</LinearLayout>

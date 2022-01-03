@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome Experience -->
+    <string name="welcome_tour">欢迎参观</string>
+    <string name="skip">略过</string>
+    <string name="next">下一步</string>
+    <string name="continue_string">继续</string>
+    <string name="welcome_to_noteshelf">欢迎使用Noteshelf!</string>
+    <string name="full_featured_digital_note_taking">功能全面的\n数字笔记</string>
+    <string name="take_notes">记笔记</string>
+    <string name="record_audio">录音</string>
+    <string name="add_photos">添加照片</string>
+    <string name="markup_documents">标记文档或图片</string>
+    <string name="draw_perfect_shapes">画出完美的形状</string>
+    <string name="extensive_library_of_covers_and_papers">不同的封面和纸张选择</string>
+    <string name="rich_text_formatting">富文本格式</string>
+    <string name="great_writing_tools">熟悉的书写工具</string>
+    <string name="markup_your_documents">标记文档或图片</string>
+    <string name="start_note_taking">开始记笔记</string>
+
+    <!--  Welcome Screen Authorisation  -->
+    <string name="auth_required">需要授权</string>
+    <string name="please_read_and_confirm">请阅读并确认以下内容，进一步进行</string>
+    <string name="terms">条款</string>
+    <string name="you_agree_to_the_media">您同意允许Noteshelf访问设备的相机，麦克风和媒体库。这些权限对于各种内置功能以及为您提供更好的应用内体验至关重要。但是，我们不会以任何方式存储此信息以用于应用程序外部。</string>
+    <string name="you_agree_to_the_network">您同意允许Noteshelf通过Wifi和移动数据下载媒体和文档。这是为了确保无缝的应用内体验而不会造成任何干扰</string>
+    <string name="allow_to_proceed">允许继续</string>
+    <string name="accepted">公认</string>
+    <string name="cancel_and_quit_app">取消并退出应用</string>
+
+    <!-- Choose cover/paper dialog -->
+    <string name="quick_create">快速创建</string>
+    <string name="import_document">导入文档</string>
+    <string name="custom">自定义</string>
+    <string name="portrait">竖版</string>
+    <string name="landscape">横版</string>
+    <string name="default_cover">默认封面</string>
+    <string name="select_cover_style">选择封面样式</string>
+    <string name="customize_cover">定制封面</string>
+    <string name="use_this_cover">使用该封面</string>
+    <string name="enter_name">请输入你的名字</string>
+    <string name="store_sign_up_text">这些下载专为 Noteshelf Club 会员提供.</string>
+    <string name="store_sign_up_text2">免费注册.</string>
+    <string name="name_already_exists">名称已存在!</string>
+
+    <!-- Scan document -->
+    <string name="camera">摄影机</string>
+    <string name="keep_scan">继续扫描</string>
+    <string name="cropping_image">正在裁剪图像...</string>
+    <string name="capturing_image">正在捕获图像...</string>
+    <string name="import_">导入</string>
+    <string name="scan_document">扫描文档</string>
+    <string name="configuration_change">配置更改</string>
+    <string name="no_scanned_items_found">未找到已扫描项</string>
+    <string name="saved">已保存:</string>
+
+    <!-- Import/Export -->
+    <string name="share">分享</string>
+    <string name="current_page">当前页</string>
+    <string name="all_pages">所有页</string>
+    <string name="select_pages">选择页面</string>
+
+
+    <!-- Settings -->
+    <string name="theme">主题</string>
+    <string name="writing_style">书写风格</string>
+    <string name="auto_backup">自动备份</string>
+    <string name="handwriting_recognition">手写识别</string>
+    <string name="stylus">触控笔</string>
+    <string name="pressure_sensitivity">压力敏感度</string>
+    <string name="support">支持</string>
+    <string name="send_support_log">发送日志</string>
+    <string name="disable_hyperlinks_when_writing">写入时禁用超链接</string>
+    <string name="change">改变</string>
+    <string name="character_limit_exceeded">超出字符数限制。 请选择一个更小的笔记本名称.</string>
+    <string name="special_characters_are_not_allowed">名称中不允许使用特殊字符.</string>
+
+    <!-- Auto backup -->
+
+
+    <string name="do_not_backup">不要备份</string>
+    <string name="notebooks_to_backup">备份笔记本</string>
+    <string name="backup_in_progress">备份进行中</string>
+    <string name="backing_up_to_x">备份到 %1$s</string>
+    <string name="back_up_on_wifi_only">仅WLAN备份</string>
+    <string name="log">日志</string>
+    <string name="last_back_up_at_time">上次备份于 %1$s</string>
+    <string name="off">关掉</string>
+    <string name="sign_out">注销</string>
+
+    <!-- Evernote Publish -->
+    <string name="evernote_publish">Evernote同步</string>
+    <string name="publish_notebooks">发布笔记本</string>
+
+    <string name="evernote_error">Evernote 错误</string>
+    <string name="evernote_last_sync_time">上次成功同步时间为 %1$s</string>
+    <string name="sync_failed_with_reason">同步失败，原因为 %1$s</string>
+
+    <!-- Add New Dialog -->
+    <string name="change_page_template">更改页面模板</string>
+    <string name="photo">照片</string>
+    <string name="quick_create_settings">快速创建设置</string>
+
+    <!-- Bookmarks -->
+    <string name="bookmark_page">收藏此页</string>
+    <string name="untitled">未命名</string>
+    <string name="bookmark">书签</string>
+    <string name="no_bookmarks_desc">点击页面上的书签图标 将其添加到此视图。长按添加标题和颜色.</string>
+    <string name="no_bookmarked_pages">没有书签页面</string>
+    <string name="thumbnails">缩略图</string>
+    <string name="list">名单</string>
+
+    <!-- Penrack -->
+    <string name="autoSelectPrevToolTitle">自动选择上一个工具</string>
+    <string name="eraseEntireStrokeTitle">擦除整个描边</string>
+    <string name="eraseHighlighterStrokeTitle">擦除只有荧光笔</string>
+    <string name="highlighters">荧光笔</string>
+    <string name="pens">钢笔</string>
+    <string name="favorites">收藏夹</string>
+    <string name="favorites_full">收藏夹（完整）</string>
+    <string name="added">已添加！</string>
+    <string name="no_favorite_pens">没有收藏的钢笔</string>
+    <string name="no_favorite_des">通过点击书写工具面板中的星号来收藏活动笔.</string>
+    <string name="show_favorite_toolbar">显示收藏夹工具栏</string>
+    <string name="pen_tools">笔工具</string>
+
+    <!-- Color picker -->
+    <string name="edit_colors">编辑颜色</string>
+    <string name="delete_colors">删除颜色</string>
+    <string name="choose_color">选择一种颜色</string>
+    <string name="reset">重置</string>
+    <string name="tap_to_choose_color">点击颜色可对其进行编辑。\n按住并拖拽可重新排序。</string>
+    <string name="Tap_on_a_color">点击颜色将其删除。</string>
+    <string name="minimum_of_colors">最少需要 %1$d 种颜色</string>
+    <string name="color_pallette">调色板</string>
+    <string name="add">加</string>
+
+
+    <!-- Finder -->
+    <string name="pages">页面</string>
+    <string name="duplicate_page_singular">复制第 %1$d 页</string>
+    <string name="duplicate_page_plural">复制 %1$d 页</string>
+    <string name="delete_page_singular">删除第 %1$d 页</string>
+    <string name="delete_page_plural">删除第 %1$d 页</string>
+    <string name="select_all">全部选定</string>
+    <string name="select_none">全部取消选定</string>
+    <string name="num_selected">%1$d 已选</string>
+
+    <!-- Smart dialog messages -->
+    <string name="duplicating">正在复制……</string>
+    <string name="saving">正在保存...</string>
+    <string name="exporting">正在导出...</string>
+    <string name="importing">正在导入...</string>
+    <string name="restoring">恢复...</string>
+    <string name="deleting">正在删除...</string>
+    <string name="opening">正在载入笔记本</string>
+    <string name="generating">正在处理...</string>
+    <string name="creating">正在创建……</string>
+    <string name="changing">改变中...</string>
+    <string name="downloading">正在下载...</string>
+    <string name="moving">移动中...</string>
+    <string name="loading">正在载入...</string>
+
+    <!-- Cliparts -->
+    <string name="clipart">剪贴画</string>
+    <string name="photos">相片</string>
+
+    <!-- Audio -->
+
+    <string name="audio_recordings">录音</string>
+    <string name="set_session">时段 %1$d</string>
+    <string name="no_audio_recordings">这个笔记本中没有录音。</string>
+    <string name="audio_record_progress_alert_title">无法进行该操作，因为有录音正在处理中。</string>
+    <string name="stop_recording">停止录音</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="record">录音</string>
+
+    <!-- Toast messages and errors -->
+    <string name="camera_error">该设备不支持相机</string>
+    <string name="camera_access_error">无权访问相机，请在设置中启用它.</string>
+    <string name="document_access_error">您需要授予权限才能导入文档.</string>
+    <string name="gallery_access_error">您需要授予权限才能添加图像.</string>
+
+    <string name="record_audio_permission_error">您需要授予权限才能录制音频.</string>
+    <string name="failed_to_import">导入失败</string>
+    <string name="check_your_internet_connection">请检查您的网络连接，然后重试。</string>
+    <string name="sorry_please_grant_permission_for_camera">抱歉！请允许使用相机</string>
+    <string name="wrong_password">密码错误</string>
+    <string name="please_read_and_enable_the_checkbox_to_import">请阅读并启用复选框以导入</string>
+    <string name="cannot_open_notes_in_trash">无法在垃圾箱里打开笔记.</string>
+    <string name="delete_category_confirmation">想要删除该类别吗？所有文档将会被移动到回收站。</string>
+    <string name="download_error_message">下载失败！请重试.</string>
+    <string name="login_error_message">这些下载专为 Noteshelf Club 会员提供。免费注册。</string>
+    <string name="cannot_use_trash_as_it_is_reserved_by_the_app">无法使用\'垃圾箱\'，因为该名称已被应用保留.</string>
+    <string name="no_internet_connection">无网络连接</string>
+    <string name="signed_into_evernote_successfully">已成功登录 Evernote!</string>
+    <string name="unable_to_authenticate_with_evernote">无法认证到印象笔记</string>
+    <string name="file_size_is_too_large">文件太大</string>
+    <string name="unexpected_error_occurred_please_try_again">发生未预知的错误，请稍后重试。</string>
+    <string name="font_size_cannot_be_below">字体大小不能小于</string>
+    <string name="cropped_image_not_valid_shape">裁剪的图像不是有效形状.</string>
+    <string name="cannot_move_to_same_notebook">无法移动到同一笔记本</string>
+    <string name="please_enter_atleast_3_characters">请输入至少 3 个字符</string>
+    <string name="cannot_move_to_same_location">抱歉！无法移动至同一位置.</string>
+    <string name="change_login">您想尝试使用另一个帐户吗？</string>
+    <string name="check_your_connection_and_tap_here_to_reload">请检查您的连接，并点击此处重新加载.</string>
+    <string name="are_you_sure_you_want_to_delete_notebooks_permanently">您确定要永久删除记事本?</string>
+    <string name="this_action_will_turn_off_auto_backup_for_type">此操作将关闭对 %1$s 的自动备份.</string>
+    <string name="would_you_like_to_apply_the_changes_to_the_image_before_proceeding_to_another_option">是否要在继续使用其他选项之前将更改应用于图像？</string>
+
+    <!-- General -->
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="field_cannot_be_empty">字段不能为空</string>
+    <string name="edit">编辑</string>
+    <string name="unlock">开锁</string>
+    <string name="notebook">笔记本</string>
+    <string name="create">创建</string>
+    <string name="ok">好的</string>
+    <string name="cancel">取消</string>
+    <string name="update">更新</string>
+    <string name="new_notebook">新建笔记本</string>
+    <string name="page">页</string>
+    <string name="download_complete">已下载</string>
+    <string name="download">下载</string>
+    <string name="untitled_notebook">未命名的笔记本</string>
+
+    <!-- ToolbarMenu -->
+    <string name="view_list">查看清单</string>
+    <string name="sort">分类</string>
+    <string name="settings">设置</string>
+    <string name="back_up">备份</string>
+
+    <!-- Dialogs -->
+    <string name="enter_a_name_for_your">为您的 %1$s 输入名称</string>
+    <string name="notebook_title">笔记本名称</string>
+    <string name="group_title">组标题</string>
+    <string name="rename">重命名</string>
+    <string name="rename_category">重命名类别</string>
+    <string name="new_category">新类别</string>
+    <string name="new_group">新组</string>
+    <string name="category_name">分类名称</string>
+    <string name="notebook_name">笔记本名称</string>
+    <string name="delete_category">删除类别</string>
+    <string name="add_new">添加新的</string>
+    <string name="backup_error_details">错误详情</string>
+    <string name="enter_password">输入密码</string>
+    <string name="password_title">密码</string>
+    <string name="group">组</string>
+    <string name="category">类别</string>
+    <string name="clear_page">清空此页</string>
+
+    <!-- Shelf -->
+    <string name="select_a_document">选择一个文档</string>
+
+    <string name="trash_title">垃圾</string>
+    <string name="empty_trash">清空回收站</string>
+    <string name="move_to_trash">移到回收站</string>
+    <string name="name">名称</string>
+    <string name="date">日期</string>
+
+    <!-- Category panel -->
+    <string name="add_new_category">新类别...</string>
+    <string name="add_new_group">新组...</string>
+    <string name="move_to">移动到……</string>
+    <string name="done">完成</string>
+    <string name="move">移</string>
+
+    <!-- Lasso -->
+    <string name="screenshot">截图</string>
+    <string name="cut">剪切</string>
+    <string name="copy">复制</string>
+    <string name="delete">删除</string>
+    <string name="resize">调整大小</string>
+    <string name="color">颜色</string>
+    <string name="cut_copy">剪切/复制</string>
+    <string name="paste">粘贴</string>
+    <string name="cannot_support_heavy_selection">不支持选择大量内容</string>
+    <string name="to_text">到文本</string>
+    <string name="convert_to_text">转换为文本</string>
+    <string name="copy_to_clipboard">复制到剪贴板</string>
+    <string name="convert_to_textbox">转换为文本框</string>
+    <string name="text_copied">复制的文字</string>
+    <string name="advanced_options">高级选项</string>
+    <string name="font_size">字体大小</string>
+    <string name="_default">默认</string>
+    <string name="fit_to_selection">适合选择</string>
+    <string name="languages">语言</string>
+
+    <!-- Global Search -->
+    <string name="search">搜索</string>
+    <string name="set_titles_count">%1$d 个笔记本</string>
+
+    <string name="restore_backup">恢复备份</string>
+    <string name="export_failed">导出失败！</string>
+    <string name="link_not_found">未找到链接.</string>
+    <string name="cancelled">已取消!</string>
+    <string name="error">错误</string>
+    <string name="unable_to_sign_out_now_please_try_again_later">当前无法注销，请稍后重试.</string>
+    <string name="this_format_not_supported">这种格式不支持Noteshelf</string>
+    <string name="pinch_and_zoom_to_layout_your_cover">通过捏拉和缩放来布置你的封面。</string>
+    <string name="save_for_future_use">留着以后使用？</string>
+    <string name="sign_in">登入</string>
+    <string name="bookmark_name">书签名称</string>
+    <string name="get">下载</string>
+    <string name="undo">撤销</string>
+
+    <!--  System   -->
+    <string name="format_dd_mmm_yyyy_hh_mm_a" translatable="false">yyyy\'年\' MMM d\'日\', hh:mm aaa</string>
+
+    <!--  Add New Page  -->
+    <string name="add_new_page">添加新页面</string>
+    <string name="template">模板</string>
+    <string name="scan">扫描</string>
+    <string name="or_add_new">或添加新</string>
+
+    <!-- New Settings -->
+    <string name="about_us">关于Noteshelf</string>
+    <string name="connect_with_other_noteshelfers">与其他Noteshelfers连接</string>
+    <string name="like_us_on_facebook">在 Facebook 上赞我们</string>
+    <string name="follow_us_on_instagram">在 Instagram 上关注我们</string>
+    <string name="find_us_on_twitter">在 Twitter 上关注我们</string>
+    <string name="noteshelf_copyright">版权所有©2020 Noteshelf. 版权所有.</string>
+    <string name="enable">启用</string>
+    <string name="select_language">选择语言</string>
+    <string name="appearance">应用程序的外观</string>
+    <string name="handwriting">手写</string>
+    <string name="cloud_and_backup">云和备份</string>
+    <string name="advanced">高级选项</string>
+    <string name="free_covers_paper_templates">免费封面和纸模板</string>
+    <string name="about_noteshelf">关于Noteshelf</string>
+    <string name="themes">主题</string>
+    <string name="show_date_on_shelf">在货架上显示日期</string>
+    <string name="linked">已连接</string>
+    <string name="cloud_logins">账户</string>
+
+    <string name="sample_notebook">样本笔记本</string>
+    <string name="select_paper_template">选择纸张</string>
+    <string name="select_cover_template">选择封面</string>
+    <string name="no_result_found">没有符合您的搜索字词的结果。</string>
+    <string name="cloud_backup_wifi_enable_text">仅通过WLAN备份</string>
+    <string name="user_consent_message"><![CDATA[您可能在这里共享数据。 请查看我们的 <a href = http://www.noteshelf.net/zh/policy.html>隐私政策</a> 以了解更多信息。]]></string>
+    <string name="agree">同意</string>
+    <string name="disable_recognition">禁用识别</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="scanned_note">扫描笔记</string>
+    <string name="invalid_document">无效的文件</string>
+
+    <string name="get_help">得到帮助</string>
+
+    <!-- New Shelf -->
+    <string name="group_inside_group_error">当前不支持另一个组内的组。</string>
+    <string name="share_more_items_error">一次只能共享一个笔记本。选择1个笔记本，然后重试。</string>
+    <string name="categories">分类目录</string>
+    <string name="pinned">固定</string>
+    <string name="pin_notebook">添加到固定列表</string>
+    <string name="duplicate">重复</string>
+    <string name="change_cover">更改封面</string>
+    <string name="create_notebook">创建笔记本</string>
+    <string name="change_template">更改模板</string>
+    <string name="back">返回</string>
+    <string name="eraser">橡皮擦</string>
+    <string name="text">文本</string>
+    <string name="lasso">套索</string>
+    <string name="view">查看</string>
+    <string name="shape">形状</string>
+    <string name="finder">查找器</string>
+    <string name="lock">锁</string>
+    <string name="import_photo">导入照片</string>
+    <string name="cover">封面</string>
+    <string name="more">更多</string>
+    <string name="remove_from_recents">从最近的列表中删除</string>
+    <string name="unpin_notebook">从固定列表中删除</string>
+    <string name="open">打开</string>
+    <string name="open_in_new_window">在新窗口中打开</string>
+    <string name="notebook_options">笔记本设置</string>
+    <string name="choose_format">选择格式</string>
+    <string name="default_paper">默认纸张</string>
+    <string name="random_cover_design">随机封面</string>
+    <string name="rotate_page">旋转页面</string>
+    <string name="go_to_page">转到页面...</string>
+    <string name="get_info">获取信息</string>
+    <string name="counter_clockwise_90">逆时针90°</string>
+    <string name="clockwise_90">顺时针90°</string>
+    <string name="clockwise_180">顺时针180°</string>
+    <string name="title">标题</string>
+    <string name="created">已建立</string>
+    <string name="updated">更新</string>
+    <string name="page_created">页面已创建</string>
+    <string name="page_updated">页面已更新</string>
+    <string name="backup">备份</string>
+    <string name="input_goto_page">在1和 %1$d 之间输入</string>
+    <string name="on">开启</string>
+    <string name="info">信息</string>
+    <string name="select">请选择</string>
+    <string name="bookmarked">书签</string>
+
+    <!--  Miscellaneous  -->
+    <string name="my_notes">我的笔记</string>
+    <string name="no_papers_available">无可用纸张</string>
+    <string name="redo">重做</string>
+    <string name="free_downloads">免费下载</string>
+    <string name="noteshelf_club">Noteshelf俱乐部</string>
+    <string name="signed_in_as">登入为</string>
+    <string name="indexing_page_num">第 %1$d 页正在索引</string>
+    <string name="please_enter_valid_color">请输入有效颜色</string>
+    <string name="logout">注销</string>
+    <string name="app_will_store_your_password">Noteshelf 请求安全储存您的密码，请查看并接受.</string>
+    <string name="stop">停止</string>
+    <string name="apply">涂抹</string>
+    <string name="no_band">没有乐队</string>
+    <string name="transparent_band">透明装饰带</string>
+    <string name="blurred_band">磨砂感装饰带</string>
+    <string name="bottom_photo">底部照片</string>
+    <string name="cut_out_photo">抠图照片</string>
+    <string name="mosaic_photo">马赛克照片</string>
+    <string name="options">选项</string>
+    <string name="page_from_template">从模板中选择新页面</string>
+    <string name="page_from_photo">照片中的新页</string>
+
+    <string name="recent">最近的清单</string>
+    <string name="loading_more">载入更多…</string>
+    <string name="new_audio_note">新音频笔记</string>
+
+    <string name="i_agree_to">我同意Noteshelf的</string>
+    <string name="backup_your_notes_to_dropbox_or_google_drive">将笔记备份到Dropbox</string>
+    <string name="privacy_policy_link">&#160;<u>隐私政策</u></string>
+    <string name="applicable_to_huawei">注意: 仅适用于华为帐号用户</string>
+
+    <string name="please_accept_terms_and_conditions_to_continue">请接受条款和条件以继续。</string>
+    <string name="accept">接受</string>
+    <string name="bring_to_front">带到前面</string>
+    <string name="send_to_back">发送回</string>
+    <string name="hide_with_arrow">隐藏</string>
+    <string name="more_with_arrow">更多</string>
+    <string name="where_is_your_backup">您的备份在哪里？</string>
+    <string name="sync_has_not_started_yet">同步尚未开始</string>
+    <string name="photo_library">照片库</string>
+    <string name="media_library">媒体库</string>
+    <string name="insert_from">从插入</string>
+    <string name="no_recents">無最近</string>
+    <string name="illustrations">插图</string>
+    <string name="animals">动物</string>
+    <string name="animals_and_nature">动物与自然</string>
+    <string name="arts">艺术类</string>
+    <string name="athletics">竞技</string>
+    <string name="business">商业</string>
+    <string name="fashion">时尚</string>
+    <string name="featured">精选</string>
+    <string name="film">电影</string>
+    <string name="health">健康</string>
+    <string name="history">历史</string>
+    <string name="interiors">内饰</string>
+    <string name="technology">技术</string>
+    <string name="textures">纹理</string>
+    <string name="wallpapers">墙纸</string>
+    <string name="travel_and_places">旅行</string>
+    <string name="food_and_drink">食物和饮料</string>
+    <string name="bookmark_info">收藏页面以快速访问，</string>
+    <string name="vectors">向量</string>
+
+    //HMS auth service
+    <string name="phone">电话</string>
+    <string name="email">电子邮件</string>
+    <string name="country_code">国家代码</string>
+    <string name="password">密码</string>
+    <string name="phone_number">电话号码</string>
+    <string name="verify_code">验证码</string>
+    <string name="send">发送</string>
+    <string name="login">登录</string>
+    <string name="login_anonymous">匿名登录S</string>
+    <string name="register">寄存器</string>
+    <string name="register_info">没有帐号?</string>
+    <string name="password_tips">如果您有密码，则可以使用密码登录，否则可以使用验证码登录</string>
+    <string name="password_register_tips">设置初始密码的此步骤是可选的。 \ n创建帐户时，您可以设置初始密码，下次可以使用该密码登录，当然，您可以随时更改此密码</string>
+    <string name="title_avatar">头像</string>
+    <string name="title_nickname">昵称</string>
+    <string name="title_phone">电话号码</string>
+    <string name="defNickName">我的昵称</string>
+    <string name="btnSingOutTxt">登出</string>
+    <string name="set">设置</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="link">链接</string>
+    <string name="unlink">联通</string>
+    <string name="delete_user">删除用户</string>
+    <string name="update_email">更新电邮</string>
+    <string name="update_phone">更新电话</string>
+    <string name="update_password">更新密码</string>
+    <string name="reset_password">重设密码</string>
+    <string name="verification_code_success">验证码发送成功</string>
+    <string name="verification_code_fail">无法发送验证码</string>
+
+    <!-- Recognition Languages -->
+    <string name="english_uk">英语（美国）</string>
+    <string name="english_us">英语（英国）</string>
+    <string name="chinese_simplified">汉语（简体）</string>
+    <string name="chinese_traditional">汉语（繁体）</string>
+    <string name="german">德语</string>
+    <string name="french">法语</string>
+    <string name="spanish">西班牙语</string>
+    <string name="italian">意大利语</string>
+    <string name="japanese">日语</string>
+    <string name="portugal">葡萄牙语</string>
+    <string name="korean">韩国语</string>
+    <string name="africans">非洲人</string>
+    <string name="albanian">阿尔巴尼亚人</string>
+    <string name="armenian">亚美尼亚</string>
+    <string name="azeri">里人</string>
+    <string name="belarusian">白俄罗斯</string>
+    <string name="bulgarian">保加利亚语</string>
+    <string name="chinese_hongkong">中国（香港）</string>
+    <string name="croatian">克罗地亚</string>
+    <string name="czech">捷克</string>
+    <string name="danish">丹麦</string>
+    <string name="dutch_belgium">荷兰（比利时）</string>
+    <string name="dutch_netherlands">荷兰（荷兰）</string>
+    <string name="english_canada">英语（加拿大）</string>
+    <string name="estonian">爱沙尼亚语</string>
+    <string name="finnish">芬兰</string>
+    <string name="french_canada">法语（加拿大）</string>
+    <string name="galician">加利西亚</string>
+    <string name="georgian">格鲁吉亚</string>
+    <string name="german_austria">德语（奥地利）</string>
+    <string name="greek">希腊语</string>
+    <string name="hungarian">匈牙利</string>
+    <string name="indonesian">印度尼西亚</string>
+    <string name="irish">爱尔兰的</string>
+    <string name="icelandic">岛式</string>
+    <string name="kazakh">哈萨克人</string>
+    <string name="latvian">拉脱维亚</string>
+    <string name="lithuanian">立陶宛</string>
+    <string name="macedonian">马其顿</string>
+    <string name="malay">马来语</string>
+    <string name="mongolian">蒙</string>
+    <string name="norwegian">挪威</string>
+    <string name="polish">抛光</string>
+    <string name="portuguese_brazil">葡萄牙语（巴西）</string>
+    <string name="romanian">罗马尼亚</string>
+    <string name="russian">俄语</string>
+    <string name="serbian_cyrillic">塞尔维亚语（西里尔文）</string>
+    <string name="serbian_latin">塞尔维亚语（拉丁）</string>
+    <string name="slovak">斯洛伐克</string>
+    <string name="slovenian">斯洛文尼亚</string>
+    <string name="spanish_mexico">西班牙语（墨西哥）</string>
+    <string name="spanish_spain">西班牙语（西班牙）</string>
+    <string name="swedish">瑞典</string>
+    <string name="tatar">鞑靼</string>
+    <string name="turkish">土耳其</string>
+    <string name="ukrainian">乌克兰</string>
+    <string name="vietnamese">越南</string>
+    <string name="swahili_tanzania">斯瓦希里语（坦桑尼亚）</string>
+    <string name="bosnian">波斯尼亚</string>
+    <string name="cebuano_philippines">宿务（菲律宾）</string>
+    <string name="english_philippines">英语（菲律宾）</string>
+    <string name="filipino_philippines">菲律宾语（菲律宾）</string>
+    <string name="malagasy_madagascar">马达加斯加（马达加斯加）</string>
+    <string name="spanish_colombia">西班牙语（哥伦比亚）</string>
+    <string name="quick_access_gesture">快速访问手势</string>
+    <string name="quick_access_gesture_detail">从笔记本内部屏幕的左边缘轻扫以访问\'快速访问\'菜单。</string>
+    <string name="thumbnails_gesture">缩略图手势</string>
+    <string name="thumbnails_gesture_detail">从笔记本内部屏幕的右边缘滑动以访问缩略图视图。</string>
+    <string name="disable_hyperlinks_detail">使用笔，荧光笔或橡皮擦时，请避免意外激活超链接。</string>
+
+    <!--  App Rating  -->
+    <string name="store_rating">享受Noteshelf？</string>
+    <string name="rating_message">请花一点时间在PlayStore上对我们进行评论。 这将帮助我们非常感谢！</string>
+    <string name="rating_message_huawei">请花一点时间在App Gallery上对我们进行评论。 这将帮助我们非常感谢！</string>
+    <string name="rating_message_samsung">请花一点时间在Galaxy Store上对我们进行评论。 这将帮助我们非常感谢！</string>
+    <string name="later">稍后提醒我</string>
+    <string name="rate_now">撰写评论</string>
+    <string name="no_thanks">不，谢谢</string>
+    <string name="insert_page_above">插入页面上方</string>
+    <string name="insert_page_below">在下面插入页面</string>
+    <string name="end_date">结束日期</string>
+    <string name="start_date">开始日期</string>
+    <string name="more_than_twelve_months_gap">期限超过12个月！ 请选择一个较短的期限。</string>
+    <string name="start_date_eariler_than_end_date">期限超过12个月！ 请选择一个较短的期限。</string>
+    <string name="air_action_btnPress">更改笔</string>
+    <string name="air_action_btnDoubleClick">打开笔架</string>
+    <string name="air_action_btnSwipeUp">放大</string>
+    <string name="air_action_btnSwipedown">缩小</string>
+    <string name="air_action_btnCircleCW">打开查找器</string>
+    <string name="air_action_btnNext">下一页</string>
+    <string name="air_action_btnPrev">上一页</string>
+    <string name="air_action_btnCircleCCW">快速访问</string>
+    <string name="whats_new">新功能</string>
+    <string name="air_actions_desc">挥动你的S笔来控制Noteshelf您的设备上。 了解详情，请前往设置>空气动作> Noteshelf。</string>
+    <string name="air_actions_title">S Pen空中动作在这里！</string>
+    <string name="unable_to_authenticate">无法鉴定</string>
+    <string name="connect_to_webdav">连接到WebDAV</string>
+    <string name="username">用户名</string>
+    <string name="connect">连接</string>
+    <string name="webdav_dialog_alert">找不到服务器。 检查服务器URL，然后重试</string>
+    <string name="select_backup_location">选择备份位置</string>
+    <string name="logged_in_as">登录为 <![CDATA[<b>%1$s</b]]></string>
+    <string name="connect_through">通过%1$s连接</string>
+    <string name="backup_location">备份位置</string>
+    <string name="webdav_backup_location_error">主机服务器拒绝了您的请求。 请检查您的帐户有权限修改该文件夹，然后再试一次。</string>
+    <string name="backup_to_">在下面插入页面  %1$s</string>
+    <string name="connecting">正在连接...</string>
+
+    <string name="what_s_new">什么是新的</string>
+    <string name="webdav_and_">WebDAV 和 OneDrive 支持\n学习规划师</string>
+    <string name="webdav_and_one">备份到 WebDAV 和 OneDrive</string>
+    <string name="webdav_and_one_sample">确保您的数据安全。 我们现在支持 WebDAV 和 OneDrive 进行备份和恢复。.</string>
+    <string name="product_updates">我们张贴提示和技巧，以帮助您得到最出Noteshelf的。 我们还分享来自世界各地用户的鼓舞人心的笔记。</string>
+    <string name="see_what_s_new">检查什么是新的</string>
+    <string name="page_rotation">页面旋转</string>
+    <string name="follow_us">跟着我们</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="rotate">现在，您无需转动设备即可旋转笔记本页面.</string>
+    <string name="test_sample">Test Sample</string>
+    <string name="test_description">Fictum, deserunt mollit anim laborum astutumque! Vivamus sagittis lacus vel augue laoreet rutrum.</string>
+    <string name="get_back_to_school_in_style">以时尚的方式回到学校！</string>
+    <string name="study_planner_desc">使用新的学习计划器来跟踪您的作业并计划您的日程安排。 立即从免费下载部分获取它们！</string>
+    <string name="study_planners">学习规划师</string>
+
+
+</resources>

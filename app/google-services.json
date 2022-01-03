@@ -1,0 +1,186 @@
+{
+  "project_info": {
+    "project_number": "47590175345",
+    "firebase_url": "https://noteshelf-ed966.firebaseio.com",
+    "project_id": "noteshelf-ed966",
+    "storage_bucket": "noteshelf-ed966.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47590175345:android:bd49b2b84413315b",
+        "android_client_info": {
+          "package_name": "com.fluidtouch.noteshelf2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47590175345-gubjhr2of4ar3o2bjuor58h8p4c5e61n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2",
+            "certificate_hash": "a934dd0cb23a7fd50843535d2afe8a776f35fd40"
+          }
+        },
+        {
+          "client_id": "47590175345-v738br28sc3ukovale2ibit8hfmjmdkc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2",
+            "certificate_hash": "d75b181814e32d25e86aee938d6226f6803c85e3"
+          }
+        },
+        {
+          "client_id": "47590175345-1sknev04chhqjslmkq5uadej6pf8j8hs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2",
+            "certificate_hash": "aa5c91fdaf2dc2664fd47e11c635aa3d815ad86f"
+          }
+        },
+        {
+          "client_id": "47590175345-lust4kq0mncku7jrdql1cs24ck001cq1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2",
+            "certificate_hash": "cb980e16728ae59b9b635d40a2576147b0b17630"
+          }
+        },
+        {
+          "client_id": "47590175345-k6eb0hfunrr41qq5sj4h704s3rhf26sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWifjH9X-iYRqdcavr_3l1tAlSxh498TE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47590175345-k6eb0hfunrr41qq5sj4h704s3rhf26sr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47590175345:android:c2b7aca62979c554",
+        "android_client_info": {
+          "package_name": "com.fluidtouch.noteshelf2.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47590175345-ojr2fl763884ft2oagm7mkbjrk5n7cqq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2.beta",
+            "certificate_hash": "d75b181814e32d25e86aee938d6226f6803c85e3"
+          }
+        },
+        {
+          "client_id": "47590175345-6a79onhbebp412kuu2gb6rtkd9riherk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2.beta",
+            "certificate_hash": "cb980e16728ae59b9b635d40a2576147b0b17630"
+          }
+        },
+        {
+          "client_id": "47590175345-7up1h9ocdcqor9ovu1tq4orksfj562gj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2.beta",
+            "certificate_hash": "aa5c91fdaf2dc2664fd47e11c635aa3d815ad86f"
+          }
+        },
+        {
+          "client_id": "47590175345-k6eb0hfunrr41qq5sj4h704s3rhf26sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWifjH9X-iYRqdcavr_3l1tAlSxh498TE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47590175345-k6eb0hfunrr41qq5sj4h704s3rhf26sr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47590175345:android:f4e3f5616c8460c7",
+        "android_client_info": {
+          "package_name": "com.fluidtouch.noteshelf2.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47590175345-0vip00f072mh5ne49adsdkujdv5kh3tr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2.dev",
+            "certificate_hash": "a934dd0cb23a7fd50843535d2afe8a776f35fd40"
+          }
+        },
+        {
+          "client_id": "47590175345-lpifkv7lkqik1qfebl94uq2qp142hcju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2.dev",
+            "certificate_hash": "d75b181814e32d25e86aee938d6226f6803c85e3"
+          }
+        },
+        {
+          "client_id": "47590175345-oqupusvtukukm4us4d3s6is9ruj81mt6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2.dev",
+            "certificate_hash": "aa5c91fdaf2dc2664fd47e11c635aa3d815ad86f"
+          }
+        },
+        {
+          "client_id": "47590175345-8qd5j1tbtiq4td6g6q9e3iivs0hs6c3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fluidtouch.noteshelf2.dev",
+            "certificate_hash": "cb980e16728ae59b9b635d40a2576147b0b17630"
+          }
+        },
+        {
+          "client_id": "47590175345-k6eb0hfunrr41qq5sj4h704s3rhf26sr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWifjH9X-iYRqdcavr_3l1tAlSxh498TE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47590175345-k6eb0hfunrr41qq5sj4h704s3rhf26sr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/favorite_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_eight">
+
+    <ImageView
+        android:id="@+id/pen_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circular_grey_bg2" />
+
+    <RelativeLayout
+        android:id="@+id/pen_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pen_rack_dialog_fav_item_margin_top">
+
+        <ImageView
+            android:id="@+id/pen_shadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/penshadow_small"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pen_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/pencolor_small" />
+
+        <ImageView
+            android:id="@+id/pen_type"
+            android:layout_width="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/penmask_small" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circle_mask" />
+
+    <ImageButton
+        android:id="@+id/favorite_remove_button"
+        android:layout_width="@dimen/_22dp"
+        android:layout_height="@dimen/_22dp"
+        android:layout_alignTop="@id/pen_view"
+        android:layout_alignEnd="@id/pen_view"
+        android:background="@drawable/delete_circle" />
+
+    <TextView
+        android:id="@+id/pen_size"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignStart="@id/pen_view"
+        android:layout_alignBottom="@id/pen_view"
+        android:background="@drawable/fav_pen_size_bg"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_8sp" />
+
+</RelativeLayout>

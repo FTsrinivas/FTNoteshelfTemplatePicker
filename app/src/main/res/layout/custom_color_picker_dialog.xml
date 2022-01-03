@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center|top"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/custom_color_dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/ns_dialog_bg"
+        android:minHeight="@dimen/pen_rack_dialog_height"
+        android:orientation="vertical">
+
+        <include layout="@layout/content_custom_color_picker_dialog" />
+
+    </LinearLayout>
+
+</RelativeLayout>

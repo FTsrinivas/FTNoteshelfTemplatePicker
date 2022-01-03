@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_language_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/margin_seventeen"
+    android:paddingBottom="@dimen/margin_seventeen">
+
+    <LinearLayout
+        android:id="@+id/language_text_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/language_text_view"
+            style="@style/PopupItemTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="0dp"
+            android:text="Deutsche" />
+
+        <TextView
+            android:id="@+id/language_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_eight"
+            android:alpha="0.5"
+            android:fontFamily="@font/roboto"
+            android:gravity="start"
+            android:text="Deutsche"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/status_image_view"
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/iclouddownload" />
+
+    <ImageView
+        android:id="@+id/check_image_view"
+        android:layout_width="@dimen/_16dp"
+        android:layout_height="@dimen/_24dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/check"
+        android:visibility="gone" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/status_progress_bar"
+        android:layout_width="@dimen/_24dp"
+        android:layout_height="@dimen/_24dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        app:indicatorColor="@color/ns_blue"
+        app:indicatorName="LineSpinFadeLoaderIndicator" />
+</LinearLayout>

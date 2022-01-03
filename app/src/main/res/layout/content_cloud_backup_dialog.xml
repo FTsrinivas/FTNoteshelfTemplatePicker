@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:layout_marginStart="@dimen/new_28dp"
+        android:layout_marginEnd="@dimen/new_28dp"
+        android:text="@string/cloud_and_backup" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_28dp"
+            android:layout_marginEnd="@dimen/new_28dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/dialog_backup_selected_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/auto_backup" />
+
+                <TextView
+                    android:id="@+id/dialog_backup_selected_type_text_view"
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="end|center_vertical"
+                    android:text="@string/do_not_backup" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/dialog_cloud_evernote_publish"
+                style="@style/PopupItemTextStyle"
+                android:text="@string/evernote_publish" />
+
+            <include layout="@layout/divider_black" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_wifi_enable"
+                style="@style/PopupItemTextStyle"
+                android:text="@string/cloud_backup_wifi_enable_text"
+                android:theme="@style/Switch" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_28dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:text="@string/cloud_logins"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/new_11sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/dialog_cloud_dropbox_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PopupItemTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/universal_dropbox"
+                        android:drawablePadding="@dimen/new_20dp"
+                        android:text="@string/dropbox" />
+
+                    <TextView
+                        android:id="@+id/dialog_cloud_dropbox_linked_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linked_cloud_login_text_bg"
+                        android:fontFamily="@font/roboto_medium"
+                        android:paddingHorizontal="@dimen/new_10dp"
+                        android:paddingVertical="@dimen/new_4dp"
+                        android:text="@string/linked"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/new_11sp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <include layout="@layout/divider_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialog_cloud_google_drive_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PopupItemTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/universal_gdrive"
+                        android:drawablePadding="@dimen/new_20dp"
+                        android:text="@string/google_drive" />
+
+                    <TextView
+                        android:id="@+id/dialog_cloud_google_drive_linked_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/linked_cloud_login_text_bg"
+                        android:fontFamily="@font/roboto_medium"
+                        android:paddingHorizontal="@dimen/new_10dp"
+                        android:paddingVertical="@dimen/new_4dp"
+                        android:text="@string/linked"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/new_11sp"
+                        android:textStyle="normal"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/divider_black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/dialog_cloud_one_drive_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/universal_onedrive"
+                    android:drawablePadding="@dimen/new_20dp"
+                    android:text="@string/one_drive" />
+
+                <TextView
+                    android:id="@+id/dialog_cloud_one_drive_linked_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linked_cloud_login_text_bg"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingHorizontal="@dimen/new_10dp"
+                    android:paddingVertical="@dimen/new_4dp"
+                    android:text="@string/linked"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/new_11sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/dialog_cloud_evernote_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/universal_evernote"
+                    android:drawablePadding="@dimen/new_20dp"
+                    android:text="@string/evernote" />
+
+                <TextView
+                    android:id="@+id/dialog_cloud_evernote_linked_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linked_cloud_login_text_bg"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingHorizontal="@dimen/new_10dp"
+                    android:paddingVertical="@dimen/new_4dp"
+                    android:text="@string/linked"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/new_11sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/dialog_cloud_webdav_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/universal_webdav"
+                    android:drawablePadding="@dimen/new_20dp"
+                    android:text="@string/webdav" />
+
+                <TextView
+                    android:id="@+id/dialog_cloud_webdav_linked_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linked_cloud_login_text_bg"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingHorizontal="@dimen/new_10dp"
+                    android:paddingVertical="@dimen/new_4dp"
+                    android:text="@string/linked"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/new_11sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

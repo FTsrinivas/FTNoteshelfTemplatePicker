@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <include layout="@layout/clipart_custom_search_view" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_18dp"
+            android:layout_weight="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/new_20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/clipart_categories_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/clipart_recent_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/new_8dp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:listitem="@layout/item_pixabay_clipart" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/library_clipart_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/new_8dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:listitem="@layout/item_pixabay_clipart" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/clipart_dialog_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/new_24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="@dimen/new_16dp"
+            android:layout_height="@dimen/new_16dp"
+            app:indicatorColor="@android:color/darker_gray"
+            app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_11dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_more"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/new_13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

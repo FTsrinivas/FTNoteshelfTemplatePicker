@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BottomSheetStyle">
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_20dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/back_dark" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/text_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/languages"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:fontFamily="@font/roboto"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/dialog_language_close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/new_24dp"
+                android:src="@drawable/back_dark" />
+
+            <TextView
+                style="@style/DialogTitleStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/select_language"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/dialog_language_done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="@dimen/new_24dp"
+                android:text="@string/done"
+                android:textColor="@color/ns_blue"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/new_2dp"
+            android:layout_marginStart="@dimen/new_20dp"
+            android:layout_marginEnd="@dimen/new_20dp"
+            android:alpha="0.1"
+            android:background="@drawable/divider" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/language_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/new_28dp"
+            android:paddingEnd="@dimen/new_28dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_shelf_language_recycler_view" />
+
+    </LinearLayout>
+</RelativeLayout>

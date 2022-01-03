@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/textView"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corners_dialog_bg"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgAddDialogClose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="@dimen/_24dp"
+                android:scaleType="center"
+                android:src="@mipmap/store_close_dark" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.01"
+                android:text="@string/enter_name"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <com.fluidtouch.noteshelf.store.view.FTResizeImageView
+            android:id="@+id/imaTheme"
+            android:layout_width="272px"
+            android:layout_height="340px"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            app:cropviewViewportRatio="0.8" />
+
+        <EditText
+            android:id="@+id/edtThemeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+            android:hint="@string/enter_name"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btnCreateTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

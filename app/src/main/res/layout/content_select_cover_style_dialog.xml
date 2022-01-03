@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgSelectDialogClose"
+            style="@style/DialogNavButton"
+            android:src="@drawable/back_dark_chevron" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.01"
+            android:text="@string/select_cover_style"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dotView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2dp"
+        android:layout_marginBottom="@dimen/margin_seventeen"
+        android:alpha=".2"
+        android:background="@drawable/store_dot_gray"
+        android:layerType="software"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/layCovers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_forty"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dotView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/customcover1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/new_note_book_dialog_paper_width"
+                    android:layout_height="@dimen/dimen_170"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcover1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="@string/no_band"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customcover2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/new_note_book_dialog_paper_width"
+                    android:layout_height="@dimen/dimen_170"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcover2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="@string/transparent_band"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customcover3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/new_note_book_dialog_paper_width"
+                    android:layout_height="@dimen/dimen_170"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcover3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="@string/blurred_band"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/customcover4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/new_note_book_dialog_paper_width"
+                    android:layout_height="@dimen/dimen_170"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcover4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="@string/bottom_photo"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_fifty_four"
+                    android:layout_height="@dimen/_9dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcovercolors" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customcover5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_24dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/new_note_book_dialog_paper_width"
+                    android:layout_height="@dimen/dimen_170"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcover5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mosaic_photo"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_fifty_four"
+                    android:layout_height="@dimen/_9dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcovercolors" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customcover6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_36dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/new_note_book_dialog_paper_width"
+                    android:layout_height="@dimen/dimen_170"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcover6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="@string/cut_out_photo"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/text_size_14"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="@dimen/margin_fifty_four"
+                    android:layout_height="@dimen/_9dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/customcovercolors" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

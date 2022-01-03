@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/settings_dialog_close_button"
+        style="@style/DialogNavButton"
+        android:src="@drawable/close_dark" />
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/new_28dp"
+        android:layout_marginEnd="@dimen/new_28dp"
+        android:text="@string/settings"
+        android:textSize="@dimen/new_32sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/new_28dp"
+            android:paddingTop="@dimen/new_15dp"
+            android:paddingEnd="@dimen/new_28dp"
+            android:paddingBottom="@dimen/new_35dp">
+
+            <TextView
+                android:id="@+id/settings_dialog_appearance"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/theme"
+                android:drawablePadding="@dimen/new_24dp"
+                android:text="@string/appearance" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/settings_dialog_handwriting"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/writing"
+                android:drawablePadding="@dimen/new_24dp"
+                android:text="@string/handwriting_recognition" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/settings_dialog_stylus"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/stylus"
+                android:drawablePadding="@dimen/new_24dp"
+                android:text="@string/stylus" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/settings_dialog_cloud_backup"
+                style="@style/PopupItemTextStyle"
+                android:layout_marginTop="@dimen/new_24dp"
+                android:drawableStart="@drawable/accounts"
+                android:drawablePadding="@dimen/new_24dp"
+                android:text="@string/cloud_and_backup" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/settings_dialog_advanced"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/preferences"
+                android:drawablePadding="@dimen/new_24dp"
+                android:text="@string/advanced" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/settings_dialog_free_templates"
+                style="@style/PopupItemTextStyle"
+                android:layout_marginTop="@dimen/new_24dp"
+                android:drawableStart="@drawable/welcome"
+                android:drawablePadding="@dimen/new_19dp"
+                android:text="@string/free_covers_paper_templates" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/settings_dialog_support"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/support"
+                android:drawablePadding="@dimen/new_24dp"
+                android:text="@string/support" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/settings_dialog_about"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/noteshelf"
+                android:drawablePadding="@dimen/new_24dp"
+                android:text="@string/about_noteshelf" />
+
+            <include layout="@layout/divider_black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

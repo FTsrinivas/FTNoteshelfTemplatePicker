@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/new_24dp"
+            android:paddingTop="@dimen/new_30dp"
+            android:paddingEnd="@dimen/new_24dp"
+            android:paddingBottom="@dimen/new_30dp">
+
+            <TextView
+                style="@style/DialogTitleStyle"
+                android:layout_marginBottom="@dimen/new_28dp"
+                android:text="@string/notebook_options"
+                android:textSize="@dimen/new_19sp" />
+
+            <TextView
+                android:id="@+id/tvChangePageTemplate"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/page_temp"
+                android:drawableEnd="@drawable/chevron"
+                android:drawablePadding="@dimen/new_19dp"
+                android:text="@string/change_page_template" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/tvRotatePage"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/rotate"
+                android:drawablePadding="@dimen/new_19dp"
+                android:text="@string/rotate_page"
+                android:visibility="gone" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/tvGotoPage"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/page_number"
+                android:drawablePadding="@dimen/new_19dp"
+                android:text="@string/go_to_page" />
+
+            <include layout="@layout/divider_black" />
+
+            <LinearLayout
+                android:id="@+id/stylus_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/new_28dp"
+                    android:layout_height="@dimen/new_28dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stylus" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/new_20dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/PopupItemTextStyle"
+                        android:text="@string/stylus" />
+
+                    <TextView
+                        android:id="@+id/tvPressureSensitivity"
+                        style="@style/PopupItemTextStyle"
+                        android:alpha="0.5"
+                        android:paddingTop="0dp"
+                        android:text="@string/pressure_sensitivity"
+                        android:textSize="@dimen/new_14sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switch_StylusEnable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:theme="@style/Switch"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/tvBackup"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/backup"
+                android:drawableEnd="@drawable/chevron"
+                android:drawablePadding="@dimen/new_19dp"
+                android:text="@string/backup"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/divider_black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvShare"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/share_blue"
+                android:drawableEnd="@drawable/chevron"
+                android:drawablePadding="@dimen/new_19dp"
+                android:text="@string/share" />
+
+            <include layout="@layout/divider_black" />
+
+            <TextView
+                android:id="@+id/tvGetInfo"
+                style="@style/PopupItemTextStyle"
+                android:drawableStart="@drawable/info_blue"
+                android:drawableEnd="@drawable/chevron"
+                android:drawablePadding="@dimen/new_19dp"
+                android:text="@string/get_info" />
+
+            <include layout="@layout/divider_black" />
+            <LinearLayout
+                android:id="@+id/settings_dialog_developer_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/new_28dp"
+                    android:layout_height="@dimen/new_28dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_settings" />
+
+                <TextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/new_20dp"
+                    android:layout_weight="1"
+                    android:text="Enable Prediction" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/prediction_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:theme="@style/Switch"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

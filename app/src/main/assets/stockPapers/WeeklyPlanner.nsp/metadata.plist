@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dynamic_id</key>
+	<integer>3</integer>
+	<key>display_name</key>
+	<string>Weekly Planner</string>
+	<key>line_height</key>
+	<integer>34</integer>
+	<key>width</key>
+	<integer>834</integer>
+	<key>height</key>
+	<integer>1048</integer>
+	<key>display_name_ja</key>
+	<string>ウィークリープランナー</string>
+	<key>display_name_it</key>
+	<string>Pianificatore settimanale</string>
+	<key>display_name_es</key>
+	<string>Planificador semanal</string>
+	<key>display_name_de</key>
+	<string>Wochenplaner</string>
+	<key>display_name_zh-Hans</key>
+	<string>周计划</string>
+	<key>display_name_zh-Hant</key>
+	<string>週誌</string>
+	<key>display_name_fr</key>
+	<string>Planificateur Hebdomadaire</string>
+</dict>
+</plist>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ns_blue">
+
+    <RelativeLayout
+        android:id="@+id/welcome_screen1_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/welcome_screen1_image3_left"
+                android:layout_width="@dimen/welcome_screen1_image3_width"
+                android:layout_height="@dimen/welcome_screen1_image3_height"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/welcome_screen1_image3_left" />
+
+            <ImageView
+                android:id="@+id/welcome_screen1_image3_right"
+                android:layout_width="@dimen/welcome_screen1_image3_width"
+                android:layout_height="@dimen/welcome_screen1_image3_height"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/welcome_screen1_image3_right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/welcome_screen1_image2_left"
+                android:layout_width="@dimen/welcome_screen1_image2_width"
+                android:layout_height="@dimen/welcome_screen1_image2_height"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/welcome_screen1_image2_left" />
+
+            <ImageView
+                android:id="@+id/welcome_screen1_image2_right"
+                android:layout_width="@dimen/welcome_screen1_image2_width"
+                android:layout_height="@dimen/welcome_screen1_image2_height"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/welcome_screen1_image2_right" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/welcome_screen1_image1"
+            android:layout_width="@dimen/welcome_screen1_image1_width"
+            android:layout_height="@dimen/welcome_screen1_image1_height"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/welcome_screen1_image1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/welcome_screen1_title"
+        style="@style/WelcomeScreenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/welcome_screen1_title_image_margin"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/welcome_to_noteshelf"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/welcome_screen_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_screen1_image_layout" />
+
+    <TextView
+        android:id="@+id/welcome_screen1_continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_screen1_title"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_34dp"
+        android:background="@drawable/rounded_corner_button_welcome_screen"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="@dimen/_100dp"
+        android:paddingVertical="@dimen/_13dp"
+        android:text="@string/continue_string"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_screen1_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

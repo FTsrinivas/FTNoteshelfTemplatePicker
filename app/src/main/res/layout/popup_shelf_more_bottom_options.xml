@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BottomSheetStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hide_for_trash_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/frag_shelf_bottom_options_group_text_view"
+                    style="@style/PopupItemTextStyle"
+                    android:paddingHorizontal="24dp"
+                    android:text="@string/group"
+                    android:textAlignment="center"
+                    android:textColor="@color/ns_blue" />
+
+                <include layout="@layout/divider_black" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/frag_shelf_bottom_options_rename_text_view"
+                style="@style/PopupItemTextStyle"
+                android:paddingHorizontal="24dp"
+                android:text="@string/rename"
+                android:textAlignment="center"
+                android:textColor="@color/ns_blue" />
+
+            <LinearLayout
+                android:id="@+id/hide_for_trash_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/divider_black" />
+
+                <TextView
+                    android:id="@+id/frag_shelf_bottom_options_share_cover_text_view"
+                    style="@style/PopupItemTextStyle"
+                    android:paddingHorizontal="24dp"
+                    android:text="@string/change_cover"
+                    android:textAlignment="center"
+                    android:textColor="@color/ns_blue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp">
+
+            <TextView
+                android:id="@+id/frag_shelf_bottom_options_cancel_text_view"
+                style="@style/PopupItemTextStyle"
+                android:paddingEnd="@dimen/new_24dp"
+                android:text="@string/cancel"
+                android:textAlignment="center"
+                android:textColor="@color/ns_blue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

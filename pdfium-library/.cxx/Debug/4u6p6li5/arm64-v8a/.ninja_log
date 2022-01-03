@@ -1,0 +1,15 @@
+# ninja log v5
+1	2051	661780230	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	99c2797d9b691d1a
+2053	2205	661780231	C:/Users/Mani/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/4u6p6li5/obj/arm64-v8a/libpdfsdk_jni.so	946cc50e320b1506
+0	6	0	clean	37c837455dc22d7e
+0	6	0	clean	37c837455dc22d7e
+3	907	661780833	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	99c2797d9b691d1a
+908	1021	661780833	C:/Users/Mani/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/4u6p6li5/obj/arm64-v8a/libpdfsdk_jni.so	946cc50e320b1506
+0	7	0	clean	37c837455dc22d7e
+0	6	0	clean	37c837455dc22d7e
+2	986	661781168	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	99c2797d9b691d1a
+986	1123	661781168	C:/Users/Mani/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/4u6p6li5/obj/arm64-v8a/libpdfsdk_jni.so	946cc50e320b1506
+0	7	0	clean	37c837455dc22d7e
+0	7	0	clean	37c837455dc22d7e
+3	1130	661781848	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	99c2797d9b691d1a
+1130	1310	661781848	C:/Users/Mani/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/4u6p6li5/obj/arm64-v8a/libpdfsdk_jni.so	946cc50e320b1506

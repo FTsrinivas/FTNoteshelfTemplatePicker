@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!--  AddNewPage  -->
+    <dimen name="refresh_parent_padding_horiz">120dp</dimen>
+</resources>

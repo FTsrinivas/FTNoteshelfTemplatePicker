@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--Title-->
+    <TextView
+        android:id="@+id/template_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:letterSpacing="-0.02"
+        android:textColor="#000000"
+        android:gravity="top"
+        android:textSize="@dimen/new_22sp"
+        android:text="@string/recent"/>
+
+    <include
+        android:id="@+id/template_colour_selction_lyt"
+        layout="@layout/template_colour_selction_lyt"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_alignParentLeft="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/template_items_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@drawable/divider"
+        android:layout_marginTop="@dimen/_30dp"
+        android:layout_marginBottom="28dp"/>
+</LinearLayout>

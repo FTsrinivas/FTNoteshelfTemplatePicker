@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_audio_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/new_64dp"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_24dp"
+    android:paddingEnd="@dimen/_24dp">
+
+    <RelativeLayout
+        android:id="@+id/item_audio_recordings_play_pause_layout"
+        android:layout_width="@dimen/_32dp"
+        android:layout_height="@dimen/_32dp"
+        android:layout_marginEnd="@dimen/_20dp">
+
+        <ImageView
+            android:id="@+id/item_audio_recordings_play_pause_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/recording_play" />
+
+        <ProgressBar
+            android:id="@+id/item_audio_recordings_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:indeterminateTint="@android:color/white"
+            android:progressTint="@color/ns_red"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_audio_recordings_name_text_view"
+            style="@style/PopupItemTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:text="6 Aug 18, 1:00 PM" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_audio_recordings_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:fontFamily="@font/roboto"
+                android:text="0m 15s"
+                android:textColor="@color/ns_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/item_audio_recordings_page_number_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_21dp"
+                android:fontFamily="@font/roboto"
+                android:text=" · p. 2"
+                android:textColor="#383838"
+                android:textSize="@dimen/_16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_audio_chevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chevron" />
+
+</LinearLayout>

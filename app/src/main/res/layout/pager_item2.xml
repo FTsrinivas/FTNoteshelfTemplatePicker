@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/pagerMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.fluidtouch.noteshelf.zoomlayout.FTZoomLayout
+            android:id="@+id/pager_item_zoom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/page_bg"
+            android:visibility="visible">
+
+            <com.fluidtouch.noteshelf.zoomlayout.FTPageContentHolderView
+                android:id="@+id/pageContentHolderView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/thumbnailView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.fluidtouch.noteshelf.document.views.TileView
+                    android:id="@+id/layTileView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <com.fluidtouch.noteshelf.zoomlayout.FTWritingView
+                    android:id="@+id/writingView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fui_transparent"
+                    android:clipChildren="true"
+                    android:visibility="invisible" />
+
+                <com.fluidtouch.noteshelf.document.search.FTTextHighlightView
+                    android:id="@+id/page_text_highlight_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <LinearLayout
+                    android:id="@+id/pager_item_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:padding="14dp">
+
+                    <TextView
+                        android:id="@+id/pager_item_name_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:textColor="#5e5e59" />
+
+                    <TextView
+                        android:id="@+id/pager_item_page_number_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:textColor="#5e5e59" />
+                </LinearLayout>
+            </com.fluidtouch.noteshelf.zoomlayout.FTPageContentHolderView>
+        </com.fluidtouch.noteshelf.zoomlayout.FTZoomLayout>
+
+        <com.fluidtouch.noteshelf.document.views.FTZoomLockView
+            android:id="@+id/zoom_lock_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

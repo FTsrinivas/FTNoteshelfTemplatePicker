@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dynamic_id</key>
+	<integer>3</integer>
+	<key>display_name</key>
+	<string>Hexagonal 1</string>
+	<key>line_height</key>
+	<integer>26</integer>
+	<key>width</key>
+	<integer>834</integer>
+	<key>height</key>
+	<integer>1048</integer>
+	<key>display_name_ja</key>
+	<string>六角形1</string>
+	<key>display_name_it</key>
+	<string>Esagono 1</string>
+	<key>display_name_es</key>
+	<string>Hexágono 1</string>
+	<key>display_name_de</key>
+	<string>Sechseck 1</string>
+	<key>display_name_zh-Hans</key>
+	<string>六角形1</string>
+	<key>display_name_zh-Hant</key>
+	<string>六角形1</string>
+	<key>display_name_fr</key>
+	<string>Hexagone 1</string>
+	<key>display_name_ko</key>
+	<string>육각형 1</string>
+</dict>
+</plist>

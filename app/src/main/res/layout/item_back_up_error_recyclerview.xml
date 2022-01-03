@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/back_up_recycler_view_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/new_8dp"
+        android:drawableStart="@mipmap/error"
+        android:drawablePadding="@dimen/_20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/new_54dp"
+        android:text="@string/unexpected_error_occurred_please_try_again"
+        android:textColor="@color/ns_text"
+        android:textSize="@dimen/new_16sp" />
+
+    <include layout="@layout/divider_black" />
+
+</LinearLayout>

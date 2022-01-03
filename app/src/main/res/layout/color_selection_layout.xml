@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layColors"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_68"
+    android:background="@android:color/white">
+
+    <HorizontalScrollView
+        android:id="@+id/layColorScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/colorSelectionColorsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/_9dp"
+            android:paddingStart="@dimen/_24dp" />
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadowleft" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/shadowright" />
+</FrameLayout>

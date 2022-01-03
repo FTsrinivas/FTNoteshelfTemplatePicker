@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ns_blue"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/welcome_screen4_image"
+            android:layout_width="@dimen/welcome_screen4_image_width"
+            android:layout_height="@dimen/welcome_screen4_image_height"
+            android:alpha="1.0"
+            android:scaleType="fitXY"
+            android:src="@drawable/welcome_scree4_image" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/screen4_pdf_image_view"
+                android:layout_width="@dimen/_102dp"
+                android:layout_height="@dimen/_104dp"
+                android:src="@drawable/icon_copy" />
+
+            <ImageView
+                android:id="@+id/screen4_jpg_image_view"
+                android:layout_width="@dimen/_102dp"
+                android:layout_height="@dimen/_104dp"
+                android:src="@drawable/icon_copy_3" />
+
+            <ImageView
+                android:id="@+id/screen4_png_image_view"
+                android:layout_width="@dimen/_102dp"
+                android:layout_height="@dimen/_104dp"
+                android:src="@drawable/icon_copy_2" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/WelcomeScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_42dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/_10sp"
+            android:text="@string/markup_your_documents"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_screen_title_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

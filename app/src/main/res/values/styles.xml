@@ -1,0 +1,434 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ShelfTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:actionMenuTextAppearance">@style/MyMenuTextAppearance</item>
+    </style>
+
+    <style name="MyMenuTextAppearance" parent="android:TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ToolbarTitleStyle" parent="MatchWrap">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">@dimen/textsize_twenty</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="ToolbarImageStyle" parent="WrapMatch">
+        <item name="android:layout_width">@dimen/document_toolbar_icon_size</item>
+        <item name="android:layout_height">@dimen/document_toolbar_icon_size</item>
+        <item name="android:paddingLeft">@dimen/document_toolbar_icon_padding</item>
+        <item name="android:paddingRight">@dimen/document_toolbar_icon_padding</item>
+    </style>
+
+    <style name="ToolbarImageStyle2" parent="WrapMatch">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AlertDialogButtonStyle" parent="WrapWrap">
+        <item name="android:layout_height">@dimen/alert_button_height</item>
+        <item name="android:textSize">@dimen/alert_button_text_size</item>
+        <item name="android:layout_marginEnd">@dimen/alert_button_spacing</item>
+        <item name="android:lineSpacingExtra">@dimen/margin_one_point_two</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingStart">@dimen/_16dp</item>
+        <item name="android:paddingEnd">@dimen/_16sp</item>
+        <item name="android:paddingTop">@dimen/_8dp</item>
+        <item name="android:paddingBottom">@dimen/_8dp</item>
+    </style>
+
+    <style name="AlertDialogTitleStyle" parent="MatchWrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/alert_title_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <!--<item name="android:letterSpacing">0.2</item>-->
+    </style>
+
+    <style name="AlertDialogSupportingTextStyle" parent="MatchWrap">
+        <item name="android:layout_height">@dimen/_24dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/alert_supporting_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:alpha">0.6</item>
+        <!--<item name="android:letterSpacing">0.2</item>-->
+    </style>
+
+    <style name="AlertDialogEditTextStyle" parent="MatchWrap">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">@dimen/_16sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@android:color/black</item>
+        <!--<item name="android:letterSpacing">0.2</item>-->
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="SortingOptionsTextStyle" parent="MatchWrap">
+        <item name="android:drawablePadding">@dimen/_32dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/_34dp</item>
+        <item name="android:paddingStart">@dimen/_16dp</item>
+        <item name="android:paddingEnd">@dimen/_16dp</item>
+        <item name="android:textColor">#383838</item>
+        <item name="android:textSize">@dimen/textsize_fifteen</item>
+    </style>
+
+    <style name="ShelfItemRenameStyle" parent="WrapWrap">
+        <item name="android:background">@drawable/round_corners_rename_bg</item>
+        <item name="android:drawableLeft">@drawable/rename</item>
+        <item name="android:drawablePadding">@dimen/new_5dp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">@dimen/new_22dp</item>
+        <item name="android:paddingLeft">@dimen/new_12dp</item>
+        <item name="android:paddingRight">@dimen/new_15dp</item>
+        <item name="android:text">@string/rename</item>
+        <item name="android:textColor">#757571</item>
+        <item name="android:textSize">@dimen/new_13sp</item>
+    </style>
+
+    <style name="ShelfItemDateStyle" parent="WrapWrap">
+        <item name="android:alpha">0.5</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:text">2 july 2018, 9:00 AM</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/new_12sp</item>
+    </style>
+
+    <style name="ShelfItemTitleStyle" parent="WrapWrap">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text">@string/notebook</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">@dimen/new_14sp</item>
+        <item name="android:layout_marginStart">@dimen/new_5dp</item>
+        <item name="android:layout_marginEnd">@dimen/new_5dp</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ShelfItemDividerStyle" parent="MatchWrap">
+        <item name="android:alpha">1.0</item>
+        <item name="android:background">@drawable/shelf_bg</item>
+        <item name="android:layout_height">@dimen/new_10dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="searchViewTextStyle">
+        <item name="android:textSize">@dimen/textsize_fourteen</item>
+        <item name="android:textColorHint">#80ffffff</item>
+        <item name="android:editTextColor">#ffffff</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="OptionsTextStyle" parent="WrapWrap">
+        <item name="android:background">#383838</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingTop">@dimen/margin_eight</item>
+        <item name="android:paddingBottom">@dimen/margin_eight</item>
+        <item name="android:paddingStart">@dimen/new_10dp</item>
+        <item name="android:paddingEnd">@dimen/new_10dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="FormButton" parent="Theme.MaterialComponents">
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnSurface">@android:color/white</item>
+    </style>
+
+    <style name="RefreshMoreOptionsTextView" parent="WrapWrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#4aa1ff</item>
+        <item name="android:textSize">@dimen/refresh_more_options_font</item>
+    </style>
+
+    <!-- Dialog Themes -->
+    <style name="BottomSheetDialogTheme" parent="DialogTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- Dialog Themes -->
+
+    <!-- Dialog Layout Style -->
+    <style name="DialogStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/window_bg</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="PopupStyle" parent="DialogStyle">
+        <item name="cardElevation">@dimen/new_5dp</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">@dimen/new_16dp</item>
+    </style>
+
+    <style name="BottomSheetStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bottomsheet_bg</item>
+    </style>
+    <!-- Dialog Layout Style -->
+
+    <!-- Text -->
+    <style name="DialogTitleStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/dialog_title_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMaxTextSize">@dimen/dialog_title_text_size</item>
+        <item name="autoSizeMinTextSize">1sp</item>
+    </style>
+
+    <style name="PopupItemTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/new_54dp</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/ns_text</item>
+        <item name="android:textSize">@dimen/new_16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMaxTextSize">@dimen/new_16sp</item>
+    </style>
+
+    <style name="PopupItemValueTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/new_54dp</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/ns_text</item>
+        <item name="android:textSize">@dimen/new_16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:alpha">0.7</item>
+        <item name="textAllCaps">false</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMaxTextSize">@dimen/new_16sp</item>
+    </style>
+    <!-- Text -->
+
+    <style name="Switch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/ns_blue</item>
+        <item name="colorSwitchThumbNormal">#f1f1f1</item>
+        <item name="colorControlNormal">#40000000</item>
+    </style>
+
+    <style name="DialogNavButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start|center</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingTop">@dimen/new_24dp</item>
+        <item name="android:paddingStart">@dimen/new_24dp</item>
+        <item name="android:paddingEnd">@dimen/new_24dp</item>
+        <item name="android:paddingBottom">@dimen/new_24dp</item>
+    </style>
+
+    <style name="TabSelectorItemNew">
+        <item name="android:background">@drawable/template_picker_tab_item_bg</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="elevation">1dp</item>
+    </style>
+
+    <style name="TabSelectorItem">
+        <item name="android:background">@drawable/tab_item_bg</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/new_13sp</item>
+        <item name="android:layout_height">@dimen/new_28dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textAlignment">center</item>
+        <item name="elevation">1dp</item>
+    </style>
+
+    <style name="SearchViewStyle">
+        <item name="android:editTextColor">@android:color/black</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:searchIcon">@drawable/search_dark</item>
+    </style>
+
+    <style name="CustomCheckbox02" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ShelfBottomOptionsTextStyle" parent="WrapWrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/ns_text</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="WelcomeScreenFeature">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/welcome_feature_bg</item>
+        <item name="android:drawablePadding">@dimen/_20dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:paddingStart">@dimen/_30dp</item>
+        <item name="android:paddingTop">@dimen/_23dp</item>
+        <item name="android:paddingEnd">@dimen/margin_forty_five</item>
+        <item name="android:paddingBottom">@dimen/_21dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="textSize">@dimen/_18sp</item>
+    </style>
+
+    <style name="WelcomeScreenTitle">
+        <item name="android:layout_marginStart">@dimen/_20dp</item>
+        <item name="android:layout_marginEnd">@dimen/_20dp</item>
+    </style>
+
+    <style name="ClipartCategoryText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/new_28dp</item>
+        <item name="android:background">@drawable/clipart_category_bg</item>
+        <item name="android:paddingStart">@dimen/new_15dp</item>
+        <item name="android:paddingTop">@dimen/new_5dp</item>
+        <item name="android:paddingEnd">@dimen/new_15dp</item>
+        <item name="android:paddingBottom">@dimen/new_5dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/new_14sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="DatePickerTextStyle" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:textColorPrimary">@color/ns_text</item>
+        <item name="colorControlNormal">@color/ns_text</item>
+        <item name="android:textSize">@dimen/new_19sp</item>
+    </style>
+
+    <!--Date Picker-->
+    <style name="MyDatePicker" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/new_56dp</item>
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Divider color -->
+        <item name="colorControlNormal">@color/ns_text</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textSize">@dimen/new_16sp</item>
+        <item name="android:translationY">-2.62sp</item>
+    </style>
+
+    <!--Template Picker-->
+    <style name="label_1">
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">-0.01
+        </item>
+        <item name="android:textColor">#000000
+        </item>
+    </style>
+
+    <style name="customfontstyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:letterSpacing">0.09</item>
+        <item name="android:textSize">@dimen/new_14sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style
+        name="dialog_animation_fade" >
+        <item name="android:windowEnterAnimation">@anim/fade_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_dialog</item>
+    </style>
+
+</resources>

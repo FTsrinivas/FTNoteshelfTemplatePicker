@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_convert_to_text"
+        android:layout_width="@dimen/_580dp"
+        android:layout_height="510dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/screenshot_prev_screen_bg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_28dp"
+            android:layout_margin="@dimen/_24dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/close_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/back_dark" />
+
+            <TextView
+                android:id="@+id/screenshot_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:text="@string/screenshot"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/shareViewID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/share_dark" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/screenshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_28dp"
+                android:layout_marginRight="@dimen/_28dp"
+                android:layout_marginBottom="@dimen/_28dp"
+                android:maxWidth="448dp"
+                android:maxHeight="406dp"
+                android:src="@drawable/share" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

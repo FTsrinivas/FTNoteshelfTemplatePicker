@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="cpv_integer_2">1</integer>
+    <integer name="cpv_integer_4">3</integer>
+    <integer name="cpv_integer_12">8</integer>
+    <integer name="cpv_integer_20">15</integer>
+    <integer name="cpv_integer_24">18</integer>
+    <integer name="cpv_integer_78">59</integer>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:layout_marginStart="@dimen/new_28dp"
+        android:layout_marginEnd="@dimen/new_28dp"
+        android:layout_marginBottom="@dimen/new_15dp"
+        android:text="@string/appearance" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_28dp"
+            android:layout_marginEnd="@dimen/new_28dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_27dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/themes"
+                android:gravity="start"
+                android:textColor="@color/ns_text"
+                android:textSize="@dimen/new_16sp"
+                android:textStyle="normal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/appearance_dialog_themes_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/new_24dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="5"
+                tools:listitem="@layout/item_theme_recycler_view" />
+
+            <include layout="@layout/divider_black" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/appearance_dialog_show_date_switch"
+                style="@style/PopupItemTextStyle"
+                android:text="@string/show_date_on_shelf"
+                android:theme="@style/Switch" />
+
+            <include layout="@layout/divider_black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

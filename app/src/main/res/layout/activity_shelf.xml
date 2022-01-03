@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shelf_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/shelf_second_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/shelf_left_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/categories_panel_container"
+                android:layout_width="@dimen/shelf_nd_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:fitsSystemWindows="true" />
+
+            <View
+                android:id="@+id/categories_divider"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/divider" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/shelf_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6F7F6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <include layout="@layout/shelf_toolbar_full_layout" />
+
+                <FrameLayout
+                    android:id="@+id/shelf_list_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <FrameLayout
+                    android:id="@+id/shelf_bottom_fragment_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shelf_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.1"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/move_to_fragment_container_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/move_to_fragment_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/move_to_fragment_container"
+            android:layout_width="@dimen/shelf_nd_width"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

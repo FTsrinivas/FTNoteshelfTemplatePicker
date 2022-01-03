@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dynamic_id</key>
+	<integer>3</integer>
+	<key>display_name</key>
+	<string>Engineering 3</string>
+	<key>line_height</key>
+	<real>17.6</real>
+	<key>width</key>
+	<integer>834</integer>
+	<key>height</key>
+	<integer>1048</integer>
+	<key>display_name_ja</key>
+	<string>エンジニアリング3</string>
+	<key>display_name_it</key>
+	<string>Ingegneria 3</string>
+	<key>display_name_es</key>
+	<string>Ingeniería 3</string>
+	<key>display_name_de</key>
+	<string>Engineering 3</string>
+	<key>display_name_zh-Hans</key>
+	<string>对于工程师3</string>
+	<key>display_name_zh-Hant</key>
+	<string>對於工程師3</string>
+	<key>display_name_fr</key>
+	<string>Ingénierie 3</string>
+	<key>display_name_ko</key>
+	<string>공학 3</string>
+</dict>
+</plist>

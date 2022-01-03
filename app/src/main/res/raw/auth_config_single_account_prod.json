@@ -1,0 +1,15 @@
+{
+  "client_id" : "c0447e05-bcac-429e-a47c-45370474da2f",
+  "authorization_user_agent": "DEFAULT",
+  "redirect_uri" : "msauth://com.fluidtouch.noteshelf2/11sYGBTjLSXoau6TjWIm9oA8heM%3D",
+  "account_mode": "SINGLE",
+  "authorities": [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADandPersonalMicrosoftAccount",
+        "tenant_id": "common"
+      }
+    }
+  ]
+}

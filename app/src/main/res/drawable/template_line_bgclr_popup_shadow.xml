@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gray shadow. -->
+    <item
+        android:left="3dp"
+        android:top="@dimen/new_3dp"
+        android:bottom="@dimen/new_3dp"
+        android:right="@dimen/new_3dp">
+        <shape>
+            <solid android:color="@android:color/darker_gray" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+    <!-- White foreground. -->
+    <item android:bottom="@dimen/new_3dp"
+        android:left="@dimen/new_3dp"
+        android:top="@dimen/new_3dp"
+        android:right="@dimen/new_3dp">
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/rounded_corner_light_bg"
+        android:gravity="center"
+        android:layoutMode="clipBounds"
+        android:minWidth="@dimen/new_120dp"
+        android:minHeight="@dimen/new_120dp"
+        android:orientation="vertical"
+        android:padding="@dimen/new_20dp">
+
+        <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+            android:id="@+id/progress_indicator"
+            android:layout_width="@dimen/new_32dp"
+            android:layout_height="@dimen/new_32dp"
+            android:visibility="gone"
+            app:direction="clockwise"
+            app:enableProgressAnimation="true"
+            app:fillBackground="false"
+            app:progressBackgroundColor="@color/pen_sizes_layout_color"
+            app:progressBackgroundStrokeWidth="@dimen/new_5dp"
+            app:progressCap="round"
+            app:progressColor="@color/ns_blue"
+            app:progressStrokeWidth="@dimen/new_5dp"
+            app:startAngle="270"
+            app:textColor="@android:color/transparent" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/spinner"
+            android:layout_width="@dimen/new_30dp"
+            android:layout_height="@dimen/new_30dp"
+            app:indicatorColor="@color/ns_blue"
+            app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+        <ImageView
+            android:id="@+id/task_done_image_view"
+            android:layout_width="@dimen/new_30dp"
+            android:layout_height="@dimen/new_30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/check_badge"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/message_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/new_16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/saving"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/new_13sp" />
+
+        <Button
+            android:id="@+id/task_cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingStart="@dimen/new_8dp"
+            android:paddingTop="@dimen/new_10dp"
+            android:paddingEnd="@dimen/new_8dp"
+            android:paddingBottom="@dimen/new_10dp"
+            android:text="@android:string/cancel"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/new_14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

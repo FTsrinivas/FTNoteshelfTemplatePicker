@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/new_24dp"
+        android:paddingTop="@dimen/new_30dp"
+        android:paddingEnd="@dimen/new_24dp"
+        android:paddingBottom="@dimen/new_30dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/DialogTitleStyle"
+            android:layout_marginBottom="@dimen/new_28dp"
+            android:drawableStart="@drawable/back_dark_chevron"
+            android:drawablePadding="@dimen/new_20dp"
+            android:text="@string/backup"
+            android:textSize="@dimen/new_19sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_AutoBackup"
+                style="@style/PopupItemTextStyle"
+                android:text="@string/auto_backup"
+                android:theme="@style/Switch"
+                android:visibility="gone" />
+
+            <!--<include layout="@layout/divider_black" />-->
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_EvernoteSync"
+                style="@style/PopupItemTextStyle"
+                android:text="@string/evernote_publish"
+                android:theme="@style/Switch" />
+
+            <include layout="@layout/divider_black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

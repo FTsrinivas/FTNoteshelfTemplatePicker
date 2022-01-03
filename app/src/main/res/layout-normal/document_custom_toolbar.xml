@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/toolbar_color">
+
+    <LinearLayout
+        android:id="@+id/doc_toolbar_left_options_layout"
+        style="@style/MatchMatch"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/doc_toolbar_back_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            android:src="@drawable/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/doc_toolbar_undo_image_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/doc_toolbar_undo_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            android:alpha="0.3"
+            app:layout_constraintBottom_toBottomOf="@id/doc_toolbar_back_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/document_custom_toolbar_pen_view"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_back_image_view"
+            app:layout_constraintTop_toTopOf="@id/doc_toolbar_back_image_view"
+            app:srcCompat="@drawable/undo" />
+
+        <ImageView
+            android:id="@+id/document_custom_toolbar_pen_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="@id/doc_toolbar_back_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_text_image_view"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_undo_image_view"
+            app:layout_constraintTop_toTopOf="@id/doc_toolbar_back_image_view"
+            app:srcCompat="@drawable/pen" />
+
+        <ImageView
+            android:id="@+id/doc_toolbar_text_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            android:src="@drawable/text"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_add_white_image_view"
+            app:layout_constraintStart_toEndOf="@+id/document_custom_toolbar_pen_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/doc_toolbar_add_white_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            android:src="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_finder_image_view"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_text_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/doc_toolbar_finder_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_settings_image_view"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_add_white_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/finder" />
+
+        <ImageView
+            android:id="@+id/doc_toolbar_share_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/doc_toolbar_finder_image_view"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_finder_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/share" />
+
+        <ImageView
+            android:id="@+id/doc_toolbar_settings_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/doc_toolbar_finder_image_view"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_finder_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/options" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layPen"
+        style="@style/MatchMatch"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/doc_toolbar_lasso_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/document_custom_toolbar_undo_image_view2"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cut" />
+
+        <ImageView
+            android:id="@+id/document_custom_toolbar_undo_image_view2"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            android:alpha="0.3"
+            app:layout_constraintBottom_toBottomOf="@+id/doc_toolbar_lasso_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_pen_on_image_view"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_lasso_image_view"
+            app:layout_constraintTop_toTopOf="@+id/doc_toolbar_lasso_image_view"
+            app:srcCompat="@drawable/undo" />
+
+        <RelativeLayout
+            android:id="@+id/doc_toolbar_pen_on_image_view"
+            style="@style/ToolbarImageStyle2"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/doc_toolbar_lasso_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_highlighter_layout"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/document_custom_toolbar_undo_image_view2"
+            app:layout_constraintTop_toTopOf="@+id/doc_toolbar_lasso_image_view">
+
+            <RelativeLayout
+                android:id="@+id/document_custom_toolbar_pen_on_image_view_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/doc_toolbar_pen_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pen" />
+
+                <ImageView
+                    android:id="@+id/doc_toolbar_pen_on_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/navcolorpen"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/doc_toolbar_bluetooth_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="@+id/document_custom_toolbar_pen_on_image_view_layout"
+                android:layout_alignParentRight="@+id/document_custom_toolbar_pen_on_image_view_layout"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="-2dp"
+                android:background="@mipmap/naviconbluetooth"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/doc_toolbar_highlighter_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/doc_toolbar_lasso_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_eraser_image_view"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_pen_on_image_view"
+            app:layout_constraintTop_toTopOf="@+id/doc_toolbar_lasso_image_view">
+
+            <ImageView
+                android:id="@+id/doc_toolbar_highlighter_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/highlighter" />
+
+            <ImageView
+                android:id="@+id/doc_toolbar_highlighter_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/navcolorhighlighter"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/doc_toolbar_eraser_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/eraser"
+            app:layout_constraintBottom_toBottomOf="@+id/doc_toolbar_lasso_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/doc_toolbar_shape_image_view"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_highlighter_layout"
+            app:layout_constraintTop_toTopOf="@+id/doc_toolbar_lasso_image_view" />
+
+        <ImageView
+            android:id="@+id/doc_toolbar_shape_image_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/doc_toolbar_lasso_image_view"
+            app:layout_constraintEnd_toEndOf="@+id/txtDone"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_eraser_image_view"
+            app:layout_constraintTop_toTopOf="@+id/doc_toolbar_lasso_image_view"
+            app:srcCompat="@drawable/shape" />
+
+
+        <TextView
+            android:id="@+id/txtDone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center_horizontal"
+            android:letterSpacing="0.09"
+            android:lineSpacingExtra="2sp"
+            android:padding="5dp"
+            android:text="@string/done"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/doc_toolbar_lasso_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1.5"
+            app:layout_constraintStart_toEndOf="@+id/doc_toolbar_shape_image_view"
+            app:layout_constraintTop_toTopOf="@+id/doc_toolbar_lasso_image_view" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/doc_toolbar_pdfview_image_view"
+        style="@style/ToolbarImageStyle"
+        android:src="@drawable/pdfview"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

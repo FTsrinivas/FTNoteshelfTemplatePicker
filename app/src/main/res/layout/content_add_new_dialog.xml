@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/new_280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/new_20dp"
+        android:layout_marginTop="@dimen/new_16dp"
+        android:layout_marginEnd="@dimen/new_20dp"
+        android:background="@drawable/tab_layout_mask"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/new_2dp">
+
+        <ImageView
+            android:id="@+id/page_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_item_bg"
+            android:src="@drawable/page_tab" />
+
+        <ImageView
+            android:id="@+id/media_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/media_tab" />
+
+        <ImageView
+            android:id="@+id/tag_tab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/tag_tab" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/child_container_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/new_350dp" />
+    </ScrollView>
+</LinearLayout>

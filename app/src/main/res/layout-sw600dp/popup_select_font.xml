@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/PopupStyle">
+
+    <LinearLayout
+        android:id="@+id/select_font_popup_layout"
+        android:layout_width="@dimen/new_400dp"
+        android:layout_height="@dimen/new_417dp"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dialog_back_button"
+                style="@style/DialogNavButton"
+                android:src="@drawable/back_dark_chevron"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dialog_title"
+                style="@style/DialogTitleStyle"
+                android:gravity="center"
+                android:text="@string/select_font"
+                android:textSize="@dimen/new_19sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/font_family_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_font_style_recycler_view" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dynamic_id</key>
+	<integer>3</integer>
+	<key>display_name</key>
+	<string>Isometric 2</string>
+	<key>line_height</key>
+	<integer>20</integer>
+	<key>width</key>
+	<integer>834</integer>
+	<key>height</key>
+	<integer>1048</integer>
+	<key>display_name_ja</key>
+	<string>等尺性2</string>
+	<key>display_name_it</key>
+	<string>Isometrica 2</string>
+	<key>display_name_es</key>
+	<string>Isométrica 2</string>
+	<key>display_name_de</key>
+	<string>Isometrisch 2</string>
+	<key>display_name_zh-Hans</key>
+	<string>等轴测图2</string>
+	<key>display_name_zh-Hant</key>
+	<string>等軸測圖2</string>
+	<key>display_name_fr</key>
+	<string>Isométrique 2</string>
+	<key>display_name_ko</key>
+	<string>아이소 메트릭 2</string>
+</dict>
+</plist>

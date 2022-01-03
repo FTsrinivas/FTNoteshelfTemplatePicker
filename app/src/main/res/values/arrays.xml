@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<resources>
+
+    <string-array name="theme_drawable_array">
+        <item>colortheme_1,#344455</item>
+        <!--<item>colortheme_2,#ffffff</item>-->
+        <item>colortheme_3,#5c6067</item>
+        <item>colortheme_4,#262626</item>
+        <item>colortheme_5,#5ca7f7</item>
+        <item>colortheme_6,#aba08e</item>
+        <item>colortheme_7,#4aa3af</item>
+        <item>colortheme_8,#09bf8d</item>
+        <item>colortheme_9,#c78756</item>
+        <item>colortheme_10,#eb9147</item>
+    </string-array>
+
+    <string-array name="recognition_language_event_log_tags">
+        <item>en_US,Shelf_Settings_HandWriteRecg_EnglishUS</item>
+
+        <item>en_GB,Shelf_Settings_HandWriteRecg_EnglishUK</item>
+
+        <item>zh_CN,Shelf_Settings_HandWriteRecg_ChineseSimp</item>
+
+        <item>zh_TW,Shelf_Settings_HandWriteRecg_ChineseTrad</item>
+
+        <item>zh_HK,Shelf_Settings_HandWriteRecg_ChineseHK</item>
+
+        <item>de_DE,Shelf_Settings_HandWriteRecg_German</item>
+
+        <item>fr_FR,Shelf_Settings_HandWriteRecg_French</item>
+
+        <item>eu_ES,Shelf_Settings_HandWriteRecg_SpanishMex</item>
+
+        <item>ca_ES,Shelf_Settings_HandWriteRecg_SpanishClmb</item>
+
+        <item>it_IT,Shelf_Settings_HandWriteRecg_Italian</item>
+
+        <item>ja_JP,Shelf_Settings_HandWriteRecg_Japanese</item>
+
+        <item>pt_PT,Shelf_Settings_HandWriteRecg_Portuguese</item>
+
+        <item>ko_KR,Shelf_Settings_HandWriteRecg_Korean</item>
+
+        <item>af_ZA,Shelf_Settings_HandWriteRecg_Afrikaans</item>
+
+        <item>sq_AL,Shelf_Settings_HandWriteRecg_Albanian</item>
+
+        <item>hy_AM,Shelf_Settings_HandWriteRecg_Armenian</item>
+
+        <item>az_AZ,Shelf_Settings_HandWriteRecg_Azeri</item>
+
+        <item>Basque,Shelf_Settings_HandWriteRecg_Basque</item>
+
+        <item>be_BY,Shelf_Settings_HandWriteRecg_Belarusian</item>
+
+        <item>bg_BG,Shelf_Settings_HandWriteRecg_Bulgarian</item>
+
+        <item>bs_BA,Shelf_Settings_HandWriteRecg_Bosnian</item>
+
+        <item>Catalan,Shelf_Settings_HandWriteRecg_Catalan</item>
+
+        <item>ceb_PH,Shelf_Settings_HandWriteRecg_Cebuano</item>
+
+        <item>hr_HR,Shelf_Settings_HandWriteRecg_Croatian</item>
+
+        <item>cs_CZ,Shelf_Settings_HandWriteRecg_Czech</item>
+
+        <item>da_DK,Shelf_Settings_HandWriteRecg_Danish</item>
+
+        <item>nl_BE,Shelf_Settings_HandWriteRecg_DutchBelg</item>
+
+        <item>nl_NL,Shelf_Settings_HandWriteRecg_DutchNethL</item>
+
+        <item>en_CA,Shelf_Settings_HandWriteRecg_EnglishCan</item>
+
+        <item>en_PH,Shelf_Settings_HandWriteRecg_EnglishPhil</item>
+
+        <item>et_EE,Shelf_Settings_HandWriteRecg_Estonian</item>
+
+        <item>fil_PH,Shelf_Settings_HandWriteRecg_Filipino</item>
+
+        <item>fi_FI,Shelf_Settings_HandWriteRecg_Finnish</item>
+
+        <item>fr_CA,Shelf_Settings_HandWriteRecg_FrenchCan</item>
+
+        <item>gl_ES,Shelf_Settings_HandWriteRecg_Galician</item>
+
+        <item>ka_GE,Shelf_Settings_HandWriteRecg_Georgian</item>
+
+        <item>de_AT,Shelf_Settings_HandWriteRecg_GermanAus</item>
+
+        <item>el_GR,Shelf_Settings_HandWriteRecg_Greek</item>
+
+        <item>hu_HU,Shelf_Settings_HandWriteRecg_Hungarian</item>
+
+        <item>id_ID,Shelf_Settings_HandWriteRecg_Indonesian</item>
+
+        <item>ga_IE,Shelf_Settings_HandWriteRecg_Irish</item>
+
+        <item>is_IS,Shelf_Settings_HandWriteRecg_Islandic</item>
+
+        <item>kk_KZ,Shelf_Settings_HandWriteRecg_Kazakh</item>
+
+        <item>lv_LV,Shelf_Settings_HandWriteRecg_Latvian</item>
+
+        <item>lt_LT,Shelf_Settings_HandWriteRecg_Lithuanian</item>
+
+        <item>mk_MK,Shelf_Settings_HandWriteRecg_Macedonian</item>
+
+        <item>mg_MG,Shelf_Settings_HandWriteRecg_Malagasy</item>
+
+        <item>ms_MY,Shelf_Settings_HandWriteRecg_Malay</item>
+
+        <item>mn_MN,Shelf_Settings_HandWriteRecg_Mongolian</item>
+
+        <item>no_NO,Shelf_Settings_HandWriteRecg_Norwegian</item>
+
+        <item>pl_PL,Shelf_Settings_HandWriteRecg_Polish</item>
+
+        <item>pt_BR,Shelf_Settings_HandWriteRecg_PortgBrazil</item>
+
+        <item>ro_RO,Shelf_Settings_HandWriteRecg_Romanian</item>
+
+        <item>ru_RU,Shelf_Settings_HandWriteRecg_Russian</item>
+
+        <item>sr_Cyrl_RS,Shelf_Settings_HandWriteRecg_SerbianCyr</item>
+
+        <item>sr_Latn_RS,Shelf_Settings_HandWriteRecg_SerbianLat</item>
+
+        <item>sk_SK,Shelf_Settings_HandWriteRecg_Slovak</item>
+
+        <item>sl_SI,Shelf_Settings_HandWriteRecg_Slovenian</item>
+
+        <item>sw_TZ,Shelf_Settings_HandWriteRecg_Swahili</item>
+
+        <item>tt_RU,Shelf_Settings_HandWriteRecg_Tatar</item>
+
+        <item>tr_TR,Shelf_Settings_HandWriteRecg_Turkish</item>
+
+        <item>uk_UA,Shelf_Settings_HandWriteRecg_Ukranian</item>
+
+        <item>vi_VN,Shelf_Settings_HandWriteRecg_Vietnamese</item>
+    </string-array>
+
+    <integer-array name="pen_sizes">
+        <item>@integer/two</item>
+        <item>@integer/three</item>
+        <item>@integer/five</item>
+        <item>@integer/six</item>
+        <item>@integer/eight</item>
+        <item>@integer/ten</item>
+        <item>@integer/eighteen</item>
+        <item>@integer/twenty_four</item>
+    </integer-array>
+
+    <integer-array name="highlighter_sizes">
+        <item>@integer/ten</item>
+        <item>@integer/twelve</item>
+        <item>@integer/eighteen</item>
+        <item>@integer/twenty</item>
+        <item>@integer/twenty_two</item>
+        <item>@integer/twenty_four</item>
+    </integer-array>
+    
+    <integer-array name="eraser_sizes">
+        <item>@integer/twenty</item>
+        <item>@integer/thirty_six</item>
+        <item>@integer/forty_four</item>
+        <item>@integer/forty_four</item>
+    </integer-array>
+</resources>

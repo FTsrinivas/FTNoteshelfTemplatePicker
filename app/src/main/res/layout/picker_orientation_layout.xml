@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/new_186dp"
+    android:layout_height="@dimen/new_32dp">
+
+    <LinearLayout
+        android:id="@+id/orientation_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_layout_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/pixabay_tab"
+            style="@style/TabSelectorItem"
+            android:layout_width="93dp"
+            android:text="@string/portrait"
+            android:textSize="@dimen/new_12sp"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="2sp"
+            android:translationY="-0.97sp"
+            android:fontFamily="@font/roboto"/>
+
+        <TextView
+            android:id="@+id/unsplash_tab"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/landscape"
+            android:textSize="@dimen/new_12sp"
+            android:fontFamily="@font/roboto"
+            style="@style/TabSelectorItem"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

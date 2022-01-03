@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/BottomSheetStyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/choose_cover_paper_dialog_title" />
+
+        <include layout="@layout/divider_black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/choose_cover_paper_categories_layout"
+                layout="@layout/fragment_choose_cover_paper_categories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/choose_cover_paper_templates_layout"
+                layout="@layout/fragment_choose_cover_paper_templates"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

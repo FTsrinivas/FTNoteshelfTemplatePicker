@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PopupStyle">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_five"
+        android:paddingBottom="@dimen/margin_five">
+
+        <TextView
+            android:id="@+id/category_pin_options_unpin_text_view"
+            style="@style/PopupItemTextStyle"
+            android:paddingHorizontal="24dp"
+            android:text="@string/unpin_notebook"
+            android:textColor="#CC4235" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

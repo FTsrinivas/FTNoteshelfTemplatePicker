@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/new_24dp">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:gravity="center"
+        android:text="@string/share"
+        android:textSize="@dimen/new_19sp" />
+
+    <include
+        layout="@layout/divider_black"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/new_15dp" />
+
+    <TextView
+        android:id="@+id/select_pages_current_page"
+        style="@style/PopupItemTextStyle"
+        android:text="@string/current_page" />
+
+    <include layout="@layout/divider_black" />
+
+    <TextView
+        android:id="@+id/select_pages_all_pages"
+        style="@style/PopupItemTextStyle"
+        android:text="@string/all_pages" />
+
+    <include layout="@layout/divider_black" />
+
+    <TextView
+        android:id="@+id/select_pages_select_pages"
+        style="@style/PopupItemTextStyle"
+        android:text="@string/select_pages" />
+
+    <include layout="@layout/divider_black" />
+
+</LinearLayout>

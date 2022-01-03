@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/DialogStyle">
+
+    <LinearLayout
+        android:layout_width="@dimen/new_580dp"
+        android:layout_height="@dimen/new_700dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/dialog_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/new_24dp"
+                android:src="@drawable/back_dark" />
+
+            <TextView
+                android:id="@+id/dialog_evernote_notebooks_title"
+                style="@style/DialogTitleStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/publish_notebooks"
+                android:textSize="@dimen/new_19sp" />
+
+            <TextView
+                android:id="@+id/dialog_done_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="@dimen/new_24dp"
+                android:text="@string/done"
+                android:textColor="@color/ns_blue"
+                android:textSize="@dimen/new_17sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shelf_evernote_shelf_item_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/new_15dp"
+            android:outlineProvider="bounds"
+            android:paddingStart="@dimen/new_28dp"
+            android:paddingEnd="@dimen/new_28dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_category_recycler_view" />
+
+    </LinearLayout>
+</FrameLayout>

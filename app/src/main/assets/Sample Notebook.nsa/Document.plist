@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>documents</key>
+	<dict>
+		<key>9223B24B-7E9D-4AA9-BDF4-C1C724573916.ns_pdf</key>
+		<dict>
+			<key>version</key>
+			<string>4.0</string>
+			<key>isTemplate</key>
+			<integer>1</integer>
+			<key>footerOption</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>pages</key>
+	<array>
+		<dict>
+			<key>uuid</key>
+			<string>A8996BDA-CBA7-4D61-AFB7-4CB1A6CDC91A</string>
+			<key>associatedPDFFileName</key>
+			<string>9223B24B-7E9D-4AA9-BDF4-C1C724573916.ns_pdf</string>
+			<key>associatedPageIndex</key>
+			<integer>1</integer>
+			<key>associatedPDFKitPageIndex</key>
+			<integer>1</integer>
+			<key>bookmarkColor</key>
+			<string>8ACCEA</string>
+			<key>bookmarkTitle</key>
+			<string></string>
+			<key>deviceModel</key>
+			<string>Google Pixelbook</string>
+			<key>isBookmarked</key>
+			<false/>
+			<key>creationDate</key>
+			<integer>1542116905</integer>
+			<key>lastUpdated</key>
+			<integer>1542116905</integer>
+			<key>lineHeight</key>
+			<integer>0</integer>
+			<key>tags</key>
+			<array>
+			</array>
+			<key>pdfKitPageRect</key>
+			<string>{{0, 0}, {800, 1096}}</string>
+		</dict>
+	</array>
+</dict>
+</plist>

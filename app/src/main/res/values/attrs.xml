@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FTResizeImageView">
+        <attr name="guidelines">
+            <enum name="off" value="0" />
+            <enum name="onTouch" value="1" />
+            <enum name="on" value="2" />
+        </attr>
+
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CropView2">
+        <!-- Viewport ratio used to compute height based off view width -->
+        <attr name="cropviewViewportRatio" format="float" />
+        <!-- Viewport overlay color -->
+        <attr name="cropviewViewportOverlayColor" format="color" />
+        <!-- Viewport overlay padding -->
+        <attr name="cropviewViewportOverlayPadding" format="dimension" />
+        <!-- Maximum zoom level -->
+        <attr name="cropviewMaxScale" format="float" />
+        <!-- Minimum  zoom level -->
+        <attr name="cropviewMinScale" format="float" />
+        <!-- Shape -->
+        <attr name="cropviewShape" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PxBlurringView">
+        <attr name="blurRadius" format="integer" />
+        <attr name="downsampleFactor" format="integer" />
+        <attr name="overlayColor" format="color" />
+    </declare-styleable>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!--  PolygonView  -->
+    <declare-styleable name="PolygonView">
+        <attr name="realTime" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="android:gravity" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout_Layout">
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+</resources>

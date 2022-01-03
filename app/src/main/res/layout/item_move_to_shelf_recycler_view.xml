@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_shelf_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="@dimen/new_24dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_move_to_shelf_third_image_view"
+                android:layout_width="@dimen/new_35dp"
+                android:layout_height="@dimen/new_38dp"
+                android:layout_alignBottom="@+id/item_move_to_shelf_first_image_view"
+                android:scaleType="centerCrop"
+                android:src="@drawable/covergray" />
+
+            <ImageView
+                android:id="@+id/item_move_to_shelf_second_image_view"
+                android:layout_width="@dimen/new_35dp"
+                android:layout_height="@dimen/new_41dp"
+                android:layout_alignBottom="@+id/item_move_to_shelf_first_image_view"
+                android:layout_marginStart="@dimen/new_3dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/covergray" />
+
+            <ImageView
+                android:id="@+id/item_move_to_shelf_first_image_view"
+                android:layout_width="@dimen/new_35dp"
+                android:layout_height="@dimen/new_45dp"
+                android:layout_marginStart="@dimen/new_6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/covergray" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_13dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_move_to_shelf_title_text_view"
+                style="@style/PopupItemTextStyle"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="Group Name" />
+
+            <TextView
+                android:id="@+id/item_move_to_shelf_description_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:text="3 Notebooks"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/new_14sp" />
+
+            <TextView
+                android:id="@+id/item_move_to_shelf_evernote_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:gravity="start"
+                android:text="@string/error"
+                android:textColor="@color/ns_red"
+                android:textSize="@dimen/new_14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_move_to_shelf_chevron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chevron" />
+
+        <ImageView
+            android:id="@+id/en_sync_check"
+            android:layout_width="@dimen/new_18dp"
+            android:layout_height="@dimen/new_16dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/check"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_black" />
+
+</LinearLayout>

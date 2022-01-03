@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/handWritingText"
+        style="@style/DialogTitleStyle"
+        android:layout_marginStart="@dimen/new_28dp"
+        android:layout_marginEnd="@dimen/new_28dp"
+        android:text="@string/handwriting" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/new_28dp"
+                android:layout_marginTop="@dimen/new_19dp"
+                android:layout_marginEnd="@dimen/new_28dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="@dimen/new_16dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/writing_style"
+                    android:textColor="@color/ns_text"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <GridLayout
+                    android:id="@+id/handwriting_dialog_writing_style_grid_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:columnCount="2">
+
+                    <ImageView
+                        android:id="@+id/writing_style_left_bottom_view"
+                        android:layout_width="@dimen/new_86dp"
+                        android:layout_height="@dimen/new_86dp"
+                        android:padding="@dimen/new_12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/writing_1" />
+
+                    <ImageView
+                        android:id="@+id/writing_style_right_bottom_view"
+                        android:layout_width="@dimen/new_86dp"
+                        android:layout_height="@dimen/new_86dp"
+                        android:padding="@dimen/new_12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/writing_4_sel" />
+
+                    <ImageView
+                        android:id="@+id/writing_style_left_center_view"
+                        android:layout_width="@dimen/new_86dp"
+                        android:layout_height="@dimen/new_86dp"
+                        android:padding="@dimen/new_12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/writing_2" />
+
+                    <ImageView
+                        android:id="@+id/writing_style_right_center_view"
+                        android:layout_width="@dimen/new_86dp"
+                        android:layout_height="@dimen/new_86dp"
+                        android:padding="@dimen/new_12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/writing_5" />
+
+                    <ImageView
+                        android:id="@+id/writing_style_left_top_view"
+                        android:layout_width="@dimen/new_86dp"
+                        android:layout_height="@dimen/new_86dp"
+                        android:padding="@dimen/new_12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/writing_3" />
+
+                    <ImageView
+                        android:id="@+id/writing_style_right_top_view"
+                        android:layout_width="@dimen/new_86dp"
+                        android:layout_height="@dimen/new_86dp"
+                        android:padding="@dimen/new_12dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/writing_6" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/divider_black"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/handwriting_dialog_language_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/new_28dp"
+                android:layout_marginTop="@dimen/new_19dp"
+                android:layout_marginEnd="@dimen/new_28dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/PopupItemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/handwriting_recognition" />
+
+                <TextView
+                    android:id="@+id/handwriting_dialog_language_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="end"
+                    android:paddingTop="@dimen/new_16dp"
+                    android:paddingBottom="@dimen/new_16dp"
+                    android:text="English (US)"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/divider_black" />
+
+            <fragment
+                android:id="@+id/select_language_fragment"
+                class="com.fluidtouch.noteshelf.commons.settingsUI.dialogs.FTSelectLanguageDialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/dialog_select_language" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

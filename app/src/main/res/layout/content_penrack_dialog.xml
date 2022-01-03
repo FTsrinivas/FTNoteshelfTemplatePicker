@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/penRackLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/pen_rack_dialog_padding">
+
+    <LinearLayout
+        android:id="@+id/favoritesChooseLayout"
+        android:layout_width="@dimen/pen_rack_dialog_width_fav"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_32dp"
+        android:background="@drawable/tab_layout_bg"
+        android:padding="@dimen/new_2dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/favoritesChoosenPens"
+            style="@style/TabSelectorItem"
+            android:text="@string/pens" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/favoritesChoosenFavorites"
+            style="@style/TabSelectorItem"
+            android:background="@android:color/transparent"
+            android:text="@string/favorites" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nonFavoritelayout"
+            android:layout_alignBottom="@id/nonFavoritelayout"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/favoritesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="5"
+                tools:listitem="@layout/item_favorites_recycler_view" />
+
+            <RelativeLayout
+                android:id="@+id/favToolBarLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/favtoolbar_rounded_bg"
+                android:padding="3dp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    style="@style/CustomCheckbox02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="@string/show_favorite_toolbar"
+                    android:textColor="#383838"
+                    android:textSize="13sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noFavMessageLayout"
+            android:layout_width="@dimen/pen_rack_dialog_width"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:lineSpacingExtra="3sp"
+                android:text="@string/no_favorite_pens"
+                android:textColor="#133f47"
+                android:textSize="@dimen/textsize_fifteen" />
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:lineSpacingExtra="6sp"
+                android:text="@string/no_favorite_des"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_size_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nonFavoritelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/favouriteIcon"
+                    android:layout_width="@dimen/_34dp"
+                    android:layout_height="@dimen/_34dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_20dp"
+                    android:src="@drawable/iconfavorite"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/laySizes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_corners_rename_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layPenRackPens"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_108"
+                android:layout_marginTop="@dimen/pen_rack_dialog_size_pen_type_margin_top"
+                android:layout_marginBottom="@dimen/pen_rack_dialog_size_pen_type_margin_top"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/laySelectPen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_24"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:id="@+id/viewPen"
+                        android:layout_width="@dimen/pen_circle_size"
+                        android:layout_height="@dimen/pen_circle_size"
+                        android:background="@drawable/circular_grey_bg"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/layPens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/pen_expand_margin">
+
+                        <ImageView
+                            android:id="@+id/imgPenRackPenShadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/penshadow"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imgPenRackPen"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/pencolor" />
+
+                        <ImageView
+                            android:id="@+id/imgPenPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/penmask" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/pen_circle_size"
+                        android:layout_height="@dimen/pen_circle_size"
+                        android:background="@drawable/circle_mask"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/laySelectCalligraphy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <View
+                        android:id="@+id/viewCalligraphy"
+                        android:layout_width="@dimen/pen_circle_size"
+                        android:layout_height="@dimen/pen_circle_size"
+                        android:background="@drawable/circular_grey_bg" />
+
+                    <RelativeLayout
+                        android:id="@+id/layCalligraphy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/pen_expand_margin">
+
+                        <ImageView
+                            android:id="@+id/imgPenRackCalligraphyShadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/calligraphyshadow"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imgPenRackCalligraphy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/calligraphycolor" />
+
+                        <ImageView
+                            android:id="@+id/imgPenRackCalligraphyPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/calligraphymask" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/pen_circle_size"
+                        android:layout_height="@dimen/pen_circle_size"
+                        android:background="@drawable/circle_mask"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/laySelectFine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_24"
+                    android:gravity="center">
+
+                    <View
+                        android:id="@+id/viewFine"
+                        android:layout_width="@dimen/pen_circle_size"
+                        android:layout_height="@dimen/pen_circle_size"
+                        android:background="@drawable/circular_grey_bg" />
+
+                    <RelativeLayout
+                        android:id="@+id/layFine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/pen_expand_margin">
+
+                        <ImageView
+                            android:id="@+id/imgPenRackFineShadow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/fineshadow"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/imgPenRackFine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/finecolor" />
+
+                        <ImageView
+                            android:id="@+id/imgPenRackFinePoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/finemask" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/pen_circle_size"
+                        android:layout_height="@dimen/pen_circle_size"
+                        android:background="@drawable/circle_mask"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/color_selection_layout" />
+
+            <TextView
+                android:id="@+id/txtClearPage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_36dp"
+                android:layout_marginLeft="@dimen/_12dp"
+                android:layout_marginTop="@dimen/_12dp"
+                android:layout_marginRight="@dimen/_12dp"
+                android:background="@drawable/clear_page_bg"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/clear_page"
+                android:textColor="#78b2cc"
+                android:textSize="@dimen/textsize_fifteen"
+                android:textStyle="normal"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/layEraserOptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20dp">
+
+                <View
+                    android:id="@+id/eraserMoreOptionsDivider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/divider_stroke"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/new_22dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/eraser_options_button_bg"
+                    android:gravity="center"
+                    android:minWidth="@dimen/_90dp">
+
+                    <TextView
+                        android:id="@+id/eraserOptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/new_22dp"
+                        android:drawableRight="@mipmap/iconup"
+                        android:drawablePadding="@dimen/_5dp"
+                        android:gravity="center"
+                        android:text="@string/more_with_arrow"
+                        android:textSize="@dimen/new_13sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/eraserOptionsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/autoSelectPrevToolTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/autoSelectPrevToolTitle"
+                        android:textColor="@color/ns_text" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/autoSelectPrevToolSwitch"
+                        android:layout_width="51dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/eraseEntireStrokeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/eraseEntireStrokeTitle"
+                        android:textColor="@color/ns_text" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/eraseEntireStrokeSwitch"
+                        android:layout_width="51dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/eraseHighlighterStrokeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/eraseHighlighterStrokeTitle"
+                        android:textColor="@color/ns_text" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/eraseHighlighterStrokeSwitch"
+                        android:layout_width="51dp"
+                        android:layout_height="31dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

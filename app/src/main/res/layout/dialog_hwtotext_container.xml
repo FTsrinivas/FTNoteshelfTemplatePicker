@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_convert_to_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_25dp"
+    android:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/store_close_dark" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/convert_to_text"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:fontFamily="@font/roboto"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/image_close"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/downarrow_dark"
+            android:drawablePadding="@dimen/_5dp"
+            app:fontFamily="@font/roboto"
+            android:textColor="#4aa1ff"
+            android:textSize="@dimen/_17sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_convert_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:background="@drawable/rc_gray_border_bg"
+        app:fontFamily="@font/roboto_medium"
+        android:gravity="top"
+        android:padding="@dimen/_10dp"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@+id/button_copy_to_clipboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_header" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_copy_to_clipboard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@drawable/rc_gray_border_bg"
+        android:text="@string/copy_to_clipboard"
+        app:fontFamily="@font/roboto"
+        android:textAllCaps="false"
+        android:textColor="#4aa1ff"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_convert_to_textbox"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_convert_to_textbox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_46dp"
+        android:background="@drawable/rc_blue_border_bg"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        app:fontFamily="@font/roboto"
+        android:text="@string/convert_to_textbox"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_ct_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_46dp"
+        android:paddingLeft="@dimen/_15dp"
+        android:paddingRight="@dimen/_15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_convert_to_textbox"
+        app:layout_constraintRight_toRightOf="@+id/button_convert_to_textbox"
+        app:layout_constraintTop_toTopOf="@+id/button_convert_to_textbox"
+        app:srcCompat="@drawable/settings" />
+</androidx.constraintlayout.widget.ConstraintLayout>

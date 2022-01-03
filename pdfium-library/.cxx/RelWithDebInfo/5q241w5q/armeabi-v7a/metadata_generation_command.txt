@@ -1,0 +1,26 @@
+                    Executable : /Users/srinivas/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Users/srinivas/Downloads/Noteshelf-Android-UI/pdfium-library/src/main/cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=19
+-DANDROID_ABI=armeabi-v7a
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DANDROID_NDK=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462
+-DCMAKE_ANDROID_NDK=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462
+-DCMAKE_TOOLCHAIN_FILE=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/srinivas/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_CXX_FLAGS=-std=c++11 -frtti -fexceptions
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/srinivas/Downloads/Noteshelf-Android-UI/pdfium-library/build/intermediates/cxx/RelWithDebInfo/5q241w5q/obj/armeabi-v7a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/srinivas/Downloads/Noteshelf-Android-UI/pdfium-library/build/intermediates/cxx/RelWithDebInfo/5q241w5q/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=RelWithDebInfo
+-B/Users/srinivas/Downloads/Noteshelf-Android-UI/pdfium-library/.cxx/RelWithDebInfo/5q241w5q/armeabi-v7a
+-GNinja
+-DANDROID_STL=c++_static
+-DANDROID_PLATFORM=android-21
+-DANDROID_ARM_NEON=TRUE
+jvmArgs : 
+
+
+                    Build command args: []
+                    Version: 2

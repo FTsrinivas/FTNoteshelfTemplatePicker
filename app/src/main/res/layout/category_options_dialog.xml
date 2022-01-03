@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PopupStyle">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_five"
+        android:paddingBottom="@dimen/margin_five">
+
+        <TextView
+            android:id="@+id/category_options_remove_text_view"
+            style="@style/PopupItemTextStyle"
+            android:paddingHorizontal="24dp"
+            android:text="@string/move_to_trash"
+            android:textColor="#CC4235" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/separator" />
+
+        <TextView
+            android:id="@+id/category_options_rename_text_view"
+            style="@style/PopupItemTextStyle"
+            android:paddingHorizontal="24dp"
+            android:text="@string/edit" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

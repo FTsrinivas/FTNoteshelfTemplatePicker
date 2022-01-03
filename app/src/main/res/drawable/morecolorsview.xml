@@ -1,0 +1,27 @@
+<!-- drawable/oval.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="2.67dp"
+    android:height="2.67dp"
+    android:viewportWidth="2.67"
+    android:viewportHeight="2.67"
+    >
+
+    <group>
+
+        <clip-path
+            android:pathData="M0.333333 0.333333H2.33333V2.33333H0.333333V0.333333Z" />
+
+        <path
+            android:pathData="M0.333333 0.333333V2.33333H2.33333V0.333333"
+            android:fillColor="#383838" />
+
+    </group>
+
+    <path
+        android:pathData="M0.333333 0.333333H2.33333V2.33333H0.333333V0.333333Z"
+        android:strokeWidth="0.67"
+        android:strokeColor="#383838" />
+
+</vector>

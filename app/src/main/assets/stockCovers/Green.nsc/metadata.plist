@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>display_name</key>
+	<string>Green</string>
+	<key>display_name_ja</key>
+	<string>焦げ茶色</string>
+	<key>display_name_it</key>
+	<string>Verde</string>
+	<key>display_name_es</key>
+	<string>Verde</string>
+	<key>display_name_de</key>
+	<string>Grün</string>
+	<key>display_name_zh-Hans</key>
+	<string>绿色</string>
+	<key>display_name_zh-Hant</key>
+	<string>綠色</string>
+	<key>display_name_fr</key>
+	<string>Vert</string>
+</dict>
+</plist>

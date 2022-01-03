@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+
+    <!--<item
+        android:id="@+id/storeUpdate"
+        android:icon="@mipmap/store_updates"
+        android:title="Update"
+        app:showAsAction="always" />-->
+    <!-- <item
+         android:id="@+id/storeSearch"
+         android:icon="@mipmap/store_search"
+         android:title="@string/search"
+         app:actionViewClass="android.support.v7.widget.SearchView"
+         app:showAsAction="always" />-->
+    <!-- <item
+         android:id="@+id/storeLogin"
+         android:title="LOGIN"
+         app:showAsAction="always" />-->
+
+</menu>

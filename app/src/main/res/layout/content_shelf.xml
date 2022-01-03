@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shelf_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7F6">
+
+    <include layout="@layout/shelf_recycler_view" />
+
+    <TextView
+        android:id="@+id/shelf_drag_drop_up_control_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_one_zero_six" />
+
+    <TextView
+        android:id="@+id/shelf_drag_drop_down_control_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

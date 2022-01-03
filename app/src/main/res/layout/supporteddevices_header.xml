@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8dp"
+    android:layout_marginLeft="@dimen/_16dp">
+    <TextView
+        android:id="@+id/txtHeader"
+        android:text="Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:textStyle="normal"
+        android:letterSpacing="0.15"
+        android:lineSpacingExtra="4sp"
+        android:translationY="-2.14sp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/_10sp"
+        android:textColor="#000000"/>
+</RelativeLayout>

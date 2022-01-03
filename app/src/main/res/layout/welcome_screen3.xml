@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|top"
+    android:background="@color/ns_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/welcome_screen3_pen_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/welcome_screen3_pen_height"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/penmask_image_view"
+            android:layout_width="@dimen/welcome_screen3_pen_width"
+            android:layout_height="@dimen/welcome_screen3_pen_height"
+            android:layout_marginTop="@dimen/minus_50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/penmask" />
+
+        <ImageView
+            android:id="@+id/calligraphymask_image_view"
+            android:layout_width="@dimen/welcome_screen3_pen_width"
+            android:layout_height="@dimen/welcome_screen3_pen_height"
+            android:layout_marginTop="@dimen/minus_50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/calligraphymask" />
+
+        <ImageView
+            android:id="@+id/finemask_image_view"
+            android:layout_width="@dimen/welcome_screen3_pen_width"
+            android:layout_height="@dimen/welcome_screen3_pen_height"
+            android:layout_marginTop="@dimen/minus_50dp"
+            android:paddingBottom="@dimen/dimen_24"
+            android:src="@drawable/finemask" />
+
+        <ImageView
+            android:id="@+id/highlightmask_image_view"
+            android:layout_width="@dimen/welcome_screen3_pen_width"
+            android:layout_height="@dimen/welcome_screen3_pen_height"
+            android:layout_marginTop="@dimen/minus_50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/highlightmask" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome_screen3_title"
+            style="@style/WelcomeScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="@dimen/_10sp"
+            android:text="@string/great_writing_tools"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_screen_title_text_size"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RelativeLayout
+            android:id="@+id/welcome_screen3_writing_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_38dp">
+
+            <ImageView
+                android:id="@+id/paper"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_two_sixty_two"
+                android:src="@drawable/mask"
+                android:visibility="invisible" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/paper"
+                android:layout_alignTop="@id/paper"
+                android:layout_alignEnd="@id/paper"
+                android:layout_alignBottom="@id/paper"
+                android:layout_marginHorizontal="@dimen/margin_seventeen"
+                android:layout_marginVertical="@dimen/_24dp"
+                android:elevation="2dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/_20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.fluidtouch.noteshelf.welcome.WelcomeScreenDrawingView
+                        android:id="@+id/welcome_screen_drawing_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:id="@+id/select_a_pen_image_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/select_a_pen" />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

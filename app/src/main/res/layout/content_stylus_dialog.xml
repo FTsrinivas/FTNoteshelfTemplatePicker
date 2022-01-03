@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:layout_marginStart="@dimen/new_28dp"
+        android:layout_marginEnd="@dimen/new_28dp"
+        android:layout_marginBottom="@dimen/new_15dp"
+        android:text="@string/stylus" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_28dp"
+            android:layout_marginEnd="@dimen/new_28dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/stylus_dialog_enable_switch"
+                style="@style/PopupItemTextStyle"
+                android:layout_marginTop="@dimen/new_15dp"
+                android:text="@string/enable"
+                android:theme="@style/Switch" />
+
+            <include layout="@layout/divider_black" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/stylus_dialog_pressure_sensitivity"
+                style="@style/PopupItemTextStyle"
+                android:text="@string/pressure_sensitivity"
+                android:theme="@style/Switch" />
+
+            <include layout="@layout/divider_black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

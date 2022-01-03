@@ -1,0 +1,31 @@
+# ninja log v5
+0	1677	1638448958	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1677	1815	1638448958	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+1	11	0	clean	c3712e5c32ee8dcd
+1	1653	1638764994	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1653	1771	1638764994	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+0	14	0	clean	c3712e5c32ee8dcd
+1	1559	1638766278	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1560	1682	1638766278	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+1	14	0	clean	c3712e5c32ee8dcd
+1	1289	1638766926	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1289	1433	1638766926	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+0	11	0	clean	c3712e5c32ee8dcd
+1	1095	1638862364	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1095	1214	1638862364	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+0	14	0	clean	c3712e5c32ee8dcd
+1	1425	1638865290	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1425	1573	1638865290	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+0	15	0	clean	c3712e5c32ee8dcd
+2	1547	1638966730	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1547	1682	1638966730	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+0	11	0	clean	c3712e5c32ee8dcd
+1	576	1638968820	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+577	676	1638968820	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+1	13	0	clean	c3712e5c32ee8dcd
+1	1163	1639027518	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1163	1331	1639027518	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+0	13	0	clean	c3712e5c32ee8dcd
+2	1523	1639120012	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a0891f4f208b8b5c
+1523	1653	1639120012	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/arm64-v8a/libpdfsdk_jni.so	4eb2a6bfd96f8f07
+0	13	0	clean	c3712e5c32ee8dcd

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Margins  -->
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_7dp">7dp</dimen>
+    <dimen name="margin_eight">8dp</dimen>
+    <dimen name="_9dp">9dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_13dp">13dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="margin_fifteen">15dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="margin_seventeen">17dp</dimen>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_21dp">21dp</dimen>
+    <dimen name="_22dp">22dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="margin_twenty_five">25dp</dimen>
+    <dimen name="_26dp">26dp</dimen>
+    <dimen name="margin_twenty_eight">28dp</dimen>
+    <dimen name="margin_thirty">30dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_34dp">34dp</dimen>
+    <dimen name="_36dp">36dp</dimen>
+    <dimen name="_38dp">38dp</dimen>
+    <dimen name="margin_forty">40dp</dimen>
+    <dimen name="_43dp">43dp</dimen>
+    <dimen name="_46dp">46dp</dimen>
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="margin_fifty_four">54dp</dimen>
+    <dimen name="_90dp">90dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_44dp">44dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+
+
+    <!--  Material Design Specs  -->
+    <!--  StatusBar  -->
+    <!--  Toolbar  -->
+
+    <!--  ColorSelection  -->
+    <!--  toolbar  -->
+    <dimen name="pen_expand_margin">-100dp</dimen>
+    <dimen name="pen_collapse_margin">-72dp</dimen>
+    <dimen name="pen_circle_size">90dp</dimen>
+    <!--  InputEditText  -->
+    <dimen name="edit_text_minimum_width">80dp</dimen>
+    <dimen name="edit_text_minimum_height">36dp</dimen>
+
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+
+    <dimen name="corner_length">20dp</dimen>
+
+    <!--Crop View-->
+
+    <!--uCrop Activity-->
+
+    <!--  ShelfGroupView  -->
+
+    <!--  ShelfNavigationDrawer  -->
+    <dimen name="shelf_nd_width">296dp</dimen>
+    <!--  SettingsPanel  -->
+    <!--  WritingStylePanel-->
+    <!--  ThumbnailPanel  -->
+    <dimen name="thumbnail_title_size">19sp</dimen>
+
+    <!--  MoveToPanel  -->
+
+    <!--  DocumentToolbar  -->
+    <dimen name="document_toolbar_icon_size">52dp</dimen>
+    <dimen name="document_toolbar_icon_padding">14dp</dimen>
+    <dimen name="document_toolbar_bluetooth_icon_margin_top">9dp</dimen>
+    <dimen name="document_toolbar_bluetooth_icon_margin_end">11dp</dimen>
+
+    <!--  EditText  -->
+    <dimen name="edit_text_initial_height">100dp</dimen>
+    <!--  EditTextToolbar  -->
+
+    <!--  Dialogs  -->
+    <!--  FABOptionsDialog  -->
+    <!--  CategoryOptionsDialog  -->
+    <!--  RenameDialog  -->
+    <dimen name="rename_dialog_width">556dp</dimen>
+    <dimen name="rename_dialog_margin_bottom">25dp</dimen>
+    <!--  NewNoteBookDialog  -->
+    <dimen name="new_notebook_dialog_width">512dp</dimen>
+    <dimen name="new_notebook_dialog_height">517dp</dimen>
+    <dimen name="new_note_book_dialog_paper_width">137dp</dimen>
+    <!--  AlertDialog  -->
+    <dimen name="alert_title_text_size">20sp</dimen>
+    <dimen name="alert_supporting_text_size">16sp</dimen>
+    <dimen name="alert_button_height">36dp</dimen>
+    <dimen name="alert_button_text_size">14sp</dimen>
+    <dimen name="alert_button_spacing">8dp</dimen>
+    <!--  AddNewDialog  -->
+    <!--  UndoRedoDialog  -->
+    <dimen name="undo_redo_dialog_padding">24dp</dimen>
+    <!--  PenRackDialog  -->
+    <dimen name="pen_rack_dialog_width">492dp</dimen>
+    <dimen name="pen_rack_dialog_height">378dp</dimen>
+    <dimen name="pen_rack_dialog_padding">30dp</dimen>
+    <dimen name="pen_rack_dialog_size_pen_type_margin_top">20dp</dimen>
+    <dimen name="pen_rack_dialog_width_fav">316dp</dimen>
+    <dimen name="pen_rack_dialog_fav_item_margin_top">-20dp</dimen>
+    <!--  ShareOptionsDialog  -->
+    <dimen name="share_options_width">240dp</dimen>
+    <!--  FTEditColorsDialog  -->
+    <dimen name="text_size_13">13sp</dimen>
+
+    <!--  PopUps  -->
+    <!--  ThumbnailSelectedOptionsPopUp  -->
+
+    <!--  StoreActivity  -->
+    <dimen name="store_pack_width">310dp</dimen>
+    <dimen name="store_pack_height">200dp</dimen>
+    <dimen name="store_pack_header_title_text_size">20.2sp</dimen>
+    <dimen name="store_pack_header_title_sub_text_size">14sp</dimen>
+    <dimen name="store_pack_banner_text_size">20sp</dimen>
+    <dimen name="store_pack_medium_image_length">113dp</dimen>
+    <dimen name="store_pack_small_image_length">62dp</dimen>
+    <dimen name="store_pack_small_text_title_size">16sp</dimen>
+    <dimen name="store_pack_small_text_sub_title_size">14sp</dimen>
+
+    <!--  ScanActivity  -->
+    <dimen name="scanPadding">16dp</dimen>
+
+    <!--  AddNewPage  -->
+    <dimen name="refresh_more_options_parent_height">121dp</dimen>
+    <dimen name="refresh_parent_padding_top">44dp</dimen>
+    <dimen name="refresh_parent_padding_bottom">20dp</dimen>
+    <dimen name="refresh_parent_padding_horiz">20dp</dimen>
+    <dimen name="refresh_layout_gap">45dp</dimen>
+    <dimen name="refresh_more_options_font">14sp</dimen>
+
+    <!--    integer values-->
+    <dimen name="dimen_108">108dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="_320dp">320dp</dimen>
+    <dimen name="_350dp">350dp</dimen>
+    <dimen name="dimen_68">68dp</dimen>
+    <dimen name="dimen_135">135dp</dimen>
+    <dimen name="dimen_170">170dp</dimen>
+    <dimen name="dimen_520">520dp</dimen>
+    <dimen name="dimen_560">560dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+
+    <dimen name="textsize_twenty">20sp</dimen>
+    <dimen name="margin_two_sixty_two">262dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="margin_one_zero_six">106dp</dimen>
+    <dimen name="_2sp">2sp</dimen>
+    <dimen name="textsize_fourteen">14sp</dimen>
+    <dimen name="margin_one_sixty">160dp</dimen>
+    <dimen name="margin_ninety_four">94dp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+    <dimen name="_13sp">13sp</dimen>
+    <dimen name="textsize_twelve">12sp</dimen>
+    <dimen name="textsize_fifteen">15sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="margin_zero_point_five">0.5dp</dimen>
+    <dimen name="margin_forty_five">45dp</dimen>
+    <dimen name="margin_one_point_two">1.2dp</dimen>
+    <dimen name="_56dp">56dp</dimen>
+    <dimen name="margin_miuns_three">-3dp</dimen>
+    <dimen name="_8sp">8sp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+
+    <dimen name="_114dp">114dp</dimen>
+    <dimen name="_40sp">40sp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_33dp">33dp</dimen>
+    <dimen name="_240dp">240dp</dimen>
+    <dimen name="_256dp">256dp</dimen>
+    <dimen name="_42dp">42dp</dimen>
+    <dimen name="_102dp">102dp</dimen>
+    <dimen name="_104dp">104dp</dimen>
+    <dimen name="_128dp">128dp</dimen>
+    <dimen name="minus_50dp">-50dp</dimen>
+
+    <dimen name="_17sp">17sp</dimen>
+    <dimen name="_580dp">580dp</dimen>
+    <dimen name="_28dp">28dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_19sp">19sp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_23dp">23dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_54dp">54dp</dimen>
+
+    <!-- new dimens-->
+    <dimen name="new_580dp">580dp</dimen>
+    <dimen name="new_700dp">700dp</dimen>
+    <dimen name="new_28dp">28dp</dimen>
+    <dimen name="new_30dp">30dp</dimen>
+    <dimen name="new_31dp">31dp</dimen>
+    <dimen name="new_27dp">27dp</dimen>
+    <dimen name="new_48dp">48dp</dimen>
+    <dimen name="new_5dp">5dp</dimen>
+    <dimen name="new_25dp">25dp</dimen>
+    <dimen name="new_19dp">19dp</dimen>
+    <dimen name="new_86dp">86dp</dimen>
+    <dimen name="new_54dp">54dp</dimen>
+    <dimen name="new_43dp">43dp</dimen>
+    <dimen name="new_15dp">15dp</dimen>
+    <dimen name="new_24dp">24dp</dimen>
+    <dimen name="new_16dp">16dp</dimen>
+    <dimen name="new_17dp">17dp</dimen>
+    <dimen name="new_8dp">8dp</dimen>
+    <dimen name="new_26dp">26dp</dimen>
+    <dimen name="new_22dp">22dp</dimen>
+    <dimen name="new_82dp">82dp</dimen>
+    <dimen name="new_50dp">50dp</dimen>
+    <dimen name="new_20dp">20dp</dimen>
+    <dimen name="new_12dp">12dp</dimen>
+    <dimen name="new_7dp">7dp</dimen>
+    <dimen name="new_72dp">72dp</dimen>
+    <dimen name="new_2dp">2dp</dimen>
+    <dimen name="new_10dp">10dp</dimen>
+    <dimen name="new_4dp">4dp</dimen>
+    <dimen name="new_320dp">320dp</dimen>
+    <dimen name="new_14dp">14dp</dimen>
+    <dimen name="new_46dp">46dp</dimen>
+    <dimen name="new_9dp">9dp</dimen>
+    <dimen name="new_178dp">178dp</dimen>
+    <dimen name="new_60dp">60dp</dimen>
+    <dimen name="new_40dp">40dp</dimen>
+    <dimen name="new_36dp">36dp</dimen>
+    <dimen name="new_11dp">11dp</dimen>
+    <dimen name="new_6dp">6dp</dimen>
+    <dimen name="new_539dp">539dp</dimen>
+    <dimen name="new_3dp">3dp</dimen>
+    <dimen name="new_405dp">405dp</dimen>
+    <dimen name="new_64dp">64dp</dimen>
+    <dimen name="new_1dp">1dp</dimen>
+    <dimen name="new_272dp">272dp</dimen>
+    <dimen name="new_18dp">18dp</dimen>
+    <dimen name="new_244dp">244dp</dimen>
+    <dimen name="new_32dp">32dp</dimen>
+    <dimen name="new_137dp">137dp</dimen>
+    <dimen name="new_170dp">170dp</dimen>
+    <dimen name="new_142dp">142dp</dimen>
+    <dimen name="new_116dp">116dp</dimen>
+    <dimen name="new_118dp">118dp</dimen>
+    <dimen name="new_175dp">175dp</dimen>
+    <dimen name="new_88dp">88dp</dimen>
+    <dimen name="new_578dp">578dp</dimen>
+    <dimen name="new_41dp">41dp</dimen>
+    <dimen name="new_111dp">111dp</dimen>
+    <dimen name="new_110dp">110dp</dimen>
+    <dimen name="new_300dp">300dp</dimen>
+    <dimen name="new_280dp">280dp</dimen>
+    <dimen name="new_52dp">52dp</dimen>
+    <dimen name="new_198dp">198dp</dimen>
+    <dimen name="new_396dp">396dp</dimen>
+    <dimen name="new_38dp">38dp</dimen>
+    <dimen name="new_100dp">100dp</dimen>
+    <dimen name="new_282dp">282dp</dimen>
+    <dimen name="new_350dp">350dp</dimen>
+    <dimen name="new_102dp">102dp</dimen>
+    <dimen name="new_104dp">104dp</dimen>
+    <dimen name="new_21dp">21dp</dimen>
+    <dimen name="new_42dp">42dp</dimen>
+    <dimen name="new_262dp">262dp</dimen>
+    <dimen name="new_200dp">200dp</dimen>
+    <dimen name="new_194dp">194dp</dimen>
+    <dimen name="new_240dp">240dp</dimen>
+    <dimen name="new_128dp">128dp</dimen>
+    <dimen name="new_256dp">256dp</dimen>
+    <dimen name="new_34dp">34dp</dimen>
+    <dimen name="new_56dp">56dp</dimen>
+    <dimen name="new_127dp">127dp</dimen>
+    <dimen name="new_103dp">103dp</dimen>
+    <dimen name="new_13dp">13dp</dimen>
+    <dimen name="new_44dp">44dp</dimen>
+    <dimen name="new_153dp">153dp</dimen>
+    <dimen name="new_120dp">120dp</dimen>
+    <dimen name="new_421dp">421dp</dimen>
+    <dimen name="new_154dp">154dp</dimen>
+    <dimen name="new_35dp">35dp</dimen>
+    <dimen name="new_33dp">33dp</dimen>
+    <dimen name="new_45dp">45dp</dimen>
+    <dimen name="new_322dp">322dp</dimen>
+    <dimen name="new_71dp">71dp</dimen>
+    <dimen name="new_150dp">150dp</dimen>
+    <dimen name="new_400dp">400dp</dimen>
+    <dimen name="new_428dp">428dp</dimen>
+    <dimen name="new_180dp">180dp</dimen>
+    <dimen name="new_442dp">442dp</dimen>
+    <dimen name="new_502dp">502dp</dimen>
+    <dimen name="new_78dp">78dp</dimen>
+    <dimen name="new_213dp">213dp</dimen>
+    <dimen name="new_91dp">91dp</dimen>
+    <dimen name="new_258dp">258dp</dimen>
+    <dimen name="new_205dp">205dp</dimen>
+    <dimen name="new_186dp">186dp</dimen>
+    <dimen name="new_221dp">221dp</dimen>
+
+    <!-- new text sizes -->
+    <dimen name="new_17sp">17sp</dimen>
+    <dimen name="new_11sp">11sp</dimen>
+    <dimen name="new_19sp">19sp</dimen>
+    <dimen name="new_16sp">16sp</dimen>
+    <dimen name="new_14sp">14sp</dimen>
+    <dimen name="new_15sp">15sp</dimen>
+    <dimen name="new_13sp">13sp</dimen>
+    <dimen name="new_12sp">12sp</dimen>
+    <dimen name="new_10sp">10sp</dimen>
+    <dimen name="new_20sp">20sp</dimen>
+    <dimen name="new_40sp">40sp</dimen>
+    <dimen name="new_32sp">32sp</dimen>
+    <dimen name="new_22sp">22sp</dimen>
+
+    <!-- new custom sizes -->
+    <dimen name="dialog_title_text_size">28sp</dimen>
+
+    <dimen name="system_theme_width">50dp</dimen>
+    <dimen name="system_theme_height">72dp</dimen>
+
+    <dimen name="new_notebook_dialog_templates_layout_margin">0dp</dimen>
+
+    <dimen name="welcome_screen1_image1_width">240dp</dimen>
+    <dimen name="welcome_screen1_image1_height">288dp</dimen>
+    <dimen name="welcome_screen1_image2_width">214dp</dimen>
+    <dimen name="welcome_screen1_image2_height">256dp</dimen>
+    <dimen name="welcome_screen1_image3_width">187dp</dimen>
+    <dimen name="welcome_screen1_image3_height">224dp</dimen>
+    <dimen name="welcome_screen_title_text_size">32sp</dimen>
+    <dimen name="welcome_screen4_image_width">200dp</dimen>
+    <dimen name="welcome_screen4_image_height">254dp</dimen>
+    <dimen name="welcome_screen5_image1_width">232dp</dimen>
+    <dimen name="welcome_screen5_image1_height">288dp</dimen>
+    <dimen name="welcome_screen5_image2_width">206dp</dimen>
+    <dimen name="welcome_screen5_image2_height">256dp</dimen>
+    <dimen name="welcome_screen5_image3_width">172dp</dimen>
+    <dimen name="welcome_screen5_image3_height">224dp</dimen>
+    <dimen name="welcome_screen5_notebook_text_margin">23dp</dimen>
+    <dimen name="welcome_feature_text_size">15sp</dimen>
+    <dimen name="welcome_screen1_title_image_margin">39dp</dimen>
+    <dimen name="welcome_screen3_pen_width">61.5dp</dimen>
+    <dimen name="welcome_screen3_pen_height">211.5dp</dimen>
+
+    <dimen name="thumbnail_item_max_height">170dp</dimen>
+    <dimen name="thumbnail_item_min_width">82dp</dimen>
+    <dimen name="thumbnail_item_min_height">82dp</dimen>
+
+    <dimen name="clipart_dialog_tab_layout_width">210dp</dimen>
+    <dimen name="clipart_dialog_back_button_padding">18dp</dimen>
+    <dimen name="new_417dp">417dp</dimen>
+    <dimen name="recycler_spacing_left_margin">20dp</dimen>
+    <dimen name="recycler_spacing_top_bottom_margin">16dp</dimen>
+    <dimen name="default_corner_radius">10dp</dimen>
+    <dimen name="notebook_template_corner_radius">3dp</dimen>
+</resources>

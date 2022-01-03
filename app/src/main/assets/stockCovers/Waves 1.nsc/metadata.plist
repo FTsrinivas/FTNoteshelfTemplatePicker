@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>display_name</key>
+	<string>Waves 1</string>
+	<key>display_name_de</key>
+	<string>Wellen 1</string>
+	<key>display_name_fr</key>
+	<string>Vagues 1</string>
+	<key>display_name_es</key>
+	<string>Ondas 1</string>
+	<key>display_name_it</key>
+	<string>Onde 1</string>
+	<key>display_name_ja</key>
+	<string>波 1</string>
+	<key>display_name_zh-Hans</key>
+	<string>波纹 1</string>
+	<key>display_name_zh-Hant</key>
+	<string>波浪紋 1</string>
+	<key>category_name</key>
+	<string>Waves</string>
+</dict>
+</plist>

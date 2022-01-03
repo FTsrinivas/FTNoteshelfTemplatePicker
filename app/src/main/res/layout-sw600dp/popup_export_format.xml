@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PopupStyle">
+
+    <FrameLayout
+        android:layout_width="@dimen/new_320dp"
+        android:layout_height="@dimen/new_421dp">
+
+        <include layout="@layout/content_export_format_popup" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/refresh_parent_padding_horiz"
+    android:paddingTop="@dimen/refresh_parent_padding_top"
+    android:paddingRight="@dimen/refresh_parent_padding_horiz"
+    android:paddingBottom="@dimen/refresh_parent_padding_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:alpha="0.5"
+            android:background="@drawable/round_corners_white_bg" />
+
+        <LinearLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_dotted_round_corners"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/refresh_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_new_page" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/refresh_label_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="5dp"
+                android:text="@string/add_new_page"
+                android:textColor="@color/blue"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/refresh_more_options_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/refresh_more_options_parent_height"
+        android:layout_marginTop="@dimen/refresh_layout_gap"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:alpha="0.5"
+            android:background="@drawable/round_corners_white_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_dotted_round_corners"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="@string/or_add_new"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/refresh_more_options_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <TextView
+                    android:id="@+id/refresh_more_options_template_text_view"
+                    style="@style/RefreshMoreOptionsTextView"
+                    android:drawableTop="@drawable/page_temp"
+                    android:text="@string/template" />
+
+                <TextView
+                    android:id="@+id/refresh_more_options_photo_text_view"
+                    style="@style/RefreshMoreOptionsTextView"
+                    android:drawableTop="@drawable/page_image"
+                    android:text="@string/photo" />
+
+                <TextView
+                    android:id="@+id/refresh_more_options_import_text_view"
+                    style="@style/RefreshMoreOptionsTextView"
+                    android:drawableTop="@drawable/page_import"
+                    android:text="@string/import_" />
+
+                <TextView
+                    android:id="@+id/refresh_more_options_scan_text_view"
+                    style="@style/RefreshMoreOptionsTextView"
+                    android:drawableTop="@drawable/page_scan"
+                    android:text="@string/scan" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

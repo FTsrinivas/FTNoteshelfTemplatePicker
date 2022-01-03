@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="device">360</integer>
+
+    <integer name="two">1</integer>
+    <integer name="three">2</integer>
+    <integer name="five">4</integer>
+    <integer name="six">5</integer>
+    <integer name="eight">6</integer>
+    <integer name="ten">8</integer>
+    <integer name="twelve">9</integer>
+    <integer name="thirteen">9</integer>
+    <integer name="fourteen">10</integer>
+    <integer name="fifteen">11</integer>
+    <integer name="sixteen">12</integer>
+    <integer name="eighteen">13</integer>
+    <integer name="twenty">15</integer>
+    <integer name="twenty_two">17</integer>
+    <integer name="twenty_four">18</integer>
+    <integer name="thirty">22</integer>
+    <integer name="thirty_six">27</integer>
+    <integer name="forty_six">34</integer>
+    <integer name="forty_nine">37</integer>
+    <integer name="fifty">38</integer>
+    <integer name="fifty_four">40</integer>
+    <integer name="three_hundered">150</integer>
+    <integer name="forty_four">33</integer>
+</resources>

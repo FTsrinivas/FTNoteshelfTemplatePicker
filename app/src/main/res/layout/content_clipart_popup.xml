@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dialog_back_button"
+            style="@style/DialogNavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/clipart_dialog_back_button_padding"
+            android:src="@drawable/back_dark_chevron"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/clipart_tab_layout"
+            android:layout_width="@dimen/clipart_dialog_tab_layout_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_layout_bg"
+            android:gravity="center"
+            android:padding="@dimen/new_2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/pixabay_tab"
+                style="@style/TabSelectorItem"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/new_8dp"
+                android:paddingBottom="@dimen/new_8dp"
+                android:src="@drawable/pixabay" />
+
+            <ImageView
+                android:id="@+id/unsplash_tab"
+                style="@style/TabSelectorItem"
+                android:background="@android:color/transparent"
+                android:paddingTop="@dimen/new_8dp"
+                android:paddingBottom="@dimen/new_8dp"
+                android:src="@drawable/unsplash" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/network_error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/new_82dp"
+                android:layout_height="@dimen/new_60dp"
+                android:src="@drawable/emptyconnection" />
+
+            <TextView
+                android:layout_width="@dimen/new_178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_12dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="@string/no_internet_connection"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/new_12sp" />
+
+            <TextView
+                android:layout_width="@dimen/new_178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_5dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="@string/check_your_connection_and_tap_here_to_reload"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/new_12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/empty_clipart_error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/new_82dp"
+                android:layout_height="@dimen/new_60dp"
+                android:src="@drawable/emptycliparts" />
+
+            <TextView
+                android:id="@+id/empty_clipart_error_text"
+                android:layout_width="@dimen/new_178dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_12dp"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="@string/no_recents"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/new_12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

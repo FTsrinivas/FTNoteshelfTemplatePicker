@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/new_24dp"
+        android:paddingTop="@dimen/new_30dp"
+        android:paddingEnd="@dimen/new_24dp"
+        android:paddingBottom="@dimen/new_30dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/DialogTitleStyle"
+            android:layout_marginBottom="@dimen/new_28dp"
+            android:drawableStart="@drawable/back_dark_chevron"
+            android:drawablePadding="@dimen/new_20dp"
+            android:text="@string/info"
+            android:textSize="@dimen/new_19sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/title" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/PopupItemValueTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/new_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="end"
+                android:text="@string/title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/created" />
+
+            <TextView
+                android:id="@+id/tvCreated"
+                style="@style/PopupItemValueTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/new_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="end"
+                android:text="@string/created"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/updated" />
+
+            <TextView
+                android:id="@+id/tvUpdated"
+                style="@style/PopupItemValueTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/new_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="end"
+                android:text="@string/updated" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/category" />
+
+            <TextView
+                android:id="@+id/tvCategory"
+                style="@style/PopupItemValueTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/new_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="end"
+                android:text="@string/category" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/page" />
+
+            <TextView
+                android:id="@+id/tvPage"
+                style="@style/PopupItemValueTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/new_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="end"
+                android:text="@string/page" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/page_created" />
+
+            <TextView
+                android:id="@+id/tvPageCreated"
+                style="@style/PopupItemValueTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/new_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="end"
+                android:text="@string/page_created" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:text="@string/page_updated" />
+
+            <TextView
+                android:id="@+id/tvPageUpdated"
+                style="@style/PopupItemValueTextStyle"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/new_12dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto"
+                android:gravity="end"
+                android:text="@string/page_updated" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

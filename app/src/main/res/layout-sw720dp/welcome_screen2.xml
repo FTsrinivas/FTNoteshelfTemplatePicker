@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ns_blue"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome_screen2_title"
+            style="@style/WelcomeScreenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/new_10sp"
+            android:text="@string/full_featured_digital_note_taking"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcome_screen_title_text_size"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/new_52dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WelcomeScreenFeature"
+                android:drawableStart="@drawable/icon_notes"
+                android:text="@string/take_notes" />
+
+            <TextView
+                style="@style/WelcomeScreenFeature"
+                android:layout_marginStart="@dimen/new_24dp"
+                android:layout_marginEnd="@dimen/new_24dp"
+                android:drawableStart="@drawable/audio"
+                android:text="@string/record_audio" />
+
+            <TextView
+                style="@style/WelcomeScreenFeature"
+                android:drawableStart="@drawable/icon_photos"
+                android:text="@string/add_photos" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/new_24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WelcomeScreenFeature"
+                android:drawableStart="@drawable/icon_pdf"
+                android:text="@string/markup_your_documents" />
+
+            <TextView
+                style="@style/WelcomeScreenFeature"
+                android:layout_marginStart="@dimen/new_24dp"
+                android:drawableStart="@drawable/icon_shapes"
+                android:text="@string/draw_perfect_shapes" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/new_24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/WelcomeScreenFeature"
+                android:drawableStart="@drawable/icon_covers"
+                android:text="@string/extensive_library_of_covers_and_papers" />
+
+            <TextView
+                style="@style/WelcomeScreenFeature"
+                android:layout_marginStart="@dimen/new_24dp"
+                android:drawableStart="@drawable/icon_textbox"
+                android:text="@string/rich_text_formatting" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/fourthRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

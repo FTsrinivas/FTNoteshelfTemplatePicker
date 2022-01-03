@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PopupStyle">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="@dimen/new_320dp"
+        android:layout_height="@dimen/new_405dp"
+        android:orientation="vertical">
+
+        <include layout="@layout/content_audio_popup" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

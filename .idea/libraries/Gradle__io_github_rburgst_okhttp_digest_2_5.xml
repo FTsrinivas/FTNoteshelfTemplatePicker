@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.rburgst:okhttp-digest:2.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.rburgst/okhttp-digest/2.5/233a2116bd40ce226e1c557e046daad26488c3f3/okhttp-digest-2.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.rburgst/okhttp-digest/2.5/99bd28b85d23e155f2a5db4ee23786074eff8088/okhttp-digest-2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.rburgst/okhttp-digest/2.5/794534291769e0d61179ffd2bfa1b8c4189d3563/okhttp-digest-2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dynamic_id</key>
+	<integer>3</integer>
+	<key>display_name</key>
+	<string>Engineering 2</string>
+	<key>category_name</key>
+	<string>Graphs</string>
+	<key>category_name_ja</key>
+	<string>グラフ用紙</string>
+	<key>category_name_it</key>
+	<string>Carta millimetrata</string>
+	<key>category_name_es</key>
+	<string>Papel cuadriculado</string>
+	<key>category_name_de</key>
+	<string>Millimeterpapier</string>
+	<key>category_name_zh-Hans</key>
+	<string>图表</string>
+	<key>category_name_zh-Hant</key>
+	<string>圖表</string>
+	<key>category_name_fr</key>
+	<string>Papier graphique</string>
+	<key>category_name_ko</key>
+	<string>모눈 종이</string>
+	<key>line_height</key>
+	<integer>22</integer>
+	<key>width</key>
+	<integer>834</integer>
+	<key>height</key>
+	<integer>1048</integer>
+	<key>display_name_ja</key>
+	<string>エンジニアリング2</string>
+	<key>display_name_it</key>
+	<string>Ingegneria 2</string>
+	<key>display_name_es</key>
+	<string>Ingeniería 2</string>
+	<key>display_name_de</key>
+	<string>Engineering 2</string>
+	<key>display_name_zh-Hans</key>
+	<string>对于工程师2</string>
+	<key>display_name_zh-Hant</key>
+	<string>對於工程師2</string>
+	<key>display_name_fr</key>
+	<string>Ingénierie 2</string>
+	<key>display_name_ko</key>
+	<string>エンジニアリング2</string>
+</dict>
+</plist>

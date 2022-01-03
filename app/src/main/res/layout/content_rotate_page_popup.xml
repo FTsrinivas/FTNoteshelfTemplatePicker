@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/new_24dp"
+        android:paddingTop="@dimen/new_30dp"
+        android:paddingEnd="@dimen/new_24dp"
+        android:paddingBottom="@dimen/new_30dp">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            style="@style/DialogTitleStyle"
+            android:layout_marginBottom="@dimen/new_28dp"
+            android:drawableStart="@drawable/back_dark_chevron"
+            android:drawablePadding="@dimen/new_20dp"
+            android:text="@string/rotate_page"
+            android:textSize="@dimen/new_19sp" />
+
+        <TextView
+            android:id="@+id/tvCounterClockwise90"
+            style="@style/PopupItemTextStyle"
+            android:drawableStart="@drawable/rotate"
+            android:drawablePadding="@dimen/new_19dp"
+            android:text="@string/counter_clockwise_90" />
+
+        <include layout="@layout/divider_black" />
+
+        <LinearLayout
+            android:id="@+id/tvClockwise90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/new_28dp"
+                android:layout_height="@dimen/new_28dp"
+                android:scaleType="fitXY"
+                android:scaleX="-1"
+                android:src="@drawable/rotate" />
+
+            <TextView
+                style="@style/PopupItemTextStyle"
+                android:layout_marginStart="@dimen/new_19dp"
+                android:text="@string/clockwise_90" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_black" />
+
+        <TextView
+            android:id="@+id/tvClockwise180"
+            style="@style/PopupItemTextStyle"
+            android:drawableStart="@drawable/rotate180"
+            android:drawablePadding="@dimen/new_19dp"
+            android:text="@string/clockwise_180" />
+
+        <include layout="@layout/divider_black" />
+
+    </LinearLayout>
+
+</ScrollView>

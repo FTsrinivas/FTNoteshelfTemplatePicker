@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  ShelfGroupView  -->
+
+    <!--  ShelfNavigationDrawer  -->
+
+    <!--  SettingsPanel  -->
+
+    <!--  WritingStylePanel-->
+    <!--  ThumbnailPanel  -->
+    <!--  MoveToPanel  -->
+
+    <!--  DocumentToolbar  -->
+
+    <!--  EditText  -->
+
+    <!--  EditTextToolbar  -->
+
+    <!--  Dialogs  -->
+    <!--  FABOptionsDialog-->
+
+    <!--  CategoryOptionsDialog  -->
+
+    <!--  RenameDialog  -->
+
+    <!--  NewNoteBookDialog  -->
+    <!--  AlertDialog  -->
+
+    <!--  AddNewDialog  -->
+    <!--  UndoRedoDialog  -->
+    <!--  PenRackDialog  -->
+    <!--  ShareOptionsDialog  -->
+
+    <!--  FTEditColorsDialog  -->
+
+
+    <!--  PopUps  -->
+    <!--  ThumbnailDuplicatePopUp  -->
+
+    <!--  StoreActivity  -->
+
+    <!--    newly added -->
+    <!--  Margins  -->
+
+    <!--  Material Design Specs  -->
+    <!--  StatusBar  -->
+    <!--  Toolbar  -->
+
+    <!--  ColorSelection  -->
+    <!--  toolbar  -->
+    <!--  InputEditText  -->
+
+    <!--Crop View-->
+
+    <!--uCrop Activity-->
+    <!--  ScanActivity  -->
+    <dimen name="scanPadding">16dp</dimen>
+
+    <!--  AddNewPage  -->
+    <dimen name="refresh_more_options_parent_height">152dp</dimen>
+    <dimen name="refresh_parent_padding_top">57dp</dimen>
+    <dimen name="refresh_parent_padding_bottom">57dp</dimen>
+    <dimen name="refresh_parent_padding_horiz">84dp</dimen>
+    <dimen name="refresh_layout_gap">28dp</dimen>
+    <dimen name="refresh_more_options_font">16sp</dimen>
+
+    <!--    integer values-->
+    <dimen name="_114dp">97dp</dimen>
+    <dimen name="_10sp">8.5sp</dimen>
+    <dimen name="_33dp">28dp</dimen>
+    <dimen name="_240dp">204dp</dimen>
+    <dimen name="_256dp">218dp</dimen>
+    <dimen name="_42dp">36dp</dimen>
+    <dimen name="_102dp">87dp</dimen>
+    <dimen name="_104dp">89dp</dimen>
+    <dimen name="_128dp">109dp</dimen>
+    <dimen name="minus_50dp">-43dp</dimen>
+
+    <dimen name="_17sp">14.45sp</dimen>
+    <dimen name="_580dp">493dp</dimen>
+    <dimen name="_28dp">23.8dp</dimen>
+    <dimen name="_30dp">25.5dp</dimen>
+    <dimen name="_15dp">12.75dp</dimen>
+    <dimen name="_19sp">16.15sp</dimen>
+    <dimen name="_5dp">4.25dp</dimen>
+    <dimen name="_23dp">19.55dp</dimen>
+    <dimen name="_25dp">21.25dp</dimen>
+
+    <!-- New custom dimens -->
+    <dimen name="dialog_title_text_size">32sp</dimen>
+
+    <dimen name="system_theme_width">82dp</dimen>
+
+    <dimen name="new_notebook_dialog_templates_layout_margin">@dimen/new_28dp</dimen>
+
+    <dimen name="welcome_screen1_image1_width">225dp</dimen>
+    <dimen name="welcome_screen1_image1_height">270dp</dimen>
+    <dimen name="welcome_screen1_image2_width">200.25dp</dimen>
+    <dimen name="welcome_screen1_image2_height">240dp</dimen>
+    <dimen name="welcome_screen1_image3_width">175.5dp</dimen>
+    <dimen name="welcome_screen1_image3_height">210dp</dimen>
+    <dimen name="welcome_screen_title_text_size">30sp</dimen>
+    <dimen name="welcome_screen4_image_width">240dp</dimen>
+    <dimen name="welcome_screen4_image_height">300dp</dimen>
+    <dimen name="welcome_screen5_image1_width">217.5dp</dimen>
+    <dimen name="welcome_screen5_image1_height">270dp</dimen>
+    <dimen name="welcome_screen5_image2_width">193.5dp</dimen>
+    <dimen name="welcome_screen5_image2_height">240dp</dimen>
+    <dimen name="welcome_screen5_image3_width">169.5dp</dimen>
+    <dimen name="welcome_screen5_image3_height">210dp</dimen>
+    <dimen name="welcome_screen5_notebook_text_margin">39dp</dimen>
+    <dimen name="welcome_screen3_pen_width">82dp</dimen>
+    <dimen name="welcome_screen3_pen_height">282dp</dimen>
+
+    <dimen name="thumbnail_item_max_height">248dp</dimen>
+    <dimen name="thumbnail_item_min_width">120dp</dimen>
+    <dimen name="thumbnail_item_min_height">120dp</dimen>
+</resources>

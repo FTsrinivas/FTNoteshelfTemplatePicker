@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/new_24dp">
+
+    <include layout="@layout/divider_black" />
+
+    <LinearLayout
+        android:id="@+id/finder_filter_all_pages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/PopupItemTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/all_pages" />
+
+        <ImageView
+            android:id="@+id/finder_filter_all_pages_check_image_view"
+            android:layout_width="@dimen/new_22dp"
+            android:layout_height="@dimen/new_22dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/check_badge" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_black" />
+
+    <LinearLayout
+        android:id="@+id/finder_filter_bookmarked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/PopupItemTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/bookmarked" />
+
+        <ImageView
+            android:id="@+id/finder_filter_bookmarked_check_image_view"
+            android:layout_width="@dimen/new_22dp"
+            android:layout_height="@dimen/new_22dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/check_badge"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_black" />
+
+</LinearLayout>

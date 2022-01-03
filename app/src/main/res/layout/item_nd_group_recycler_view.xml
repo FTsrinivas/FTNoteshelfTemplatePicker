@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_nd_group_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="13dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/roboto_bold"
+        android:text="My Noteshelf"
+        android:textColor="@android:color/black"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/item_nd_group_arrow_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/category_down_dark" />
+</LinearLayout>

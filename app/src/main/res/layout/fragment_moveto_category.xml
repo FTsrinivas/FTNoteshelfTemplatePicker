@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/shelf_nd_width"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/new_24dp"
+        android:paddingTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/category_move_back_button"
+                style="@style/DialogNavButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="0dp"
+                android:paddingTop="@dimen/new_24dp"
+                android:paddingEnd="@dimen/new_24dp"
+                android:paddingBottom="@dimen/new_24dp"
+                android:src="@drawable/back_dark_chevron"
+                android:textSize="@dimen/new_19sp" />
+
+            <TextView
+                style="@style/DialogTitleStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="@dimen/new_19sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="@string/move_to"
+                android:textSize="@dimen/new_19sp" />
+
+            <TextView
+                android:id="@+id/category_move_text_view"
+                style="@style/PopupItemTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/new_24dp"
+                android:paddingTop="@dimen/new_24dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/new_24dp"
+                android:text="@string/move"
+                android:textColor="@color/ns_blue" />
+
+        </LinearLayout>
+
+        <include layout="@layout/divider_black" />
+
+        <EditText
+            android:id="@+id/category_move_new_category_edit_text"
+            style="@style/PopupItemTextStyle"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/category_new_folder_dark"
+            android:drawablePadding="@dimen/new_20dp"
+            android:hint="@string/add_new_category"
+            android:imeOptions="actionDone"
+            android:textSize="@dimen/new_16sp" />
+
+        <include layout="@layout/divider_black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shelf_move_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/new_1dp"
+            android:outlineProvider="bounds"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_category_recycler_view" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/shelf_move_panel_one_child_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:clickable="false"
+        android:fitsSystemWindows="true"
+        android:gravity="start"
+        tools:layout="@layout/fragment_moveto_shelf" />
+
+</RelativeLayout>

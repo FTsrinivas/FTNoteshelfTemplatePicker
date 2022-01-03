@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome Experience -->
+    <string name="welcome_tour">웰컴 투어</string>
+    <string name="skip">건너 뛰기</string>
+    <string name="next">다음</string>
+    <string name="continue_string">계속</string>
+    <string name="welcome_to_noteshelf">Noteshelf에 오신 것을 환영합니다!</string>
+    <string name="full_featured_digital_note_taking">완전한 기능을 제공하는\n디지털 노트 작성</string>
+    <string name="take_notes">노트 작성</string>
+    <string name="record_audio">오디오 녹음</string>
+    <string name="add_photos">사진 추가</string>
+    <string name="markup_documents">마크 업 문서 또는 이미지</string>
+    <string name="draw_perfect_shapes">완벽한 도형 그리기</string>
+    <string name="extensive_library_of_covers_and_papers">다른 표지 및 용지 선택</string>
+    <string name="rich_text_formatting">서식있는 텍스트 형식</string>
+    <string name="great_writing_tools">기존 작성 도구</string>
+    <string name="markup_your_documents">마크 업 문서 또는 이미지</string>
+    <string name="start_note_taking">노트 작성 시작</string>
+
+    <!--  Welcome Screen Authorisation  -->
+
+
+    <!-- Choose cover/paper dialog -->
+    <string name="quick_create">빠른 생성</string>
+    <string name="import_document">문서 가져오기</string>
+    <string name="custom">사용자 지정</string>
+    <string name="portrait">세로</string>
+    <string name="landscape">가로</string>
+    <string name="default_cover">기본 표지</string>
+    <string name="select_cover_style">표지 스타일 선택</string>
+    <string name="customize_cover">커버 커스터마이즈</string>
+    <string name="use_this_cover">이 표지 사용</string>
+    <string name="enter_name">이름을 입력하시오</string>
+    <string name="store_sign_up_text">이 다운로드는 Noteshelf Club 회원에게만 제공됩니다.</string>
+    <string name="store_sign_up_text2">무료로 가입하세요.</string>
+    <string name="name_already_exists">이미 존재하는 이름!</string>
+
+    <!-- Scan document -->
+    <string name="camera">카메라</string>
+    <string name="keep_scan">스캔 보관</string>
+    <string name="cropping_image">이미지 자르기...</string>
+    <string name="capturing_image">이미지 캡처...</string>
+    <string name="import_">가져오기</string>
+    <string name="scan_document">문서 스캔</string>
+    <string name="configuration_change">환경설정 변경</string>
+    <string name="no_scanned_items_found">스캔한 아이템을 찾지 못함</string>
+    <string name="saved">저장되었습니다:</string>
+
+    <!-- Import/Export -->
+    <string name="share">공유</string>
+    <string name="current_page">현재 페이지</string>
+    <string name="all_pages">모든 페이지</string>
+    <string name="select_pages">페이지 선택</string>
+
+
+    <!-- Settings -->
+    <string name="theme">테마</string>
+    <string name="writing_style">작성 스타일</string>
+    <string name="auto_backup">자동 백업</string>
+    <string name="handwriting_recognition">손글씨 인식</string>
+    <string name="stylus">스타일러스</string>
+    <string name="pressure_sensitivity">압력 감도</string>
+    <string name="support">지원</string>
+    <string name="send_support_log">로그 보내기</string>
+    <string name="disable_hyperlinks_when_writing">작성 중 하이퍼 링크 비활성화</string>
+    <string name="change">변경</string>
+    <string name="character_limit_exceeded">글자 수 한도를 초과했습니다. 더 작은 노트북 이름을 선택하십시오.</string>
+    <string name="special_characters_are_not_allowed">특수 문자는 이름으로 사용할 수 없습니다.</string>
+
+    <!-- Auto backup -->
+
+
+    <string name="do_not_backup">백업 안 함</string>
+    <string name="notebooks_to_backup">백업할 노트북</string>
+    <string name="backup_in_progress">백업이 진행 중입니다</string>
+    <string name="backing_up_to_x">%1$s(으)로 백업</string>
+    <string name="back_up_on_wifi_only">WiFi에서만 백업</string>
+    <string name="log">로그</string>
+    <string name="last_back_up_at_time">%1$s에 마지막으로 백업</string>
+    <string name="off">끔</string>
+    <string name="sign_out">로그아웃</string>
+
+    <!-- Evernote Publish -->
+    <string name="evernote_publish">Evernote 게시</string>
+    <string name="publish_notebooks">노트북 게시</string>
+
+    <string name="evernote_error">Evernote 오류</string>
+    <string name="evernote_last_sync_time">%1$s에 마지막으로 동기화 성공</string>
+    <string name="sync_failed_with_reason">동기화 실패 이유: %1$s</string>
+
+    <!-- Add New Dialog -->
+    <string name="change_page_template">페이지 템플릿 변경</string>
+    <string name="photo">사진</string>
+    <string name="quick_create_settings">빠른 생성 설정</string>
+
+    <!-- Bookmarks -->
+    <string name="untitled">제목 없음</string>
+    <string name="bookmark">북마크</string>
+    <string name="bookmark_page">이 페이지 북마크</string>
+    <string name="no_bookmarks_desc">이 보기를 추가하려면 페이지에서 북마크 아이콘 을 누르세요.제목과 색상을 추가하려면 길게 누르세요.</string>
+    <string name="no_bookmarked_pages">북마크된 페이지가 없음</string>
+    <string name="thumbnails">썸네일</string>
+    <string name="list">목록</string>
+
+    <!-- Penrack -->
+    <string name="autoSelectPrevToolTitle">이전 도구 자동 선택</string>
+    <string name="eraseEntireStrokeTitle">전체 스트로크 지우기</string>
+    <string name="eraseHighlighterStrokeTitle">형광펜 만 지우기</string>
+    <string name="highlighters">형광펜</string>
+    <string name="pens">펜</string>
+    <string name="favorites">즐겨찾기</string>
+    <string name="favorites_full">즐겨찾기(가득 참)</string>
+    <string name="added">추가되었습니다!</string>
+    <string name="no_favorite_pens">즐겨 찾는 펜이 없음</string>
+    <string name="no_favorite_des">필기 도구 패널에서 하트를 탭하여 활성 펜을 즐겨보십시오.</string>
+    <string name="show_favorite_toolbar">즐겨 찾기 도구 모음 표시</string>
+    <string name="pen_tools">펜 도구</string>
+
+    <!-- Color picker -->
+    <string name="edit_colors">색상 편집</string>
+    <string name="delete_colors">색상 삭제</string>
+    <string name="choose_color">색상 선택</string>
+    <string name="reset">재설정</string>
+    <string name="tap_to_choose_color">편집할 색상을 누르세요.\n재정렬하려면 누른 상태로 드래그하세요.</string>
+    <string name="Tap_on_a_color">삭제할 색상을 누르세요.</string>
+    <string name="minimum_of_colors">최소 %1$d 가지 색상 필요</string>
+    <string name="color_pallette">색상 팔레트</string>
+    <string name="add">추가</string>
+
+
+    <!-- Finder -->
+    <string name="pages">페이지</string>
+    <string name="duplicate_page_singular">%1$d개의 페이지 복제</string>
+    <string name="duplicate_page_plural">%1$d개의 페이지 복제</string>
+    <string name="delete_page_singular">%1$d개의 페이지 삭제</string>
+    <string name="delete_page_plural">%1$d개의 페이지 삭제</string>
+    <string name="select_all">모두 선택</string>
+    <string name="select_none">선택 안 함</string>
+    <string name="num_selected">%1$d 개 선택됨</string>
+
+    <!-- Smart dialog messages -->
+    <string name="duplicating">복제 중...</string>
+    <string name="saving">저장 중...</string>
+    <string name="exporting">내보내는 중...</string>
+    <string name="importing">가져오는 중...</string>
+    <string name="restoring">복원...</string>
+    <string name="deleting">삭제 중...</string>
+    <string name="opening">여는 중...</string>
+    <string name="generating">생성 중...</string>
+    <string name="creating">작성 중...</string>
+    <string name="changing">바꾸다...</string>
+    <string name="downloading">다운로드 중...</string>
+    <string name="moving">이동 중...</string>
+    <string name="loading">로드 중...</string>
+
+    <!-- Cliparts -->
+    <string name="clipart">클립아트</string>
+    <string name="photos">사진</string>
+
+    <!-- Audio -->
+
+    <string name="audio_recordings">오디오 녹음</string>
+    <string name="set_session">세션 %1$d</string>
+    <string name="no_audio_recordings">이 노트북에는 오디오 녹음이 없습니다.</string>
+    <string name="audio_record_progress_alert_title">오디오 녹음이 진행 중이므로 이 작업을 수행할 수 없습니다.</string>
+    <string name="stop_recording">녹음 중지</string>
+    <string name="play">재생</string>
+    <string name="pause">일시 중지</string>
+    <string name="record">녹음</string>
+
+    <!-- Toast messages and errors -->
+    <string name="camera_error">이 기기는 카메라를 지원하지 않습니다</string>
+    <string name="camera_access_error">카메라 사용 권한이 거부되었습니다, 설정에서 허용해 주시기 바랍니다.</string>
+    <string name="document_access_error">문서 가져오기 권한을 허용해 주셔야 합니다.</string>
+    <string name="gallery_access_error">이미지 추가 권한을 허용해 주셔야 합니다.</string>
+
+    <string name="record_audio_permission_error">오디오 녹음 권한을 허용해 주셔야 합니다.</string>
+    <string name="failed_to_import">가져오기 실패</string>
+    <string name="check_your_internet_connection">인터넷 연결을 확인하고 나중에 다시 시도하세요.</string>
+    <string name="sorry_please_grant_permission_for_camera">죄송합니다! 카메라 사용 권한을 허용해 주시기 바랍니다</string>
+    <string name="wrong_password">잘못된 암호</string>
+    <string name="please_read_and_enable_the_checkbox_to_import">가져오기를 하려면 읽은 후 해당 체크박스를 활성화해주시기 바랍니다</string>
+    <string name="cannot_open_notes_in_trash">쓰레기통에서는 노트를 열 수 없습니다.</string>
+    <string name="delete_category_confirmation">이 카테고리를 삭제하시겠습니까? 모든 문서가 휴지통으로 이동됩니다.</string>
+    <string name="download_error_message">다운로드 실패! 다시 시도해 주십시오.</string>
+    <string name="login_error_message">이 다운로드는 Noteshelf Club 회원에게만 제공됩니다. 무료로 가입하세요.</string>
+    <string name="cannot_use_trash_as_it_is_reserved_by_the_app">해당 앱에서 사용 중인 관계로 \'쓰레기통\' 이름은 사용하실 수 없습니다.</string>
+    <string name="no_internet_connection">인터넷 연결 없음</string>
+    <string name="signed_into_evernote_successfully">Evernote에 성공적으로 로그인했습니다!</string>
+    <string name="unable_to_authenticate_with_evernote">Evernote로 인증할 수 없습니다</string>
+    <string name="file_size_is_too_large">파일 사이즈가 너무 큽니다</string>
+    <string name="unexpected_error_occurred_please_try_again">예기치 않은 오류가 발생했습니다. 나중에 다시 시도하세요.</string>
+    <string name="font_size_cannot_be_below">폰트 사이즈가 다음 사이즈 이하일 수 없습니다:</string>
+    <string name="cropped_image_not_valid_shape">자른 이미지가 유효한 모양이 아닙니다.</string>
+    <string name="cannot_move_to_same_notebook">같은 노트북으로 이동할 수 없습니다</string>
+    <string name="please_enter_atleast_3_characters">최소 3글자 이상을 입력해 주십시오</string>
+    <string name="cannot_move_to_same_location">죄송합니다! 동일한 위치로는 이동할 수 없습니다.</string>
+    <string name="change_login">다른 계정으로 시도해보시겠습니까?</string>
+    <string name="check_your_connection_and_tap_here_to_reload">연결을 확인 후에 여기를 탭해서 다시 로드하세요.</string>
+    <string name="are_you_sure_you_want_to_delete_notebooks_permanently">정말 공책을 영구적으로 삭제하시겠습니까?</string>
+    <string name="this_action_will_turn_off_auto_backup_for_type">이 액션은 %1$s(으)로의 자동 백업을 비활성화합니다.</string>
+    <string name="would_you_like_to_apply_the_changes_to_the_image_before_proceeding_to_another_option">다른 옵션으로 진행하기 전에 이미지에 변경 사항을 적용하시겠습니까?</string>
+
+    <!-- General -->
+    <string name="yes">예</string>
+    <string name="no">아니요</string>
+    <string name="field_cannot_be_empty">해당 필드는 공백으로 둘 수 없습니다</string>
+    <string name="edit">편집</string>
+    <string name="unlock">잠금을 해제</string>
+    <string name="notebook">노트</string>
+    <string name="create">작성</string>
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+    <string name="update">이름변경</string>
+    <string name="new_notebook">새 노트북</string>
+    <string name="page">페이지</string>
+    <string name="download_complete">다운로드 완료</string>
+    <string name="download">다운로드</string>
+    <string name="untitled_notebook">제목 없는 노트북</string>
+
+    <!-- ToolbarMenu -->
+    <string name="view_list">리스트보기</string>
+    <string name="sort">정렬</string>
+    <string name="settings">설정</string>
+    <string name="back_up">백업</string>
+
+    <!-- Dialogs -->
+    <string name="enter_a_name_for_your">%1$s 이름을 입력하세요</string>
+    <string name="notebook_title">노트북 제목</string>
+    <string name="group_title">그룹 제목</string>
+    <string name="rename">이름 바꾸기</string>
+    <string name="rename_category">카테고리 이름 바꾸기</string>
+    <string name="new_category">새 카테고리</string>
+    <string name="new_group">새로운 그룹</string>
+    <string name="category_name">카테고리 이름</string>
+    <string name="notebook_name">노트북 이름</string>
+    <string name="delete_category">카테고리 삭제</string>
+    <string name="add_new">새로 추가</string>
+    <string name="backup_error_details">오류 정보</string>
+    <string name="enter_password">암호 입력</string>
+    <string name="password_title">암호</string>
+    <string name="group">그룹</string>
+    <string name="category">카테고리</string>
+    <string name="clear_page">페이지 지우기</string>
+
+    <!-- Shelf -->
+    <string name="select_a_document">문서 선택</string>
+
+    <string name="trash_title">휴지통</string>
+    <string name="empty_trash">휴지통 비우기</string>
+    <string name="move_to_trash">휴지통으로 이동</string>
+    <string name="name">이름</string>
+    <string name="date">날짜</string>
+
+    <!-- Category panel -->
+    <string name="add_new_category">새 카테고리...</string>
+    <string name="add_new_group">새 그룹...</string>
+    <string name="move_to">이동 대상...</string>
+    <string name="done">완료</string>
+    <string name="move">이동</string>
+
+    <!-- Lasso -->
+    <string name="screenshot">스크린 샷</string>
+    <string name="cut">잘라내기</string>
+    <string name="copy">복사</string>
+    <string name="delete">삭제</string>
+    <string name="resize">크기 조정</string>
+    <string name="color">색상</string>
+    <string name="cut_copy">잘라내기/복사</string>
+    <string name="paste">붙여넣기</string>
+    <string name="cannot_support_heavy_selection">과도한 선택은 지원되지 않습니다</string>
+    <string name="to_text">텍스트</string>
+    <string name="convert_to_text">텍스트로 변환</string>
+    <string name="copy_to_clipboard">클립보드에 복사</string>
+    <string name="convert_to_textbox">텍스트 상자로 변환</string>
+    <string name="text_copied">복사 한 텍스트</string>
+    <string name="advanced_options">고급 옵션</string>
+    <string name="font_size">글꼴 크기</string>
+    <string name="_default">기본값</string>
+    <string name="fit_to_selection">선택에 맞추기</string>
+    <string name="languages">언어</string>
+    <!-- Global Search -->
+    <string name="search">검색</string>
+    <string name="set_titles_count">%1$d 공책</string>
+
+    <string name="restore_backup">백업 복원</string>
+    <string name="export_failed">내보내기가 실패했습니다!</string>
+    <string name="link_not_found">링크를 찾을 수 없습니다.</string>
+    <string name="cancelled">취소 된!</string>
+    <string name="error">오류</string>
+    <string name="unable_to_sign_out_now_please_try_again_later">현재 로그아웃이 불가합니다, 나중에 다시 시도해 주세요.</string>
+    <string name="this_format_not_supported">이 형식은Noteshelf에서 지원되지 않습니다</string>
+    <string name="pinch_and_zoom_to_layout_your_cover">확대 및 축소하여 표지를 레이아웃하세요.</string>
+    <string name="save_for_future_use">나중에 사용할 수 있도록 저장하시겠습니까?</string>
+    <string name="sign_in">로그인</string>
+    <string name="bookmark_name">북마크 이름</string>
+    <string name="get">얻기</string>
+    <string name="undo">실행 취소</string>
+
+
+    <!--  Add New Page  -->
+    <string name="add_new_page">새 페이지 추가</string>
+    <string name="template">템플릿</string>
+    <string name="scan">스캔</string>
+    <string name="or_add_new">또는 새로 추가</string>
+
+    <!-- New Settings -->
+    <string name="about_us">Noteshelf 정보</string>
+    <string name="connect_with_other_noteshelfers">다른 Noteshelfers와 연결</string>
+    <string name="like_us_on_facebook">Facebook에서 좋아요 누르기</string>
+    <string name="follow_us_on_instagram">Instagram에서 팔로우</string>
+    <string name="find_us_on_twitter">Twitter에서 팔로우</string>
+    <string name="noteshelf_copyright">저작권 © 2020 Noteshelf. 판권 소유.</string>
+    <string name="enable">사용</string>
+    <string name="select_language">언어 선택</string>
+    <string name="appearance">도형</string>
+    <string name="handwriting">손글씨</string>
+    <string name="cloud_and_backup">클라우드 및 백업</string>
+    <string name="advanced">고급</string>
+    <string name="free_covers_paper_templates">무료 표지 및 용지 템플릿</string>
+    <string name="about_noteshelf">Noteshelf 정보</string>
+    <string name="themes">테마</string>
+    <string name="show_date_on_shelf">선반에 날짜 표시</string>
+    <string name="linked">연결됨</string>
+    <string name="cloud_logins">클라우드 로그인</string>
+
+    <string name="sample_notebook">견본 노트북</string>
+    <string name="select_paper_template">용지 선택</string>
+    <string name="select_cover_template">표지 선택</string>
+    <string name="no_result_found">결과가 없습니다</string>
+    <string name="cloud_backup_wifi_enable_text">Wi-Fi를 통해서만 백업</string>
+    <string name="user_consent_message"><![CDATA[여기에서 데이터를 공유하고있을 수 있습니다. 자세한 내용은 <a href = http://www.noteshelf.net/ko/privacy.html>개인 정보 보호 정책</a> 을 확인하십시오.]]></string>
+    <string name="agree">동의하다</string>
+    <string name="disable_recognition">인식 비활성화</string>
+    <string name="privacy_policy">개인 정보 보호 정책</string>
+    <string name="scanned_note">스캔 노트</string>
+    <string name="invalid_document">잘못된 문서</string>
+    <string name="i_agree_to">Noteshelf의 개인 정보 보호 정책을 읽고 동의합니다.</string>
+
+    <string name="get_help">도움 받기</string>
+
+    <!-- New Shelf -->
+    <string name="group_inside_group_error">그룹 내 그룹은 현재 지원되지 않습니다.</string>
+    <string name="share_more_items_error">한 번에 하나의 노트북 만 공유 할 수 있습니다. 노트북 1 개를 선택하고 다시 시도하세요.</string>
+    <string name="categories">카테고리</string>
+    <string name="pinned">고정됨</string>
+    <string name="pin_notebook">핀 노트</string>
+    <string name="duplicate">중복</string>
+    <string name="change_cover">표지 변경</string>
+    <string name="create_notebook">노트북 생성</string>
+    <string name="change_template">템플릿 변경</string>
+    <string name="back">백</string>
+    <string name="eraser">지우개</string>
+    <string name="text">정본</string>
+    <string name="lasso">올가미</string>
+    <string name="view">전망</string>
+    <string name="shape">모양</string>
+    <string name="finder">파인더</string>
+    <string name="lock">자물쇠</string>
+    <string name="import_photo">사진 가져오기</string>
+    <string name="cover">표지</string>
+    <string name="more">더 보기</string>
+    <string name="remove_from_recents">최근 항목에서 제거</string>
+    <string name="unpin_notebook">노트북 고정 해제</string>
+    <string name="open">열기</string>
+    <string name="open_in_new_window">새 창에서 열기</string>
+    <string name="notebook_options">노트북 옵션</string>
+    <string name="choose_format">형식 선택</string>
+    <string name="default_paper">기본 용지</string>
+    <string name="random_cover_design">무작위 표지</string>
+    <string name="rotate_page">페이지 회전</string>
+    <string name="go_to_page">페이지로 이동 ...</string>
+    <string name="get_info">정보를 얻다</string>
+    <string name="counter_clockwise_90">반 시계 방향 90 °</string>
+    <string name="clockwise_90">시계 방향으로 90 °</string>
+    <string name="clockwise_180">시계 방향으로 180 °</string>
+    <string name="title">표제</string>
+    <string name="created">만들어진</string>
+    <string name="updated">업데이트</string>
+    <string name="page_created">작성된 페이지</string>
+    <string name="page_updated">페이지 업데이트</string>
+    <string name="backup">백업</string>
+    <string name="input_goto_page">1 ~ %1$d 사이에 입력</string>
+    <string name="on"> 켜짐</string>
+    <string name="info">정보</string>
+    <string name="select">선택</string>
+    <string name="bookmarked">북마크 완료</string>
+
+    <!--  Miscellaneous  -->
+    <string name="my_notes">내 노트</string>
+    <string name="no_papers_available">사용 가능한 용지 없음</string>
+    <string name="redo">다시 실행</string>
+    <string name="free_downloads">무료 다운로드</string>
+    <string name="noteshelf_club">Noteshelf Club</string>
+    <string name="signed_in_as">로 로그인</string>
+    <string name="indexing_page_num">인덱싱 페이지 %1$d</string>
+    <string name="please_enter_valid_color">올바른 색상 입력하세요</string>
+    <string name="logout">로그아웃</string>
+    <string name="app_will_store_your_password">Noteshelf는 귀하의 패스워드를 안전하게 보관할 필요가 있습니다. 체크를 통해 수락해 주시기 바랍니다.</string>
+    <string name="stop">중지</string>
+    <string name="apply">적용</string>
+    <string name="no_band">밴드 없음</string>
+    <string name="transparent_band">투명 밴드</string>
+    <string name="blurred_band">흐려진 밴드</string>
+    <string name="bottom_photo">하단 사진</string>
+    <string name="cut_out_photo">컷아웃 사진</string>
+    <string name="mosaic_photo">모자이크 사진</string>
+    <string name="options">옵션</string>
+    <string name="page_from_template">템플릿으로 새 페이지 작성</string>
+    <string name="page_from_photo">사진 앱의 새 페이지</string>
+
+    <string name="recent">최근 항목</string>
+    <string name="loading_more">로드 더…</string>
+    <string name="new_audio_note">새로운 오디오 노트</string>
+
+    <string name="backup_your_notes_to_dropbox_or_google_drive">Dropbox 또는 Google Drive에 메모 백업</string>
+
+
+    <string name="please_accept_terms_and_conditions_to_continue">계속하려면 이용 약관에 동의하십시오.</string>
+    <string name="accept">동의 함</string>
+    <string name="bring_to_front">전면에 가져오기</string>
+    <string name="send_to_back">뒤로 보내기</string>
+    <string name="hide_with_arrow">숨는 장소</string>
+    <string name="more_with_arrow">더 보기</string>
+    <string name="where_is_your_backup">백업은 어디에 있습니까?</string>
+    <string name="sync_has_not_started_yet">동기화가 아직 시작되지 않았습니다.</string>
+    <string name="photo_library">사진 자료실</string>
+    <string name="media_library">미디어 라이브러리</string>
+    <string name="insert_from">다음에서 삽입</string>
+    <string name="no_recents">최근 없음</string>
+    <string name="illustrations">삽화</string>
+    <string name="animals">동물</string>
+    <string name="animals_and_nature">동물 및 자연</string>
+    <string name="arts">기예</string>
+    <string name="athletics">체육 실기</string>
+    <string name="business">사업</string>
+    <string name="fashion">패션</string>
+    <string name="featured">추천</string>
+    <string name="film">필름</string>
+    <string name="health">건강</string>
+    <string name="history">역사</string>
+    <string name="interiors">인테리어</string>
+    <string name="technology">과학 기술</string>
+    <string name="textures">텍스처</string>
+    <string name="wallpapers">월페이퍼</string>
+    <string name="travel_and_places">여행</string>
+    <string name="food_and_drink">식음료</string>
+    <string name="bookmark_info">빠른 액세스를위한 북마크 페이지,</string>
+    <string name="vectors">벡터</string>
+    //HMS auth service
+    <string name="phone">전화</string>
+    <string name="email">이메일</string>
+    <string name="country_code">국가 코드</string>
+    <string name="password">암호</string>
+    <string name="phone_number">전화 번호</string>
+    <string name="verify_code">코드 확인</string>
+    <string name="send">보내다</string>
+    <string name="login">로그인</string>
+    <string name="login_anonymous">익명 로그인</string>
+    <string name="register">레지스터</string>
+    <string name="register_info">계정이 없다?</string>
+    <string name="password_tips">비밀번호가 있으면 비밀번호로 로그인 할 수 있고 그렇지 않으면 인증 코드로 로그인 할 수 있습니다.</string>
+    <string name="password_register_tips">초기 암호를 설정하는이 단계는 선택 사항입니다. \ n 계정을 만들 때 초기 암호를 설정할 수 있으며 다음에 로그인 할 때 암호를 사용할 수 있습니다. 물론이 암호는 언제든지 변경할 수 있습니다.</string>
+    <string name="title_avatar">화신</string>
+    <string name="title_nickname">별명</string>
+    <string name="title_phone">전화 번호</string>
+    <string name="defNickName">내 별명</string>
+    <string name="btnSingOutTxt">로그 아웃</string>
+    <string name="set">놓음</string>
+    <string name="title_activity_settings">설정</string>
+    <string name="link">링크</string>
+    <string name="unlink">풀리다</string>
+    <string name="delete_user">사용자 삭제</string>
+    <string name="update_email">이메일 업데이트</string>
+    <string name="update_phone">전화 업데이트</string>
+    <string name="update_password">비밀번호 업데이트</string>
+    <string name="reset_password">암호를 재설정</string>
+    <string name="verification_code_success">확인 코드가 성공적으로 전송되었습니다.</string>
+    <string name="verification_code_fail">확인 코드를 보내지 못했습니다.</string>
+    <string name="privacy_policy_link">&#160;<u>개인 정보 보호 정책</u></string>
+
+    <!-- Recognition Languages -->
+    <string name="english_uk">영어 (미국)</string>
+    <string name="english_us">영어 (영국)</string>
+    <string name="chinese_simplified">중국어 간체</string>
+    <string name="chinese_traditional">중국 전통</string>
+    <string name="german">독일 사람</string>
+    <string name="french">프랑스 국민</string>
+    <string name="spanish">스페인 사람</string>
+    <string name="italian">이탈리아 사람</string>
+    <string name="japanese">일본어</string>
+    <string name="portugal">포르투갈 인</string>
+    <string name="korean">한국어</string>
+    <string name="africans">아프리카 인</string>
+    <string name="albanian">알바니아 사람</string>
+    <string name="armenian">아르메니아의</string>
+    <string name="azeri">아제리어</string>
+    <string name="belarusian">벨로루시 어</string>
+    <string name="bulgarian">불가리아 사람</string>
+    <string name="chinese_hongkong">중국어 (홍콩)</string>
+    <string name="croatian">크로아티아어</string>
+    <string name="czech">체코 사람</string>
+    <string name="danish">덴마크 말</string>
+    <string name="dutch_belgium">네덜란드어 (벨기에)</string>
+    <string name="dutch_netherlands">네덜란드어 (네덜란드)</string>
+    <string name="english_canada">영어 (캐나다)</string>
+    <string name="estonian">에스토니아 사람</string>
+    <string name="finnish">핀란드어</string>
+    <string name="french_canada">프랑스어 (캐나다)</string>
+    <string name="galician">갈리시아어</string>
+    <string name="georgian">조르지아 주 사람</string>
+    <string name="german_austria">독일어 (오스트리아)</string>
+    <string name="greek">그리스 사람</string>
+    <string name="hungarian">헝가리 인</string>
+    <string name="indonesian">인도네시아 인</string>
+    <string name="irish">아일랜드의</string>
+    <string name="icelandic">아이슬란드 어</string>
+    <string name="kazakh">카자흐어</string>
+    <string name="latvian">라트비아 사람</string>
+    <string name="lithuanian">리투아니아 사람</string>
+    <string name="macedonian">마케도니아 어</string>
+    <string name="malay">말레이 사람</string>
+    <string name="mongolian">몽고 어</string>
+    <string name="norwegian">노르웨이어</string>
+    <string name="polish">폴란드어</string>
+    <string name="portuguese_brazil">포르투갈어 (브라질)</string>
+    <string name="romanian">루마니아어</string>
+    <string name="russian">러시아어</string>
+    <string name="serbian_cyrillic">세르비아어 (키릴 자모)</string>
+    <string name="serbian_latin">세르비아어 (라틴)</string>
+    <string name="slovak">슬로바키아어</string>
+    <string name="slovenian">슬로베니아어</string>
+    <string name="spanish_mexico">스페인어 (멕시코)</string>
+    <string name="spanish_spain">S스페인어 (스페인)</string>
+    <string name="swedish">스웨덴어</string>
+    <string name="tatar">타타르</string>
+    <string name="turkish">터키어</string>
+    <string name="ukrainian">우크라이나어</string>
+    <string name="vietnamese">베트남어</string>
+    <string name="swahili_tanzania">스와힐리어 (탄자니아)</string>
+    <string name="bosnian">보스니아 어</string>
+    <string name="cebuano_philippines">세부 아노 (필리핀)</string>
+    <string name="english_philippines">영어 (필리핀)</string>
+    <string name="filipino_philippines">필리핀 (필리핀)</string>
+    <string name="malagasy_madagascar">말라가시 (마다가스카르)</string>
+    <string name="spanish_colombia">스페인어 (콜롬비아)</string>
+    <string name="quick_access_gesture">빠른 액세스 제스처</string>
+    <string name="quick_access_gesture_detail">노트북 내부 화면 왼쪽 가장자리에서 스와이프하면 빠른 액세스 메뉴에 접근할 수 있습니다.</string>
+    <string name="thumbnails_gesture">썸네일 제스처</string>
+    <string name="thumbnails_gesture_detail">노트북 내 화면 오른쪽 가장자리에서 스와이프하면 썸네일 보기에 액세스할 수 있습니다.</string>
+    <string name="disable_hyperlinks_detail">펜, 형광펜 또는 지우개 사용 시 의도하지 않게 하이퍼링크가 활성화되지 않도록 하세요.</string>
+
+    <!--  App Rating  -->
+    <string name="store_rating">Noteshelf를 즐기십니까?</string>
+    <string name="rating_message">잠시 시간을내어 PlayStore에서 우리를 검토하십시오. 그것은 우리에게 매우 도움이 될 것입니다!</string>
+    <string name="rating_message_huawei">잠시 시간을내어 App Gallery에서 우리를 검토하십시오. 그것은 우리에게 매우 도움이 될 것입니다!</string>
+    <string name="rating_message_samsung">잠시 시간을내어 Galaxy Store에서 우리를 검토하십시오. 그것은 우리에게 매우 도움이 될 것입니다!</string>
+    <string name="later">나중에 상기시켜 줘</string>
+    <string name="rate_now">리뷰 쓰기</string>
+    <string name="no_thanks">괜찮아요</string>
+    <string name="insert_page_above">위에 페이지 삽입</string>
+    <string name="insert_page_below">아래에 페이지 삽입</string>
+    <string name="end_date">종료일</string>
+    <string name="start_date">시작일</string>
+    <string name="more_than_twelve_months_gap">기간이 12 개월을 초과합니다! 더 짧은 기간을 선택하십시오.</string>
+    <string name="start_date_eariler_than_end_date">기간이 12 개월을 초과합니다! 더 짧은 기간을 선택하십시오.</string>
+    <string name="air_action_btnPress">펜 변경</string>
+    <string name="air_action_btnDoubleClick">펜 랙을 엽니 다</string>
+    <string name="air_action_btnSwipeUp">확대</string>
+    <string name="air_action_btnSwipedown">축소</string>
+    <string name="air_action_btnCircleCW">파인더 열기</string>
+    <string name="air_action_btnNext">다음 페이지</string>
+    <string name="air_action_btnPrev">이전 페이지</string>
+    <string name="air_action_btnCircleCCW">빠른 접근</string>
+    <string name="whats_new">새로운 소식</string>
+    <string name="air_actions_desc">S 펜을 흔들어 장치에서 Noteshelf를 제어합니다. 설정> Air Actions> Noteshelf로 이동하여 자세히 알아보세요.</string>
+    <string name="air_actions_title">S 펜 에어 액션이 왔습니다!</string>
+    <string name="unable_to_authenticate">인증할 수 없음</string>
+    <string name="connect_to_webdav">WebDAV에 연결</string>
+    <string name="username">아이디</string>
+    <string name="connect">연결</string>
+    <string name="webdav_dialog_alert">서버를 찾을 수 없습니다. 서버 URL을 확인하고 다시 시도하십시오.</string>
+    <string name="select_backup_location">백업 위치 선택</string>
+    <string name="logged_in_as"><![CDATA[<b>%1$s</b]]> 로 로그인했습니다.</string>
+    <string name="connect_through">%1$s을 통해 연결됨</string>
+    <string name="backup_location">백업 위치</string>
+    <string name="webdav_backup_location_error">호스트 서버가 귀하의 요청을 거부했습니다. 계정에 폴더 수정 권한이 있는지 확인하고 다시 시도하십시오.</string>
+    <string name="backup_to_">%1$s(으)로 백업</string>
+    <string name="connecting">연결 중...</string>
+
+    <string name="what_s_new">의 새로운 기능</string>
+    <string name="webdav_and_">WebDAV 및 OneDrive 지원\n스터디 플래너</string>
+    <string name="webdav_and_one">WebDAV 및 OneDrive에 백업</string>
+    <string name="webdav_and_one_sample">데이터를 안전하게 보관하세요. 이제 백업 및 복구를 위해 WebDAV 및 OneDrive를 지원합니다.</string>
+    <string name="product_updates">우리는 Noteshelf를 최대한 활용할 수 있는 팁과 트릭을 게시합니다. 또한 전 세계 사용자의 영감을 주는 메모를 공유합니다.</string>
+    <string name="see_what_s_new">새로운 기능 확인</string>
+    <string name="page_rotation">페이지 회전</string>
+    <string name="follow_us">우리를 따르라</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="rotate">이제 장치를 돌리지 않고도 노트북 페이지를 회전할 수 있습니다.</string>
+    <string name="test_sample">Test Sample</string>
+    <string name="test_description">Fictum, deserunt mollit anim laborum astutumque! Vivamus sagittis lacus vel augue laoreet rutrum.</string>
+    <string name="get_back_to_school_in_style">스타일에 학교에 돌아 가기를 잡아!</string>
+    <string name="study_planner_desc">새로운 스터디 플래너를 사용하여 과제를 추적하고 일정을 계획하십시오. 지금 무료 다운로드 섹션에서 다운로드하십시오!</string>
+    <string name="study_planners">스터디 플래너</string>
+
+</resources>

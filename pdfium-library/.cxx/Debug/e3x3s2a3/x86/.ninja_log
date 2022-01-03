@@ -1,0 +1,15 @@
+# ninja log v5
+0	11	0	clean	c3712e5c32ee8dcd
+0	10	0	clean	c3712e5c32ee8dcd
+0	12	0	clean	c3712e5c32ee8dcd
+0	12	0	clean	c3712e5c32ee8dcd
+0	15	0	clean	c3712e5c32ee8dcd
+0	17	0	clean	c3712e5c32ee8dcd
+0	11	0	clean	c3712e5c32ee8dcd
+0	571	1638968821	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	c23a8e62c9443c01
+571	648	1638968821	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/x86/libpdfsdk_jni.so	cb5123fb21a7c97
+0	13	0	clean	c3712e5c32ee8dcd
+0	12	0	clean	c3712e5c32ee8dcd
+1	789	1639373803	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	c23a8e62c9443c01
+789	923	1639373803	/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/e3x3s2a3/obj/x86/libpdfsdk_jni.so	cb5123fb21a7c97
+0	13	0	clean	c3712e5c32ee8dcd
