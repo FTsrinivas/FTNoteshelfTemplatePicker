@@ -4,12 +4,9 @@ import android.content.Context;
 import android.util.Log;
 
 import com.fluidtouch.dynamicgeneration.inteface.TemplatesGeneratorInterface;
-import com.fluidtouch.noteshelf.FTApp;
 import com.fluidtouch.noteshelf.documentframework.Utilities.FTConstants;
 import com.fluidtouch.noteshelf.models.theme.FTNDynamicTemplateTheme;
-import com.fluidtouch.noteshelf.preferences.SystemPref;
 import com.fluidtouch.noteshelf.templatepicker.common.util.FTTemplateMoreDetailsInfo;
-import com.fluidtouch.noteshelf.templatepicker.common.util.FTTemplateUtil;
 import com.tom_roush.pdfbox.multipdf.Overlay;
 import com.tom_roush.pdfbox.pdmodel.PDDocument;
 import com.tom_roush.pdfbox.pdmodel.PDPage;
@@ -31,9 +28,9 @@ public class FTContentStretchPDF extends FTDynamicTemplateFormat implements Temp
 
         String pdfsFilePath = null;
 
-        /*Log.d("::TemplatePickerV2:::","Device Size::- FTContentStretchPDF generateTemplate::-" +
+        Log.d("TemplatePicker==>","Device Size::- FTContentStretchPDF generateTemplate::-" +
                 " mPageWidth::-"+mPageWidth+
-                " mPageHeight::-"+mPageHeight);*/
+                " mPageHeight::-"+mPageHeight);
 
         Log.d("TemplatePicker==>"," FTContentStretchPDF generateTemplate mPageWidth::-"+mPageWidth+" mPageHeight::-"+mPageHeight);
         PDPage importedPDFPage;

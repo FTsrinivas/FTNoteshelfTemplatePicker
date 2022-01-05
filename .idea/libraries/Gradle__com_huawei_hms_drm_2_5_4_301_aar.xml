@@ -1,11 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.huawei.hms:drm:2.5.4.301@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dee90f06864d0eb82edf9b30881be8cd/jetified-drm-2.5.4.301/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dee90f06864d0eb82edf9b30881be8cd/jetified-drm-2.5.4.301/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dee90f06864d0eb82edf9b30881be8cd/jetified-drm-2.5.4.301/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c886e871e34867f6ab7273014285f30/transformed/jetified-drm-2.5.4.301/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8c886e871e34867f6ab7273014285f30/transformed/jetified-drm-2.5.4.301/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c886e871e34867f6ab7273014285f30/transformed/jetified-drm-2.5.4.301/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c886e871e34867f6ab7273014285f30/transformed/jetified-drm-2.5.4.301/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />

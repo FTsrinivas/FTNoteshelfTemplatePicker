@@ -6,8 +6,8 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="23"
-8-->C:\Users\Mani\Downloads\30_12_2021_Mod Noteshelf-Android-UI-4 (1)\Mod Noteshelf-Android-UI-4\openCVLibrary344\src\main\AndroidManifest.xml
+8-->/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/openCVLibrary344/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\Mani\Downloads\30_12_2021_Mod Noteshelf-Android-UI-4 (1)\Mod Noteshelf-Android-UI-4\openCVLibrary344\src\main\AndroidManifest.xml
+9-->/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/openCVLibrary344/src/main/AndroidManifest.xml
 10
 11</manifest>

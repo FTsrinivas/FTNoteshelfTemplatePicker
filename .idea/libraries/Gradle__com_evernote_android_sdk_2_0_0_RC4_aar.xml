@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.evernote:android-sdk:2.0.0-RC4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89c0c25378b5e0c621c71a3439ed3f24/jetified-android-sdk-2.0.0-RC4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89c0c25378b5e0c621c71a3439ed3f24/jetified-android-sdk-2.0.0-RC4/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/89c0c25378b5e0c621c71a3439ed3f24/jetified-android-sdk-2.0.0-RC4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8419acb1e589156b34845e5a745a2319/transformed/jetified-android-sdk-2.0.0-RC4/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8419acb1e589156b34845e5a745a2319/transformed/jetified-android-sdk-2.0.0-RC4/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8419acb1e589156b34845e5a745a2319/transformed/jetified-android-sdk-2.0.0-RC4/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8419acb1e589156b34845e5a745a2319/transformed/jetified-android-sdk-2.0.0-RC4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.evernote/android-sdk/2.0.0-RC4/8b7c516045766b9450d73dc904eea96d82567437/android-sdk-2.0.0-RC4-javadoc.jar!/" />

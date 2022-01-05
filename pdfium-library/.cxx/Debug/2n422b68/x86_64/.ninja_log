@@ -1,0 +1,7 @@
+# ninja log v5
+0	561	1641280760	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a6761a9d7f5cad7e
+561	622	1641280760	/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/2n422b68/obj/x86_64/libpdfsdk_jni.so	84274fba03ef4250
+1	11	0	clean	c3712e5c32ee8dcd
+0	11	0	clean	c3712e5c32ee8dcd
+0	577	1641283004	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	a6761a9d7f5cad7e
+577	651	1641283004	/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/2n422b68/obj/x86_64/libpdfsdk_jni.so	84274fba03ef4250

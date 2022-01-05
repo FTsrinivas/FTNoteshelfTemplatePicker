@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.brucetoo.pickview:library:1.2.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b7f614d9ff95ff2953ce50ecdf83227/jetified-library-1.2.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b7f614d9ff95ff2953ce50ecdf83227/jetified-library-1.2.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b7f614d9ff95ff2953ce50ecdf83227/jetified-library-1.2.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8415bd533e86a9ef422eb0df6a0203d4/transformed/jetified-library-1.2.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8415bd533e86a9ef422eb0df6a0203d4/transformed/jetified-library-1.2.3/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8415bd533e86a9ef422eb0df6a0203d4/transformed/jetified-library-1.2.3/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8415bd533e86a9ef422eb0df6a0203d4/transformed/jetified-library-1.2.3/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.brucetoo.pickview/library/1.2.3/824562ec34e9e333e69232a531f3af8af7981cc/library-1.2.3-javadoc.jar!/" />

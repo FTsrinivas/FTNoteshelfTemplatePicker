@@ -37,24 +37,24 @@ public class FTLegalTemplateFormat extends FTDynamicTemplateFormat implements Te
             contentStream.setNonStrokingColor(themeBgRedClrValue,themeBgGreenClrValue,themeBgBlueClrValue);
             contentStream.fill();
 
-            float yCordinate = mTheme.bottomMargin * scale;
-            float startX = page.getCropBox().getLowerLeftX();;
+            float yCordinate = mPageHeight- (1) - (mTheme.bottomMargin * scale);
+            float startX = page.getCropBox().getLowerLeftX();
             float endX = mPageWidth;
 
             /*
              * Code snippet to draw horizontal lines
              */
-            for (int i= 0; i < horizontalLineCount() + 2 ; i++) {
-                contentStream.setLineWidth(3);
+            for (int i= horizontalLineCount(); i >0; i--) {
+                contentStream.setLineWidth(1);
                 contentStream.setLineCapStyle(1);
                 contentStream.setLineJoinStyle(1);
                 contentStream.moveTo(startX, yCordinate);
                 contentStream.lineTo(endX, yCordinate);
 
-                contentStream.setStrokingColor(horizontalLineRedClrValue,
-                        horizontalLineGreenClrValue,horizontalLineBlueClrValue);
+//                contentStream.setStrokingColor(horizontalLineRedClrValue, horizontalLineGreenClrValue,horizontalLineBlueClrValue);
+//                contentStream.setStrokingColor(color);
                 contentStream.stroke();
-                yCordinate += horizontalSpacing + 3;
+                yCordinate -= horizontalSpacing+1;
             }
 
             /*
@@ -113,9 +113,9 @@ public class FTLegalTemplateFormat extends FTDynamicTemplateFormat implements Te
 
     private int horizontalLineCount() {
         int horizontalLineCount;
-        float cellHeight = horizontalSpacing + 3;
+        float cellHeight = horizontalSpacing + 1;
         float consideredPageHeight = (mPageHeight - (mTheme.bottomMargin * scale));
-        int actualCount = (int) Math.floor((consideredPageHeight / cellHeight));
+        int actualCount = (int) Math.round((consideredPageHeight / cellHeight));
         float effectiveHeight = mPageHeight - (mTheme.bottomMargin*scale) - (actualCount * cellHeight);
         if (2 * cellHeight - effectiveHeight >= 10) {
             actualCount++;

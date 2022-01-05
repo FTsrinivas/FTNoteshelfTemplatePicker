@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.fluidtouch.dynamicgeneration.inteface.TemplatesGeneratorInterface;
 import com.fluidtouch.noteshelf.models.theme.FTNDynamicTemplateTheme;
+import com.tom_roush.harmony.awt.AWTColor;
 import com.tom_roush.pdfbox.pdmodel.PDDocument;
 import com.tom_roush.pdfbox.pdmodel.PDPage;
 import com.tom_roush.pdfbox.pdmodel.PDPageContentStream;
@@ -22,12 +23,16 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
     @Override
     public String generateTemplate(FTNDynamicTemplateTheme theme, Context mContext) {
         String pdfsFilePath = null;
+        //Landscape values W_H 137 *94 portrait 136_170
 
         try {
 
             PDDocument doc = new PDDocument();
             PDPage page = new PDPage();
+            Log.d("FTDynamicTemplateFormat==> ","mPageWidth::- "+mPageWidth+"  mPageHeight::- "+mPageHeight);
             PDRectangle mRectangle = new PDRectangle(mPageWidth,mPageHeight);
+//            PDRectangle mRectangle = new PDRectangle(272,340);
+//            PDRectangle mRectangle = new PDRectangle(137,94);
             page.setMediaBox(mRectangle);
             doc.addPage(page);
 
@@ -38,9 +43,12 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
             contentStream.setNonStrokingColor(themeBgRedClrValue,themeBgGreenClrValue,themeBgBlueClrValue);
             contentStream.fill();
 
-            float yCordinate = mPageHeight-1*scale ;
+            float yCordinate = page.getCropBox().getHeight()-(mTheme.bottomMargin*scale);
             float startX = page.getCropBox().getLowerLeftX();;
-            float endX = mPageWidth;
+            float endX = page.getCropBox().getUpperRightX();
+
+            float offset = Math.round((page.getCropBox().getHeight() / mPageHeight) * horizontalSpacing);
+
 
             Log.d("TemplatePicker==>","Line Selected FTRuledTemplateFormat getRedClrValue::-"+horizontalLineRedClrValue+
                     " getGreenClrValue::-"+ horizontalLineGreenClrValue+" getBlueClrValue::-"+horizontalLineBlueClrValue);
@@ -48,16 +56,18 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
              * Code snippet to draw horizontal lines
              */
             for (int i= horizontalLineCount(); i >0; i--) {
-                contentStream.setLineWidth(1);
-                contentStream.setLineCapStyle(1);
-                contentStream.setLineJoinStyle(1);
+                contentStream.setStrokingColor(new AWTColor(horizontalLineRedClrValue,
+                        horizontalLineGreenClrValue,horizontalLineBlueClrValue));
+                contentStream.setLineWidth(2);
+//                contentStream.setLineCapStyle(1);
+//                contentStream.setLineJoinStyle(1);
                 contentStream.moveTo(startX, yCordinate);
                 contentStream.lineTo(endX, yCordinate);
 
-                contentStream.setStrokingColor(horizontalLineRedClrValue,
-                        horizontalLineGreenClrValue,horizontalLineBlueClrValue);
+                /*contentStream.setStrokingColor(horizontalLineRedClrValue,
+                        horizontalLineGreenClrValue,horizontalLineBlueClrValue);*/
                 contentStream.stroke();
-                yCordinate -= horizontalSpacing+1;
+                yCordinate -= offset;
             }
 
             contentStream.close();
@@ -71,13 +81,6 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
             doc.save(pdfsFilePath);
             doc.close();
 
-            //TODO:
-            // comment below code
-            /*if (!checkImageinCache(theme.thumbnailURLPath)) {
-                pdfToBitmap(theme,new File(pdfsFilePath), "Ruled",tempPagesPath,
-                        ftTemplateColorsInfo.getColorName(),
-                        ftLineTypesInfo.getLineType(),mContext);
-            }*/
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -87,7 +90,7 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
 
     private int horizontalLineCount() {
         int horizontalLineCount;
-        float cellHeight = horizontalSpacing + 1;
+        float cellHeight = Math.round(horizontalSpacing/5);
         float consideredPageHeight = (mPageHeight /*- (mTheme.bottomMargin * scale)*/);
         int actualCount = (int) Math.round((consideredPageHeight / cellHeight));
         float effectiveHeight = mPageHeight - (mTheme.bottomMargin*scale) - (actualCount * cellHeight);
@@ -97,12 +100,4 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
         return actualCount;
     }
 
-    private int verticalLineCount() {
-        int verticalLineCount;
-        float cellWidth = verticalSpacing + 3;
-        float consideredPageWidth = mPageWidth;
-        int actualCount = (int) Math.floor((consideredPageWidth / cellWidth));
-        verticalLineCount = actualCount - 1;
-        return verticalLineCount;
-    }
 }

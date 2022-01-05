@@ -1,7 +1,7 @@
-com/thegrizzlylabs/sardineandroid/model/WriteAcl.java
- com.thegrizzlylabs.sardineandroid.model.WriteAcl
 com/thegrizzlylabs/sardineandroid/model/WriteProperties.java
  com.thegrizzlylabs.sardineandroid.model.WriteProperties
+com/thegrizzlylabs/sardineandroid/model/WriteAcl.java
+ com.thegrizzlylabs.sardineandroid.model.WriteAcl
 com/thegrizzlylabs/sardineandroid/model/EntityWithAnyElement.java
  com.thegrizzlylabs.sardineandroid.model.EntityWithAnyElement
 com/thegrizzlylabs/sardineandroid/model/QuotaUsedBytes.java
@@ -17,44 +17,44 @@ com/thegrizzlylabs/sardineandroid/DavPrincipal.java
  com.thegrizzlylabs.sardineandroid.DavPrincipal$PrincipalType
 com/thegrizzlylabs/sardineandroid/model/UnBind.java
  com.thegrizzlylabs.sardineandroid.model.UnBind
-com/thegrizzlylabs/sardineandroid/model/PrincipalURL.java
- com.thegrizzlylabs.sardineandroid.model.PrincipalURL
 com/thegrizzlylabs/sardineandroid/model/Lockentry.java
  com.thegrizzlylabs.sardineandroid.model.Lockentry
+com/thegrizzlylabs/sardineandroid/model/PrincipalURL.java
+ com.thegrizzlylabs.sardineandroid.model.PrincipalURL
 com/thegrizzlylabs/sardineandroid/model/Error.java
  com.thegrizzlylabs.sardineandroid.model.Error
-com/thegrizzlylabs/sardineandroid/model/ReadAcl.java
- com.thegrizzlylabs.sardineandroid.model.ReadAcl
 com/thegrizzlylabs/sardineandroid/model/ReadCurrentUserPrivilegeSet.java
  com.thegrizzlylabs.sardineandroid.model.ReadCurrentUserPrivilegeSet
+com/thegrizzlylabs/sardineandroid/model/ReadAcl.java
+ com.thegrizzlylabs.sardineandroid.model.ReadAcl
 com/thegrizzlylabs/sardineandroid/model/Multistatus.java
  com.thegrizzlylabs.sardineandroid.model.Multistatus
-com/thegrizzlylabs/sardineandroid/model/Activelock.java
- com.thegrizzlylabs.sardineandroid.model.Activelock
 com/thegrizzlylabs/sardineandroid/model/Link.java
  com.thegrizzlylabs.sardineandroid.model.Link
+com/thegrizzlylabs/sardineandroid/model/Activelock.java
+ com.thegrizzlylabs.sardineandroid.model.Activelock
 com/thegrizzlylabs/sardineandroid/model/Propname.java
  com.thegrizzlylabs.sardineandroid.model.Propname
 com/thegrizzlylabs/sardineandroid/model/Property.java
  com.thegrizzlylabs.sardineandroid.model.Property
  com.thegrizzlylabs.sardineandroid.model.Property$PropertyConverter
-com/thegrizzlylabs/sardineandroid/model/Protected.java
- com.thegrizzlylabs.sardineandroid.model.Protected
 com/thegrizzlylabs/sardineandroid/model/SupportedReport.java
  com.thegrizzlylabs.sardineandroid.model.SupportedReport
+com/thegrizzlylabs/sardineandroid/model/Protected.java
+ com.thegrizzlylabs.sardineandroid.model.Protected
 com/thegrizzlylabs/sardineandroid/impl/handler/ExistsResponseHandler.java
  com.thegrizzlylabs.sardineandroid.impl.handler.ExistsResponseHandler
+com/thegrizzlylabs/sardineandroid/model/Limit.java
+ com.thegrizzlylabs.sardineandroid.model.Limit
 com/thegrizzlylabs/sardineandroid/DavResource.java
  com.thegrizzlylabs.sardineandroid.DavResource
  com.thegrizzlylabs.sardineandroid.DavResource$DavProperties
 com/thegrizzlylabs/sardineandroid/impl/SardineException.java
  com.thegrizzlylabs.sardineandroid.impl.SardineException
-com/thegrizzlylabs/sardineandroid/model/Limit.java
- com.thegrizzlylabs.sardineandroid.model.Limit
-com/thegrizzlylabs/sardineandroid/impl/handler/ValidatingResponseHandler.java
- com.thegrizzlylabs.sardineandroid.impl.handler.ValidatingResponseHandler
 com/thegrizzlylabs/sardineandroid/impl/handler/ResourcesResponseHandler.java
  com.thegrizzlylabs.sardineandroid.impl.handler.ResourcesResponseHandler
+com/thegrizzlylabs/sardineandroid/impl/handler/ValidatingResponseHandler.java
+ com.thegrizzlylabs.sardineandroid.impl.handler.ValidatingResponseHandler
 com/thegrizzlylabs/sardineandroid/model/Principal.java
  com.thegrizzlylabs.sardineandroid.model.Principal
 com/thegrizzlylabs/sardineandroid/DavQuota.java
@@ -66,10 +66,10 @@ com/thegrizzlylabs/sardineandroid/DavAce.java
  com.thegrizzlylabs.sardineandroid.DavAce$1
 com/thegrizzlylabs/sardineandroid/impl/handler/InputStreamResponseHandler.java
  com.thegrizzlylabs.sardineandroid.impl.handler.InputStreamResponseHandler
-com/thegrizzlylabs/sardineandroid/model/Collection.java
- com.thegrizzlylabs.sardineandroid.model.Collection
 com/thegrizzlylabs/sardineandroid/model/Unlock.java
  com.thegrizzlylabs.sardineandroid.model.Unlock
+com/thegrizzlylabs/sardineandroid/model/Collection.java
+ com.thegrizzlylabs.sardineandroid.model.Collection
 com/thegrizzlylabs/sardineandroid/Sardine.java
  com.thegrizzlylabs.sardineandroid.Sardine
 com/thegrizzlylabs/sardineandroid/model/Set.java
@@ -86,34 +86,34 @@ com/thegrizzlylabs/sardineandroid/model/Keepalive.java
  com.thegrizzlylabs.sardineandroid.model.Keepalive
 com/thegrizzlylabs/sardineandroid/model/Prop.java
  com.thegrizzlylabs.sardineandroid.model.Prop
-com/thegrizzlylabs/sardineandroid/model/Inherited.java
- com.thegrizzlylabs.sardineandroid.model.Inherited
-com/thegrizzlylabs/sardineandroid/model/PrincipalCollectionSet.java
- com.thegrizzlylabs.sardineandroid.model.PrincipalCollectionSet
 com/thegrizzlylabs/sardineandroid/impl/OkHttpSardine.java
  com.thegrizzlylabs.sardineandroid.impl.OkHttpSardine
  com.thegrizzlylabs.sardineandroid.impl.OkHttpSardine$1
  com.thegrizzlylabs.sardineandroid.impl.OkHttpSardine$1$1
  com.thegrizzlylabs.sardineandroid.impl.OkHttpSardine$AuthenticationCallback
  com.thegrizzlylabs.sardineandroid.impl.OkHttpSardine$AuthenticationInterceptor
-com/thegrizzlylabs/sardineandroid/model/Response.java
- com.thegrizzlylabs.sardineandroid.model.Response
-com/thegrizzlylabs/sardineandroid/model/Bind.java
- com.thegrizzlylabs.sardineandroid.model.Bind
+com/thegrizzlylabs/sardineandroid/model/Inherited.java
+ com.thegrizzlylabs.sardineandroid.model.Inherited
+com/thegrizzlylabs/sardineandroid/model/PrincipalCollectionSet.java
+ com.thegrizzlylabs.sardineandroid.model.PrincipalCollectionSet
 com/thegrizzlylabs/sardineandroid/model/Lockinfo.java
  com.thegrizzlylabs.sardineandroid.model.Lockinfo
 com/thegrizzlylabs/sardineandroid/model/Remove.java
  com.thegrizzlylabs.sardineandroid.model.Remove
-com/thegrizzlylabs/sardineandroid/model/Privilege.java
- com.thegrizzlylabs.sardineandroid.model.Privilege
+com/thegrizzlylabs/sardineandroid/model/Bind.java
+ com.thegrizzlylabs.sardineandroid.model.Bind
+com/thegrizzlylabs/sardineandroid/model/Response.java
+ com.thegrizzlylabs.sardineandroid.model.Response
 com/thegrizzlylabs/sardineandroid/model/SearchRequest.java
  com.thegrizzlylabs.sardineandroid.model.SearchRequest
+com/thegrizzlylabs/sardineandroid/model/Privilege.java
+ com.thegrizzlylabs.sardineandroid.model.Privilege
 com/thegrizzlylabs/sardineandroid/model/Grant.java
  com.thegrizzlylabs.sardineandroid.model.Grant
-com/thegrizzlylabs/sardineandroid/model/All.java
- com.thegrizzlylabs.sardineandroid.model.All
 com/thegrizzlylabs/sardineandroid/model/Report.java
  com.thegrizzlylabs.sardineandroid.model.Report
+com/thegrizzlylabs/sardineandroid/model/All.java
+ com.thegrizzlylabs.sardineandroid.model.All
 com/thegrizzlylabs/sardineandroid/model/Propertyupdate.java
  com.thegrizzlylabs.sardineandroid.model.Propertyupdate
 com/thegrizzlylabs/sardineandroid/model/SyncCollection.java
@@ -132,14 +132,14 @@ com/thegrizzlylabs/sardineandroid/model/Omit.java
  com.thegrizzlylabs.sardineandroid.model.Omit
 com/thegrizzlylabs/sardineandroid/model/SimplePrivilege.java
  com.thegrizzlylabs.sardineandroid.model.SimplePrivilege
-com/thegrizzlylabs/sardineandroid/model/Locktype.java
- com.thegrizzlylabs.sardineandroid.model.Locktype
 com/thegrizzlylabs/sardineandroid/Version.java
  com.thegrizzlylabs.sardineandroid.Version
-com/thegrizzlylabs/sardineandroid/impl/BasicAuthenticator.java
- com.thegrizzlylabs.sardineandroid.impl.BasicAuthenticator
+com/thegrizzlylabs/sardineandroid/model/Locktype.java
+ com.thegrizzlylabs.sardineandroid.model.Locktype
 com/thegrizzlylabs/sardineandroid/util/ElementConverter.java
  com.thegrizzlylabs.sardineandroid.util.ElementConverter
+com/thegrizzlylabs/sardineandroid/impl/BasicAuthenticator.java
+ com.thegrizzlylabs.sardineandroid.impl.BasicAuthenticator
 com/thegrizzlylabs/sardineandroid/model/Resourcetype.java
  com.thegrizzlylabs.sardineandroid.model.Resourcetype
 com/thegrizzlylabs/sardineandroid/model/WriteContent.java
@@ -148,28 +148,28 @@ com/thegrizzlylabs/sardineandroid/model/Propstat.java
  com.thegrizzlylabs.sardineandroid.model.Propstat
 com/thegrizzlylabs/sardineandroid/BuildConfig.java
  com.thegrizzlylabs.sardineandroid.BuildConfig
-com/thegrizzlylabs/sardineandroid/model/Source.java
- com.thegrizzlylabs.sardineandroid.model.Source
 com/thegrizzlylabs/sardineandroid/report/SyncCollectionReport.java
  com.thegrizzlylabs.sardineandroid.report.SyncCollectionReport
  com.thegrizzlylabs.sardineandroid.report.SyncCollectionReport$Result
  com.thegrizzlylabs.sardineandroid.report.SyncCollectionReport$SyncLevel
+com/thegrizzlylabs/sardineandroid/model/Source.java
+ com.thegrizzlylabs.sardineandroid.model.Source
 com/thegrizzlylabs/sardineandroid/model/Locktoken.java
  com.thegrizzlylabs.sardineandroid.model.Locktoken
 com/thegrizzlylabs/sardineandroid/impl/handler/MultiStatusResponseHandler.java
  com.thegrizzlylabs.sardineandroid.impl.handler.MultiStatusResponseHandler
 com/thegrizzlylabs/sardineandroid/model/Self.java
  com.thegrizzlylabs.sardineandroid.model.Self
-com/thegrizzlylabs/sardineandroid/model/Lockscope.java
- com.thegrizzlylabs.sardineandroid.model.Lockscope
 com/thegrizzlylabs/sardineandroid/model/Allprop.java
  com.thegrizzlylabs.sardineandroid.model.Allprop
+com/thegrizzlylabs/sardineandroid/model/Lockscope.java
+ com.thegrizzlylabs.sardineandroid.model.Lockscope
+com/thegrizzlylabs/sardineandroid/report/SardineReport.java
+ com.thegrizzlylabs.sardineandroid.report.SardineReport
 com/thegrizzlylabs/sardineandroid/model/Exclusive.java
  com.thegrizzlylabs.sardineandroid.model.Exclusive
 com/thegrizzlylabs/sardineandroid/impl/handler/LockResponseHandler.java
  com.thegrizzlylabs.sardineandroid.impl.handler.LockResponseHandler
-com/thegrizzlylabs/sardineandroid/report/SardineReport.java
- com.thegrizzlylabs.sardineandroid.report.SardineReport
 com/thegrizzlylabs/sardineandroid/model/Authenticated.java
  com.thegrizzlylabs.sardineandroid.model.Authenticated
 com/thegrizzlylabs/sardineandroid/model/Deny.java
@@ -184,9 +184,9 @@ com/thegrizzlylabs/sardineandroid/model/Propfind.java
  com.thegrizzlylabs.sardineandroid.model.Propfind
 com/thegrizzlylabs/sardineandroid/model/Propertybehavior.java
  com.thegrizzlylabs.sardineandroid.model.Propertybehavior
-com/thegrizzlylabs/sardineandroid/model/Supportedlock.java
- com.thegrizzlylabs.sardineandroid.model.Supportedlock
-com/thegrizzlylabs/sardineandroid/model/Write.java
- com.thegrizzlylabs.sardineandroid.model.Write
 com/thegrizzlylabs/sardineandroid/util/SardineUtil.java
  com.thegrizzlylabs.sardineandroid.util.SardineUtil
+com/thegrizzlylabs/sardineandroid/model/Write.java
+ com.thegrizzlylabs.sardineandroid.model.Write
+com/thegrizzlylabs/sardineandroid/model/Supportedlock.java
+ com.thegrizzlylabs.sardineandroid.model.Supportedlock

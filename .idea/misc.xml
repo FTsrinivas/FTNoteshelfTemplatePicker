@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.22916666666666666" />
         <entry key="app/src/main/res/drawable-xxxhdpi/ic_settings.xml" value="0.1984375" />
         <entry key="app/src/main/res/drawable-xxxhdpi/ic_whatsnew.xml" value="0.1984375" />
         <entry key="app/src/main/res/drawable-xxxhdpi/oval_bg.xml" value="0.1984375" />
@@ -22,6 +23,7 @@
         <entry key="app/src/main/res/layout-sw600dp/content_settings_dialog.xml" value="0.13671875" />
         <entry key="app/src/main/res/layout-sw600dp/dialog_choose_cover_paper.xml" value="0.4984375" />
         <entry key="app/src/main/res/layout-sw600dp/dialog_new_notebook.xml" value="0.4984375" />
+        <entry key="app/src/main/res/layout-sw600dp/dialog_select_cover_style.xml" value="0.496875" />
         <entry key="app/src/main/res/layout-sw600dp/dialog_template_picker_tabs.xml" value="0.4984375" />
         <entry key="app/src/main/res/layout-sw600dp/dialog_whats_new.xml" value="0.13671875" />
         <entry key="app/src/main/res/layout-sw600dp/fragment_whats_new_first.xml" value="0.13671875" />
@@ -38,11 +40,12 @@
         <entry key="app/src/main/res/layout/content_notebook_options_popup.xml" value="0.33229166666666665" />
         <entry key="app/src/main/res/layout/content_settings_dialog.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/layout/content_shelf.xml" value="0.4984375" />
-        <entry key="app/src/main/res/layout/dialog_addtheme.xml" value="0.67" />
+        <entry key="app/src/main/res/layout/dialog_addtheme.xml" value="0.49375" />
         <entry key="app/src/main/res/layout/dialog_choose_cover_paper.xml" value="0.33229166666666665" />
         <entry key="app/src/main/res/layout/dialog_customize_cover.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/layout/dialog_customize_cover_new.xml" value="0.7283333333333334" />
         <entry key="app/src/main/res/layout/dialog_new_notebook.xml" value="0.33229166666666665" />
+        <entry key="app/src/main/res/layout/dialog_select_cover_style.xml" value="0.33125" />
         <entry key="app/src/main/res/layout/dialog_settings.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/layout/dialog_whats_new.xml" value="0.18229166666666666" />
         <entry key="app/src/main/res/layout/divider_black.xml" value="0.4984375" />
@@ -65,10 +68,12 @@
         <entry key="app/src/main/res/layout/template_categories_list_items_lyt_new.xml" value="0.6828125" />
         <entry key="app/src/main/res/layout/template_categories_main_lyt.xml" value="0.4984375" />
         <entry key="app/src/main/res/layout/template_categories_main_lyt_new.xml" value="0.4984375" />
-        <entry key="app/src/main/res/layout/template_category_items_lyt_new.xml" value="0.4984375" />
+        <entry key="app/src/main/res/layout/template_category_items_lyt.xml" value="0.30390625" />
+        <entry key="app/src/main/res/layout/template_category_items_lyt_new.xml" value="0.496875" />
         <entry key="app/src/main/res/layout/template_category_items_new.xml" value="0.4984375" />
         <entry key="app/src/main/res/layout/template_colour_selction_lyt.xml" value="0.4984375" />
         <entry key="app/src/main/res/layout/templates_orientation_lyt.xml" value="0.49765625" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.30390625" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.4984375" />
       </map>
     </option>

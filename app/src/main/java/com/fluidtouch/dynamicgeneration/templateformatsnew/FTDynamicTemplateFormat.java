@@ -1,11 +1,20 @@
 package com.fluidtouch.dynamicgeneration.templateformatsnew;
 
+import static java.lang.Math.max;
+import static java.lang.Math.min;
+
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.util.Log;
+import android.util.SizeF;
 
 import com.fluidtouch.dynamicgeneration.inteface.TemplatesGeneratorInterface;
+import com.fluidtouch.noteshelf.FTApp;
+import com.fluidtouch.noteshelf.commons.utils.FTScreenUtils;
+import com.fluidtouch.noteshelf.commons.utils.ScreenUtil;
 import com.fluidtouch.noteshelf.documentframework.Utilities.FTConstants;
 import com.fluidtouch.noteshelf.models.theme.FTNDynamicTemplateTheme;
+import com.fluidtouch.noteshelf.preferences.SystemPref;
 import com.fluidtouch.noteshelf.templatepicker.common.modelclasses.ColorRGB;
 import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTLineTypes;
 import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTSelectedDeviceInfo;
@@ -37,7 +46,8 @@ public class FTDynamicTemplateFormat {
     float horizontalSpacing = 0.0f;
 
     FTNDynamicTemplateTheme mTheme;
-    float scale = Resources.getSystem().getDisplayMetrics().density;
+    float scale/* = Resources.getSystem().getDisplayMetrics().density*/;
+    int orientation = FTApp.getInstance().getResources().getConfiguration().orientation;
 
     int themeBgRedClrValue   = 255;
     int themeBgGreenClrValue = 255;
@@ -54,7 +64,8 @@ public class FTDynamicTemplateFormat {
 
     public FTDynamicTemplateFormat(FTNDynamicTemplateTheme theme) {
         FTTemplateMoreDetailsInfo ftTemplateMoreDetailsInfo = new FTTemplateMoreDetailsInfo();
-
+        float pageHeight    =   0.0f;
+        float pageWeight    =   0.0f;
         mTheme                          = theme;
 
         FTSelectedDeviceInfo ftSelectedDeviceInfo = theme.selectedDeviceInfo();
@@ -62,6 +73,12 @@ public class FTDynamicTemplateFormat {
             mTheme.width  = ftSelectedDeviceInfo.getPageWidth();
             mTheme.height = ftSelectedDeviceInfo.getPageHeight();
         }*/
+        SizeF thSize = new SizeF(theme.selectedDeviceInfo().getPageWidth(), theme.selectedDeviceInfo().getPageHeight());
+        SizeF aspectSize = FTScreenUtils.INSTANCE.aspectSize(thSize, new SizeF(800f, 1200f));
+        if (theme.isLandscape) {
+            aspectSize = FTScreenUtils.INSTANCE.aspectSize(thSize, new SizeF(1200f, 800f));
+        }
+        scale = thSize.getWidth() / aspectSize.getWidth();
 
         File tempFile = new File(tempPath);
         if (!tempFile.exists()) {
@@ -99,12 +116,62 @@ public class FTDynamicTemplateFormat {
         horizontalSpacing               = (float) mTheme.horizontalSpacing * scale;
         verticalSpacing                 = (float) mTheme.verticalSpacing * scale;
 
-        mPageWidth                      =  mTheme.width;
-        mPageHeight                     =  mTheme.height;
+        //------------------------------------------------------------------------------------------------------------------------------------------------------------
+        boolean isTablet = ScreenUtil.isTablet();
+        int statusBarHeight = FTScreenUtils.INSTANCE.getStatusBarHeight(FTApp.getInstance());
+        int offset =  FTScreenUtils.INSTANCE.getToolbarHeight(FTApp.getInstance(), mTheme.isLandscape, isTablet);
+        int navigationBarHeight =  FTScreenUtils.INSTANCE.getNavigationBarHeight(FTApp.getInstance());
+        boolean isNotchDisplay =  FTScreenUtils.INSTANCE.isNotchDisplay(statusBarHeight);
 
-        Log.d("::TemplatePickerV2:::","Device Size::- FTDynamicTemplateFormat generateTemplate::-" +
-                " mTheme.width::-"+mTheme.width+
-                " mTheme.height::-"+mTheme.height);
+        if (mTheme.height % 10 == 0) {
+            navigationBarHeight = 0;
+        }
+        if (FTApp.getPref().get(SystemPref.LAST_SELECTED_PAPER, "A4 8.3 x 11.7\"\"").equalsIgnoreCase("This Device")) {
+
+            if (ScreenUtil.isTablet()) {
+                if (!mTheme.isLandscape) {
+                    pageWeight= min(mTheme.width, mTheme.height) + (orientation == Configuration.ORIENTATION_LANDSCAPE? navigationBarHeight : 0);
+                    pageHeight  = max(mTheme.width, mTheme.height) - offset +  (orientation == Configuration.ORIENTATION_LANDSCAPE?0 : navigationBarHeight);
+                } else {
+                    pageWeight = max(mTheme.width, mTheme.height) +  (orientation == Configuration.ORIENTATION_PORTRAIT?navigationBarHeight : 0) ;
+                    pageHeight  = min(mTheme.width, mTheme.height) - offset +  (orientation == Configuration.ORIENTATION_PORTRAIT?0 : navigationBarHeight);
+                }
+                Log.d("FTDynamicTemplateFormat==>","FTDynamicTemplateFormat width::-"+ mTheme.width+"  height::-"+ mTheme.height+"\n PageWidth::"+pageWeight +"\t pageHeight::"+pageHeight +"\n orientation:: "+orientation+"\t navBarHeight::"+offset);
+
+
+               /* if (!mTheme.isLandscape) {
+                    pageWeight         = min(mTheme.width, mTheme.height); *//*+ (orientation == Configuration.ORIENTATION_LANDSCAPE ? navigationBarHeight : 0);*//*
+                    pageHeight         = max(mTheme.width, mTheme.height) - offset + (orientation == Configuration.ORIENTATION_LANDSCAPE ? 0 : navigationBarHeight);
+                } else {
+                    pageWeight         = max(mTheme.width, mTheme.height) *//*+ (orientation == Configuration.ORIENTATION_PORTRAIT ? navigationBarHeight : 0)*//*;
+                    pageHeight         = min(mTheme.width, mTheme.height) - offset; *//* + (orientation == Configuration.ORIENTATION_PORTRAIT ? 0 : navigationBarHeight)*//*;
+                }*/
+            } else {
+                if (!mTheme.isLandscape) {
+                    pageWeight        = min(mTheme.width, mTheme.height);
+                    pageHeight        = max(mTheme.width, mTheme.height) - offset + (isNotchDisplay ? statusBarHeight : 0);
+                } else {
+                    pageWeight        = max(mTheme.width, mTheme.height) + (isNotchDisplay ? statusBarHeight : 0);
+                    pageHeight        = min(mTheme.width, mTheme.height) - offset;
+                }
+            }
+            mPageWidth = pageWeight;
+            mPageHeight = pageHeight;
+            Log.d("::TemplatePickerV2:::","Device Size::- FTDynamicTemplateFormat generateTemplate::THIS DEVICE-" +
+                    " mPageWidth::-"+mPageWidth+
+                    " mPageHeight::-"+mPageHeight);
+        } else {
+            mPageWidth = mTheme.width;
+            mPageHeight = mTheme.height;
+            Log.d("::TemplatePickerV2:::","Device Size::- FTDynamicTemplateFormat generateTemplate::NO - THIS DEVICE-" +
+                    " mPageWidth::-"+mPageWidth+
+                    " mPageHeight::-"+mPageHeight);
+        }
+
+       /* mPageWidth                      =  mTheme.width;
+        mPageHeight                     =  mTheme.height;*/
+
+
 
     }
 

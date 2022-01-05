@@ -1,6 +1,5 @@
 package com.fluidtouch.noteshelf.templatepicker.adapters;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -8,17 +7,13 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
-import android.print.PrinterInfo;
-import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
-import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -49,19 +44,14 @@ import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTSelectedD
 import com.fluidtouch.noteshelf.templatepicker.interfaces.AddCustomThemeListener;
 import com.fluidtouch.noteshelf.templatepicker.interfaces.ThumbnailGenCallBack;
 import com.fluidtouch.noteshelf.templatepicker.interfaces.ThumbnailsGenerationListener;
-import com.fluidtouch.noteshelf.templatepicker.models.TemplatesInfoModel;
 import com.fluidtouch.noteshelf2.R;
-import com.google.android.material.imageview.ShapeableImageView;
-import com.google.android.material.shape.CornerFamily;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
 import butterknife.BindView;
@@ -70,6 +60,12 @@ import butterknife.ButterKnife;
 public class FTTemplateDetailedInfoAdapter extends
         BaseRecyclerAdapter<FTNTheme, FTTemplateDetailedInfoAdapter.ThemeViewHolder>
         implements ThumbnailsGenerationListener, FTDiaryDatePickerPopup.DatePickerListener {
+
+
+    static final int PORTRAIT_PAPER_IMAGE_HEIGHT = 170;
+    static final int PORTRAIT_PAPER_IMAGE_WIDHT = 137;
+    static final int LANDSCAPE_PAPER_IMAGE_HEIGHT = 170;
+    static final int LANDSCAPE_PAPER_IMAGE_WIDHT = 170;
 
     private ArrayList<FTNTheme> ftnThemeArrayList;
     AddCustomThemeListener addCustomThemeListener;
@@ -136,6 +132,16 @@ public class FTTemplateDetailedInfoAdapter extends
         childViewHolder.progressbarFrmLyt.setVisibility(View.VISIBLE);
         childViewHolder.template_itemIV.setVisibility(View.GONE);
 
+        //sudocode::
+       /* bitmap = ftnTheme.themeThumbnailOnCallBack(DeviceInfo,line, colour,orientation);
+        Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap,
+                (int) dipToPixels(context, 116),
+                (int) dipToPixels(context, 143),
+                false);
+        Bitmap borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+        BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
+        childViewHolder.template_itemIV.setBackground(ob);*/
+
         //Basic
         if (ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("basic")) {
 
@@ -152,6 +158,7 @@ public class FTTemplateDetailedInfoAdapter extends
                 AsyncTaskRunner aTask = new AsyncTaskRunner();
                 aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew);
             }
+
         }
 
         //Not Basic/Recent/Custom
@@ -199,8 +206,8 @@ public class FTTemplateDetailedInfoAdapter extends
                         childViewHolder.template_itemIV.setBackground(ob);
                     } else {
                         Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap,
-                                (int) dipToPixels(context, 116),
-                                (int) dipToPixels(context, 143),
+                                (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_HEIGHT),
+                                (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_WIDHT),
                                 false);
                         Bitmap borderedBitmap = addWhiteBorder(scaledBitmap, 2);
                         BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
@@ -259,6 +266,7 @@ public class FTTemplateDetailedInfoAdapter extends
 
             if (bitmapRecent != null) {
                 saveImageInDummy(bitmapRecent, context);
+
                 Bitmap borderedBitmap;
                 if (ftnTheme.isCustomTheme) {
                     Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmapRecent,
@@ -268,12 +276,12 @@ public class FTTemplateDetailedInfoAdapter extends
                     if (ftnTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                             (ftnTheme.thumbnailURLPath.toLowerCase())) {
                         Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL TRUE::-");
-                        borderedBitmap = addBlueBorder(scaledBitmap, 4);
+//                        borderedBitmap = addBlueBorder(scaledBitmap, 4);
                     } else {
                         Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL ELSE::-");
-                        borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+//                        borderedBitmap = addWhiteBorder(scaledBitmap, 2);
                     }
-                    BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
+                    BitmapDrawable ob = new BitmapDrawable(context.getResources(), scaledBitmap);
                     childViewHolder.template_itemIV.setBackground(ob);
                 } else {
                     if (ftnTheme.ftThemeType == FTNThemeCategory.FTThemeType.COVER) {
@@ -305,28 +313,33 @@ public class FTTemplateDetailedInfoAdapter extends
                             if (ftnTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                                     (ftnTheme.thumbnailURLPath.toLowerCase())) {
                                 Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL TRUE::-");
-                                borderedBitmap = addBlueBorder(scaledBitmap, 4);
+                                //borderedBitmap = addBlueBorder(scaledBitmap, 4);
                             } else {
                                 Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL ELSE::-");
-                                borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+//                                borderedBitmap = addWhiteBorder(scaledBitmap, 2);
                             }
-
-                            BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
+                            if (position==0) {
+                                scaledBitmap = addBlueBorder(scaledBitmap, 4);
+                            }
+                            BitmapDrawable ob = new BitmapDrawable(context.getResources(), scaledBitmap);
                             childViewHolder.template_itemIV.setBackground(ob);
                         } else {
                             Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmapRecent,
-                                    (int) dipToPixels(context, 116),
-                                    (int) dipToPixels(context, 143),
+                                    (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_WIDHT),
+                                    (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_HEIGHT),
                                     false);
                             if (ftnTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                                     (ftnTheme.thumbnailURLPath.toLowerCase())) {
                                 Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL TRUE::-");
-                                borderedBitmap = addBlueBorder(scaledBitmap, 4);
+//                                borderedBitmap = addBlueBorder(scaledBitmap, 4);
                             } else {
                                 Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL ELSE::-");
-                                borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+//                                borderedBitmap = addWhiteBorder(scaledBitmap, 2);
                             }
-                            BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
+                            if (position==0) {
+                                scaledBitmap = addBlueBorder(scaledBitmap, 4);
+                            }
+                            BitmapDrawable ob = new BitmapDrawable(context.getResources(), scaledBitmap);
                             childViewHolder.template_itemIV.setBackground(ob);
                         }
                     }
@@ -527,8 +540,8 @@ public class FTTemplateDetailedInfoAdapter extends
                         childViewHolder.template_itemIV.setBackground(ob);
                     } else {
                         Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap,
-                                (int) dipToPixels(context, 116),
-                                (int) dipToPixels(context, 143),
+                                (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_WIDHT),
+                                (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_HEIGHT),
                                 false);
                         if (ftRecentTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                                 (ftnTheme.thumbnailURLPath.toLowerCase())) {
@@ -586,8 +599,8 @@ public class FTTemplateDetailedInfoAdapter extends
                     if (ftSelectedDeviceInfo.getLayoutType().contains("port")) {
                         Log.d("TemplatePicker==>", "FTTemplateDetailedInfoAdapter ftSelectedDeviceInfo PORT");
                         scaledBitmap = Bitmap.createScaledBitmap(bitmap,
-                                (int) dipToPixels(context, 116),
-                                (int) dipToPixels(context, 143),
+                                (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_WIDHT),
+                                (int) dipToPixels(context, PORTRAIT_PAPER_IMAGE_HEIGHT),
                                 false);
 
                     } else {
@@ -673,7 +686,7 @@ public class FTTemplateDetailedInfoAdapter extends
         TextView themeName;
 
         @BindView(R.id.template_itemIV)
-        public ShapeableImageView template_itemIV;
+        public ImageView template_itemIV;
 
         @BindView(R.id.tempItemLyt)
         ConstraintLayout tempItemLyt;
@@ -695,11 +708,11 @@ public class FTTemplateDetailedInfoAdapter extends
             }
 
             float radius = context.getResources().getDimension(R.dimen.notebook_template_corner_radius);
-            template_itemIV.setShapeAppearanceModel(template_itemIV
-                    .getShapeAppearanceModel()
-                    .toBuilder()
-                    .setAllCorners(CornerFamily.ROUNDED, radius)
-                    .build());
+//            template_itemIV.setShapeAppearanceModel(template_itemIV
+//                    .getShapeAppearanceModel()
+//                    .toBuilder()
+//                    .setAllCorners(CornerFamily.ROUNDED, radius)
+//                    .build());
 
             setLinearLayoutSpec(progressbarFrmLyt, context, FTSelectedDeviceInfo.selectedDeviceInfo().getLayoutType());
 
@@ -765,15 +778,16 @@ public class FTTemplateDetailedInfoAdapter extends
                 if (FTSelectedDeviceInfo.selectedDeviceInfo().getLayoutType().toLowerCase().contains("port")) {
                     Log.d("TemplatePicker==>", "FTTemplateDetailedInfoAdapter ftSelectedDeviceInfo PORT");
                     scaledBitmap = Bitmap.createScaledBitmap(paperTheme.bitmap,
-                            (int) dipToPixels(context, 116),
-                            (int) dipToPixels(context, 143),
+                            (int) dipToPixels(context, 106),
+                            (int) dipToPixels(context,170),/* (int) dipToPixels(context, (int)((paperTheme.bitmap.getWidth())/2)),
+                            (int) dipToPixels(context,PORTRAIT_PAPER_IMAGE_HEIGHT),*/
                             false);
 
                 } else {
                     Log.d("TemplatePicker==>", "FTTemplateDetailedInfoAdapter ftSelectedDeviceInfo LAND");
                     scaledBitmap = Bitmap.createScaledBitmap(paperTheme.bitmap,
-                            (int) dipToPixels(context, 152),
-                            (int) dipToPixels(context, 106),
+                            (int) dipToPixels(context, 142),
+                            (int) dipToPixels(context, 116),
                             false);
                 }
             }

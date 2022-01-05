@@ -62,7 +62,7 @@
 
     <ImageView
         android:id="@+id/template_itemIV"
-        android:layout_width="@dimen/new_137dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="visible"

@@ -2,39 +2,39 @@ com/tom_roush/pdfbox/pdmodel/interactive/action/PDWindowsLaunchParams.java
  com.tom_roush.pdfbox.pdmodel.interactive.action.PDWindowsLaunchParams
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationTextMarkup.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationTextMarkup
-com/tom_roush/pdfbox/pdmodel/documentinterchange/markedcontent/PDPropertyList.java
- com.tom_roush.pdfbox.pdmodel.documentinterchange.markedcontent.PDPropertyList
 com/tom_roush/pdfbox/filter/FlateFilter.java
  com.tom_roush.pdfbox.filter.FlateFilter
-com/tom_roush/fontbox/ttf/MaximumProfileTable.java
- com.tom_roush.fontbox.ttf.MaximumProfileTable
+com/tom_roush/pdfbox/pdmodel/documentinterchange/markedcontent/PDPropertyList.java
+ com.tom_roush.pdfbox.pdmodel.documentinterchange.markedcontent.PDPropertyList
 com/tom_roush/fontbox/ttf/GlyphDescription.java
  com.tom_roush.fontbox.ttf.GlyphDescription
-com/tom_roush/pdfbox/contentstream/operator/text/EndText.java
- com.tom_roush.pdfbox.contentstream.operator.text.EndText
+com/tom_roush/fontbox/ttf/MaximumProfileTable.java
+ com.tom_roush.fontbox.ttf.MaximumProfileTable
 com/tom_roush/pdfbox/pdmodel/interactive/form/FieldUtils.java
  com.tom_roush.pdfbox.pdmodel.interactive.form.FieldUtils
  com.tom_roush.pdfbox.pdmodel.interactive.form.FieldUtils$KeyValue
  com.tom_roush.pdfbox.pdmodel.interactive.form.FieldUtils$KeyValueKeyComparator
  com.tom_roush.pdfbox.pdmodel.interactive.form.FieldUtils$KeyValueValueComparator
+com/tom_roush/pdfbox/contentstream/operator/text/EndText.java
+ com.tom_roush.pdfbox.contentstream.operator.text.EndText
 com/tom_roush/fontbox/ttf/NamingTable.java
  com.tom_roush.fontbox.ttf.NamingTable
 com/tom_roush/fontbox/cff/FDSelect.java
  com.tom_roush.fontbox.cff.FDSelect
 com/tom_roush/pdfbox/contentstream/operator/state/SetLineWidth.java
  com.tom_roush.pdfbox.contentstream.operator.state.SetLineWidth
-com/tom_roush/pdfbox/pdmodel/font/PDType3Font.java
- com.tom_roush.pdfbox.pdmodel.font.PDType3Font
 com/tom_roush/pdfbox/pdmodel/common/function/PDFunctionType4.java
  com.tom_roush.pdfbox.pdmodel.common.function.PDFunctionType4
-com/tom_roush/pdfbox/multipdf/PDFCloneUtility.java
- com.tom_roush.pdfbox.multipdf.PDFCloneUtility
+com/tom_roush/pdfbox/pdmodel/font/PDType3Font.java
+ com.tom_roush.pdfbox.pdmodel.font.PDType3Font
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationStrikeOut.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationStrikeOut
-com/tom_roush/pdfbox/pdmodel/fdf/FDFCatalog.java
- com.tom_roush.pdfbox.pdmodel.fdf.FDFCatalog
+com/tom_roush/pdfbox/multipdf/PDFCloneUtility.java
+ com.tom_roush.pdfbox.multipdf.PDFCloneUtility
 com/tom_roush/pdfbox/pdmodel/font/PDFontFactory.java
  com.tom_roush.pdfbox.pdmodel.font.PDFontFactory
+com/tom_roush/pdfbox/pdmodel/fdf/FDFCatalog.java
+ com.tom_roush.pdfbox.pdmodel.fdf.FDFCatalog
 com/tom_roush/fontbox/cff/CFFStandardString.java
  com.tom_roush.fontbox.cff.CFFStandardString
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDMarkInfo.java
@@ -43,10 +43,10 @@ com/tom_roush/pdfbox/util/XMLUtil.java
  com.tom_roush.pdfbox.util.XMLUtil
 com/tom_roush/fontbox/type1/Type1Parser.java
  com.tom_roush.fontbox.type1.Type1Parser
-com/tom_roush/fontbox/cff/CFFFont.java
- com.tom_roush.fontbox.cff.CFFFont
 com/tom_roush/pdfbox/filter/ASCII85Filter.java
  com.tom_roush.pdfbox.filter.ASCII85Filter
+com/tom_roush/fontbox/cff/CFFFont.java
+ com.tom_roush.fontbox.cff.CFFFont
 com/tom_roush/pdfbox/pdmodel/graphics/shading/PDShadingType2.java
  com.tom_roush.pdfbox.pdmodel.graphics.shading.PDShadingType2
 com/tom_roush/pdfbox/pdmodel/font/FontInfo.java
@@ -71,10 +71,10 @@ com/tom_roush/fontbox/cff/DataOutput.java
  com.tom_roush.fontbox.cff.DataOutput
 com/tom_roush/pdfbox/text/PDFMarkedContentExtractor.java
  com.tom_roush.pdfbox.text.PDFMarkedContentExtractor
-com/tom_roush/pdfbox/io/ScratchFile.java
- com.tom_roush.pdfbox.io.ScratchFile
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDXFA.java
  com.tom_roush.pdfbox.pdmodel.interactive.form.PDXFA
+com/tom_roush/pdfbox/io/ScratchFile.java
+ com.tom_roush.pdfbox.io.ScratchFile
 com/tom_roush/pdfbox/pdmodel/font/encoding/WinAnsiEncoding.java
  com.tom_roush.pdfbox.pdmodel.font.encoding.WinAnsiEncoding
 com/tom_roush/fontbox/ttf/HorizontalHeaderTable.java
@@ -83,10 +83,10 @@ com/tom_roush/fontbox/cff/CharStringConverter.java
  com.tom_roush.fontbox.cff.CharStringConverter
 com/tom_roush/pdfbox/contentstream/operator/state/SetLineMiterLimit.java
  com.tom_roush.pdfbox.contentstream.operator.state.SetLineMiterLimit
-com/tom_roush/pdfbox/util/Matrix.java
- com.tom_roush.pdfbox.util.Matrix
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationRubberStamp.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationRubberStamp
+com/tom_roush/pdfbox/util/Matrix.java
+ com.tom_roush.pdfbox.util.Matrix
 com/tom_roush/pdfbox/pdmodel/font/PDPanose.java
  com.tom_roush.pdfbox.pdmodel.font.PDPanose
 com/tom_roush/pdfbox/pdmodel/graphics/shading/PDShadingType6.java
@@ -97,28 +97,28 @@ com/tom_roush/pdfbox/pdfwriter/COSStandardOutputStream.java
  com.tom_roush.pdfbox.pdfwriter.COSStandardOutputStream
 com/tom_roush/pdfbox/cos/COSString.java
  com.tom_roush.pdfbox.cos.COSString
-com/tom_roush/pdfbox/io/RandomAccessInputStream.java
- com.tom_roush.pdfbox.io.RandomAccessInputStream
 com/tom_roush/pdfbox/pdmodel/interactive/form/PlainText.java
  com.tom_roush.pdfbox.pdmodel.interactive.form.PlainText
  com.tom_roush.pdfbox.pdmodel.interactive.form.PlainText$Line
  com.tom_roush.pdfbox.pdmodel.interactive.form.PlainText$Paragraph
  com.tom_roush.pdfbox.pdmodel.interactive.form.PlainText$TextAttribute
  com.tom_roush.pdfbox.pdmodel.interactive.form.PlainText$Word
-com/tom_roush/pdfbox/pdmodel/common/PDMetadata.java
- com.tom_roush.pdfbox.pdmodel.common.PDMetadata
+com/tom_roush/pdfbox/io/RandomAccessInputStream.java
+ com.tom_roush.pdfbox.io.RandomAccessInputStream
 com/tom_roush/pdfbox/pdmodel/common/PDPageLabelRange.java
  com.tom_roush.pdfbox.pdmodel.common.PDPageLabelRange
+com/tom_roush/pdfbox/pdmodel/common/PDMetadata.java
+ com.tom_roush.pdfbox.pdmodel.common.PDMetadata
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDBorderEffectDictionary.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDBorderEffectDictionary
 com/tom_roush/fontbox/ttf/CmapSubtable.java
  com.tom_roush.fontbox.ttf.CmapSubtable
  com.tom_roush.fontbox.ttf.CmapSubtable$1
  com.tom_roush.fontbox.ttf.CmapSubtable$SubHeader
-com/tom_roush/pdfbox/contentstream/operator/text/SetFontAndSize.java
- com.tom_roush.pdfbox.contentstream.operator.text.SetFontAndSize
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationSound.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationSound
+com/tom_roush/pdfbox/contentstream/operator/text/SetFontAndSize.java
+ com.tom_roush.pdfbox.contentstream.operator.text.SetFontAndSize
 com/tom_roush/pdfbox/contentstream/operator/graphics/EndPath.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.EndPath
 com/tom_roush/pdfbox/filter/LZWFilter.java
@@ -137,12 +137,12 @@ com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationUnknown.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationUnknown
 com/tom_roush/fontbox/ttf/TTFTable.java
  com.tom_roush.fontbox.ttf.TTFTable
-com/tom_roush/pdfbox/pdmodel/documentinterchange/taggedpdf/PDPrintFieldAttributeObject.java
- com.tom_roush.pdfbox.pdmodel.documentinterchange.taggedpdf.PDPrintFieldAttributeObject
 com/tom_roush/pdfbox/pdmodel/font/ToUnicodeWriter.java
  com.tom_roush.pdfbox.pdmodel.font.ToUnicodeWriter
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationSquareCircle.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationSquareCircle
+com/tom_roush/pdfbox/pdmodel/documentinterchange/taggedpdf/PDPrintFieldAttributeObject.java
+ com.tom_roush.pdfbox.pdmodel.documentinterchange.taggedpdf.PDPrintFieldAttributeObject
 com/tom_roush/pdfbox/contentstream/operator/graphics/CurveToReplicateInitialPoint.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.CurveToReplicateInitialPoint
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDDefaultAppearanceString.java
@@ -153,40 +153,40 @@ com/tom_roush/fontbox/ttf/CFFTable.java
  com.tom_roush.fontbox.ttf.CFFTable
 com/tom_roush/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionDimension.java
  com.tom_roush.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDimension
-com/tom_roush/pdfbox/util/Vector.java
- com.tom_roush.pdfbox.util.Vector
 com/tom_roush/pdfbox/pdfwriter/COSWriterXRefEntry.java
  com.tom_roush.pdfbox.pdfwriter.COSWriterXRefEntry
-com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/PDPropBuild.java
- com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.PDPropBuild
+com/tom_roush/pdfbox/util/Vector.java
+ com.tom_roush.pdfbox.util.Vector
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureElement.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement
+com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/PDPropBuild.java
+ com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.PDPropBuild
 com/tom_roush/pdfbox/rendering/PageDrawer.java
  com.tom_roush.pdfbox.rendering.PageDrawer
  com.tom_roush.pdfbox.rendering.PageDrawer$1
  com.tom_roush.pdfbox.rendering.PageDrawer$TransparencyGroup
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDMarkedContentReference.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDMarkedContentReference
-com/tom_roush/pdfbox/pdmodel/fdf/FDFJavaScript.java
- com.tom_roush.pdfbox.pdmodel.fdf.FDFJavaScript
 com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/COSFilterInputStream.java
  com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.COSFilterInputStream
+com/tom_roush/pdfbox/pdmodel/fdf/FDFJavaScript.java
+ com.tom_roush.pdfbox.pdmodel.fdf.FDFJavaScript
 com/tom_roush/pdfbox/contentstream/operator/color/SetStrokingDeviceRGBColor.java
  com.tom_roush.pdfbox.contentstream.operator.color.SetStrokingDeviceRGBColor
 com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateBuilder.java
  com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.visible.PDFTemplateBuilder
+com/tom_roush/pdfbox/pdmodel/graphics/image/CCITTFactory.java
+ com.tom_roush.pdfbox.pdmodel.graphics.image.CCITTFactory
 com/tom_roush/pdfbox/pdmodel/font/PDCIDFontType2Embedder.java
  com.tom_roush.pdfbox.pdmodel.font.PDCIDFontType2Embedder
  com.tom_roush.pdfbox.pdmodel.font.PDCIDFontType2Embedder$1
  com.tom_roush.pdfbox.pdmodel.font.PDCIDFontType2Embedder$State
-com/tom_roush/pdfbox/pdmodel/graphics/image/CCITTFactory.java
- com.tom_roush.pdfbox.pdmodel.graphics.image.CCITTFactory
 com/tom_roush/harmony/javax/imageio/stream/ImageOutputStream.java
  com.tom_roush.harmony.javax.imageio.stream.ImageOutputStream
-com/tom_roush/pdfbox/pdmodel/graphics/color/PDColorSpace.java
- com.tom_roush.pdfbox.pdmodel.graphics.color.PDColorSpace
 com/tom_roush/pdfbox/pdmodel/interactive/action/PDAction.java
  com.tom_roush.pdfbox.pdmodel.interactive.action.PDAction
+com/tom_roush/pdfbox/pdmodel/graphics/color/PDColorSpace.java
+ com.tom_roush.pdfbox.pdmodel.graphics.color.PDColorSpace
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureNode.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureNode
 com/tom_roush/harmony/javax/imageio/stream/ImageInputStream.java
@@ -207,22 +207,22 @@ com/tom_roush/pdfbox/pdmodel/graphics/PDPostScriptXObject.java
  com.tom_roush.pdfbox.pdmodel.graphics.PDPostScriptXObject
 com/tom_roush/pdfbox/contentstream/operator/state/SetLineCapStyle.java
  com.tom_roush.pdfbox.contentstream.operator.state.SetLineCapStyle
+com/tom_roush/pdfbox/pdmodel/font/FontMapping.java
+ com.tom_roush.pdfbox.pdmodel.font.FontMapping
 com/tom_roush/fontbox/afm/CompositePart.java
  com.tom_roush.fontbox.afm.CompositePart
 com/tom_roush/pdfbox/util/Charsets.java
  com.tom_roush.pdfbox.util.Charsets
-com/tom_roush/pdfbox/pdmodel/font/FontMapping.java
- com.tom_roush.pdfbox.pdmodel.font.FontMapping
 com/tom_roush/pdfbox/pdmodel/graphics/image/JPEGFactory.java
  com.tom_roush.pdfbox.pdmodel.graphics.image.JPEGFactory
-com/tom_roush/pdfbox/io/RandomAccessWrite.java
- com.tom_roush.pdfbox.io.RandomAccessWrite
 com/tom_roush/pdfbox/contentstream/operator/text/NextLine.java
  com.tom_roush.pdfbox.contentstream.operator.text.NextLine
-com/tom_roush/pdfbox/pdmodel/font/PDCIDFont.java
- com.tom_roush.pdfbox.pdmodel.font.PDCIDFont
+com/tom_roush/pdfbox/io/RandomAccessWrite.java
+ com.tom_roush.pdfbox.io.RandomAccessWrite
 com/tom_roush/pdfbox/pdmodel/graphics/blend/NonSeparableBlendMode.java
  com.tom_roush.pdfbox.pdmodel.graphics.blend.NonSeparableBlendMode
+com/tom_roush/pdfbox/pdmodel/font/PDCIDFont.java
+ com.tom_roush.pdfbox.pdmodel.font.PDCIDFont
 com/tom_roush/pdfbox/pdfparser/InputStreamSource.java
  com.tom_roush.pdfbox.pdfparser.InputStreamSource
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationCircle.java
@@ -233,6 +233,8 @@ com/tom_roush/pdfbox/pdmodel/PDPageContentStream.java
  com.tom_roush.pdfbox.pdmodel.PDPageContentStream
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationHighlight.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationHighlight
+com/tom_roush/pdfbox/pdmodel/interactive/form/PDPushButton.java
+ com.tom_roush.pdfbox.pdmodel.interactive.form.PDPushButton
 com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/PDPropBuildDataDict.java
  com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.PDPropBuildDataDict
 com/tom_roush/pdfbox/pdmodel/graphics/blend/BlendMode.java
@@ -249,8 +251,6 @@ com/tom_roush/pdfbox/pdmodel/graphics/blend/BlendMode.java
  com.tom_roush.pdfbox.pdmodel.graphics.blend.BlendMode$7
  com.tom_roush.pdfbox.pdmodel.graphics.blend.BlendMode$8
  com.tom_roush.pdfbox.pdmodel.graphics.blend.BlendMode$9
-com/tom_roush/pdfbox/pdmodel/interactive/form/PDPushButton.java
- com.tom_roush.pdfbox.pdmodel.interactive.form.PDPushButton
 com/tom_roush/pdfbox/pdmodel/common/filespecification/PDFileSpecification.java
  com.tom_roush.pdfbox.pdmodel.common.filespecification.PDFileSpecification
 com/tom_roush/pdfbox/pdmodel/common/PDMatrix.java
@@ -290,16 +290,16 @@ com/tom_roush/pdfbox/pdmodel/common/PDRange.java
 com/tom_roush/pdfbox/util/PDFBoxResourceLoader.java
  com.tom_roush.pdfbox.util.PDFBoxResourceLoader
  com.tom_roush.pdfbox.util.PDFBoxResourceLoader$FontLoadLevel
-com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationWidget.java
- com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationWidget
 com/tom_roush/pdfbox/pdmodel/graphics/predictor/None.java
  com.tom_roush.pdfbox.pdmodel.graphics.predictor.None
+com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationWidget.java
+ com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationWidget
 com/tom_roush/pdfbox/contentstream/operator/state/SetGraphicsStateParameters.java
  com.tom_roush.pdfbox.contentstream.operator.state.SetGraphicsStateParameters
-com/tom_roush/pdfbox/contentstream/operator/state/Restore.java
- com.tom_roush.pdfbox.contentstream.operator.state.Restore
 com/tom_roush/pdfbox/pdmodel/interactive/action/PDActionFactory.java
  com.tom_roush.pdfbox.pdmodel.interactive.action.PDActionFactory
+com/tom_roush/pdfbox/contentstream/operator/state/Restore.java
+ com.tom_roush.pdfbox.contentstream.operator.state.Restore
 com/tom_roush/pdfbox/contentstream/operator/color/SetNonStrokingColorSpace.java
  com.tom_roush.pdfbox.contentstream.operator.color.SetNonStrokingColorSpace
 com/tom_roush/pdfbox/pdmodel/common/PDTextStream.java
@@ -314,10 +314,10 @@ com/tom_roush/pdfbox/pdmodel/PDDocument.java
  com.tom_roush.pdfbox.pdmodel.PDDocument
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationTextMarkup.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationTextMarkup
-com/tom_roush/pdfbox/contentstream/operator/graphics/AppendRectangleToPath.java
- com.tom_roush.pdfbox.contentstream.operator.graphics.AppendRectangleToPath
 com/tom_roush/pdfbox/pdmodel/encryption/PublicKeySecurityHandler.java
  com.tom_roush.pdfbox.pdmodel.encryption.PublicKeySecurityHandler
+com/tom_roush/pdfbox/contentstream/operator/graphics/AppendRectangleToPath.java
+ com.tom_roush.pdfbox.contentstream.operator.graphics.AppendRectangleToPath
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDUserProperty.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDUserProperty
 com/tom_roush/pdfbox/cos/ICOSVisitor.java
@@ -326,16 +326,16 @@ com/tom_roush/pdfbox/exceptions/SignatureException.java
  com.tom_roush.pdfbox.exceptions.SignatureException
 com/tom_roush/fontbox/cff/CharStringHandler.java
  com.tom_roush.fontbox.cff.CharStringHandler
-com/tom_roush/pdfbox/pdmodel/interactive/measurement/PDRectlinearMeasureDictionary.java
- com.tom_roush.pdfbox.pdmodel.interactive.measurement.PDRectlinearMeasureDictionary
 com/tom_roush/pdfbox/rendering/PageDrawerParameters.java
  com.tom_roush.pdfbox.rendering.PageDrawerParameters
-com/tom_roush/pdfbox/pdmodel/font/PDFontLike.java
- com.tom_roush.pdfbox.pdmodel.font.PDFontLike
-com/tom_roush/pdfbox/contentstream/operator/state/SetFlatness.java
- com.tom_roush.pdfbox.contentstream.operator.state.SetFlatness
+com/tom_roush/pdfbox/pdmodel/interactive/measurement/PDRectlinearMeasureDictionary.java
+ com.tom_roush.pdfbox.pdmodel.interactive.measurement.PDRectlinearMeasureDictionary
 com/tom_roush/pdfbox/pdmodel/font/PDTrueTypeFont.java
  com.tom_roush.pdfbox.pdmodel.font.PDTrueTypeFont
+com/tom_roush/pdfbox/contentstream/operator/state/SetFlatness.java
+ com.tom_roush.pdfbox.contentstream.operator.state.SetFlatness
+com/tom_roush/pdfbox/pdmodel/font/PDFontLike.java
+ com.tom_roush.pdfbox.pdmodel.font.PDFontLike
 com/tom_roush/pdfbox/contentstream/operator/color/SetStrokingColor.java
  com.tom_roush.pdfbox.contentstream.operator.color.SetStrokingColor
 com/tom_roush/fontbox/cff/Type1FontUtil.java
@@ -344,26 +344,26 @@ com/tom_roush/pdfbox/io/IOUtils.java
  com.tom_roush.pdfbox.io.IOUtils
 com/tom_roush/pdfbox/pdmodel/common/PDIntegerNameTreeNode.java
  com.tom_roush.pdfbox.pdmodel.common.PDIntegerNameTreeNode
-com/tom_roush/pdfbox/pdmodel/encryption/DecryptionMaterial.java
- com.tom_roush.pdfbox.pdmodel.encryption.DecryptionMaterial
 com/tom_roush/pdfbox/pdmodel/encryption/PublicKeyProtectionPolicy.java
  com.tom_roush.pdfbox.pdmodel.encryption.PublicKeyProtectionPolicy
+com/tom_roush/pdfbox/pdmodel/encryption/DecryptionMaterial.java
+ com.tom_roush.pdfbox.pdmodel.encryption.DecryptionMaterial
 com/tom_roush/fontbox/ttf/OpenTypeFont.java
  com.tom_roush.fontbox.ttf.OpenTypeFont
 com/tom_roush/pdfbox/pdmodel/graphics/shading/PDShading.java
  com.tom_roush.pdfbox.pdmodel.graphics.shading.PDShading
-com/tom_roush/pdfbox/pdmodel/common/function/type4/Operators.java
- com.tom_roush.pdfbox.pdmodel.common.function.type4.Operators
 com/tom_roush/pdfbox/pdmodel/graphics/shading/PDShadingType3.java
  com.tom_roush.pdfbox.pdmodel.graphics.shading.PDShadingType3
+com/tom_roush/pdfbox/pdmodel/common/function/type4/Operators.java
+ com.tom_roush.pdfbox.pdmodel.common.function.type4.Operators
 com/tom_roush/pdfbox/contentstream/operator/Operator.java
  com.tom_roush.pdfbox.contentstream.operator.Operator
 com/tom_roush/pdfbox/contentstream/operator/graphics/FillEvenOddRule.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.FillEvenOddRule
-com/tom_roush/pdfbox/exceptions/WrappedException.java
- com.tom_roush.pdfbox.exceptions.WrappedException
 com/tom_roush/pdfbox/filter/IdentityFilter.java
  com.tom_roush.pdfbox.filter.IdentityFilter
+com/tom_roush/pdfbox/exceptions/WrappedException.java
+ com.tom_roush.pdfbox.exceptions.WrappedException
 com/tom_roush/pdfbox/pdfparser/FDFParser.java
  com.tom_roush.pdfbox.pdfparser.FDFParser
 com/tom_roush/pdfbox/pdmodel/font/CIDSystemInfo.java
@@ -372,6 +372,8 @@ com/tom_roush/pdfbox/contentstream/operator/text/ShowTextLine.java
  com.tom_roush.pdfbox.contentstream.operator.text.ShowTextLine
 com/tom_roush/pdfbox/contentstream/operator/graphics/FillNonZeroRule.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.FillNonZeroRule
+com/tom_roush/fontbox/ttf/OTLTable.java
+ com.tom_roush.fontbox.ttf.OTLTable
 com/tom_roush/fontbox/cff/CFFParser.java
  com.tom_roush.fontbox.cff.CFFParser
  com.tom_roush.fontbox.cff.CFFParser$1
@@ -393,8 +395,6 @@ com/tom_roush/fontbox/cff/CFFParser.java
  com.tom_roush.fontbox.cff.CFFParser$Format3FDSelect
  com.tom_roush.fontbox.cff.CFFParser$Header
  com.tom_roush.fontbox.cff.CFFParser$Range3
-com/tom_roush/fontbox/ttf/OTLTable.java
- com.tom_roush.fontbox.ttf.OTLTable
 com/tom_roush/pdfbox/filter/ASCII85OutputStream.java
  com.tom_roush.pdfbox.filter.ASCII85OutputStream
 com/tom_roush/pdfbox/pdmodel/interactive/form/PlainTextFormatter.java
@@ -423,47 +423,47 @@ com/tom_roush/pdfbox/pdmodel/graphics/image/PDInlineImage.java
  com.tom_roush.pdfbox.pdmodel.graphics.image.PDInlineImage
 com/tom_roush/fontbox/ttf/RAFDataStream.java
  com.tom_roush.fontbox.ttf.RAFDataStream
-com/tom_roush/pdfbox/contentstream/operator/color/SetNonStrokingColor.java
- com.tom_roush.pdfbox.contentstream.operator.color.SetNonStrokingColor
 com/tom_roush/pdfbox/pdmodel/documentinterchange/taggedpdf/PDListAttributeObject.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.taggedpdf.PDListAttributeObject
-com/tom_roush/pdfbox/cos/COSDocument.java
- com.tom_roush.pdfbox.cos.COSDocument
+com/tom_roush/pdfbox/contentstream/operator/color/SetNonStrokingColor.java
+ com.tom_roush.pdfbox.contentstream.operator.color.SetNonStrokingColor
 com/tom_roush/pdfbox/pdmodel/PDDocumentNameDictionary.java
  com.tom_roush.pdfbox.pdmodel.PDDocumentNameDictionary
+com/tom_roush/pdfbox/cos/COSDocument.java
+ com.tom_roush.pdfbox.cos.COSDocument
 com/tom_roush/pdfbox/pdmodel/font/PDFontDescriptor.java
  com.tom_roush.pdfbox.pdmodel.font.PDFontDescriptor
-com/tom_roush/pdfbox/pdmodel/common/PDDestinationOrAction.java
- com.tom_roush.pdfbox.pdmodel.common.PDDestinationOrAction
-com/tom_roush/pdfbox/pdmodel/common/function/PDFunctionType3.java
- com.tom_roush.pdfbox.pdmodel.common.function.PDFunctionType3
 com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/outline/PDOutlineItemIterator.java
  com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineItemIterator
+com/tom_roush/pdfbox/pdmodel/common/function/PDFunctionType3.java
+ com.tom_roush.pdfbox.pdmodel.common.function.PDFunctionType3
+com/tom_roush/pdfbox/pdmodel/common/PDDestinationOrAction.java
+ com.tom_roush.pdfbox.pdmodel.common.PDDestinationOrAction
 com/tom_roush/fontbox/ttf/OTFParser.java
  com.tom_roush.fontbox.ttf.OTFParser
 com/tom_roush/fontbox/util/BoundingBox.java
  com.tom_roush.fontbox.util.BoundingBox
-com/tom_roush/pdfbox/exceptions/CryptographyException.java
- com.tom_roush.pdfbox.exceptions.CryptographyException
 com/tom_roush/pdfbox/pdmodel/font/FontProvider.java
  com.tom_roush.pdfbox.pdmodel.font.FontProvider
+com/tom_roush/pdfbox/exceptions/CryptographyException.java
+ com.tom_roush.pdfbox.exceptions.CryptographyException
 com/tom_roush/pdfbox/util/QuickSort.java
  com.tom_roush.pdfbox.util.QuickSort
  com.tom_roush.pdfbox.util.QuickSort$1
 com/tom_roush/pdfbox/rendering/TTFGlyph2D.java
  com.tom_roush.pdfbox.rendering.TTFGlyph2D
-com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSignDesigner.java
- com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner
 com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageFitDestination.java
  com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageFitDestination
-com/tom_roush/pdfbox/pdmodel/interactive/pagenavigation/PDThreadBead.java
- com.tom_roush.pdfbox.pdmodel.interactive.pagenavigation.PDThreadBead
+com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSignDesigner.java
+ com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner
 com/tom_roush/pdfbox/contentstream/operator/markedcontent/BeginMarkedContentSequenceWithProperties.java
  com.tom_roush.pdfbox.contentstream.operator.markedcontent.BeginMarkedContentSequenceWithProperties
-com/tom_roush/pdfbox/pdmodel/PDPage.java
- com.tom_roush.pdfbox.pdmodel.PDPage
+com/tom_roush/pdfbox/pdmodel/interactive/pagenavigation/PDThreadBead.java
+ com.tom_roush.pdfbox.pdmodel.interactive.pagenavigation.PDThreadBead
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAppearanceCharacteristicsDictionary.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAppearanceCharacteristicsDictionary
+com/tom_roush/pdfbox/pdmodel/PDPage.java
+ com.tom_roush.pdfbox.pdmodel.PDPage
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationFileAttachment.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationFileAttachment
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDChoice.java
@@ -474,22 +474,22 @@ com/tom_roush/pdfbox/pdmodel/font/PDCIDFontType0.java
  com.tom_roush.pdfbox.pdmodel.font.PDCIDFontType0
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDTerminalField.java
  com.tom_roush.pdfbox.pdmodel.interactive.form.PDTerminalField
-com/tom_roush/fontbox/ttf/NameRecord.java
- com.tom_roush.fontbox.ttf.NameRecord
 com/tom_roush/fontbox/ttf/DigitalSignatureTable.java
  com.tom_roush.fontbox.ttf.DigitalSignatureTable
+com/tom_roush/fontbox/ttf/NameRecord.java
+ com.tom_roush.fontbox.ttf.NameRecord
 com/tom_roush/pdfbox/filter/CryptFilter.java
  com.tom_roush.pdfbox.filter.CryptFilter
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDComboBox.java
  com.tom_roush.pdfbox.pdmodel.interactive.form.PDComboBox
-com/tom_roush/pdfbox/pdmodel/common/PDRectangle.java
- com.tom_roush.pdfbox.pdmodel.common.PDRectangle
 com/tom_roush/pdfbox/text/TextPositionComparator.java
  com.tom_roush.pdfbox.text.TextPositionComparator
-com/tom_roush/pdfbox/io/ScratchFileBuffer.java
- com.tom_roush.pdfbox.io.ScratchFileBuffer
+com/tom_roush/pdfbox/pdmodel/common/PDRectangle.java
+ com.tom_roush.pdfbox.pdmodel.common.PDRectangle
 com/tom_roush/pdfbox/pdmodel/common/XrefEntry.java
  com.tom_roush.pdfbox.pdmodel.common.XrefEntry
+com/tom_roush/pdfbox/io/ScratchFileBuffer.java
+ com.tom_roush.pdfbox.io.ScratchFileBuffer
 com/tom_roush/pdfbox/contentstream/PDFStreamEngine.java
  com.tom_roush.pdfbox.contentstream.PDFStreamEngine
 com/tom_roush/fontbox/cff/CFFISOAdobeCharset.java
@@ -516,14 +516,14 @@ com/tom_roush/pdfbox/pdfparser/PDFXRef.java
  com.tom_roush.pdfbox.pdfparser.PDFXRef
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationText.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationText
-com/tom_roush/pdfbox/contentstream/operator/graphics/DrawObject.java
- com.tom_roush.pdfbox.contentstream.operator.graphics.DrawObject
 com/tom_roush/pdfbox/pdmodel/graphics/predictor/Optimum.java
  com.tom_roush.pdfbox.pdmodel.graphics.predictor.Optimum
-com/tom_roush/fontbox/ttf/GlyphTable.java
- com.tom_roush.fontbox.ttf.GlyphTable
+com/tom_roush/pdfbox/contentstream/operator/graphics/DrawObject.java
+ com.tom_roush.pdfbox.contentstream.operator.graphics.DrawObject
 com/tom_roush/pdfbox/rendering/Type1Glyph2D.java
  com.tom_roush.pdfbox.rendering.Type1Glyph2D
+com/tom_roush/fontbox/ttf/GlyphTable.java
+ com.tom_roush.fontbox.ttf.GlyphTable
 com/tom_roush/fontbox/ttf/HorizontalMetricsTable.java
  com.tom_roush.fontbox.ttf.HorizontalMetricsTable
 com/tom_roush/pdfbox/pdmodel/common/function/PDFunctionTypeIdentity.java
@@ -536,12 +536,12 @@ com/tom_roush/pdfbox/pdmodel/font/PDVectorFont.java
  com.tom_roush.pdfbox.pdmodel.font.PDVectorFont
 com/tom_roush/pdfbox/filter/ASCIIHexFilter.java
  com.tom_roush.pdfbox.filter.ASCIIHexFilter
-com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/SignatureOptions.java
- com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.SignatureOptions
 com/tom_roush/pdfbox/contentstream/operator/color/SetStrokingColorSpace.java
  com.tom_roush.pdfbox.contentstream.operator.color.SetStrokingColorSpace
 com/tom_roush/pdfbox/pdfwriter/ContentStreamWriter.java
  com.tom_roush.pdfbox.pdfwriter.ContentStreamWriter
+com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/SignatureOptions.java
+ com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.SignatureOptions
 com/tom_roush/fontbox/ttf/GlyfDescript.java
  com.tom_roush.fontbox.ttf.GlyfDescript
 com/tom_roush/pdfbox/filter/FilterFactory.java
@@ -552,28 +552,28 @@ com/tom_roush/pdfbox/pdmodel/graphics/color/PDTristimulus.java
  com.tom_roush.pdfbox.pdmodel.graphics.color.PDTristimulus
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureTreeRoot.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot
-com/tom_roush/harmony/awt/AWTColor.java
- com.tom_roush.harmony.awt.AWTColor
 com/tom_roush/harmony/javax/imageio/stream/RandomAccessMemoryCache.java
  com.tom_roush.harmony.javax.imageio.stream.RandomAccessMemoryCache
 com/tom_roush/pdfbox/pdmodel/interactive/measurement/PDNumberFormatDictionary.java
  com.tom_roush.pdfbox.pdmodel.interactive.measurement.PDNumberFormatDictionary
+com/tom_roush/harmony/awt/AWTColor.java
+ com.tom_roush.harmony.awt.AWTColor
 com/tom_roush/fontbox/cff/Type1CharStringParser.java
  com.tom_roush.fontbox.cff.Type1CharStringParser
 com/tom_roush/pdfbox/cos/COSBoolean.java
  com.tom_roush.pdfbox.cos.COSBoolean
-com/tom_roush/pdfbox/contentstream/operator/color/SetStrokingDeviceGrayColor.java
- com.tom_roush.pdfbox.contentstream.operator.color.SetStrokingDeviceGrayColor
 com/tom_roush/pdfbox/rendering/PDFRenderer.java
  com.tom_roush.pdfbox.rendering.PDFRenderer
+com/tom_roush/pdfbox/contentstream/operator/color/SetStrokingDeviceGrayColor.java
+ com.tom_roush.pdfbox.contentstream.operator.color.SetStrokingDeviceGrayColor
 com/tom_roush/pdfbox/pdmodel/PDDocumentNameDestinationDictionary.java
  com.tom_roush.pdfbox.pdmodel.PDDocumentNameDestinationDictionary
 com/tom_roush/fontbox/EncodedFont.java
  com.tom_roush.fontbox.EncodedFont
-com/tom_roush/pdfbox/pdmodel/interactive/action/PDAdditionalActions.java
- com.tom_roush.pdfbox.pdmodel.interactive.action.PDAdditionalActions
 com/tom_roush/pdfbox/pdmodel/common/PDTypedDictionaryWrapper.java
  com.tom_roush.pdfbox.pdmodel.common.PDTypedDictionaryWrapper
+com/tom_roush/pdfbox/pdmodel/interactive/action/PDAdditionalActions.java
+ com.tom_roush.pdfbox.pdmodel.interactive.action.PDAdditionalActions
 com/tom_roush/harmony/javax/imageio/stream/ImageOutputStreamImpl.java
  com.tom_roush.harmony.javax.imageio.stream.ImageOutputStreamImpl
 com/tom_roush/pdfbox/pdmodel/font/encoding/Type1Encoding.java
@@ -588,12 +588,12 @@ com/tom_roush/pdfbox/pdmodel/graphics/blend/SoftMaskPaint.java
  com.tom_roush.pdfbox.pdmodel.graphics.blend.SoftMaskPaint
 com/tom_roush/pdfbox/pdmodel/graphics/form/PDGroup.java
  com.tom_roush.pdfbox.pdmodel.graphics.form.PDGroup
-com/tom_roush/pdfbox/pdmodel/fdf/FDFDictionary.java
- com.tom_roush.pdfbox.pdmodel.fdf.FDFDictionary
 com/tom_roush/pdfbox/pdmodel/font/encoding/BuiltInEncoding.java
  com.tom_roush.pdfbox.pdmodel.font.encoding.BuiltInEncoding
 com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java
  com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder
+com/tom_roush/pdfbox/pdmodel/fdf/FDFDictionary.java
+ com.tom_roush.pdfbox.pdmodel.fdf.FDFDictionary
 com/tom_roush/fontbox/type1/Type1CharStringReader.java
  com.tom_roush.fontbox.type1.Type1CharStringReader
 com/tom_roush/pdfbox/pdmodel/interactive/pagenavigation/PDThread.java
@@ -616,14 +616,14 @@ com/tom_roush/pdfbox/contentstream/operator/text/ShowText.java
  com.tom_roush.pdfbox.contentstream.operator.text.ShowText
 com/tom_roush/fontbox/type1/Type1Font.java
  com.tom_roush.fontbox.type1.Type1Font
-com/tom_roush/pdfbox/pdmodel/PDResources.java
- com.tom_roush.pdfbox.pdmodel.PDResources
-com/tom_roush/pdfbox/pdmodel/encryption/ProtectionPolicy.java
- com.tom_roush.pdfbox.pdmodel.encryption.ProtectionPolicy
 com/tom_roush/pdfbox/contentstream/operator/graphics/CloseAndStrokePath.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.CloseAndStrokePath
 com/tom_roush/pdfbox/contentstream/operator/graphics/CurveTo.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.CurveTo
+com/tom_roush/pdfbox/pdmodel/encryption/ProtectionPolicy.java
+ com.tom_roush.pdfbox.pdmodel.encryption.ProtectionPolicy
+com/tom_roush/pdfbox/pdmodel/PDResources.java
+ com.tom_roush.pdfbox.pdmodel.PDResources
 com/tom_roush/pdfbox/cos/COSArray.java
  com.tom_roush.pdfbox.cos.COSArray
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationLink.java
@@ -653,14 +653,14 @@ com/tom_roush/fontbox/cff/CFFExpertSubsetCharset.java
  com.tom_roush.fontbox.cff.CFFExpertSubsetCharset
 com/tom_roush/pdfbox/cos/COSInteger.java
  com.tom_roush.pdfbox.cos.COSInteger
-com/tom_roush/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionMotion.java
- com.tom_roush.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionMotion
 com/tom_roush/pdfbox/pdmodel/encryption/StandardSecurityHandler.java
  com.tom_roush.pdfbox.pdmodel.encryption.StandardSecurityHandler
-com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageDestination.java
- com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination
+com/tom_roush/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionMotion.java
+ com.tom_roush.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionMotion
 com/tom_roush/pdfbox/pdmodel/encryption/StandardProtectionPolicy.java
  com.tom_roush.pdfbox.pdmodel.encryption.StandardProtectionPolicy
+com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageDestination.java
+ com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageDestination
 com/tom_roush/pdfbox/pdmodel/encryption/RC4Cipher.java
  com.tom_roush.pdfbox.pdmodel.encryption.RC4Cipher
 com/tom_roush/pdfbox/cos/COSNull.java
@@ -678,8 +678,6 @@ com/tom_roush/pdfbox/contentstream/operator/text/SetWordSpacing.java
 com/tom_roush/pdfbox/cos/COSInputStream.java
  com.tom_roush.pdfbox.cos.COSInputStream
  com.tom_roush.pdfbox.cos.COSInputStream$1
-com/tom_roush/pdfbox/pdmodel/fdf/FDFIconFit.java
- com.tom_roush.pdfbox.pdmodel.fdf.FDFIconFit
 com/tom_roush/pdfbox/filter/ccitt/CCITTFaxG31DDecodeInputStream.java
  com.tom_roush.pdfbox.filter.ccitt.CCITTFaxG31DDecodeInputStream
  com.tom_roush.pdfbox.filter.ccitt.CCITTFaxG31DDecodeInputStream$1
@@ -689,28 +687,30 @@ com/tom_roush/pdfbox/filter/ccitt/CCITTFaxG31DDecodeInputStream.java
  com.tom_roush.pdfbox.filter.ccitt.CCITTFaxG31DDecodeInputStream$MakeUpTreeNode
  com.tom_roush.pdfbox.filter.ccitt.CCITTFaxG31DDecodeInputStream$NonLeafLookupTreeNode
  com.tom_roush.pdfbox.filter.ccitt.CCITTFaxG31DDecodeInputStream$RunLengthTreeNode
+com/tom_roush/pdfbox/pdmodel/fdf/FDFIconFit.java
+ com.tom_roush.pdfbox.pdmodel.fdf.FDFIconFit
 com/tom_roush/fontbox/cff/CFFCIDFont.java
  com.tom_roush.fontbox.cff.CFFCIDFont
  com.tom_roush.fontbox.cff.CFFCIDFont$1
  com.tom_roush.fontbox.cff.CFFCIDFont$PrivateType1CharStringReader
 com/tom_roush/pdfbox/pdmodel/graphics/shading/PDShadingType5.java
  com.tom_roush.pdfbox.pdmodel.graphics.shading.PDShadingType5
-com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/outline/PDDocumentOutline.java
- com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutline
-com/tom_roush/pdfbox/multipdf/PDFMergerUtility.java
- com.tom_roush.pdfbox.multipdf.PDFMergerUtility
 com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateStructure.java
  com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.visible.PDFTemplateStructure
+com/tom_roush/pdfbox/multipdf/PDFMergerUtility.java
+ com.tom_roush.pdfbox.multipdf.PDFMergerUtility
+com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/outline/PDDocumentOutline.java
+ com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.outline.PDDocumentOutline
 com/tom_roush/pdfbox/pdmodel/fdf/FDFDocument.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFDocument
 com/tom_roush/fontbox/ttf/VerticalHeaderTable.java
  com.tom_roush.fontbox.ttf.VerticalHeaderTable
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/Revisions.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.Revisions
-com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDDestination.java
- com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination
 com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageFitRectangleDestination.java
  com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageFitRectangleDestination
+com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDDestination.java
+ com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDDestination
 com/tom_roush/pdfbox/contentstream/operator/OperatorProcessor.java
  com.tom_roush.pdfbox.contentstream.operator.OperatorProcessor
 com/tom_roush/fontbox/cff/DataInput.java
@@ -729,34 +729,34 @@ com/tom_roush/pdfbox/util/DateConverter.java
  com.tom_roush.pdfbox.util.DateConverter
 com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/PDSeedValue.java
  com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.PDSeedValue
+com/tom_roush/pdfbox/pdmodel/common/COSArrayList.java
+ com.tom_roush.pdfbox.pdmodel.common.COSArrayList
 com/tom_roush/pdfbox/pdmodel/PDPageTree.java
  com.tom_roush.pdfbox.pdmodel.PDPageTree
  com.tom_roush.pdfbox.pdmodel.PDPageTree$1
  com.tom_roush.pdfbox.pdmodel.PDPageTree$PageIterator
  com.tom_roush.pdfbox.pdmodel.PDPageTree$SearchContext
-com/tom_roush/pdfbox/pdmodel/common/COSArrayList.java
- com.tom_roush.pdfbox.pdmodel.common.COSArrayList
 com/tom_roush/pdfbox/pdmodel/graphics/color/PDDeviceColorSpace.java
  com.tom_roush.pdfbox.pdmodel.graphics.color.PDDeviceColorSpace
 com/tom_roush/pdfbox/util/Version.java
  com.tom_roush.pdfbox.util.Version
 com/tom_roush/pdfbox/contentstream/operator/graphics/FillEvenOddAndStrokePath.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.FillEvenOddAndStrokePath
-com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDNamedDestination.java
- com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDNamedDestination
 com/tom_roush/pdfbox/filter/ccitt/PackedBitArray.java
  com.tom_roush.pdfbox.filter.ccitt.PackedBitArray
+com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDNamedDestination.java
+ com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDNamedDestination
+com/tom_roush/pdfbox/contentstream/operator/text/BeginText.java
+ com.tom_roush.pdfbox.contentstream.operator.text.BeginText
 com/tom_roush/pdfbox/pdmodel/graphics/optionalcontent/PDOptionalContentProperties.java
  com.tom_roush.pdfbox.pdmodel.graphics.optionalcontent.PDOptionalContentProperties
  com.tom_roush.pdfbox.pdmodel.graphics.optionalcontent.PDOptionalContentProperties$BaseState
-com/tom_roush/pdfbox/contentstream/operator/text/BeginText.java
- com.tom_roush.pdfbox.contentstream.operator.text.BeginText
 com/tom_roush/pdfbox/contentstream/operator/color/SetNonStrokingDeviceRGBColor.java
  com.tom_roush.pdfbox.contentstream.operator.color.SetNonStrokingDeviceRGBColor
-com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAppearanceEntry.java
- com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAppearanceEntry
 com/tom_roush/pdfbox/contentstream/operator/color/SetNonStrokingColorN.java
  com.tom_roush.pdfbox.contentstream.operator.color.SetNonStrokingColorN
+com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAppearanceEntry.java
+ com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAppearanceEntry
 com/tom_roush/pdfbox/pdmodel/common/filespecification/PDSimpleFileSpecification.java
  com.tom_roush.pdfbox.pdmodel.common.filespecification.PDSimpleFileSpecification
 com/tom_roush/pdfbox/contentstream/PDFGraphicsStreamEngine.java
@@ -789,10 +789,10 @@ com/tom_roush/pdfbox/text/PDFTextStripper.java
  com.tom_roush.pdfbox.text.PDFTextStripper$WordWithTextPositions
 com/tom_roush/pdfbox/pdmodel/PDDocumentCatalog.java
  com.tom_roush.pdfbox.pdmodel.PDDocumentCatalog
-com/tom_roush/fontbox/cff/IndexData.java
- com.tom_roush.fontbox.cff.IndexData
 com/tom_roush/fontbox/ttf/TTFParser.java
  com.tom_roush.fontbox.ttf.TTFParser
+com/tom_roush/fontbox/cff/IndexData.java
+ com.tom_roush.fontbox.cff.IndexData
 com/tom_roush/pdfbox/pdmodel/common/function/type4/Operator.java
  com.tom_roush.pdfbox.pdmodel.common.function.type4.Operator
 com/tom_roush/pdfbox/contentstream/operator/text/MoveText.java
@@ -801,11 +801,11 @@ com/tom_roush/pdfbox/pdmodel/font/CIDFontMapping.java
  com.tom_roush.pdfbox.pdmodel.font.CIDFontMapping
 com/tom_roush/fontbox/ttf/GlyphData.java
  com.tom_roush.fontbox.ttf.GlyphData
+com/tom_roush/pdfbox/contentstream/operator/graphics/FillNonZeroAndStrokePath.java
+ com.tom_roush.pdfbox.contentstream.operator.graphics.FillNonZeroAndStrokePath
 com/tom_roush/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionDirection.java
  com.tom_roush.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirection
  com.tom_roush.pdfbox.pdmodel.interactive.pagenavigation.PDTransitionDirection$1
-com/tom_roush/pdfbox/contentstream/operator/graphics/FillNonZeroAndStrokePath.java
- com.tom_roush.pdfbox.contentstream.operator.graphics.FillNonZeroAndStrokePath
 com/tom_roush/pdfbox/pdmodel/font/PDSimpleFont.java
  com.tom_roush.pdfbox.pdmodel.font.PDSimpleFont
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationLine.java
@@ -826,14 +826,14 @@ com/tom_roush/pdfbox/pdmodel/common/function/type4/RelationalOperators.java
  com.tom_roush.pdfbox.pdmodel.common.function.type4.RelationalOperators$Le
  com.tom_roush.pdfbox.pdmodel.common.function.type4.RelationalOperators$Lt
  com.tom_roush.pdfbox.pdmodel.common.function.type4.RelationalOperators$Ne
-com/tom_roush/pdfbox/contentstream/operator/text/MoveTextSetLeading.java
- com.tom_roush.pdfbox.contentstream.operator.text.MoveTextSetLeading
 com/tom_roush/pdfbox/pdmodel/graphics/shading/PDShadingType4.java
  com.tom_roush.pdfbox.pdmodel.graphics.shading.PDShadingType4
-com/tom_roush/pdfbox/contentstream/operator/graphics/StrokePath.java
- com.tom_roush.pdfbox.contentstream.operator.graphics.StrokePath
+com/tom_roush/pdfbox/contentstream/operator/text/MoveTextSetLeading.java
+ com.tom_roush.pdfbox.contentstream.operator.text.MoveTextSetLeading
 com/tom_roush/pdfbox/filter/MissingImageReaderException.java
  com.tom_roush.pdfbox.filter.MissingImageReaderException
+com/tom_roush/pdfbox/contentstream/operator/graphics/StrokePath.java
+ com.tom_roush.pdfbox.contentstream.operator.graphics.StrokePath
 com/tom_roush/fontbox/encoding/Encoding.java
  com.tom_roush.fontbox.encoding.Encoding
 com/tom_roush/pdfbox/util/Hex.java
@@ -868,10 +868,10 @@ com/tom_roush/pdfbox/pdmodel/documentinterchange/taggedpdf/PDFourColours.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.taggedpdf.PDFourColours
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDCheckbox.java
  com.tom_roush.pdfbox.pdmodel.interactive.form.PDCheckbox
-com/tom_roush/pdfbox/pdmodel/common/PDNumberTreeNode.java
- com.tom_roush.pdfbox.pdmodel.common.PDNumberTreeNode
 com/tom_roush/pdfbox/pdmodel/common/PDObjectStream.java
  com.tom_roush.pdfbox.pdmodel.common.PDObjectStream
+com/tom_roush/pdfbox/pdmodel/common/PDNumberTreeNode.java
+ com.tom_roush.pdfbox.pdmodel.common.PDNumberTreeNode
 com/tom_roush/pdfbox/pdmodel/graphics/predictor/PredictorAlgorithm.java
  com.tom_roush.pdfbox.pdmodel.graphics.predictor.PredictorAlgorithm
 com/tom_roush/pdfbox/pdmodel/font/PDType1Font.java
@@ -891,12 +891,12 @@ com/tom_roush/fontbox/ttf/TTFSubsetter.java
  com.tom_roush.fontbox.ttf.TTFSubsetter
 com/tom_roush/pdfbox/multipdf/PageExtractor.java
  com.tom_roush.pdfbox.multipdf.PageExtractor
-com/tom_roush/pdfbox/pdmodel/ResourceCache.java
- com.tom_roush.pdfbox.pdmodel.ResourceCache
-com/tom_roush/pdfbox/pdmodel/font/PDFont.java
- com.tom_roush.pdfbox.pdmodel.font.PDFont
 com/tom_roush/pdfbox/pdmodel/graphics/state/PDSoftMask.java
  com.tom_roush.pdfbox.pdmodel.graphics.state.PDSoftMask
+com/tom_roush/pdfbox/pdmodel/font/PDFont.java
+ com.tom_roush.pdfbox.pdmodel.font.PDFont
+com/tom_roush/pdfbox/pdmodel/ResourceCache.java
+ com.tom_roush.pdfbox.pdmodel.ResourceCache
 com/tom_roush/pdfbox/pdmodel/documentinterchange/taggedpdf/PDExportFormatAttributeObject.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.taggedpdf.PDExportFormatAttributeObject
 com/tom_roush/fontbox/ttf/MemoryTTFDataStream.java
@@ -905,10 +905,10 @@ com/tom_roush/pdfbox/pdmodel/interactive/action/PDActionJavaScript.java
  com.tom_roush.pdfbox.pdmodel.interactive.action.PDActionJavaScript
 com/tom_roush/pdfbox/text/PDFTextStripperByArea.java
  com.tom_roush.pdfbox.text.PDFTextStripperByArea
-com/tom_roush/pdfbox/contentstream/operator/markedcontent/EndMarkedContentSequence.java
- com.tom_roush.pdfbox.contentstream.operator.markedcontent.EndMarkedContentSequence
 com/tom_roush/pdfbox/pdmodel/graphics/pattern/PDShadingPattern.java
  com.tom_roush.pdfbox.pdmodel.graphics.pattern.PDShadingPattern
+com/tom_roush/pdfbox/contentstream/operator/markedcontent/EndMarkedContentSequence.java
+ com.tom_roush.pdfbox.contentstream.operator.markedcontent.EndMarkedContentSequence
 com/tom_roush/pdfbox/contentstream/operator/text/SetTextRenderingMode.java
  com.tom_roush.pdfbox.contentstream.operator.text.SetTextRenderingMode
 com/tom_roush/fontbox/cff/CharStringCommand.java
@@ -931,22 +931,22 @@ com/tom_roush/fontbox/ttf/KerningSubtable.java
  com.tom_roush.fontbox.ttf.KerningSubtable$PairData0Format0
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotation.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotation
-com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAppearanceStream.java
- com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream
 com/tom_roush/pdfbox/contentstream/operator/state/Concatenate.java
  com.tom_roush.pdfbox.contentstream.operator.state.Concatenate
+com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAppearanceStream.java
+ com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream
 com/tom_roush/pdfbox/pdmodel/interactive/action/PDActionURI.java
  com.tom_roush.pdfbox.pdmodel.interactive.action.PDActionURI
-com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAppearanceDictionary.java
- com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAppearanceDictionary
 com/tom_roush/pdfbox/pdmodel/graphics/state/PDGraphicsState.java
  com.tom_roush.pdfbox.pdmodel.graphics.state.PDGraphicsState
+com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAppearanceDictionary.java
+ com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAppearanceDictionary
 com/tom_roush/pdfbox/pdmodel/graphics/color/PDGamma.java
  com.tom_roush.pdfbox.pdmodel.graphics.color.PDGamma
-com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/SignatureInterface.java
- com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.SignatureInterface
 com/tom_roush/pdfbox/pdmodel/interactive/action/PDActionLaunch.java
  com.tom_roush.pdfbox.pdmodel.interactive.action.PDActionLaunch
+com/tom_roush/pdfbox/pdmodel/interactive/digitalsignature/SignatureInterface.java
+ com.tom_roush.pdfbox.pdmodel.interactive.digitalsignature.SignatureInterface
 com/tom_roush/pdfbox/pdmodel/encryption/PublicKeyDecryptionMaterial.java
  com.tom_roush.pdfbox.pdmodel.encryption.PublicKeyDecryptionMaterial
 com/tom_roush/pdfbox/pdmodel/font/PDCIDSystemInfo.java
@@ -955,14 +955,14 @@ com/tom_roush/fontbox/cff/Type1CharStringFormatter.java
  com.tom_roush.fontbox.cff.Type1CharStringFormatter
 com/tom_roush/pdfbox/pdmodel/common/function/type4/ExecutionContext.java
  com.tom_roush.pdfbox.pdmodel.common.function.type4.ExecutionContext
-com/tom_roush/pdfbox/pdmodel/graphics/state/RenderingMode.java
- com.tom_roush.pdfbox.pdmodel.graphics.state.RenderingMode
 com/tom_roush/pdfbox/contentstream/operator/graphics/CurveToReplicateFinalPoint.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.CurveToReplicateFinalPoint
-com/tom_roush/pdfbox/pdmodel/graphics/pattern/PDTilingPattern.java
- com.tom_roush.pdfbox.pdmodel.graphics.pattern.PDTilingPattern
+com/tom_roush/pdfbox/pdmodel/graphics/state/RenderingMode.java
+ com.tom_roush.pdfbox.pdmodel.graphics.state.RenderingMode
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationPolygon.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationPolygon
+com/tom_roush/pdfbox/pdmodel/graphics/pattern/PDTilingPattern.java
+ com.tom_roush.pdfbox.pdmodel.graphics.pattern.PDTilingPattern
 com/tom_roush/fontbox/util/autodetect/FontFileFinder.java
  com.tom_roush.fontbox.util.autodetect.FontFileFinder
 com/tom_roush/pdfbox/pdmodel/encryption/PublicKeyRecipient.java
@@ -983,10 +983,10 @@ com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationMarkup.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationMarkup
 com/tom_roush/pdfbox/pdmodel/graphics/shading/PDShadingType7.java
  com.tom_roush.pdfbox.pdmodel.graphics.shading.PDShadingType7
-com/tom_roush/pdfbox/pdmodel/PageMode.java
- com.tom_roush.pdfbox.pdmodel.PageMode
 com/tom_roush/pdfbox/pdmodel/interactive/action/PDActionGoTo.java
  com.tom_roush.pdfbox.pdmodel.interactive.action.PDActionGoTo
+com/tom_roush/pdfbox/pdmodel/PageMode.java
+ com.tom_roush.pdfbox.pdmodel.PageMode
 com/tom_roush/pdfbox/cos/UnmodifiableCOSDictionary.java
  com.tom_roush.pdfbox.cos.UnmodifiableCOSDictionary
 com/tom_roush/pdfbox/pdmodel/encryption/SecurityHandler.java
@@ -997,20 +997,20 @@ com/tom_roush/fontbox/ttf/OS2WindowsMetricsTable.java
  com.tom_roush.fontbox.ttf.OS2WindowsMetricsTable
 com/tom_roush/fontbox/cff/CFFDataInput.java
  com.tom_roush.fontbox.cff.CFFDataInput
-com/tom_roush/pdfbox/cos/PDFDocEncoding.java
- com.tom_roush.pdfbox.cos.PDFDocEncoding
 com/tom_roush/pdfbox/pdmodel/encryption/SecurityHandlerFactory.java
  com.tom_roush.pdfbox.pdmodel.encryption.SecurityHandlerFactory
+com/tom_roush/pdfbox/cos/PDFDocEncoding.java
+ com.tom_roush.pdfbox.cos.PDFDocEncoding
 com/tom_roush/pdfbox/pdmodel/common/function/type4/ConditionalOperators.java
  com.tom_roush.pdfbox.pdmodel.common.function.type4.ConditionalOperators
  com.tom_roush.pdfbox.pdmodel.common.function.type4.ConditionalOperators$If
  com.tom_roush.pdfbox.pdmodel.common.function.type4.ConditionalOperators$IfElse
 com/tom_roush/fontbox/cff/CFFStandardEncoding.java
  com.tom_roush.fontbox.cff.CFFStandardEncoding
-com/tom_roush/pdfbox/pdmodel/interactive/form/PDAcroForm.java
- com.tom_roush.pdfbox.pdmodel.interactive.form.PDAcroForm
 com/tom_roush/pdfbox/contentstream/operator/graphics/ClosePath.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.ClosePath
+com/tom_roush/pdfbox/pdmodel/interactive/form/PDAcroForm.java
+ com.tom_roush.pdfbox.pdmodel.interactive.form.PDAcroForm
 com/tom_roush/pdfbox/contentstream/operator/graphics/CloseFillNonZeroAndStrokePath.java
  com.tom_roush.pdfbox.contentstream.operator.graphics.CloseFillNonZeroAndStrokePath
 com/tom_roush/pdfbox/pdmodel/fdf/FDFNamedPageReference.java
@@ -1045,13 +1045,13 @@ com/tom_roush/pdfbox/pdmodel/common/filespecification/PDEmbeddedFile.java
  com.tom_roush.pdfbox.pdmodel.common.filespecification.PDEmbeddedFile
 com/tom_roush/pdfbox/pdmodel/DefaultResourceCache.java
  com.tom_roush.pdfbox.pdmodel.DefaultResourceCache
-com/tom_roush/fontbox/cmap/CIDRange.java
- com.tom_roush.fontbox.cmap.CIDRange
 com/tom_roush/harmony/javax/imageio/stream/MemoryCacheImageInputStream.java
  com.tom_roush.harmony.javax.imageio.stream.MemoryCacheImageInputStream
 com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/outline/PDOutlineNode.java
  com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode
  com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode$1
+com/tom_roush/fontbox/cmap/CIDRange.java
+ com.tom_roush.fontbox.cmap.CIDRange
 com/tom_roush/pdfbox/pdmodel/encryption/InvalidPasswordException.java
  com.tom_roush.pdfbox.pdmodel.encryption.InvalidPasswordException
 com/tom_roush/harmony/javax/imageio/stream/MemoryCacheImageOutputStream.java
@@ -1082,16 +1082,18 @@ com/tom_roush/pdfbox/pdmodel/fdf/XMLUtil.java
  com.tom_roush.pdfbox.pdmodel.fdf.XMLUtil
 com/tom_roush/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageXYZDestination.java
  com.tom_roush.pdfbox.pdmodel.interactive.documentnavigation.destination.PDPageXYZDestination
-com/tom_roush/pdfbox/pdmodel/interactive/action/PDDocumentCatalogAdditionalActions.java
- com.tom_roush.pdfbox.pdmodel.interactive.action.PDDocumentCatalogAdditionalActions
 com/tom_roush/pdfbox/pdmodel/font/encoding/Encoding.java
  com.tom_roush.pdfbox.pdmodel.font.encoding.Encoding
+com/tom_roush/pdfbox/pdmodel/interactive/action/PDDocumentCatalogAdditionalActions.java
+ com.tom_roush.pdfbox.pdmodel.interactive.action.PDDocumentCatalogAdditionalActions
 com/tom_roush/pdfbox/pdmodel/encryption/StandardDecryptionMaterial.java
  com.tom_roush.pdfbox.pdmodel.encryption.StandardDecryptionMaterial
-com/tom_roush/pdfbox/contentstream/operator/graphics/MoveTo.java
- com.tom_roush.pdfbox.contentstream.operator.graphics.MoveTo
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationLine.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationLine
+com/tom_roush/pdfbox/contentstream/operator/graphics/MoveTo.java
+ com.tom_roush.pdfbox.contentstream.operator.graphics.MoveTo
+com/tom_roush/pdfbox/BuildConfig.java
+ com.tom_roush.pdfbox.BuildConfig
 com/tom_roush/fontbox/ttf/TrueTypeFont.java
  com.tom_roush.fontbox.ttf.TrueTypeFont
 com/tom_roush/pdfbox/pdmodel/common/function/type4/ArithmeticOperators.java
@@ -1117,8 +1119,6 @@ com/tom_roush/pdfbox/pdmodel/common/function/type4/ArithmeticOperators.java
  com.tom_roush.pdfbox.pdmodel.common.function.type4.ArithmeticOperators$Sqrt
  com.tom_roush.pdfbox.pdmodel.common.function.type4.ArithmeticOperators$Sub
  com.tom_roush.pdfbox.pdmodel.common.function.type4.ArithmeticOperators$Truncate
-com/tom_roush/pdfbox/BuildConfig.java
- com.tom_roush.pdfbox.BuildConfig
 com/tom_roush/fontbox/type1/Type1Lexer.java
  com.tom_roush.fontbox.type1.Type1Lexer
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDNonTerminalField.java
@@ -1133,10 +1133,10 @@ com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDBorderStyleDictionary.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDBorderStyleDictionary
 com/tom_roush/pdfbox/pdmodel/fdf/FDFOptionElement.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFOptionElement
-com/tom_roush/pdfbox/filter/Filter.java
- com.tom_roush.pdfbox.filter.Filter
 com/tom_roush/pdfbox/pdmodel/graphics/color/PDOutputIntent.java
  com.tom_roush.pdfbox.pdmodel.graphics.color.PDOutputIntent
+com/tom_roush/pdfbox/filter/Filter.java
+ com.tom_roush.pdfbox.filter.Filter
 com/tom_roush/fontbox/cff/Type1CharString.java
  com.tom_roush.fontbox.cff.Type1CharString
  com.tom_roush.fontbox.cff.Type1CharString$1
@@ -1164,18 +1164,18 @@ com/tom_roush/pdfbox/pdmodel/graphics/color/PDDeviceRGB.java
  com.tom_roush.pdfbox.pdmodel.graphics.color.PDDeviceRGB
 com/tom_roush/pdfbox/pdmodel/interactive/measurement/PDViewportDictionary.java
  com.tom_roush.pdfbox.pdmodel.interactive.measurement.PDViewportDictionary
-com/tom_roush/pdfbox/cos/COSDictionary.java
- com.tom_roush.pdfbox.cos.COSDictionary
 com/tom_roush/pdfbox/pdmodel/font/Subsetter.java
  com.tom_roush.pdfbox.pdmodel.font.Subsetter
+com/tom_roush/pdfbox/cos/COSDictionary.java
+ com.tom_roush.pdfbox.cos.COSDictionary
 com/tom_roush/pdfbox/pdmodel/graphics/predictor/Up.java
  com.tom_roush.pdfbox.pdmodel.graphics.predictor.Up
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDVariableText.java
  com.tom_roush.pdfbox.pdmodel.interactive.form.PDVariableText
-com/tom_roush/pdfbox/pdmodel/fdf/FDFPageInfo.java
- com.tom_roush.pdfbox.pdmodel.fdf.FDFPageInfo
 com/tom_roush/pdfbox/pdmodel/font/encoding/MacRomanEncoding.java
  com.tom_roush.pdfbox.pdmodel.font.encoding.MacRomanEncoding
+com/tom_roush/pdfbox/pdmodel/fdf/FDFPageInfo.java
+ com.tom_roush.pdfbox.pdmodel.fdf.FDFPageInfo
 com/tom_roush/pdfbox/cos/COSStream.java
  com.tom_roush.pdfbox.cos.COSStream
  com.tom_roush.pdfbox.cos.COSStream$1
@@ -1184,22 +1184,22 @@ com/tom_roush/pdfbox/pdmodel/common/PDNameTreeNode.java
  com.tom_roush.pdfbox.pdmodel.common.PDNameTreeNode
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationPolyline
-com/tom_roush/pdfbox/text/TextPosition.java
- com.tom_roush.pdfbox.text.TextPosition
 com/tom_roush/pdfbox/pdmodel/common/function/type4/InstructionSequenceBuilder.java
  com.tom_roush.pdfbox.pdmodel.common.function.type4.InstructionSequenceBuilder
-com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java
- com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotation
-com/tom_roush/pdfbox/pdmodel/encryption/BadSecurityHandlerException.java
- com.tom_roush.pdfbox.pdmodel.encryption.BadSecurityHandlerException
+com/tom_roush/pdfbox/text/TextPosition.java
+ com.tom_roush.pdfbox.text.TextPosition
 com/tom_roush/pdfbox/pdmodel/fdf/FDFAnnotationUnderline.java
  com.tom_roush.pdfbox.pdmodel.fdf.FDFAnnotationUnderline
-com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDAttributeObject.java
- com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject
-com/tom_roush/pdfbox/contentstream/operator/MissingOperandException.java
- com.tom_roush.pdfbox.contentstream.operator.MissingOperandException
+com/tom_roush/pdfbox/pdmodel/encryption/BadSecurityHandlerException.java
+ com.tom_roush.pdfbox.pdmodel.encryption.BadSecurityHandlerException
+com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java
+ com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotation
 com/tom_roush/pdfbox/contentstream/operator/text/SetTextLeading.java
  com.tom_roush.pdfbox.contentstream.operator.text.SetTextLeading
+com/tom_roush/pdfbox/contentstream/operator/MissingOperandException.java
+ com.tom_roush.pdfbox.contentstream.operator.MissingOperandException
+com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDAttributeObject.java
+ com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDAttributeObject
 com/tom_roush/fontbox/cff/CFFEncoding.java
  com.tom_roush.fontbox.cff.CFFEncoding
 com/tom_roush/pdfbox/pdmodel/interactive/form/PDFieldFactory.java
@@ -1250,10 +1250,10 @@ com/tom_roush/pdfbox/pdmodel/graphics/image/SampledImageReader.java
 com/tom_roush/pdfbox/io/RandomAccessBufferedFileInputStream.java
  com.tom_roush.pdfbox.io.RandomAccessBufferedFileInputStream
  com.tom_roush.pdfbox.io.RandomAccessBufferedFileInputStream$1
-com/tom_roush/pdfbox/pdfparser/BaseParser.java
- com.tom_roush.pdfbox.pdfparser.BaseParser
 com/tom_roush/pdfbox/pdfparser/PDFParser.java
  com.tom_roush.pdfbox.pdfparser.PDFParser
+com/tom_roush/pdfbox/pdfparser/BaseParser.java
+ com.tom_roush.pdfbox.pdfparser.BaseParser
 com/tom_roush/pdfbox/contentstream/operator/state/SetLineJoinStyle.java
  com.tom_roush.pdfbox.contentstream.operator.state.SetLineJoinStyle
 com/tom_roush/pdfbox/pdmodel/font/PDType0Font.java
@@ -1271,10 +1271,10 @@ com/tom_roush/pdfbox/pdmodel/graphics/predictor/Sub.java
 com/tom_roush/fontbox/cff/CFFOperator.java
  com.tom_roush.fontbox.cff.CFFOperator
  com.tom_roush.fontbox.cff.CFFOperator$Key
-com/tom_roush/pdfbox/pdmodel/font/encoding/GlyphList.java
- com.tom_roush.pdfbox.pdmodel.font.encoding.GlyphList
 com/tom_roush/pdfbox/pdmodel/documentinterchange/taggedpdf/PDTableAttributeObject.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.taggedpdf.PDTableAttributeObject
+com/tom_roush/pdfbox/pdmodel/font/encoding/GlyphList.java
+ com.tom_roush.pdfbox.pdmodel.font.encoding.GlyphList
 com/tom_roush/fontbox/ttf/TTCDataStream.java
  com.tom_roush.fontbox.ttf.TTCDataStream
 com/tom_roush/fontbox/util/autodetect/MacFontDirFinder.java
@@ -1295,10 +1295,10 @@ com/tom_roush/pdfbox/io/RandomAccessFile.java
  com.tom_roush.pdfbox.io.RandomAccessFile
 com/tom_roush/fontbox/afm/Composite.java
  com.tom_roush.fontbox.afm.Composite
-com/tom_roush/pdfbox/pdmodel/common/PDStream.java
- com.tom_roush.pdfbox.pdmodel.common.PDStream
 com/tom_roush/pdfbox/pdmodel/documentinterchange/logicalstructure/PDObjectReference.java
  com.tom_roush.pdfbox.pdmodel.documentinterchange.logicalstructure.PDObjectReference
+com/tom_roush/pdfbox/pdmodel/common/PDStream.java
+ com.tom_roush.pdfbox.pdmodel.common.PDStream
 com/tom_roush/pdfbox/pdmodel/graphics/image/LosslessFactory.java
  com.tom_roush.pdfbox.pdmodel.graphics.image.LosslessFactory
 com/tom_roush/pdfbox/pdmodel/interactive/action/PDActionNamed.java
@@ -1307,10 +1307,10 @@ com/tom_roush/fontbox/ttf/GlyfCompositeComp.java
  com.tom_roush.fontbox.ttf.GlyfCompositeComp
 com/tom_roush/fontbox/ttf/VerticalOriginTable.java
  com.tom_roush.fontbox.ttf.VerticalOriginTable
-com/tom_roush/pdfbox/pdmodel/graphics/blend/SeparableBlendMode.java
- com.tom_roush.pdfbox.pdmodel.graphics.blend.SeparableBlendMode
 com/tom_roush/pdfbox/pdmodel/font/encoding/StandardEncoding.java
  com.tom_roush.pdfbox.pdmodel.font.encoding.StandardEncoding
+com/tom_roush/pdfbox/pdmodel/graphics/blend/SeparableBlendMode.java
+ com.tom_roush.pdfbox.pdmodel.graphics.blend.SeparableBlendMode
 com/tom_roush/pdfbox/pdmodel/graphics/predictor/Average.java
  com.tom_roush.pdfbox.pdmodel.graphics.predictor.Average
 com/tom_roush/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java
@@ -1330,10 +1330,10 @@ com/tom_roush/pdfbox/pdfparser/PDFXRefStream.java
  com.tom_roush.pdfbox.pdfparser.PDFXRefStream$FreeReference
  com.tom_roush.pdfbox.pdfparser.PDFXRefStream$NormalReference
  com.tom_roush.pdfbox.pdfparser.PDFXRefStream$ObjectStreamReference
-com/tom_roush/pdfbox/pdmodel/PDJavascriptNameTreeNode.java
- com.tom_roush.pdfbox.pdmodel.PDJavascriptNameTreeNode
 com/tom_roush/pdfbox/rendering/Glyph2D.java
  com.tom_roush.pdfbox.rendering.Glyph2D
+com/tom_roush/pdfbox/pdmodel/PDJavascriptNameTreeNode.java
+ com.tom_roush.pdfbox.pdmodel.PDJavascriptNameTreeNode
 com/tom_roush/fontbox/type1/DamagedFontException.java
  com.tom_roush.fontbox.type1.DamagedFontException
 com/tom_roush/fontbox/cff/Type2CharString.java
@@ -1364,21 +1364,21 @@ com/tom_roush/pdfbox/contentstream/operator/text/ShowTextAdjusted.java
  com.tom_roush.pdfbox.contentstream.operator.text.ShowTextAdjusted
 com/tom_roush/pdfbox/filter/DCTFilter.java
  com.tom_roush.pdfbox.filter.DCTFilter
+com/tom_roush/pdfbox/pdmodel/interactive/form/PDListBox.java
+ com.tom_roush.pdfbox.pdmodel.interactive.form.PDListBox
 com/tom_roush/pdfbox/multipdf/Overlay.java
  com.tom_roush.pdfbox.multipdf.Overlay
  com.tom_roush.pdfbox.multipdf.Overlay$1
  com.tom_roush.pdfbox.multipdf.Overlay$LayoutPage
  com.tom_roush.pdfbox.multipdf.Overlay$Position
-com/tom_roush/pdfbox/pdmodel/interactive/form/PDListBox.java
- com.tom_roush.pdfbox.pdmodel.interactive.form.PDListBox
 com/tom_roush/pdfbox/pdmodel/interactive/annotation/PDAnnotationText.java
  com.tom_roush.pdfbox.pdmodel.interactive.annotation.PDAnnotationText
 com/tom_roush/pdfbox/pdmodel/font/PDPanoseClassification.java
  com.tom_roush.pdfbox.pdmodel.font.PDPanoseClassification
-com/tom_roush/pdfbox/pdmodel/fdf/FDFPage.java
- com.tom_roush.pdfbox.pdmodel.fdf.FDFPage
 com/tom_roush/pdfbox/pdmodel/font/PDType1CFont.java
  com.tom_roush.pdfbox.pdmodel.font.PDType1CFont
+com/tom_roush/pdfbox/pdmodel/fdf/FDFPage.java
+ com.tom_roush.pdfbox.pdmodel.fdf.FDFPage
 com/tom_roush/pdfbox/pdmodel/interactive/viewerpreferences/PDViewerPreferences.java
  com.tom_roush.pdfbox.pdmodel.interactive.viewerpreferences.PDViewerPreferences
  com.tom_roush.pdfbox.pdmodel.interactive.viewerpreferences.PDViewerPreferences$BOUNDARY

@@ -45,6 +45,7 @@ import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 
 public class FTTemplateUtil {
 
@@ -232,7 +233,7 @@ public class FTTemplateUtil {
         recentsInfoModel.set_thumbnailURLPath(paperTheme.thumbnailURLPath);
         recentsInfoModel.set_themeBitmapInStringFrmt(BitMapToString(paperTheme.bitmap));
 
-        ftRecentThemeArrayList.add(recentsInfoModel);
+        ftRecentThemeArrayList.add(0,recentsInfoModel);
 
         Gson gson = new Gson();
         try {
@@ -356,10 +357,10 @@ public class FTTemplateUtil {
             ftRecentThemeArrayList = recentGson.fromJson(recentJson, type);
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentCoversDummy Recents List Size:: "+ftRecentThemeArrayList.size());
 
-            for (int i=0;i<ftRecentThemeArrayList.size();i++) {
+           /* for (int i=0;i<ftRecentThemeArrayList.size();i++) {
                 Log.d("TemplatePicker==>","FTTemplateUtil getRecentCoversDummy get_packName " +ftRecentThemeArrayList.get(i).get_packName()
                         +"get_thumbnailURLPath:: "+ftRecentThemeArrayList.get(i).get_thumbnailURLPath());
-            }
+            }*/
             return ftRecentThemeArrayList;
         } else {
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentCoversDummy Recents List is Empty:: ");
@@ -378,10 +379,10 @@ public class FTTemplateUtil {
             ftRecentThemeArrayList = recentGson.fromJson(recentJson, type);
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentPapersDummy Recents List Size:: "+ftRecentThemeArrayList.size());
 
-            for (int i=0;i<ftRecentThemeArrayList.size();i++) {
+            /*for (int i=0;i<ftRecentThemeArrayList.size();i++) {
                 Log.d("TemplatePicker==>","FTTemplateUtil getRecentPapersDummy get_packName " +ftRecentThemeArrayList.get(i).get_packName()
                         +"get_thumbnailURLPath:: "+ftRecentThemeArrayList.get(i).get_thumbnailURLPath());
-            }
+            }*/
             return ftRecentThemeArrayList;
         } else {
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentPapersDummy Recents List is Empty:: ");
@@ -463,6 +464,9 @@ public class FTTemplateUtil {
     }
 
     public String BitMapToString(Bitmap bitmap) {
+        if (bitmap==null) {
+            return "";
+        }
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, baos);
         byte[] b = baos.toByteArray();

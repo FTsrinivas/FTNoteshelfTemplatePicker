@@ -1,9 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: com.thesurix.gesturerecycler:gesture-recycler:1.7.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/978ef86ffa24b0f673030eca8e31b8ed/jetified-gesture-recycler-1.7.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/978ef86ffa24b0f673030eca8e31b8ed/jetified-gesture-recycler-1.7.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/978ef86ffa24b0f673030eca8e31b8ed/jetified-gesture-recycler-1.7.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/47a203b2aa875e9aad7e1d58b6e00956/transformed/jetified-gesture-recycler-1.7.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/47a203b2aa875e9aad7e1d58b6e00956/transformed/jetified-gesture-recycler-1.7.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/47a203b2aa875e9aad7e1d58b6e00956/transformed/jetified-gesture-recycler-1.7.0/AndroidManifest.xml" />

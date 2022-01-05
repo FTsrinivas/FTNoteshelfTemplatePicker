@@ -1,7 +1,6 @@
 package com.fluidtouch.dynamicgeneration.templateformatsnew;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.fluidtouch.dynamicgeneration.inteface.TemplatesGeneratorInterface;
 import com.fluidtouch.noteshelf.models.theme.FTNDynamicTemplateTheme;
@@ -25,12 +24,6 @@ public class FTCheckedTemplateFormat extends FTDynamicTemplateFormat implements 
 
         try {
 
-            /*Log.d("::TemplatePickerV2","Device Size::- FTCheckedTemplateFormat generateTemplate::-" +
-                    " mTheme.width::-"+mTheme.width+
-                    " mTheme.height::-"+mTheme.height+
-                    " mPageWidth::-"+mPageWidth+
-                    " mPageHeight::-"+mPageHeight);*/
-
             PDDocument doc = new PDDocument();
             PDPage page = new PDPage();
             PDRectangle mRectangle = new PDRectangle(mPageWidth, mPageHeight);
@@ -43,7 +36,7 @@ public class FTCheckedTemplateFormat extends FTDynamicTemplateFormat implements 
             contentStream.fill();
 
 //            float yCordinate = mTheme.bottomMargin * scale;
-            float yCordinate = mPageHeight-1 * scale;
+            float yCordinate = mPageHeight- (1 /* scale*/) - (mTheme.bottomMargin * scale);
             float startX = page.getCropBox().getLowerLeftX();;
             float endX = mPageWidth;
 
@@ -51,7 +44,7 @@ public class FTCheckedTemplateFormat extends FTDynamicTemplateFormat implements 
              * Code snippet to draw horizontal lines
              */
             for (int i= horizontalLineCount(); i >0; i--) {
-                contentStream.setLineWidth(3);
+                contentStream.setLineWidth(1);
                 contentStream.setLineCapStyle(1);
                 contentStream.setLineJoinStyle(1);
                 contentStream.moveTo(startX, yCordinate);
@@ -60,29 +53,30 @@ public class FTCheckedTemplateFormat extends FTDynamicTemplateFormat implements 
                 contentStream.setStrokingColor(horizontalLineRedClrValue,
                         horizontalLineGreenClrValue,horizontalLineBlueClrValue);
                 contentStream.stroke();
-                yCordinate -= horizontalSpacing+3;
+                yCordinate -= horizontalSpacing+1;
             }
 
             /*
              * Code snippet to draw Vertical  lines
              */
             float getLowerLeftY  = page.getCropBox().getLowerLeftY();
-            float getLowerLeftX  = page.getCropBox().getLowerLeftX();
+            float getLowerLeftX  = page.getCropBox().getLowerLeftX()+verticalSpacing+1;
             float getUpperRightX = page.getCropBox().getUpperRightX();
             float getUpperRightY = page.getCropBox().getUpperRightY();
+            float getUpperRightEnd = mPageHeight- (1 /* scale*/) - (mTheme.bottomMargin * scale);
 
             for (int i = 0; i < verticalLineCount() +1; i++) {
-                contentStream.setLineWidth(3);
-                contentStream.moveTo(getLowerLeftX, getLowerLeftY);
-                contentStream.lineTo(getLowerLeftX, getUpperRightY);
+                contentStream.setLineWidth(1);
+                contentStream.moveTo(getLowerLeftX, yCordinate+horizontalSpacing+1);
+                contentStream.lineTo(getLowerLeftX, getUpperRightEnd);
                 contentStream.setStrokingColor(verticalLineRedClrValue,
                         verticalLineGreenClrValue, verticalLineBlueClrValue);
 
                 contentStream.stroke();
 
-                getLowerLeftX  += verticalSpacing + 3;
-                getUpperRightX += verticalSpacing + 3;
-                getUpperRightY += verticalSpacing + 3;
+                getLowerLeftX  += verticalSpacing + 1;
+                getUpperRightX += verticalSpacing + 1;
+                getUpperRightY += verticalSpacing + 1;
             }
 
             contentStream.close();
@@ -111,11 +105,11 @@ public class FTCheckedTemplateFormat extends FTDynamicTemplateFormat implements 
 
     private int horizontalLineCount() {
         int horizontalLineCount;
-        float cellHeight = horizontalSpacing + 3;
-        float consideredPageHeight = (mPageHeight /*- (mTheme.bottomMargin * scale)*/);
-        int actualCount = (int) Math.floor((consideredPageHeight / cellHeight));
+        float cellHeight = horizontalSpacing + 1;
+        float consideredPageHeight = (mPageHeight - ( mTheme.bottomMargin * scale));
+        int actualCount = (int) Math.round((consideredPageHeight / cellHeight));
         float effectiveHeight = mPageHeight - (mTheme.bottomMargin*scale) - (actualCount * cellHeight);
-        if (2 * cellHeight - effectiveHeight >= cellHeight) {
+        if (2 * cellHeight - effectiveHeight >= 10) {
             actualCount++;
         }
         return actualCount;
@@ -123,9 +117,9 @@ public class FTCheckedTemplateFormat extends FTDynamicTemplateFormat implements 
 
     private int verticalLineCount() {
         int verticalLineCount;
-        float cellWidth = verticalSpacing + 3;
+        float cellWidth = verticalSpacing + 1;
         float consideredPageWidth = mPageWidth;
-        int actualCount = (int) Math.floor((consideredPageWidth / cellWidth));
+        int actualCount = (int) Math.round((consideredPageWidth / cellWidth));
         verticalLineCount = actualCount - 1;
         return verticalLineCount;
     }

@@ -8,6 +8,7 @@ import android.graphics.Paint
 import android.graphics.Rect
 import android.util.Log
 import android.util.SizeF
+import android.util.TypedValue
 import androidx.core.content.res.ResourcesCompat
 import com.dd.plist.NSArray
 import com.dd.plist.NSDictionary
@@ -114,6 +115,44 @@ object FTScreenUtils {
             e.printStackTrace()
             n.toString() + ""
         }
+    }
+
+    public fun getStatusBarHeight(context: Context): Int {
+        var result = 0
+        val resourceId = context.resources.getIdentifier("status_bar_height", "dimen", "android")
+        if (resourceId > 0) {
+            result = context.resources.getDimensionPixelSize(resourceId)
+        }
+        return result
+    }
+
+    public fun getToolbarHeight(context: Context, isLandscape: Boolean, isTablet: Boolean): Int {
+        var actionBarHeight = 0f
+
+        if (isTablet) {
+            val tv = TypedValue()
+            if (context.theme.resolveAttribute(android.R.attr.actionBarSize, tv, true)) {
+                actionBarHeight = TypedValue.complexToDimensionPixelSize(
+                    tv.data,
+                    context.resources.displayMetrics
+                ).toFloat()
+            }
+        } else {
+            val scale = Resources.getSystem().displayMetrics.density
+            actionBarHeight = if (!isLandscape) 56 * scale else 48 * scale
+        }
+
+        return actionBarHeight.toInt()
+    }
+
+    public fun getNavigationBarHeight(context: Context): Int {
+        val resources: Resources = context.getResources()
+        val resourceId = resources.getIdentifier("navigation_bar_height", "dimen", "android")
+        return if (resourceId > 0) resources.getDimensionPixelSize(resourceId) else 0
+    }
+
+    public fun isNotchDisplay(statusBarHeight: Int): Boolean {
+        return statusBarHeight > 24 * Resources.getSystem().displayMetrics.density
     }
 
 

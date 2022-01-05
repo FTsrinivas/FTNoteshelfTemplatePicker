@@ -733,4 +733,7 @@
     <string name="get_back_to_school_in_style">Get Back to School in Style!</string>
     <string name="study_planner_desc">Use the new Study Planners to track your assignments and plan your schedules. Get them from the Free Downloads Section now!</string>
     <string name="study_planners">Study Planners</string>
+
+    <string name="create_custom_paper">Create Custom Paper</string>
+    <string name="untitled_paper">Untitled paper</string>
 </resources>

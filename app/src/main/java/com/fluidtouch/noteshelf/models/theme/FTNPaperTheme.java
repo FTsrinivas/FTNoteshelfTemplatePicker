@@ -93,12 +93,12 @@ public class FTNPaperTheme extends FTNTheme {
 
         //Check if template is generated for ftSelectedDeviceInfo
         // If generated return cached URL
-        /*if (new File(url.getPath()).exists()) {
+        if (new File(url.getPath()).exists()) {
             FTDocumentInputInfo documentInfo = new FTDocumentInputInfo();
             documentInfo.inputFileURL = url;
             callback.onGenerated(documentInfo, null);
             return;
-        }*/
+        }
 
             if (this.dynamicId == 2) {
                 FTAutoTemplateGenerator.autoTemplateGenerator(this).generate(mContext,
@@ -222,6 +222,13 @@ public class FTNPaperTheme extends FTNTheme {
             aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew);
         }
 
+        if (dynamicId == 2) {
+            //PDF Generation
+        } else if (theme().getCategoryName() != rencents || custom) {
+            //Not basic, Not recent, Not custom
+            theme if assets lo ?
+        }
+
     }
 
     protected Bitmap pdfToBitmap(FTNPaperTheme theme, File pdfFile, String fileName, Context mContext) {
@@ -236,10 +243,15 @@ public class FTNPaperTheme extends FTNTheme {
 
             PdfRenderer.Page page = renderer.openPage(0);
             FTSelectedDeviceInfo ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
-            /*int width  = page.getWidth();
-            int height = page.getHeight();*/
-            int width = (int) ftSelectedDeviceInfo.getPageWidth();
-            int height = (int) ftSelectedDeviceInfo.getPageHeight();
+            int height = isLandscape? 188 : 340;
+            int width  = aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
+        /*    int width  = 274;
+            int height = 188;*/
+          /*  int width = (int) ftSelectedDeviceInfo.getPageWidth();*/
+
+
+
+//            int height = (int) ftSelectedDeviceInfo.getPageHeight();
             Log.d("TemplatePicker==>", "FTDynamicTemplateFormat storeImage getPageWidth::-" + width
                     + " getPageHeight::-" + height);
             bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
@@ -255,6 +267,10 @@ public class FTNPaperTheme extends FTNTheme {
         }
 
         return bitmap;
+    }
+
+    private int aspectSize(int originalWidth,int originalHeight,int bitmapHeight){
+        return (bitmapHeight * originalWidth)/originalHeight;
     }
 
     private void storeImage(FTNPaperTheme theme, Bitmap image, String fileName,
@@ -348,7 +364,7 @@ public class FTNPaperTheme extends FTNTheme {
             String tabName = FTApp.getPref().get(SystemPref.LAST_SELECTED_TAB, "portrait");
             String imageName = null;
             if (tabName.contains("port")) {
-                imageName = "thumbnail_port@2x.png";
+                imageName = "thumbnail_port.png";
             } else {
                 imageName = "thumbnail_land@2x.png";
             }

@@ -1,9 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: com.huawei.hms:update:2.0.6.302@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63798769e9f944c96d39e694875b582e/jetified-update-2.0.6.302/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63798769e9f944c96d39e694875b582e/jetified-update-2.0.6.302/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/63798769e9f944c96d39e694875b582e/jetified-update-2.0.6.302/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/88aaac0ec350d9bc38e3a85c5f141eac/transformed/jetified-update-2.0.6.302/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/88aaac0ec350d9bc38e3a85c5f141eac/transformed/jetified-update-2.0.6.302/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/88aaac0ec350d9bc38e3a85c5f141eac/transformed/jetified-update-2.0.6.302/AndroidManifest.xml" />

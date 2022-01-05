@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -241,6 +242,7 @@ public class FTTemplateCategories extends Fragment implements MoreColorsViewInte
 
                 String charString = charSequence.toString();
                 tempString = charSequence.toString();
+
                 if (charString.trim().isEmpty()) {
                     Log.d("TemplatePickerV2", " Search:: "+ filteredData  +" Size:: "+templatesInfoList .size());
 
@@ -285,95 +287,15 @@ public class FTTemplateCategories extends Fragment implements MoreColorsViewInte
                     return filterResults;
                 }
 
-                /*String charString = charSequence.toString();
-                List<FTCategories> originalListTemp = new ArrayList<>();
-                ArrayList<FTCategories> filteredItems = new ArrayList<FTCategories>();
-                if (charString != null && charString.toString().length() > 0) {
-                    ArrayList<FTCategories> _searchedList = new ArrayList<>();
-                    String themeType = FTApp.getPref().get(SystemPref.THEME_TYPE, "PAPER");
-
-                    if (themeType.equalsIgnoreCase("PAPER")) {
-
-                        originalListTemp.addAll(FTTemplatesInfoSingleton.getInstance().getFTNThemeCategory("search",
-                                FTNThemeCategory.FTThemeType.PAPER));
-                    } else {
-                        originalListTemp.addAll(FTTemplatesInfoSingleton.getInstance().getFTNThemeCategory("search",
-                                FTNThemeCategory.FTThemeType.COVER));
-                    }
-
-                    for (int i = 0; i < originalListTemp.size(); i++) {
-                        FTCategories ftCategory = originalListTemp.get(i);
-                        FTCategories mFTCategory = getFilteredListDummy(ftCategory, charString, originalListTemp);
-                        if (mFTCategory != null) {
-                            _searchedList.add(mFTCategory);
-                        }
-                    }
-
-                    if (filteredItems != null) {
-                        filteredItems.clear();
-                    }
-
-                    filteredItems.addAll(_searchedList);
-                    Log.d("TemplatePicker==>", "search performFiltering filteredItems size:: " + filteredItems.size());
-
-                } else {
-                    String themeType = FTApp.getPref().get(SystemPref.THEME_TYPE, "PAPER");
-                    FTTemplatesInfoSingleton mFTTemplatesInfoSingleton = null;
-                    FTNThemeCategory.FTThemeType themeTypeNew = FTNThemeCategory.FTThemeType.PAPER;
-
-                    if (themeType.equalsIgnoreCase("PAPER")) {
-                        Log.d("TemplatePicker==>", "search performFiltering originalListTemp 1 Before size:: " + originalListTemp.size());
-
-                        originalListTemp.addAll(FTTemplatesInfoSingleton.getInstance().getFTNThemeCategory("search",
-                                FTNThemeCategory.FTThemeType.PAPER));
-
-                    } else {
-
-                        originalListTemp.addAll(FTTemplatesInfoSingleton.getInstance().getFTNThemeCategory("search",
-                                FTNThemeCategory.FTThemeType.COVER));
-
-                    }
-                    if (filteredItems != null) {
-                        filteredItems.clear();
-                    }
-
-                    filteredItems.addAll(originalListTemp);
-                }
-
-                FilterResults filterResults = new FilterResults();
-
-                filterResults.values = filteredItems;
-                Log.d("TemplatePicker==>", "search performFiltering result:: " + filterResults + " result.values:: " + filterResults.values);
-                return filterResults;*/
             }
 
             @Override
             protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-                /*Log.d("TemplatePicker==>", "search performFiltering publishResults:: " + charSequence.toString() + " size:: " + filterResults.values);
-                ftTemplateCategoryInfoArrayList.clear();
-                if (filterResults.values != null) {
-                    ArrayList<FTCategories> ftTemplateCategoryInfoArrayListDummy = (ArrayList<FTCategories>) filterResults.values;
-                    Log.d("TemplatePicker==>", "search performFiltering publishResults:: " + charSequence.toString() + " size:: " + ftTemplateCategoryInfoArrayListDummy.size());
-
-                    // TODO: Temp comment
-                    //ftTemplateCategoryInfoArrayList.addAll(ftTemplateCategoryInfoArrayListDummy);
-
-                } else {
-                    ftTemplateCategoryInfoArrayList.clear();
-                }
-
-                notifyDataSetChanged();*/
-
-                //ftTemplateCategoryInfoArrayListFiltered = (ArrayList<TemplatesInfoModel>) filterResults.values;
-                // notifyDataSetChanged();
-
                 filteredData = (ArrayList<TemplatesInfoModel>) filterResults.values;
                 /*templatesInfoList.clear();
                 templatesInfoList.addAll((ArrayList<TemplatesInfoModel>) filterResults.values);*/
                 Log.d("TemplatePicker==>", "search performFiltering publishResults:: " + charSequence.toString() + " size:: " + filteredData.size());
                 ftTemplateCategoryAdapter.refreshUI(filteredData);
-                //ftTemplateCategoryAdapter.notifyDataSetChanged();
-                //notifyDataSetChanged();
             }
         };
 

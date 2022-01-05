@@ -18,6 +18,7 @@ import android.util.TypedValue;
 import com.fluidtouch.noteshelf.FTApp;
 import com.fluidtouch.noteshelf.commons.utils.ScreenUtil;
 import com.fluidtouch.noteshelf.generator.formats.FTDiaryFormat2020;
+import com.fluidtouch.noteshelf.generator.formats.FTModernDiaryFormat;
 import com.fluidtouch.noteshelf.generator.formats.dayandnight_journal.FTDayAndNightJournal;
 import com.fluidtouch.noteshelf.generator.models.info.FTDayInfo;
 import com.fluidtouch.noteshelf.generator.models.info.FTMonthInfo;
@@ -50,7 +51,8 @@ public class FTDiaryFormat implements FTDairyRenderFormat {
     public static FTDiaryFormat getFormat(Context context, FTYearFormatInfo info) {
         //Template type
         if (info.templateId.equals("Modern")) {
-            return new FTDiaryFormat2020(context, info);
+//            return new FTDiaryFormat2020(context, info);
+            return new FTModernDiaryFormat(context, info);
         } else if (info.templateId.equals("DayAndNight")) {
             return new FTDayAndNightJournal(context, info);
         }

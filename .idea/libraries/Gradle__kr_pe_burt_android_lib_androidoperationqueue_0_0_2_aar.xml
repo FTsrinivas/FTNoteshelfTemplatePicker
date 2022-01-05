@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: kr.pe.burt.android.lib:androidoperationqueue:0.0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/267e1f7d3e5aa4591b26d1d1bc5e2e93/jetified-androidoperationqueue-0.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/267e1f7d3e5aa4591b26d1d1bc5e2e93/jetified-androidoperationqueue-0.0.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/267e1f7d3e5aa4591b26d1d1bc5e2e93/jetified-androidoperationqueue-0.0.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/726bd47ecc108c95e3ededba1419a502/transformed/jetified-androidoperationqueue-0.0.2/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/726bd47ecc108c95e3ededba1419a502/transformed/jetified-androidoperationqueue-0.0.2/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/726bd47ecc108c95e3ededba1419a502/transformed/jetified-androidoperationqueue-0.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/726bd47ecc108c95e3ededba1419a502/transformed/jetified-androidoperationqueue-0.0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/kr.pe.burt.android.lib/androidoperationqueue/0.0.2/e3e4156eed018b2ba03b9500d967c586f7ab1b30/androidoperationqueue-0.0.2-javadoc.jar!/" />

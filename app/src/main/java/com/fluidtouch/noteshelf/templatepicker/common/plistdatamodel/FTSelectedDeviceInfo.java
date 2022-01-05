@@ -6,6 +6,11 @@ import com.fluidtouch.noteshelf.FTApp;
 import com.fluidtouch.noteshelf.preferences.SystemPref;
 import com.fluidtouch.noteshelf.templatepicker.common.supporteddevicesplistdatamodel.ItemModel;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import java.lang.ref.WeakReference;
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 
 public class FTSelectedDeviceInfo {
 
@@ -20,8 +25,25 @@ public class FTSelectedDeviceInfo {
         this.selectedDeviceName = selectedDeviceName;
     }
 
-    public String getItemModel() {
-        return itemModel;
+    public ItemModel getItemModel() {
+        /*Gson afterDownloadedListGson = new Gson();
+        Type afterDownloadedListType = new TypeToken<ArrayList<String>>() {}.getType();
+        afterDownloadedList = afterDownloadedListGson.fromJson(filesAfterNewDownloadsListJSON, afterDownloadedListType);*/
+        Gson afterDownloadedListGson = new Gson();
+        Type afterDownloadedListType = new TypeToken<ItemModel>() {}.getType();
+        ItemModel _itemModel = afterDownloadedListGson.fromJson(itemModel,afterDownloadedListType);
+        if (_itemModel == null) {
+            ItemModel  model = new ItemModel(
+                    "595_842",
+                    "842_595",
+                    "595_842",
+                    "A4 8.3 x 11.7\"\"",
+                    "standard2");
+            String strModel = afterDownloadedListGson.toJson(model);
+            String str_finalModelItem=   FTApp.getPref().get(SystemPref.TEMPLATE_MODEL_INFO,strModel);
+            _itemModel = afterDownloadedListGson.fromJson(str_finalModelItem,afterDownloadedListType);
+        }
+        return _itemModel;
     }
 
     public void setItemModel(ItemModel itemModel) {
@@ -191,7 +213,12 @@ public class FTSelectedDeviceInfo {
         ftSelectedDeviceInfo.setVerticaMorelLineClr(FTApp.getPref().get(SystemPref.TEMPLATE_LINES_VERTICAL_COLOUR_CLR_HEX_MRE, "#C4A393-1.0"));
 
         FTApp.getPref().save(SystemPref.TEMPLATE_DEVICE_NAME, "A4 8.3 x 11.7\"\"");
-        FTApp.getPref().save(SystemPref.TEMPLATE_MODEL_INFO, "ModelInfo");
+        FTApp.getPref().save(SystemPref.TEMPLATE_MODEL_INFO,new ItemModel(
+                "595_842",
+                "842_595",
+                "595_842",
+                "A4 8.3 x 11.7\"\"",
+                "standard2"));
         Log.d("TemplatePickerV2", "selectedDeviceInfo Getter Mani getLayoutType "
                 + FTApp.getPref().get(SystemPref.LAST_SELECTED_TAB, "mani")
                 +" TEMPLATE_COLOUR_SELECTED_CLR_NAME:: "+FTApp.getPref().get(SystemPref.TEMPLATE_COLOUR_SELECTED_CLR_NAME, "mani"));
@@ -219,7 +246,8 @@ public class FTSelectedDeviceInfo {
         FTApp.getPref().save(SystemPref.TEMPLATE_LINES_VERTICAL_COLOUR_CLR_HEX_MRE, getVerticaMorelLineClr());
 
         FTApp.getPref().save(SystemPref.TEMPLATE_DEVICE_NAME, getSelectedDeviceName());
-        FTApp.getPref().save(SystemPref.TEMPLATE_MODEL_INFO, getItemModel());
+        String strModel = new Gson().toJson(getItemModel());
+        FTApp.getPref().save(SystemPref.TEMPLATE_MODEL_INFO,strModel);
 
         Log.d("TemplatePickerV2", "selectSavedDeviceInfo Setter Mani getLayoutType " + getLayoutType()
                 +" TEMPLATE_COLOUR_SELECTED_CLR_NAME  "+getThemeBgClrName());

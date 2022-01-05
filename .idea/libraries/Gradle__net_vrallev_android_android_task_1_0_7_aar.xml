@@ -1,9 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: net.vrallev.android:android-task:1.0.7@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a69c2d925ca6632fc2a12c7bfc0eb495/jetified-android-task-1.0.7/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a69c2d925ca6632fc2a12c7bfc0eb495/jetified-android-task-1.0.7/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a69c2d925ca6632fc2a12c7bfc0eb495/jetified-android-task-1.0.7/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f4b56c5bbd0b650b70d2dd6fed67eebc/transformed/jetified-android-task-1.0.7/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f4b56c5bbd0b650b70d2dd6fed67eebc/transformed/jetified-android-task-1.0.7/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f4b56c5bbd0b650b70d2dd6fed67eebc/transformed/jetified-android-task-1.0.7/AndroidManifest.xml" />

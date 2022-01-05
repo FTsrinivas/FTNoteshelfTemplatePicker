@@ -858,11 +858,13 @@ public class FTBaseShelfActivity extends FTBaseActivity implements
                 String coverPackName = FTApp.getPref().get(SystemPref.RECENT_COVER_THEME_NAME, FTConstants.DEFAULT_COVER_THEME_NAME);
                 if (FTNTheme.theme(FTNThemeCategory.getUrl(coverPackName)) instanceof FTNCoverTheme && coverPackName.endsWith(".nsc")) {
                     coverTheme = (FTNCoverTheme) FTNTheme.theme(FTNThemeCategory.getUrl(coverPackName));
+                    coverTheme.bitmap               = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.COVER);
                 }
 
                 if (coverTheme == null || coverTheme.themeThumbnail(getContext()) == null) {
                     coverTheme = new FTNThemeCategory(getContext(), "Simple", FTNThemeCategory.FTThemeType.COVER).getCoverThemeForPackName(FTConstants.DEFAULT_COVER_THEME_NAME);
                     FTApp.getPref().save(SystemPref.RECENT_COVER_THEME_NAME, FTConstants.DEFAULT_COVER_THEME_NAME);
+                    coverTheme.bitmap               = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.COVER);
                 }
             }
 

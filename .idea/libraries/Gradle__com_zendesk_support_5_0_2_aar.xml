@@ -1,12 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.zendesk:support:5.0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6ecf034d0c1aeb0ab93e7d28086d59c7/jetified-support-5.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6ecf034d0c1aeb0ab93e7d28086d59c7/jetified-support-5.0.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6ecf034d0c1aeb0ab93e7d28086d59c7/jetified-support-5.0.2/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ba1a5b99959ee63bb3f0b57c8776b769/transformed/jetified-support-5.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ba1a5b99959ee63bb3f0b57c8776b769/transformed/jetified-support-5.0.2/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ba1a5b99959ee63bb3f0b57c8776b769/transformed/jetified-support-5.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ba1a5b99959ee63bb3f0b57c8776b769/transformed/jetified-support-5.0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zendesk/support/5.0.2/4880ad5c0d1c09f16c4b052a642bb94cda1bc868/support-5.0.2-javadoc.jar!/" />

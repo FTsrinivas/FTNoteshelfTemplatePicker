@@ -40,8 +40,7 @@
                 android:singleLine="true"
                 android:visibility="gone"
                 android:inputType="textNoSuggestions"
-                android:layout_weight = "1"
-                android:background="@color/ns_red">
+                android:layout_weight = "1">
             </EditText>
 
             <ImageButton

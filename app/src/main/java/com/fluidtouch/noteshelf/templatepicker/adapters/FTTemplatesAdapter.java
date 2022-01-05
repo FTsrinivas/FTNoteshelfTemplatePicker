@@ -149,22 +149,21 @@ public class FTTemplatesAdapter extends
         mParentViewHolder = parentViewHolder;
         String parentItem = ftTemplateCategoryInfoArrayList.get(position).get_categoryName();
         ArrayList<FTNTheme> ftnThemeArrayList = ftTemplateCategoryInfoArrayList.get(position).get_themeseList();
+        /*if (parentItem.equalsIgnoreCase("Recent")) {
+            Collections.reverse(ftnThemeArrayList);
+        }*/
         parentViewHolder.templateCategoryTitle.setText(parentItem);
         LinearLayoutManager layoutManager = new LinearLayoutManager(parentViewHolder.templatesRecyclerView.getContext(),
                 LinearLayoutManager.HORIZONTAL, false);
-
-        Log.d("TemplatePicker==>", " FTTemplatesAdapter onBindViewHolder FTTemplateCategories FTTemplateDetailedInfoAdapter::- categoryName:-" + parentItem);
 
         categoriesNamesList.add(parentItem);
         parentViewHolder.templatesRecyclerView.getLocationOnScreen(screen);
 
         categoryNameList.add(parentItem);
         String keyExists = FTApp.getPref().get(parentItem, null);
-        Log.d("TemplatePicker==>", " FTTemplatesAdapter onBindViewHolder keyExists::-" + keyExists + " parentItem::-" + parentItem);
         if (keyExists != null) {
 
             try {
-
                 Date today = new Date();
                 SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
                 String dateToStr = format.format(today);
@@ -180,11 +179,11 @@ public class FTTemplatesAdapter extends
                 long difference_In_Days = (difference_In_Time / (1000 * 60 * 60 * 24)) % 365;
                 long difference_In_Minutes = (difference_In_Time / (1000 * 60)) % 60;
 
-                Log.d("TemplatePicker==>", "Date::- FTTemplatesAdapter onBindViewHolder " +
+               /* Log.d("TemplatePicker==>", "Date::- FTTemplatesAdapter onBindViewHolder " +
                         "FTTemplateCategories FTTemplateDetailedInfoAdapter::- diffInDays:-" + diffInDays +
                         " difference_In_Minutes::-" + difference_In_Minutes +
                         " downloadedDate::-" + downloadedDate + " currentDate::-" + currentDate +
-                        " dateToStr::-" + dateToStr + " keyExists::-" + keyExists);
+                        " dateToStr::-" + dateToStr + " keyExists::-" + keyExists);*/
 
                 if (difference_In_Minutes < 2) {
                     Log.d("TemplatePicker==>", "Date::- newDownloadedPillTag Pill Visibility Visible ");
@@ -278,6 +277,7 @@ public class FTTemplatesAdapter extends
             parentViewHolder.templatesRecyclerView.setAdapter(childItemAdapter);
             parentViewHolder.templatesRecyclerView.setLayoutManager(layoutManager);
             parentViewHolder.templatesRecyclerView.setHasFixedSize(true);
+            Log.d("FTTemplatesAdapter==>", "ftnThemeArrayList::-"+position);
 
         }
 
@@ -331,7 +331,7 @@ public class FTTemplatesAdapter extends
                 ftSelectedDeviceInfo.setHorizontalLineClr("#FFFFFF-0.15");
                 ftSelectedDeviceInfo.setVerticalLineClr("#FFFFFF-0.15");
                 ftSelectedDeviceInfo.selectSavedDeviceInfo();
-                Log.d("TemplatePickerV2", " selectionColorView2" + selectedDeviceInfo.getThemeBgClrName()+" ManigetLayoutType:: "+selectedDeviceInfo.getLayoutType());
+//                Log.d("TemplatePickerV2", " selectionColorView2" + selectedDeviceInfo.getThemeBgClrName()+" ManigetLayoutType:: "+selectedDeviceInfo.getLayoutType());
 
                 templateInfoRequest.templateBgColourChangedListener();
             }
@@ -363,7 +363,7 @@ public class FTTemplatesAdapter extends
                 ftSelectedDeviceInfo.selectSavedDeviceInfo();
 
                 templateInfoRequest.templateBgColourChangedListener();
-                childItemAdapter.notifyDataSetChanged();
+//                childItemAdapter.notifyDataSetChanged();
             }
         });
 
@@ -389,12 +389,10 @@ public class FTTemplatesAdapter extends
 
     public void refreshUI(ArrayList<TemplatesInfoModel> ftTemplateCategoryInfoArrayListR) {
         Log.d("TemplatePicker==>", "Filtering ftTemplateCategoryInfoArrayListR ::-" + ftTemplateCategoryInfoArrayListR);
-        if (ftTemplateCategoryInfoArrayListR != null &&
-                !ftTemplateCategoryInfoArrayListR.isEmpty()) {
+        if (ftTemplateCategoryInfoArrayListR != null) {
            /* ftTemplateCategoryInfoArrayList.clear();
             ftTemplateCategoryInfoArrayList.addAll(ftTemplateCategoryInfoArrayListR);*/
             ftTemplateCategoryInfoArrayList = ftTemplateCategoryInfoArrayListR;
-
             notifyDataSetChanged();
         }
     }
@@ -421,7 +419,7 @@ public class FTTemplatesAdapter extends
                 ftSelectedDeviceInfo.setHorizontalLineSpacing(selectedDeviceInfo.getHorizontalLineSpacing());
                 ftSelectedDeviceInfo.setVerticalLineSpacing(selectedDeviceInfo.getVerticalLineSpacing());
 
-                Log.d("TemplatePicker==>", " getThemeMoreBgClrName" + selectedDeviceInfo.getThemeMoreBgClrName());
+                //Log.d("TemplatePicker==>", " getThemeMoreBgClrName" + selectedDeviceInfo.getThemeMoreBgClrName());
 
                 ftSelectedDeviceInfo.selectSavedDeviceInfo();
             }
@@ -467,14 +465,14 @@ public class FTTemplatesAdapter extends
         if (ftCategoriesTemp.get_themeseList() != null) {
             for (int i = 0; i <= ftCategoriesTemp.get_themeseList().size() - 1; i++) {
                 String themeName = FTTemplatesInfoSingleton.getInstance().getNSPFileNameWithoutExtn(ftCategoriesTemp.get_themeseList().get(i));
-                Log.d("TemplatePicker==>", "search performFiltering performFiltering LOG packName:: "
+               /* Log.d("TemplatePicker==>", "search performFiltering performFiltering LOG packName:: "
                         + themeName
                         + " status:: " + searchKeyWord.toLowerCase() + " status:: "
-                        + themeName.toLowerCase().contains(searchKeyWord.toLowerCase()));
+                        + themeName.toLowerCase().contains(searchKeyWord.toLowerCase()));*/
 
                 if (themeName != null &&
                         themeName.toLowerCase().contains(searchKeyWord.toLowerCase())) {
-                    Log.d("TemplatePicker==>", "search performFiltering performFiltering LOG Inside TRUE packName:: " + themeName);
+//                    Log.d("TemplatePicker==>", "search performFiltering performFiltering LOG Inside TRUE packName:: " + themeName);
                     ftnThemes.add(ftCategoriesTemp.get_themeseList().get(i));
                 }
             }

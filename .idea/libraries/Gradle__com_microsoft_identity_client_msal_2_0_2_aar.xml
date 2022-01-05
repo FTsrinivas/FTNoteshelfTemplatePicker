@@ -1,11 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.microsoft.identity.client:msal:2.0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/969140c3e13adf8df1a0a53df46983c0/jetified-msal-2.0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/969140c3e13adf8df1a0a53df46983c0/jetified-msal-2.0.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/969140c3e13adf8df1a0a53df46983c0/jetified-msal-2.0.2/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0650544be4bf69fe8dbe2857e7558d89/transformed/jetified-msal-2.0.2/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0650544be4bf69fe8dbe2857e7558d89/transformed/jetified-msal-2.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0650544be4bf69fe8dbe2857e7558d89/transformed/jetified-msal-2.0.2/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0650544be4bf69fe8dbe2857e7558d89/transformed/jetified-msal-2.0.2/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

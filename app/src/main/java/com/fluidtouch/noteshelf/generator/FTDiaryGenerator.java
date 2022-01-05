@@ -119,7 +119,7 @@ public class FTDiaryGenerator {
         document.close();
         addLink(url, (FTDiaryFormat) format, monthlyFormatter.yearFormatInfo);
 
-        String themeNameTrunc = theme.themeName.substring(0, theme.themeName.lastIndexOf("."));
+//        String themeNameTrunc = theme.themeName.substring(0, theme.themeName.lastIndexOf("."));
         //pdfToBitmap(themeNameTrunc,new File(url), fileName, url, context);
         String filePath = FTConstants.TEMP_FOLDER_PATH+fileName;
         pdfToBitmap(theme,new File(url), fileName, filePath, this.context);

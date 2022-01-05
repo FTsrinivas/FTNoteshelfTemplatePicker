@@ -334,7 +334,8 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
         FTFirebaseAnalytics.logEvent("Shelf_AddNew_NewNB_CreateNB");
         FTLog.crashlyticsLog("UI: Clicked Create notebook");
         Log.d("TemplatePicker==>", "FTNewNotebookDialog onCreateClicked paperTheme::-" + paperTheme + " paperTheme::-" +
-                paperTheme.themeName + " themeBgClr::-" + paperTheme.themeBgClr + " thumbnailURLPath::-" + paperTheme.thumbnailURLPath);
+                paperTheme.themeName + " themeBgClr::-" + paperTheme.themeBgClr + " thumbnailURLPath::-" + paperTheme.thumbnailURLPath
+         +"\n Width::- "+paperTheme.width+"\t height::- "+paperTheme.height);
         String name = notebookTitleEditText.getText().toString();
         if (TextUtils.isEmpty(name)) {
             FTTemplateUtil.getInstance().saveRecentPaperThemeFromNewNotebookDialog(paperTheme);

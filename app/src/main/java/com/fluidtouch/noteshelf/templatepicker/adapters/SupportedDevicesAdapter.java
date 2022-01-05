@@ -154,7 +154,8 @@ public class SupportedDevicesAdapter extends RecyclerView.Adapter<RecyclerView.V
 
                         ftSelectedDeviceInfo.setSelectedDeviceName(clickedDataItem.getDisplayName());
                         ftSelectedDeviceInfo.setItemModel(clickedDataItem);
-                        //ftSelectedDeviceInfo.selectSavedDeviceInfo();
+                        ftSelectedDeviceInfo.selectSavedDeviceInfo();
+                        Log.d("FTChoosePaperTemplate 2==>","2");
 
                         deviceSelectionListener.onDeviceSelected(tabSelected.toLowerCase(),clickedDataItem,"adapter");
                         notifyDataSetChanged();

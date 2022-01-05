@@ -37,7 +37,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/search_template"
-                android:textColor="@color/ns_red"
                 android:layout_toRightOf="@+id/clear_search_btn"
                 android:layout_weight = "1">
             </EditText>

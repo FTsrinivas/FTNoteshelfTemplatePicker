@@ -1,11 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.zendesk:messaging-api:5.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2f0d417d00be9b467c0ded8094cb60af/jetified-messaging-api-5.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2f0d417d00be9b467c0ded8094cb60af/jetified-messaging-api-5.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2f0d417d00be9b467c0ded8094cb60af/jetified-messaging-api-5.0.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bf13f3ba1dd776273cac8f3555a9f598/transformed/jetified-messaging-api-5.0.1/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bf13f3ba1dd776273cac8f3555a9f598/transformed/jetified-messaging-api-5.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bf13f3ba1dd776273cac8f3555a9f598/transformed/jetified-messaging-api-5.0.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bf13f3ba1dd776273cac8f3555a9f598/transformed/jetified-messaging-api-5.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>

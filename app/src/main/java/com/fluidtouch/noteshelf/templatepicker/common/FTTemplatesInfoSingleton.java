@@ -152,22 +152,23 @@ public class FTTemplatesInfoSingleton {
     public String getScreenResolutionPort() {
         WindowManager wm = (WindowManager) FTApp.getInstance().getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
-        DisplayMetrics metrics = new DisplayMetrics();
-        display.getMetrics(metrics);
-        int width = metrics.widthPixels;
-        int height = metrics.heightPixels;
-
-        return width + "_" + height;
+        android.graphics.Point realSize = new android.graphics.Point();
+        display.getRealSize(realSize);
+        int realWidth = Math.min(realSize.x,realSize.y);
+        int realHeight = Math.max(realSize.x,realSize.y);
+        Log.d("##getScreenResolutionLand","X::-  "+realSize.x +" Y::_"+realSize.y);
+        return realWidth + "_" +realHeight ;
     }
 
     public String getScreenResolutionLand() {
         WindowManager wm = (WindowManager) FTApp.getInstance().getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
-        DisplayMetrics metrics = new DisplayMetrics();
-        display.getMetrics(metrics);
-        int width = metrics.widthPixels;
-        int height = metrics.heightPixels;
-        return height + "_" +width ;
+        android.graphics.Point realSize = new android.graphics.Point();
+        display.getRealSize(realSize);
+        int realWidth = Math.max(realSize.x,realSize.y);
+        int realHeight = Math.min(realSize.x,realSize.y);
+        Log.d("##getScreenResolutionLand","X::-  "+realSize.x +" Y::_"+realSize.y);
+        return realWidth + "_" +realHeight ;
     }
 
     public ArrayList<FTDevicesDetailedInfo> getSupportedDevicesInfo() {

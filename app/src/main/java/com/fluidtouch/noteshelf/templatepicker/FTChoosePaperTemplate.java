@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.text.Editable;
+import android.text.InputFilter;
+import android.text.Spanned;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -26,6 +28,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,6 +40,7 @@ import com.fluidtouch.noteshelf.FTApp;
 import com.fluidtouch.noteshelf.commons.ui.FTBaseDialog;
 import com.fluidtouch.noteshelf.commons.utils.ObservingService;
 import com.fluidtouch.noteshelf.commons.utils.ScreenUtil;
+import com.fluidtouch.noteshelf.commons.utils.StringUtil;
 import com.fluidtouch.noteshelf.document.FTDocumentActivity;
 import com.fluidtouch.noteshelf.documentframework.FTUrl;
 import com.fluidtouch.noteshelf.documentframework.Utilities.FTConstants;
@@ -186,61 +190,51 @@ public class FTChoosePaperTemplate extends FTBaseDialog
         @Override
         public void update(Observable o, Object arg) {
              if (arg != null) {
-                templatesInfoList =  FTTemplatesInfoSingleton.getInstance().getTemplatesInfo(themeType);
+               templatesInfoList =  FTTemplatesInfoSingleton.getInstance().getTemplatesInfo(themeType);
 
-                 FTSelectedDeviceInfo _ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
-
-                /* for (int i=0;i<templatesInfoList.size();i++) {
-                     for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
-                         FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
-                         if (!_ftnTheme.getCategoryName().contains("Recent")) {
-                             if (_ftnTheme.getCategoryName().equalsIgnoreCase("basic")) {
-                                 _ftnTheme.themeBgClr            = selectedDeviceInfo.getThemeBgClrHexCode();
-                                 _ftnTheme.themeBgClrName        = selectedDeviceInfo.getThemeBgClrName();
-                                 _ftnTheme.horizontalLineColor   = selectedDeviceInfo.getHorizontalLineClr();
-                                 _ftnTheme.verticalLineColor     = selectedDeviceInfo.getVerticalLineClr();
-                                 _ftnTheme.horizontalSpacing     = selectedDeviceInfo.getHorizontalLineSpacing();
-                                 _ftnTheme.verticalSpacing       = selectedDeviceInfo.getVerticalLineSpacing();
+                 if (themeType == FTNThemeCategory.FTThemeType.COVER) {
+                     for (int i=0;i<templatesInfoList.size();i++) {
+                         for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
+                             FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
+                             if (!_ftnTheme.getCategoryName().contains("Recent")) {
+                                 _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
+                                 Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
+                                         + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
                              }
-
-                             _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
-                             Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath templateBgColourChangedListener thumbnailURLPath::-"
-                                     + _ftnTheme.thumbnailURLPath);
                          }
-                         Log.d("::TemplatePickerV2","FTTemplateCategories addDownloadsThemeObserver generateThumbnailURLPath thumbnailURLPath " +
-                                 " thumbnailURLPath:: "+_ftnTheme.thumbnailURLPath+" getLayoutType:: "+selectedDeviceInfo.getLayoutType()+
-                                 " getPageWidth:: "+selectedDeviceInfo.getPageWidth()+
-                                 " getPageHeight():: "+selectedDeviceInfo.getPageHeight());
                      }
-                 }*/
 
-                 for (int i=0;i<templatesInfoList.size();i++) {
-                     for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
-                         FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
-                         if (!_ftnTheme.getCategoryName().contains("Recent")) {
-                             if (_ftnTheme.getCategoryName().equalsIgnoreCase("basic")) {
-                                 _ftnTheme.themeBgClr            = _ftSelectedDeviceInfo.getThemeBgClrHexCode();
-                                 _ftnTheme.themeBgClrName        = _ftSelectedDeviceInfo.getThemeBgClrName();
-                                 _ftnTheme.horizontalLineColor   = _ftSelectedDeviceInfo.getHorizontalLineClr();
-                                 _ftnTheme.verticalLineColor     = _ftSelectedDeviceInfo.getVerticalLineClr();
-                                 _ftnTheme.horizontalSpacing     = _ftSelectedDeviceInfo.getHorizontalLineSpacing();
-                                 _ftnTheme.verticalSpacing       = _ftSelectedDeviceInfo.getVerticalLineSpacing();
+                     mFTTemplateCategories.updateUI(templatesInfoList, "addDownloadsThemeObserver");
+                 } else {
+                     FTSelectedDeviceInfo _ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
+                     for (int i=0;i<templatesInfoList.size();i++) {
+                         for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
+                             FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
+                             if (!_ftnTheme.getCategoryName().contains("Recent")) {
+                                 if (_ftnTheme.getCategoryName().equalsIgnoreCase("basic")) {
+                                     _ftnTheme.themeBgClr            = _ftSelectedDeviceInfo.getThemeBgClrHexCode();
+                                     _ftnTheme.themeBgClrName        = _ftSelectedDeviceInfo.getThemeBgClrName();
+                                     _ftnTheme.horizontalLineColor   = _ftSelectedDeviceInfo.getHorizontalLineClr();
+                                     _ftnTheme.verticalLineColor     = _ftSelectedDeviceInfo.getVerticalLineClr();
+                                     _ftnTheme.horizontalSpacing     = _ftSelectedDeviceInfo.getHorizontalLineSpacing();
+                                     _ftnTheme.verticalSpacing       = _ftSelectedDeviceInfo.getVerticalLineSpacing();
                                  /*_ftnTheme.width                 = _ftSelectedDeviceInfo.getPageWidth();
                                  _ftnTheme.height                = _ftSelectedDeviceInfo.getPageHeight();*/
+                                 }
+
+                                 _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
+                                 Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
+                                         + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
                              }
-
-                             _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
-                             Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
-                                     + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
+                             Log.d("::TemplatePickerV2","FTTemplateCategories addDownloadsThemeObserver tabSelection thumbnailURLPath " +
+                                     " thumbnailURLPath:: "+_ftnTheme.thumbnailURLPath+" getLayoutType:: "+_ftSelectedDeviceInfo.getLayoutType()+
+                                     " getPageWidth:: "+_ftSelectedDeviceInfo.getPageWidth()+
+                                     " getPageHeight():: "+_ftSelectedDeviceInfo.getPageHeight());
                          }
-                         Log.d("::TemplatePickerV2","FTTemplateCategories addDownloadsThemeObserver tabSelection thumbnailURLPath " +
-                                 " thumbnailURLPath:: "+_ftnTheme.thumbnailURLPath+" getLayoutType:: "+_ftSelectedDeviceInfo.getLayoutType()+
-                                 " getPageWidth:: "+_ftSelectedDeviceInfo.getPageWidth()+
-                                 " getPageHeight():: "+_ftSelectedDeviceInfo.getPageHeight());
                      }
-                 }
 
-                 mFTTemplateCategories.updateUI(templatesInfoList, "addDownloadsThemeObserver");
+                     mFTTemplateCategories.updateUI(templatesInfoList, "addDownloadsThemeObserver");
+                 }
 
              }
         }
@@ -251,6 +245,51 @@ public class FTChoosePaperTemplate extends FTBaseDialog
         public void update(Observable o, Object arg) {
             if (arg != null) {
                 templatesInfoList =  FTTemplatesInfoSingleton.getInstance().getTemplatesInfo(themeType);
+
+                if (themeType == FTNThemeCategory.FTThemeType.COVER) {
+                    for (int i=0;i<templatesInfoList.size();i++) {
+                        for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
+                            FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
+                            if (!_ftnTheme.getCategoryName().contains("Recent")) {
+                                _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
+                                Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
+                                        + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
+                            }
+                        }
+                    }
+
+                    mFTTemplateCategories.updateUI(templatesInfoList, "addDownloadsThemeObserver");
+                } else {
+                    FTSelectedDeviceInfo _ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
+                    for (int i=0;i<templatesInfoList.size();i++) {
+                        for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
+                            FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
+                            if (!_ftnTheme.getCategoryName().contains("Recent")) {
+                                if (_ftnTheme.getCategoryName().equalsIgnoreCase("basic")) {
+                                    _ftnTheme.themeBgClr            = _ftSelectedDeviceInfo.getThemeBgClrHexCode();
+                                    _ftnTheme.themeBgClrName        = _ftSelectedDeviceInfo.getThemeBgClrName();
+                                    _ftnTheme.horizontalLineColor   = _ftSelectedDeviceInfo.getHorizontalLineClr();
+                                    _ftnTheme.verticalLineColor     = _ftSelectedDeviceInfo.getVerticalLineClr();
+                                    _ftnTheme.horizontalSpacing     = _ftSelectedDeviceInfo.getHorizontalLineSpacing();
+                                    _ftnTheme.verticalSpacing       = _ftSelectedDeviceInfo.getVerticalLineSpacing();
+                                 /*_ftnTheme.width                 = _ftSelectedDeviceInfo.getPageWidth();
+                                 _ftnTheme.height                = _ftSelectedDeviceInfo.getPageHeight();*/
+                                }
+
+                                _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
+                                Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
+                                        + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
+                            }
+                            Log.d("::TemplatePickerV2","FTTemplateCategories addDownloadsThemeObserver tabSelection thumbnailURLPath " +
+                                    " thumbnailURLPath:: "+_ftnTheme.thumbnailURLPath+" getLayoutType:: "+_ftSelectedDeviceInfo.getLayoutType()+
+                                    " getPageWidth:: "+_ftSelectedDeviceInfo.getPageWidth()+
+                                    " getPageHeight():: "+_ftSelectedDeviceInfo.getPageHeight());
+                        }
+                    }
+                    mFTTemplateCategories.updateUI(templatesInfoList, "addDownloadsThemeObserver");
+                }
+
+                /*templatesInfoList =  FTTemplatesInfoSingleton.getInstance().getTemplatesInfo(themeType);
                 mFTTemplateCategories.updateUI(templatesInfoList, "addDownloadsThemeObserver");
                 FTSelectedDeviceInfo selectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
 
@@ -276,7 +315,7 @@ public class FTChoosePaperTemplate extends FTBaseDialog
                                 " getPageWidth:: "+selectedDeviceInfo.getPageWidth()+
                                 " getPageHeight():: "+selectedDeviceInfo.getPageHeight());
                     }
-                }
+                }*/
             }
         }
     };
@@ -397,14 +436,15 @@ public class FTChoosePaperTemplate extends FTBaseDialog
 
 
             updateUI(tab.toLowerCase(),
-                    FTTemplatesInfoSingleton.getInstance().getRecentlySelctedDevice(),
+                   FTSelectedDeviceInfo.selectedDeviceInfo().getItemModel(),
                     "addOnTabSelectedListener");
 
             //filter(ENTERED_SEARCH_TEXT, "tabSelection");
         } else {
 
             updateUI(tab.toLowerCase(),
-                    FTTemplatesInfoSingleton.getInstance().getRecentlySelctedDevice(),
+                    FTSelectedDeviceInfo.selectedDeviceInfo().getItemModel(),
+//                    FTTemplatesInfoSingleton.getInstance().getRecentlySelctedDevice(),
                     "addOnTabSelectedListener");
         }
 
@@ -464,9 +504,9 @@ public class FTChoosePaperTemplate extends FTBaseDialog
         }
 
         Gson gson = new Gson();
-        String itemModelInfo = FTApp.getPref().get(SystemPref.TEMPLATE_MODEL_INFO, "ModelInfo");
+        /*String itemModelInfo = FTApp.getPref().get(SystemPref.TEMPLATE_MODEL_INFO, "ModelInfo");
         if (!itemModelInfo.equalsIgnoreCase("ModelInfo")) {
-            itemModel = gson.fromJson(FTApp.getPref().get(SystemPref.TEMPLATE_MODEL_INFO, "ModelInfo"), ItemModel.class);
+            itemModel =  FTSelectedDeviceInfo.selectedDeviceInfo().getItemModel();
         } else {
             itemModel = new ItemModel(
                     "595_842",
@@ -474,9 +514,12 @@ public class FTChoosePaperTemplate extends FTBaseDialog
                     "595_842",
                     "A4 8.3 x 11.7\"\"",
                     "standard2");
-        }
+        }*/
 
-        FTTemplatesInfoSingleton.getInstance().setRecentlySelctedDevice(itemModel);
+//        FTTemplatesInfoSingleton.getInstance().setRecentlySelctedDevice(itemModel);
+
+        itemModel = FTSelectedDeviceInfo.selectedDeviceInfo().getItemModel();
+       // FTSelectedDeviceInfo.selectedDeviceInfo().setItemModel(itemModel);
         if (tabSelected.toLowerCase().contains("port")) {
             Log.d("TemplatePickerV2", "onViewCreated tabSelected port TRue:: "+tabSelected);
 
@@ -679,7 +722,7 @@ public class FTChoosePaperTemplate extends FTBaseDialog
             orientation_tab_layout2.setVisibility(View.GONE);
         } else {
             orientation_tab_layout1.setVisibility(View.VISIBLE);
-            orientation_tab_layout2.setVisibility(View.GONE);
+            orientation_tab_layout2.setVisibility(View.VISIBLE);
         }
 
 
@@ -740,7 +783,9 @@ public class FTChoosePaperTemplate extends FTBaseDialog
 
     @Override
     public void onDeviceSelected(String tabSelected, ItemModel clickedItemInfo, String origin) {
-
+        if(ftTemplateTabsDialog!=null){
+            ftTemplateTabsDialog.dismiss();
+        }
         deviceModelSpinnerItem.setText(clickedItemInfo.getDisplayName());
 
         Log.d("TemplatePicker==>", "onDeviceSelected Status::-" +
@@ -831,6 +876,7 @@ public class FTChoosePaperTemplate extends FTBaseDialog
             ftSelectedDeviceInfo.setHorizontalLineClr(selectedDeviceInfo.getHorizontalLineClr());
             ftSelectedDeviceInfo.setVerticalLineClr(selectedDeviceInfo.getVerticalLineClr());
             ftSelectedDeviceInfo.selectSavedDeviceInfo();
+            Log.d("FTChoosePaperTemplate 1==>","1");
             templatesInfoList =  FTTemplatesInfoSingleton.getInstance().getTemplatesInfo(themeType);
             FTSelectedDeviceInfo _ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
 
@@ -880,10 +926,13 @@ public class FTChoosePaperTemplate extends FTBaseDialog
     public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
         Log.d("TemplatePicker==>", "Search enabled onTextChanged Before charSequence:: " + charSequence.toString());
-
+        if (charSequence.toString().contains("   ")) {
+            Toast.makeText(getContext(), "Search is not allowed for More Spaces.", Toast.LENGTH_SHORT).show();
+            return ;
+        }
         if (!charSequence.toString().isEmpty() &&
                 !charSequence.toString().equalsIgnoreCase("")) {
-
+            charSequence.toString().replace("  "," ");
             FTApp.getPref().save(SystemPref.ENTERED_SEARCH_TEXT, charSequence.toString());
             filter(charSequence.toString(), "onTextChanged !charSequence.toString().isEmpty");
 

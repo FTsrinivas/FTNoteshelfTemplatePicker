@@ -1,14 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.ghost1372:Mzip-Android:0.4.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ccd7247dd1150e24db15947785b20c7b/jetified-Mzip-Android-0.4.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ccd7247dd1150e24db15947785b20c7b/jetified-Mzip-Android-0.4.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ccd7247dd1150e24db15947785b20c7b/jetified-Mzip-Android-0.4.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ccd7247dd1150e24db15947785b20c7b/jetified-Mzip-Android-0.4.0/jars/libs/zip4j_1.3.2.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/122c0289680dba130ffc8a54d44ba49d/transformed/jetified-Mzip-Android-0.4.0/jars/libs/zip4j_1.3.2.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/122c0289680dba130ffc8a54d44ba49d/transformed/jetified-Mzip-Android-0.4.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/122c0289680dba130ffc8a54d44ba49d/transformed/jetified-Mzip-Android-0.4.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/122c0289680dba130ffc8a54d44ba49d/transformed/jetified-Mzip-Android-0.4.0/jars/libs/zip4j_1.3.2.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/122c0289680dba130ffc8a54d44ba49d/transformed/jetified-Mzip-Android-0.4.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/122c0289680dba130ffc8a54d44ba49d/transformed/jetified-Mzip-Android-0.4.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

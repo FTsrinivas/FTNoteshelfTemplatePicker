@@ -1,11 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.zendesk:common-ui:4.0.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6782e2c5e8ca0b90d2cd2c2152c95a7/jetified-common-ui-4.0.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6782e2c5e8ca0b90d2cd2c2152c95a7/jetified-common-ui-4.0.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6782e2c5e8ca0b90d2cd2c2152c95a7/jetified-common-ui-4.0.1/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86e73ae69dae5aeb97ef931bfac55df4/transformed/jetified-common-ui-4.0.1/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/86e73ae69dae5aeb97ef931bfac55df4/transformed/jetified-common-ui-4.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86e73ae69dae5aeb97ef931bfac55df4/transformed/jetified-common-ui-4.0.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/86e73ae69dae5aeb97ef931bfac55df4/transformed/jetified-common-ui-4.0.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
