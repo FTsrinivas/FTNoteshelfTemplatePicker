@@ -197,6 +197,7 @@ public class FTChoosePaperTemplate extends FTBaseDialog
                          for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
                              FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
                              if (!_ftnTheme.getCategoryName().contains("Recent")) {
+                                 _ftnTheme.bitmap = _ftnTheme.themeThumbnail(getContext());
                                  _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
                                  Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
                                          + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
@@ -221,7 +222,6 @@ public class FTChoosePaperTemplate extends FTBaseDialog
                                  /*_ftnTheme.width                 = _ftSelectedDeviceInfo.getPageWidth();
                                  _ftnTheme.height                = _ftSelectedDeviceInfo.getPageHeight();*/
                                  }
-
                                  _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
                                  Log.d("TemplatePickerV2", "TemplatePickerV2 addDownloadsThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
                                          + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);

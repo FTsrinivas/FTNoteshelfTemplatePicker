@@ -83,8 +83,11 @@ public class FTTemplateDetailedInfoAdapter extends
     FragmentManager childFragmentManager;
     FTTemplateMoreDetailsInfo ftTemplateMoreDetailsInfo = new FTTemplateMoreDetailsInfo();
     FTNThemeCategory.FTThemeType _themeType;
-    public FTTemplateDetailedInfoAdapter(){}
-    public FTTemplateDetailedInfoAdapter(AddCustomThemeListener addCustomThemeListener){
+
+    public FTTemplateDetailedInfoAdapter() {
+    }
+
+    public FTTemplateDetailedInfoAdapter(AddCustomThemeListener addCustomThemeListener) {
         this.addCustomThemeListener = addCustomThemeListener;
     }
 
@@ -94,20 +97,20 @@ public class FTTemplateDetailedInfoAdapter extends
 
     FTTemplateDetailedInfoAdapter(ArrayList<FTNTheme> ftnThemeArrayList,
                                   String typeOfLayout, AddCustomThemeListener addCustomThemeListener,
-                                  ThumbnailGenCallBack mthumbnailGenCallBack, FragmentManager childFragmentManager,FTNThemeCategory.FTThemeType _themeType,String catName) {
-        this.ftnThemeArrayList      = ftnThemeArrayList;
+                                  ThumbnailGenCallBack mthumbnailGenCallBack, FragmentManager childFragmentManager, FTNThemeCategory.FTThemeType _themeType, String catName) {
+        this.ftnThemeArrayList = ftnThemeArrayList;
         this.addCustomThemeListener = addCustomThemeListener;
-        this.mthumbnailGenCallBack  = mthumbnailGenCallBack;
-        this.childFragmentManager   = childFragmentManager;
-        ftTemplateUtil              = FTTemplateUtil.getInstance();
-        ftSelectedDeviceInfo        = FTSelectedDeviceInfo.selectedDeviceInfo();
-        ftTemplateColorsInfo        = ftTemplateUtil.getFtTemplateColorsObj();
-        ftLineTypesInfo             = ftTemplateUtil.getFtTemplateLineInfoObj();
-        this._themeType             = _themeType;
+        this.mthumbnailGenCallBack = mthumbnailGenCallBack;
+        this.childFragmentManager = childFragmentManager;
+        ftTemplateUtil = FTTemplateUtil.getInstance();
+        ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
+        ftTemplateColorsInfo = ftTemplateUtil.getFtTemplateColorsObj();
+        ftLineTypesInfo = ftTemplateUtil.getFtTemplateLineInfoObj();
+        this._themeType = _themeType;
     }
 
 
-    public void notifyChildAdapter(){
+    public void notifyChildAdapter() {
         notifyDataSetChanged();
     }
 
@@ -132,6 +135,7 @@ public class FTTemplateDetailedInfoAdapter extends
         childViewHolder.progressbarFrmLyt.setVisibility(View.VISIBLE);
         childViewHolder.template_itemIV.setVisibility(View.GONE);
 
+
         //sudocode::
        /* bitmap = ftnTheme.themeThumbnailOnCallBack(DeviceInfo,line, colour,orientation);
         Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap,
@@ -143,9 +147,9 @@ public class FTTemplateDetailedInfoAdapter extends
         childViewHolder.template_itemIV.setBackground(ob);*/
 
         //Basic
-        if (ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("basic")) {
+//        if (ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("basic")) {
 
-            if (ftnTheme instanceof FTNPaperTheme) {
+            /*if (ftnTheme instanceof FTNPaperTheme) {
                 TemplateModelClassNew templateModelClassNew = new TemplateModelClassNew();
                 templateModelClassNew.setFtnTheme(ftnTheme);
                 templateModelClassNew.setmContext(context);
@@ -157,18 +161,47 @@ public class FTTemplateDetailedInfoAdapter extends
 
                 AsyncTaskRunner aTask = new AsyncTaskRunner();
                 aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew);
-            }
-
+            }*/
+        Bitmap bitmap=null;
+        if (ftnTheme.ftThemeType == FTNThemeCategory.FTThemeType.COVER) {
+            bitmap = ftnTheme.themeThumbnailOnCallBack(context, ftnTheme, ftLineTypesInfo, ftTemplateColorsInfo, ftnTheme.isLandscape(), this, childViewHolder);
+          /*  Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap,
+                    (int) dipToPixels(context, 116),
+                    (int) dipToPixels(context, 143),
+                    true);
+            Bitmap borderedBitmap = addWhiteBorder(scaledBitmap, 2);*/
+            BitmapDrawable ob = new BitmapDrawable(context.getResources(), bitmap);
+            childViewHolder.template_itemIV.setBackground(ob);
         }
+        if (ftnTheme.ftThemeType== FTNThemeCategory.FTThemeType.PAPER){
+            if (ftnTheme.getCategoryName().equalsIgnoreCase("Custom") && position == 0) {
+                Bitmap icon = BitmapFactory.decodeResource(context.getResources(), R.drawable.new_custom_template_bg);
+                bitmap = Bitmap.createScaledBitmap(icon,
+                        (int) dipToPixels(context, 137),
+                        (int) dipToPixels(context, 170),
+                        false);
+            } else {
+                bitmap = ftnTheme.themeThumbnailOnCallBack(context, ftnTheme, ftLineTypesInfo, ftTemplateColorsInfo, ftnTheme.isLandscape(), this, childViewHolder);
+            }
+        }
+        BitmapDrawable ob = new BitmapDrawable(context.getResources(), bitmap);
+        if (childViewHolder.progressbarFrmLyt.getVisibility() == View.VISIBLE) {
+            childViewHolder.template_itemIV.setVisibility(View.VISIBLE);
+            childViewHolder.progressbarFrmLyt.setVisibility(View.GONE);
+        }
+        childViewHolder.template_itemIV.setBackground(ob);
+
+
+//        }
 
         //Not Basic/Recent/Custom
-        if (!ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("Basic") &&
+       /* if (!ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("Basic") &&
                 !ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("Recent") &&
                 !ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("custom")) {
-            Bitmap bitmap = null;
+
             childViewHolder.progressbarFrmLyt.setVisibility(View.GONE);
             childViewHolder.template_itemIV.setVisibility(View.VISIBLE);
-
+            Bitmap bitmap = null;
             if (ftnTheme instanceof FTNPaperTheme) {
                 bitmap = ftnTheme.themeThumbnail(context);
             } else if (ftnTheme instanceof FTNCoverTheme){
@@ -234,7 +267,7 @@ public class FTTemplateDetailedInfoAdapter extends
                             (int) dipToPixels(context, 116),
                             (int) dipToPixels(context, 143),
                             false);
-                    borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+                    ] = addWhiteBorder(scaledBitmap, 2);
                     BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
                     childViewHolder.template_itemIV.setBackground(ob);
                 }
@@ -346,7 +379,7 @@ public class FTTemplateDetailedInfoAdapter extends
                 }
 
             }
-        }
+        }*/
 
         //Hide and show delete icon
         if ((ftnTheme.isDownloadTheme ||
@@ -396,21 +429,20 @@ public class FTTemplateDetailedInfoAdapter extends
                             getString(R.string.template_custom_theme))) {
                         addCustomThemeListener.onTemplateSelect(ftnTheme, ftnTheme.isLandscape);
                         ObservingService.getInstance().postNotification("addCustomTheme", ftnTheme);
-                    }
-                    else{
+                    } else {
                         Log.d("TemplatePickerV2", "TemplatePickerV2 ThemeClicked Selected action FTDetailedInfoAdapter ftnTheme themeFileURL Before::-" +
-                                ftnTheme.themeFileURL.getPath()+" isLandscape:: "+
-                                ftnTheme.isLandscape+" themeName:: "+
-                                ftnTheme.themeName+" packName:: "+
-                                ftnTheme.packName+" thumbnailURLPath:: "+
+                                ftnTheme.themeFileURL.getPath() + " isLandscape:: " +
+                                ftnTheme.isLandscape + " themeName:: " +
+                                ftnTheme.themeName + " packName:: " +
+                                ftnTheme.packName + " thumbnailURLPath:: " +
                                 ftnTheme.thumbnailURLPath);
 
 
                         if (ftnTheme.categoryName.toLowerCase().equalsIgnoreCase("Recent")) {
                             Log.d("TemplatePicker==>", "Template Selected action FTDetailedInfoAdapter ftnTheme packName " +
-                                    ftnTheme.packName+" isLandscape:: "+
-                                    ftnTheme.isLandscape+" thumbnailURLPath:: "+
-                                    ftnTheme.thumbnailURLPath+" themeBgClrName:: "+
+                                    ftnTheme.packName + " isLandscape:: " +
+                                    ftnTheme.isLandscape + " thumbnailURLPath:: " +
+                                    ftnTheme.thumbnailURLPath + " themeBgClrName:: " +
                                     ftnTheme.themeBgClrName);
                         }
                         addCustomThemeListener.onTemplateSelect(ftnTheme, ftnTheme.isLandscape);
@@ -507,10 +539,10 @@ public class FTTemplateDetailedInfoAdapter extends
                     if (ftRecentTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                             (ftnTheme.thumbnailURLPath.toLowerCase())) {
                         Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL TRUE::-");
-                        borderedBitmap = addBlueBorder(scaledBitmap, 4);
+                        borderedBitmap = ftnTheme.addBlueBorder(scaledBitmap, 4);
                     } else {
                         Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL ELSE::-");
-                        borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+                        borderedBitmap = ftnTheme.addWhiteBorder(scaledBitmap, 2);
                     }
                     BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
                     childViewHolder.template_itemIV.setBackground(ob);
@@ -524,10 +556,10 @@ public class FTTemplateDetailedInfoAdapter extends
                         if (ftRecentTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                                 (ftnTheme.thumbnailURLPath.toLowerCase())) {
                             Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL TRUE::-");
-                            borderedBitmap = addBlueBorder(scaledBitmap, 4);
+                            borderedBitmap = ftnTheme.addBlueBorder(scaledBitmap, 4);
                         } else {
                             Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL ELSE::-");
-                            borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+                            borderedBitmap = ftnTheme.addWhiteBorder(scaledBitmap, 2);
                         }
 
                         if (ftnTheme.getCategoryName().contains("Recent")) {
@@ -546,10 +578,10 @@ public class FTTemplateDetailedInfoAdapter extends
                         if (ftRecentTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                                 (ftnTheme.thumbnailURLPath.toLowerCase())) {
                             Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL TRUE::-");
-                            borderedBitmap = addBlueBorder(scaledBitmap, 4);
+                            borderedBitmap = ftnTheme.addBlueBorder(scaledBitmap, 4);
                         } else {
                             Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL ELSE::-");
-                            borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+                            borderedBitmap = ftnTheme.addWhiteBorder(scaledBitmap, 2);
                         }
                         BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
                         childViewHolder.template_itemIV.setBackground(ob);
@@ -572,10 +604,10 @@ public class FTTemplateDetailedInfoAdapter extends
                 if (ftRecentTheme.thumbnailURLPath.toLowerCase().equalsIgnoreCase
                         (ftnTheme.thumbnailURLPath.toLowerCase())) {
                     Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL TRUE::-");
-                    borderedBitmap = addBlueBorder(scaledBitmap, 4);
+                    borderedBitmap = ftnTheme.addBlueBorder(scaledBitmap, 4);
                 } else {
                     Log.d("TemplatePicker==>", " FTTemplateDetailedInfoAdapter RECENT_PAPER_THEME_URL ELSE::-");
-                    borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+                    borderedBitmap = ftnTheme.addWhiteBorder(scaledBitmap, 2);
                 }
 
                 if (ftnTheme.getCategoryName().contains("Recent")) {
@@ -612,7 +644,7 @@ public class FTTemplateDetailedInfoAdapter extends
                     }
                 }
 
-                Bitmap borderedBitmap = addWhiteBorder(scaledBitmap, 2);
+                Bitmap borderedBitmap = ftnTheme.addWhiteBorder(scaledBitmap, 2);
                 BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
                 childViewHolder.template_itemIV.setBackground(ob);
             }
@@ -621,21 +653,7 @@ public class FTTemplateDetailedInfoAdapter extends
 
     }
 
-    private Bitmap addWhiteBorder(Bitmap bmp, int borderSize) {
-        Bitmap bmpWithBorder = Bitmap.createBitmap(bmp.getWidth() + borderSize * 2, bmp.getHeight() + borderSize * 2, bmp.getConfig());
-        Canvas canvas = new Canvas(bmpWithBorder);
-        canvas.drawColor(Color.parseColor("#1C000000"));
-        canvas.drawBitmap(bmp, borderSize, borderSize, null);
-        return bmpWithBorder;
-    }
 
-    private Bitmap addBlueBorder(Bitmap bmp, int borderSize) {
-        Bitmap bmpWithBorder = Bitmap.createBitmap(bmp.getWidth() + borderSize * 2, bmp.getHeight() + borderSize * 2, bmp.getConfig());
-        Canvas canvas = new Canvas(bmpWithBorder);
-        canvas.drawColor(Color.parseColor("#5377F8"));
-        canvas.drawBitmap(bmp, borderSize, borderSize, null);
-        return bmpWithBorder;
-    }
 
     @Override
     public void thumbnailsGeneration(boolean status, Context mContext, ThemeViewHolder childViewHolder,
@@ -721,7 +739,7 @@ public class FTTemplateDetailedInfoAdapter extends
 
     }
 
-    private class AsyncTaskRunner extends AsyncTask<TemplateModelClassNew, String, FTNPaperTheme> {
+   /* private class AsyncTaskRunner extends AsyncTask<TemplateModelClassNew, String, FTNPaperTheme> {
         TemplateModelClassNew templateModelClassNew;
 
         @Override
@@ -759,8 +777,9 @@ public class FTTemplateDetailedInfoAdapter extends
         protected void onProgressUpdate(String... text) {
             //updateProgressUI();
         }
-    }
+    }*/
 
+/*
     public void basicTemplatesAliggnment(FTNPaperTheme paperTheme, Context context, ThemeViewHolder childViewHolder, TemplateModelClassNew templateModelClassNew) {
         // Log.d("TemplatePickerV2", "basicTemplatesAliggnment thumbnailURLPath:: "+paperTheme.thumbnailURLPath);
 
@@ -779,8 +798,10 @@ public class FTTemplateDetailedInfoAdapter extends
                     Log.d("TemplatePicker==>", "FTTemplateDetailedInfoAdapter ftSelectedDeviceInfo PORT");
                     scaledBitmap = Bitmap.createScaledBitmap(paperTheme.bitmap,
                             (int) dipToPixels(context, 106),
-                            (int) dipToPixels(context,170),/* (int) dipToPixels(context, (int)((paperTheme.bitmap.getWidth())/2)),
-                            (int) dipToPixels(context,PORTRAIT_PAPER_IMAGE_HEIGHT),*/
+                            (int) dipToPixels(context,170),*/
+/* (int) dipToPixels(context, (int)((paperTheme.bitmap.getWidth())/2)),
+                            (int) dipToPixels(context,PORTRAIT_PAPER_IMAGE_HEIGHT),*//*
+
                             false);
 
                 } else {
@@ -798,5 +819,6 @@ public class FTTemplateDetailedInfoAdapter extends
 
         }
     }
+*/
 
 }

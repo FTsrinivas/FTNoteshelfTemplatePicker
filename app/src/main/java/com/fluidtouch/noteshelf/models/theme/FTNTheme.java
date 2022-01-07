@@ -2,6 +2,8 @@ package com.fluidtouch.noteshelf.models.theme;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
 import android.net.Uri;
 import android.util.Log;
 
@@ -19,8 +21,9 @@ import com.fluidtouch.noteshelf.documentframework.Utilities.FTConstants;
 import com.fluidtouch.noteshelf.generator.FTAutoTemplateGenerationCallback;
 import com.fluidtouch.noteshelf.preferences.SystemPref;
 import com.fluidtouch.noteshelf.templatepicker.adapters.FTTemplateDetailedInfoAdapter;
-import com.fluidtouch.noteshelf.templatepicker.common.FTTemplatesInfoSingleton;
+import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTLineTypes;
 import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTSelectedDeviceInfo;
+import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTTemplateColors;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -120,87 +123,6 @@ public class FTNTheme  implements Serializable {
         }
     }
 
-    public String getThumbnailURLPath(FTUrl url, FTNTheme ftnTheme) {
-       // Log.d("TemplatePickerV2", " getThumbnailURLPath inside ");
-        FTSelectedDeviceInfo ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
-        //FTNTheme theme = new FTNTheme();
-        String pathExtension = StringUtil.getFileExtension(url.getPath());
-        //String packName = StringUtil.getFileName(url.getPath());
-        /*theme.packName = packName;
-        theme.ftThemeType = ftThemeType;*/
-        //String themeName = FTTemplatesInfoSingleton.getInstance().getNSPFileNameWithoutExtn(theme);
-        Log.d("TemplatePicker==>","FTNTheme getThumbnailURLPath" +
-                            " PackName::-" +ftnTheme.packName+
-                            " ThemeName::-"+ftnTheme.themeName+
-                            " getPageWidth::-"+ftSelectedDeviceInfo.getPageWidth()+
-                            " getPageHeight::-"+ftSelectedDeviceInfo.getPageHeight()+
-                            " url.getPath::-"+url.getPath()+
-                            " condition::-"+(ftnTheme.themeName.toLowerCase().contains("diary")));
-        if (isTheThemeExists(url.getPath())) {
-            if (pathExtension.equals("nsp")) {
-                String dairyCreationYear = FTApp.getPref().get(SystemPref.DIARY_CREATION_YEAR,"2021_2022");
-                    if (url.getPath().contains("download")) {
-                        ftnTheme.isDownloadTheme = true;
-                        ftnTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+"thumbnail"
-                                                    +"_"+ftnTheme.themeName
-                                                    +"_" +ftSelectedDeviceInfo.getPageWidth()
-                                                    +"_"+ftSelectedDeviceInfo.getPageHeight()
-                                                    +"_"+ ftSelectedDeviceInfo.getLayoutType() +".jpg";
-
-                    } else if (url.getPath().contains("custom")) {
-                        ftnTheme.isCustomTheme = true;
-                        ftnTheme.thumbnailURLPath = FTConstants.CUSTOM_PAPERS_PATH  + ftnTheme.packName+ "/thumbnail@2x.png";
-                    } else if (url.getPath().contains("stockPapers")) {
-                        Log.d("TemplatePicker==>","FTNTheme url.getPath()" +url.getPath());
-                        if (url.getPath().toLowerCase().contains("plain") ||
-                                url.getPath().toLowerCase().contains("ruled") ||
-                                    url.getPath().toLowerCase().contains("checked") ||
-                                        url.getPath().toLowerCase().contains("dotted") ||
-                                            url.getPath().toLowerCase().contains("legal")) {
-                            ftnTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+"thumbnail"
-                                                        +"_"+ftnTheme.themeName
-                                                        +"_" +ftSelectedDeviceInfo.getPageWidth()
-                                                        +"_"+ftSelectedDeviceInfo.getPageHeight()
-                                                        +"_"+ftSelectedDeviceInfo.getThemeBgClrName()
-                                                        +"_"+ftSelectedDeviceInfo.getLineType()
-                                                        +"_"+ ftSelectedDeviceInfo.getLayoutType() +".jpg";
-                        }  else {
-                            ftnTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+"thumbnail"
-                                                                +"_"+ftnTheme.themeName
-                                                                +"_" +ftSelectedDeviceInfo.getPageWidth()
-                                                                +"_"+ftSelectedDeviceInfo.getPageHeight()
-                                                                +"_"+ ftSelectedDeviceInfo.getLayoutType() +".jpg";
-                        }
-                    } else {
-                        ftnTheme.thumbnailURLPath        = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+FTConstants.DEFAULT_PAPER_THEME_URL;
-                    }
-
-                    if (ftnTheme.themeName.toLowerCase().contains("diary")) {
-                        Log.d("TemplatePicker==>","FTNTheme getThumbnailURLPath Dairy True url.getPath::-"+url.getPath());
-                        ftnTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+"thumbnail"
-                                +"_"+dairyCreationYear
-                                +"_"+ftSelectedDeviceInfo.getPageWidth()
-                                +"_"+ftSelectedDeviceInfo.getPageHeight()
-                                +"_"+ftSelectedDeviceInfo.getLayoutType()+".jpg";
-                    }
-
-                Log.d("TemplatePicker==>","FTNTheme thumbnailURLPath::-" +ftnTheme.thumbnailURLPath);
-            } else {
-                    if (url.getPath().contains("download")) {
-                        ftnTheme.isDownloadTheme = true;
-                        ftnTheme.thumbnailURLPath = FTConstants.DOWNLOADED_COVERS_PATH  + ftnTheme.packName+ "/thumbnail@2x.png";
-                    } else if (url.getPath().contains("custom")) {
-                        ftnTheme.isCustomTheme = true;
-                        ftnTheme.thumbnailURLPath = FTConstants.CUSTOM_COVERS_PATH  + ftnTheme.packName+ "/thumbnail@2x.png";
-                    } else if (url.getPath().contains("stockCovers")) {
-                        ftnTheme.thumbnailURLPath = FTConstants.COVER_FOLDER_NAME + "/" + ftnTheme.packName+ "/thumbnail@2x.png";
-                    } else {
-                        ftnTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+FTConstants.DEFAULT_PAPER_THEME_URL;
-                    }
-                }
-            }
-        return ftnTheme.thumbnailURLPath;
-    }
 
     public static FTNTheme theme(FTUrl url) {
         FTNTheme themeToReturn = new FTNTheme();
@@ -231,7 +153,6 @@ public class FTNTheme  implements Serializable {
                 themeToReturn.packName = packName;
                 themeToReturn.ftThemeType = FTNThemeCategory.FTThemeType.PAPER;
                 themeToReturn.isLandscape   = getLandscapeStatus();
-
                 FTSelectedDeviceInfo selectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
                 themeToReturn.width                     = selectedDeviceInfo.getPageWidth();
                 themeToReturn.height                    = selectedDeviceInfo.getPageHeight();
@@ -532,6 +453,22 @@ public class FTNTheme  implements Serializable {
             e.printStackTrace();
         }
     }
+    public Bitmap themeThumbnailOnCallBack(Context mContext,
+                                           FTNTheme ftnTheme,
+                                           FTLineTypes lineInfo,
+                                           FTTemplateColors colorInfo,
+                                           boolean isLandscape,
+                                           FTTemplateDetailedInfoAdapter callBack,
+                                           FTTemplateDetailedInfoAdapter.ThemeViewHolder childViewHolder) {
+        try {
+            throw new Exception("subclass should override"+ftnTheme.getClass()+
+                    " themeFileURL::-"+ftnTheme.themeFileURL.getPath()+
+                    " thumbnailURLPath::-"+ftnTheme.thumbnailURLPath);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     public FTSelectedDeviceInfo selectedDeviceInfo() {
         if(null != ftSelectedDeviceInfo) {
@@ -540,4 +477,22 @@ public class FTNTheme  implements Serializable {
 
         return FTSelectedDeviceInfo.selectedDeviceInfo();
     }
+
+    public Bitmap addWhiteBorder(Bitmap bmp, int borderSize) {
+        Bitmap bmpWithBorder = Bitmap.createBitmap(bmp.getWidth() + borderSize * 2, bmp.getHeight() + borderSize * 2, bmp.getConfig());
+        Canvas canvas = new Canvas(bmpWithBorder);
+        canvas.drawColor(Color.parseColor("#1C000000"));
+        canvas.drawBitmap(bmp, borderSize, borderSize, null);
+        return bmpWithBorder;
+    }
+
+    public Bitmap addBlueBorder(Bitmap bmp, int borderSize) {
+        Bitmap bmpWithBorder = Bitmap.createBitmap(bmp.getWidth() + borderSize * 2, bmp.getHeight() + borderSize * 2, bmp.getConfig());
+        Canvas canvas = new Canvas(bmpWithBorder);
+        canvas.drawColor(Color.parseColor("#5377F8"));
+        canvas.drawBitmap(bmp, borderSize, borderSize, null);
+        return bmpWithBorder;
+    }
+
+
 }

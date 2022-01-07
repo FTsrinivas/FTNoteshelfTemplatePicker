@@ -43,15 +43,17 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
             contentStream.setNonStrokingColor(themeBgRedClrValue,themeBgGreenClrValue,themeBgBlueClrValue);
             contentStream.fill();
 
-            float yCordinate = page.getCropBox().getHeight()-(mTheme.bottomMargin*scale);
-            float startX = page.getCropBox().getLowerLeftX();;
+            float yCordinate = page.getCropBox().getHeight()-(mTheme.bottomMargin * scale);
+            float startX = page.getCropBox().getLowerLeftX();
             float endX = page.getCropBox().getUpperRightX();
 
-            float offset = Math.round((page.getCropBox().getHeight() / mPageHeight) * horizontalSpacing);
+            float offset = Math.round(((page.getCropBox().getHeight()-mTheme.bottomMargin*scale) / mPageHeight) * horizontalSpacing);
 
 
             Log.d("TemplatePicker==>","Line Selected FTRuledTemplateFormat getRedClrValue::-"+horizontalLineRedClrValue+
                     " getGreenClrValue::-"+ horizontalLineGreenClrValue+" getBlueClrValue::-"+horizontalLineBlueClrValue);
+
+            Log.d("TemplatePicker==>","horizontalSpacing::"+horizontalSpacing*scale+ " scale::"+scale+" \n yCordinate::"+yCordinate+"/n mTheme.bottomMargin"+mTheme.bottomMargin * scale);
             /*
              * Code snippet to draw horizontal lines
              */
@@ -90,9 +92,9 @@ public class FTRuledTemplateFormat extends FTDynamicTemplateFormat implements Te
 
     private int horizontalLineCount() {
         int horizontalLineCount;
-        float cellHeight = Math.round(horizontalSpacing/5);
-        float consideredPageHeight = (mPageHeight /*- (mTheme.bottomMargin * scale)*/);
-        int actualCount = (int) Math.round((consideredPageHeight / cellHeight));
+        float cellHeight = Math.round(horizontalSpacing);
+        float consideredPageHeight = (mPageHeight - (mTheme.bottomMargin * scale));
+        int actualCount = (int) Math.floor((consideredPageHeight / cellHeight));
         float effectiveHeight = mPageHeight - (mTheme.bottomMargin*scale) - (actualCount * cellHeight);
         if (2 * cellHeight - effectiveHeight >= cellHeight) {
             actualCount++;

@@ -9,12 +9,15 @@ import android.graphics.pdf.PdfRenderer;
 import android.os.AsyncTask;
 import android.os.ParcelFileDescriptor;
 import android.util.Log;
+import android.util.SizeF;
 import android.view.View;
 
 import com.dd.plist.NSDictionary;
 import com.dd.plist.PropertyListParser;
 import com.fluidtouch.noteshelf.FTApp;
 import com.fluidtouch.noteshelf.commons.utils.AssetsUtil;
+import com.fluidtouch.noteshelf.commons.utils.BitmapUtil;
+import com.fluidtouch.noteshelf.commons.utils.FTScreenUtils;
 import com.fluidtouch.noteshelf.commons.utils.StringUtil;
 import com.fluidtouch.noteshelf.documentframework.FTNoteshelfDocument.FTDocumentInputInfo;
 import com.fluidtouch.noteshelf.documentframework.FTUrl;
@@ -25,8 +28,12 @@ import com.fluidtouch.noteshelf.preferences.SystemPref;
 import com.fluidtouch.noteshelf.templatepicker.adapters.FTTemplateDetailedInfoAdapter;
 import com.fluidtouch.noteshelf.templatepicker.common.FTTemplatesInfoSingleton;
 import com.fluidtouch.noteshelf.templatepicker.common.modelclasses.TemplateModelClassNew;
+import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTLineTypes;
 import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTSelectedDeviceInfo;
+import com.fluidtouch.noteshelf.templatepicker.common.plistdatamodel.FTTemplateColors;
+import com.fluidtouch.noteshelf.templatepicker.common.supporteddevicesplistdatamodel.ItemModel;
 import com.fluidtouch.noteshelf2.R;
+import com.fluidtouch.renderingengine.utils.FTGeometryUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -35,6 +42,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class FTNPaperTheme extends FTNTheme {
@@ -42,6 +50,7 @@ public class FTNPaperTheme extends FTNTheme {
     transient String cachePath = FTConstants.TEMP_FOLDER_PATH + "TemplatesCache/";
     transient FTTemplateDetailedInfoAdapter mCallBack;
     transient FTTemplateDetailedInfoAdapter.ThemeViewHolder mChildViewHolder;
+//    Bitmap bitmap_basic=null;
 
     public static FTNTheme theme(FTUrl url) {
         NSDictionary metadataDict = new NSDictionary();
@@ -93,12 +102,12 @@ public class FTNPaperTheme extends FTNTheme {
 
         //Check if template is generated for ftSelectedDeviceInfo
         // If generated return cached URL
-        if (new File(url.getPath()).exists()) {
+      /*  if (new File(url.getPath()).exists()) {
             FTDocumentInputInfo documentInfo = new FTDocumentInputInfo();
             documentInfo.inputFileURL = url;
             callback.onGenerated(documentInfo, null);
             return;
-        }
+        }*/
 
             if (this.dynamicId == 2) {
                 FTAutoTemplateGenerator.autoTemplateGenerator(this).generate(mContext,
@@ -218,17 +227,150 @@ public class FTNPaperTheme extends FTNTheme {
             templateModelClassNew.getChildViewHolder().progressbarFrmLyt.setVisibility(View.VISIBLE);
             templateModelClassNew.getChildViewHolder().template_itemIV.setVisibility(View.GONE);
 
-            AsyncTaskRunner aTask = new AsyncTaskRunner();
-            aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew);
+//            AsyncTaskRunner aTask = new AsyncTaskRunner();
+//            aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew);
+
         }
 
-        if (dynamicId == 2) {
+        /*if (dynamicId == 2) {
             //PDF Generation
         } else if (theme().getCategoryName() != rencents || custom) {
             //Not basic, Not recent, Not custom
             theme if assets lo ?
+        }*/
+
+    }
+
+    @Override
+    public Bitmap themeThumbnailOnCallBack(Context mContext, FTNTheme ftnTheme, FTLineTypes lineInfo, FTTemplateColors colorInfo, boolean isLandscape,
+                                           FTTemplateDetailedInfoAdapter callBack,
+                                           FTTemplateDetailedInfoAdapter.ThemeViewHolder childViewHolder) {
+        /*return super.themeThumbnailOnCallBack(mContext, ftnTheme, lineInfo, colorInfo, isLandscape);*/
+        if (dynamicId == 2) {
+            //PDF Generation
+            TemplateModelClassNew templateModelClassNew = new TemplateModelClassNew();
+            templateModelClassNew.setFtnTheme(ftnTheme);
+            templateModelClassNew.setmContext(mContext);
+            templateModelClassNew.setFtTemplateDetailedInfoAdapter(callBack);
+            templateModelClassNew.setChildViewHolder(childViewHolder);
+            templateModelClassNew.getChildViewHolder().progressbarFrmLyt.setVisibility(View.VISIBLE);
+            templateModelClassNew.getChildViewHolder().template_itemIV.setVisibility(View.GONE);
+
+            AsyncTaskRunner aTask = new AsyncTaskRunner();
+            try {
+                bitmap= aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew).get();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return bitmap;
+        } else {
+            //Not basic, Not recent, Not custom
+            AssetManager assetmanager = mContext.getAssets();
+            InputStream is = null;
+            String path = null;
+            String imageName = null;
+            Bitmap resizedBitmap=null;
+
+
+            FTSelectedDeviceInfo ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
+            int height =     isLandscape ? aspectSize((int) ftSelectedDeviceInfo.getPageHeight(),(int) ftSelectedDeviceInfo.getPageWidth(),340) : 340;
+            int width  =     isLandscape ? 340 :  aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
+
+            String tabName = FTApp.getPref().get(SystemPref.LAST_SELECTED_TAB, "portrait");
+            if (tabName.contains("port")) {
+                imageName = "thumbnail_port@2x.png";
+            } else {
+                imageName = "thumbnail_land@2x.png";
+            }
+
+            try {
+                if (isDownloadTheme || isCustomTheme) {
+                    File file = null;
+                    if (isDownloadTheme) {
+                        if (isLandscape) {
+                            file = new File((FTConstants.DOWNLOADED_PAPERS_PATH2) + this.packName + "/thumbnail_land@2x.png");
+                        } else {
+                            file = new File((FTConstants.DOWNLOADED_PAPERS_PATH2) + this.packName + "/thumbnail_port@2x.png");
+                        }
+//TODO AspectFit
+                        is = new FileInputStream(file);
+                        resizedBitmap = BitmapFactory.decodeStream(is);
+                       bitmap= getResizedPaper(ftSelectedDeviceInfo ,resizedBitmap);//Bitmap.createBitmap(resizedBitmap,0,0,width, height);
+                        return bitmap;
+                    } else {
+                        file = new File((FTConstants.CUSTOM_PAPERS_PATH) + this.packName + "/thumbnail@2x.png");
+                        //TODO Direct image return
+                        is = new FileInputStream(file);
+                        resizedBitmap = BitmapFactory.decodeStream(is);
+                        return Bitmap.createBitmap(resizedBitmap,0,0,274,340);
+                    }
+
+
+                } else if (this.categoryName.contains("Recent")) {
+                    //Log.d("TemplatePickerV2:::::","Recents Theme thumbnailURLPath:: "+this.thumbnailURLPath + " dynamicId:: "+this.dynamicId);
+
+                    if (this.dynamicId == 2) {
+                        File file = new File(this.thumbnailURLPath);
+                        if (!file.exists()) {
+                            is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + "Plain.nsp" + "/thumbnail_port@2x.png");
+                        } else {
+                            is = new FileInputStream(file);
+                        }
+
+                    } else {
+                        if (AssetsUtil.isAssetExists(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + imageName)) {
+                            is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + imageName);
+                        } else {
+                            is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + "thumbnail@2x.png");
+                        }
+                    }
+                    //TODO Direct Imgae return
+                    resizedBitmap = BitmapFactory.decodeStream(is);
+                    bitmap =  Bitmap.createBitmap(resizedBitmap,0,0,resizedBitmap.getWidth(),resizedBitmap.getHeight());
+                    return bitmap;
+
+                } else {
+                /*if (this.packName.toLowerCase().contains("land")) {
+                    is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_land@2x.png");
+                } else {
+                    is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail@2x.png");
+                }*/
+
+                    Log.d("TemplatePickerV2","FTNpaperTheme Basic "+this.isLandscape+" themeName:: "+this.themeName);
+                    if (this.isLandscape) {
+                        path = FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_land@2x.png";
+                        is = assetmanager.open(path);
+                    } else {
+                        path = FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_port@2x.png";
+                        is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_port@2x.png");
+                    }
+                    //TODO Requires aspect ratio
+                    resizedBitmap = BitmapFactory.decodeStream(is);
+                    bitmap= getResizedPaper(ftSelectedDeviceInfo ,resizedBitmap);
+                    return bitmap;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+           bitmap=  BitmapFactory.decodeStream(is);
+            return bitmap;
         }
 
+    }
+
+    protected Bitmap getResizedPaper(FTSelectedDeviceInfo ftSelectedDeviceInfo ,Bitmap resizedBitmap){
+        int height =     isLandscape ? aspectSize((int) ftSelectedDeviceInfo.getPageHeight(),(int) ftSelectedDeviceInfo.getPageWidth(),340) : 340;
+        int width  =     isLandscape ? 340 :  aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
+
+        SizeF deviceSize = new SizeF((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight());
+        SizeF maxSize = new SizeF(width,height);
+        SizeF bitmapSize =  FTGeometryUtils.aspectSize(deviceSize,maxSize);
+        Log.d("FTNpaperTheme=>","resizedBitmap::-"+" Width::"+resizedBitmap.getWidth()+" Heigh::"+resizedBitmap.getHeight());
+
+//        return Bitmap.createBitmap(resizedBitmap,0,0,(int)bitmapSize.getWidth(),(int) bitmapSize.getHeight());
+        return BitmapUtil.getResizedBitmap(resizedBitmap,(int)bitmapSize.getWidth(),(int) bitmapSize.getHeight(),false);
     }
 
     protected Bitmap pdfToBitmap(FTNPaperTheme theme, File pdfFile, String fileName, Context mContext) {
@@ -243,8 +385,11 @@ public class FTNPaperTheme extends FTNTheme {
 
             PdfRenderer.Page page = renderer.openPage(0);
             FTSelectedDeviceInfo ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
-            int height = isLandscape? 188 : 340;
-            int width  = aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
+            Log.d("pdfToBitmap==> ","ftSelectedDeviceInfo::- "+ftSelectedDeviceInfo.getPageWidth()+" x "+ ftSelectedDeviceInfo.getPageHeight()+" isLandscape:: "+isLandscape);
+            int height =     isLandscape ? aspectSize((int) ftSelectedDeviceInfo.getPageHeight(),(int) ftSelectedDeviceInfo.getPageWidth(),340) : 340;
+            int width  =     isLandscape ? 340 :  aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
+            Log.d("pdfToBitmap==> ","ftSelectedDeviceInfo::- "+ftSelectedDeviceInfo.getPageWidth()+" x "+ ftSelectedDeviceInfo.getPageHeight()+" isLandscape:: "+isLandscape +" bitmapSize::"+ width +" x "+ height);
+
         /*    int width  = 274;
             int height = 188;*/
           /*  int width = (int) ftSelectedDeviceInfo.getPageWidth();*/
@@ -488,11 +633,12 @@ public class FTNPaperTheme extends FTNTheme {
         return this;
     }
 
-    private class AsyncTaskRunner extends AsyncTask<TemplateModelClassNew, String, FTNPaperTheme> {
+    private class AsyncTaskRunner extends AsyncTask<TemplateModelClassNew, String, Bitmap> {
+
         TemplateModelClassNew templateModelClassNew;
 
         @Override
-        protected FTNPaperTheme doInBackground(TemplateModelClassNew... params) {
+        protected Bitmap doInBackground(TemplateModelClassNew... params) {
             templateModelClassNew = params[0];
             FTNPaperTheme paperTheme = null;
             //Log.d("TemplatePickerV2", "FTTemplateDetailedInfoAdapter doInBackground" + templateModelClassNew);
@@ -507,18 +653,14 @@ public class FTNPaperTheme extends FTNTheme {
             if (kdn.get() != null) {
                 paperTheme = basicTemplatePDFGenerated(kdn.get(), templateModelClassNew.getmContext());
             }
-
-            return paperTheme;
+            return paperTheme.bitmap;
         }
 
         @Override
-        protected void onPostExecute(FTNPaperTheme bitmap) {
+        protected void onPostExecute(Bitmap bitmap) {
             templateModelClassNew.getChildViewHolder().progressbarFrmLyt.setVisibility(View.GONE);
             templateModelClassNew.getChildViewHolder().template_itemIV.setVisibility(View.VISIBLE);
-
-            if (bitmap != null) {
-                //templateModelClassNew.getFtTemplateDetailedInfoAdapter().basicTemplatesAliggnment(bitmap,templateModelClassNew.getmContext(),templateModelClassNew.getChildViewHolder());
-            }
+//            bitmap = bitmap;
         }
 
         @Override
