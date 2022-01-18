@@ -868,13 +868,13 @@ public class FTBaseShelfActivity extends FTBaseActivity implements
                 }
             }
 
-            String paperPackName = FTApp.getPref().get(SystemPref.RECENT_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
+            String paperPackName = FTApp.getPref().get(SystemPref.QUICK_CREATE_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
             RecentsInfoModel recentsInfoModel  = FTTemplateUtil.getInstance().getRecentPaperThemeFromQuickCreateDialog();
 
             if (recentsInfoModel != null) {
                 paperPackName = recentsInfoModel.get_packName();
             }
-
+            Log.d("TemplatePicker==>", "FTBaseShelfActivity createNotebookWithDefaultOptions paperPackName " +paperPackName);
             if (paperPackName.endsWith(".nsp")) {
                 paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(paperPackName));
                 paperTheme.thumbnailURLPath     = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+FTConstants.DEFAULT_PAPER_THEME_URL;
@@ -901,7 +901,6 @@ public class FTBaseShelfActivity extends FTBaseActivity implements
             boolean _isThemeDeleted              = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.PAPER,paperTheme);
 
             if (_isThemeDeleted) {
-                //paperTheme                      = new FTNThemeCategory(getContext(), "Simple", FTNThemeCategory.FTThemeType.PAPER).getPaperThemeForPackName(FTConstants.DEFAULT_PAPER_THEME_NAME);
                 paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(paperPackName));
 
                 paperTheme.thumbnailURLPath     = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+FTConstants.DEFAULT_PAPER_THEME_URL;
@@ -910,7 +909,7 @@ public class FTBaseShelfActivity extends FTBaseActivity implements
             }
 
             Log.d("TemplatePicker==>", "FTBaseShelfActivity createNotebookWithDefaultOptions _isThemeDeleted " +_isThemeDeleted+
-                    " get_themeName::-"+paperTheme.themeName);
+                    " get_themeName::-"+paperTheme.themeName +" recentsInfoModel:: "+recentsInfoModel);
 
             createNewShelfItem(getString(R.string.untitled), coverTheme, paperTheme,"createNotebookWithDefaultOptions");
         }

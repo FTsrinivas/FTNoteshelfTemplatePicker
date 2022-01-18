@@ -129,23 +129,6 @@ public class FTNTheme  implements Serializable {
         String pathExtension = StringUtil.getFileExtension(url.getPath());
         String packName = StringUtil.getFileName(url.getPath());
         if (isTheThemeExists(url.getPath())) {
-            /*if (pathExtension.equals("nsp")) {
-                themeToReturn = FTNPaperTheme.theme(url);
-                themeToReturn.themeFileURL = url;
-                themeToReturn.packName = packName;
-                themeToReturn.ftThemeType = FTNThemeCategory.FTThemeType.PAPER;
-                themeToReturn.isLandscape   = getLandscapeStatus();
-
-                FTSelectedDeviceInfo selectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
-                themeToReturn.width = selectedDeviceInfo.getPageWidth();
-                themeToReturn.height = selectedDeviceInfo.getPageHeight();
-            } else if (pathExtension.equals("nsc")) {
-                themeToReturn = new FTNCoverTheme();
-                themeToReturn.themeFileURL = url;
-                themeToReturn.packName = packName;
-                themeToReturn.ftThemeType = FTNThemeCategory.FTThemeType.COVER;
-                themeToReturn.isLandscape   = getLandscapeStatus();
-            }*/
 
             if (pathExtension.equals("nsp")) {
                 themeToReturn = FTNPaperTheme.theme(url);

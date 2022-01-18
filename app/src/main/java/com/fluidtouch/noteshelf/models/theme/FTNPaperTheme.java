@@ -246,118 +246,114 @@ public class FTNPaperTheme extends FTNTheme {
                                            FTTemplateDetailedInfoAdapter callBack,
                                            FTTemplateDetailedInfoAdapter.ThemeViewHolder childViewHolder) {
         /*return super.themeThumbnailOnCallBack(mContext, ftnTheme, lineInfo, colorInfo, isLandscape);*/
-        if (dynamicId == 2) {
-            //PDF Generation
-            TemplateModelClassNew templateModelClassNew = new TemplateModelClassNew();
-            templateModelClassNew.setFtnTheme(ftnTheme);
-            templateModelClassNew.setmContext(mContext);
-            templateModelClassNew.setFtTemplateDetailedInfoAdapter(callBack);
-            templateModelClassNew.setChildViewHolder(childViewHolder);
-            templateModelClassNew.getChildViewHolder().progressbarFrmLyt.setVisibility(View.VISIBLE);
-            templateModelClassNew.getChildViewHolder().template_itemIV.setVisibility(View.GONE);
 
-            AsyncTaskRunner aTask = new AsyncTaskRunner();
-            try {
-                bitmap= aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew).get();
-            } catch (ExecutionException e) {
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            return bitmap;
-        } else {
-            //Not basic, Not recent, Not custom
-            AssetManager assetmanager = mContext.getAssets();
-            InputStream is = null;
-            String path = null;
-            String imageName = null;
-            Bitmap resizedBitmap=null;
+        if (ftnTheme.getCategoryName() != null) {
+            if (dynamicId == 2 && (!ftnTheme.getCategoryName().toLowerCase().contains("recent"))) {
+                //PDF Generation
+                TemplateModelClassNew templateModelClassNew = new TemplateModelClassNew();
+                templateModelClassNew.setFtnTheme(ftnTheme);
+                templateModelClassNew.setmContext(mContext);
+                templateModelClassNew.setFtTemplateDetailedInfoAdapter(callBack);
+                templateModelClassNew.setChildViewHolder(childViewHolder);
+                templateModelClassNew.getChildViewHolder().progressbarFrmLyt.setVisibility(View.VISIBLE);
+                templateModelClassNew.getChildViewHolder().template_itemIV.setVisibility(View.GONE);
 
-
-            FTSelectedDeviceInfo ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
-            int height =     isLandscape ? aspectSize((int) ftSelectedDeviceInfo.getPageHeight(),(int) ftSelectedDeviceInfo.getPageWidth(),340) : 340;
-            int width  =     isLandscape ? 340 :  aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
-
-            String tabName = FTApp.getPref().get(SystemPref.LAST_SELECTED_TAB, "portrait");
-            if (tabName.contains("port")) {
-                imageName = "thumbnail_port@2x.png";
-            } else {
-                imageName = "thumbnail_land@2x.png";
-            }
-
-            try {
-                if (isDownloadTheme || isCustomTheme) {
-                    File file = null;
-                    if (isDownloadTheme) {
-                        if (isLandscape) {
-                            file = new File((FTConstants.DOWNLOADED_PAPERS_PATH2) + this.packName + "/thumbnail_land@2x.png");
-                        } else {
-                            file = new File((FTConstants.DOWNLOADED_PAPERS_PATH2) + this.packName + "/thumbnail_port@2x.png");
-                        }
-//TODO AspectFit
-                        is = new FileInputStream(file);
-                        resizedBitmap = BitmapFactory.decodeStream(is);
-                       bitmap= getResizedPaper(ftSelectedDeviceInfo ,resizedBitmap);//Bitmap.createBitmap(resizedBitmap,0,0,width, height);
-                        return bitmap;
-                    } else {
-                        file = new File((FTConstants.CUSTOM_PAPERS_PATH) + this.packName + "/thumbnail@2x.png");
-                        //TODO Direct image return
-                        is = new FileInputStream(file);
-                        resizedBitmap = BitmapFactory.decodeStream(is);
-                        return Bitmap.createBitmap(resizedBitmap,0,0,274,340);
-                    }
-
-
-                } else if (this.categoryName.contains("Recent")) {
-                    //Log.d("TemplatePickerV2:::::","Recents Theme thumbnailURLPath:: "+this.thumbnailURLPath + " dynamicId:: "+this.dynamicId);
-
-                    if (this.dynamicId == 2) {
-                        File file = new File(this.thumbnailURLPath);
-                        if (!file.exists()) {
-                            is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + "Plain.nsp" + "/thumbnail_port@2x.png");
-                        } else {
-                            is = new FileInputStream(file);
-                        }
-
-                    } else {
-                        if (AssetsUtil.isAssetExists(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + imageName)) {
-                            is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + imageName);
-                        } else {
-                            is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + "thumbnail@2x.png");
-                        }
-                    }
-                    //TODO Direct Imgae return
-                    resizedBitmap = BitmapFactory.decodeStream(is);
-                    bitmap =  Bitmap.createBitmap(resizedBitmap,0,0,resizedBitmap.getWidth(),resizedBitmap.getHeight());
-                    return bitmap;
-
-                } else {
-                /*if (this.packName.toLowerCase().contains("land")) {
-                    is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_land@2x.png");
-                } else {
-                    is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail@2x.png");
-                }*/
-
-                    Log.d("TemplatePickerV2","FTNpaperTheme Basic "+this.isLandscape+" themeName:: "+this.themeName);
-                    if (this.isLandscape) {
-                        path = FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_land@2x.png";
-                        is = assetmanager.open(path);
-                    } else {
-                        path = FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_port@2x.png";
-                        is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_port@2x.png");
-                    }
-                    //TODO Requires aspect ratio
-                    resizedBitmap = BitmapFactory.decodeStream(is);
-                    bitmap= getResizedPaper(ftSelectedDeviceInfo ,resizedBitmap);
-                    return bitmap;
+                AsyncTaskRunner aTask = new AsyncTaskRunner();
+                try {
+                    bitmap= aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew).get();
+                } catch (ExecutionException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
+                return bitmap;
+            } else {
+                //Not basic, Not recent, Not custom
+                AssetManager assetmanager = mContext.getAssets();
+                InputStream is = null;
+                String path = null;
+                String imageName = null;
+                Bitmap resizedBitmap=null;
+
+
+                FTSelectedDeviceInfo ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
+                int height =     isLandscape ? aspectSize((int) ftSelectedDeviceInfo.getPageHeight(),(int) ftSelectedDeviceInfo.getPageWidth(),340) : 340;
+                int width  =     isLandscape ? 340 :  aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
+
+                String tabName = FTApp.getPref().get(SystemPref.LAST_SELECTED_TAB, "portrait");
+                if (tabName.contains("port")) {
+                    imageName = "thumbnail_port@2x.png";
+                } else {
+                    imageName = "thumbnail_land@2x.png";
+                }
+
+                try {
+                    if ((isDownloadTheme || isCustomTheme) && (!this.categoryName.toLowerCase().contains("recent")))  {
+                        File file = null;
+                        if (isDownloadTheme) {
+                            if (isLandscape) {
+                                file = new File((FTConstants.DOWNLOADED_PAPERS_PATH2) + this.packName + "/thumbnail_land@2x.png");
+                            } else {
+                                file = new File((FTConstants.DOWNLOADED_PAPERS_PATH2) + this.packName + "/thumbnail_port@2x.png");
+                            }
+//TODO AspectFit
+                            is = new FileInputStream(file);
+                            resizedBitmap = BitmapFactory.decodeStream(is);
+                            bitmap= getResizedPaper(ftSelectedDeviceInfo ,resizedBitmap);//Bitmap.createBitmap(resizedBitmap,0,0,width, height);
+                            return bitmap;
+                        } else {
+                            file = new File((FTConstants.CUSTOM_PAPERS_PATH) + this.packName + "/thumbnail@2x.png");
+                            //TODO Direct image return
+                            is = new FileInputStream(file);
+                            resizedBitmap = BitmapFactory.decodeStream(is);
+                            return Bitmap.createBitmap(resizedBitmap,0,0,274,340);
+                        }
+
+                    } else if (this.categoryName.contains("Recent")) {
+                        return this.bitmap;
+                        /*if (this.dynamicId == 2) {
+                            File file = new File(this.thumbnailURLPath);
+                            if (!file.exists()) {
+                                is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + "Plain.nsp" + "/thumbnail_port@2x.png");
+                            } else {
+                                is = new FileInputStream(file);
+                            }
+
+                        } else {
+                            if (AssetsUtil.isAssetExists(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + imageName)) {
+                                is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + imageName);
+                            } else {
+                                is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + "thumbnail@2x.png");
+                            }
+                        }
+                        //TODO Direct Imgae return
+                        resizedBitmap = BitmapFactory.decodeStream(is);
+                        bitmap =  Bitmap.createBitmap(resizedBitmap,0,0,resizedBitmap.getWidth(),resizedBitmap.getHeight());
+                        return bitmap;*/
+
+                    } else {
+                        Log.d("TemplatePickerV2","FTNpaperTheme Basic "+this.isLandscape+" themeName:: "+this.themeName);
+                        if (this.isLandscape) {
+                            path = FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_land@2x.png";
+                            is = assetmanager.open(path);
+                        } else {
+                            path = FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_port@2x.png";
+                            is = assetmanager.open(FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/thumbnail_port@2x.png");
+                        }
+                        //TODO Requires aspect ratio
+                        resizedBitmap = BitmapFactory.decodeStream(is);
+                        bitmap= getResizedPaper(ftSelectedDeviceInfo ,resizedBitmap);
+                        return bitmap;
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                bitmap=  BitmapFactory.decodeStream(is);
+                return bitmap;
             }
-           bitmap=  BitmapFactory.decodeStream(is);
+        } else {
             return bitmap;
         }
-
     }
 
     protected Bitmap getResizedPaper(FTSelectedDeviceInfo ftSelectedDeviceInfo ,Bitmap resizedBitmap){
@@ -390,13 +386,6 @@ public class FTNPaperTheme extends FTNTheme {
             int width  =     isLandscape ? 340 :  aspectSize((int) ftSelectedDeviceInfo.getPageWidth(),(int) ftSelectedDeviceInfo.getPageHeight(),height);
             Log.d("pdfToBitmap==> ","ftSelectedDeviceInfo::- "+ftSelectedDeviceInfo.getPageWidth()+" x "+ ftSelectedDeviceInfo.getPageHeight()+" isLandscape:: "+isLandscape +" bitmapSize::"+ width +" x "+ height);
 
-        /*    int width  = 274;
-            int height = 188;*/
-          /*  int width = (int) ftSelectedDeviceInfo.getPageWidth();*/
-
-
-
-//            int height = (int) ftSelectedDeviceInfo.getPageHeight();
             Log.d("TemplatePicker==>", "FTDynamicTemplateFormat storeImage getPageWidth::-" + width
                     + " getPageHeight::-" + height);
             bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);

@@ -136,40 +136,10 @@ public class FTTemplateDetailedInfoAdapter extends
         childViewHolder.template_itemIV.setVisibility(View.GONE);
 
 
-        //sudocode::
-       /* bitmap = ftnTheme.themeThumbnailOnCallBack(DeviceInfo,line, colour,orientation);
-        Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap,
-                (int) dipToPixels(context, 116),
-                (int) dipToPixels(context, 143),
-                false);
-        Bitmap borderedBitmap = addWhiteBorder(scaledBitmap, 2);
-        BitmapDrawable ob = new BitmapDrawable(context.getResources(), borderedBitmap);
-        childViewHolder.template_itemIV.setBackground(ob);*/
-
-        //Basic
-//        if (ftnTheme.getCategoryName().toLowerCase().equalsIgnoreCase("basic")) {
-
-            /*if (ftnTheme instanceof FTNPaperTheme) {
-                TemplateModelClassNew templateModelClassNew = new TemplateModelClassNew();
-                templateModelClassNew.setFtnTheme(ftnTheme);
-                templateModelClassNew.setmContext(context);
-                templateModelClassNew.setFtTemplateDetailedInfoAdapter(this);
-                templateModelClassNew.setChildViewHolder(childViewHolder);
-
-                templateModelClassNew.getChildViewHolder().progressbarFrmLyt.setVisibility(View.VISIBLE);
-                templateModelClassNew.getChildViewHolder().template_itemIV.setVisibility(View.GONE);
-
-                AsyncTaskRunner aTask = new AsyncTaskRunner();
-                aTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, templateModelClassNew);
-            }*/
         Bitmap bitmap=null;
         if (ftnTheme.ftThemeType == FTNThemeCategory.FTThemeType.COVER) {
             bitmap = ftnTheme.themeThumbnailOnCallBack(context, ftnTheme, ftLineTypesInfo, ftTemplateColorsInfo, ftnTheme.isLandscape(), this, childViewHolder);
-          /*  Bitmap scaledBitmap = Bitmap.createScaledBitmap(bitmap,
-                    (int) dipToPixels(context, 116),
-                    (int) dipToPixels(context, 143),
-                    true);
-            Bitmap borderedBitmap = addWhiteBorder(scaledBitmap, 2);*/
+
             BitmapDrawable ob = new BitmapDrawable(context.getResources(), bitmap);
             childViewHolder.template_itemIV.setBackground(ob);
         }

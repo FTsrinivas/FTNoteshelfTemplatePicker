@@ -167,7 +167,7 @@ public class FTTemplateUtil {
         return gson.fromJson(FTApp.getPref().get(SystemPref.TEMPLATE_LINE_TYPE, ""), FTLineTypes.class);
     }
 
-    public void saveRecentPaperTheme(FTNTheme paperTheme,String origin) {
+    /*public void saveRecentPaperTheme(FTNTheme paperTheme,String origin) {
 
         Gson gsonPaperTheme = new Gson();
         try {
@@ -179,7 +179,7 @@ public class FTTemplateUtil {
 
         Log.d("TemplatePicker==>","FTTemplateUtil saveRecentPaperTheme packName::-"+
                 paperTheme.packName+" paperTheme::-"+paperTheme.thumbnailURLPath+" origin::-"+origin);
-    }
+    }*/
 
     public FTNTheme getRecentPaperTheme() {
 
@@ -356,11 +356,6 @@ public class FTTemplateUtil {
             Type type = new TypeToken<ArrayList<RecentsInfoModel>>() {}.getType();
             ftRecentThemeArrayList = recentGson.fromJson(recentJson, type);
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentCoversDummy Recents List Size:: "+ftRecentThemeArrayList.size());
-
-           /* for (int i=0;i<ftRecentThemeArrayList.size();i++) {
-                Log.d("TemplatePicker==>","FTTemplateUtil getRecentCoversDummy get_packName " +ftRecentThemeArrayList.get(i).get_packName()
-                        +"get_thumbnailURLPath:: "+ftRecentThemeArrayList.get(i).get_thumbnailURLPath());
-            }*/
             return ftRecentThemeArrayList;
         } else {
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentCoversDummy Recents List is Empty:: ");
@@ -379,10 +374,6 @@ public class FTTemplateUtil {
             ftRecentThemeArrayList = recentGson.fromJson(recentJson, type);
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentPapersDummy Recents List Size:: "+ftRecentThemeArrayList.size());
 
-            /*for (int i=0;i<ftRecentThemeArrayList.size();i++) {
-                Log.d("TemplatePicker==>","FTTemplateUtil getRecentPapersDummy get_packName " +ftRecentThemeArrayList.get(i).get_packName()
-                        +"get_thumbnailURLPath:: "+ftRecentThemeArrayList.get(i).get_thumbnailURLPath());
-            }*/
             return ftRecentThemeArrayList;
         } else {
             Log.d("TemplatePickerV2","checkRecentThemesDummy getRecentPapersDummy Recents List is Empty:: ");
@@ -452,6 +443,7 @@ public class FTTemplateUtil {
             try {
                 String jsonPrefs = gson.toJson(recentsInfoModel);
                 FTApp.getPref().save(SystemPref.RECENTLY_SELECTED_PAPERTHEME_QUICKCREATE_OPTIONS, jsonPrefs);
+                FTApp.getPref().save(SystemPref.QUICK_CREATE_PAPER_THEME_NAME, paperTheme.packName);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -765,7 +757,6 @@ public class FTTemplateUtil {
             } else {
                 filePath = "stockPapers/Plain.nsp/thumbnail_port@2x.png";
             }
-//FTConstants.PAPER_FOLDER_NAME + "/" + this.packName + "/" + imageName
             istr = assetManager.open(filePath);
             bitmap = BitmapFactory.decodeStream(istr);
         } catch (IOException e) {

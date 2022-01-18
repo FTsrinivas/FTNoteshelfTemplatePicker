@@ -96,7 +96,8 @@ public class FTQuickCreateSettingsPopup extends FTBaseDialog.Popup implements
                 String paperPackName = FTApp.getPref().get(SystemPref.QUICK_CREATE_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
                 FTNTheme paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(paperPackName));
                 if (TextUtils.isEmpty(paperTheme.packName)) {
-                    mDefaultPaperTextView.setText(FTConstants.DEFAULT_PAPER_THEME_NAME.replace("_", " ").replace(".nsp", ""));
+                    //mDefaultPaperTextView.setText(FTConstants.DEFAULT_PAPER_THEME_NAME.replace("_", " ").replace(".nsp", ""));
+                    mDefaultPaperTextView.setText(paperTheme.themeName);
                     FTApp.getPref().save(SystemPref.QUICK_CREATE_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
                 }
             }
@@ -105,7 +106,9 @@ public class FTQuickCreateSettingsPopup extends FTBaseDialog.Popup implements
         String paperPackName = FTApp.getPref().get(SystemPref.QUICK_CREATE_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
         FTNTheme paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(paperPackName));
         if (!TextUtils.isEmpty(paperPackName)) {
-            mDefaultPaperTextView.setText((paperTheme.dynamicId == 1) ? ((FTNAutoTemlpateDiaryTheme) paperTheme).templateId : paperPackName.replace("_", " ").replace(".nsp", ""));
+            //mDefaultPaperTextView.setText((paperTheme.dynamicId == 1) ? ((FTNAutoTemlpateDiaryTheme) paperTheme).templateId : paperPackName.replace("_", " ").replace(".nsp", ""));
+            mDefaultPaperTextView.setText(paperTheme.themeName);
+
         }
 
         mRandomCoverDesignSwitch.setChecked(FTApp.getPref().get(SystemPref.RANDOM_COVER_DESIGN_ENABLED, false));
@@ -118,9 +121,7 @@ public class FTQuickCreateSettingsPopup extends FTBaseDialog.Popup implements
 
     @OnClick(R.id.default_paper_layout)
     void onDefaultPaperClicked() {
-        //FTChoosePaperTemplate.newInstance(FTNThemeCategory.FTThemeType.PAPER).show(getChildFragmentManager(), FTChooseCoverPaperDialog.class.getName());
         FTFirebaseAnalytics.logEvent("Shelf_AddNew_QuickCreateSett_DefPaper");
-        //FTChooseCoverPaperDialog.newInstance(FTNThemeCategory.FTThemeType.PAPER).show(getChildFragmentManager(), FTChooseCoverPaperDialog.class.getName());
 
         FTTemplatepickerInputInfo _ftTemplatepickerInputInfo = new FTTemplatepickerInputInfo();
         _ftTemplatepickerInputInfo.set_baseShelfActivity(null);
@@ -140,55 +141,8 @@ public class FTQuickCreateSettingsPopup extends FTBaseDialog.Popup implements
     @Override
     public void onThemeChosen(FTNTheme paperTheme, boolean isCurrentPage,boolean isLandScapeStatus) {
 
-        /*if ((paperTheme.ftThemeType == FTNThemeCategory.FTThemeType.PAPER)) {
-             Log.d("TemplatePicker==>","FTQuickCreateSettingsPopup instanceof FTNPaperTheme Status onThemeChosen Status::-"+
-                     (paperTheme instanceof FTNPaperTheme));
-             FTSelectedDeviceInfo ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
-            ArrayList<FTNTheme> ftRecentPapersThemesList = FTTemplateUtil.getInstance().getRecentPapersThemesList();
-            if (ftRecentPapersThemesList != null &&
-                    !ftRecentPapersThemesList.isEmpty()) {
-                ArrayList<String> recentPapersThumbnailPathURLsList = FTTemplateUtil.getInstance().getRecentPapersThumbnailPathURLsList();
-                Log.d("TemplatePicker==>","FTQuickCreateSettingsPopup Status ftRecentPapersThemesList packName::-"+
-                        recentPapersThumbnailPathURLsList +" packName::-"+paperTheme.thumbnailURLPath);
-                if (!recentPapersThumbnailPathURLsList.contains(paperTheme.thumbnailURLPath)) {
-                    if (paperTheme.thumbnailURLPath != null) {
-                        Log.d("TemplatePicker==>","FTQuickCreateSettingsPopup instanceof FTNPaperTheme Status onThemeChosen IF Status::-"+
-                                (paperTheme instanceof FTNPaperTheme)+ " thumbnailURLPath::-"+paperTheme.thumbnailURLPath);
-                        FTTemplateUtil.getInstance().saveRecentPapersThemesList(paperTheme,"FTQuickCreateSettingsPopup already in recents some papers exists");
-                        FTTemplateUtil.getInstance().saveRecentPaperThemeFromQuickCreateOption(paperTheme);
-                    }
-                } else {
-                    for (int i=0;i<ftRecentPapersThemesList.size();i++) {
-                        if (ftRecentPapersThemesList.get(i).thumbnailURLPath.equalsIgnoreCase(paperTheme.thumbnailURLPath)) {
-                            Log.d("TemplatePicker==>","FTQuickCreateSettingsPopup instanceof FTNPaperTheme Status onThemeChosen ELSE Status::-"+
-                                    (ftRecentPapersThemesList.get(i) instanceof FTNPaperTheme)+ " thumbnailURLPath::-"+paperTheme.thumbnailURLPath);
-                            FTTemplateUtil.getInstance().saveRecentPaperThemeFromQuickCreateOption(ftRecentPapersThemesList.get(i));
-                        }
-                    }
-                }
-            } else {
-                Log.d("TemplatePicker==>","FTQuickCreateSettingsPopup instanceof FTNPaperTheme Status onThemeChosen Main ELSE Status::-"+
-                        (paperTheme instanceof FTNPaperTheme));
-
-                paperTheme.width  = ftSelectedDeviceInfo.getPageWidth();
-                paperTheme.height = ftSelectedDeviceInfo.getPageHeight();
-
-                FTTemplateUtil.getInstance().saveRecentPapersThemesList(paperTheme,"FTQuickCreateSettingsPopup already in recents some papers exists");
-                FTTemplateUtil.getInstance().saveRecentPaperThemeFromQuickCreateOption(paperTheme);
-            }
-        }*/
-
         paperTheme = paperThemeItem(paperTheme);
         mDefaultPaperTextView.setText(paperTheme.themeName);
-
-        /*if (paperTheme instanceof FTNPaperTheme) {
-            Log.d("TemplatePicker==>","FTQuickCreateSettingsPopup onThemeChosen thumbnailURLPath2::-"+paperTheme.thumbnailURLPath+
-                    " themeName::-"+paperTheme.themeName+" isLandscape::-"+paperTheme.isLandscape()+" themeBgClr::-"+paperTheme.themeBgClr);
-            mDefaultPaperTextView.setText(FTTemplatesInfoSingleton.getInstance().getNSPFileNameWithoutExtn(paperTheme));
-
-            FTLog.crashlyticsLog("UI: Paper chosen for notebook");
-            Log.d("TemplatePicker==>","FTQuickCreateSettingsPopup onThemeChosen paperTheme.themeName::-"+paperTheme.themeName);
-        }*/
 
     }
 
@@ -247,7 +201,7 @@ public class FTQuickCreateSettingsPopup extends FTBaseDialog.Popup implements
     @Override
     public void onResume() {
         super.onResume();
-        String paperPackName = FTApp.getPref().get(SystemPref.RECENT_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
+        String paperPackName = FTApp.getPref().get(SystemPref.QUICK_CREATE_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
         RecentsInfoModel recentsInfoModel  = FTTemplateUtil.getInstance().getRecentPaperThemeFromQuickCreateDialog();
 
         if (recentsInfoModel != null) {
@@ -278,7 +232,6 @@ public class FTQuickCreateSettingsPopup extends FTBaseDialog.Popup implements
         boolean _isThemeDeleted              = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.PAPER,paperTheme);
 
         if (_isThemeDeleted) {
-//            paperTheme                      = new FTNThemeCategory(getContext(), "Simple", FTNThemeCategory.FTThemeType.PAPER).getPaperThemeForPackName(FTConstants.DEFAULT_PAPER_THEME_NAME);
             paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(paperPackName));
             paperTheme.thumbnailURLPath     = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+FTConstants.DEFAULT_PAPER_THEME_URL;
             paperTheme.bitmap               = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.PAPER);

@@ -1079,6 +1079,7 @@ public class FTTemplatesInfoSingleton {
                     theme.verticalSpacing           = recentsInfoList.get(i).getVerticalSpacing();
                     theme.width                     = recentsInfoList.get(i).getWidth();
                     theme.height                    = recentsInfoList.get(i).getHeight();
+                    theme.isLandscape               = recentsInfoList.get(i).isLandscape();
                     theme.bitmap                    = FTTemplateUtil.getInstance().StringToBitMap(recentsInfoList.get(i).get_themeBitmapInStringFrmt());
                     recentTemplatesInfo.AddThemesToList(theme);
                 }
@@ -1112,6 +1113,7 @@ public class FTTemplatesInfoSingleton {
                     theme.verticalSpacing           = recentsInfoList.get(i).getVerticalSpacing();
                     theme.width                     = recentsInfoList.get(i).getWidth();
                     theme.height                    = recentsInfoList.get(i).getHeight();
+                    theme.isLandscape               = recentsInfoList.get(i).isLandscape();
                     theme.bitmap                    = FTTemplateUtil.getInstance().StringToBitMap(recentsInfoList.get(i).get_themeBitmapInStringFrmt());
                     recentTemplatesInfo.AddThemesToList(theme);
                 }

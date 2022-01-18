@@ -294,8 +294,6 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
         Log.d("TemplatePicker==>", "FTNewNotebookDialog onStop paperTheme::-");
     }
 
-
-
     @OnClick({R.id.new_notebook_cover_choose_text_view, R.id.new_notebook_cover_image_view})
     void onChooseCoverClicked() {
         FTFirebaseAnalytics.logEvent("Shelf_AddNew_NewNB_ChooseCover");
@@ -369,7 +367,8 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
 
             paperTheme = theme;
             paperTitleTextView.setText(paperTheme.themeName);
-            paperImageView.setImageBitmap(theme.themeThumbnail(getContext()));
+            //paperImageView.setImageBitmap(theme.themeThumbnail(getContext()));
+            paperImageView.setImageBitmap(theme.bitmap);
             paperImageView.setLayoutParams(getLayoutParams(paperImageView.getLayoutParams(), theme));
 
             FTLog.crashlyticsLog("UI: Paper chosen for notebook");
@@ -377,11 +376,10 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
         } else {
             coverTheme = theme;
             coverTitleTextView.setText(FTTemplatesInfoSingleton.getInstance().getNSPFileNameWithoutExtn(coverTheme));
-            coverImageView.setLayoutParams(getLayoutParams(paperImageView.getLayoutParams(), coverTheme));
-            coverImageView.setImageBitmap(coverTheme.themeThumbnail(getContext()));
+            coverImageView.setLayoutParams(getLayoutParams(coverImageView.getLayoutParams(), coverTheme));
+            //coverImageView.setImageBitmap(coverTheme.themeThumbnail(getContext()));
+            coverImageView.setImageBitmap(coverTheme.bitmap);
 
-            /*if (!theme.isDeleted)
-                FTApp.getPref().save(SystemPref.RECENT_COVER_THEME_NAME, theme.packName);*/
             FTLog.crashlyticsLog("UI: Cover chosen for notebook");
         }
     }
@@ -406,14 +404,6 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
         layoutParams.width = getResources().getDimensionPixelOffset(R.dimen.new_137dp);
         return layoutParams;
     }
-
-   /* private String getFileNameWithoutExtn(String result) {
-        String separator =".nsp";
-        int sepPos = result.lastIndexOf(separator);
-        result = result.substring(0,sepPos);
-        Log.d("TemplatePicker==>","getFileNameWithoutExtn result::-"+result);
-        return result;
-    }*/
 
     @Override
     public void addCustomTheme(FTNTheme theme) {
