@@ -37,6 +37,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fluidtouch.noteshelf.FTApp;
+import com.fluidtouch.noteshelf.audio.models.FTAudioPlayerStatus;
 import com.fluidtouch.noteshelf.commons.ui.FTBaseDialog;
 import com.fluidtouch.noteshelf.commons.utils.ObservingService;
 import com.fluidtouch.noteshelf.commons.utils.ScreenUtil;
@@ -250,18 +251,26 @@ public class FTChoosePaperTemplate extends FTBaseDialog
                 templatesInfoList =  FTTemplatesInfoSingleton.getInstance().getTemplatesInfo(themeType);
 
                 if (themeType == FTNThemeCategory.FTThemeType.COVER) {
-                    for (int i=0;i<templatesInfoList.size();i++) {
-                        for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
-                            FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
-                            if (!_ftnTheme.getCategoryName().contains("Recent")) {
-                                _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
-                                Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
-                                        + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
+
+                    FTNTheme _themeRecvd = (FTNTheme) arg;
+                    Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver _themeRecvd:: "
+                            + _themeRecvd);
+                    if (!_themeRecvd.isSavedForFuture) {
+                        onTemplateSelctedInfo(_themeRecvd,_themeRecvd.isLandscape());
+                    } else {
+                        for (int i=0;i<templatesInfoList.size();i++) {
+                            for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
+                                FTNTheme _ftnTheme = templatesInfoList.get(i).get_themeseList().get(j);
+                                if (!_ftnTheme.getCategoryName().contains("Recent")) {
+                                    _ftnTheme.thumbnailURLPath      = FTTemplateUtil.getInstance().generateThumbnailURLPath(_ftnTheme.themeFileURL,_ftnTheme);
+                                    Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver thumbnailURLPath tabSelection thumbnailURLPath:: "
+                                            + _ftnTheme.thumbnailURLPath +" _ftnTheme.isLandscape:: "+_ftnTheme.isLandscape);
+                                }
                             }
                         }
-                    }
 
-                    mFTTemplateCategories.updateUI(templatesInfoList, "addCustomThemeObserver");
+                        mFTTemplateCategories.updateUI(templatesInfoList, "addCustomThemeObserver");
+                    }
                 } else {
                     FTSelectedDeviceInfo _ftSelectedDeviceInfo = FTSelectedDeviceInfo.selectedDeviceInfo();
                     for (int i=0;i<templatesInfoList.size();i++) {
@@ -639,6 +648,7 @@ public class FTChoosePaperTemplate extends FTBaseDialog
         //addDownloadsThemeObserver.r
         ObservingService.getInstance().removeObserver("addDownloadsThemeObserver", addDownloadsThemeObserver);
         ObservingService.getInstance().removeObserver("addCustomTheme", addCustomThemeObserver);
+
         dismiss();
     }
 

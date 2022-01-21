@@ -1606,8 +1606,10 @@ public class FTBaseShelfActivity extends FTBaseActivity implements
                 Log.d("TemplatePicker==>","FTTemplateUtil FTBaseShelfActivity coverThemItem Recents List Fresh" +
                         " thumbnailURLPath::-"+coverTheme.thumbnailURLPath +
                         " width:: "+coverTheme.width+
-                        " height:: "+coverTheme.height+" bitmap:: "+coverTheme.bitmap);
+                        " height:: "+coverTheme.height+" bitmap:: "+coverTheme.bitmap+
+                        " isSavedForFuture:: "+coverTheme.isSavedForFuture);
                 FTTemplateUtil.getInstance().saveRecentCoversDummy(coverTheme);
+
             }
         }
         return coverTheme;
