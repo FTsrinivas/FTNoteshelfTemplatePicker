@@ -1608,7 +1608,13 @@ public class FTBaseShelfActivity extends FTBaseActivity implements
                         " width:: "+coverTheme.width+
                         " height:: "+coverTheme.height+" bitmap:: "+coverTheme.bitmap+
                         " isSavedForFuture:: "+coverTheme.isSavedForFuture);
-                FTTemplateUtil.getInstance().saveRecentCoversDummy(coverTheme);
+                if (coverTheme.isCustomTheme) {
+                    if (coverTheme.isSavedForFuture) {
+                        FTTemplateUtil.getInstance().saveRecentCoversDummy(coverTheme);
+                    }
+                } else {
+                    FTTemplateUtil.getInstance().saveRecentCoversDummy(coverTheme);
+                }
 
             }
         }

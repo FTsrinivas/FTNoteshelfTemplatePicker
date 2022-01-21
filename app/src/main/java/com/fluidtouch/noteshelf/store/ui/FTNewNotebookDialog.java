@@ -337,7 +337,13 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
         String name = notebookTitleEditText.getText().toString();
         if (TextUtils.isEmpty(name)) {
             FTTemplateUtil.getInstance().saveRecentPaperThemeFromNewNotebookDialog(paperTheme);
-            FTTemplateUtil.getInstance().saveRecentCoverTheme(coverTheme);
+            if (coverTheme.isCustomTheme) {
+                if (coverTheme.isSavedForFuture) {
+                    FTTemplateUtil.getInstance().saveRecentCoverTheme(coverTheme);
+                }
+            } else {
+                FTTemplateUtil.getInstance().saveRecentCoverTheme(coverTheme);
+            }
             listener.createNewShelfItem(notebookTitleEditText.getHint().toString(), coverTheme, paperTheme, "new_note_book_create_text_view");
         } else {
             name = name.trim();
@@ -345,7 +351,13 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
                 name = notebookTitleEditText.getHint().toString();
             }
             FTTemplateUtil.getInstance().saveRecentPaperThemeFromNewNotebookDialog(paperTheme);
-            FTTemplateUtil.getInstance().saveRecentCoverTheme(coverTheme);
+            if (coverTheme.isCustomTheme) {
+                if (coverTheme.isSavedForFuture) {
+                    FTTemplateUtil.getInstance().saveRecentCoverTheme(coverTheme);
+                }
+            } else {
+                FTTemplateUtil.getInstance().saveRecentCoverTheme(coverTheme);
+            }
             listener.createNewShelfItem(name, coverTheme, paperTheme, "new_note_book_create_text_view");
         }
         dismiss();
