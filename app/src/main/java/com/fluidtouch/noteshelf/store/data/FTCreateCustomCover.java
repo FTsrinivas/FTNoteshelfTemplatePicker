@@ -75,7 +75,7 @@ public class FTCreateCustomCover {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    ObservingService.getInstance().postNotification("addCustomTheme", themeObject);
+                    ObservingService.getInstance().postNotification("addCustomTheme", theme);
                     return;
                 }
                 bitmap = bitmap2;
