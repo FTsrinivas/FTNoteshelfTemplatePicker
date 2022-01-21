@@ -140,6 +140,14 @@ public class FTTemplateDetailedInfoAdapter extends
         if (ftnTheme.ftThemeType == FTNThemeCategory.FTThemeType.COVER) {
             bitmap = ftnTheme.themeThumbnailOnCallBack(context, ftnTheme, ftLineTypesInfo, ftTemplateColorsInfo, ftnTheme.isLandscape(), this, childViewHolder);
 
+            if (ftnTheme.getCategoryName().equalsIgnoreCase("Custom") && position == 0) {
+                Bitmap icon = BitmapFactory.decodeResource(context.getResources(), R.drawable.new_custom_template_bg);
+                bitmap = Bitmap.createScaledBitmap(icon,
+                        (int) dipToPixels(context, 116),
+                        (int) dipToPixels(context, 143),
+                        false);
+            }
+
             BitmapDrawable ob = new BitmapDrawable(context.getResources(), bitmap);
             childViewHolder.template_itemIV.setBackground(ob);
         }

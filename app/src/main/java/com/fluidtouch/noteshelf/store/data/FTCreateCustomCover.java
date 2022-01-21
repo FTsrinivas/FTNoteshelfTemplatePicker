@@ -67,10 +67,10 @@ public class FTCreateCustomCover {
                     theme.isCustomTheme = true;
                     theme.isDeleted = true;
                     theme.isSavedForFuture = false;
-                    theme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+"bitmapMerged.jpg";
+                    theme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH + "TemplatesCache/" + "bitmapMerged.jpg";
                     JSONObject themeObject = new JSONObject();
                     try {
-                        themeObject.put(KEY_OBJECT_THEME,theme);
+                        themeObject.put(KEY_OBJECT_THEME, theme);
                         themeObject.put(KEY_IS_NOT_SAVED_FUTURE, true);
                     } catch (JSONException e) {
                         e.printStackTrace();

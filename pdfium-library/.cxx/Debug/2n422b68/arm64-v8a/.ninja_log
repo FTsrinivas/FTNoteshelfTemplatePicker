@@ -10,3 +10,6 @@
 0	12	0	clean	c3712e5c32ee8dcd
 1	882	1641283003	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	6f0088a6e5d398e
 882	1048	1641283003	/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/2n422b68/obj/arm64-v8a/libpdfsdk_jni.so	315dc3811e997b8e
+0	14	0	clean	c3712e5c32ee8dcd
+1	1213	1642691843	CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o	6f0088a6e5d398e
+1213	1368	1642691843	/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/2n422b68/obj/arm64-v8a/libpdfsdk_jni.so	315dc3811e997b8e
