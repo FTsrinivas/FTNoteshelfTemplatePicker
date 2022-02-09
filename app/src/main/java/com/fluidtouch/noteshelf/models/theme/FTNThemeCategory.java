@@ -84,6 +84,8 @@ public class FTNThemeCategory {
                 path = FTConstants.DOWNLOADED_COVERS_PATH + fileName;
             } else if (new File(FTConstants.CUSTOM_COVERS_PATH + fileName).exists()) {
                 path = FTConstants.CUSTOM_COVERS_PATH + fileName;
+            } else if (new File(FTConstants.TEMP_FOLDER_PATH+"customcover/" + fileName).exists())  {
+                path = FTConstants.TEMP_FOLDER_PATH+"customcover/" + fileName;
             } else {
                 return new FTUrl("");
             }

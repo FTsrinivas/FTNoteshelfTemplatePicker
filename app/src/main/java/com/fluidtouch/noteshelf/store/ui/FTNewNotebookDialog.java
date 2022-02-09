@@ -141,7 +141,8 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
             coverTheme = FTNTheme.theme(FTNThemeCategory.getUrl(coverPackName));
         }
 
-        Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentCoverTheme get_packName recentsInfoModel ::-"+coversRecentsInfoModel);
+        Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentCoverTheme get_packName recentsInfoModel ::-"
+                +coversRecentsInfoModel +""+coverTheme.themeName);
 
         if (coversRecentsInfoModel == null) {
 
@@ -317,7 +318,7 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
         _ftTemplatepickerInputInfo.set_ftNewNotebookDialog(this);
         _ftTemplatepickerInputInfo.set_ftTemplateOpenMode(FTTemplateMode.NewNotebook);
         _ftTemplatepickerInputInfo.set_ftThemeType(FTNThemeCategory.FTThemeType.PAPER);
-        _ftTemplatepickerInputInfo.set_notebookTitle("Mani");
+        _ftTemplatepickerInputInfo.set_notebookTitle("Sample");
 
         FTChoosePaperTemplate.newInstance1(_ftTemplatepickerInputInfo).show(getChildFragmentManager(), FTChoosePaperTemplate.class.getName());
         FTFirebaseAnalytics.logEvent("Shelf_AddNew_NewNB_ChoosePaper");

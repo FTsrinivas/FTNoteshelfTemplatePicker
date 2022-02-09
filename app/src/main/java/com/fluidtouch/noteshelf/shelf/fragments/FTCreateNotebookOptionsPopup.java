@@ -71,7 +71,7 @@ public class FTCreateNotebookOptionsPopup extends FTBaseDialog.Popup {
     @OnClick(R.id.tvQuickCreate)
     void onClickQuickCreateNotebook() {
         FTLog.crashlyticsLog("QuickAccessPopup: Clicked Quick Create notebook");
-        FTTemplatesInfoSingleton.getInstance().getFTNThemeCategory("onClubDownloadsIConClicked", FTNThemeCategory.FTThemeType.PAPER);
+        //FTTemplatesInfoSingleton.getInstance().getFTNThemeCategory("onClubDownloadsIConClicked", FTNThemeCategory.FTThemeType.PAPER);
         mListener.createNotebookWithDefaultOptions();
         dismiss();
     }

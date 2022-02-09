@@ -35,32 +35,6 @@ public class FTNCoverTheme extends FTNTheme {
 
     @Override
     public Bitmap themeThumbnail(Context context) {
-        /*if (bitmap != null) {
-            return bitmap;
-        }
-        AssetManager assetmanager = context.getAssets();
-        InputStream is = null;
-        try {
-            Log.d("TemplatePicker==>","FTNCoverTheme themeThumbnail coverName isDownloadTheme::-"+
-                    isDownloadTheme +" isCustomTheme::-"+isCustomTheme+" coverPath::-"+FTConstants.COVER_FOLDER_NAME + "/" + this.packName + "/thumbnail@2x.png");
-            if (isDownloadTheme || isCustomTheme) {
-                File file = new File((isDownloadTheme ? FTConstants.DOWNLOADED_COVERS_PATH : FTConstants.CUSTOM_COVERS_PATH) + this.packName + "/thumbnail@2x.png");
-                if (!file.exists()) {
-                    file = new File((isDownloadTheme ? FTConstants.DOWNLOADED_COVERS_PATH : FTConstants.CUSTOM_COVERS_PATH) + this.packName + "/thumbnail.png");
-                }
-                is = new FileInputStream(file);
-            } else {
-                is = assetmanager.open(FTConstants.COVER_FOLDER_NAME + "/" + this.packName + "/thumbnail@2x.png");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        Log.d("TemplatePicker==>","FTNCoverTheme themeThumbnail coverName FileInputStream::-"+is);
-        if (is == null)
-            return bitmap;
-        return BitmapFactory.decodeStream(is);*/
-
         AssetManager assetmanager = context.getAssets();
         InputStream is = null;
         try {
@@ -69,6 +43,13 @@ public class FTNCoverTheme extends FTNTheme {
                 is = assetmanager.open(FTConstants.COVER_FOLDER_NAME + "/" + this.packName + "/thumbnail@2x.png");
             } else {
                 if (isDownloadTheme || isCustomTheme) {
+                    if (isCustomTheme) {
+                        if (!isSavedForFuture) {
+                            File file = new File((FTConstants.TEMP_FOLDER_PATH+"customcover/") + this.packName + "/thumbnail@2x.png");
+                            is = new FileInputStream(file);
+                            return BitmapFactory.decodeStream(is);
+                        }
+                    }
                     File file = new File((isDownloadTheme ? FTConstants.DOWNLOADED_COVERS_PATH : FTConstants.CUSTOM_COVERS_PATH) + this.packName + "/thumbnail@2x.png");
                     if (!file.exists()) {
                         file = new File((isDownloadTheme ? FTConstants.DOWNLOADED_COVERS_PATH : FTConstants.CUSTOM_COVERS_PATH) + this.packName + "/thumbnail.png");
@@ -80,8 +61,7 @@ public class FTNCoverTheme extends FTNTheme {
             e.printStackTrace();
         }
         return BitmapFactory.decodeStream(is);
-       /* WeakReference<Bitmap> tempbitmap = new WeakReference<Bitmap>(temp);
-        return BitmapUtil.getResizedBitmap(temp,116,146,false);*/
+
     }
 
     public Bitmap themeOverlay(Context context) {

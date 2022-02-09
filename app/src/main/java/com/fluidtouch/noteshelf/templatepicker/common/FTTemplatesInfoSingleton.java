@@ -504,7 +504,9 @@ public class FTTemplatesInfoSingleton {
                         NSArray themesArray = (NSArray) filteredCatDictionary.objectForKey("themes");
                         for (int i = 0; i < themesArray.count(); i++) {
                                 String themeName = themesArray.objectAtIndex(i).toString();
-                            FTUrl url = getUrl(themeName, origin);
+                            //FTUrl url = getUrl(themeName, origin);
+                            FTUrl url = null;
+
                             if (!url.getPath().equals("")) {
                                 Log.d("TemplatePicker==>","FTTemplatesSingleton getFTNThemeCategory status::-"+(type == FTNThemeCategory.FTThemeType.COVER)+ " Type::-"+type+" COVER::-"+FTThemeType.COVER);
                                 if (type == FTNThemeCategory.FTThemeType.COVER) {
@@ -769,15 +771,16 @@ public class FTTemplatesInfoSingleton {
         if (customThemesDir.exists() && customThemesDir.isDirectory()) {
             for (File eachThemeDir : customThemesDir.listFiles()) {
                 if (eachThemeDir.exists() && eachThemeDir.isDirectory()) {
-                    String themeName = eachThemeDir.getName();
-                    FTUrl url = getUrl(themeName, "customThemes");
+                    String packName = eachThemeDir.getName();
+                   // FTUrl url = getUrl(themeName, "customThemes");
+                    FTUrl url = FTNThemeCategory.getUrl(packName);
                     if (!url.getPath().equals("")) {
                         FTNTheme theme = FTNTheme.theme(url);
                         if (url.getPath().contains("custom")) {
                             theme.isCustomTheme = true;
                         }
 
-                        theme.themeName     = themeName;
+                        theme.themeName     = packName;
                         theme.categoryName  = "Custom";
                         theme.isLandscape   = false;
                         theme.bitmap = theme.themeThumbnail(FTApp.getInstance().getApplicationContext());
@@ -808,11 +811,11 @@ public class FTTemplatesInfoSingleton {
 
     }
 
-    public FTUrl getUrl(String fileName, String origin) {
+    public FTUrl getUrl(String fileName) {
 
         String path = "";
         String extension = StringUtil.getFileExtension(fileName);
-        Log.d("TemplatePicker==>"," FTTemplatesSingleton getUrl origin::-"+origin+" extension::-"+extension);
+        Log.d("TemplatePicker==>"," FTTemplatesSingleton getUrl origin::- extension::-"+extension);
         if (extension.equals("nsc")) {
             if (AssetsUtil.isAssetExists("stockCovers/" + fileName)) {
                 path = "stockCovers/" + fileName;
@@ -1265,15 +1268,21 @@ public class FTTemplatesInfoSingleton {
         if (customThemesDir.exists() && customThemesDir.isDirectory()) {
             for (File eachThemeDir : customThemesDir.listFiles()) {
                 if (eachThemeDir.exists() && eachThemeDir.isDirectory()) {
-                    String themeName = eachThemeDir.getName();
-                    FTUrl url = getUrl(themeName, "customThemes");
+                    String packName = eachThemeDir.getName();
+                    //FTUrl url = getUrl(themeName, "customThemes");
+                    FTUrl url   = FTNThemeCategory.getUrl(packName);
+                    Log.d("TemplatePickerV2", "TemplatePickerV2 FTTemplatesInfoSingleton customThemesDummy packName:: "
+                            + packName);
                     if (!url.getPath().equals("")) {
                         FTNTheme theme = FTNTheme.theme(url);
                         if (url.getPath().contains("custom")) {
                             theme.isCustomTheme = true;
                         }
 
-                        theme.themeName     = themeName;
+                        Log.d("TemplatePickerV2", "TemplatePickerV2 FTTemplatesInfoSingleton inside customThemesDummy packName:: "
+                                + packName);
+                        theme.packName      = packName;
+                        theme.themeName     = packName;
                         theme.categoryName  = "Custom";
                         theme.isLandscape   = false;
                         theme.bitmap = theme.themeThumbnail(FTApp.getInstance().getApplicationContext());

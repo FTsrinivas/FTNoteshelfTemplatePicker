@@ -340,7 +340,8 @@ public class FTAddCoverThemeDialog extends DialogFragment implements View.OnClic
             bitmap = BitmapUtil.getMergedBitmap(getContext(), bitmap, bitmapMask, ((RelativeLayout.LayoutParams) imgMask3.getLayoutParams()).topMargin);
         }*/
 
-        File customCoversDir = new File(FTConstants.CUSTOM_COVERS_PATH);
+        //File customCoversDir = new File(FTConstants.CUSTOM_COVERS_PATH);
+        File customCoversDir = new File(FTConstants.TEMP_FOLDER_PATH+"customcover/");
         if (!customCoversDir.exists()) {
             customCoversDir.mkdirs();
         }

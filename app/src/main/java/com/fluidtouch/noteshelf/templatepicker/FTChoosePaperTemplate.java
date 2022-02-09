@@ -256,7 +256,38 @@ public class FTChoosePaperTemplate extends FTBaseDialog
                     Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver _themeRecvd:: "
                             + _themeRecvd);
                     if (!_themeRecvd.isSavedForFuture) {
+                        //FTNTheme coverTheme = (FTNTheme) FTNTheme.theme(FTNThemeCategory.getUrl(_themeRecvd.packName));
+                        _themeRecvd.themeFileURL = FTNThemeCategory.getUrl(_themeRecvd.packName);
+                        Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver _themeRecvd.themeFileURL.getPath():: "
+                                + _themeRecvd.themeFileURL.getPath());
                         onTemplateSelctedInfo(_themeRecvd,_themeRecvd.isLandscape());
+
+                        /*if (coverTheme.packName.contains(_themeRecvd.packName)) {
+                            Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver _themeRecvd.themeFileURL:: "
+                                    + coverTheme.themeFileURL.getPath());
+                            _themeRecvd.themeFileURL = coverTheme.themeFileURL;
+                            onTemplateSelctedInfo(_themeRecvd,_themeRecvd.isLandscape());
+                        }*/
+                        /*for (int i=0;i<templatesInfoList.size();i++) {
+                            for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
+                                FTNTheme _themesInPlist = templatesInfoList.get(i).get_themeseList().get(j);
+                                Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver _themesInPlist.packName:: "
+                                        + _themesInPlist.packName);
+
+                                Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver _themeRecvd.packName:: "
+                                        + _themeRecvd.packName);
+                                if (_themesInPlist.packName != null) {
+                                    Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver Status:: "
+                                            + _themesInPlist.packName.contains(_themeRecvd.packName));
+                                    if (_themesInPlist.packName.contains(_themeRecvd.packName)) {
+                                        Log.d("TemplatePickerV2", "TemplatePickerV2 addCustomThemeObserver _themeRecvd.themeFileURL:: "
+                                                + _themesInPlist.themeFileURL.getPath());
+                                        _themeRecvd.themeFileURL = _themesInPlist.themeFileURL;
+                                        onTemplateSelctedInfo(_themeRecvd,_themeRecvd.isLandscape());
+                                    }
+                                }
+                            }
+                        }*/
                     } else {
                         for (int i=0;i<templatesInfoList.size();i++) {
                             for (int j=0;j<templatesInfoList.get(i).get_themeseList().size();j++) {
@@ -726,7 +757,7 @@ public class FTChoosePaperTemplate extends FTBaseDialog
 
     @Override
     public void onTemplateSelctedInfo(FTNTheme theme, boolean isLandscapeStatus) {
-        Log.d("TemplatePickerV2", "FTChoosePaperTemplate onTemplateSelctedInfo ftTemplateMode:: "+ftTemplateMode);
+        Log.d("TemplatePickerV2", "FTChoosePaperTemplate onTemplateSelctedInfo ftTemplateMode:: "+theme.themeFileURL.getPath());
 
         if (ftTemplateMode == FTTemplateMode.NewNotebook) {
             Log.d("TemplatePickerV2", "NewNotebook FTChoosepaperTemplate onTemplateSelctedInfo inside NewNotebook ftnTheme:: "+theme.themeName);

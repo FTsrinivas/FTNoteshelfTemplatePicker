@@ -35,6 +35,7 @@ public class FTCreateCustomCover {
     private Uri mUri;
     private FragmentManager mFragmentManager;
     private Bitmap bitmap = null;
+    private String packName = "Sample";
 
     public FTCreateCustomCover(Context context, Uri uri, FragmentManager fragmentManager) {
         mContext = context;
@@ -57,7 +58,7 @@ public class FTCreateCustomCover {
         FTAddCoverThemeDialog ftAddThemeDialog = FTAddCoverThemeDialog.newInstance(new FTAddCoverThemeDialog.DialogResult() {
             @Override
             public void onDataSubmit(String name, Bitmap bitmap2, boolean isSaved) {
-                if (!isSaved) {
+                /*if (!isSaved) {
                     FTNTheme theme = new FTNCoverTheme();
                     theme.themeName = name;
                     theme.setCategoryName(mContext.getString(R.string.custom));
@@ -77,7 +78,8 @@ public class FTCreateCustomCover {
                     }
                     ObservingService.getInstance().postNotification("addCustomTheme", theme);
                     return;
-                }
+                }*/
+                packName  = name;
                 bitmap = bitmap2;
                 FTSmartDialog smartDialog = new FTSmartDialog()
                         .setMode(FTSmartDialog.FTSmartDialogMode.SPINNER)
@@ -87,7 +89,13 @@ public class FTCreateCustomCover {
                     @Override
                     protected Boolean doInBackground(Object[] objects) {
                         try {
-                            return BitmapUtil.saveBitmap(bitmap, FTConstants.CUSTOM_COVERS_PATH + name + ".nsc", "thumbnail@2x.png");
+                            if (!isSaved) {
+                                return BitmapUtil.saveBitmap(bitmap, FTConstants.TEMP_FOLDER_PATH+"customcover/" + "Sample" + ".nsc", "thumbnail@2x.png");
+
+                            } else {
+                                return BitmapUtil.saveBitmap(bitmap, FTConstants.CUSTOM_COVERS_PATH + name + ".nsc", "thumbnail@2x.png");
+
+                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                             return false;
@@ -100,13 +108,24 @@ public class FTCreateCustomCover {
                         if (smartDialog != null)
                             smartDialog.dismissAllowingStateLoss();
                         if ((boolean) o) {
+                            if (!isSaved) {
+                                packName = "Sample";
+                            }
                             FTNTheme theme = new FTNCoverTheme();
-                            theme.themeName = name;
+                            theme.themeName = packName;
                             theme.setCategoryName(mContext.getString(R.string.custom));
-                            theme.packName = name + ".nsc";
+                            theme.packName = packName + ".nsc";
                             theme.ftThemeType = FTNThemeCategory.FTThemeType.COVER;
                             theme.isCustomTheme = true;
-                            theme.isSavedForFuture = true;
+
+                            if (!isSaved) {
+                                theme.isSavedForFuture = false;
+                                theme.bitmap = bitmap;
+                                theme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH + "TemplatesCache/" + "bitmapMerged.jpg";
+                            } else {
+                                theme.isSavedForFuture = true;
+                            }
+
                             ObservingService.getInstance().postNotification("addCustomTheme", theme);
                         }
                     }
