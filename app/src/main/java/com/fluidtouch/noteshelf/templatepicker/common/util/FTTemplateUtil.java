@@ -753,7 +753,7 @@ public class FTTemplateUtil {
 
             String[] stockTemplatesDirectory = assetManager.list("stockPapers");
             if (_coverOrPaperType == FTNThemeCategory.FTThemeType.COVER) {
-                filePath = "stockCovers/Orange.nsc/thumbnail@2x.png";;
+                filePath = "stockCovers/Orange.nsc/thumbnail@2x.png";
             } else {
                 filePath = "stockPapers/Plain.nsp/thumbnail_port@2x.png";
             }

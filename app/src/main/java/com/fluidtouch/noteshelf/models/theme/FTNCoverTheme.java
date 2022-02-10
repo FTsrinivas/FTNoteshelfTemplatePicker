@@ -102,7 +102,7 @@ public class FTNCoverTheme extends FTNTheme {
                 (int) callBack.dipToPixels(mContext, 116),
                 (int) callBack.dipToPixels(mContext, 143),
                 true);
-        bitmap = addWhiteBorder(scaledBitmap, 2);
+        bitmap = addWhiteBorder(scaledBitmap, 0);
         return bitmap;
     }
 }

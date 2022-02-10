@@ -36,9 +36,9 @@ public class PaintUtil {
 
         final Paint paint = new Paint();
         paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(resources.getDimension(R.dimen.border_thickness));
+//        paint.setStrokeWidth(resources.getDimension(R.dimen.border_thickness));
+        paint.setStrokeWidth(resources.getDimension(R.dimen.new_18dp));
         paint.setColor(resources.getColor(R.color.border));
-
         return paint;
     }
 
@@ -65,6 +65,7 @@ public class PaintUtil {
         final Paint paint = new Paint();
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.TRANSPARENT);
+//        paint.setColor(Color.RED);
 
         return paint;
     }
@@ -75,9 +76,10 @@ public class PaintUtil {
     public static Paint newCornerPaint(@NonNull Resources resources) {
 
         final Paint paint = new Paint();
-        paint.setStyle(Paint.Style.STROKE);
-        paint.setStrokeWidth(resources.getDimension(R.dimen.corner_thickness));
-        paint.setColor(resources.getColor(R.color.corner));
+        paint.setStyle(Paint.Style.FILL);
+//        paint.setStrokeWidth(resources.getDimension(R.dimen.corner_thickness));
+        paint.setStrokeWidth(1);
+        paint.setColor(resources.getColor(R.color.recylerview_selcted_item_clr));
 
         return paint;
     }

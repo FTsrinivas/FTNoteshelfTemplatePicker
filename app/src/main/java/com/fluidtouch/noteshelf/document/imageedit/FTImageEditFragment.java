@@ -108,6 +108,10 @@ public class FTImageEditFragment extends FTAnnotationFragment implements
         popupMenuItemList.add(getResources().getString(R.string.delete));
         popupMenuItemList.add(getResources().getString(R.string.edit));
         popupMenuItemList.add(getResources().getString(R.string.lock));
+        popupMenuItemList.add(getResources().getString(R.string.cut));
+        popupMenuItemList.add(getResources().getString(R.string.copy));
+        popupMenuItemList.add(getResources().getString(R.string.bring_to_front));
+        popupMenuItemList.add(getResources().getString(R.string.send_to_back));
 
     }
 

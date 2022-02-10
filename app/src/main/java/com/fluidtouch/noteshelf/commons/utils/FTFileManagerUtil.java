@@ -219,4 +219,10 @@ public class FTFileManagerUtil {
         }
         return name;
     }
+    public static String removeFileExtension(String name) {
+        if (name.contains(".")) {
+            return name.substring(0, name.lastIndexOf("."));
+        }
+        return name;
+    }
 }

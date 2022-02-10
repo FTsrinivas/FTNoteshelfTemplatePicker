@@ -1,5 +1,7 @@
 package com.fluidtouch.noteshelf.store.ui;
 
+import static com.fluidtouch.noteshelf.documentframework.Utilities.FTConstants.DEFAULT_COVER_THEME_NAME;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -22,6 +24,7 @@ import androidx.annotation.Nullable;
 import com.fluidtouch.noteshelf.FTApp;
 import com.fluidtouch.noteshelf.commons.FTLog;
 import com.fluidtouch.noteshelf.commons.ui.FTBaseDialog;
+import com.fluidtouch.noteshelf.commons.utils.FTFileManagerUtil;
 import com.fluidtouch.noteshelf.documentframework.Utilities.FTConstants;
 import com.fluidtouch.noteshelf.models.theme.FTNCoverTheme;
 import com.fluidtouch.noteshelf.models.theme.FTNPaperTheme;
@@ -130,133 +133,152 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
         Log.d("TemplatePicker==>", "FTNewNotebookDialog onResume ::-");
         super.onResume();
 
-        RecentsInfoModel coversRecentsInfoModel =  FTTemplateUtil.getInstance().getRecentCoverTheme();
-        String coverPackName = FTApp.getPref().get(SystemPref.RECENT_COVER_THEME_NAME, FTConstants.DEFAULT_COVER_THEME_NAME);
-        String defaultCoverPackName = coverPackName;
-        if (coversRecentsInfoModel != null) {
-            coverPackName = coversRecentsInfoModel.get_packName();
-        }
+        if (coverTheme == null) {
 
-        if (coverPackName.endsWith(".nsc")) {
-            coverTheme = FTNTheme.theme(FTNThemeCategory.getUrl(coverPackName));
-        }
-
-        Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentCoverTheme get_packName recentsInfoModel ::-"
-                +coversRecentsInfoModel +""+coverTheme.themeName);
-
-        if (coversRecentsInfoModel == null) {
-
-            Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme ::-"+coverTheme);
-
-            if (coverTheme == null || coverTheme.themeThumbnail(getContext()) == null) {
-                coverTheme  = FTNTheme.theme(FTNThemeCategory.getUrl(defaultCoverPackName));
-                Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme.bitmap ::-"+coverTheme.bitmap);
+            RecentsInfoModel coversRecentsInfoModel = FTTemplateUtil.getInstance().getRecentCoverTheme();
+            String coverPackName = FTApp.getPref().get(SystemPref.RECENT_COVER_THEME_NAME, DEFAULT_COVER_THEME_NAME);
+            String defaultCoverPackName = coverPackName;
+            if (coversRecentsInfoModel != null) {
+                coverPackName = coversRecentsInfoModel.get_packName();
             }
 
-            coverTheme.bitmap   = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.COVER);
+            if (coverPackName.endsWith(".nsc")) {
+                coverTheme = FTNTheme.theme(FTNThemeCategory.getUrl(coverPackName));
+            }
 
-            /*coverTitleTextView.setText(coverTheme.themeName);
-            coverImageView.setImageBitmap(coverTheme.themeThumbnail(getContext()));
-            coverImageView.setLayoutParams(getLayoutParams(coverImageView.getLayoutParams(), coverTheme));*/
+            Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentCoverTheme get_packName recentsInfoModel ::-" + coversRecentsInfoModel);
 
-        } else {
+            if (coversRecentsInfoModel == null) {
 
-            boolean _isThemeDeleted             = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.COVER,coverTheme);
-            Log.d("TemplatePicker==>", "FTNewNotebookDialog onResume Covers _isThemeDeleted ::-"+_isThemeDeleted +" defaultCoverPackName:: "+defaultCoverPackName +" coverPackName:: "+coverPackName);
+                Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme ::-" + coverTheme);
+
+                if (coverTheme == null || coverTheme.themeThumbnail(getContext()) == null) {
+                    coverTheme = FTNTheme.theme(FTNThemeCategory.getUrl(defaultCoverPackName));
+                    Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme.bitmap ::-" + coverTheme.bitmap);
+                }
+
+                coverTheme.bitmap = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.COVER);
+
+            } else {
+
+                boolean _isThemeDeleted = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.COVER, coverTheme);
+                Log.d("TemplatePicker==>", "FTNewNotebookDialog onResume Covers _isThemeDeleted ::-" + _isThemeDeleted + " defaultCoverPackName:: " + defaultCoverPackName + " coverPackName:: " + coverPackName);
+
+                if (_isThemeDeleted) {
+                    //coverTheme                    = new FTNThemeCategory(getContext(), "Simple", FTNThemeCategory.FTThemeType.COVER).getCoverThemeForPackName(FTConstants.DEFAULT_COVER_THEME_NAME);
+                    coverTheme = FTNTheme.theme(FTNThemeCategory.getUrl(defaultCoverPackName));
+                    coverTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH + "TemplatesCache/" + FTConstants.DEFAULT_COVER_THEME_URL;
+                    coverTheme.bitmap = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.COVER);
+                } else {
+                    coverTheme.categoryName             = coversRecentsInfoModel.get_categoryName();
+                    coverTheme.packName                 = coversRecentsInfoModel.get_packName();
+                    coverTheme.themeBgClr               = coversRecentsInfoModel.getThemeBgClr();
+                    coverTheme.themeBgClrName           = coversRecentsInfoModel.getThemeBgClrName();
+                    coverTheme.horizontalLineColor      = coversRecentsInfoModel.getHorizontalLineColor();
+                    coverTheme.verticalLineColor        = coversRecentsInfoModel.getVerticalLineColor();
+                    coverTheme.horizontalSpacing        = coversRecentsInfoModel.getHorizontalSpacing();
+                    coverTheme.verticalSpacing          = coversRecentsInfoModel.getVerticalSpacing();
+                    coverTheme.width                    = coversRecentsInfoModel.getWidth();
+                    coverTheme.height                   = coversRecentsInfoModel.getHeight();
+                    coverTheme.themeName                = coversRecentsInfoModel.get_themeName();
+                    coverTheme.isLandscape              = coversRecentsInfoModel.isLandscape();
+                    coverTheme.thumbnailURLPath         = coversRecentsInfoModel.get_thumbnailURLPath();
+                    coverTheme.bitmap                   = FTTemplateUtil.getInstance().StringToBitMap(coversRecentsInfoModel.get_themeBitmapInStringFrmt());
+                }
+
+                Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentPaperThemeFromNewNotebookDialog _isThemeDeleted " + _isThemeDeleted +
+                        " get_themeName::-" + coversRecentsInfoModel.get_themeName() + " get_themeBitmap:: " + FTTemplateUtil.getInstance().StringToBitMap(coversRecentsInfoModel.get_themeBitmapInStringFrmt()));
+
+            }
+        }else{
+            boolean _isThemeDeleted = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.COVER, coverTheme);
+            String defaultCoverPackName = FTApp.getPref().get(SystemPref.RECENT_COVER_THEME_NAME, DEFAULT_COVER_THEME_NAME);
 
             if (_isThemeDeleted) {
                 //coverTheme                    = new FTNThemeCategory(getContext(), "Simple", FTNThemeCategory.FTThemeType.COVER).getCoverThemeForPackName(FTConstants.DEFAULT_COVER_THEME_NAME);
-                coverTheme                      = FTNTheme.theme(FTNThemeCategory.getUrl(defaultCoverPackName));
-                coverTheme.thumbnailURLPath     = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+FTConstants.DEFAULT_COVER_THEME_URL;
-                coverTheme.bitmap               = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.COVER);
-            } else {
-                coverTheme.categoryName         = coversRecentsInfoModel.get_categoryName();
-                coverTheme.packName             = coversRecentsInfoModel.get_packName();
-                coverTheme.themeBgClr           = coversRecentsInfoModel.getThemeBgClr();
-                coverTheme.themeBgClrName       = coversRecentsInfoModel.getThemeBgClrName();
-                coverTheme.horizontalLineColor  = coversRecentsInfoModel.getHorizontalLineColor();
-                coverTheme.verticalLineColor    = coversRecentsInfoModel.getVerticalLineColor();
-                coverTheme.horizontalSpacing    = coversRecentsInfoModel.getHorizontalSpacing();
-                coverTheme.verticalSpacing      = coversRecentsInfoModel.getVerticalSpacing();
-                coverTheme.width                = coversRecentsInfoModel.getWidth();
-                coverTheme.height               = coversRecentsInfoModel.getHeight();
-                coverTheme.themeName            = coversRecentsInfoModel.get_themeName();
-                coverTheme.isLandscape          = coversRecentsInfoModel.isLandscape();
-                coverTheme.thumbnailURLPath     = coversRecentsInfoModel.get_thumbnailURLPath();
-                coverTheme.bitmap               = FTTemplateUtil.getInstance().StringToBitMap(coversRecentsInfoModel.get_themeBitmapInStringFrmt());
+                coverTheme = FTNTheme.theme(FTNThemeCategory.getUrl(DEFAULT_COVER_THEME_NAME));
+                coverTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH + "TemplatesCache/" + FTConstants.DEFAULT_COVER_THEME_URL;
+                coverTheme.bitmap = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.COVER);
             }
-
-            Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentPaperThemeFromNewNotebookDialog _isThemeDeleted " +_isThemeDeleted+
-                    " get_themeName::-"+coversRecentsInfoModel.get_themeName()+" get_themeBitmap:: "+FTTemplateUtil.getInstance().StringToBitMap(coversRecentsInfoModel.get_themeBitmapInStringFrmt()));
-
         }
+if(paperTheme==null) {
+    RecentsInfoModel recentsInfoModel = FTTemplateUtil.getInstance().getRecentPaperThemeFromNewNotebookDialog();
+    String paperPackName = FTApp.getPref().get(SystemPref.RECENT_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
+    String defaultPaperPackName = paperPackName;
+    if (recentsInfoModel != null) {
+        paperPackName = recentsInfoModel.get_packName();
+    }
 
-        RecentsInfoModel recentsInfoModel =  FTTemplateUtil.getInstance().getRecentPaperThemeFromNewNotebookDialog();
-        String paperPackName = FTApp.getPref().get(SystemPref.RECENT_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME);
-        String defaultPaperPackName = paperPackName;
-        if (recentsInfoModel != null) {
-            paperPackName = recentsInfoModel.get_packName();
-        }
+    if (paperPackName.endsWith(".nsp")) {
+        paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(paperPackName));
+    }
 
-        if (paperPackName.endsWith(".nsp")) {
-            paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(paperPackName));
-        }
+    Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentPaperThemeFromNewNotebookDialog get_packName recentsInfoModel ::-" + recentsInfoModel);
 
-        Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentPaperThemeFromNewNotebookDialog get_packName recentsInfoModel ::-"+recentsInfoModel);
+    if (recentsInfoModel == null) {
 
-        if (recentsInfoModel == null) {
+        Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme ::-" + paperTheme);
 
-            Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme ::-"+paperTheme);
-
-            if (paperTheme == null || paperTheme.themeThumbnail(getContext()) == null) {
+        if (paperTheme == null || paperTheme.themeThumbnail(getContext()) == null) {
 //                paperTheme          = new FTNThemeCategory(getContext(), "Basic", FTNThemeCategory.FTThemeType.PAPER).getPaperThemeForPackName(FTConstants.DEFAULT_PAPER_THEME_NAME);
-                paperTheme          = FTNTheme.theme(FTNThemeCategory.getUrl(defaultPaperPackName));
-                Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme.bitmap ::-"+paperTheme.bitmap);
-            }
+            paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(defaultPaperPackName));
+            Log.d("TemplatePicker==>", "FTNewNotebookDialog Paper is null paperTheme.bitmap ::-" + paperTheme.bitmap);
+        }
 
-            paperTheme.bitmap   = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.PAPER);
+        paperTheme.bitmap = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.PAPER);
 
             /*paperTitleTextView.setText(paperTheme.themeName);
             paperImageView.setImageBitmap(paperTheme.themeThumbnail(getContext()));
             paperImageView.setLayoutParams(getLayoutParams(paperImageView.getLayoutParams(), paperTheme));*/
 
+    } else {
+
+        boolean _isThemeDeleted = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.PAPER, paperTheme);
+        Log.d("TemplatePicker==>", "FTNewNotebookDialog onResume Papers _isThemeDeleted ::-" + _isThemeDeleted + " defaultPaperPackName:: " + defaultPaperPackName + " paperPackName:: " + paperPackName);
+
+        if (_isThemeDeleted) {
+            //paperTheme                    = new FTNThemeCategory(getContext(), "Basic", FTNThemeCategory.FTThemeType.PAPER).getPaperThemeForPackName(FTConstants.DEFAULT_PAPER_THEME_NAME);
+            paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(defaultPaperPackName));
+            paperTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH + "TemplatesCache/" + FTConstants.DEFAULT_PAPER_THEME_URL;
+            paperTheme.bitmap = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.PAPER);
         } else {
-
-            boolean _isThemeDeleted             = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.PAPER,paperTheme);
-            Log.d("TemplatePicker==>", "FTNewNotebookDialog onResume Papers _isThemeDeleted ::-"+_isThemeDeleted +" defaultPaperPackName:: "+defaultPaperPackName +" paperPackName:: "+paperPackName);
-
-            if (_isThemeDeleted) {
-                //paperTheme                    = new FTNThemeCategory(getContext(), "Basic", FTNThemeCategory.FTThemeType.PAPER).getPaperThemeForPackName(FTConstants.DEFAULT_PAPER_THEME_NAME);
-                paperTheme                      = FTNTheme.theme(FTNThemeCategory.getUrl(defaultPaperPackName));
-                paperTheme.thumbnailURLPath     = FTConstants.TEMP_FOLDER_PATH+"TemplatesCache/"+FTConstants.DEFAULT_PAPER_THEME_URL;
-                paperTheme.bitmap               = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.PAPER);
-            } else {
-                paperTheme.categoryName         = recentsInfoModel.get_categoryName();
-                paperTheme.packName             = recentsInfoModel.get_packName();
-                paperTheme.themeBgClr           = recentsInfoModel.getThemeBgClr();
-                paperTheme.themeBgClrName       = recentsInfoModel.getThemeBgClrName();
-                paperTheme.horizontalLineColor  = recentsInfoModel.getHorizontalLineColor();
-                paperTheme.verticalLineColor    = recentsInfoModel.getVerticalLineColor();
-                paperTheme.horizontalSpacing    = recentsInfoModel.getHorizontalSpacing();
-                paperTheme.verticalSpacing      = recentsInfoModel.getVerticalSpacing();
-                paperTheme.width                = recentsInfoModel.getWidth();
-                paperTheme.height               = recentsInfoModel.getHeight();
-                paperTheme.themeName            = recentsInfoModel.get_themeName();
-                paperTheme.isLandscape          = recentsInfoModel.isLandscape();
-                paperTheme.thumbnailURLPath     = recentsInfoModel.get_thumbnailURLPath();
-                paperTheme.bitmap               = FTTemplateUtil.getInstance().StringToBitMap(recentsInfoModel.get_themeBitmapInStringFrmt());
-            }
-
-            Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentPaperThemeFromNewNotebookDialog _isThemeDeleted " +_isThemeDeleted+
-                    " get_themeName::-"+recentsInfoModel.get_themeName()+" get_themeBitmap:: "+FTTemplateUtil.getInstance().StringToBitMap(recentsInfoModel.get_themeBitmapInStringFrmt()));
-
+            paperTheme.categoryName            = recentsInfoModel.get_categoryName();
+            paperTheme.packName                = recentsInfoModel.get_packName();
+            paperTheme.themeBgClr              = recentsInfoModel.getThemeBgClr();
+            paperTheme.themeBgClrName          = recentsInfoModel.getThemeBgClrName();
+            paperTheme.horizontalLineColor     = recentsInfoModel.getHorizontalLineColor();
+            paperTheme.verticalLineColor       = recentsInfoModel.getVerticalLineColor();
+            paperTheme.horizontalSpacing       = recentsInfoModel.getHorizontalSpacing();
+            paperTheme.verticalSpacing         = recentsInfoModel.getVerticalSpacing();
+            paperTheme.width                   = recentsInfoModel.getWidth();
+            paperTheme.height                  = recentsInfoModel.getHeight();
+            paperTheme.themeName               = recentsInfoModel.get_themeName();
+            paperTheme.isLandscape             = recentsInfoModel.isLandscape();
+            paperTheme.thumbnailURLPath        = recentsInfoModel.get_thumbnailURLPath();
+            paperTheme.bitmap                  = FTTemplateUtil.getInstance().StringToBitMap(recentsInfoModel.get_themeBitmapInStringFrmt());
         }
+
+        Log.d("TemplatePicker==>", "FTNewNotebookDialog getRecentPaperThemeFromNewNotebookDialog _isThemeDeleted " + _isThemeDeleted +
+                " get_themeName::-" + recentsInfoModel.get_themeName() + " get_themeBitmap:: " + FTTemplateUtil.getInstance().StringToBitMap(recentsInfoModel.get_themeBitmapInStringFrmt()));
+
+    }
+} else {
+    boolean _isThemeDeleted = FTTemplateUtil.getInstance().isThemeDeleted(FTNThemeCategory.FTThemeType.PAPER, paperTheme);
+
+    if (_isThemeDeleted) {
+        //paperTheme                    = new FTNThemeCategory(getContext(), "Basic", FTNThemeCategory.FTThemeType.PAPER).getPaperThemeForPackName(FTConstants.DEFAULT_PAPER_THEME_NAME);
+        paperTheme = FTNTheme.theme(FTNThemeCategory.getUrl(FTApp.getPref().get(SystemPref.RECENT_PAPER_THEME_NAME, FTConstants.DEFAULT_PAPER_THEME_NAME)));
+        paperTheme.thumbnailURLPath = FTConstants.TEMP_FOLDER_PATH + "TemplatesCache/" + FTConstants.DEFAULT_PAPER_THEME_URL;
+        paperTheme.bitmap = FTTemplateUtil.getBitmapFromAsset(FTNThemeCategory.FTThemeType.PAPER);
+    }
+}
+
 
         coverTitleTextView.setText(coverTheme.themeName);
         coverImageView.setImageBitmap(coverTheme.bitmap);
         coverImageView.setLayoutParams(getLayoutParams(coverImageView.getLayoutParams(), coverTheme));
 
-        paperTitleTextView.setText(paperTheme.themeName);
+        paperTitleTextView.setText(FTFileManagerUtil.removeFileExtension(paperTheme.themeName));
         paperImageView.setImageBitmap(paperTheme.bitmap);
         paperImageView.setLayoutParams(getLayoutParams(paperImageView.getLayoutParams(), paperTheme));
 
@@ -265,7 +287,7 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
     public boolean isThemeDeleted(FTNThemeCategory.FTThemeType _ftThemeType,FTNTheme ftnTheme) {
         File _file = new File(ftnTheme.themeFileURL.getPath());
         if (_file.exists()) {
-            return  false;
+            return false;
         } else {
             return true;
         }
@@ -274,7 +296,7 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d("TemplatePicker==>", "FTNewNotebookDialog onDestroy paperTheme::-");
+        Log.d("TemplatePickerDestroy==>", "FTNewNotebookDialog onDestroy paperTheme::-");
     }
 
     @Override
@@ -286,6 +308,7 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
     @Override
     public void onPause() {
         super.onPause();
+
         Log.d("TemplatePicker==>", "FTNewNotebookDialog onPause paperTheme::-");
     }
 
@@ -379,7 +402,7 @@ public class FTNewNotebookDialog extends FTBaseDialog implements
                     " themeName::-" + theme.themeName + " isLandscape::-" + theme.isLandscape() + " themeBgClr::-" + theme.themeBgClr);
 
             paperTheme = theme;
-            paperTitleTextView.setText(paperTheme.themeName);
+            paperTitleTextView.setText(FTFileManagerUtil.removeFileExtension(paperTheme.themeName));
             //paperImageView.setImageBitmap(theme.themeThumbnail(getContext()));
             paperImageView.setImageBitmap(theme.bitmap);
             paperImageView.setLayoutParams(getLayoutParams(paperImageView.getLayoutParams(), theme));

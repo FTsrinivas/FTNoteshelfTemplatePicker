@@ -1,3 +1,2 @@
 ninja: Entering directory `/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/2n422b68/x86'
-[1/2] Building CXX object CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o
-[2/2] Linking CXX shared library "/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/build/intermediates/cxx/Debug/2n422b68/obj/x86/libpdfsdk_jni.so"
+ninja: no work to do.

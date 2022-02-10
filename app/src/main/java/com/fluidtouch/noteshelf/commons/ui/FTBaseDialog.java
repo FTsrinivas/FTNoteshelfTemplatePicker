@@ -39,6 +39,17 @@ public class FTBaseDialog extends DialogFragment {
         mContext = context;
     }
 
+    @Override
+    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+        if (savedInstanceState != null) {
+           /* coverTheme = (FTNTheme) savedInstanceState.getSerializable("FTCover");
+            paperTheme = (FTNTheme) savedInstanceState.getSerializable("FTPaper");*/
+
+        }
+
+    }
+
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {

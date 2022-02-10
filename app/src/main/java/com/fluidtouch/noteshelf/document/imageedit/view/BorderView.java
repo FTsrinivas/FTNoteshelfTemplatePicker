@@ -38,6 +38,9 @@ public class BorderView extends View {
     // Length of one side of the corner handle.
     private float mCornerLength;
 
+    //Stroke width to determine the corner circle
+    private int circleRadius =16;
+
     // The bounding box around the Bitmap that we are cropping.
     @NonNull
     private RectF mBitmapRect = new RectF();
@@ -90,10 +93,13 @@ public class BorderView extends View {
         mGuidelinePaint = PaintUtil.newGuidelinePaint(resources);
         mSurroundingAreaOverlayPaint = PaintUtil.newSurroundingAreaOverlayPaint(resources);
         mCornerPaint = PaintUtil.newCornerPaint(resources);
-
         mBorderThickness = resources.getDimension(R.dimen.border_thickness);
         mCornerThickness = resources.getDimension(R.dimen.corner_thickness);
         mCornerLength = resources.getDimension(R.dimen.corner_length);
+
+        /*mBorderThickness = resources.getDimension(R.dimen.corner_thickness);
+        mCornerThickness = resources.getDimension(R.dimen.corner_thickness);
+        mCornerLength = resources.getDimension(R.dimen.corner_thickness);*/
     }
 
     private void drawDarkenedSurroundingArea(@NonNull Canvas canvas) {
@@ -172,8 +178,13 @@ public class BorderView extends View {
         // Absolute value of the offset by which to start the corner line such that the line is drawn all the way to form a corner edge with the adjacent side.
         final float startOffset = mCornerThickness;//- (mBorderThickness / 2f);
 
+        canvas.drawCircle(left-lateralOffset+circleRadius,top+circleRadius,25f,mCornerPaint);
+        canvas.drawCircle(right -circleRadius,top+circleRadius,25f,mCornerPaint);
+        canvas.drawCircle(left+circleRadius,bottom-circleRadius,25f,mCornerPaint);
+        canvas.drawCircle(right-circleRadius ,bottom-circleRadius,25f,mCornerPaint);
+
         // Top-left corner: left side
-        canvas.drawLine(left - lateralOffset, top - startOffset, left - lateralOffset, top + mCornerLength, mCornerPaint);
+        /*  canvas.drawLine(left - lateralOffset, top - startOffset, left - lateralOffset, top + mCornerLength, mCornerPaint);
         // Top-left corner: top side
         canvas.drawLine(left - startOffset, top - lateralOffset, left + mCornerLength, top - lateralOffset, mCornerPaint);
 
@@ -190,7 +201,7 @@ public class BorderView extends View {
         // Bottom-right corner: right side
         canvas.drawLine(right + lateralOffset, bottom + startOffset, right + lateralOffset, bottom - mCornerLength, mCornerPaint);
         // Bottom-right corner: bottom side
-        canvas.drawLine(right + startOffset, bottom + lateralOffset, right - mCornerLength, bottom + lateralOffset, mCornerPaint);
+        canvas.drawLine(right + startOffset, bottom + lateralOffset, right - mCornerLength, bottom + lateralOffset, mCornerPaint);*/
 
     }
 }

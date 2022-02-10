@@ -156,7 +156,7 @@ public class FTImageAnnotationV1 extends FTImageAnnotation implements FTAnnotati
         return null;
     }
 
-    public void setImageTextRecognitionInfo(FTImageRecognitionResult recognitionInfo) {
+        public void setImageTextRecognitionInfo(FTImageRecognitionResult recognitionInfo) {
         FTNoteshelfDocument recognitionDocument = this.associatedPage.getParentDocument();
         FTImageRecognitionCachePlist fileItem = recognitionDocument.recognitionCache(getContext()).imageRecognitionCachePlist();
         fileItem.setRecognitionInfo(getContext(), recognitionInfo, this);

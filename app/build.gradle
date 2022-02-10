@@ -19,7 +19,7 @@ android {
         applicationId "com.fluidtouch.noteshelf2"
         minSdkVersion 24
         targetSdkVersion 30
-        versionCode 254
+        versionCode 258
         versionName "4.18.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         renderscriptTargetApi 19

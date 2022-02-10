@@ -26,6 +26,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.fluidtouch.noteshelf.FTApp;
 import com.fluidtouch.noteshelf.commons.ui.BaseRecyclerAdapter;
+import com.fluidtouch.noteshelf.commons.utils.FTFileManagerUtil;
 import com.fluidtouch.noteshelf.commons.utils.ObservingService;
 import com.fluidtouch.noteshelf.documentframework.FTUrl;
 import com.fluidtouch.noteshelf.documentframework.Utilities.FTConstants;
@@ -126,6 +127,7 @@ public class FTTemplateDetailedInfoAdapter extends
         FTNTheme ftnTheme = ftnThemeArrayList.get(position);
         Context context = childViewHolder.itemView.getContext();
         String themeName = ftnThemeArrayList.get(position).themeName;
+        themeName = FTFileManagerUtil.removeFileExtension(themeName);
 
         Log.d("TemplatePickerV2", "FTTemplateDetailedInfoAdapter onBindViewHolder categoryName::-"
                 + ftnTheme.getCategoryName());
