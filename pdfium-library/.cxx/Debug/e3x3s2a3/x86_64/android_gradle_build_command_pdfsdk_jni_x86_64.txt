@@ -1,7 +1,0 @@
-Executable : /Users/srinivas/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
-arguments : 
--C
-/Users/srinivas/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/e3x3s2a3/x86_64
-pdfsdk_jni
-jvmArgs : 
-

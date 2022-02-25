@@ -1,2 +1,0 @@
-ninja: Entering directory `C:\Users\Mani\Downloads\Mod Noteshelf-Android-UI-4\pdfium-library\.cxx\Debug\4u6p6li5\arm64-v8a'
-ninja: no work to do.

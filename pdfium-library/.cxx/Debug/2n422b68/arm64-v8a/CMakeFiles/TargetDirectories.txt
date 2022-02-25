@@ -1,3 +1,0 @@
-/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/2n422b68/arm64-v8a/CMakeFiles/rebuild_cache.dir
-/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/2n422b68/arm64-v8a/CMakeFiles/edit_cache.dir
-/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/2n422b68/arm64-v8a/CMakeFiles/pdfsdk_jni.dir

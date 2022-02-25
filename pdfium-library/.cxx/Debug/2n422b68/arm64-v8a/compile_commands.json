@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/Debug/2n422b68/arm64-v8a",
-  "command": "/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --gcc-toolchain=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/srinivas/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Dpdfsdk_jni_EXPORTS -I\"/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/src/main/cpp/utils\" -I\"/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/src/main/cpp/pdfium/include\" -I\"/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/src/main/cpp/pdfium/include/cpp\"  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=c++11 -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o -c \"/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/src/main/cpp/pdfsdk_jni.cpp\"",
-  "file": "/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/pdfium-library/src/main/cpp/pdfsdk_jni.cpp"
-}
-]

@@ -1,3 +1,0 @@
-C:/Users/Mani/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/cmake/release/armeabi-v7a/CMakeFiles/pdfsdk_jni.dir
-C:/Users/Mani/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
-C:/Users/Mani/Downloads/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir

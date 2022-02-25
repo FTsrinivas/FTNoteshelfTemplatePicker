@@ -1,3 +1,0 @@
-/Users/srinivas/Downloads/Noteshelf-Android-UI/pdfium-library/.cxx/RelWithDebInfo/5q241w5q/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/Users/srinivas/Downloads/Noteshelf-Android-UI/pdfium-library/.cxx/RelWithDebInfo/5q241w5q/armeabi-v7a/CMakeFiles/edit_cache.dir
-/Users/srinivas/Downloads/Noteshelf-Android-UI/pdfium-library/.cxx/RelWithDebInfo/5q241w5q/armeabi-v7a/CMakeFiles/pdfsdk_jni.dir

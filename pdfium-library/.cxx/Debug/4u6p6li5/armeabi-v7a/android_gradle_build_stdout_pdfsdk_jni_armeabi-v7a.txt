@@ -1,3 +1,0 @@
-ninja: Entering directory `C:\Users\Mani\Downloads\Mod Noteshelf-Android-UI-4\pdfium-library\.cxx\Debug\4u6p6li5\armeabi-v7a'
-[1/2] Building CXX object CMakeFiles/pdfsdk_jni.dir/pdfsdk_jni.cpp.o
-[2/2] Linking CXX shared library "C:\Users\Mani\Downloads\Mod Noteshelf-Android-UI-4\pdfium-library\build\intermediates\cxx\Debug\4u6p6li5\obj\armeabi-v7a\libpdfsdk_jni.so"

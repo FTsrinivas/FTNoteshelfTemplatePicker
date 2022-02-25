@@ -1,3 +1,0 @@
-C:/Users/Mani/Downloads/30_12_2021_Mod Noteshelf-Android-UI-4 (1)/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/cmake/debug/x86/CMakeFiles/pdfsdk_jni.dir
-C:/Users/Mani/Downloads/30_12_2021_Mod Noteshelf-Android-UI-4 (1)/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
-C:/Users/Mani/Downloads/30_12_2021_Mod Noteshelf-Android-UI-4 (1)/Mod Noteshelf-Android-UI-4/pdfium-library/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

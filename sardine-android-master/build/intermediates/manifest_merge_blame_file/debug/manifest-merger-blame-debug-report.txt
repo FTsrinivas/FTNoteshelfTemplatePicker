@@ -1,8 +1,0 @@
-1<?xml version="1.0" encoding="utf-8"?>
-2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.thegrizzlylabs.sardineandroid" >
-4
-5    <uses-sdk android:minSdkVersion="15" />
-5-->/Users/srinivas/Documents/Mod Noteshelf-Android-UI-4/sardine-android-master/src/main/AndroidManifest.xml
-6
-7</manifest>
